@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-ca" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ site.title }}</title>
+        <link rel="stylesheet" type="text/css" href="/css/idrc.css" />
+        <script>document.documentElement.classList.remove('no-js');</script>
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        {% include "partials/global/header.njk" %}
+        {% block content %}
+        {% endblock content %}
+        {% include "partials/global/footer.njk" %}
+    </body>
+</html>

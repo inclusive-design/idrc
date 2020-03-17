@@ -1,0 +1,59 @@
+{
+  "name": "@inclusive-design/idrc",
+  "version": "1.0.0",
+  "description": "Website for the Inclusive Design Research Centre.",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "build:site": "eleventy --config=eleventy.config.js",
+    "build:assets": "cross-env NODE_ENV=production run-s mix",
+    "build": "run-s clean build:*",
+    "clean": "run-p clean:*",
+    "clean:dist": "rimraf dist",
+    "mix": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "start": "concurrently \"npm run watch:site\" \"npm run watch:assets\"",
+    "lint:css": "stylelint",
+    "lint:js": "xo",
+    "lint": "run-s lint:*",
+    "test": "run-s lint",
+    "watch:site": "eleventy --serve",
+    "watch:assets": "cross-env NODE_ENV=development run-s \"mix -- --watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/inclusive-design/idrc.git"
+  },
+  "keywords": [
+    "inclusive-design"
+  ],
+  "author": "OCAD University <idrc@ocadu.ca>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/inclusive-design/idrc/issues"
+  },
+  "homepage": "https://github.com/inclusive-design/idrc#readme",
+  "devDependencies": {
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "laravel-mix": "^5.0.1",
+    "laravel-mix-tailwind": "^0.1.0",
+    "npm-run-all": "^4.1.5",
+    "resolve-url-loader": "^3.1.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.15.0",
+    "tailwindcss": "^1.2.0",
+    "vue-template-compiler": "^2.6.11",
+    "xo": "^0.28.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "@11ty/eleventy-plugin-rss": "^1.0.7"
+  }
+}
