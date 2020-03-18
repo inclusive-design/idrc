@@ -31,23 +31,40 @@
     "url": "https://github.com/inclusive-design/idrc/issues"
   },
   "homepage": "https://github.com/inclusive-design/idrc#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/scss/**/*.scss": [
+      "stylelint"
+    ],
+    "src/js/**/*.js": [
+      "xo"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
     "browser-sync-webpack-plugin": "^2.0.1",
     "concurrently": "^5.1.0",
     "cross-env": "^7.0.0",
     "dotenv": "^8.2.0",
+    "husky": "^4.2.3",
     "laravel-mix": "^5.0.1",
     "laravel-mix-purgecss": "^5.0.0-rc.1",
     "laravel-mix-tailwind": "^0.1.0",
+    "lint-staged": "^10.0.8",
     "npm-run-all": "^4.1.5",
     "resolve-url-loader": "^3.1.0",
     "rimraf": "^3.0.2",
     "sass": "^1.25.0",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.2.1",
-    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.0.0",
-    "stylelint-scss": "^3.15.0",
     "tailwindcss": "^1.2.0",
     "vue-template-compiler": "^2.6.11",
     "xo": "^0.28.0"
