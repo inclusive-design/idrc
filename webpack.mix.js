@@ -10,9 +10,10 @@ mix.setPublicPath('./src/_includes/static')
 		processCssUrls: false,
 		postCss: [tailwindcss('./tailwind.config.js')]
 	})
-	.purgeCss({
-		content: ['src/_includes/**/*.njk']
-	})
-	.version()
 	.copyDirectory('src/fonts', 'src/_includes/static/fonts')
 	.copyDirectory('src/images', 'src/_includes/static/images');
+
+if (mix.inProduction()) {
+	mix.purgeCss({content: ['./src/_includes/**/*.njk']})
+		.version();
+}

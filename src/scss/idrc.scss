@@ -1,8 +1,12 @@
 @charset "UTF-8";
 
+// Tailwind base and components
+
+/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+/* purgecss end ignore */
 
 // 1. Configuration and helpers
 @import
@@ -39,3 +43,6 @@
 // 7. Themes
 @import
   'themes/default';
+
+// Tailwind utilities
+@tailwind utilities;
