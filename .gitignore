@@ -109,3 +109,5 @@ _site
 # Static files
 src/_includes/static
 src/_data/manifest.json
+
+.now
