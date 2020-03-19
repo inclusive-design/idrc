@@ -1,0 +1,11 @@
+<nav id="menu" aria-labelledby="main-menu">
+    <span id="menu-label" class="sr-only">main menu</span>
+    {% set navPages = collections.all | eleventyNavigation %}
+    <ul>
+    {%- for entry in navPages %}
+    <li>
+        <a {% if entry.url == page.url %}aria-current="page" {% endif %}href="{{ entry.url | url }}">{{ entry.title }}</a>
+    </li>
+    {%- endfor %}
+    </ul>
+</nav>

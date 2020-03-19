@@ -1,7 +1,9 @@
+const navigationPlugin = require('@11ty/eleventy-navigation');
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 module.exports = eleventyConfig => {
 	// Plugins.
+	eleventyConfig.addPlugin(navigationPlugin);
 	eleventyConfig.addPlugin(rssPlugin);
 
 	// Passthrough file copy.
