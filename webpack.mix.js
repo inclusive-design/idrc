@@ -1,11 +1,18 @@
 const mix = require('laravel-mix');
-require('laravel-mix-tailwind'); // eslint-disable-line import/no-unassigned-import
+const tailwindcss = require('tailwindcss');
+
 require('laravel-mix-purgecss'); // eslint-disable-line import/no-unassigned-import
 
-mix.setPublicPath('./dist')
-	.js('src/js/idrc.js', 'dist/js')
-	.sass('src/scss/idrc.scss', 'dist/css')
-	.tailwind()
+mix.setPublicPath('./src/_includes/static')
+	.js('src/js/idrc.js', 'src/_includes/static/js')
+	.sass('src/scss/idrc.scss', 'src/_includes/static/css')
+	.options({
+		processCssUrls: false,
+		postCss: [tailwindcss('./tailwind.config.js')]
+	})
 	.purgeCss({
 		content: ['src/_includes/**/*.njk']
-	});
+	})
+	.version()
+	.copyDirectory('src/fonts', 'src/_includes/static/fonts')
+	.copyDirectory('src/images', 'src/_includes/static/images');

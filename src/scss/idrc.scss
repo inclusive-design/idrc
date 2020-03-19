@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 a {
-  @apply .underline;
+  @apply underline text-blue-600;
 }
