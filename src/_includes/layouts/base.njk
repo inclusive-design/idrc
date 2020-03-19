@@ -9,10 +9,12 @@
         {% block head %}
         {% endblock %}
     </head>
-    <body>
+    <body class="flex flex-col justify-start min-h-screen">
         {% include "partials/global/header.njk" %}
-        {% block content %}
-        {% endblock content %}
+        <main>
+            {% block content %}
+            {% endblock content %}
+        </main>
         {% include "partials/global/footer.njk" %}
     </body>
 </html>
