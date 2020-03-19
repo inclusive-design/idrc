@@ -111,3 +111,6 @@ src/_includes/static
 src/_data/manifest.json
 
 .now
+
+# Local Netlify folder
+.netlify
