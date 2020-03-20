@@ -1,34 +1,3 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.home [aria-labelledby="current-projects-and-tools"] {
-  h2::before {
-    @apply border-indigo-500;
-  }
-}
-
-.home [aria-labelledby="our-resources"] {
-  h2::before {
-    @apply border-red-500;
-  }
-}
-
-.home [aria-labelledby="services-we-offer"] {
-  h2::before {
-    @apply border-blue-500;
-  }
-}
-
-.home [aria-labelledby="job-postings"] {
-  h2::before {
-    @apply border-indigo-500;
-  }
-}
-
-.home [aria-labelledby="get-involved"] {
-  @apply bg-indigo-200 text-black text-center;
-
-  h2::before {
-    display: none;
-  }
-}
