@@ -1,6 +1,6 @@
 const jsdom = require('@tbranyen/jsdom');
 const {JSDOM} = jsdom;
-const slugify = require('slugify');
+// Restore? const slugify = require('slugify');
 
 module.exports = (value, outputPath) => {
 	if (outputPath.endsWith('.html')) {
@@ -12,7 +12,7 @@ module.exports = (value, outputPath) => {
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
-		// const headings = [
+		// Restore? const headings = [
 		// 	...document.querySelectorAll('main article h2')
 		// ];
 
@@ -22,7 +22,7 @@ module.exports = (value, outputPath) => {
 			});
 		}
 
-		// if (headings.length > 0) {
+		// Restore? if (headings.length > 0) {
 		// 	// Loop each heading and add a little anchor and an ID to each one
 		// 	headings.forEach(heading => {
 		// 		const headingSlug = slugify(heading.textContent.toLowerCase());
