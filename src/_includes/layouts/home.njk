@@ -1,9 +1,10 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-    <article class="container px-6 mx-auto home">
-        <header>
-            <h1>{{ title }}</h1>
+    <article class="home">
+        <header class="container px-6 py-20 mx-auto">
+            <h1 class="lg:w-1/2">{{ title }}</h1>
+            <p class="mt-5 text-sm lg:w-1/2 intro">An international community of open source developers, designers, researchers, advocates, and volunteers who work together to <strong>ensure that emerging technology and practices are designed inclusively</strong>.</p>
         </header>
         {{ content | safe }}
     </article>

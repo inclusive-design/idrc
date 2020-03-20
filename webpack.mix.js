@@ -14,6 +14,9 @@ mix.setPublicPath('./src/_includes/static')
 	.copyDirectory('src/images', 'src/_includes/static/images');
 
 if (mix.inProduction()) {
-	mix.purgeCss({content: ['./src/_includes/**/*.njk']})
+	mix.purgeCss({
+		content: ['./src/_includes/**/*.njk'],
+		whitelist: ['h2', 'h3']
+	})
 		.version();
 }

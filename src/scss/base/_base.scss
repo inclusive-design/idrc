@@ -1,6 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+* {
+  @apply font-sans leading-normal;
+}
+
+body {
+  @apply bg-indigo-100 text-black;
+}
+
 a {
-  @apply underline text-blue-600;
+  @apply underline font-display;
+}
+
+blockquote {
+  @apply pl-8;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+li + li {
+  @apply mt-0;
 }

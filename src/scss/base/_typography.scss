@@ -1,3 +1,56 @@
 /**
  * Basic typography style for copy text
  */
+h1,
+.h1,
+h2,
+.h2 {
+  @apply font-black font-serif;
+}
+
+h1,
+.h1 {
+  @apply text-5xl leading-tight;
+}
+
+h2,
+.h2 {
+  @apply text-4xl leading-tight;
+}
+
+h3,
+.h3 {
+  @apply text-2xl font-display font-semibold leading-tight;
+}
+
+h4,
+.h4 {
+  @apply font-display font-semibold;
+}
+
+p + * {
+  @apply mt-6;
+}
+
+h2 + *,
+.h2 + * {
+  @apply mt-6;
+}
+
+h3 + p,
+h3 + ul {
+  @apply mt-1;
+}
+
+h4 + p {
+  @apply mt-0;
+}
+
+.h3 + p,
+.h3 + ul {
+  @apply mt-1;
+}
+
+.h4 + p {
+  @apply mt-0;
+}
