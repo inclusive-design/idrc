@@ -20,6 +20,14 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Sections"
+            name: "sections"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: true}
+              - {label: "Content", name: "content", widget: "markdown", required: true}
+              - {label: "Text Colour", name: "textColour", widget: "string", required: false}
+              - {label: "Background Colour", name: "backgroundColour", widget: "string", required: false}
   - name: "generic_pages"
     label: "Generic Pages"
     folder: "src/pages"

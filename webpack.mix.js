@@ -15,8 +15,25 @@ mix.setPublicPath('./src/_includes/static')
 
 if (mix.inProduction()) {
 	mix.purgeCss({
-		content: ['./src/_includes/**/*.njk', './src/transforms/*.js'],
-		whitelist: ['h2', 'h3']
+		content: ['./src/_includes/**/*.njk'],
+		whitelist: [
+			'h3',
+			'h4',
+			'.h3',
+			'.h4'
+		],
+		whitelistPatterns: [
+			/black$/,
+			/white$/,
+			/indigo-100$/,
+			/indigo-200$/,
+			/indigo-500$/,
+			/indigo-900$/,
+			/logo$/,
+			/blue-500$/,
+			/red-500$/,
+			/yellow-500$/
+		]
 	})
 		.version();
 }

@@ -1,32 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.home section {
-  @apply py-20;
-}
-
-.home section h2::before {
-  content: "";
-
-  @apply block w-20 border-b-2 mb-10;
-}
-
-.home [aria-labelledby="what-we-do"] {
-  @apply bg-indigo-900 text-white;
-
-  h2::before {
-    @apply border-indigo-500;
-  }
-}
-
-.home [aria-labelledby="what-is-inclusive-design"] {
-  @apply bg-blue-500 text-black;
-
-  h2::before {
-    @apply border-white;
-  }
-}
-
 .home [aria-labelledby="current-projects-and-tools"] {
   h2::before {
     @apply border-indigo-500;

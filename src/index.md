@@ -3,6 +3,17 @@ title: Inclusive Design Research Centre
 layout: layouts/home.njk
 eleventyNavigation:
     key: Home
+sections:
+    - title: What we do
+      content: "TK."
+      backgroundColour: indigo-900
+      borderColour: indigo-500
+      textColour: white
+    - title: What is inclusive design?
+      content: "TK."
+      backgroundColour: blue-500
+      borderColour: white
+      textColour: black
 ---
 ## What we do
 

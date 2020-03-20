@@ -8,9 +8,18 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
 
-	// Transforms
+	// Transforms.
 	eleventyConfig.addTransform('htmlmin', htmlMinTransform);
 	eleventyConfig.addTransform('parse', parseTransform);
+
+	// Filters.
+
+	eleventyConfig.addFilter('markdown', value => {
+		const markdown = require('markdown-it')({
+			html: true
+		});
+		return markdown.render(value);
+	});
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});

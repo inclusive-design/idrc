@@ -6,7 +6,16 @@
             <h1 class="lg:w-1/2">{{ title }}</h1>
             <p class="mt-5 text-sm lg:w-1/2 intro">An international community of open source developers, designers, researchers, advocates, and volunteers who work together to <strong>ensure that emerging technology and practices are designed inclusively</strong>.</p>
         </header>
-        {{ content | safe }}
+        {% for section in sections %}
+        <section class="py-20 bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
+            <div class="container px-6 mx-auto">
+                <span class="block w-20 mb-10 border-b-2 hr border-{{ section.borderColour if section.borderColour else 'black' }}"></span>
+                <h2>{{ section.title }}</h2>
+                {{ section.content | markdown | safe }}
+            </div>
+        </section>
+        {% endfor %}
+        {# {{ content | safe }} #}
     </article>
 {% endblock %}
 
