@@ -75,6 +75,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@tbranyen/jsdom": "^13.0.0",
     "html-minifier": "^4.0.0",
+    "nunjucks": "^3.2.1",
     "slugify": "^1.4.0"
   }
 }

@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: master
+# publish_mode: editorial_workflow
+site_url: "https://idrc.netlify.com"
+media_folder: "src/images"
+public_folder: "/images"
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Homepage"
+        delete: false
+        file: "src/index.md"
+        slug: "{{slug}}"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "generic_pages"
+    label: "Generic Pages"
+    folder: "src/pages"
+    slug: "{{slug}}"
+    preview_path: "pages/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Custom Permalink (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Globals"
+    name: "globals"
+    files:
+      - label: "Site Data"
+        name: "site_data"
+        delete: false
+        file: "src/_data/site.json"
+        fields:
+          - {label: "Site Titl", name: "title", widget: "string"}
+          - {label: "Site Url", name: "url", widget: "string"}
+
+      

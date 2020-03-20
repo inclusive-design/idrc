@@ -15,7 +15,7 @@ mix.setPublicPath('./src/_includes/static')
 
 if (mix.inProduction()) {
 	mix.purgeCss({
-		content: ['./src/_includes/**/*.njk'],
+		content: ['./src/_includes/**/*.njk', './src/transforms'],
 		whitelist: ['h2', 'h3']
 	})
 		.version();
