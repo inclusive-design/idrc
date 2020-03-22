@@ -24,9 +24,11 @@ sections:
       image: /images/what-we-do.jpg
       imagePosition: top
       imageAltText: ''
+      imageOrderDesktop: swap
       backgroundColour: indigo-900
       borderColour: indigo-500
       textColour: white
+      desktopWidth: full-bleed
     - title: What is inclusive design?
       content: >-
         Inclusive Design considers the full range of human diversity in respect to ability, language, culture, gender, age, and other forms of human difference.
@@ -37,6 +39,7 @@ sections:
       backgroundColour: blue-500
       borderColour: white
       textColour: black
+      desktopWidth: full-bleed
     - title: Current projects and tools
       content: >-
         Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
@@ -46,9 +49,11 @@ sections:
       imagePosition: bottom
       imageAltText: ''
       imageShadow: red-500
+      imageOrderDesktop: swap
       backgroundColour: 
       borderColour: indigo-500
       textColour:
+      desktopWidth: full
     - title: Our resources
       content: >-
         ### [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
@@ -61,6 +66,7 @@ sections:
       backgroundColour: 
       borderColour: red-500
       textColour:
+      desktopWidth: half
     - title: Services we offer
       content: >-
         ### [WebSavvy Acessibility Consulting](/websavvy/)
@@ -73,6 +79,7 @@ sections:
       backgroundColour: 
       borderColour:  blue-500
       textColour:
+      desktopWidth: half
     - title: Job postings
       content: >-
         [**Senior Inclusive Developer**](https://trr.tbe.taleo.net/trr01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=1828)<br />
@@ -84,9 +91,11 @@ sections:
       imagePosition: top
       imageAltText: ''
       imageShadow: yellow-500
+      imageOrderDesktop: first
       backgroundColour: 
       borderColour: indigo-500
       textColour:
+      desktopWidth: full
     - title: Get involved
       link: https://wiki.fluidproject.org/
       content: >-
@@ -94,5 +103,7 @@ sections:
       backgroundColour: indigo-200
       borderColour: 
       textColour: black
+      desktopWidth: full-bleed
+      desktopAlignment: center
 ---
 ***

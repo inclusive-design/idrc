@@ -1,30 +1,29 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-    <article class="home">
-        <header class="container px-6 py-20 mx-auto">
-            <h1 class="lg:w-1/2">{{ title }}</h1>
-            <p class="mt-5 text-sm lg:w-1/2 intro">An international community of open source developers, designers, researchers, advocates, and volunteers who work together to <strong>ensure that emerging technology and practices are designed inclusively</strong>.</p>
+    <article class="container mx-auto home">
+        <header class="py-20">
+            <div class="container px-6 mx-auto">
+                <h1 class="lg:w-1/2">{{ title }}</h1>
+                <p class="mt-5 text-sm lg:w-1/2 intro">An international community of open source developers, designers, researchers, advocates, and volunteers who work together to <strong>ensure that emerging technology and practices are designed inclusively</strong>.</p>
+            </div>
         </header>
         {% for section in sections %}
-        <section id="{{ section.title | slug }}" class="py-20 {{ 'mt-16' if section.imagePosition == 'top' }} bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
-            <div class="container px-6 mx-auto">
+        <section id="{{ section.title | slug }}" class="section section--{{ section.desktopWidth if section.desktopWidth else 'full' }} half py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imagePosition == 'top' }} bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
+            <div class="container px-6 mx-auto lg:flex lg:flex-row lg:justify-between">
                 {% if section.imagePosition == 'top' %}
-                <img class="mb-20 -mt-40 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}" src="{{ section.image }}" alt="{{ section.imageAltText }}" />
+                <img class="h-auto lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} mb-20 -mt-40 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}" src="{{ section.image }}" alt="{{ section.imageAltText }}" />
                 {% endif %}
-                <div class="content">
-                    <span class="block w-20 mb-10 border-b-2 hr border-{{ section.borderColour if section.borderColour else 'black' }}"></span>
+                <div class="{{ 'lg:w-1/2' if section.image else 'lg:w-full' }} section__content lg:order-1">
+                    <span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColour if section.borderColour else 'black' }}"></span>
                     <h2>{{ section.title }}</h2>
                     {{ section.content | markdown | safe }}
                 </div>
                 {% if section.imagePosition == 'bottom' %}
-                <img class="mt-6 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}" src="{{ section.image }}" alt="{{ section.imageAltText }}" />
+                <img class="h-auto lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} lg:-mt-12 mt-6 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}" src="{{ section.image }}" alt="{{ section.imageAltText }}" />
                 {% endif %}
             </div>
         </section>
         {% endfor %}
-        {# {{ content | safe }} #}
     </article>
 {% endblock %}
-
-{{ content | safe }}

@@ -1,3 +1,26 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+@media (min-width: 1024px) {
+  .home header {
+    @apply w-screen transform -translate-x-1/2;
+
+    margin-left: 50%;
+  }
+
+  .section--half {
+    @apply max-w-screen-sm w-full mx-auto inline-block;
+  }
+
+  .section--full {
+    @apply mx-auto w-screen transform -translate-x-1/2;
+
+    margin-left: 50%;
+  }
+
+  .section--full-bleed {
+    @apply w-screen transform -translate-x-1/2;
+
+    margin-left: 50%;
+  }
+}
