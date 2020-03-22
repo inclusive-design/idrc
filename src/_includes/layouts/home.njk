@@ -9,7 +9,7 @@
             </div>
         </header>
         {% for section in sections %}
-        <section id="{{ section.title | slug }}" class="section section--{{ section.desktopWidth if section.desktopWidth else 'full' }} half py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imageOrder == 'top' }} bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
+        <section id="{{ section.title | slug }}" class="section {{ 'section--full-bleed' if section.desktopWidth == 'full-bleed' }}{{ 'section--full' if section.desktopWidth == 'full' }}{{ 'section--half' if section.desktopWidth == 'half' }} py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imageOrder == 'top' }} bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
             <div class="container px-6 mx-auto lg:flex lg:flex-row lg:justify-between">
                 {% if section.imageOrder == 'start' %}
                 <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} mb-20">
