@@ -32,6 +32,8 @@ if (mix.inProduction()) {
 			/logo$/,
 			/blue-500$/,
 			/red-500$/,
+			/red-900$/,
+			/yellow-200$/,
 			/yellow-500$/
 		]
 	})

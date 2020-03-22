@@ -1,6 +1,5 @@
 ---
 title: Style Guide
-layout: layouts/page.njk
 eleventyExcludeFromCollections: true
 ---
 ## Header Level Two

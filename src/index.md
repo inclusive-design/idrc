@@ -1,8 +1,11 @@
 ---
 title: Inclusive Design Research Centre
-layout: layouts/home.njk
+layout: layouts/page.njk
+intro: >
+  An international community of open source developers, designers, researchers, advocates, and volunteers who work together to **ensure that emerging technology and practices are designed inclusively**.
 eleventyNavigation:
     key: Home
+    order: 1
 sections:
     - title: What we do
       content: >-

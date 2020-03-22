@@ -2,7 +2,7 @@
     <span id="menu-label" class="sr-only">main menu</span>
     {% set navPages = collections.all | eleventyNavigation %}
     <button class="lg:hidden" id="menu-toggle" aria-expanded="false">menu</button>
-    <ul class="absolute left-0 flex-col hidden px-6 mt-6 list-none bg-indigo-100 lg:px-0 lg:mt-0 lg:relative lg:flex lg:flex-row">
+    <ul class="absolute left-0 flex-col hidden px-6 mt-6 list-none bg-inherit lg:px-0 lg:mt-0 lg:relative lg:flex lg:flex-row">
     {%- for entry in navPages %}
     <li class="py-2 lg:py-0 lg:pr-4">
         <a {% if entry.url == page.url %}aria-current="page" {% endif %}href="{{ entry.url | url }}">{{ entry.title }}</a>

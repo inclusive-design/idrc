@@ -38,11 +38,15 @@ h2 + *,
 }
 
 h3 + p {
-  @apply mt-1;
+  @apply mt-6;
 }
 
 h4 + p {
   @apply mt-0;
+}
+
+ul + h3 {
+  @apply mt-8;
 }
 
 .h3 + p {
