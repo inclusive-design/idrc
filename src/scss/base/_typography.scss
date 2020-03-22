@@ -37,8 +37,7 @@ h2 + *,
   @apply mt-6;
 }
 
-h3 + p,
-h3 + ul {
+h3 + p {
   @apply mt-1;
 }
 
@@ -46,8 +45,7 @@ h4 + p {
   @apply mt-0;
 }
 
-.h3 + p,
-.h3 + ul {
+.h3 + p {
   @apply mt-1;
 }
 

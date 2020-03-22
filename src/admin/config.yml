@@ -28,6 +28,14 @@ collections:
               - {label: "Content", name: "content", widget: "markdown", required: true}
               - {label: "Text Colour", name: "textColour", widget: "string", required: false}
               - {label: "Background Colour", name: "backgroundColour", widget: "string", required: false}
+              - {label: "Border Colour", name: "borderColour", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "string", required: false}
+              - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+              - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
+              - {label: "Image Order", name: "imageOrder", widget: "string", required: false} # start or end
+              - {label: "Image Order (Desktop)", name: "imageOrderDesktop", widget: "string", required: false} # auto or swap
+              - {label: "Image Shadow", name: "imageShadow", widget: "string", required: false} # TODO: Figure out shadow options
+              - {label: "Desktop Width", name: "desktopWidth", widget: "string", required: false} # half, full, or full-bleed
   - name: "generic_pages"
     label: "Generic Pages"
     folder: "src/pages"

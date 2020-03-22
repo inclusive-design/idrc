@@ -22,7 +22,8 @@ sections:
 
         Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
       image: /images/what-we-do.jpg
-      imagePosition: top
+      image2x: /images/what-we-do@2x.jpg
+      imageOrder: start
       imageAltText: ''
       imageOrderDesktop: swap
       backgroundColour: indigo-900
@@ -46,7 +47,8 @@ sections:
 
         [See our current projects and tools](/projects-and-tools/)
       image: /images/projects-and-tools.jpg
-      imagePosition: bottom
+      image2x: /images/projects-and-tools@2x.jpg
+      imageOrder: end
       imageAltText: ''
       imageShadow: red-500
       imageOrderDesktop: swap
@@ -88,7 +90,8 @@ sections:
 
         [**Post-Doctoral Research Fellow**](https://trr.tbe.taleo.net/trr01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=1811)
       image: /images/job-postings.jpg
-      imagePosition: top
+      image2x: /images/job-postings@2x.jpg
+      imageOrder: start
       imageAltText: ''
       imageShadow: yellow-500
       imageOrderDesktop: first
