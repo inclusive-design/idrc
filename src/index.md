@@ -21,6 +21,9 @@ sections:
         ### Consulting and training
 
         Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+      image: /images/what-we-do.jpg
+      imagePosition: top
+      imageAltText: ''
       backgroundColour: indigo-900
       borderColour: indigo-500
       textColour: white
@@ -39,6 +42,10 @@ sections:
         Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
 
         [See our current projects and tools](/projects-and-tools/)
+      image: /images/projects-and-tools.jpg
+      imagePosition: bottom
+      imageAltText: ''
+      imageShadow: red-500
       backgroundColour: 
       borderColour: indigo-500
       textColour:
@@ -73,6 +80,10 @@ sections:
 
 
         [**Post-Doctoral Research Fellow**](https://trr.tbe.taleo.net/trr01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=1811)
+      image: /images/job-postings.jpg
+      imagePosition: top
+      imageAltText: ''
+      imageShadow: yellow-500
       backgroundColour: 
       borderColour: indigo-500
       textColour:

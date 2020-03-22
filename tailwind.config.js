@@ -26,6 +26,11 @@ module.exports = {
 			serif: ['Merriweather'],
 			display: ['Work Sans'],
 			sans: ['Open Sans']
+		},
+		boxShadow: {
+			'indigo-500': '1.5rem 1.5rem #5A67D8',
+			'red-500': '1.5rem 1.5rem #F56565',
+			'yellow-500': '1.5rem 1.5rem #F6E05E'
 		}
 	},
 	variants: {},
