@@ -1,5 +1,6 @@
 ---
 title: Current projects and tools
+layout: 'layouts/projects.njk'
 permalink: /projects-and-tools/
 headerbgcolor: indigo-900
 headerbordercolor: indigo-500
