@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+#what-is-inclusive-design {
+  @apply pt-48 relative;
+
+  &::before {
+    background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 255, 255, 0) 100%) no-repeat 50% 50% / 100% 100%;
+    content: "";
+    height: 40rem;
+    mask-image: url('../images/scatterplot.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    top: -12rem;
+    width: 40rem;
+
+    @apply block absolute;
+  }
+}
