@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  @apply underline font-display;
+  @apply underline font-display inline-block;
 }
 
 a:hover,
@@ -18,8 +18,32 @@ a:focus {
   @apply bg-yellow-500 outline-none;
 }
 
-a:visited {
+a:visited,
+a:visited .underline {
   text-decoration-color: #f6e05e;
+}
+
+main a:not([rel="external"])::after {
+  background-color: currentColor;
+  content: "";
+  mask-image: url('../images/internal.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 7px 12px;
+
+  @apply pl-4 inline ml-0 -mb-1;
+}
+
+a[rel~="external"]::after,
+a[href^="mailto:"]::after {
+  background-color: currentColor;
+  content: "";
+  mask-image: url('../images/external.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 0.875em;
+
+  @apply pl-4 inline ml-1 -mb-1;
 }
 
 .bg-indigo-900 {
@@ -28,7 +52,8 @@ a:visited {
     @apply bg-indigo-500;
   }
 
-  a:visited {
+  a:visited,
+  a:visited .underline {
     text-decoration-color: #3544d0;
   }
 }
@@ -41,7 +66,8 @@ a:visited {
     @apply bg-white;
   }
 
-  a:visited {
+  a:visited,
+  a:visited .underline {
     text-decoration-color: #fff;
   }
 }

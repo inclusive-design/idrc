@@ -1,5 +1,5 @@
-nav [aria-expanded="true"] + ul {
-  @apply flex;
+nav [aria-expanded="true"] + .menu {
+  @apply block;
 }
 
 nav a {

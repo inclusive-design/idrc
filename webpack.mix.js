@@ -20,7 +20,8 @@ if (mix.inProduction()) {
 			'h3',
 			'h4',
 			'.h3',
-			'.h4'
+			'.h4',
+			'#what-is-inclusive-design'
 		],
 		whitelistPatterns: [
 			/black$/,
