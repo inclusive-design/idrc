@@ -1,6 +1,5 @@
 const jsdom = require('@tbranyen/jsdom');
 const {JSDOM} = jsdom;
-// Restore? const slugify = require('slugify');
 
 module.exports = (value, outputPath) => {
 	if (outputPath.endsWith('.html')) {
@@ -12,9 +11,9 @@ module.exports = (value, outputPath) => {
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
-		// Restore? const headings = [
-		// 	...document.querySelectorAll('main article h2')
-		// ];
+		const subheads = [
+			...document.querySelectorAll('.page--generic main .section--full h3')
+		];
 
 		if (images.length > 0) {
 			images.forEach(image => {
@@ -22,50 +21,47 @@ module.exports = (value, outputPath) => {
 			});
 		}
 
-		// Restore? if (headings.length > 0) {
-		// 	// Loop each heading and add a little anchor and an ID to each one
-		// 	headings.forEach(heading => {
-		// 		const headingSlug = slugify(heading.textContent.toLowerCase());
-		// 		heading.setAttribute('id', `${headingSlug}`);
+		if (subheads.length > 0) {
+			// Loop each heading and add a little anchor and an ID to each one
+			let i = 1;
+			subheads.forEach(heading => {
+				// Function to create a node list
+				// of the content between this <h2> and the next
+				const getContent = element => {
+					const elems = [];
+					while (element.nextElementSibling && element.nextElementSibling.tagName !== 'H3') {
+						elems.push(element.nextElementSibling);
+						element = element.nextElementSibling;
+					}
 
-		// 		// Function to create a node list
-		// 		// of the content between this <h2> and the next
-		// 		const getContent = element => {
-		// 			const elems = [];
-		// 			while (element.nextElementSibling && element.nextElementSibling.tagName !== 'H2') {
-		// 				elems.push(element.nextElementSibling);
-		// 				element = element.nextElementSibling;
-		// 			}
+					// Delete the old versions of the content nodes
+					elems.forEach(node => {
+						node.remove();
+					});
 
-		// 			// Delete the old versions of the content nodes
-		// 			elems.forEach(node => {
-		// 				node.remove();
-		// 			});
+					return elems;
+				};
 
-		// 			return elems;
-		// 		};
+				const contents = getContent(heading);
 
-		// 		const contents = getContent(heading);
+				const wrapper = document.createElement('div');
 
-		// 		const wrapper = document.createElement('section');
-		// 		wrapper.setAttribute('aria-labelledby', headingSlug);
+				const padding = i % 2 === 0 ? 'lg:pl-6' : 'lg:pr-6';
 
-		// 		const container = document.createElement('div');
-		// 		container.className = 'container px-6 mx-auto';
+				wrapper.className = `mt-6 lg:w-1/2 lg:float-left ${padding}`;
 
-		// 		wrapper.append(container);
+				// Add each element of `contents` to `wrapper`
+				contents.forEach(node => {
+					wrapper.append(node);
+				});
 
-		// 		// Add each element of `contents` to `wrapper`
-		// 		contents.forEach(node => {
-		// 			container.append(node);
-		// 		});
-
-		// 		// Add the wrapped content back into the DOM
-		// 		// after the heading
-		// 		heading.parentNode.insertBefore(wrapper, heading.nextElementSibling);
-		// 		container.prepend(heading);
-		// 	});
-		// }
+				// Add the wrapped content back into the DOM
+				// after the heading
+				heading.parentNode.insertBefore(wrapper, heading.nextElementSibling);
+				wrapper.prepend(heading);
+				i++;
+			});
+		}
 
 		return '<!DOCTYPE html>\r\n' + document.documentElement.outerHTML;
 	}

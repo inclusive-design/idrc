@@ -10,7 +10,7 @@
         {% block head %}
         {% endblock %}
     </head>
-    <body class="flex flex-col justify-start min-h-screen">
+    <body class="{{ pageType }} flex flex-col justify-start min-h-screen">
         {% include "partials/global/header.njk" %}
         <main>
             {% block content %}

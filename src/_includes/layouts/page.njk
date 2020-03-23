@@ -1,5 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
+{% set pageType = 'page--generic' %}
+
 {% block content %}
     <article class="container mx-auto">
         <header class="py-20 bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} text-{{ headertextcolor if headertextcolor else 'black' }}">
@@ -19,7 +21,7 @@
                 </figure>
                 {% endif %}
                 <div class="{{ 'lg:w-1/2' if section.image else 'lg:w-full' }} section__content lg:order-1">
-                    <span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColour if section.borderColour else 'black' }}"></span>
+                    {% if section.borderColour %}<span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColour }}"></span>{% endif %}
                     <h2>{{ section.title }}</h2>
                     {{ section.content | markdown | safe }}
                 </div>
