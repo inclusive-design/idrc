@@ -25,10 +25,15 @@ h3,
 
 h4,
 .h4 {
-  @apply font-display font-semibold;
+  @apply text-xl font-display font-semibold;
 }
 
 p + * {
+  @apply mt-6;
+}
+
+ul + *,
+ol + * {
   @apply mt-6;
 }
 
@@ -45,14 +50,15 @@ h4 + p {
   @apply mt-0;
 }
 
-ul + h3 {
-  @apply mt-8;
-}
-
 .h3 + p {
   @apply mt-1;
 }
 
 .h4 + p {
   @apply mt-0;
+}
+
+* + ul,
+* + ol {
+  @apply mt-6;
 }

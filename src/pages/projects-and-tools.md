@@ -12,8 +12,10 @@ sections:
     - title: Projects
       content: ''
       desktopWidth: full
+      borderColour: indigo-500
     - title: Tools
       content: ''
       desktopWidth: full
+      borderColour: indigo-500
 ---
 ***
