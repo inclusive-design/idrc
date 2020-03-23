@@ -24,7 +24,7 @@
                     {% if section.title == 'Projects' %}
                     <div class="lg:flex lg:flex-row lg:flex-wrap">
                         {% for item in projects %}
-                        <div class="mt-8 lg:w-1/2">
+                        <div class="mt-8 lg:w-1/2 {{ ' lg:pl-6' if loop.index % 2 == 0 else ' lg:pr-6' }}">
                             <h3>{{ item.name }}{{ " (" + item.shortName + ")" if item.shortName }}</h3>
                             {{ item.description | markdown | safe }}
                             {% if item.tags %}
