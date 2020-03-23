@@ -12,7 +12,7 @@ module.exports = (value, outputPath) => {
 			...document.querySelectorAll('main article img')
 		];
 		const subheads = [
-			...document.querySelectorAll('main .section h3')
+			...document.querySelectorAll('.page--generic main .section--full h3')
 		];
 
 		if (images.length > 0) {

@@ -18,6 +18,22 @@ a:focus {
   @apply bg-yellow-500 outline-none;
 }
 
+.bg-indigo-900 {
+  a:hover,
+  a:focus {
+    @apply bg-indigo-500;
+  }
+}
+
+.bg-blue-500,
+.bg-red-500,
+.bg-yellow-500 {
+  a:hover,
+  a:focus {
+    @apply bg-white;
+  }
+}
+
 blockquote {
   @apply pl-8;
 }

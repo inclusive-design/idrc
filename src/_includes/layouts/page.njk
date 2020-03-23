@@ -1,5 +1,7 @@
 {% extends 'layouts/base.njk' %}
 
+{% set pageType = 'page--generic' %}
+
 {% block content %}
     <article class="container mx-auto">
         <header class="py-20 bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} text-{{ headertextcolor if headertextcolor else 'black' }}">

@@ -9,8 +9,8 @@
   src:
     local('Merriweather Black'),
     local('Merriweather-Black'),
-    url('../fonts/merriweather-v21-latin-900.woff2') format('woff2'),
-    url('../fonts/merriweather-v21-latin-900.woff') format('woff');
+    url('../fonts/merriweather-900.woff2') format('woff2'),
+    url('../fonts/merriweather-900.woff') format('woff');
 }
 
 @font-face {
@@ -19,8 +19,8 @@
   font-weight: 500;
   src:
     local(''),
-    url('../fonts/work-sans-v6-latin-500.woff2') format('woff2'),
-    url('../fonts/work-sans-v6-latin-500.woff') format('woff');
+    url('../fonts/work-sans-500.woff2') format('woff2'),
+    url('../fonts/work-sans-500.woff') format('woff');
 }
 
 @font-face {
@@ -29,8 +29,8 @@
   font-weight: 600;
   src:
     local(''),
-    url('../fonts/work-sans-v6-latin-600.woff2') format('woff2'),
-    url('../fonts/work-sans-v6-latin-600.woff') format('woff');
+    url('../fonts/work-sans-600.woff2') format('woff2'),
+    url('../fonts/work-sans-600.woff') format('woff');
 }
 
 @font-face {
@@ -40,8 +40,8 @@
   src:
     local('Open Sans Regular'),
     local('OpenSans-Regular'),
-    url('../fonts/open-sans-v17-latin-regular.woff2') format('woff2'),
-    url('../fonts/open-sans-v17-latin-regular.woff') format('woff');
+    url('../fonts/open-sans-400.woff2') format('woff2'),
+    url('../fonts/open-sans-400.woff') format('woff');
 }
 
 @font-face {
@@ -51,8 +51,8 @@
   src:
     local('Open Sans Italic'),
     local('OpenSans-Italic'),
-    url('../fonts/open-sans-v17-latin-italic.woff2') format('woff2'),
-    url('../fonts/open-sans-v17-latin-italic.woff') format('woff');
+    url('../fonts/open-sans-italic.woff2') format('woff2'),
+    url('../fonts/open-sans-italic.woff') format('woff');
 }
 
 @font-face {
@@ -62,6 +62,6 @@
   src:
     local('Open Sans Bold'),
     local('OpenSans-Bold'),
-    url('../fonts/open-sans-v17-latin-700.woff2') format('woff2'),
-    url('../fonts/open-sans-v17-latin-700.woff') format('woff');
+    url('../fonts/open-sans-700.woff2') format('woff2'),
+    url('../fonts/open-sans-700.woff') format('woff');
 }
