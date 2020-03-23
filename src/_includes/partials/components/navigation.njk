@@ -5,7 +5,7 @@
     <ul class="absolute left-0 flex-col hidden px-6 mt-6 list-none bg-inherit lg:px-0 lg:mt-0 lg:relative lg:flex lg:flex-row">
     {%- for entry in navPages %}
     <li class="py-2 lg:py-0 lg:pr-4">
-        <a {% if entry.url == page.url %}aria-current="page" {% endif %}href="{{ entry.url | url }}">{{ entry.title }}</a>
+        <a {% if entry.url == page.url %}aria-current="page" class="border-b-2 border-{{ headertextcolor if headertextcolor else 'black' }}" {% endif %}href="{{ entry.url | url }}">{{ entry.title }}</a>
     </li>
     {%- endfor %}
     </ul>
