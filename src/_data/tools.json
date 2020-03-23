@@ -2,22 +2,23 @@
     {
         "name": "UI Options",
         "shortName": false,
-        "description": "TODO.",
+        "description": "Adapting the user interface to meet diverse and variable personal needs.",
         "tags": [],
-        "link": "#"
-    },
-    {
-        "name": "Morphic",
-        "shortName": false,
-        "description": "TODO.",
-        "tags": [],
-        "link": "#"
+        "link": "https://floeproject.org/ui-options.html"
     },
     {
         "name": "Storytelling Tool",
         "shortName": false,
-        "description": "TODO.",
+        "description": "Learning from our differences and connecting through stories.",
         "tags": [],
-        "link": "#"
+        "link": "https://stories.floeproject.org/"
+    },
+    {
+        "name": "Morphic",
+        "shortName": false,
+        "description": "Making computers easier to use through portable preferences.",
+        "tags": [],
+        "link": "https://morphic.world/"
     }
+    
 ]

@@ -5,8 +5,3 @@ nav [aria-expanded="true"] + ul {
 nav a {
   @apply font-medium no-underline;
 }
-
-nav a:hover,
-nav a:focus {
-  box-shadow: 0 0 0 yellow;
-}

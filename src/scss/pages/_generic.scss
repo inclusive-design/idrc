@@ -1,26 +1,35 @@
 // -----------------------------------------------------------------------------
 // This file contains generic page styles.
 // -----------------------------------------------------------------------------
+
+article header {
+  @apply w-screen transform -translate-x-1/2;
+
+  margin-left: 50%;
+}
+
+.section--full {
+  @apply mx-auto w-screen transform -translate-x-1/2;
+
+  margin-left: 50%;
+}
+
+.section--full-bleed {
+  @apply w-screen transform -translate-x-1/2;
+
+  margin-left: 50%;
+}
+
 @media (min-width: 1024px) {
-  article header {
-    @apply w-screen transform -translate-x-1/2;
-
-    margin-left: 50%;
-  }
-
   .section--half {
-    @apply max-w-screen-sm w-full mx-auto inline-block;
+    @apply max-w-screen-sm mx-auto inline-block;
+
+    width: 50%;
   }
+}
 
-  .section--full {
-    @apply mx-auto w-screen transform -translate-x-1/2;
-
-    margin-left: 50%;
-  }
-
-  .section--full-bleed {
-    @apply w-screen transform -translate-x-1/2;
-
-    margin-left: 50%;
+@media (min-width: 1280px) {
+  .section--half {
+    @apply w-full;
   }
 }

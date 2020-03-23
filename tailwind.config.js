@@ -7,7 +7,7 @@ module.exports = {
 				indigo: {
 					100: '#F8FBFF',
 					200: '#E4F9FF',
-					500: '#5A67D8',
+					500: '#3544D0',
 					900: '#3C366B'
 				},
 				logo: '#00A0CC',
@@ -32,7 +32,8 @@ module.exports = {
 		boxShadow: {
 			'indigo-500': '1.5rem 1.5rem #5A67D8',
 			'red-500': '1.5rem 1.5rem #F56565',
-			'yellow-500': '1.5rem 1.5rem #F6E05E'
+			'yellow-500': '1.5rem 1.5rem #F6E05E',
+			link: '0.5em 0.5em #F6E05E'
 		}
 	},
 	variants: {},

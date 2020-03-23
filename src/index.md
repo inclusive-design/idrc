@@ -2,7 +2,10 @@
 title: Inclusive Design Research Centre
 layout: layouts/page.njk
 intro: >
-  An international community of open source developers, designers, researchers, advocates, and volunteers who work together to **ensure that emerging technology and practices are designed inclusively**.
+  An international community of open source developers, designers, researchers, educators and co-designers who work together to **proactively ensure that emerging technology and practices are designed inclusively**. 
+
+
+  Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates the [Inclusive Design Institute](https://inclusivedesign.ca/). Both were founded by Dr. Jutta Treviranus with the help of her team and community.
 eleventyNavigation:
     key: Home
     order: 1
@@ -11,19 +14,19 @@ sections:
       content: >-
         ### Research and development
 
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        The IDRC leads and partners in collaborative, multi-sector, applied research networks that  proactively prevent barriers and promote greater inclusion.
 
         ### Tools and frameworks
 
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        The IDRC iteratively co-designs and openly shares components and systems that support inclusive design.
 
         ### Policy and standards
 
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        The IDRC develops policies, regulations, specifications and standards to promote greater inclusion.
 
         ### Consulting and training
 
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        The IDRC offers consulting services and training in digital accessibility and inclusive design.
       image: /images/what-we-do.jpg
       image2x: /images/what-we-do@2x.jpg
       imageOrder: start
@@ -35,7 +38,7 @@ sections:
       desktopWidth: full-bleed
     - title: What is inclusive design?
       content: >-
-        Inclusive Design considers the full range of human diversity in respect to ability, language, culture, gender, age, and other forms of human difference.
+        Inclusive Design considers the full range of human diversity with respect to ability, language, culture, gender, age, and other forms of human difference.
 
         ### Learn more
 
@@ -46,9 +49,7 @@ sections:
       desktopWidth: full-bleed
     - title: Current projects and tools
       content: >-
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
-
-        [See our current projects and tools](/projects-and-tools/)
+        [See current projects and available open tools](/projects-and-tools/)
       image: /images/projects-and-tools.jpg
       image2x: /images/projects-and-tools@2x.jpg
       imageOrder: end
@@ -63,11 +64,11 @@ sections:
       content: >-
         ### [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
 
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        An open, evolving guide to the process of inclusive design. 
 
         ### [Inclusive Learning Design Handbook](https://handbook.floeproject.org/)
 
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        A guide for educators, learners and policy makers working in education.
       backgroundColour: 
       borderColour: red-500
       textColour:
@@ -103,9 +104,8 @@ sections:
       textColour:
       desktopWidth: full
     - title: Get involved
-      link: https://wiki.fluidproject.org/
       content: >-
-        Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+        [Find out how you can get involved in our work](https://wiki.fluidproject.org/)
       backgroundColour: indigo-200
       borderColour: 
       textColour: black

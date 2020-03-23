@@ -13,6 +13,11 @@ a {
   @apply underline font-display;
 }
 
+a:hover,
+a:focus {
+  @apply bg-yellow-500 outline-none;
+}
+
 blockquote {
   @apply pl-8;
 }
