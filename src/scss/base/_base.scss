@@ -29,7 +29,7 @@ main a:not([rel="external"])::after {
   mask-image: url('../images/internal.svg');
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: 7px 12px;
+  mask-size: 1.5em;
 
   @apply pl-4 inline ml-0 -mb-1;
 }
@@ -41,7 +41,7 @@ a[href^="mailto:"]::after {
   mask-image: url('../images/external.svg');
   mask-position: center;
   mask-repeat: no-repeat;
-  mask-size: 0.875em;
+  mask-size: 1.5em;
 
   @apply pl-4 inline ml-1 -mb-1;
 }
