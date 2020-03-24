@@ -6,8 +6,8 @@ site_url: "https://idrc.netlify.com"
 media_folder: "src/images"
 public_folder: "/images"
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "home"
+    label: "Home"
     files:
       - name: "home"
         label: "Homepage"
@@ -15,40 +15,210 @@ collections:
         file: "src/index.md"
         slug: "{{slug}}"
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.njk"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: true}
               - {label: "Content", name: "content", widget: "markdown", required: true}
-              - {label: "Text Colour", name: "textColour", widget: "string", required: false}
-              - {label: "Background Colour", name: "backgroundColour", widget: "string", required: false}
-              - {label: "Border Colour", name: "borderColour", widget: "string", required: false}
+              - label: "Text Colour"
+                name: "textColour"
+                widget: "select"
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Black", value: "black" }                
+                  - { label: "Indigo 100", value: "indigo-100" }
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Blue 500", value: "blue-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                  - { label: "Yellow 900", value: "yellow-900" }
+                default: ["black"]
+                required: false
+              - label: "Background Colour"
+                name: "backgroundColour"
+                widget: "select"
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Black", value: "black" }                
+                  - { label: "Indigo 100", value: "indigo-100" }
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Blue 500", value: "blue-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                  - { label: "Yellow 900", value: "yellow-900" }
+                default: ["indigo-100"]
+                required: false
+              - label: "Border Colour"
+                name: "borderColour"
+                widget: "select"
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Black", value: "black" }                
+                  - { label: "Indigo 100", value: "indigo-100" }
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Blue 500", value: "blue-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                  - { label: "Yellow 900", value: "yellow-900" }
+                default: ["indigo-500"]
+                required: false
               - {label: "Image", name: "image", widget: "string", required: false}
               - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
               - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
-              - {label: "Image Order", name: "imageOrder", widget: "string", required: false} # start or end
-              - {label: "Image Order (Desktop)", name: "imageOrderDesktop", widget: "string", required: false} # auto or swap
-              - {label: "Image Shadow", name: "imageShadow", widget: "string", required: false} # TODO: Figure out shadow options
-              - {label: "Desktop Width", name: "desktopWidth", widget: "string", required: false} # half, full, or full-bleed
-  - name: "generic_pages"
-    label: "Generic Pages"
+              - label: "Image Order"
+                name: "imageOrder"
+                widget: "select"
+                options:
+                  - { label: "Start", value: "start" }
+                  - { label: "End", value: "end" } 
+                default: ["start"]
+                required: false
+              - label: "Image Order (Desktop)"
+                name: "imageOrderDesktop"
+                widget: "select"
+                options:
+                  - { label: "Auto", value: "auto" }
+                  - { label: "Swap", value: "swap" } 
+                default: ["auto"]
+                required: false
+              - label: "Image Shadow"
+                name: "imageShadow"
+                widget: "select"
+                options:
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                default: ["indigo-500"]
+                required: false
+              - label: "Desktop Width"
+                name: "desktopWidth"
+                widget: "select"
+                options:
+                  - { label: "Half", value: "half" }
+                  - { label: "Full", value: "full" } 
+                  - { label: "Full Bleed", value: "full-bleed" }
+                default: ["full"]
+                required: false
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
     folder: "src/pages"
     slug: "{{slug}}"
-    preview_path: "pages/{{slug}}"
+    preview_path: "{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+      - label: "Layout"
+        name: "layout"
+        widget: "select"
+        options:
+          - { label: "Generic Page", value: "layouts/page.njk" }
+          - { label: "Projects and Tools", value: "layouts/projects.njk" }
+        default: ["layouts/page.njk"]
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Custom Permalink (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: true}
+          - {label: "Content", name: "content", widget: "markdown", required: true}
+          - label: "Text Colour"
+            name: "textColour"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["black"]
+            required: false
+          - label: "Background Colour"
+            name: "backgroundColour"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-100"]
+            required: false
+          - label: "Border Colour"
+            name: "borderColour"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-500"]
+            required: false
+          - {label: "Image", name: "image", widget: "string", required: false}
+          - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+          - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
+          - label: "Image Order"
+            name: "imageOrder"
+            widget: "select"
+            options:
+              - { label: "Start", value: "start" }
+              - { label: "End", value: "end" } 
+            default: ["start"]
+            required: false
+          - label: "Image Order (Desktop)"
+            name: "imageOrderDesktop"
+            widget: "select"
+            options:
+              - { label: "Auto", value: "auto" }
+              - { label: "Swap", value: "swap" } 
+            default: ["auto"]
+            required: false
+          - label: "Image Shadow"
+            name: "imageShadow"
+            widget: "select"
+            options:
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Yellow 500", value: "yellow-500" }
+            default: ["indigo-500"]
+            required: false
+          - label: "Desktop Width"
+            name: "desktopWidth"
+            widget: "select"
+            options:
+              - { label: "Half", value: "half" }
+              - { label: "Full", value: "full" } 
+              - { label: "Full Bleed", value: "full-bleed" }
+            default: ["full"]
+            required: false
   - label: "Globals"
     name: "globals"
     files:
@@ -57,7 +227,8 @@ collections:
         delete: false
         file: "src/_data/site.json"
         fields:
-          - {label: "Site Titl", name: "title", widget: "string"}
+          - {label: "Site Title", name: "title", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
-
-      
+          - {label: "Contact Email", name: "email", widget: "string"}
+          - {label: "Contact Phone", name: "phone", widget: "string"}
+          - {label: "Contact Fax", name: "fax", widget: "string"}
