@@ -50,7 +50,7 @@ mix.setPublicPath('./src/_includes/static')
 
 if (mix.inProduction()) {
 	mix.purgeCss({
-		content: ['./src/_includes/**/*.njk', './src/_includes/svg/*.svg'],
+		content: ['./src/_includes/**/*.njk', './src/_includes/svg/*.svg', './src/transforms/*.js'],
 		whitelist
 	});
 }
