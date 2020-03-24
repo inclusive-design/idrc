@@ -20,6 +20,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - {label: "Intro", name: "intro", widget: "markdown", required: false}
           - label: "Sections"
             name: "sections"
@@ -123,6 +124,7 @@ collections:
           - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - label: "Header Background Colour"
             name: "headerbgcolor"
             widget: "select"
@@ -202,6 +204,7 @@ collections:
       - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
       - {label: "Intro", name: "intro", widget: "markdown", required: false}
       - label: "Header Background Colour"
         name: "headerbgcolor"
