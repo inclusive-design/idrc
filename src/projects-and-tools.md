@@ -1,10 +1,8 @@
 ---
-headertextColor: white
 headertextcolor: white
 layout: layouts/projects.njk
 headerbordercolor: indigo-500
 permalink: /projects-and-tools/
-
 title: Current projects and tools
 headerbgcolor: indigo-900
 projects:
