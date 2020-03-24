@@ -28,7 +28,7 @@ collections:
               - {label: "Title", name: "title", widget: "string", required: true}
               - {label: "Content", name: "content", widget: "markdown", required: true}
               - label: "Text Colour"
-                name: "textColour"
+                name: "textColor"
                 widget: "select"
                 options:
                   - { label: "White", value: "white" }
@@ -44,7 +44,7 @@ collections:
                 default: ["black"]
                 required: false
               - label: "Background Colour"
-                name: "backgroundColour"
+                name: "backgroundColor"
                 widget: "select"
                 options:
                   - { label: "White", value: "white" }
@@ -60,7 +60,7 @@ collections:
                 default: ["indigo-100"]
                 required: false
               - label: "Border Colour"
-                name: "borderColour"
+                name: "borderColor"
                 widget: "select"
                 options:
                   - { label: "White", value: "white" }
@@ -156,7 +156,7 @@ collections:
             default: ["indigo-100"]
             required: true
           - label: "Header Text Colour"
-            name: "headertextcolour"
+            name: "headertextcolor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -236,7 +236,7 @@ collections:
         default: ["indigo-100"]
         required: true
       - label: "Header Text Colour"
-        name: "headertextcolour"
+        name: "headertextcolor"
         widget: "select"
         options:
           - { label: "White", value: "white" }
@@ -258,7 +258,7 @@ collections:
           - {label: "Title", name: "title", widget: "string", required: true}
           - {label: "Content", name: "content", widget: "markdown", required: true}
           - label: "Text Colour"
-            name: "textColour"
+            name: "textColor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -274,7 +274,7 @@ collections:
             default: ["black"]
             required: false
           - label: "Background Colour"
-            name: "backgroundColour"
+            name: "backgroundColor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -290,7 +290,7 @@ collections:
             default: ["indigo-100"]
             required: false
           - label: "Border Colour"
-            name: "borderColour"
+            name: "borderColor"
             widget: "select"
             options:
               - { label: "White", value: "white" }

@@ -32,9 +32,9 @@ sections:
       imageOrder: start
       imageAltText: ''
       imageOrderDesktop: swap
-      backgroundColour: indigo-900
-      borderColour: indigo-500
-      textColour: white
+      backgroundColor: indigo-900
+      borderColor: indigo-500
+      textColor: white
       desktopWidth: full-bleed
     - title: What is inclusive design?
       content: >-
@@ -43,9 +43,9 @@ sections:
         ### Learn more
 
         [The three dimensions of inclusive design](https://medium.com/fwd50/the-three-dimensions-of-inclusive-design-part-one-103cad1ffdc2)
-      backgroundColour: blue-500
-      borderColour: white
-      textColour: black
+      backgroundColor: blue-500
+      borderColor: white
+      textColor: black
       desktopWidth: full-bleed
     - title: Current projects and tools
       content: >-
@@ -56,9 +56,9 @@ sections:
       imageAltText: ''
       imageShadow: red-500
       imageOrderDesktop: swap
-      backgroundColour: 
-      borderColour: indigo-500
-      textColour:
+      backgroundColor: 
+      borderColor: indigo-500
+      textColor:
       desktopWidth: full
     - title: Our resources
       content: >-
@@ -69,9 +69,9 @@ sections:
         ### [Inclusive Learning Design Handbook](https://handbook.floeproject.org/)
 
         A guide for educators, learners and policy makers working in education.
-      backgroundColour: 
-      borderColour: red-500
-      textColour:
+      backgroundColor: 
+      borderColor: red-500
+      textColor:
       desktopWidth: half
     - title: Services we offer
       content: >-
@@ -82,9 +82,9 @@ sections:
         ### [Vision Technology Service](/vision-technology-service/)
 
         Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
-      backgroundColour: 
-      borderColour:  blue-500
-      textColour:
+      backgroundColor: 
+      borderColor:  blue-500
+      textColor:
       desktopWidth: half
     - title: Job postings
       content: >-
@@ -99,16 +99,16 @@ sections:
       imageAltText: ''
       imageShadow: yellow-500
       imageOrderDesktop: first
-      backgroundColour: 
-      borderColour: indigo-500
-      textColour:
+      backgroundColor: 
+      borderColor: indigo-500
+      textColor:
       desktopWidth: full
     - title: Get involved
       content: >-
         [Find out how you can get involved in our work](https://wiki.fluidproject.org/)
-      backgroundColour: indigo-200
-      borderColour: 
-      textColour: black
+      backgroundColor: indigo-200
+      borderColor: 
+      textColor: black
       desktopWidth: full-bleed
       desktopAlignment: center
 ---

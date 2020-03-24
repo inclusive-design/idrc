@@ -1,18 +1,10 @@
 ---
-headertextcolour: white
+headertextColor: white
 headertextcolor: white
 layout: layouts/projects.njk
 headerbordercolor: indigo-500
 permalink: /projects-and-tools/
-sections:
-  - title: Projects
-    content: ''
-    desktopWidth: full
-    borderColour: indigo-500
-  - title: Tools
-    content: ''
-    desktopWidth: full
-    borderColour: indigo-500
+
 title: Current projects and tools
 headerbgcolor: indigo-900
 projects:

@@ -9,17 +9,17 @@ eleventyNavigation:
     order: 3
 sections:
     - title: About us
-      borderColour: yellow-500
+      borderColor: yellow-500
       content: >
         The Vision Technology Service is a Regional Assessment Centre for High Technology Vision Aids for the [Assistive Devices Program](https://www.ontario.ca/page/assistive-devices-program), a funding program run by the Ontario Ministry of Health and Long-Term Care.
       desktopWidth: half
     - title: Who's eligible
-      borderColour: yellow-500
+      borderColor: yellow-500
       content: >
         All Ontario residents with long term visual impairment that is significantly impairing their ability to perform common, regular, every day, age-related visual tasks (i.e. corrected vision in the range of 20/70).
       desktopWidth: half
     - title: Services
-      borderColour: yellow-500
+      borderColor: yellow-500
       content: >
         ### Assistive devices program
         
@@ -67,7 +67,7 @@ sections:
         3. Email or fax it back to us at [vts@ocadu.ca](mailto:vts@ocadu.ca) or FAX NUMBER
       desktopWidth: full
     - title: Join our mailing list to stay updated
-      borderColour: yellow-500
+      borderColor: yellow-500
       content: >
         Join our mailing list for community announcement about things such as:
 
@@ -81,8 +81,8 @@ sections:
         [Join our mailing list](#)
       desktopWidth: full
     - title: Contact Vision Technology Service
-      borderColour: 
-      backgroundColour: indigo-200
+      borderColor: 
+      backgroundColor: indigo-200
       content: >
         You can contact Vision Technology Services through email at [vts@ocadu.ca](mailto:vts@ocadu.ca), or by telephone at (416) 977-6000 ext 3967.
       desktopWidth: full-bleed
