@@ -121,6 +121,54 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - label: "Header Background Colour"
+            name: "headerbgcolor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-100"]
+            required: true
+          - label: "Header Border Colour"
+            name: "headerbg=ordercolor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-100"]
+            required: true
+          - label: "Header Text Colour"
+            name: "headertextcolour"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["black"]
+            required: true
           - label: "Sections"
             name: "sections"
             widget: "list"
@@ -224,6 +272,54 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - label: "Header Background Colour"
+        name: "headerbgcolor"
+        widget: "select"
+        options:
+          - { label: "White", value: "white" }
+          - { label: "Black", value: "black" }                
+          - { label: "Indigo 100", value: "indigo-100" }
+          - { label: "Indigo 500", value: "indigo-500" }
+          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Blue 500", value: "blue-500" }
+          - { label: "Red 500", value: "red-500" }
+          - { label: "Red 900", value: "red-900" }
+          - { label: "Yellow 500", value: "yellow-500" }
+          - { label: "Yellow 900", value: "yellow-900" }
+        default: ["indigo-100"]
+        required: true
+      - label: "Header Border Colour"
+        name: "headerbg=ordercolor"
+        widget: "select"
+        options:
+          - { label: "White", value: "white" }
+          - { label: "Black", value: "black" }                
+          - { label: "Indigo 100", value: "indigo-100" }
+          - { label: "Indigo 500", value: "indigo-500" }
+          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Blue 500", value: "blue-500" }
+          - { label: "Red 500", value: "red-500" }
+          - { label: "Red 900", value: "red-900" }
+          - { label: "Yellow 500", value: "yellow-500" }
+          - { label: "Yellow 900", value: "yellow-900" }
+        default: ["indigo-100"]
+        required: true
+      - label: "Header Text Colour"
+        name: "headertextcolour"
+        widget: "select"
+        options:
+          - { label: "White", value: "white" }
+          - { label: "Black", value: "black" }                
+          - { label: "Indigo 100", value: "indigo-100" }
+          - { label: "Indigo 500", value: "indigo-500" }
+          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Blue 500", value: "blue-500" }
+          - { label: "Red 500", value: "red-500" }
+          - { label: "Red 900", value: "red-900" }
+          - { label: "Yellow 500", value: "yellow-500" }
+          - { label: "Yellow 900", value: "yellow-900" }
+        default: ["black"]
+        required: true
       - label: "Sections"
         name: "sections"
         widget: "list"
