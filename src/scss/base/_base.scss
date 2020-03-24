@@ -23,27 +23,29 @@ a:visited .underline {
   text-decoration-color: #f6e05e;
 }
 
-main a:not([rel="external"])::after {
-  background-color: currentColor;
-  content: "";
-  mask-image: url('../images/internal.svg');
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 1.5em;
+@supports (mask-image: url('dot.svg')) {
+  main a:not([rel="external"])::after {
+    background-color: currentColor;
+    content: "";
+    mask-image: url('../images/internal.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
 
-  @apply pl-4 inline ml-0 -mb-1;
-}
+    @apply pl-4 inline ml-0 -mb-1;
+  }
 
-a[rel~="external"]::after,
-a[href^="mailto:"]::after {
-  background-color: currentColor;
-  content: "";
-  mask-image: url('../images/external.svg');
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 1.5em;
+  a[rel~="external"]::after,
+  a[href^="mailto:"]::after {
+    background-color: currentColor;
+    content: "";
+    mask-image: url('../images/external.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
 
-  @apply pl-4 inline ml-1 -mb-1;
+    @apply pl-4 inline ml-1 -mb-1;
+  }
 }
 
 .bg-indigo-900 {
