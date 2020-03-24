@@ -21,6 +21,15 @@
             {% endblock content %}
         </main>
         {% include "partials/global/footer.njk" %}
+        {% if global.environment !== 'development' %}
+        <script>
+            if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+            }
+        </script>
+        {% endif %}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
     </body>
 </html>

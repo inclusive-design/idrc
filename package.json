@@ -17,7 +17,7 @@
     "lint": "run-s lint:*",
     "test": "run-s lint",
     "watch:assets": "cross-env NODE_ENV=development run-s \"mix -- --watch\"",
-    "watch:site": "eleventy --serve --port=3000 --config=eleventy.config.js"
+    "watch:site": "ELEVENTY_ENV=development eleventy --serve --port=3000 --config=eleventy.config.js"
   },
   "repository": {
     "type": "git",
