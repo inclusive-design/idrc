@@ -36,11 +36,11 @@ sections:
 
         #### Access this program
         
-        1. Download the [referral form](#)
+        1. Download the [referral form](https://idrc.ocadu.ca/images/referral-form-2--Sept-2016.doc)
         
         2. Bring it to your eye doctor to fill out
         
-        3. Email or fax it back to us at [vts@ocadu.ca](mailto:vts@ocadu.ca) or FAX NUMBER
+        3. Email or fax it back to us at [vts@ocadu.ca](mailto:vts@ocadu.ca) or 416-977-9844
 
         ### Employment accomodation services
 
@@ -60,11 +60,11 @@ sections:
 
         #### Access this program
 
-        1. Download the [referral form](#)
+        1. Download the [referral form](https://idrc.ocadu.ca/images/OCADU-EAS-Referral.docx)
 
         2. Bring it to your eye doctor to fill out
 
-        3. Email or fax it back to us at [vts@ocadu.ca](mailto:vts@ocadu.ca) or FAX NUMBER
+        3. Email or fax it back to us at [vts@ocadu.ca](mailto:vts@ocadu.ca) or 416-977-9844
       desktopWidth: full
     - title: Join our mailing list to stay updated
       borderColor: yellow-500
@@ -78,7 +78,7 @@ sections:
         - New services and opportunities
         
 
-        [Join our mailing list](#)
+        [Join our mailing list](mailto:vts@ocadu.ca?subject=Mailing list&body=Hi, please add me to the Vision Technology Services mailing list.)
       desktopWidth: full
     - title: Contact Vision Technology Service
       borderColor: 
