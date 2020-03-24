@@ -1,6 +1,7 @@
 {
     "name": "Inclusive Design Research Centre",
-    "url": "https://idrc.ocadu.ca",
+    "description": "An international community of open source developers, designers, researchers, educators and co-designers who work together to proactively ensure that emerging technology and practices are designed inclusively.",
+    "url": "https://idrc.netlify.com",
     "email": "idrc@ocadu.ca",
     "phone": "(416) 977-6000 #3968",
     "fax": "(416) 977-9844)",

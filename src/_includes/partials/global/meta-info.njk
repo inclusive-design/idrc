@@ -12,6 +12,8 @@
 	
 {% if metaDesc %}
     {% set pageDesc = metaDesc %}
+{% else %}
+    {% set pageDesc = site.description %}
 {% endif %}
 	
 <title>{{ pageTitle }}</title>
