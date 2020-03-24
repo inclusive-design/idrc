@@ -178,7 +178,7 @@ collections:
               - {label: "Short Name", name: "shortName", widget: "string", required: false}
               - {label: "Description", name: "description", widget: "markdown", required: true}
               - {label: "Tags", name: "tags", widget: "list", required: false}
-              - {label: "Link", name: "link", widget: "url", required: true}
+              - {label: "Link", name: "link", widget: "string", required: true}
           - label: "Tools"
             name: "tools"
             widget: "list"
