@@ -10,8 +10,33 @@ const Page = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/page.njk"
+		context={({ title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+			title,
+			intro,
+			sections,
+			headerbgcolor,
+			headertextcolor,
+			headerbordercolor
+		})}
+	/>
+);
+
+const ProjectsAndTools = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/projects.njk"
+		context={({ title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+			title,
+			intro,
+			projects,
+			tools,
+			headerbgcolor,
+			headertextcolor,
+			headerbordercolor
+		})}
 	/>
 );
 
 CMS.registerPreviewTemplate('home', Page);
+CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('pages', Page);
