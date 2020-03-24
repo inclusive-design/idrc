@@ -20,6 +20,7 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false}
           - label: "Sections"
             name: "sections"
             widget: "list"
@@ -169,97 +170,24 @@ collections:
               - { label: "Yellow 900", value: "yellow-900" }
             default: ["black"]
             required: true
-          - label: "Sections"
-            name: "sections"
+          - label: "Projects"
+            name: "projects"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string", required: true}
-              - {label: "Content", name: "content", widget: "markdown", required: true}
-              - label: "Text Colour"
-                name: "textColour"
-                widget: "select"
-                options:
-                  - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }                
-                  - { label: "Indigo 100", value: "indigo-100" }
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 900", value: "indigo-900" }
-                  - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Red 900", value: "red-900" }
-                  - { label: "Yellow 500", value: "yellow-500" }
-                  - { label: "Yellow 900", value: "yellow-900" }
-                default: ["black"]
-                required: false
-              - label: "Background Colour"
-                name: "backgroundColour"
-                widget: "select"
-                options:
-                  - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }                
-                  - { label: "Indigo 100", value: "indigo-100" }
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 900", value: "indigo-900" }
-                  - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Red 900", value: "red-900" }
-                  - { label: "Yellow 500", value: "yellow-500" }
-                  - { label: "Yellow 900", value: "yellow-900" }
-                default: ["indigo-100"]
-                required: false
-              - label: "Border Colour"
-                name: "borderColour"
-                widget: "select"
-                options:
-                  - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }                
-                  - { label: "Indigo 100", value: "indigo-100" }
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 900", value: "indigo-900" }
-                  - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Red 900", value: "red-900" }
-                  - { label: "Yellow 500", value: "yellow-500" }
-                  - { label: "Yellow 900", value: "yellow-900" }
-                default: ["indigo-500"]
-                required: false
-              - {label: "Image", name: "image", widget: "string", required: false}
-              - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
-              - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
-              - label: "Image Order"
-                name: "imageOrder"
-                widget: "select"
-                options:
-                  - { label: "Start", value: "start" }
-                  - { label: "End", value: "end" } 
-                default: ["start"]
-                required: false
-              - label: "Image Order (Desktop)"
-                name: "imageOrderDesktop"
-                widget: "select"
-                options:
-                  - { label: "Auto", value: "auto" }
-                  - { label: "Swap", value: "swap" } 
-                default: ["auto"]
-                required: false
-              - label: "Image Shadow"
-                name: "imageShadow"
-                widget: "select"
-                options:
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Yellow 500", value: "yellow-500" }
-                default: ["indigo-500"]
-                required: false
-              - label: "Desktop Width"
-                name: "desktopWidth"
-                widget: "select"
-                options:
-                  - { label: "Half", value: "half" }
-                  - { label: "Full", value: "full" } 
-                  - { label: "Full Bleed", value: "full-bleed" }
-                default: ["full"]
-                required: false                
+              - {label: "Name", name: "name", widget: "string", required: true}
+              - {label: "Short Name", name: "shortName", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "markdown", required: true}
+              - {label: "Tags", name: "tags", widget: "list", required: false}
+              - {label: "Link", name: "link", widget: "url", required: true}
+          - label: "Tools"
+            name: "tools"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string", required: true}
+              - {label: "Short Name", name: "shortName", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "markdown", required: true}
+              - {label: "Tags", name: "tags", widget: "list", required: false}
+              - {label: "Link", name: "link", widget: "url", required: true}
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
@@ -272,6 +200,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Intro", name: "intro", widget: "markdown", required: false}
       - label: "Header Background Colour"
         name: "headerbgcolor"
         widget: "select"
