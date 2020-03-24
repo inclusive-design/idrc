@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: master
-# publish_mode: editorial_workflow
+  publish_mode: editorial_workflow
 site_url: "https://idrc.netlify.com"
 media_folder: "src/images"
 public_folder: "/images"
