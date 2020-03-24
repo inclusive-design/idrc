@@ -25,13 +25,13 @@
 <meta property="og:url" content="{{ currentUrl }}" />
 	
 {% if site.twitter %}
-    <meta name="twitter:creator" content="@{{ site.authorHandle | replace('@', '') }}" />
+    <meta name="twitter:creator" content="@{{ site.twitter | replace('@', '') }}" />
 {% endif %}
 	
 {% if pageDesc %}
-    <meta name="description" content="{{ metaDesc }}" />
-    <meta name="twitter:description" content="{{ metaDesc }}" />
-    <meta property="og:description" content="{{ metaDesc }}" />
+    <meta name="description" content="{{ pageDesc }}" />
+    <meta name="twitter:description" content="{{ pageDesc }}" />
+    <meta property="og:description" content="{{ pageDesc }}" />
 {% endif %}
 	
 {% if socialImage %}  
