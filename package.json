@@ -6,6 +6,7 @@
   "scripts": {
     "build:assets": "cross-env NODE_ENV=production run-s mix",
     "build:site": "eleventy --config=eleventy.config.js",
+    "build:cms": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "build": "run-s clean build:*",
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
