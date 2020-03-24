@@ -9,9 +9,9 @@
         <div class="mt-12 social lg:w-1/3 lg:pr-6">
             <p class="h3">Social media</p>
             <ul class="mt-6 list-none">
-                <li class="mb-2"><a class="no-underline" rel="external" href="https://twitter.com/idrc_ocadu/">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
-                <li class="mb-2"><a class="no-underline" rel="external" href="https://medium.com/@jutta.trevira">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
-                <li class="mb-2"><a class="no-underline" rel="external" href="https://youtube.com/channel/UCBT-cBmvdLAhCm58ulpBulQ">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
+                <li class="mb-2"><a class="no-underline" rel="external" href="https://twitter.com/{{ site.twitter | replace('@', '') }}/">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
+                <li class="mb-2"><a class="no-underline" rel="external" href="https://medium.com/{{ site.medium | replace('@', '') }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
+                <li class="mb-2"><a class="no-underline" rel="external" href="{{ site.youtube }}">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
             </ul>
         </div>
         <div class="mt-12 contact lg:w-2/3 lg:flex lg:flex-row lg:flex-wrap">
@@ -20,10 +20,7 @@
                 <p class="h4">Email</p>
                 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
                 <p class="h4">Address</p>
-                <p>205 Richmond St. W., Second Floor<br />
-                Toronto, Ontario, Canada<br />
-                M5V 1V3
-                </p>
+                {{ site.address | markdown | safe }}
             </div>
             <div class="lg:w-1/2">
                 <p class="h4">Phone</p>
