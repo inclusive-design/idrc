@@ -139,7 +139,7 @@ collections:
             default: ["indigo-100"]
             required: true
           - label: "Header Border Colour"
-            name: "headerbg=ordercolor"
+            name: "headerbordercolor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -218,7 +218,7 @@ collections:
         default: ["indigo-100"]
         required: true
       - label: "Header Border Colour"
-        name: "headerbg=ordercolor"
+        name: "headerbordercolor"
         widget: "select"
         options:
           - { label: "White", value: "white" }
