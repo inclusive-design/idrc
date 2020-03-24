@@ -2,7 +2,8 @@ const env = nunjucks.configure();
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
-	const html = env.render(path, data);
+	// const html = env.render(path, data);
+	const html = data.title;
 	return <div dangerouslySetInnerHTML={{__html: html}}/>;
 };
 
