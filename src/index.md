@@ -66,8 +66,8 @@ sections:
     backgroundColor: null
     textColor: null
     borderColor: indigo-500
-    title: Current projects and tools
-    content: '[See current projects and available open tools](/projects-and-tools/)'
+    title: Featured projects and tools
+    content: '[See featured projects and available open tools](/projects-and-tools/)'
     imageAltText: ''
     image: /images/projects-and-tools.jpg
     imageShadow: red-500

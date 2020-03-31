@@ -3,7 +3,7 @@ headertextcolor: white
 layout: layouts/projects.njk
 headerbordercolor: indigo-500
 permalink: /projects-and-tools/
-title: Current projects and tools
+title: Featured projects and tools
 headerbgcolor: indigo-900
 projects:
   - name: Project We Count
@@ -53,7 +53,7 @@ projects:
     tags: []
     link: 'http://cisl.cast.org/'
 eleventyNavigation:
-  key: Current projects and tools
+  key: Featured projects and tools
   order: 2
 tools:
   - name: UI Options
