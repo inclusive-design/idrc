@@ -26,6 +26,12 @@ article header {
 
     width: 50%;
   }
+
+  .section--third {
+    @apply max-w-screen-sm mx-auto inline-block;
+
+    width: 33%;
+  }
 }
 
 @media (min-width: 1280px) {

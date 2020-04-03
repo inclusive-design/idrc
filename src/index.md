@@ -84,7 +84,7 @@ sections:
     backgroundColor: null
     borderColor: red-500
     textColor: null
-    desktopWidth: half
+    desktopWidth: third
   - title: Services we offer
     content: |-
       ### [WebSavvy Acessibility Consulting](/websavvy/)
@@ -94,7 +94,15 @@ sections:
     backgroundColor: null
     borderColor: blue-500
     textColor: null
-    desktopWidth: half
+    desktopWidth: third
+  - title: Latest news
+    content: |-
+      ### [Continuing Our Work During COVID-19](/news/continuing-our-work-during-covid-19/)
+      Published April 3, 2020
+    backgroundColor: null
+    borderColor: yellow-500
+    textColor: null
+    desktopWidth: third
   - image2x: /images/job-postings@2x.jpg
     imageOrderDesktop: first
     desktopWidth: full

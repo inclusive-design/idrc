@@ -2,6 +2,8 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
+const dateFilter = require('./src/filters/date-filter.js');
+const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 module.exports = eleventyConfig => {
 	// Plugins.
@@ -13,13 +15,14 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Filters.
-
+	eleventyConfig.addFilter('dateFilter', dateFilter);
 	eleventyConfig.addFilter('markdown', value => {
 		const markdown = require('markdown-it')({
 			html: true
 		});
 		return markdown.render(value);
 	});
+	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});

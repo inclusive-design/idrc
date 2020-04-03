@@ -340,6 +340,7 @@ collections:
             name: "desktopWidth"
             widget: "select"
             options:
+              - { label: "Third", value: "third" }
               - { label: "Half", value: "half" }
               - { label: "Full", value: "full" } 
               - { label: "Full Bleed", value: "full-bleed" }
