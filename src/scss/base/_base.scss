@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  @apply underline font-display inline-block;
+  @apply underline font-display;
 }
 
 a:hover,
@@ -32,7 +32,7 @@ a:visited .underline {
     mask-repeat: no-repeat;
     mask-size: 1.5em;
 
-    @apply pl-4 inline ml-0 -mb-1;
+    @apply pl-4 ml-0 -mb-1;
   }
 
   a[rel~="external"]::after,
@@ -44,7 +44,7 @@ a:visited .underline {
     mask-repeat: no-repeat;
     mask-size: 1.5em;
 
-    @apply pl-4 inline ml-1 -mb-1;
+    @apply pl-4 ml-1 -mb-1;
   }
 }
 
