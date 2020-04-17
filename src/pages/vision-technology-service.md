@@ -78,7 +78,7 @@ sections:
         - New services and opportunities
         
 
-        [Join our mailing list](mailto:vts@ocadu.ca?subject=Mailing list&body=Hi, please add me to the Vision Technology Services mailing list.)
+        [Join our mailing list](mailto:vts@ocadu.ca)
       desktopWidth: full
     - title: Contact Vision Technology Service
       borderColor: 

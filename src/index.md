@@ -88,9 +88,8 @@ sections:
   - title: Services we offer
     content: |-
       ### [WebSavvy Acessibility Consulting](/websavvy/)
-      Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
+      We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
       ### [Vision Technology Service](/vision-technology-service/)
-      Pharetra id lorem lectus eu. Gravida platea in tellus malesuada.
     backgroundColor: null
     borderColor: blue-500
     textColor: null
