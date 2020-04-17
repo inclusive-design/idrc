@@ -8,10 +8,8 @@
             <div class="container mx-auto">
                 <h1 class="px-6 md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto">{{ title }}</h1>
                 <p class="px-6 mt-6 metadata md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto small">
-                    {% if date %}
                     <time datetime="{{ date | w3DateFilter }}" class="dt-published">Published {{ date | dateFilter }}</time><br />
-                    {% endif %}
-                    By {{ author }}
+                    By {{ author if author else 'IDRC Team' }}
                 </p>
             </div>
         </header>

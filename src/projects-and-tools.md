@@ -52,9 +52,6 @@ projects:
       students.
     tags: []
     link: 'http://cisl.cast.org/'
-eleventyNavigation:
-  key: Featured projects and tools
-  order: 2
 tools:
   - name: UI Options
     shortName: false

@@ -6,9 +6,6 @@ headerbordercolor: yellow-200
 headertextcolor: black
 intro: >
     We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
-eleventyNavigation:
-    key: WebSavvy Accessibility Consulting
-    order: 4
 sections:
     - title: Consulting
       borderColor: red-500

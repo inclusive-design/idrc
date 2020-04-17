@@ -7,7 +7,4 @@ pagination:
   data: collections.posts
   size: 6
   alias: posts
-eleventyNavigation:
-  key: News
-  order: 1
 ---

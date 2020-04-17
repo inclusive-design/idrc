@@ -20,7 +20,7 @@
                 <p class="h4">Email</p>
                 <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
                 <p class="h4">Address</p>
-                {{ site.address | markdown | safe }}
+                {{ site.address | markdownFilter | safe }}
             </div>
             <div class="lg:w-1/2">
                 <p class="h4">Phone</p>

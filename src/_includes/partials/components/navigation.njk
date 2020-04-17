@@ -1,14 +1,23 @@
 <nav class="mt-0 ml-auto" id="menu" aria-labelledby="menu-label">
-    {% set navPages = collections.all | eleventyNavigation %}
     <button class="lg:hidden" id="menu-toggle" aria-expanded="false">menu</button>
     <div class="menu absolute hidden shadow-xl left-0 z-10 py-10 mt-6 w-screen bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} lg:z-auto lg:w-auto lg:py-0 lg:flex lg:relative lg:shadow-none">
         <p id="menu-label" class="px-6 font-serif text-5xl font-black leading-tight lg:sr-only font-size"><span class="sr-only">main </span>Menu</p>
         <ul class="flex-col px-6 list-none lg:px-0 lg:mt-0 lg:relative lg:flex lg:flex-row">
-        {%- for entry in navPages %}
+        {% for item in navigation.items %}
+	        {% set relAttribute = '' %}
+	        {% set currentAttribute = '' %}
+	
+	        {% if item.rel %}
+	          {% set relAttribute = ' rel="' + item.rel + '"' %}
+	        {% endif %}
+	
+	        {% if page.url == item.url %}
+	          {% set currentAttribute = ' aria-current="page"' %}
+	        {% endif %}
         <li class="py-2 lg:py-0 lg:pr-4">
-            <a {% if entry.url == page.url %}aria-current="page" class="border-b-2 border-{{ headertextcolor if headertextcolor else 'black' }}" {% endif %}href="{{ entry.url | url }}">{{ entry.title }}</a>
+            <a{{ relAttribute | safe }}{{ currentAttribute | safe }}{% if page.url == item.url %} class="border-b-2 border-{{ headertextcolor if headertextcolor else 'black' }}"{% endif %} href="{{ item.url | url }}">{{ item.text }}</a>
         </li>
-        {%- endfor %}
+        {% endfor %}
         </ul>
     </div>
 </nav>
