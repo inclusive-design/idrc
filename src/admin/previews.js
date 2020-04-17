@@ -25,7 +25,7 @@ const ProjectsAndTools = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/projects.njk"
-		context={({ title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+		context={({ title, intro, headerbgcolor, headertextcolor, headerbordercolor }) => ({
 			title,
 			intro,
 			projects,
