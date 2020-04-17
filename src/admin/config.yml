@@ -364,6 +364,7 @@ collections:
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+      - {label: "Content", name: "content", widget: "markdown", required: true}
   - label: "Globals"
     name: "globals"
     files:
