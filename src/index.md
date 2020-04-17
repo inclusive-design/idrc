@@ -14,7 +14,7 @@ eleventyNavigation:
   key: Home
   order: 1
 sections:
-  - image2x: /images/what-we-do@2x.jpg
+  - image2x: /media/what-we-do@2x.jpg
     imageOrderDesktop: swap
     desktopWidth: full-bleed
     imageOrder: start
@@ -44,7 +44,7 @@ sections:
       The IDRC offers consulting services and training in digital accessibility
       and inclusive design.
     imageAltText: ''
-    image: /images/what-we-do.jpg
+    image: /media/what-we-do.jpg
   - title: What is inclusive design?
     content: >-
       Inclusive Design considers the full range of human diversity with respect
@@ -59,7 +59,7 @@ sections:
     borderColor: white
     textColor: black
     desktopWidth: full-bleed
-  - image2x: /images/projects-and-tools@2x.jpg
+  - image2x: /media/projects-and-tools@2x.jpg
     imageOrderDesktop: swap
     desktopWidth: full
     imageOrder: end
@@ -69,7 +69,7 @@ sections:
     title: Featured projects and tools
     content: '[See featured projects and available open tools](/projects-and-tools/)'
     imageAltText: ''
-    image: /images/projects-and-tools.jpg
+    image: /media/projects-and-tools.jpg
     imageShadow: red-500
   - title: Our resources
     content: >-
@@ -102,7 +102,7 @@ sections:
     borderColor: yellow-500
     textColor: null
     desktopWidth: third
-  - image2x: /images/job-postings@2x.jpg
+  - image2x: /media/job-postings@2x.jpg
     imageOrderDesktop: first
     desktopWidth: full
     imageOrder: start
@@ -114,7 +114,7 @@ sections:
       **[Post-Doctoral Research
       Fellow](https://trr.tbe.taleo.net/trr01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=1811)**
     imageAltText: ''
-    image: /images/job-postings.jpg
+    image: /media/job-postings.jpg
     imageShadow: yellow-500
   - title: Get involved
     content: >-

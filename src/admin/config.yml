@@ -3,8 +3,8 @@ backend:
   branch: master
   publish_mode: editorial_workflow
 site_url: "https://idrc.netlify.com"
-media_folder: "src/images"
-public_folder: "/images"
+media_folder: "src/media"
+public_folder: "/media"
 collections:
   - name: "special_pages"
     label: "Special Pages"
