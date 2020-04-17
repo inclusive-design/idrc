@@ -1,3 +1,5 @@
+/* global fs */
+
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const htmlMinTransform = require('./src/transforms/html-min.js');
@@ -49,6 +51,22 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
+
+	// BrowserSync.
+	eleventyConfig.setBrowserSyncConfig({
+		callbacks: {
+			ready: (error, browserSync) => {
+				const content404 = fs.readFileSync('dist/404.html');
+
+				browserSync.addMiddleware('*', (request, response) => {
+				// Provides the 404 content without redirect.
+					response.write(content404);
+					response.writeHead(404);
+					response.end();
+				});
+			}
+		}
+	});
 
 	return {
 		dir: {
