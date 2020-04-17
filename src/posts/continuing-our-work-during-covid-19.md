@@ -3,7 +3,6 @@ title: Continuing Our Work During COVID-19
 date: 2020-04-03
 author: Jutta Treviranus
 excerpt: We are fortunate that our team members are able to work from home during this pandemic. We want to extend our enormous gratitude to the front-line workers.
-readMoreLinkText: Read more about our work during COVID-19
 ---
 We are fortunate that our team members are able to work from home during this pandemic. We want to extend our enormous gratitude to the front-line workers.
 

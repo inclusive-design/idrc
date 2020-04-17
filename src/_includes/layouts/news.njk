@@ -25,12 +25,8 @@
                     </p>
                     <p>{{ item.data.excerpt if item.data.excerpt else item.data.content | safe }}</p>
                     <p>
-                        <a hrefw-6 h-6 ="{{ item.url }}">
-                            {% if item.data.readMoreLinkText %}
-                                {{ item.data.readMoreLinkText }}
-                            {% else %}
-                                Read more <span class="sr-only">of {{ item.data.title }}</span>
-                            {% endif %}
+                        <a href="{{ item.url }}">
+                            Read more <span class="sr-only">of {{ item.data.title }}</span>
                         </a>
                     </p>
                 </article>
