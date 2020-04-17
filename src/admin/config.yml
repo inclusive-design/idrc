@@ -359,12 +359,11 @@ collections:
       - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
       - {label: "Author", name: "author", widget: "string", required: false}
       - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
-      - {label: "Read More Link Text", name: "readMoreLinkText", widget: "string", required: false}
       - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Content", name: "content", widget: "markdown", required: true}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: "Globals"
     name: "globals"
     files:
