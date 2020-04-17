@@ -1,7 +1,7 @@
-/* global fs */
-
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
+const fs = require('fs');
+
 const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
 const dateFilter = require('./src/filters/date-filter.js');
