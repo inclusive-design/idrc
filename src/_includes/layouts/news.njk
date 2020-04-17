@@ -13,6 +13,10 @@
             <div class="container px-6">
             {% if posts.length %}
                 {% for item in posts %}
+                {% set excerpt = item.data.content.split('.')[0] + '.' %}
+                {% if item.data.excerpt %}
+                {% set excerpt = item.data.excerpt %}
+                {% endif %}
                 <article class="my-20">
                     <span class="block w-20 mb-10 border-b-2 border-indigo-500 hr"></span>
                     <h2>{{ item.data.title }}</h2>
@@ -23,7 +27,7 @@
                         <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
                         {% endif %}
                     </p>
-                    <p>{{ item.data.excerpt if item.data.excerpt else item.data.content | safe }}</p>
+                    <p>{{ excerpt | striptags | safe }}</p>
                     <p>
                         <a href="{{ item.url }}">
                             Read more <span class="sr-only">of {{ item.data.title }}</span>
