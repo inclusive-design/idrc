@@ -11,7 +11,7 @@
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
     "mix": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "start": "clean:dist && concurrently \"npm run watch:site\" \"npm run watch:assets\"",
+    "start": "run-s clean concurrently \"npm run watch:site\" \"npm run watch:assets\"",
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "xo",
     "lint": "run-s lint:*",
