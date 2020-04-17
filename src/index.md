@@ -98,6 +98,8 @@ sections:
     content: |-
       ### [Continuing Our Work During COVID-19](/news/continuing-our-work-during-covid-19/)
       Published April 3, 2020
+      ### [We Count – Removing bias and exclusion in the data economy](/news/we-count-removing-bias-and-exclusion-in-the-data-economy/)
+      Published March 18, 2020
     backgroundColor: null
     borderColor: yellow-500
     textColor: null
