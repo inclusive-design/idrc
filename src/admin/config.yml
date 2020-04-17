@@ -346,6 +346,24 @@ collections:
               - { label: "Full Bleed", value: "full-bleed" }
             default: ["full"]
             required: false
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "src/posts"
+    slug: "{{slug}}"
+    preview_path: "/news/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
+      - {label: "Author", name: "author", widget: "string", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Read More Link Text", name: "readMoreLinkText", widget: "string", required: false}
+      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
   - label: "Globals"
     name: "globals"
     files:

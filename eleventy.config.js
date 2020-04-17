@@ -6,6 +6,22 @@ const dateFilter = require('./src/filters/date-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 module.exports = eleventyConfig => {
+	const now = new Date();
+
+	// Collections.
+	const livePosts = post => post.date <= now && !post.data.draft;
+	eleventyConfig.addCollection('posts', collection => {
+		return [
+			...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+		].reverse();
+	});
+
+	eleventyConfig.addCollection('postFeed', collection => {
+		return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+			.reverse()
+			.slice(0, 10);
+	});
+
 	// Plugins.
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(eleventyRssPlugin);

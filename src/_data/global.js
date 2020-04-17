@@ -6,5 +6,6 @@ module.exports = {
 
 		return `${segment()}-${segment()}-${segment()}`;
 	},
+	baseUrl: process.env.DEPLOY_PRIME_URL || 'http://localhost:3000',
 	environment: process.env.ELEVENTY_ENV
 };
