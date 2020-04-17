@@ -5,3 +5,20 @@ nav [aria-expanded="true"] + .menu {
 nav a {
   @apply font-medium no-underline;
 }
+
+.pagination a {
+  @apply underline;
+
+  &::after {
+    display: none;
+  }
+
+  &[aria-current="page"] {
+    @apply bg-indigo-900 text-white;
+
+    &:hover,
+    &:focus {
+      @apply bg-indigo-500;
+    }
+  }
+}

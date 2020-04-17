@@ -1,0 +1,60 @@
+{% extends 'layouts/base.njk' %}
+
+{% set pageType = 'page--news' %}
+
+{% block content %}
+    <article class="container mx-auto">
+        <header class="py-20 text-black bg-blue-500">
+            <div class="container mx-auto">
+                <h1 class="px-6 md:mx-auto">{{ title }}</h1>
+            </div>
+        </header>
+        <div class="py-10 content md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto lg:py-20">
+            <div class="container px-6">
+            {% if posts.length %}
+                {% for item in posts %}
+                <article class="my-20">
+                    <span class="block w-20 mb-10 border-b-2 border-indigo-500 hr"></span>
+                    <h2>{{ item.data.title }}</h2>
+                    <p class="mt-6 metadata small">
+                        By {{ item.data.author }}
+                        {% if item.data.date %}
+                        <span aria-hidden="true"> &middot; </span>
+                        <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
+                        {% endif %}
+                    </p>
+                    <p>{{ item.data.excerpt if item.data.excerpt else item.data.content | safe }}</p>
+                    <p>
+                        <a hrefw-6 h-6 ="{{ item.url }}">
+                            {% if item.data.readMoreLinkText %}
+                                {{ item.data.readMoreLinkText }}
+                            {% else %}
+                                Read more <span class="sr-only">of {{ item.data.title }}</span>
+                            {% endif %}
+                        </a>
+                    </p>
+                </article>
+                {% endfor %}
+            {% endif %}
+            </div>
+        </div>
+        {% if pagination.pages.length > 1 %}
+        <nav class="py-10 text-center pagination content md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto lg:py-20" aria-labelledby="pagination">
+            <h2 id="pagination" class="sr-only">news page navigation</h2>
+            <ul class="container flex flex-row justify-center px-6 list-none">
+            {%- if pagination.href.previous %}
+                <li><a class="flex flex-row items-center justify-center w-6 h-8 mx-1 align-middle" href="{{ pagination.href.previous }}">{% include 'svg/previous.svg' %}<span class="sr-only">previous</span></a></li>
+            {%- endif %}
+            {%- for pageEntry in pagination.pages %}
+                <li><a class="flex flex-row items-center justify-center w-6 h-8 mx-1 align-middle" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+            {%- endfor %}
+            {%- if pagination.href.next %}
+                <li><a class="flex flex-row items-center justify-center w-6 h-8 mx-1 align-middle" href="{{ pagination.href.next }}"><span class="sr-only">next</span>{% include 'svg/next.svg' %}</a></li>
+            {%- endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </article>
+{% endblock %}
+
+{{ content | safe }}
