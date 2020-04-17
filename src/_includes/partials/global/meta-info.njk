@@ -39,6 +39,11 @@
     <meta name="twitter:image" content="{{ socialImage }}" />
     <meta property="og:image:alt" content="Preview image for {{ site.name }}" />
     <meta name="twitter:image:alt" content="Preview image for {{ site.name }}" />
+{% else %}
+    <meta property="og:image" content="/images/opengraph.png" />
+    <meta name="twitter:image" content="/images/opengraph.png" />
+    <meta property="og:image:alt" content="Logo of the Inclusive Design Research Centre" />
+    <meta name="twitter:image:alt" content="Logo of the Inclusive Design Research Centre" />
 {% endif %}
 
 <meta name="theme-color" content="#00A0CC" />
