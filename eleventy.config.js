@@ -1,4 +1,3 @@
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
 const fs = require('fs');
@@ -27,7 +26,6 @@ module.exports = eleventyConfig => {
 	});
 
 	// Plugins.
-	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
 	eleventyConfig.addPlugin(errorOverlay);
 
