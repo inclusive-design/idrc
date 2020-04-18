@@ -11,7 +11,7 @@
                     {% if date %}
                     <time datetime="{{ date | w3DateFilter }}" class="dt-published">Published {{ date | dateFilter }}</time><br />
                     {% endif %}
-                    By {{ author }}
+                    By {{ author if author else 'IDRC Team' }}
                 </p>
             </div>
         </header>
