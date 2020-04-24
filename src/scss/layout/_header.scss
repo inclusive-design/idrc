@@ -1,3 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.banner {
+  @apply pt-6 bg-indigo-100 text-black;
+}
+
+.banner .container {
+  @apply flex flex-row items-center px-6 mx-auto;
+}
