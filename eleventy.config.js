@@ -42,9 +42,6 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('markdownFilter', markdownFilter);
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 
-	// Watch targets.
-	eleventyConfig.addWatchTarget('src/scss');
-
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/fonts': 'fonts'});
