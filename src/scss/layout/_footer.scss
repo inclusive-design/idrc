@@ -7,6 +7,6 @@ footer .contact {
   &::before {
     content: "";
 
-    @apply block w-full border-b-2 mb-2 bg-white;
+    @apply block w-full border-b-2 mb-2 border-white;
   }
 }

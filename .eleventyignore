@@ -1,1 +1,5 @@
-src/scss
+.github/**/*.md
+node_modules
+src/scss/**/*.md
+LICENSE.md
+README.md

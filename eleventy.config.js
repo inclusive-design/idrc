@@ -26,6 +26,8 @@ module.exports = eleventyConfig => {
 			.slice(0, 10);
 	});
 
+	eleventyConfig.setUseGitIgnore(false);
+
 	// Plugins.
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
@@ -39,6 +41,9 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('dateFilter', dateFilter);
 	eleventyConfig.addFilter('markdownFilter', markdownFilter);
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
+
+	// Watch targets.
+	eleventyConfig.addWatchTarget('src/scss');
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});
