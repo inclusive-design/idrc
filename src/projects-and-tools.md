@@ -1,6 +1,9 @@
 ---
 headertextcolor: white
 layout: layouts/projects.njk
+eleventyNavigation:
+  key: Featured projects and tools
+  order: 2
 headerbordercolor: indigo-500
 permalink: /projects-and-tools/
 title: Featured projects and tools
@@ -52,9 +55,6 @@ projects:
       students.
     tags: []
     link: 'http://cisl.cast.org/'
-eleventyNavigation:
-  key: Featured projects and tools
-  order: 2
 tools:
   - name: UI Options
     shortName: false
