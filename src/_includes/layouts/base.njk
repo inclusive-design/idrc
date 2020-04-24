@@ -1,4 +1,4 @@
-<!doctype html>
+{% if previewMode %}{% else %}<!doctype html>
 <html lang="en-ca" class="no-js">
     <head>
         <meta charset="utf-8">
@@ -15,12 +15,12 @@
         {% endblock %}
     </head>
     <body class="{{ pageType }} flex flex-col justify-start min-h-screen">
-        {% include "partials/global/header.njk" %}
+        {% include "partials/global/header.njk" %}{% endif %}
         <main>
             {% block content %}
             {% endblock content %}
         </main>
-        {% include "partials/global/footer.njk" %}
+        {% if previewMode %}{% else %}{% include "partials/global/footer.njk" %}
         {# {% if global.environment !== 'development' %}
         <script>
             if ('serviceWorker' in navigator) {
@@ -30,6 +30,7 @@
             }
         </script>
         {% endif %} #}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>
+{% endif %}

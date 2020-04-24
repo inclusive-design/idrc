@@ -1,6 +1,9 @@
 ---
 layout: layouts/page.njk
 title: Inclusive Design Research Centre
+eleventyNavigation:
+  key: Home
+  order: 1
 intro: >
   An international community of open source developers, designers, researchers,
   educators and co-designers who work together to **proactively ensure that
@@ -10,9 +13,6 @@ intro: >
   Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates
   the [Inclusive Design Institute](https://inclusivedesign.ca/). Both were
   founded by Dr. Jutta Treviranus with the help of her team and community.
-eleventyNavigation:
-  key: Home
-  order: 1
 sections:
   - image2x: /media/what-we-do@2x.jpg
     imageOrderDesktop: swap
@@ -43,7 +43,7 @@ sections:
 
       The IDRC offers consulting services and training in digital accessibility
       and inclusive design.
-    imageAltText: ''
+    imageAltText: 'Two people demonstrating a prototype created at an inclusive cities hackathon that the IDRC facilitated.'
     image: /media/what-we-do.jpg
   - title: What is inclusive design?
     content: >-
@@ -68,7 +68,7 @@ sections:
     borderColor: indigo-500
     title: Featured projects and tools
     content: '[See featured projects and available open tools](/projects-and-tools/)'
-    imageAltText: ''
+    imageAltText: 'Two people trying the inclusive coding learning environment the IDRC has created, which involves robots, tactile boards, and cards.'
     image: /media/projects-and-tools.jpg
     imageShadow: red-500
   - title: Our resources
@@ -115,7 +115,7 @@ sections:
     content: >-
       **[Post-Doctoral Research
       Fellow](https://trr.tbe.taleo.net/trr01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=1811)**
-    imageAltText: ''
+    imageAltText: 'An IDRC team member and visitor smiling and chatting about a project demonstration at an event.'
     image: /media/job-postings.jpg
     imageShadow: yellow-500
   - title: Get involved
