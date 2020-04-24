@@ -2,14 +2,17 @@ const {
 	w3DateFilter,
 	markdownFilter,
 	dateFilter,
+	slugFilter,
 	site
 } = previewUtil;
+
 
 const env = nunjucks.configure();
 
 env.addFilter('w3DateFilter', w3DateFilter);
 env.addFilter('markdownFilter', markdownFilter);
 env.addFilter('dateFilter', dateFilter);
+env.addFilter('slug', slugFilter)
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
@@ -17,11 +20,13 @@ const Preview = ({entry, path, context}) => {
 	return <div dangerouslySetInnerHTML={{__html: html}}/>;
 };
 
-const Page = ({entry, pages}) => (
+const Page = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/page.njk"
 		context={({ title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+			header: false,
+			footer: false,
 			title,
 			intro,
 			sections,
@@ -32,11 +37,13 @@ const Page = ({entry, pages}) => (
 	/>
 );
 
-const ProjectsAndTools = ({entry, pages}) => (
+const ProjectsAndTools = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/projects.njk"
-		context={({ title, intro, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+		context={({ title, intro, projects, tools, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+			header: false,
+			footer: false,
 			title,
 			intro,
 			projects,
@@ -48,14 +55,17 @@ const ProjectsAndTools = ({entry, pages}) => (
 	/>
 );
 
-const Post = ({entry, posts}) => (
+const Post = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/post.njk"
 		context={({ title, date, author, body }) => ({
+			header: false,
+			footer: false,
 			title,
 			date,
 			author,
+			headerbgcolor: 'white',
 			content: markdownFilter(body || '')
 		})}
 	/>

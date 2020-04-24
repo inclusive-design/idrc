@@ -1,6 +1,9 @@
 ---
 title: WebSavvy Accessibility Consulting
 permalink: /websavvy/
+eleventyNavigation:
+  key: WebSavvy Accessibility Consulting
+  order: 4
 headerbgcolor: yellow-500
 headerbordercolor: yellow-200
 headertextcolor: black

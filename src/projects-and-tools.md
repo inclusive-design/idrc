@@ -1,6 +1,9 @@
 ---
 headertextcolor: white
 layout: layouts/projects.njk
+eleventyNavigation:
+  key: Featured projects and tools
+  order: 2
 headerbordercolor: indigo-500
 permalink: /projects-and-tools/
 title: Featured projects and tools

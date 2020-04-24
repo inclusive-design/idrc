@@ -1,6 +1,9 @@
 ---
 title: Vision Technology Service
 permalink: /vision-technology-service/
+eleventyNavigation:
+  key: Vision Technology Service
+  order: 3
 headerbgcolor: red-500
 headerbordercolor: red-900
 headertextcolor: black

@@ -15,12 +15,12 @@
         {% endblock %}
     </head>
     <body class="{{ pageType }} flex flex-col justify-start min-h-screen">
-        {% include "partials/global/header.njk" %}
+        {% if header %}{% include "partials/global/header.njk" %}{% endif %}
         <main>
             {% block content %}
             {% endblock content %}
         </main>
-        {% include "partials/global/footer.njk" %}
+        {% if footer %}{% include "partials/global/header.njk" %}{% endif %}
         {# {% if global.environment !== 'development' %}
         <script>
             if ('serviceWorker' in navigator) {
