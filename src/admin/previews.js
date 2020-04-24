@@ -23,15 +23,15 @@ const Page = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/page.njk"
-		context={({ site, title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+		context={({ site, title, intro, sections, headerBgColor, headerTextColor, headerBorderColor }) => ({
 			previewMode: true,
 			site,
 			title,
 			intro,
 			sections,
-			headerbgcolor,
-			headertextcolor,
-			headerbordercolor
+			headerBgColor,
+			headerTextColor,
+			headerBorderColor
 		})}
 	/>
 );
@@ -40,16 +40,16 @@ const ProjectsAndTools = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/projects.njk"
-		context={({ site, title, intro, projects, tools, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+		context={({ site, title, intro, projects, tools, headerBgColor, headerTextColor, headerBorderColor }) => ({
 			previewMode: true,
 			site,
 			title,
 			intro,
 			projects,
 			tools,
-			headerbgcolor,
-			headertextcolor,
-			headerbordercolor
+			headerBgColor,
+			headerTextColor,
+			headerBorderColor
 		})}
 	/>
 );
@@ -64,7 +64,7 @@ const Post = ({entry}) => (
 			title,
 			date,
 			author,
-			headerbgcolor: 'white',
+			headerBgColor: 'white',
 			content: markdownFilter(body || '')
 		})}
 	/>

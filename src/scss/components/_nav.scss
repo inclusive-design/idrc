@@ -1,9 +1,57 @@
-nav [aria-expanded="true"] + .menu {
+.nav {
+  @apply mt-0 ml-auto;
+}
+
+.nav .menu-toggle {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.nav .menu {
+  @apply absolute hidden shadow-xl left-0 z-10 py-10 mt-6 w-screen;
+
+  @media screen and (min-width: 1024px) {
+    @apply z-auto w-auto py-0 flex relative shadow-none;
+  }
+}
+
+.nav [aria-expanded="true"] + .menu {
   @apply block;
 }
 
-nav a {
+.nav .menu-label {
+  @apply px-6 font-serif text-5xl font-black leading-tight;
+
+  @media screen and (min-width: 1024px) {
+    @apply sr-only;
+  }
+}
+
+.nav ul {
+  @apply flex-col px-6 list-none;
+
+  @media screen and (min-width: 1024px) {
+    @apply px-0 mt-0 relative flex flex-row;
+  }
+}
+
+.nav li {
+  @apply py-2;
+
+  @media screen and (min-width: 1024px) {
+    @apply py-0 pr-4;
+  }
+}
+
+.nav a {
   @apply font-medium no-underline;
+}
+
+nav a[aria-current="page"] {
+  border-bottom-color: currentColor;
+
+  @apply border-b-2;
 }
 
 .pagination a {
@@ -12,13 +60,13 @@ nav a {
   &::after {
     display: none;
   }
+}
 
-  &[aria-current="page"] {
-    @apply bg-indigo-900 text-white;
+.pagination a[aria-current="page"] {
+  @apply bg-indigo-900 text-white;
 
-    &:hover,
-    &:focus {
-      @apply bg-indigo-500;
-    }
+  &:hover,
+  &:focus {
+    @apply bg-indigo-500;
   }
 }

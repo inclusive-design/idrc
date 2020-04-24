@@ -26,6 +26,8 @@ module.exports = eleventyConfig => {
 			.slice(0, 10);
 	});
 
+	eleventyConfig.setUseGitIgnore(false);
+
 	// Plugins.
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
