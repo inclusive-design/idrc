@@ -1,13 +1,14 @@
 backend:
   name: git-gateway
   branch: master
-# publish_mode: editorial_workflow
-site_url: "https://idrc.netlify.com"
-media_folder: "src/images"
-public_folder: "/images"
+  publish_mode: editorial_workflow
+site_url: "https://idrc.netlify.app"
+media_folder: "src/media"
+public_folder: "/media"
 collections:
-  - name: "pages"
-    label: "Pages"
+  - name: "special_pages"
+    label: "Special Pages"
+    label_singular: "Special Page"
     files:
       - name: "home"
         label: "Homepage"
@@ -15,39 +16,353 @@ collections:
         file: "src/index.md"
         slug: "{{slug}}"
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.njk"}
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false}
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: true}
               - {label: "Content", name: "content", widget: "markdown", required: true}
-              - {label: "Text Colour", name: "textColour", widget: "string", required: false}
-              - {label: "Background Colour", name: "backgroundColour", widget: "string", required: false}
-              - {label: "Border Colour", name: "borderColour", widget: "string", required: false}
-              - {label: "Image", name: "image", widget: "string", required: false}
-              - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+              - label: "Text Colour"
+                name: "textColor"
+                widget: "select"
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Black", value: "black" }                
+                  - { label: "Indigo 100", value: "indigo-100" }
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Blue 500", value: "blue-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                  - { label: "Yellow 900", value: "yellow-900" }
+                default: ["black"]
+                required: false
+              - label: "Background Colour"
+                name: "backgroundColor"
+                widget: "select"
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Black", value: "black" }                
+                  - { label: "Indigo 100", value: "indigo-100" }
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Blue 500", value: "blue-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                  - { label: "Yellow 900", value: "yellow-900" }
+                default: ["indigo-100"]
+                required: false
+              - label: "Border Colour"
+                name: "borderColor"
+                widget: "select"
+                options:
+                  - { label: "White", value: "white" }
+                  - { label: "Black", value: "black" }                
+                  - { label: "Indigo 100", value: "indigo-100" }
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Blue 500", value: "blue-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                  - { label: "Yellow 900", value: "yellow-900" }
+                default: ["indigo-500"]
+                required: false
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
               - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
-              - {label: "Image Order", name: "imageOrder", widget: "string", required: false} # start or end
-              - {label: "Image Order (Desktop)", name: "imageOrderDesktop", widget: "string", required: false} # auto or swap
-              - {label: "Image Shadow", name: "imageShadow", widget: "string", required: false} # TODO: Figure out shadow options
-              - {label: "Desktop Width", name: "desktopWidth", widget: "string", required: false} # half, full, or full-bleed
-  - name: "generic_pages"
-    label: "Generic Pages"
+              - label: "Image Order"
+                name: "imageOrder"
+                widget: "select"
+                options:
+                  - { label: "Start", value: "start" }
+                  - { label: "End", value: "end" } 
+                default: ["start"]
+                required: false
+              - label: "Image Order (Desktop)"
+                name: "imageOrderDesktop"
+                widget: "select"
+                options:
+                  - { label: "Auto", value: "auto" }
+                  - { label: "Swap", value: "swap" } 
+                default: ["auto"]
+                required: false
+              - label: "Image Shadow"
+                name: "imageShadow"
+                widget: "select"
+                options:
+                  - { label: "Indigo 500", value: "indigo-500" }
+                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Yellow 500", value: "yellow-500" }
+                default: ["indigo-500"]
+                required: false
+              - label: "Desktop Width"
+                name: "desktopWidth"
+                widget: "select"
+                options:
+                  - { label: "Half", value: "half" }
+                  - { label: "Full", value: "full" } 
+                  - { label: "Full Bleed", value: "full-bleed" }
+                default: ["full"]
+                required: false
+      - name: "projects-and-tools"
+        label: "Projects and Tools"
+        delete: false
+        file: "src/projects-and-tools.md"
+        slug: "{{slug}}"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/projects.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - label: "Header Background Colour"
+            name: "headerBgColor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-100"]
+            required: true
+          - label: "Header Border Colour"
+            name: "headerBorderColor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-100"]
+            required: true
+          - label: "Header Text Colour"
+            name: "headerTextColor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["black"]
+            required: true
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string", required: true}
+              - {label: "Short Name", name: "shortName", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "markdown", required: true}
+              - {label: "Tags", name: "tags", widget: "list", required: false}
+              - {label: "Link", name: "link", widget: "string", required: true}
+          - label: "Tools"
+            name: "tools"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string", required: true}
+              - {label: "Short Name", name: "shortName", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "markdown", required: true}
+              - {label: "Tags", name: "tags", widget: "list", required: false}
+              - {label: "Link", name: "link", widget: "string", required: true}
+  - name: "pages"
+    label: "Pages"
+    label_singular: "Page"
     folder: "src/pages"
     slug: "{{slug}}"
-    preview_path: "pages/{{slug}}"
+    preview_path: "{{slug}}"
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Custom Permalink (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+      - {label: "Intro", name: "intro", widget: "markdown", required: false}
+      - label: "Header Background Colour"
+        name: "headerBgColor"
+        widget: "select"
+        options:
+          - { label: "White", value: "white" }
+          - { label: "Black", value: "black" }                
+          - { label: "Indigo 100", value: "indigo-100" }
+          - { label: "Indigo 500", value: "indigo-500" }
+          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Blue 500", value: "blue-500" }
+          - { label: "Red 500", value: "red-500" }
+          - { label: "Red 900", value: "red-900" }
+          - { label: "Yellow 500", value: "yellow-500" }
+          - { label: "Yellow 900", value: "yellow-900" }
+        default: ["indigo-100"]
+        required: true
+      - label: "Header Border Colour"
+        name: "headerBorderColor"
+        widget: "select"
+        options:
+          - { label: "White", value: "white" }
+          - { label: "Black", value: "black" }                
+          - { label: "Indigo 100", value: "indigo-100" }
+          - { label: "Indigo 500", value: "indigo-500" }
+          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Blue 500", value: "blue-500" }
+          - { label: "Red 500", value: "red-500" }
+          - { label: "Red 900", value: "red-900" }
+          - { label: "Yellow 500", value: "yellow-500" }
+          - { label: "Yellow 900", value: "yellow-900" }
+        default: ["indigo-100"]
+        required: true
+      - label: "Header Text Colour"
+        name: "headerTextColor"
+        widget: "select"
+        options:
+          - { label: "White", value: "white" }
+          - { label: "Black", value: "black" }                
+          - { label: "Indigo 100", value: "indigo-100" }
+          - { label: "Indigo 500", value: "indigo-500" }
+          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Blue 500", value: "blue-500" }
+          - { label: "Red 500", value: "red-500" }
+          - { label: "Red 900", value: "red-900" }
+          - { label: "Yellow 500", value: "yellow-500" }
+          - { label: "Yellow 900", value: "yellow-900" }
+        default: ["black"]
+        required: true
+      - label: "Sections"
+        name: "sections"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: true}
+          - {label: "Content", name: "content", widget: "markdown", required: true}
+          - label: "Text Colour"
+            name: "textColor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["black"]
+            required: false
+          - label: "Background Colour"
+            name: "backgroundColor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-100"]
+            required: false
+          - label: "Border Colour"
+            name: "borderColor"
+            widget: "select"
+            options:
+              - { label: "White", value: "white" }
+              - { label: "Black", value: "black" }                
+              - { label: "Indigo 100", value: "indigo-100" }
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Blue 500", value: "blue-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Red 900", value: "red-900" }
+              - { label: "Yellow 500", value: "yellow-500" }
+              - { label: "Yellow 900", value: "yellow-900" }
+            default: ["indigo-500"]
+            required: false
+          - {label: "Image", name: "image", widget: "string", required: false}
+          - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+          - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
+          - label: "Image Order"
+            name: "imageOrder"
+            widget: "select"
+            options:
+              - { label: "Start", value: "start" }
+              - { label: "End", value: "end" } 
+            default: ["start"]
+            required: false
+          - label: "Image Order (Desktop)"
+            name: "imageOrderDesktop"
+            widget: "select"
+            options:
+              - { label: "Auto", value: "auto" }
+              - { label: "Swap", value: "swap" } 
+            default: ["auto"]
+            required: false
+          - label: "Image Shadow"
+            name: "imageShadow"
+            widget: "select"
+            options:
+              - { label: "Indigo 500", value: "indigo-500" }
+              - { label: "Red 500", value: "red-500" }
+              - { label: "Yellow 500", value: "yellow-500" }
+            default: ["indigo-500"]
+            required: false
+          - label: "Desktop Width"
+            name: "desktopWidth"
+            widget: "select"
+            options:
+              - { label: "Third", value: "third" }
+              - { label: "Half", value: "half" }
+              - { label: "Full", value: "full" } 
+              - { label: "Full Bleed", value: "full-bleed" }
+            default: ["full"]
+            required: false
+  - name: "posts"
+    label: "Posts"
+    label_singular: "Post"
+    folder: "src/posts"
+    slug: "{{slug}}"
+    preview_path: "/news/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
+      - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Globals"
     name: "globals"
@@ -57,7 +372,12 @@ collections:
         delete: false
         file: "src/_data/site.json"
         fields:
-          - {label: "Site Titl", name: "title", widget: "string"}
+          - {label: "Site Title", name: "title", widget: "string"}
           - {label: "Site Url", name: "url", widget: "string"}
-
-      
+          - {label: "Contact Email", name: "email", widget: "string"}
+          - {label: "Contact Phone", name: "phone", widget: "string"}
+          - {label: "Contact Fax", name: "fax", widget: "string"}
+          - {label: "Physical Address", name: "address", widget: "text"}
+          - {label: "Twitter Username", name: "twitter", widget: "string"}
+          - {label: "Medium Username", name: "medium", widget: "string"}
+          - {label: "YouTube Link", name: "youtube", widget: "string"}

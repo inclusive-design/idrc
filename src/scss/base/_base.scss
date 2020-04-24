@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  @apply underline font-display inline-block;
+  @apply underline font-display;
 }
 
 a:hover,
@@ -23,27 +23,29 @@ a:visited .underline {
   text-decoration-color: #f6e05e;
 }
 
-main a:not([rel="external"])::after {
-  background-color: currentColor;
-  content: "";
-  mask-image: url('../images/internal.svg');
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 7px 12px;
+@supports (mask-image: url('dot.svg')) {
+  main a:not([rel="external"])::after {
+    background-color: currentColor;
+    content: "";
+    mask-image: url('../images/internal.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
 
-  @apply pl-4 inline ml-0 -mb-1;
-}
+    @apply pl-4 ml-0 -mb-1;
+  }
 
-a[rel~="external"]::after,
-a[href^="mailto:"]::after {
-  background-color: currentColor;
-  content: "";
-  mask-image: url('../images/external.svg');
-  mask-position: center;
-  mask-repeat: no-repeat;
-  mask-size: 0.875em;
+  a[rel~="external"]::after,
+  a[href^="mailto:"]::after {
+    background-color: currentColor;
+    content: "";
+    mask-image: url('../images/external.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
 
-  @apply pl-4 inline ml-1 -mb-1;
+    @apply pl-4 ml-1 -mb-1;
+  }
 }
 
 .bg-indigo-900 {

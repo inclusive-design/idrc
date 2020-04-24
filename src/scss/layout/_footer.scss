@@ -1,12 +1,73 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+.footer {
+  @apply mt-auto text-white bg-indigo-900;
+}
 
-footer .social,
-footer .contact {
+.footer .container {
+  @apply px-6 py-20 mx-auto;
+}
+
+.footer a:hover,
+.footer a:focus {
+  @apply bg-indigo-500;
+}
+
+.footer a:visited,
+.footer a:visited .underline {
+  text-decoration-color: $indigo-500;
+}
+
+.footer .social,
+.footer .contact {
+  @apply mt-12;
+
   &::before {
     content: "";
 
-    @apply block w-full border-b-2 mb-2 bg-white;
+    @apply block w-full border-b-2 mb-2 border-white;
+  }
+}
+
+.footer ul {
+  @apply mt-6 list-none;
+}
+
+.footer li {
+  @apply mb-2;
+}
+
+.footer .social a {
+  @apply no-underline;
+}
+
+.footer .license-credit {
+  @apply mt-12 text-sm;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .container {
+    @apply flex flex-row flex-wrap;
+  }
+
+  .footer .logo {
+    @apply w-full;
+  }
+
+  .footer .social {
+    @apply w-1/3 pr-6;
+  }
+
+  .footer .contact {
+    @apply w-2/3 flex flex-row flex-wrap;
+
+    .h3 {
+      @apply w-full mb-6;
+    }
+
+    div {
+      @apply w-1/2 mt-0;
+    }
   }
 }

@@ -1,12 +1,22 @@
-<nav class="mt-0 ml-auto" id="menu" aria-labelledby="main-menu">
-    {% set navPages = collections.all | eleventyNavigation %}
-    <button class="lg:hidden" id="menu-toggle" aria-expanded="false">menu</button>
-    <div class="menu absolute hidden shadow-xl left-0 z-10 py-10 mt-6 w-screen bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} lg:z-auto lg:w-auto lg:py-0 lg:flex lg:relative lg:shadow-none">
-        <p id="menu-label" class="px-6 font-serif text-5xl font-black leading-tight lg:sr-only font-size">Menu</p>
-        <ul class="flex-col px-6 list-none lg:px-0 lg:mt-0 lg:relative lg:flex lg:flex-row">
-        {%- for entry in navPages %}
-        <li class="py-2 lg:py-0 lg:pr-4">
-            <a {% if entry.url == page.url %}aria-current="page" class="border-b-2 border-{{ headertextcolor if headertextcolor else 'black' }}" {% endif %}href="{{ entry.url | url }}">{{ entry.title }}</a>
+<nav class="nav" id="menu" aria-labelledby="menu-label">
+    {% set navItems = collections.all | eleventyNavigation %}
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false">menu</button>
+    <div class="menu{{ ' bg-' + headerBgColor if headerBgColor }}">
+        <p class="menu-label" id="menu-label"><span class="sr-only">main </span>Menu</p>
+        <ul>
+        {%- for entry in navItems %}
+	        {% set currentAttribute, relAttribute = '' %}
+	        {% set currentPage = page.url === entry.url %}
+	
+	        {% if entry.rel %}
+	          {% set relAttribute = ' rel="' + entry.rel + '"' %}
+	        {% endif %}
+	
+	        {% if currentPage %}
+	          {% set currentAttribute = ' aria-current="page"' %}
+	        {% endif %}
+        <li>
+            <a{{ relAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
         {%- endfor %}
         </ul>

@@ -4,68 +4,61 @@
 
 {% block content %}
     <article class="container mx-auto">
-        <header class="py-20 bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} text-{{ headertextcolor if headertextcolor else 'black' }}">
+        <header class="py-20 bg-{{ headerBgColor if headerBgColor else 'indigo-100' }} text-{{ headerTextColor if headerTextColor else 'black' }}">
             <div class="container px-6 mx-auto">
                 <h1 class="lg:w-1/2">{{ title }}</h1>
                 {% if intro %}
-                <div class="mt-5 text-sm lg:w-1/2 intro">{{ intro | markdown | safe }}</div>
+                <div class="mt-5 text-sm lg:w-1/2 intro">{{ intro | markdownFilter | safe }}</div>
                 {% endif %}
             </div>
         </header>
-        {% for section in sections %}
-        <section id="{{ section.title | slug }}" class="section {{ 'section--full-bleed' if section.desktopWidth == 'full-bleed' }}{{ 'section--full' if section.desktopWidth == 'full' }}{{ 'section--half' if section.desktopWidth == 'half' }} py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imageOrder == 'top' }} bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
-            <div class="container px-6 mx-auto lg:flex lg:flex-row lg:justify-between">
-                {% if section.imageOrder == 'start' %}
-                <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} mb-20">
-                    <img class="shadow-indigo-500" src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
-                </figure>
-                {% endif %}
-                <div class="{{ 'lg:w-1/2' if section.image else 'lg:w-full' }} section__content lg:order-1">
-                    <span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColour if section.borderColour else 'black' }}"></span>
-                    <h2>{{ section.title }}</h2>
-                    {% if section.title == 'Projects' %}
+        <section id="projects" class="py-20 text-black bg-indigo-100 section section--full">
+            <div class="container px-6 mx-auto">
+                <div class="lg:w-full section__content">
+                    <span class="block w-20 mb-10 border-b-2 border-indigo-500 hr"></span>
+                    <h2>Projects</h2>
                     <div class="lg:flex lg:flex-row lg:flex-wrap">
-                        {% for item in projects %}
+                        {% for project in projects %}
                         <div class="mt-8 lg:w-1/2 {{ ' lg:pl-6' if loop.index % 2 == 0 else ' lg:pr-6' }}">
-                            <h3>{{ item.name }}{{ " (" + item.shortName + ")" if item.shortName }}</h3>
-                            {{ item.description | markdown | safe }}
-                            {% if item.tags %}
+                            <h3>{{ project.name }}{{ " (" + project.shortName + ")" if project.shortName }}</h3>
+                            {{ project.description | markdownFilter | safe }}
+                            {% if project.tags %}
                             <p class="tags">
-                                {% for tag in item.tags %}
+                                {% for tag in project.tags %}
                                 <span class="tag">{{ tag | safe }}</span>
                                 {% endfor %}
                             </p>
-                            <p><a rel="external" href="{{ item.link }}">Visit {{ item.shortName if item.shortName else item.name }} website</a></p>
+                            <p><a rel="external" href="{{ project.link }}">Visit {{ project.shortName if project.shortName else project.name }} website</a></p>
                             {% endif %}
                         </div>
                         {% endfor %}
                     </div>
-                    {% elseif section.title == 'Tools' %}
-                    <div class="lg:flex lg:flex-row lg:flex-wrap">
-                        {% for item in tools %}
-                        <div class="mt-8 lg:w-1/2">
-                            <h3>{{ item.name }}{{ " (" + item.shortName + ")" if item.shortName }}</h3>
-                            {{ item.description | markdown | safe }}
-                            {% if item.tags %}
-                            <p class="tags">
-                                {% for tag in item.tags %}
-                                <span class="tag">{{ tag | safe }}</span>
-                                {% endfor %}
-                            </p>
-                            <p><a rel="external" href="{{ item.link }}">Visit {{ item.shortName if item.shortName else item.name }} website</a></p>
-                            {% endif %}
-                        </div>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
                 </div>
-                {% if section.imageOrder == 'end' %}
-                <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} lg:-mt-12 mt-6 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
-                    <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
-                </figure>
-                {% endif %}
             </div>
         </section>
-        {% endfor %}
+        <section id="tools" class="py-20 text-black bg-indigo-100 section section--full">
+            <div class="container px-6 mx-auto">
+                <div class="lg:w-full section__content">
+                    <span class="block w-20 mb-10 border-b-2 border-indigo-500 hr"></span>
+                    <h2>Tools</h2>
+                    <div class="lg:flex lg:flex-row lg:flex-wrap">
+                        {% for tool in tools %}
+                        <div class="mt-8 lg:w-1/2 {{ ' lg:pl-6' if loop.index % 2 == 0 else ' lg:pr-6' }}">
+                            <h3>{{ tool.name }}{{ " (" + tool.shortName + ")" if tool.shortName }}</h3>
+                            {{ tool.description | markdownFilter | safe }}
+                            {% if tool.tags %}
+                            <p class="tags">
+                                {% for tag in tool.tags %}
+                                <span class="tag">{{ tag | safe }}</span>
+                                {% endfor %}
+                            </p>
+                            <p><a rel="external" href="{{ tool.link }}">Visit {{ tool.shortName if tool.shortName else tool.name }} website</a></p>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
     </article>
 {% endblock %}

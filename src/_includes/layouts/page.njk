@@ -4,16 +4,16 @@
 
 {% block content %}
     <article class="container mx-auto">
-        <header class="py-20 bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} text-{{ headertextcolor if headertextcolor else 'black' }}">
+        <header class="py-20 border-b-2 bg-{{ headerBgColor if headerBgColor else 'indigo-100' }} text-{{ headerTextColor if headerTextColor else 'black' }}{{ ' border-' + headerBorderColor if headerBorderColor }}">
             <div class="container px-6 mx-auto">
                 <h1 class="lg:w-1/2">{{ title }}</h1>
                 {% if intro %}
-                <div class="mt-5 text-sm lg:w-1/2 intro">{{ intro | markdown | safe }}</div>
+                <div class="mt-5 text-sm lg:w-1/2 intro">{{ intro | markdownFilter | safe }}</div>
                 {% endif %}
             </div>
         </header>
         {% for section in sections %}
-        <section id="{{ section.title | slug }}" class="section {{ 'section--full-bleed' if section.desktopWidth == 'full-bleed' }}{{ 'section--full' if section.desktopWidth == 'full' }}{{ 'section--half' if section.desktopWidth == 'half' }} py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imageOrder == 'top' }} bg-{{ section.backgroundColour if section.backgroundColour else 'indigo-100' }} text-{{ section.textColour if section.textColour else 'black' }}">
+        <section id="{{ section.title | slug }}" class="section {{ 'section--full-bleed' if section.desktopWidth == 'full-bleed' }}{{ 'section--full' if section.desktopWidth == 'full' }}{{ 'section--half' if section.desktopWidth == 'half' }}{{ 'section--third' if section.desktopWidth == 'third' }} py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imageOrder == 'top' }} bg-{{ section.backgroundColor if section.backgroundColor else 'indigo-100' }} text-{{ section.textColor if section.textColor else 'black' }}">
             <div class="container px-6 mx-auto lg:flex lg:flex-row lg:items-start lg:justify-between">
                 {% if section.imageOrder == 'start' %}
                 <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} mb-20 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
@@ -21,9 +21,9 @@
                 </figure>
                 {% endif %}
                 <div class="{{ 'lg:w-1/2' if section.image else 'lg:w-full' }} section__content lg:order-1">
-                    {% if section.borderColour %}<span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColour }}"></span>{% endif %}
+                    {% if section.borderColor %}<span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColor }}"></span>{% endif %}
                     <h2>{{ section.title }}</h2>
-                    {{ section.content | markdown | safe }}
+                    {{ section.content | markdownFilter | safe }}
                 </div>
                 {% if section.imageOrder == 'end' %}
                 <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} lg:-mt-12 mt-6 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">

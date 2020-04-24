@@ -1,22 +1,36 @@
-<!doctype html>
+{% if previewMode %}{% else %}<!doctype html>
 <html lang="en-ca" class="no-js">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{{ site.title }}</title>
+        {% include "partials/global/meta-info.njk" %}
         <link rel="stylesheet" type="text/css" href="{{ manifest['/css/idrc.css'] }}" />
+        <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" /> 
+        <link rel="icon" href="/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/images/icon-192.png">
+        <link rel="manifest" href="/manifest.webmanifest">
         <script>document.documentElement.classList.remove('no-js');</script>
         <script type="text/javascript" src="{{ manifest['/js/idrc.js'] }}" defer></script>
         {% block head %}
         {% endblock %}
     </head>
     <body class="{{ pageType }} flex flex-col justify-start min-h-screen">
-        {% include "partials/global/header.njk" %}
+        {% include "partials/global/header.njk" %}{% endif %}
         <main>
             {% block content %}
             {% endblock content %}
         </main>
-        {% include "partials/global/footer.njk" %}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async defer></script>
+        {% if previewMode %}{% else %}{% include "partials/global/footer.njk" %}
+        {# {% if global.environment !== 'development' %}
+        <script>
+            if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+            }
+        </script>
+        {% endif %} #}
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>
+{% endif %}

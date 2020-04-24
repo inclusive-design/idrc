@@ -4,7 +4,7 @@
   functions = "functions"
 
 [dev]
-  command = "npm run watch:site"
+  command = "npm run start"
   targetPort = 3000
   publish = "dist"
   autoLaunch = true

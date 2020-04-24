@@ -1,22 +1,22 @@
 ---
 title: WebSavvy Accessibility Consulting
 permalink: /websavvy/
-headerbgcolor: yellow-500
-headerbordercolor: yellow-200
-headertextcolor: black
+eleventyNavigation:
+  key: WebSavvy Accessibility Consulting
+  order: 4
+headerBgColor: yellow-500
+headerBorderColor: yellow-200
+headerTextColor: black
 intro: >
     We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
-eleventyNavigation:
-    key: WebSavvy Accessibility Consulting
-    order: 4
 sections:
     - title: Consulting
-      borderColour: red-500
+      borderColor: red-500
       content: >
         The best time to get accessibility advice on your project is right from the start! But whether you are at the wireframe stage, have a site in development, or are implementing the changes recommended by an audit, we can guide you in creating an accessible website at any time in your design and development process.
       desktopWidth: half
     - title: Audits
-      borderColour: red-500
+      borderColor: red-500
       content: >
         Website accessibility evaluations are available for web sites (including web applications and mobile web apps) to check conformance with the Web Content Accessibility Guidelines (WCAG) 2.0.
 
@@ -32,7 +32,7 @@ sections:
         - and many others.
       desktopWidth: half
     - title: Training
-      borderColour: red-500
+      borderColor: red-500
       content: >
         ### Website accessibility
 
@@ -53,7 +53,7 @@ sections:
         Group training is also available on creating accessible office documents (Word, PDF) with Microsoft Word and Adobe Acrobat. This non-technical training is a companion to the free Accessible Digital Office Document (ADOD) resource that the IDRC maintains.
       desktopWidth: full
     - title: Contact WebSavvy
-      backgroundColour: indigo-200
+      backgroundColor: indigo-200
       borderColor: 
       desktopWidth: full-bleed
       desktopAlignment: center

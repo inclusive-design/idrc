@@ -1,0 +1,50 @@
+{% set pageTitle = title + ' - ' + site.name %}
+{% if page.url == '/' %}
+    {% set pageTitle = site.name %}
+{% endif %}
+{% set siteTitle = site.name %}
+{% set pageDesc = '' %}
+{% set currentUrl = site.url + page.url %}
+
+{% if metaTitle %}
+    {% set pageTitle = metaTitle %}
+{% endif %}
+	
+{% if metaDesc %}
+    {% set pageDesc = metaDesc %}
+{% else %}
+    {% set pageDesc = site.description %}
+{% endif %}
+	
+<title>{{ pageTitle }}</title>
+<link rel="canonical" href="{{ currentUrl }}" />
+<link rel="alternate" type="application/rss+xml" title="" href="{{ currentUrl }}/feed.xml">
+
+<meta property="og:site_name" content="{{ siteTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ currentUrl }}" />
+	
+{% if site.twitter %}
+    <meta name="twitter:creator" content="@{{ site.twitter | replace('@', '') }}" />
+{% endif %}
+	
+{% if pageDesc %}
+    <meta name="description" content="{{ pageDesc }}" />
+    <meta name="twitter:description" content="{{ pageDesc }}" />
+    <meta property="og:description" content="{{ pageDesc }}" />
+{% endif %}
+	
+{% if socialImage %}  
+    <meta property="og:image" content="{{ socialImage }}" />
+    <meta name="twitter:image" content="{{ socialImage }}" />
+    <meta property="og:image:alt" content="Preview image for {{ site.name }}" />
+    <meta name="twitter:image:alt" content="Preview image for {{ site.name }}" />
+{% else %}
+    <meta property="og:image" content="{{ global.baseUrl }}/images/opengraph.png" />
+    <meta name="twitter:image" content="{{ global.baseUrl }}/images/opengraph.png" />
+    <meta property="og:image:alt" content="Logo of the Inclusive Design Research Centre" />
+    <meta name="twitter:image:alt" content="Logo of the Inclusive Design Research Centre" />
+{% endif %}
+
+<meta name="theme-color" content="#00A0CC" />

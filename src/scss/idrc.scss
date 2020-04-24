@@ -34,13 +34,15 @@
 
 // 5. Components
 @import
+  'components/brand',
   'components/button',
   'components/nav';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/generic';
+  'pages/generic',
+  'pages/404';
 
 // 7. Themes
 @import
