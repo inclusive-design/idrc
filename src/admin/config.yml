@@ -76,8 +76,8 @@ collections:
                   - { label: "Yellow 900", value: "yellow-900" }
                 default: ["indigo-500"]
                 required: false
-              - {label: "Image", name: "image", widget: "string", required: false}
-              - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+              - {label: "Image", name: "image", widget: "image", required: false}
+              - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
               - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
               - label: "Image Order"
                 name: "imageOrder"
