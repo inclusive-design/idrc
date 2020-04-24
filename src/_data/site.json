@@ -1,12 +1,13 @@
 {
-    "name": "Inclusive Design Research Centre",
-    "description": "An international community of open source developers, designers, researchers, educators and co-designers who work together to proactively ensure that emerging technology and practices are designed inclusively.",
-    "url": "https://idrc.ocadu.ca",
-    "email": "idrc@ocadu.ca",
-    "phone": "(416) 977-6000 #3968",
-    "fax": "(416) 977-9844)",
-    "address": "205 Richmond St. W., Second Floor\nToronto, Ontario, Canada\nM5V 1V3",
-    "twitter": "@idrc_ocadu",
-    "medium": "@jutta.trevira",
-    "youtube": "https://youtube.com/channel/UCBT-cBmvdLAhCm58ulpBulQ"
+  "youtube": "https://youtube.com/channel/UCBT-cBmvdLAhCm58ulpBulQ",
+  "name": "Inclusive Design Research Centre",
+  "phone": "(416) 977-6000 #3968",
+  "url": "https://idrc.ocadu.ca",
+  "twitter": "@idrc_ocadu",
+  "address": "205 Richmond St. W., Second Floor\nToronto, Ontario, Canada\nM5V 1V3",
+  "medium": "@jutta.trevira",
+  "title": "Inclusive Design Research Centre",
+  "email": "idrc@ocadu.ca",
+  "description": "An international community of open source developers, designers, researchers, educators and co-designers who work together to proactively ensure that emerging technology and practices are designed inclusively.",
+  "fax": "(416) 977-9844"
 }
