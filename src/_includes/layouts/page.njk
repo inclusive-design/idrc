@@ -4,7 +4,7 @@
 
 {% block content %}
     <article class="container mx-auto">
-        <header class="py-20 border-b-2 bg-{{ headerbgcolor if headerbgcolor else 'indigo-100' }} text-{{ headertextcolor if headertextcolor else 'black' }}{{ ' border-' + headerbordercolor if headerbordercolor }}">
+        <header class="py-20 border-b-2 bg-{{ headerBgColor if headerBgColor else 'indigo-100' }} text-{{ headerTextColor if headerTextColor else 'black' }}{{ ' border-' + headerBorderColor if headerBorderColor }}">
             <div class="container px-6 mx-auto">
                 <h1 class="lg:w-1/2">{{ title }}</h1>
                 {% if intro %}

@@ -13,7 +13,7 @@ intro: >
   Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates
   the [Inclusive Design Institute](https://inclusivedesign.ca/). Both were
   founded by Dr. Jutta Treviranus with the help of her team and community.
-headerbgcolor: indigo-100
+headerBgColor: indigo-100
 sections:
   - image2x: /media/what-we-do@2x.jpg
     imageOrderDesktop: swap

@@ -126,7 +126,7 @@ collections:
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
           - label: "Header Background Colour"
-            name: "headerbgcolor"
+            name: "headerBgColor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -142,7 +142,7 @@ collections:
             default: ["indigo-100"]
             required: true
           - label: "Header Border Colour"
-            name: "headerbordercolor"
+            name: "headerBorderColor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -158,7 +158,7 @@ collections:
             default: ["indigo-100"]
             required: true
           - label: "Header Text Colour"
-            name: "headertextcolor"
+            name: "headerTextColor"
             widget: "select"
             options:
               - { label: "White", value: "white" }
@@ -207,7 +207,7 @@ collections:
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
       - {label: "Intro", name: "intro", widget: "markdown", required: false}
       - label: "Header Background Colour"
-        name: "headerbgcolor"
+        name: "headerBgColor"
         widget: "select"
         options:
           - { label: "White", value: "white" }
@@ -223,7 +223,7 @@ collections:
         default: ["indigo-100"]
         required: true
       - label: "Header Border Colour"
-        name: "headerbordercolor"
+        name: "headerBorderColor"
         widget: "select"
         options:
           - { label: "White", value: "white" }
@@ -239,7 +239,7 @@ collections:
         default: ["indigo-100"]
         required: true
       - label: "Header Text Colour"
-        name: "headertextcolor"
+        name: "headerTextColor"
         widget: "select"
         options:
           - { label: "White", value: "white" }
