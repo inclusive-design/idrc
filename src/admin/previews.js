@@ -2,9 +2,9 @@ const {
 	w3DateFilter,
 	markdownFilter,
 	dateFilter,
-	slugFilter
+	slugFilter,
+	site
 } = previewUtil;
-
 
 const env = nunjucks.configure();
 
@@ -15,7 +15,7 @@ env.addFilter('slug', slugFilter)
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
-	const html = env.render(path, {...data});
+	const html = env.render(path, {...data, site});
 	return <div dangerouslySetInnerHTML={{__html: html}}/>;
 };
 
@@ -23,9 +23,9 @@ const Page = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/page.njk"
-		context={({ title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
-			header: false,
-			footer: false,
+		context={({ site, title, intro, sections, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+			previewMode: true,
+			site,
 			title,
 			intro,
 			sections,
@@ -40,9 +40,9 @@ const ProjectsAndTools = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/projects.njk"
-		context={({ title, intro, projects, tools, headerbgcolor, headertextcolor, headerbordercolor }) => ({
-			header: false,
-			footer: false,
+		context={({ site, title, intro, projects, tools, headerbgcolor, headertextcolor, headerbordercolor }) => ({
+			previewMode: true,
+			site,
 			title,
 			intro,
 			projects,
@@ -58,9 +58,9 @@ const Post = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/post.njk"
-		context={({ title, date, author, body }) => ({
-			header: false,
-			footer: false,
+		context={({ site, title, date, author, body }) => ({
+			previewMode: true,
+			site,
 			title,
 			date,
 			author,
