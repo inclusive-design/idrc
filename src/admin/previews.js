@@ -2,8 +2,7 @@ const {
 	w3DateFilter,
 	markdownFilter,
 	dateFilter,
-	slugFilter,
-	site
+	slugFilter
 } = previewUtil;
 
 
@@ -16,7 +15,7 @@ env.addFilter('slug', slugFilter)
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
-	const html = env.render(path, {...data, site});
+	const html = env.render(path, {...data});
 	return <div dangerouslySetInnerHTML={{__html: html}}/>;
 };
 
@@ -71,7 +70,29 @@ const Post = ({entry}) => (
 	/>
 );
 
+const SiteData = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="partials/global/footer.njk"
+		context={({ name, description, url, email, phone, fax, address, twitter, medium, youtube }) => ({
+			site: {
+				name,
+				description,
+				url,
+				email,
+				phone,
+				fax,
+				address,
+				twitter,
+				medium,
+				youtube
+			}
+		})}
+	/>
+);
+
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('pages', Page);
 CMS.registerPreviewTemplate('posts', Post);
+CMS.registerPreviewTemplate('site_data', SiteData);
