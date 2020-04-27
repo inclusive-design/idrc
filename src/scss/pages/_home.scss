@@ -1,3 +1,48 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+/* purgecss start ignore */
+#what-is-inclusive-design {
+  .section__content {
+    @apply pt-32 px-0 relative;
+
+    > * {
+      @apply relative z-10;
+    }
+
+    &::before {
+      @apply block absolute ;
+
+      background: radial-gradient(50% 50% at 50% 50%, #fff 0%, rgba(255, 255, 255, 0) 100%) no-repeat 50% 50% / 100% 100%;
+      content: "";
+      height: 40rem;
+      left: -15rem;
+      mask-image: url('../images/scatterplot.svg');
+      mask-position: center;
+      mask-repeat: no-repeat;
+      mask-size: cover;
+      top: -15rem;
+      width: 40rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #what-is-inclusive-design {
+    .section__content {
+      @apply pt-0;
+
+      padding-left: calc(50% + 3rem);
+
+      &::before {
+        height: 56rem;
+        left: -14vw;
+        top: -16rem;
+        width: 56rem;
+      }
+    }
+  }
+}
+
+/* purgecss end ignore */
