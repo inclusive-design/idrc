@@ -24,9 +24,7 @@ const colors = [
 	'yellow-500'
 ];
 
-const whitelist = [
-	'#what-is-inclusive-design'
-];
+const whitelist = [];
 
 shadowColors.forEach(color => {
 	whitelist.push(`shadow-${color}`);

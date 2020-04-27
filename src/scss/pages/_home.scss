@@ -1,6 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+/* purgecss start ignore */
 #what-is-inclusive-design {
   .section__content {
     @apply pt-32 px-0 relative;
@@ -42,3 +44,5 @@
     }
   }
 }
+
+/* purgecss end ignore */
