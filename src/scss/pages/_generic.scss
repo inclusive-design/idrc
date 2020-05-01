@@ -8,6 +8,11 @@ article header {
   width: 100vw;
 }
 
+article .content .inner {
+  max-width: 100%;
+  padding: 0 1.5rem;
+}
+
 .section--full {
   margin-left: 50%;
   margin-right: auto;

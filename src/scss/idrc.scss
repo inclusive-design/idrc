@@ -36,12 +36,15 @@
 @import
   'components/brand',
   'components/button',
-  'components/nav';
+  'components/nav',
+  'components/pagination';
 
 // 6. Page-specific styles
 @import
   'pages/home',
   'pages/generic',
+  'pages/news',
+  'pages/post',
   'pages/404';
 
 // 7. Themes

@@ -6,6 +6,65 @@
   color: $white;
 }
 
+.page--404 a {
+  text-decoration-color: $indigo-500;
+}
+
+.page--404 a:hover,
+.page--404 a:focus {
+  background: $indigo-500;
+}
+
+.page--404 article {
+  margin: 0 auto;
+  padding-top: 5rem;
+
+  @media (min-width: 1024px) {
+    padding-top: 16rem;
+  }
+}
+
 .page--404 article header {
   text-align: center;
+}
+
+.page--404 article header .inner {
+  margin: 0 auto;
+}
+
+.page--404 article h1 {
+  padding: 0 1.5rem;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1280px) {
+    width: (100% * 5 / 12);
+  }
+}
+
+.page--404 article .content {
+  padding-top: 1rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1280px) {
+    width: (100% * 5 / 12);
+  }
 }

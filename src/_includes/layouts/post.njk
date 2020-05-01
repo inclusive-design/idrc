@@ -1,20 +1,20 @@
 {% extends 'layouts/base.njk' %}
 
-{% set pageType = 'page--post' %}
+{% set pageType = 'post' %}
 
 {% block content %}
-    <article class="container mx-auto">
-        <header class="py-20 text-black bg-white">
-            <div class="container mx-auto">
-                <h1 class="px-6 md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto">{{ title }}</h1>
-                <p class="px-6 mt-6 metadata md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto small">
+    <article class="container">
+        <header>
+            <div class="container inner">
+                <h1>{{ title }}</h1>
+                <p class="metadata">
                     <time datetime="{{ date | w3DateFilter }}" class="dt-published">Published {{ date | dateFilter }}</time><br />
                     By {{ author if author else 'IDRC Team' }}
                 </p>
             </div>
         </header>
-        <div class="py-10 content md:w-3/4 lg:w-1/2 xl:w-5/12 md:mx-auto lg:py-20">
-            <div class="container px-6">
+        <div class="content">
+            <div class="inner">
             {{ content | safe }}
             </div>
         </div>
