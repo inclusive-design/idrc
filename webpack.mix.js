@@ -3,12 +3,6 @@ const tailwindcss = require('tailwindcss');
 
 require('laravel-mix-purgecss'); // eslint-disable-line import/no-unassigned-import
 
-const shadowColors = [
-	'indigo-500',
-	'red-500',
-	'yellow-500'
-];
-
 const colors = [
 	'black',
 	'white',
@@ -24,16 +18,10 @@ const colors = [
 	'yellow-500'
 ];
 
-const whitelist = [];
-
-shadowColors.forEach(color => {
-	whitelist.push(`shadow-${color}`);
-});
+const whitelistPatterns = [];
 
 colors.forEach(color => {
-	whitelist.push(`bg-${color}`);
-	whitelist.push(`border-${color}`);
-	whitelist.push(`text-${color}`);
+	whitelistPatterns.push(`${color}`);
 });
 
 mix.setPublicPath('./src/_includes/static')
@@ -49,6 +37,6 @@ mix.setPublicPath('./src/_includes/static')
 if (mix.inProduction()) {
 	mix.purgeCss({
 		content: ['./src/_includes/**/*.njk', './src/_includes/svg/*.svg', './src/transforms/*.js'],
-		whitelist
+		whitelistPatterns
 	});
 }

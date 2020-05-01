@@ -1,0 +1,32 @@
+.page--projects-and-tools .hr {
+  border-bottom-color: $indigo-500;
+}
+
+.page--projects-and-tools .project,
+.page--projects-and-tools .tool {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .page--projects-and-tools .projects,
+  .page--projects-and-tools .tools {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page--projects-and-tools .project,
+  .page--projects-and-tools .tool {
+    width: 50%;
+  }
+
+  .page--projects-and-tools .project:nth-child(odd),
+  .page--projects-and-tools .tool:nth-child(odd) {
+    padding-right: 1.5rem;
+  }
+
+  .page--projects-and-tools .project:nth-child(even),
+  .page--projects-and-tools .tool:nth-child(even) {
+    padding-left: 1.5rem;
+  }
+}

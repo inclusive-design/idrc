@@ -1,3 +1,8 @@
 .brand {
   color: $blue-500;
 }
+
+.brand svg {
+  fill: currentColor;
+  width: 2.5rem;
+}

@@ -6,19 +6,3 @@ button:focus {
   background: $yellow-500;
   outline: none;
 }
-
-.bg-indigo-900 {
-  button:hover,
-  button:focus {
-    background: $indigo-500;
-  }
-}
-
-.bg-blue-500,
-.bg-red-500,
-.bg-yellow-500 {
-  button:hover,
-  button:focus {
-    background: $white;
-  }
-}

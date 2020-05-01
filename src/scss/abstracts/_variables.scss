@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+
 $black: #00303f;
 $white: #fff;
 $indigo-100: #f8fbff;
@@ -13,6 +14,21 @@ $red-500: #f56565;
 $red-900: #e53e3e;
 $yellow-200: #faf089;
 $yellow-500: #f6e05e;
+
+$colors: (
+  'black': $black,
+  'white': $white,
+  'indigo-100': $indigo-100,
+  'indigo-200': $indigo-200,
+  'indigo-500': $indigo-500,
+  'indigo-900': $indigo-900,
+  'logo': $logo,
+  'blue-500': $blue-500,
+  'red-500': $red-500,
+  'red-900': $red-900,
+  'yellow-200': $yellow-200,
+  'yellow-500': $yellow-500
+);
 
 $font-sans: 'Open Sans', sans-serif;
 $font-display: 'Work Sans', sans-serif;

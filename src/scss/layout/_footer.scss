@@ -12,6 +12,11 @@
   padding: 5rem 1.5rem;
 }
 
+.footer .logo svg {
+  fill: currentColor;
+  width: 12rem;
+}
+
 .footer a:hover,
 .footer a:focus {
   background: $indigo-500;
@@ -46,6 +51,13 @@
 
 .footer .social a {
   text-decoration: none;
+}
+
+.footer .social svg {
+  display: inline;
+  fill: currentColor;
+  margin-top: -0.25rem;
+  width: 1rem;
 }
 
 .footer .license-credit {

@@ -13,7 +13,8 @@
 }
 
 .page--news main > article header h1 {
-  padding: 0 1.5rem;
+  padding: 0;
+  width: 100%;
 
   @media (min-width: 768px) {
     margin-left: auto;
@@ -48,10 +49,7 @@
 }
 
 .page--news .entry .hr {
-  border-bottom: 2px solid $indigo-500;
-  display: block;
-  margin-bottom: 2.5rem;
-  width: 5rem;
+  border-bottom-color: $indigo-500;
 }
 
 .page--news .entry .metadata {
