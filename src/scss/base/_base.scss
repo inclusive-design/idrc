@@ -2,20 +2,28 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 * {
-  @apply font-sans leading-normal;
+  font-family: $font-sans;
+  line-height: 1.5;
 }
 
 body {
-  @apply bg-indigo-100 text-black;
+  background: $indigo-100;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 100vh;
 }
 
 a {
-  @apply underline font-display;
+  font-family: $font-display;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  @apply bg-yellow-500 outline-none;
+  background: $yellow-500;
+  outline: none;
 }
 
 a:visited,
@@ -25,38 +33,40 @@ a:visited .underline {
 
 @supports (mask-image: url('dot.svg')) {
   main a:not([rel="external"])::after {
-    background-color: currentColor;
+    background: currentColor;
     content: "";
+    margin-bottom: -0.25rem;
+    margin-left: 0;
     mask-image: url('../images/internal.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 1.5em;
-
-    @apply pl-4 ml-0 -mb-1;
+    padding-left: 1rem;
   }
 
   a[rel~="external"]::after,
   a[href^="mailto:"]::after {
     background-color: currentColor;
     content: "";
+    margin-bottom: -0.25rem;
+    margin-left: 0;
     mask-image: url('../images/external.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 1.5em;
-
-    @apply pl-4 ml-1 -mb-1;
+    padding-left: 1rem;
   }
 }
 
 .bg-indigo-900 {
   a:hover,
   a:focus {
-    @apply bg-indigo-500;
+    background: $indigo-500;
   }
 
   a:visited,
   a:visited .underline {
-    text-decoration-color: #3544d0;
+    text-decoration-color: $indigo-500;
   }
 }
 
@@ -65,17 +75,17 @@ a:visited .underline {
 .bg-yellow-500 {
   a:hover,
   a:focus {
-    @apply bg-white;
+    background: $white;
   }
 
   a:visited,
   a:visited .underline {
-    text-decoration-color: #fff;
+    text-decoration-color: $white;
   }
 }
 
 blockquote {
-  @apply pl-8;
+  padding-left: 2rem;
 }
 
 ul {
@@ -87,5 +97,5 @@ ol {
 }
 
 li + li {
-  @apply mt-0;
+  margin-top: 0;
 }

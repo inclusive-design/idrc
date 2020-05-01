@@ -2,5 +2,10 @@
 // This file contains styles that are specific to the 404 page.
 // -----------------------------------------------------------------------------
 .page--404 {
-  @apply bg-indigo-900;
+  background: $indigo-900;
+  color: $white;
+}
+
+.page--404 article header {
+  text-align: center;
 }

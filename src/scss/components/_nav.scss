@@ -1,5 +1,6 @@
 .nav {
-  @apply mt-0 ml-auto;
+  margin-left: auto;
+  margin-top: 0;
 }
 
 .nav .menu-toggle {
@@ -9,53 +10,75 @@
 }
 
 .nav .menu {
-  @apply absolute hidden shadow-xl left-0 z-10 py-10 mt-6 w-screen;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  display: none;
+  left: 0;
+  margin-top: 1.5rem;
+  padding: 2.5rem 0;
+  position: absolute;
+  width: 100vw;
+  z-index: 10;
 
   @media screen and (min-width: 1024px) {
-    @apply z-auto w-auto py-0 flex relative shadow-none;
+    box-shadow: none;
+    display: flex;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    width: auto;
+    z-index: auto;
   }
 }
 
 .nav [aria-expanded="true"] + .menu {
-  @apply block;
+  display: block;
 }
 
 .nav .menu-label {
-  @apply px-6 font-serif text-5xl font-black leading-tight;
+  font-family: $font-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.25;
+  padding: 0 1.5rem;
 
   @media screen and (min-width: 1024px) {
-    @apply sr-only;
+    @include sr-only();
   }
 }
 
 .nav ul {
-  @apply flex-col px-6 list-none;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 1.5rem;
 
   @media screen and (min-width: 1024px) {
-    @apply px-0 mt-0 relative flex flex-row;
+    flex-direction: row;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
   }
 }
 
 .nav li {
-  @apply py-2;
+  padding: 0.5rem 0;
 
   @media screen and (min-width: 1024px) {
-    @apply py-0 pr-4;
+    padding: 0 1rem 0 0;
   }
 }
 
 .nav a {
-  @apply font-medium no-underline;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 nav a[aria-current="page"] {
-  border-bottom-color: currentColor;
-
-  @apply border-b-2;
+  border: 2px solid currentColor;
 }
 
 .pagination a {
-  @apply underline;
+  text-decoration: underline;
 
   &::after {
     display: none;
@@ -63,10 +86,11 @@ nav a[aria-current="page"] {
 }
 
 .pagination a[aria-current="page"] {
-  @apply bg-indigo-900 text-white;
+  background: $indigo-900;
+  color: $white;
 
   &:hover,
   &:focus {
-    @apply bg-indigo-500;
+    background: $indigo-500;
   }
 }

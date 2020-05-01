@@ -3,39 +3,42 @@
 // -----------------------------------------------------------------------------
 
 article header {
-  @apply w-screen transform -translate-x-1/2;
-
   margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
 }
 
 .section--full {
-  @apply mx-auto w-screen transform -translate-x-1/2;
-
   margin-left: 50%;
+  margin-right: auto;
+  transform: translateX(-50%);
+  width: 100vw;
 }
 
 .section--full-bleed {
-  @apply w-screen transform -translate-x-1/2;
-
   margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
 }
 
 @media (min-width: 1024px) {
   .section--half {
-    @apply max-w-screen-sm mx-auto inline-block;
-
-    width: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 640px;
+    width: (100% / 2);
   }
 
   .section--third {
-    @apply max-w-screen-sm mx-auto inline-block;
-
-    width: 33%;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 640px;
+    width: (100 / 3);
   }
 }
 
 @media (min-width: 1280px) {
   .section--half {
-    @apply w-full;
+    width: 100%;
   }
 }

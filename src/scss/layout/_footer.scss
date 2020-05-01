@@ -2,16 +2,19 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-  @apply mt-auto text-white bg-indigo-900;
+  background: $indigo-900;
+  color: $white;
+  margin-top: auto;
 }
 
 .footer .container {
-  @apply px-6 py-20 mx-auto;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
 }
 
 .footer a:hover,
 .footer a:focus {
-  @apply bg-indigo-500;
+  background: $indigo-500;
 }
 
 .footer a:visited,
@@ -21,53 +24,65 @@
 
 .footer .social,
 .footer .contact {
-  @apply mt-12;
+  margin-top: 3rem;
 
   &::before {
+    border-bottom: 2px solid $white;
     content: "";
-
-    @apply block w-full border-b-2 mb-2 border-white;
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
   }
 }
 
 .footer ul {
-  @apply mt-6 list-none;
+  list-style: none;
+  margin-top: 1.5rem;
 }
 
 .footer li {
-  @apply mb-2;
+  margin-bottom: 0.5rem;
 }
 
 .footer .social a {
-  @apply no-underline;
+  text-decoration: none;
 }
 
 .footer .license-credit {
-  @apply mt-12 text-sm;
+  font-size: 0.875rem;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
   .footer .container {
-    @apply flex flex-row flex-wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .footer .logo {
-    @apply w-full;
+    width: 100%;
   }
 
   .footer .social {
-    @apply w-1/3 pr-6;
+    padding-right: 1.5rem;
+    width: (100% / 3);
   }
 
   .footer .contact {
-    @apply w-2/3 flex flex-row flex-wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: (100% * 2 / 3);
 
     .h3 {
-      @apply w-full mb-6;
+      margin-bottom: 1.5rem;
+      width: 100%;
     }
 
     div {
-      @apply w-1/2 mt-0;
+      margin-top: 0;
+      width: 50%;
     }
   }
 }
