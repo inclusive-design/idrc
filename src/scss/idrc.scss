@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-// Tailwind base
-
-/* purgecss start ignore */
-@tailwind base;
-
-/* purgecss end ignore */
-
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -21,6 +14,7 @@
 
 // 3. Base stuff
 @import
+  'base/reset',
   'base/base',
   'base/fonts',
   'base/typography',

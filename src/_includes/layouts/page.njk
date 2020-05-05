@@ -34,7 +34,7 @@
         <section id="{{ sectionTitle | slug }}" class="section
         {{ desktopWidth }}
         {{ 'section--image' if section.image }}
-        {{ desktopAlignment if section.desktopAlignment }}
+        {{ section.desktopAlignment if section.desktopAlignment }}
         {{ 'section--bg-' + section.backgroundColor if section.backgroundColor }}
         {{ 'section--fg-' + section.textColor if section.textColor }}"> 
             <div class="container">
