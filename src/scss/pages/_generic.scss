@@ -71,6 +71,10 @@ article .content .inner {
   width: 100vw;
 }
 
+.section--full .subsection + .subsection {
+  margin-top: 1.5rem;
+}
+
 .section--full-bleed {
   margin-left: 50%;
   transform: translateX(-50%);
@@ -128,7 +132,24 @@ article .content .inner {
     display: inline-block;
     margin: 0 auto;
     max-width: 640px;
-    width: (100% / 2);
+    width: 50%;
+  }
+
+  .section--full .subsection {
+    float: left;
+    width: 50%;
+  }
+
+  .section--full .subsection:nth-child(odd) {
+    margin-left: -1.5rem;
+    margin-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .section--full .subsection:nth-child(even) {
+    margin-left: 1.5rem;
+    margin-right: -1.5rem;
+    padding-right: 1.5rem;
   }
 
   .section--third {

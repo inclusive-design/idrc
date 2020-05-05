@@ -112,7 +112,7 @@ collections:
                   - { label: "Full", value: "full" } 
                   - { label: "Full Bleed", value: "full-bleed" }
                 default: ["full"]
-                required: false
+                required: true
       - name: "projects-and-tools"
         label: "Projects and Tools"
         delete: false
