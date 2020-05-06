@@ -23,7 +23,6 @@ module.exports = (value, outputPath) => {
 
 		if (subheads.length > 0) {
 			// Loop each heading and add a little anchor and an ID to each one
-			let i = 1;
 			subheads.forEach(heading => {
 				// Function to create a node list
 				// of the content between this <h2> and the next
@@ -46,9 +45,7 @@ module.exports = (value, outputPath) => {
 
 				const wrapper = document.createElement('div');
 
-				const padding = i % 2 === 0 ? 'lg:pl-6' : 'lg:pr-6';
-
-				wrapper.className = `mt-6 lg:w-1/2 lg:float-left ${padding}`;
+				wrapper.className = 'subsection';
 
 				// Add each element of `contents` to `wrapper`
 				contents.forEach(node => {
@@ -59,7 +56,6 @@ module.exports = (value, outputPath) => {
 				// after the heading
 				heading.parentNode.insertBefore(wrapper, heading.nextElementSibling);
 				wrapper.prepend(heading);
-				i++;
 			});
 		}
 

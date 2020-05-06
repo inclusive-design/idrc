@@ -2,40 +2,222 @@
 // This file contains generic page styles.
 // -----------------------------------------------------------------------------
 
-article header {
-  @apply w-screen transform -translate-x-1/2;
+article {
+  margin-left: auto;
+  margin-right: auto;
+}
 
+article header {
+  background: $indigo-100;
+  color: $black;
   margin-left: 50%;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+article header .inner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+article header h1 {
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
+article header .intro {
+  font-size: 0.875rem;
+  margin-top: 1.25rem;
+
+  @media screen and (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
+article .content .inner {
+  max-width: 100%;
+  padding: 0 1.5rem;
+}
+
+.hr {
+  border-bottom: 2px solid;
+  display: block;
+  margin-bottom: 2.5rem;
+  width: 5rem;
+}
+
+@each $name, $color in $colors {
+  .hr--#{$name} {
+    border-bottom-color: $color;
+  }
+}
+
+.section {
+  background: $indigo-100;
+  color: $black;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 .section--full {
-  @apply mx-auto w-screen transform -translate-x-1/2;
-
   margin-left: 50%;
+  margin-right: auto;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+.section--full .subsection + .subsection {
+  margin-top: 1.5rem;
 }
 
 .section--full-bleed {
-  @apply w-screen transform -translate-x-1/2;
-
   margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+.section .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.section--image .section__content {
+  margin-top: 4rem;
+}
+
+.section figure {
+  box-shadow: 1.5rem 1.5rem $indigo-500;
+  margin-bottom: 5rem;
+}
+
+.section figure.shadow-indigo-500 {
+  box-shadow: 1.5rem 1.5rem $indigo-500;
+}
+
+.section figure.shadow-red-500 {
+  box-shadow: 1.5rem 1.5rem $red-500;
+}
+
+.section figure.shadow-yellow-500 {
+  box-shadow: 1.5rem 1.5rem $yellow-500;
+}
+
+.section img {
+  width: 100%;
+}
+
+.section .section__content + figure {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 1024px) {
-  .section--half {
-    @apply max-w-screen-sm mx-auto inline-block;
+  .section.center {
+    text-align: center;
+  }
 
+  .section.center .hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section--half {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 640px;
     width: 50%;
   }
 
-  .section--third {
-    @apply max-w-screen-sm mx-auto inline-block;
+  .section--full .subsection {
+    float: left;
+    width: 50%;
+  }
 
-    width: 33%;
+  .section--full .subsection:nth-child(odd) {
+    margin-left: -1.5rem;
+    margin-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .section--full .subsection:nth-child(even) {
+    margin-left: 1.5rem;
+    margin-right: -1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .section--third {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 640px;
+    width: (100% / 3);
+  }
+
+  .section .container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .section figure {
+    margin-left: 0;
+    margin-right: 3rem;
+    order: 0;
+    width: 50%;
+  }
+
+  .section figure.swap {
+    margin-left: 3rem;
+    margin-right: 0;
+    order: 2;
+  }
+
+  .section__content {
+    order: 1;
+    width: 100%;
+  }
+
+  .section--image .section__content {
+    margin-top: 0;
+    width: 50%;
+  }
+
+  .section figure + .section__content {
+    margin-left: 0;
+    margin-right: 3rem;
+    margin-top: 0;
+    order: 0;
+  }
+
+  .section figure.swap + .section__content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .section .section__content + figure {
+    margin-left: 0;
+    margin-right: 3rem;
+    margin-top: -3rem;
+    order: 0;
+  }
+
+  .section .section__content + figure.swap {
+    margin-left: 3rem;
+    margin-right: 0;
+    margin-top: 0;
+    order: 2;
   }
 }
 
 @media (min-width: 1280px) {
   .section--half {
-    @apply w-full;
+    width: 100%;
   }
 }

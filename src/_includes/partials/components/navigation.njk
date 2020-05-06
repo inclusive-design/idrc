@@ -1,7 +1,7 @@
 <nav class="nav" id="menu" aria-labelledby="menu-label">
     {% set navItems = collections.all | eleventyNavigation %}
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false">menu</button>
-    <div class="menu{{ ' bg-' + headerBgColor if headerBgColor }}">
+    <div class="menu{{ ' --bg-' + headerBgColor if headerBgColor }}">
         <p class="menu-label" id="menu-label"><span class="sr-only">main </span>Menu</p>
         <ul>
         {%- for entry in navItems %}

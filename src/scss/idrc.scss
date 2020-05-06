@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-// Tailwind base and components
-
-/* purgecss start ignore */
-@tailwind base;
-@tailwind components;
-
-/* purgecss end ignore */
-
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -22,6 +14,7 @@
 
 // 3. Base stuff
 @import
+  'base/reset',
   'base/base',
   'base/fonts',
   'base/typography',
@@ -36,17 +29,18 @@
 @import
   'components/brand',
   'components/button',
-  'components/nav';
+  'components/nav',
+  'components/pagination';
 
 // 6. Page-specific styles
 @import
-  'pages/home',
   'pages/generic',
+  'pages/home',
+  'pages/projects-tools',
+  'pages/news',
+  'pages/post',
   'pages/404';
 
 // 7. Themes
 @import
   'themes/default';
-
-// Tailwind utilities
-@tailwind utilities;

@@ -3,21 +3,6 @@
 // -----------------------------------------------------------------------------
 button:hover,
 button:focus {
-  @apply bg-yellow-500 outline-none;
-}
-
-.bg-indigo-900 {
-  button:hover,
-  button:focus {
-    @apply bg-indigo-500;
-  }
-}
-
-.bg-blue-500,
-.bg-red-500,
-.bg-yellow-500 {
-  button:hover,
-  button:focus {
-    @apply bg-white;
-  }
+  background: $yellow-500;
+  outline: none;
 }

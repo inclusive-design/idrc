@@ -5,60 +5,65 @@ h1,
 .h1,
 h2,
 .h2 {
-  @apply font-black font-serif;
+  font-family: $font-serif;
+  font-weight: 900;
 }
 
 h1,
 .h1 {
-  @apply text-5xl leading-tight;
+  font-size: 3rem;
+  line-height: 1.25;
 }
 
 h2,
 .h2 {
-  @apply text-4xl leading-tight;
+  font-size: 2.25rem;
+  line-height: 1.25;
 }
 
 h3,
 .h3 {
-  @apply text-2xl font-display font-semibold leading-tight;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 h4,
 .h4 {
-  @apply text-xl font-display font-semibold;
+  font-family: $font-display;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 
 p + * {
-  @apply mt-6;
+  margin-top: 1.5rem;
 }
 
 ul + *,
 ol + * {
-  @apply mt-6;
+  margin-top: 1.5rem;
 }
 
 h2 + *,
 .h2 + * {
-  @apply mt-6;
+  margin-top: 1.5rem;
 }
 
 h3 + p {
-  @apply mt-6;
+  margin-top: 1.5rem;
 }
 
-h4 + p {
-  @apply mt-0;
+h4 + p,
+.h4 + p {
+  margin-top: 0;
 }
 
 .h3 + p {
-  @apply mt-1;
-}
-
-.h4 + p {
-  @apply mt-0;
+  margin-top: 0.25rem;
 }
 
 * + ul,
 * + ol {
-  @apply mt-6;
+  margin-top: 1.5rem;
 }

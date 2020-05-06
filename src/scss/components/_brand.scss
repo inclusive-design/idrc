@@ -1,3 +1,8 @@
 .brand {
-  @apply text-blue-500;
+  color: inherit;
+}
+
+.brand svg {
+  fill: currentColor;
+  width: 2.5rem;
 }

@@ -3,35 +3,59 @@
 {% set pageType = 'page--generic' %}
 
 {% block content %}
-    <article class="container mx-auto">
-        <header class="py-20 border-b-2 bg-{{ headerBgColor if headerBgColor else 'indigo-100' }} text-{{ headerTextColor if headerTextColor else 'black' }}{{ ' border-' + headerBorderColor if headerBorderColor }}">
-            <div class="container px-6 mx-auto">
-                <h1 class="lg:w-1/2">{{ title }}</h1>
+    <article class="container">
+        <header class="{{ 'header--bg-' + headerBgColor if headerBgColor }} {{ 'header--fg-' + headerTextColor if headerTextColor }}">
+            <div class="container inner">
+                <h1>{{ title }}</h1>
                 {% if intro %}
-                <div class="mt-5 text-sm lg:w-1/2 intro">{{ intro | markdownFilter | safe }}</div>
+                <div class="intro">{{ intro | markdownFilter | safe }}</div>
                 {% endif %}
             </div>
         </header>
-        {% for section in sections %}
-        <section id="{{ section.title | slug }}" class="section {{ 'section--full-bleed' if section.desktopWidth == 'full-bleed' }}{{ 'section--full' if section.desktopWidth == 'full' }}{{ 'section--half' if section.desktopWidth == 'half' }}{{ 'section--third' if section.desktopWidth == 'third' }} py-20 {{ 'lg:text-center' if section.desktopAlignment == 'center' }} {{ 'mt-16' if section.imageOrder == 'top' }} bg-{{ section.backgroundColor if section.backgroundColor else 'indigo-100' }} text-{{ section.textColor if section.textColor else 'black' }}">
-            <div class="container px-6 mx-auto lg:flex lg:flex-row lg:items-start lg:justify-between">
-                {% if section.imageOrder == 'start' %}
-                <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} mb-20 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
-                    <img class="w-full" src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
+        {%- if sections %}
+            {%- for section in sections %}
+            {% set sectionTitle = '' %}
+            {% set sectionContent = '' %}
+            {% set desktopWidth = 'section--full' %}
+            {% set imageOrderDesktop = '' %}
+
+            {% if section.title %}
+                {% set sectionTitle = section.title %}
+            {% endif %}
+            {% if section.content %}
+                {% set sectionContent = section.content %}
+            {% endif %}
+            {% if section.desktopWidth %}
+                {% set desktopWidth = 'section--' + section.desktopWidth %}
+            {% endif %}
+            {% if section.imageOrderDesktop %}
+                {% set imageOrderDesktop = section.imageOrderDesktop %}
+            {% endif %}
+        <section id="{{ sectionTitle | slug }}" class="section
+        {{ desktopWidth }}
+        {{ 'section--image' if section.image }}
+        {{ section.desktopAlignment if section.desktopAlignment }}
+        {{ 'section--bg-' + section.backgroundColor if section.backgroundColor }}
+        {{ 'section--fg-' + section.textColor if section.textColor }}"> 
+            <div class="container">
+                {% if section.image and section.imageOrder == 'start' %}
+                <figure class="{{ imageOrderDesktop }} {{ 'shadow-' + section.imageShadow if section.imageShadow else 'indigo-500' }}">
+                    <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
                 </figure>
                 {% endif %}
-                <div class="{{ 'lg:w-1/2' if section.image else 'lg:w-full' }} section__content lg:order-1">
-                    {% if section.borderColor %}<span class="block w-20 mb-10 {{ 'lg:mx-auto' if section.desktopAlignment == 'center' }} border-b-2 hr border-{{ section.borderColor }}"></span>{% endif %}
-                    <h2>{{ section.title }}</h2>
-                    {{ section.content | markdownFilter | safe }}
+                <div class="section__content">
+                    {% if section.borderColor %}<span class="hr hr--{{ section.borderColor }}"></span>{% endif %}
+                    <h2>{{ sectionTitle | safe }}</h2>
+                    {{ sectionContent | markdownFilter | safe }}
                 </div>
-                {% if section.imageOrder == 'end' %}
-                <figure class="lg:w-1/2 {{ 'lg:order-2 lg:ml-12' if section.imageOrderDesktop == 'swap' else 'lg:order-0 lg:mr-12' }} lg:-mt-12 mt-6 shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
-                    <img class="w-full" src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
+                {% if section.image and section.imageOrder == 'end' %}
+                <figure class="{{ imageOrderDesktop }} shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
+                    <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
                 </figure>
                 {% endif %}
             </div>
         </section>
-        {% endfor %}
+            {%- endfor %}
+        {%- endif %}
     </article>
 {% endblock %}
