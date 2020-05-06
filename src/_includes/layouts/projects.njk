@@ -22,14 +22,14 @@
                         <div class="project">
                             <h3>{{ project.name }}{{ " (" + project.shortName + ")" if project.shortName }}</h3>
                             {{ project.description | markdownFilter | safe }}
-                            {% if project.tags %}
+                            {% if project.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in project.tags %}
                                 <span class="tag">{{ tag | safe }}</span>
                                 {% endfor %}
                             </p>
-                            <p><a rel="external" href="{{ project.link }}">Visit {{ project.shortName if project.shortName else project.name }} website</a></p>
                             {% endif %}
+                            <p class="project__link"><a rel="external" href="{{ project.link }}">Visit {{ project.shortName if project.shortName else project.name }} website</a></p>
                         </div>
                         {% endfor %}
                     </div>
@@ -46,14 +46,14 @@
                         <div class="tool">
                             <h3>{{ tool.name }}{{ " (" + tool.shortName + ")" if tool.shortName }}</h3>
                             {{ tool.description | markdownFilter | safe }}
-                            {% if tool.tags %}
+                            {% if tool.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in tool.tags %}
                                 <span class="tag">{{ tag | safe }}</span>
                                 {% endfor %}
                             </p>
-                            <p><a rel="external" href="{{ tool.link }}">Visit {{ tool.shortName if tool.shortName else tool.name }} website</a></p>
                             {% endif %}
+                            <p class="tool__link"><a rel="external" href="{{ tool.link }}">Visit {{ tool.shortName if tool.shortName else tool.name }} website</a></p>
                         </div>
                         {% endfor %}
                     </div>

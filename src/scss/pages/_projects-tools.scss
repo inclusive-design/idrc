@@ -4,7 +4,12 @@
 
 .page--projects-and-tools .project,
 .page--projects-and-tools .tool {
-  margin-top: 2rem;
+  margin-top: 3rem;
+}
+
+.page--projects-and-tools .project__link,
+.page--projects-and-tools .tool__link {
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
