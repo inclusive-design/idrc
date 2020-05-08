@@ -1,0 +1,18 @@
+/about-the-idrc                                                                         /                                                                   302
+/about-the-idrc/idrc-news                                                               /news/                                                              301            
+/about-the-idrc/idrc-news/534-continuing-our-work-during-covid-19                       /news/continuing-our-work-during-covid-19/                          301
+/about-the-idrc/idrc-news/533-we-count-removing-bias-and-exclusion-in-the-data-economy  /news/we-count-removing-bias-and-exclusion-in-the-data-economy/     301
+/about-the-idrc/idrc-news/*                                                             https://legacy.idrc.ocadu.ca/about-the-idrc/idrc-news/:splat        302 # Temporarily redirect all legacy news items to legacy site.
+/about-the-idrc/contact-us                                                              /#contact-us                                                        302
+/about-the-idrc/employment-opportunities                                                /#job-postings                                                      302
+/about-the-idrc/getinvolved                                                             /#get-involved                                                      302
+/about-the-idrc/*                                                                       https://legacy.idrc.ocadu.ca/about-the-idrc/:splat                  302 # Temporarily redirect all subpages of "About the IDRC" to the legacy site.
+/research-and-development                                                               /projects-and-tools/                                                301
+/research-and-development/*                                                             https://legacy.idrc.ocadu.ca/research-and-development/:splat        302
+/resources                                                                              /#our-resources                                                     302
+/workshops-aamp-trainings                                                               https://legacy.idrc.ocadu.ca/workshops-aamp-trainings               302 # Temporarily redirect "Education" page to legacy site.
+/policy                                                                                 https://legacy.idrc.ocadu.ca/policy                                 302 # Temporarily redirect "Policy" page to legacy site.
+/policy/*                                                                               https://legacy.idrc.ocadu.ca/policy/:splat                          302 # Temporarily redirect all subpages of "Policy" to the legacy site.
+/services                                                                               /#services-we-offer                                                 302
+/services/33-services/57-vision-technology-service                                      /vision-technology-service/                                         301
+/services/34-services/consultation/58-employment-accommodation-services                 /vision-technology-service/                                         301
