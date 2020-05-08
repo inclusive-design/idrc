@@ -13,7 +13,7 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const workboxOptions = {
 	cacheId: 'emergency-site',
 	swDest: './dist/sw.js',
-	globPatterns: ['**/*.html', 'js/*.js', 'css/*.css', 'images/*.svg', 'images/*.png', 'fonts/*.woff2'],
+	globPatterns: ['index.html', 'js/idrc.js', 'css/idrc.css'],
 	globIgnores: ['admin/**/*', 'node_modules/**/*'],
 	skipWaiting: false
 };
