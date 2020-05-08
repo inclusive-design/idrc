@@ -34,7 +34,9 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPlugin(errorOverlay);
 	eleventyConfig.addPlugin(eleventyPWA, {
 		globIgnores: [
-			'admin/*.*'
+			'admin/*.*',
+			'node_modules/**/*.*'
+
 		]
 	});
 	eleventyConfig.addPlugin(eleventyRssPlugin);
