@@ -4,7 +4,7 @@
 {% endif %}
 {% set siteTitle = site.name %}
 {% set pageDesc = '' %}
-{% set currentUrl = site.url + page.url %}
+{% set currentUrl = global.baseUrl + page.url %}
 
 {% if metaTitle %}
     {% set pageTitle = metaTitle %}
