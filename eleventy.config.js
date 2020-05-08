@@ -1,6 +1,7 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
+const eleventyPWA = require('eleventy-plugin-pwa');
 const fs = require('fs');
 
 const htmlMinTransform = require('./src/transforms/html-min.js');
@@ -30,8 +31,13 @@ module.exports = eleventyConfig => {
 
 	// Plugins.
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
-	eleventyConfig.addPlugin(eleventyRssPlugin);
 	eleventyConfig.addPlugin(errorOverlay);
+	eleventyConfig.addPlugin(eleventyPWA, {
+		globIgnores: [
+			'admin/*.*'
+		]
+	});
+	eleventyConfig.addPlugin(eleventyRssPlugin);
 
 	// Transforms.
 	eleventyConfig.addTransform('htmlmin', htmlMinTransform);
