@@ -7,8 +7,8 @@
 /about-the-idrc/employment-opportunities                                                /#job-postings                                                      302
 /about-the-idrc/getinvolved                                                             /#get-involved                                                      302
 /about-the-idrc/*                                                                       https://legacy.idrc.ocadu.ca/about-the-idrc/:splat                  302 # Temporarily redirect all subpages of "About the IDRC" to the legacy site.
-/research-and-development/*                                                             https://legacy.idrc.ocadu.ca/research-and-development/:splat        302
 /research-and-development                                                               /projects-and-tools/                                                301
+/research-and-development/*                                                             https://legacy.idrc.ocadu.ca/research-and-development/:splat        302
 /resources                                                                              /#our-resources                                                     302
 /workshops-aamp-trainings                                                               https://legacy.idrc.ocadu.ca/workshops-aamp-trainings               302 # Temporarily redirect "Education" page to legacy site.
 /policy                                                                                 https://legacy.idrc.ocadu.ca/policy                                 302 # Temporarily redirect "Policy" page to legacy site.
