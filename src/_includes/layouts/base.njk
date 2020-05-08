@@ -13,7 +13,7 @@
         <script type="text/javascript" src="{{ manifest['/js/idrc.js'] }}" defer></script>
         <script>
         if ("serviceWorker" in navigator)
-            navigator.serviceWorker.register("/service-worker.js");
+            navigator.serviceWorker.register("/sw.js");
         </script>
         {% block head %}
         {% endblock %}
@@ -25,15 +25,6 @@
             {% endblock content %}
         </main>
         {% if previewMode %}{% else %}{% include "partials/global/footer.njk" %}
-        {# {% if global.environment !== 'development' %}
-        <script>
-            if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-            });
-            }
-        </script>
-        {% endif %} #}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>
