@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 #what-is-inclusive-design {
-  overflow-x: hidden;
+  overflow: hidden auto;
 
   .section__content {
     padding: 8rem 0 0;
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 1024px) {
   #what-is-inclusive-design {
-    overflow-x: auto;
+    overflow: auto hidden;
 
     .section__content {
       padding-left: calc(50% + 3rem);
