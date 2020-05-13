@@ -2,8 +2,8 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .banner {
-  background: $indigo-100;
-  color: $black;
+  background: var(--header-bg, $indigo-100);
+  color: var(--header-fg, $black);
   padding-top: 1.5rem;
 }
 

@@ -22,7 +22,7 @@ a {
 
 a:hover,
 a:focus {
-  background: $yellow-500;
+  background: var(--accent, $yellow-500);
   outline: none;
 }
 
@@ -58,32 +58,6 @@ a:visited .underline {
   }
 }
 
-.--bg-indigo-900 {
-  a:hover,
-  a:focus {
-    background: $indigo-500;
-  }
-
-  a:visited,
-  a:visited .underline {
-    text-decoration-color: $indigo-500;
-  }
-}
-
-.--bg-blue-500,
-.--bg-red-500,
-.--bg-yellow-500 {
-  a:hover,
-  a:focus {
-    background: $white;
-  }
-
-  a:visited,
-  a:visited .underline {
-    text-decoration-color: $white;
-  }
-}
-
 blockquote {
   padding-left: 2rem;
 }
@@ -101,36 +75,22 @@ li + li {
 }
 
 @each $name, $color in $colors {
-  .banner.banner--bg-#{$name} {
-    background: $color;
-
-    .menu {
-      background: $color;
-    }
-  }
-
-  .header--bg-#{$name} {
-    background: $color;
-  }
-
   .section.section--bg-#{$name} {
     background: $color;
   }
 }
 
+.section.section--bg-indigo-900 {
+  --accent: #{$indigo-500};
+}
+
+.section.section--bg-blue-500,
+.section.section--bg-red-500,
+.section.section--bg-yellow-500 {
+  --accent: #{$white};
+}
+
 @each $name, $color in $colors {
-  .banner.banner--fg-#{$name} {
-    color: $color;
-
-    .menu {
-      color: $color;
-    }
-  }
-
-  .header--fg-#{$name} {
-    color: $color;
-  }
-
   .section.section--fg-#{$name} {
     color: $color;
   }

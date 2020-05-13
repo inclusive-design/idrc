@@ -10,6 +10,7 @@
 }
 
 .nav .menu {
+  background: var(--header-bg, $indigo-100);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   display: none;
   left: 0;
@@ -69,6 +70,7 @@
 }
 
 .nav a {
+  color: var(--header-fg, $black);
   font-weight: 500;
   text-decoration: none;
 }
@@ -83,6 +85,11 @@ nav a[aria-current="page"] {
   &::after {
     display: none;
   }
+}
+
+.nav a:hover,
+.nav a:focus {
+  background: var(--header-accent, $yellow-500);
 }
 
 .pagination a[aria-current="page"] {

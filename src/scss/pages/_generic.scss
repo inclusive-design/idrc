@@ -8,8 +8,8 @@ article {
 }
 
 article header {
-  background: $indigo-100;
-  color: $black;
+  background: var(--header-bg, $indigo-100);
+  color: var(--header-fg, $black);
   margin-left: 50%;
   padding-bottom: 5rem;
   padding-top: 5rem;

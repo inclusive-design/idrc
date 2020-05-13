@@ -9,14 +9,32 @@
         <link rel="icon" href="/images/favicon.png" />
         <link rel="apple-touch-icon" href="/images/icon-192.png">
         <link rel="manifest" href="/manifest.webmanifest">
+        {% if headerBgColor or headerTextColor %}
+        <style>
+            :root {
+            {% if headerBgColor %}
+                --header-bg: var(--{{ headerBgColor }});
+            {% endif %}
+            {% if headerTextColor %}
+                --header-fg: var(--{{ headerTextColor }});
+            {% endif %}
+            {% if headerBgColor === 'blue-500' or headerBgColor === 'red-500' or headerBgColor === 'yellow-500' %}
+                {% set headerAccentColor = 'white' %}
+            {% elif headerBgColor === 'indigo-900' %}
+                {% set headerAccentColor = 'indigo-500' %}
+            {% endif %}
+                --header-accent: var(--{{ headerAccentColor }}, var(--yellow-500));
+            }
+        </style>
+        {% endif %}
         <script>document.documentElement.classList.remove('no-js');</script>
         <script type="text/javascript" src="/js/idrc.js" defer></script>
-        {# {% if global.environment !== 'development' %}
+        {% if global.environment !== 'development' %}
         <script>
         if ("serviceWorker" in navigator)
             navigator.serviceWorker.register("/sw.js");
         </script>
-        {% endif %} #}
+        {% endif %}
         {% block head %}
         {% endblock %}
     </head>

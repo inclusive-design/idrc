@@ -30,6 +30,12 @@ $colors: (
   'yellow-500': $yellow-500
 );
 
+:root {
+  @each $name, $color in $colors {
+    --#{$name}: #{$color};
+  }
+}
+
 $font-sans: 'Open Sans', sans-serif;
 $font-display: 'Work Sans', sans-serif;
 $font-serif: 'Merriweather', serif;
