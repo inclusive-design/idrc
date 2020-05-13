@@ -81,6 +81,7 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@tbranyen/jsdom": "^13.0.0",
+    "eleventy-plugin-pwa": "^1.0.8",
     "html-minifier": "^4.0.0",
     "nunjucks": "^3.2.1",
     "slugify": "^1.4.0"
