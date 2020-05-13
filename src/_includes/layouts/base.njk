@@ -14,7 +14,7 @@
         {% if global.environment !== 'development' %}
         <script>
         if ("serviceWorker" in navigator)
-            navigator.serviceWorker.register("/sw.js");
+            navigator.serviceWorker.unregister("/sw.js");
         </script>
         {% endif %}
         {% block head %}
