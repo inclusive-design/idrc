@@ -11,7 +11,7 @@ const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const workboxOptions = {
-	cacheId: 'emergency-site',
+	cacheId: 'idrc',
 	swDest: './dist/sw.js',
 	globPatterns: ['index.html', 'js/idrc.js', 'css/idrc.css'],
 	globIgnores: ['admin/**/*', 'node_modules/**/*'],
