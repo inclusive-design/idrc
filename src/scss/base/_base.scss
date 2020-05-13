@@ -103,6 +103,10 @@ li + li {
 @each $name, $color in $colors {
   .banner.banner--bg-#{$name} {
     background: $color;
+
+    .menu {
+      background: $color;
+    }
   }
 
   .header--bg-#{$name} {
@@ -117,6 +121,10 @@ li + li {
 @each $name, $color in $colors {
   .banner.banner--fg-#{$name} {
     color: $color;
+
+    .menu {
+      color: $color;
+    }
   }
 
   .header--fg-#{$name} {

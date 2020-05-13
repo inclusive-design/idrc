@@ -11,10 +11,12 @@
         <link rel="manifest" href="/manifest.webmanifest">
         <script>document.documentElement.classList.remove('no-js');</script>
         <script type="text/javascript" src="{{ manifest['/js/idrc.js'] }}" defer></script>
+        {% if global.environment !== 'development' %}
         <script>
         if ("serviceWorker" in navigator)
             navigator.serviceWorker.register("/sw.js");
         </script>
+        {% endif %}
         {% block head %}
         {% endblock %}
     </head>
