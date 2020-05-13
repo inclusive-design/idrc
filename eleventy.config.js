@@ -1,7 +1,6 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
-const eleventyPWA = require('eleventy-plugin-pwa');
 const fs = require('fs');
 
 const htmlMinTransform = require('./src/transforms/html-min.js');
@@ -9,14 +8,6 @@ const parseTransform = require('./src/transforms/parse.js');
 const dateFilter = require('./src/filters/date-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
-
-const workboxOptions = {
-	cacheId: 'idrc',
-	swDest: './dist/sw.js',
-	globPatterns: ['index.html', 'js/idrc.js', 'css/idrc.css'],
-	globIgnores: ['admin/**/*', 'node_modules/**/*'],
-	skipWaiting: false
-};
 
 module.exports = eleventyConfig => {
 	const now = new Date();
@@ -40,7 +31,6 @@ module.exports = eleventyConfig => {
 	// Plugins.
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(errorOverlay);
-	eleventyConfig.addPlugin(eleventyPWA, workboxOptions);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
 
 	// Transforms.
