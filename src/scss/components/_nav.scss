@@ -4,8 +4,16 @@
 }
 
 .nav .menu-toggle {
+  background: var(--header-bg, $indigo-100);
+  color: var(--header-fg, $black);
+
   @media screen and (min-width: 1024px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background: var(--header-accent, $yellow-500);
   }
 }
 
