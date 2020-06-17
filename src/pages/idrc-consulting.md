@@ -1,8 +1,8 @@
 ---
-title: WebSavvy Accessibility Consulting
-permalink: /websavvy/
+title: IDRC Consulting
+permalink: /consulting/
 eleventyNavigation:
-  key: WebSavvy Accessibility Consulting
+  key: IDRC Consulting
   order: 4
 headerBgColor: yellow-500
 headerBorderColor: yellow-200
@@ -52,14 +52,14 @@ sections:
 
         Group training is also available on creating accessible office documents (Word, PDF) with Microsoft Word and Adobe Acrobat. This non-technical training is a companion to the free Accessible Digital Office Document (ADOD) resource that the IDRC maintains.
       desktopWidth: full
-    - title: Contact WebSavvy
+    - title: Contact IDRC Consulting
       backgroundColor: indigo-200
       borderColor: 
       desktopWidth: full-bleed
       desktopAlignment: center
       content: >
-        WebSavvy consultations, website evaluations, and accessibility training are completed by the IDRC's own experts, all of whom possess years of experience in web and office document accessibility. 
+        Consultations, website evaluations, and accessibility training are completed by the IDRC's own experts, all of whom possess years of experience in web and office document accessibility. 
 
 
-        To enquire about any of our services or to receive a free quote, please [contact the WebSavvy Coordinator](mailto:lliskovoi@ocadu.ca).
+        To enquire about any of our services or to receive a free quote, please [contact the IDRC Consulting Coordinator](mailto:lliskovoi@ocadu.ca).
 ---
