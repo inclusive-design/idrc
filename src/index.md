@@ -88,7 +88,7 @@ sections:
     desktopWidth: third
   - title: Services we offer
     content: |-
-      ### [WebSavvy Acessibility Consulting](/websavvy/)
+      ### [IDRC Consulting](/consulting/)
       We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
       ### [Vision Technology Service](/vision-technology-service/)
     backgroundColor: null
