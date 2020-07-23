@@ -26,7 +26,10 @@ a:focus {
   outline: none;
 }
 
-
+a:visited,
+a:visited .underline {
+  text-decoration-color: #f6e05e;
+}
 
 @supports (mask-image: url('dot.svg')) {
   main a:not([rel="external"])::after {
