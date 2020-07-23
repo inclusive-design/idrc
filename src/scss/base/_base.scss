@@ -28,7 +28,7 @@ a:focus {
 
 a:visited,
 a:visited .underline {
-  text-decoration-color: #f6e05e;
+  text-decoration-color: none;
 }
 
 @supports (mask-image: url('dot.svg')) {
