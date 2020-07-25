@@ -71,3 +71,9 @@ h4 + ol,
 .h3 + p {
   margin-top: 0.25rem;
 }
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
