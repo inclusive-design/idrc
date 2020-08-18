@@ -1,0 +1,60 @@
+{% extends 'layouts/base.njk' %}
+
+{% set pageType = 'page--ideas' %}
+
+{% block content %}
+    <article class="container">
+        <header>
+            <div class="container inner">
+                <h1>{{ title }}</h1>
+            </div>
+        </header>
+        <div class="content">
+            <div class="inner">
+            {% if posts.length %}
+                {% for item in posts %}
+                {% set excerpt = item.data.content.split('.')[0] + '.' %}
+                {% if item.data.excerpt %}
+                {% set excerpt = item.data.excerpt %}
+                {% endif %}
+                <article class="entry">
+                    <span class="hr"></span>
+                    <h2>{{ item.data.title }}</h2>
+                    <p class="metadata">
+                        By {{ item.data.author }}
+                        {% if item.data.date %}
+                        <span aria-hidden="true"> &middot; </span>
+                        <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
+                        {% endif %}
+                    </p>
+                    <p>{{ excerpt | striptags | safe }}</p>
+                    <p>
+                        <a href="{{ item.url }}">
+                            Read more <span class="sr-only">of {{ item.data.title }}</span>
+                        </a>
+                    </p>
+                </article>
+                {% endfor %}
+            {% endif %}
+            </div>
+        </div>
+        {% if pagination.pages.length > 1 %}
+        <nav class="pagination" aria-labelledby="pagination">
+            <h2 id="pagination" class="sr-only">news page navigation</h2>
+            <ul class="container">
+            {%- if pagination.href.previous %}
+                <li><a href="{{ pagination.href.previous }}">{% include 'svg/previous.svg' %}<span class="sr-only">previous</span></a></li>
+            {%- endif %}
+            {%- for pageEntry in pagination.pages %}
+                <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
+            {%- endfor %}
+            {%- if pagination.href.next %}
+                <li><a href="{{ pagination.href.next }}"><span class="sr-only">next</span>{% include 'svg/next.svg' %}</a></li>
+            {%- endif %}
+            </ul>
+        </nav>
+        {% endif %}
+    </article>
+{% endblock %}
+
+{{ content | safe }}

@@ -29,6 +29,12 @@ module.exports = eleventyConfig => {
 		].reverse();
 	});
 
+	eleventyConfig.addCollection('ideas', collection => {
+		return [
+			...collection.getFilteredByGlob('./src/ideas/*.md').filter(post => livePosts(post))
+		].reverse();
+	});
+
 	eleventyConfig.addCollection('postFeed', collection => {
 		return [...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))]
 			.reverse()

@@ -1,0 +1,72 @@
+.page--news,
+.page--ideas {
+  main > article {
+    margin: 0 auto;
+  }
+
+  main > article header {
+    color: $black;
+    padding: 5rem 0;
+  }
+
+  main > article header .inner {
+    margin: 0 auto;
+  }
+
+  main > article header h1 {
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  main > article .content {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+      width: 50%;
+    }
+
+    @media (min-width: 1280px) {
+      width: (100% * 5 / 12);
+    }
+  }
+
+  .entry {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  .entry .hr {
+    border-bottom-color: $indigo-500;
+  }
+
+  .entry .metadata {
+    font-size: 0.857rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.page--news {
+  main > article header {
+    background: $blue-500;
+  }
+}
+
+.page--ideas {
+  main > article header {
+    background: $yellow-500;
+  }
+}

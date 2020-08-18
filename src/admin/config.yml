@@ -364,6 +364,24 @@ collections:
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "ideas"
+    label: "Ideas"
+    label_singular: "Idea"
+    folder: "src/ideas"
+    slug: "{{slug}}"
+    preview_path: "/ideas/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/idea.njk"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
+      - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
+      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: "Globals"
     name: "globals"
     files:
