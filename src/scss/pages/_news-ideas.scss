@@ -57,6 +57,20 @@
     font-size: 0.857rem;
     margin-top: 1.5rem;
   }
+
+  .entry .metadata .separator {
+    color: transparent;
+    display: block;
+    height: 0.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .entry .metadata .separator {
+      color: inherit;
+      display: inline;
+      height: auto;
+    }
+  }
 }
 
 .page--news {
