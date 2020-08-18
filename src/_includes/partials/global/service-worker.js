@@ -29,7 +29,7 @@ const PRE_CACHE_URLS = [
 ];
 
 // You might want to bypass a certain host
-const IGNORED_HOSTS = ['localhost', 'unpkg.com'];
+const IGNORED_HOSTS = new Set(['localhost', 'unpkg.com']);
 
 /**
    * Takes an array of strings and puts them in a named cache store
@@ -70,7 +70,7 @@ self.addEventListener('fetch', evt => {
 	const {hostname} = new URL(evt.request.url);
 
 	// Check we don't want to ignore this host
-	if (IGNORED_HOSTS.includes(hostname)) {
+	if (IGNORED_HOSTS.has(hostname)) {
 		return;
 	}
 

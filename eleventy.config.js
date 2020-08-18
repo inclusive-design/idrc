@@ -25,12 +25,12 @@ module.exports = eleventyConfig => {
 	const livePosts = post => post.date <= now && !post.data.draft;
 	eleventyConfig.addCollection('posts', collection => {
 		return [
-			...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)
+			...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))
 		].reverse();
 	});
 
 	eleventyConfig.addCollection('postFeed', collection => {
-		return [...collection.getFilteredByGlob('./src/posts/*.md').filter(livePosts)]
+		return [...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))]
 			.reverse()
 			.slice(0, 10);
 	});
