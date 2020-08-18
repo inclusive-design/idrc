@@ -3,7 +3,7 @@ const commonjs = require('rollup-plugin-commonjs');
 const nodeResolve = require('rollup-plugin-node-resolve');
 const json = require('rollup-plugin-json');
 
-export default {
+const config = {
 	input: 'src/admin/util',
 	output: {
 		file: 'dist/admin/util.js',
@@ -17,3 +17,5 @@ export default {
 		json()
 	]
 };
+
+export default config;
