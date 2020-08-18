@@ -7,6 +7,7 @@ const fs = require('fs');
 const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
 const dateFilter = require('./src/filters/date-filter.js');
+const limitFilter = require('./src/filters/limit-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
@@ -57,6 +58,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('dateFilter', dateFilter);
 	eleventyConfig.addFilter('markdownFilter', markdownFilter);
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
+	eleventyConfig.addFilter('limit', limitFilter);
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});

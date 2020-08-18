@@ -3,8 +3,6 @@
 // -----------------------------------------------------------------------------
 
 #what-is-inclusive-design {
-  overflow: hidden auto;
-
   .section__content {
     padding: 8rem 0 0;
     position: relative;
@@ -19,22 +17,20 @@
       content: "";
       display: block;
       height: 40rem;
-      left: -15rem;
+      left: -5rem;
       mask-image: url('../images/scatterplot.svg');
       mask-position: center;
       mask-repeat: no-repeat;
-      mask-size: cover;
+      mask-size: 40rem;
       position: absolute;
       top: -15rem;
-      width: 40rem;
+      width: 100vw;
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
   #what-is-inclusive-design {
-    overflow: auto hidden;
-
     .section__content {
       padding-left: calc(50% + 3rem);
       padding-top: 0;
@@ -42,6 +38,7 @@
       &::before {
         height: 56rem;
         left: -14vw;
+        mask-size: 56rem;
         top: -16rem;
         width: 56rem;
       }
