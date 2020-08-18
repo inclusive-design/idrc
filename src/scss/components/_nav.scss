@@ -83,7 +83,8 @@
   text-decoration: none;
 }
 
-nav a[aria-current="page"] {
+nav a[aria-current="page"],
+nav a[data-parent="true"] {
   border-bottom: 2px solid currentColor;
 }
 

@@ -5,9 +5,9 @@
         <p class="menu-label" id="menu-label"><span class="sr-only">main </span>Menu</p>
         <ul>
         {%- for entry in navItems %}
-	        {% set currentAttribute, relAttribute = '' %}
-	        {% set currentPage = page.url === entry.url %}
-	
+	        {% set currentAttribute, relAttribute, parentAttribute = '' %}
+          {% set currentPage = page.url === entry.url %}
+          {% set parentPage = entry.url != '/' and entry.url in page.url %}
 	        {% if entry.rel %}
 	          {% set relAttribute = ' rel="' + entry.rel + '"' %}
 	        {% endif %}
@@ -15,8 +15,12 @@
 	        {% if currentPage %}
 	          {% set currentAttribute = ' aria-current="page"' %}
 	        {% endif %}
+
+          {% if parentPage %}
+            {% set parentAttribute = ' data-parent="true"' %}
+          {% endif %}
         <li>
-            <a{{ relAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
+            <a{{ relAttribute | safe }}{{ parentAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
         </li>
         {%- endfor %}
         </ul>
