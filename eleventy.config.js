@@ -9,6 +9,7 @@ const parseTransform = require('./src/transforms/parse.js');
 const dateFilter = require('./src/filters/date-filter.js');
 const limitFilter = require('./src/filters/limit-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
+const slugFilter = require('./src/filters/slug-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const workboxOptions = {
@@ -59,6 +60,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('markdownFilter', markdownFilter);
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 	eleventyConfig.addFilter('limit', limitFilter);
+	eleventyConfig.addFilter('slug', slugFilter);
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});
