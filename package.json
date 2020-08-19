@@ -11,6 +11,7 @@
     "build": "run-s clean build:*",
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
+    "debug": "DEBUG=Eleventy* eleventy --config=eleventy.config.js",
     "mix": "webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "start": "npm run clean && npm run build:bundle && npm run build:cms && concurrently \"npm run watch:site\" \"npm run watch:assets\"",
     "lint:css": "stylelint src/scss/**/*.scss",
