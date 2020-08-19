@@ -1,4 +1,4 @@
-.post-grid {
+.grid {
   @media (min-width: 768px) {
     display: grid;
     grid-gap: 3rem;
@@ -12,6 +12,31 @@
   > article {
     margin: 0;
   }
+}
+
+.grid--featured {
+  @media (min-width: 768px) {
+    display: block;
+
+    .entry {
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h3 {
+      font-family: $font-serif;
+      font-size: 2.25rem;
+      font-weight: 900;
+      line-height: 1.25;
+    }
+  }
+}
+
+.grid--featured + h2 {
+  margin-top: 6rem;
 }
 
 .page--news,
@@ -103,12 +128,18 @@
   }
 
   .entry .thumbnail {
+    background-position: center;
+    background-size: cover;
     border-top: 2px solid $indigo-500;
-    display: flex;
-    flex-direction: column;
-    height: 247px;
-    justify-content: center;
+    height: 0;
     margin-bottom: 1.75rem;
     overflow: hidden;
+    padding-top: (2 / 3 * 100%);
+  }
+
+  .entry .thumbnail--placeholder {
+    background-color: $yellow-500;
+    background-repeat: no-repeat;
+    background-size: 40px 51.0333px;
   }
 }

@@ -14,35 +14,21 @@
         </header>
         <div class="content">
             <div class="inner">
+            {% if pagination.pageNumber == 0 %}
+                {% if collections.featured.length %}
+                <h2 class="h4">Featured</h2>
+                <div class="grid grid--featured">
+                {% for post in collections.featured | limit(2) %}
+                    {% include 'partials/components/idea-grid-item.njk' %}
+                {% endfor %}
+                </div>
+                {% endif %}
+            {% endif %}
             <h2 class="h4">Latest</h2>
             {% if posts.length %}
-                <div class="post-grid">
-                {% for item in posts %}
-                {% set excerpt = item.data.content.split('.')[0] + '.' %}
-                {% if item.data.excerpt %}
-                {% set excerpt = item.data.excerpt %}
-                {% endif %}
-                <article class="entry">
-                    {% if item.data.thumbnailImage %}
-                    <div class="thumbnail">
-                        <img src="{{ item.data.thumbnailImage }}" width="390" height="260" alt="" />
-                    </div>
-                    {% else %}
-                    <img src="https://img.pizza/370/247" width="390" height="260" alt="" />
-                    {% endif %}
-                    <h3>{{ item.data.title }}</h3>
-                    <p class="metadata">
-                        By {{ item.data.author if item.data.author else 'IDRC Team' }}
-                        <span class="separator" aria-hidden="true"> &middot; </span>
-                        <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
-                    </p>
-                    <p>{{ excerpt | striptags | safe }}</p>
-                    <p>
-                        <a href="{{ item.url }}">
-                            Read more <span class="sr-only">of {{ item.data.title }}</span>
-                        </a>
-                    </p>
-                </article>
+                <div class="grid">
+                {% for post in posts %}
+                {% include 'partials/components/idea-grid-item.njk' %}
                 {% endfor %}
                 </div>
             {% endif %}
