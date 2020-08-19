@@ -1,7 +1,3 @@
-{% set excerpt = post.templateContent.split('.')[0] + '.' %}
-{% if post.data.excerpt %}
-    {% set excerpt = post.data.excerpt %}
-{% endif %}
 <article class="entry">
     {% if post.data.thumbnailImage %}
     <div class="thumbnail" style="background-image: url({{ post.data.thumbnailImage }});"></div>
@@ -9,17 +5,14 @@
     <div class="thumbnail thumbnail--placeholder" style="background-image: url(/images/logo.svg);"></div>
     {% endif %}
     <div class="entry-content">
-    <h3>{{ post.data.title }}</h3>
+    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
     <p class="metadata">
         By {{ post.data.author if post.data.author else 'IDRC Team' }}
         <span class="separator" aria-hidden="true"> &middot; </span>
         <time datetime="{{ post.data.date | w3DateFilter }}" class="dt-published">{{ post.data.date | dateFilter }}</time>
     </p>
-    <p>{{ excerpt | striptags | safe }}</p>
-    <p>
-        <a href="{{ post.url }}">
-            Read more <span class="sr-only">of {{ post.data.title }}</span>
-        </a>
-    </p>
+    {% if post.data.excerpt %}
+    <p>{{ post.data.excerpt | safe }}</p>
+    {% endif %}
     </div>
 </article>

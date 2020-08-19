@@ -1,3 +1,4 @@
+const getSize = require('image-size');
 const jsdom = require('@tbranyen/jsdom');
 const {JSDOM} = jsdom;
 
@@ -18,6 +19,31 @@ module.exports = (value, outputPath) => {
 		if (images.length > 0) {
 			images.forEach(image => {
 				image.setAttribute('loading', 'lazy');
+
+				const file = image.getAttribute('src');
+
+				if (!file.includes('http')) {
+					const dimensions = getSize('src' + file);
+
+					image.setAttribute('width', dimensions.width);
+					image.setAttribute('height', dimensions.height);
+				}
+
+				// If an image has a title it means that the user added a caption
+				// so replace the image with a figure containing that image and a caption
+				if (image.hasAttribute('title')) {
+					const figure = document.createElement('figure');
+					const figCaption = document.createElement('figcaption');
+
+					figCaption.innerHTML = image.getAttribute('title');
+
+					image.removeAttribute('title');
+
+					figure.append(image.cloneNode(true));
+					figure.append(figCaption);
+
+					image.replaceWith(figure);
+				}
 			});
 		}
 
