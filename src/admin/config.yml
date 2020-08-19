@@ -346,10 +346,10 @@ collections:
               - { label: "Full Bleed", value: "full-bleed" }
             default: ["full"]
             required: false
-  - name: "posts"
-    label: "Posts"
-    label_singular: "Post"
-    folder: "src/posts"
+  - name: "news"
+    label: "News"
+    label_singular: "News Item"
+    folder: "src/news"
     slug: "{{slug}}"
     preview_path: "/news/{{slug}}"
     create: true
@@ -378,6 +378,9 @@ collections:
       - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
       - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
       - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
+      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
+      - {label: "Featured Image Alt Text", name: "featuredImageAlt", widget: "text", required: false}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
