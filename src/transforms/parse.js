@@ -52,7 +52,10 @@ module.exports = (value, outputPath) => {
 
 		if (links.length > 0) {
 			links.forEach(link => {
-				if (!['localhost:3000', 'idrc.ocadu.ca'].includes(link.host) || !link.host.endsWith('idrc.netlify.app')) {
+				if (
+					!link.href.startsWith('/') &&
+					(!['localhost:3000', 'idrc.ocadu.ca'].includes(link.host) || !link.host.endsWith('idrc.netlify.app'))
+				) {
 					link.setAttribute('rel', 'external');
 				}
 			});
