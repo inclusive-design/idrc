@@ -127,6 +127,13 @@
     background: $yellow-500;
   }
 
+  main > article .content {
+    @media (min-width: 1024px) {
+      padding-bottom: 10rem;
+      padding-top: 5rem;
+    }
+  }
+
   .entry .thumbnail {
     background-position: center;
     background-size: cover;
