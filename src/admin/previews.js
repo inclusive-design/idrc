@@ -70,6 +70,22 @@ const Post = ({entry}) => (
 	/>
 );
 
+const Idea = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/idea.njk"
+		context={({ site, title, date, author, body }) => ({
+			previewMode: true,
+			site,
+			title,
+			date,
+			author,
+			headerBgColor: 'white',
+			content: markdownFilter(body || '')
+		})}
+	/>
+);
+
 const SiteData = ({entry}) => (
 	<Preview
 		entry={entry}
@@ -95,4 +111,5 @@ CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('pages', Page);
 CMS.registerPreviewTemplate('posts', Post);
+CMS.registerPreviewTemplate('ideas', Idea);
 CMS.registerPreviewTemplate('site_data', SiteData);

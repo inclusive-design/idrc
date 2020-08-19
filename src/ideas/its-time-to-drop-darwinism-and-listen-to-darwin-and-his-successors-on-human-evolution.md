@@ -2,6 +2,7 @@
 title: "It’s Time to Drop “Darwinism” and Listen to Darwin and His Successors on Human Evolution"
 date: 2020-03-28
 author: Jutta Treviranus
+thumbnailImage: /media/birds.png
 ---
 This COVID-19 crisis has politicians, financial forecasters and celebrities invoking Darwin. Whether it is [Boris Johnson to promote herd immunity,](https://www.theguardian.com/world/2020/mar/15/the-governments-herd-immunity-plan-is-callous-and-dangerous) [Donald Trump to save the great American economy,](https://www.theguardian.com/commentisfree/2020/mar/26/coronavirus-us-economy-health-lives-trump) this is purportedly done in the interests of the survival of the human race. Others are likely invoking Darwin as a salve to block out guilt regarding the thousands dying while the invoker is comfortably ensconced in luxurious social isolation. Some may invoke Darwin to make sense of the [impossible choices we have forced on our healthcare workers](https://www.nytimes.com/2020/03/18/opinion/coronavirus-italy.html) when they run out of ventilators. The general message is that it is natural to sacrifice the weak to strengthen and evolve the human species. What they are actually referencing is [Social Darwinism](https://en.wikipedia.org/wiki/Social_Darwinism), a distortion and hijacking of evolutionary theory that was debunked in the early 20th century.
 

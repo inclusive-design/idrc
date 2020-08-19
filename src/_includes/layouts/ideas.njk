@@ -7,19 +7,30 @@
         <header>
             <div class="container inner">
                 <h1>{{ title }}</h1>
+                {% if intro %}
+                <div class="intro">{{ intro | markdownFilter | safe }}</div>
+                {% endif %}
             </div>
         </header>
         <div class="content">
             <div class="inner">
+            <h2 class="h4">Latest</h2>
             {% if posts.length %}
+                <div class="post-grid">
                 {% for item in posts %}
                 {% set excerpt = item.data.content.split('.')[0] + '.' %}
                 {% if item.data.excerpt %}
                 {% set excerpt = item.data.excerpt %}
                 {% endif %}
                 <article class="entry">
-                    <span class="hr"></span>
-                    <h2>{{ item.data.title }}</h2>
+                    {% if item.data.thumbnailImage %}
+                    <div class="thumbnail">
+                        <img src="{{ item.data.thumbnailImage }}" width="390" height="260" alt="" />
+                    </div>
+                    {% else %}
+                    <img src="https://img.pizza/370/247" width="390" height="260" alt="" />
+                    {% endif %}
+                    <h3>{{ item.data.title }}</h3>
                     <p class="metadata">
                         By {{ item.data.author if item.data.author else 'IDRC Team' }}
                         <span class="separator" aria-hidden="true"> &middot; </span>
@@ -33,6 +44,7 @@
                     </p>
                 </article>
                 {% endfor %}
+                </div>
             {% endif %}
             </div>
         </div>

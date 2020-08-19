@@ -1,3 +1,19 @@
+.post-grid {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  > article {
+    margin: 0;
+  }
+}
+
 .page--news,
 .page--ideas {
   main > article {
@@ -26,27 +42,6 @@
   main > article .content {
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
-
-    @media (min-width: 768px) {
-      margin-left: auto;
-      margin-right: auto;
-      width: 75%;
-    }
-
-    @media (min-width: 1024px) {
-      padding-bottom: 5rem;
-      padding-top: 5rem;
-      width: 50%;
-    }
-
-    @media (min-width: 1280px) {
-      width: (100% * 5 / 12);
-    }
-  }
-
-  .entry {
-    margin-bottom: 5rem;
-    margin-top: 5rem;
   }
 
   .entry .hr {
@@ -77,10 +72,43 @@
   main > article header {
     background: $blue-500;
   }
+
+  .entry {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  main > article .content {
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+      width: 50%;
+    }
+
+    @media (min-width: 1280px) {
+      width: (100% * 5 / 12);
+    }
+  }
 }
 
 .page--ideas {
   main > article header {
     background: $yellow-500;
+  }
+
+  .entry .thumbnail {
+    border-top: 2px solid $indigo-500;
+    display: flex;
+    flex-direction: column;
+    height: 247px;
+    justify-content: center;
+    margin-bottom: 1.75rem;
+    overflow: hidden;
   }
 }
