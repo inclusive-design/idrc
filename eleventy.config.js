@@ -25,9 +25,10 @@ module.exports = eleventyConfig => {
 
 	// Collections.
 	const livePosts = post => post.date <= now && !post.data.draft;
-	eleventyConfig.addCollection('posts', collection => {
+
+	eleventyConfig.addCollection('news', collection => {
 		return [
-			...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))
+			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))
 		].reverse();
 	});
 
@@ -38,7 +39,7 @@ module.exports = eleventyConfig => {
 	});
 
 	eleventyConfig.addCollection('postFeed', collection => {
-		return [...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))]
+		return [...collection.getFilteredByGlob(['./src/news/*.md', './src/ideas/*.md']).filter(post => livePosts(post))]
 			.reverse()
 			.slice(0, 10);
 	});

@@ -31,7 +31,8 @@
   'components/button',
   'components/image',
   'components/nav',
-  'components/pagination';
+  'components/pagination',
+  'components/single-header';
 
 // 6. Page-specific styles
 @import
@@ -39,7 +40,7 @@
   'pages/home',
   'pages/projects-tools',
   'pages/news-ideas',
-  'pages/post',
+  'pages/single',
   'pages/404';
 
 // 7. Themes

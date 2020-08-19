@@ -4,4 +4,22 @@ figcaption {
   font-size: 0.875rem;
   font-style: italic;
   margin-top: 0.625rem;
+  text-align: center;
+}
+
+.featured-image {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 480px;
+  justify-content: center;
+  left: 0;
+  overflow-x: visible;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100vw;
+
+  img {
+    width: 100vw;
+  }
 }

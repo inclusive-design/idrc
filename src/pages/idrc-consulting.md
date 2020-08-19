@@ -3,7 +3,7 @@ title: IDRC Consulting
 permalink: /consulting/
 eleventyNavigation:
   key: IDRC Consulting
-  order: 5
+  order: 6
 headerBgColor: yellow-500
 headerBorderColor: yellow-200
 headerTextColor: black

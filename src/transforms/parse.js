@@ -12,6 +12,9 @@ module.exports = (value, outputPath) => {
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
+		const links = [
+			...document.querySelectorAll('main a')
+		];
 		const subheads = [
 			...document.querySelectorAll('.page--generic main .section--full h3')
 		];
@@ -43,6 +46,14 @@ module.exports = (value, outputPath) => {
 					figure.append(figCaption);
 
 					image.replaceWith(figure);
+				}
+			});
+		}
+
+		if (links.length > 0) {
+			links.forEach(link => {
+				if (!['localhost:3000', 'idrc.ocadu.ca'].includes(link.host) || !link.host.endsWith('idrc.netlify.app')) {
+					link.setAttribute('rel', 'external');
 				}
 			});
 		}

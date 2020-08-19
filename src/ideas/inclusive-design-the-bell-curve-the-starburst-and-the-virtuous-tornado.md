@@ -3,13 +3,14 @@ title: "Inclusive Design: The Bell Curve, the Starburst and the Virtuous Tornado
 author: Jutta Treviranus
 date: 2019-04-21
 thumbnailImage: /media/exploding-star.png
-excerpt: "As the director of the Inclusive Design Research Centre, I have frequently been asked how inclusive design relates to data and evidence. The answer is complex and involves theorists from the 1800’s, how their theories have been applied to people, and phenomena that permeate many natural spheres."
+featuredImage: /media/exploding-star.png
+featuredImageAltText: An exploding star.
 tags:
     - featured
 ---
-![An exploding star.](/media/exploding-star.png "An exploding star.")
-
 As the director of the [Inclusive Design Research Centre](https://idrc.ocadu.ca/), I have frequently been asked how inclusive design relates to data and evidence. The answer is complex and involves theorists from the 1800’s, how their theories have been applied to people, and phenomena that permeate many natural spheres. Let me explain…
+
+![An exploding star.](/media/exploding-star.png "An exploding star.")
 
 If you take any group of people and you plot their individual needs and characteristics on a 3D multi-variate scatter-plot you get a starburst (also known as a “[normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)”). Reduced and flattened to two dimensions it looks like a bell curve (you might recognize this from school grading days or any reference to groups that are “tails,” referring to the tapering ends of the bell curve). However, people are complex and diverse and best understood in three dimensions — thus a 3D scatter-plot.
 

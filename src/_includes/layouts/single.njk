@@ -1,12 +1,12 @@
 {% extends 'layouts/base.njk' %}
 
-{% set pageType = 'post' %}
-
 {% block content %}
     <article class="container">
         <header>
             <div class="container inner">
-                <p class="post-type">News</p>
+                {% if postType %}
+                <p class="post-type">{{ postType }}</p>
+                {% endif %}
                 <h1>{{ title }}</h1>
                 <p class="metadata">
                     By {{ author if author else 'IDRC Team' }}
@@ -15,6 +15,11 @@
                 </p>
             </div>
         </header>
+            {% if featuredImage %}
+            <figure class="featured-image">
+                <img src="{{ featuredImage }}" alt="{{ featuredImageAlt }}" />
+            </figure>
+            {% endif %}
         <div class="content">
             <div class="inner">
             {{ content | safe }}
