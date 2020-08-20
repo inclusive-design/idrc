@@ -57,7 +57,7 @@ const ProjectsAndTools = ({entry}) => (
 const Post = ({entry}) => (
 	<Preview
 		entry={entry}
-		path="layouts/post.njk"
+		path="layouts/single--news.njk"
 		context={({ site, title, date, author, body }) => ({
 			previewMode: true,
 			site,
@@ -73,7 +73,7 @@ const Post = ({entry}) => (
 const Idea = ({entry}) => (
 	<Preview
 		entry={entry}
-		path="layouts/idea.njk"
+		path="layouts/single--idea.njk"
 		context={({ site, title, date, author, body }) => ({
 			previewMode: true,
 			site,
