@@ -1,4 +1,3 @@
-const fs = require('fs');
 const path = require('path');
 const sass = require('node-sass');
 const CleanCSS = require('clean-css');
@@ -29,12 +28,12 @@ module.exports = class {
 				config.outputStyle = 'expanded';
 			}
 
-			return sass.render(config, (err, result) => {
+			sass.render(config, (err, result) => {
 				if (err) {
-					return reject(err);
+					reject(err);
+				} else {
+					resolve(result.css.toString());
 				}
-
-				resolve(result.css.toString());
 			});
 		});
 	}
@@ -47,11 +46,11 @@ module.exports = class {
 			}
 
 			const minified = new CleanCSS().minify(css);
-			if (!minified.styles) {
-				return reject(minified.error);
+			if (minified.styles) {
+				resolve(minified.styles);
+			} else {
+				reject(minified.error);
 			}
-
-			resolve(minified.styles);
 		});
 	}
 
