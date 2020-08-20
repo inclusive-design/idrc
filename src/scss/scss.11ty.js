@@ -5,6 +5,10 @@ const cssesc = require('cssesc');
 
 const isProd = process.env.ELEVENTY_ENV === 'production';
 
+/**
+ * @see https://github.com/maxboeck/eleventastic/blob/master/src/assets/styles/styles.11ty.js
+ */
+
 // Main entry point name
 const ENTRY_FILE_NAME = 'idrc.scss';
 

@@ -54,12 +54,12 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 	eleventyConfig.addFilter('limit', limitFilter);
 
+	eleventyConfig.addWatchTarget('./src/js');
 	eleventyConfig.addWatchTarget('./src/scss');
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/fonts': 'fonts'});
 	eleventyConfig.addPassthroughCopy({'src/images': 'images'});
-	eleventyConfig.addPassthroughCopy({'src/_includes/static/js': 'js'});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
