@@ -3,8 +3,6 @@ title: "Inclusive Design: The Bell Curve, the Starburst and the Virtuous Tornado
 author: Jutta Treviranus
 date: 2019-04-21
 thumbnailImage: /media/exploding-star.png
-featuredImage: /media/exploding-star.png
-featuredImageAltText: An exploding star.
 tags:
     - featured
 ---

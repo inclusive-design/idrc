@@ -15,11 +15,6 @@
                 </p>
             </div>
         </header>
-            {% if featuredImage %}
-            <figure class="featured-image">
-                <img src="{{ featuredImage }}" alt="{{ featuredImageAlt }}" />
-            </figure>
-            {% endif %}
         <div class="content">
             <div class="inner">
             {{ content | safe }}
