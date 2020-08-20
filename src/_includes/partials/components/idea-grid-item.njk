@@ -2,7 +2,7 @@
     {% if post.data.thumbnailImage %}
     <div class="thumbnail" style="background-image: url({{ post.data.thumbnailImage }});"></div>
     {% else %}
-    <div class="thumbnail thumbnail--placeholder" style="background-image: url(/images/logo.svg);"></div>
+    <div class="thumbnail" style="background-image: url(/images/default.png);"></div>
     {% endif %}
     <div class="entry-content">
     <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
