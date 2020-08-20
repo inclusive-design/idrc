@@ -8,7 +8,7 @@ headerBgColor: blue-500
 headerTextColor: black
 permalink: "news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
-  data: collections.posts
+  data: collections.news
   size: 6
   alias: posts
 ---
