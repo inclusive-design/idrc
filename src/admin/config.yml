@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 publish_mode: editorial_workflow
-site_url: "https://idrc.netlify.app"
+site_url: "https://idrc.ocadu.ca"
 media_folder: "src/media"
 public_folder: "/media"
 collections:
@@ -378,8 +378,6 @@ collections:
       - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
       - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
       - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
-      - {label: "Featured Image", name: "featuredImage", widget: "image", required: false}
-      - {label: "Featured Image Alt Text", name: "featuredImageAlt", widget: "text", required: false}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
