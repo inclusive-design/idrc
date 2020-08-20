@@ -110,8 +110,7 @@
     background: $blue-500;
   }
 
-  .grid .entry {
-    margin-bottom: 5rem;
+  .entry + .entry {
     margin-top: 5rem;
   }
 
