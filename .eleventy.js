@@ -9,6 +9,7 @@ const parseTransform = require('./src/transforms/parse.js');
 const dateFilter = require('./src/filters/date-filter.js');
 const limitFilter = require('./src/filters/limit-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
+const slugFilter = require('./src/filters/slug-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const workboxOptions = {
@@ -24,14 +25,21 @@ module.exports = eleventyConfig => {
 
 	// Collections.
 	const livePosts = post => post.date <= now && !post.data.draft;
-	eleventyConfig.addCollection('posts', collection => {
+
+	eleventyConfig.addCollection('news', collection => {
 		return [
-			...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))
+			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))
+		].reverse();
+	});
+
+	eleventyConfig.addCollection('ideas', collection => {
+		return [
+			...collection.getFilteredByGlob('./src/ideas/*.md').filter(post => livePosts(post))
 		].reverse();
 	});
 
 	eleventyConfig.addCollection('postFeed', collection => {
-		return [...collection.getFilteredByGlob('./src/posts/*.md').filter(post => livePosts(post))]
+		return [...collection.getFilteredByGlob(['./src/news/*.md', './src/ideas/*.md']).filter(post => livePosts(post))]
 			.reverse()
 			.slice(0, 10);
 	});
@@ -53,6 +61,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('markdownFilter', markdownFilter);
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 	eleventyConfig.addFilter('limit', limitFilter);
+	eleventyConfig.addFilter('slug', slugFilter);
 
 	eleventyConfig.addWatchTarget('./src/js');
 	eleventyConfig.addWatchTarget('./src/scss');

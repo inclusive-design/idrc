@@ -1,20 +1,36 @@
 {% extends 'layouts/base.njk' %}
 
-{% set pageType = 'page--news' %}
+{% set pageType = 'page--ideas' %}
 
 {% block content %}
     <article class="container">
         <header>
             <div class="container inner">
                 <h1>{{ title }}</h1>
+                {% if intro %}
+                <div class="intro">{{ intro | markdownFilter | safe }}</div>
+                {% endif %}
             </div>
         </header>
         <div class="content">
             <div class="inner">
-            {% if posts.length %}
-                {% for item in posts %}
-                {% include 'partials/components/news-grid-item.njk' %}
+            {% if pagination.pageNumber == 0 %}
+                {% if collections.featured.length %}
+                <h2 class="h4">Featured</h2>
+                <div class="grid grid--featured">
+                {% for post in collections.featured | limit(2) %}
+                    {% include 'partials/components/idea-grid-item.njk' %}
                 {% endfor %}
+                </div>
+                {% endif %}
+            {% endif %}
+            <h2 class="h4">Latest</h2>
+            {% if posts.length %}
+                <div class="grid">
+                {% for post in posts %}
+                {% include 'partials/components/idea-grid-item.njk' %}
+                {% endfor %}
+                </div>
             {% endif %}
             </div>
         </div>

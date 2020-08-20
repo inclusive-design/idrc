@@ -29,16 +29,18 @@
 @import
   'components/brand',
   'components/button',
+  'components/image',
   'components/nav',
-  'components/pagination';
+  'components/pagination',
+  'components/single-header';
 
 // 6. Page-specific styles
 @import
   'pages/generic',
   'pages/home',
   'pages/projects-tools',
-  'pages/news',
-  'pages/post',
+  'pages/news-ideas',
+  'pages/single',
   'pages/404';
 
 // 7. Themes

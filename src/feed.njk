@@ -7,13 +7,13 @@ permalink: '/feed.xml'
 	<subtitle></subtitle>
 	<link href="{{ site.url }}{{ permalink }}" rel="self"/>
 	<link href="{{ site.url }}/"/>
-	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+	<updated>{{ collections.postFeed | rssLastUpdatedDate }}</updated>
 	<id>{{ site.url }}</id>
 	<author>
   <name>{{ site.name }}</name>
   <email>{{ site.email }}</email>
 	</author>
-	{% for post in collections.posts %}
+	{% for post in collections.postFeed %}
   {% set absolutePostUrl %}{{ site.url }}{{ post.url | url }}{% endset %}
   <entry>
     <title>{{ post.data.title }}</title>

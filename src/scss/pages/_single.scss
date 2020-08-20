@@ -1,0 +1,26 @@
+.single {
+  article {
+    margin: 0 auto;
+  }
+
+  article .content {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+      width: 50%;
+    }
+
+    @media (min-width: 1280px) {
+      width: (100% * 5 / 12);
+    }
+  }
+}

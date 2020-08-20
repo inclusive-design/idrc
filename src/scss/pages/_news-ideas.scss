@@ -1,0 +1,164 @@
+.grid {
+  .entry {
+    margin: 0;
+  }
+
+  .entry + .entry {
+    margin-top: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .entry + .entry {
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid--featured {
+  @media (min-width: 768px) {
+    display: block;
+
+    .entry {
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h3 {
+      font-family: $font-serif;
+      font-size: 2.25rem;
+      font-weight: 900;
+      line-height: 1.25;
+
+      a {
+        font-family: inherit;
+      }
+    }
+  }
+}
+
+.grid--featured + h2 {
+  margin-top: 6rem;
+}
+
+.page--news,
+.page--ideas {
+  main > article {
+    margin: 0 auto;
+  }
+
+  main > article header {
+    color: $black;
+    padding: 5rem 0;
+  }
+
+  main > article header .inner {
+    margin: 0 auto;
+  }
+
+  main > article header h1 {
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  main > article .content {
+    padding-bottom: 2.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .entry .hr {
+    border-bottom-color: $indigo-500;
+  }
+
+  .entry .metadata {
+    font-size: 0.857rem;
+    margin-top: 1.5rem;
+  }
+
+  .entry .metadata .separator {
+    color: transparent;
+    display: block;
+    height: 0.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .entry .metadata .separator {
+      color: inherit;
+      display: inline;
+      height: auto;
+    }
+  }
+}
+
+.page--news {
+  main > article header {
+    background: $blue-500;
+  }
+
+  .grid .entry {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  main > article .content {
+    @media (min-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+    @media (min-width: 1024px) {
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+      width: 50%;
+    }
+
+    @media (min-width: 1280px) {
+      width: (100% * 5 / 12);
+    }
+  }
+}
+
+.page--ideas {
+  main > article header {
+    background: $yellow-500;
+  }
+
+  main > article .content {
+    @media (min-width: 1024px) {
+      padding-bottom: 10rem;
+      padding-top: 5rem;
+    }
+  }
+
+  .entry .thumbnail {
+    background-position: center;
+    background-size: cover;
+    border-top: 2px solid $indigo-500;
+    height: 0;
+    margin-bottom: 1.75rem;
+    overflow: hidden;
+    padding-top: (2 / 3 * 100%);
+  }
+
+  .entry .thumbnail--placeholder {
+    background-color: $yellow-500;
+    background-repeat: no-repeat;
+    background-size: 40px 51.0333px;
+  }
+}

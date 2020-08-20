@@ -2,7 +2,7 @@
 title: Vision Technology Service
 eleventyNavigation:
   key: Vision Technology Service
-  order: 3
+  order: 5
 headerBgColor: red-500
 headerBorderColor: red-900
 headerTextColor: black

@@ -1,15 +1,17 @@
 {% extends 'layouts/base.njk' %}
 
-{% set pageType = 'post' %}
-
 {% block content %}
     <article class="container">
         <header>
             <div class="container inner">
+                {% if postType %}
+                <p class="post-type">{{ postType }}</p>
+                {% endif %}
                 <h1>{{ title }}</h1>
                 <p class="metadata">
-                    <time datetime="{{ date | w3DateFilter }}" class="dt-published">Published {{ date | dateFilter }}</time><br />
                     By {{ author if author else 'IDRC Team' }}
+                    <span class="separator" aria-hidden="true"> &middot; </span>
+                    <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
                 </p>
             </div>
         </header>

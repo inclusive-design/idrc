@@ -1,3 +1,4 @@
+const getSize = require('image-size');
 const jsdom = require('@tbranyen/jsdom');
 const {JSDOM} = jsdom;
 
@@ -11,6 +12,9 @@ module.exports = (value, outputPath) => {
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
+		const links = [
+			...document.querySelectorAll('main a')
+		];
 		const subheads = [
 			...document.querySelectorAll('.page--generic main .section--full h3')
 		];
@@ -18,6 +22,42 @@ module.exports = (value, outputPath) => {
 		if (images.length > 0) {
 			images.forEach(image => {
 				image.setAttribute('loading', 'lazy');
+
+				const file = image.getAttribute('src');
+
+				if (!file.includes('http')) {
+					const dimensions = getSize('src' + file);
+
+					image.setAttribute('width', dimensions.width);
+					image.setAttribute('height', dimensions.height);
+				}
+
+				// If an image has a title it means that the user added a caption
+				// so replace the image with a figure containing that image and a caption
+				if (image.hasAttribute('title')) {
+					const figure = document.createElement('figure');
+					const figCaption = document.createElement('figcaption');
+
+					figCaption.innerHTML = image.getAttribute('title');
+
+					image.removeAttribute('title');
+
+					figure.append(image.cloneNode(true));
+					figure.append(figCaption);
+
+					image.replaceWith(figure);
+				}
+			});
+		}
+
+		if (links.length > 0) {
+			links.forEach(link => {
+				if (
+					!link.href.startsWith('/') &&
+					(!['localhost:3000', 'idrc.ocadu.ca'].includes(link.host) || !link.host.endsWith('idrc.netlify.app'))
+				) {
+					link.setAttribute('rel', 'external');
+				}
 			});
 		}
 

@@ -1,0 +1,6 @@
+{
+    "layout": "layouts/single--idea.njk",
+    "permalink": "/ideas/{{ title | slug }}/",
+    "headerBgColor": "white",
+    "author": "IDRC Team"
+}
