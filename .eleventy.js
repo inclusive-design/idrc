@@ -63,10 +63,11 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('limit', limitFilter);
 	eleventyConfig.addFilter('slug', slugFilter);
 
+	eleventyConfig.addWatchTarget('./src/scss');
+
 	// Passthrough file copy.
-	eleventyConfig.addPassthroughCopy({'src/_includes/static/css': 'css'});
-	eleventyConfig.addPassthroughCopy({'src/_includes/static/fonts': 'fonts'});
-	eleventyConfig.addPassthroughCopy({'src/_includes/static/images': 'images'});
+	eleventyConfig.addPassthroughCopy({'src/fonts': 'fonts'});
+	eleventyConfig.addPassthroughCopy({'src/images': 'images'});
 	eleventyConfig.addPassthroughCopy({'src/_includes/static/js': 'js'});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
