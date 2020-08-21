@@ -9,6 +9,7 @@ article {
 
 article header {
   background: var(--header-bg, $indigo-100);
+  border-bottom: 0.5625rem solid var(--header-border);
   color: var(--header-fg, $black);
   margin-left: 50%;
   padding-bottom: 5rem;

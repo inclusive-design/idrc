@@ -6,6 +6,7 @@ eleventyNavigation:
   key: Ideas
   order: 3
 headerBgColor: yellow-500
+headerBorderColor: yellow-200
 headerTextColor: black
 permalink: "ideas/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:

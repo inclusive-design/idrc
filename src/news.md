@@ -4,7 +4,8 @@ title: News
 eleventyNavigation:
   key: News
   order: 2
-headerBgColor: blue-500
+headerBgColor: blue-100
+headerBorderColor: blue-500
 headerTextColor: black
 permalink: "news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:

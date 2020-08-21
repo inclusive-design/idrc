@@ -56,6 +56,12 @@
             </div>
         </section>
             {%- endfor %}
+        {%- else %}
+        <div class="content">
+            <div class="inner">
+                {{ content | safe }}
+            </div>
+        </div>
         {%- endif %}
     </article>
 {% endblock %}
