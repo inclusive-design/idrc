@@ -54,37 +54,109 @@ const ProjectsAndTools = ({entry}) => (
 	/>
 );
 
-const Post = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/single--news.njk"
-		context={({ site, title, date, author, body }) => ({
-			previewMode: true,
-			site,
-			title,
-			date,
-			author,
-			headerBgColor: 'white',
-			content: markdownFilter(body || '')
-		})}
-	/>
-);
+const News = createClass({
+	render: function() {
+		const entry = this.props.entry;
+		const author = entry.getIn(['data', 'author']) ?? 'IDRC Team';
+		return h(
+			'div',
+			{className: 'single single--news'},
+			h(
+				'main',
+				{},
+				h(
+					'article',
+					{className: 'container'},
+					h(
+						'header',
+						{},
+						h(
+							'div',
+							{className: 'container inner'},
+							h(
+								'p',
+								{className: 'post-type'},
+								'News'
+							),
+							h(
+								'h1',
+								{},
+								entry.getIn(['data', 'title'])
+							),
+							h(
+								'p',
+								{className: 'metadata'},
+								`By ${author}`
+							),
+							// TODO: Date
+						)
+					),
+					h(
+						'div',
+						{className: 'content'},
+						h(
+							'div',
+							{className: 'inner'},
+							this.props.widgetFor('body'))
+						)
+					)
+				)	
+		);
+	  }
+});
 
-const Idea = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/single--idea.njk"
-		context={({ site, title, date, author, body }) => ({
-			previewMode: true,
-			site,
-			title,
-			date,
-			author,
-			headerBgColor: 'white',
-			content: markdownFilter(body || '')
-		})}
-	/>
-);
+const Idea = createClass({
+	render: function() {
+		const entry = this.props.entry;
+		console.log(entry);
+		const author = entry.getIn(['data', 'author']) ?? 'IDRC Team';
+		return h(
+			'div',
+			{className: 'single single--idea'},
+			h(
+				'main',
+				{},
+				h(
+					'article',
+					{className: 'container'},
+					h(
+						'header',
+						{},
+						h(
+							'div',
+							{className: 'container inner'},
+							h(
+								'p',
+								{className: 'post-type'},
+								'News'
+							),
+							h(
+								'h1',
+								{},
+								entry.getIn(['data', 'title'])
+							),
+							h(
+								'p',
+								{className: 'metadata'},
+								`By ${author}`
+							),
+							// TODO: Date
+						)
+					),
+					h(
+						'div',
+						{className: 'content'},
+						h(
+							'div',
+							{className: 'inner'},
+							this.props.widgetFor('body')
+						)
+					)
+				)
+			)	
+		);
+	  }
+});
 
 const SiteData = ({entry}) => (
 	<Preview
@@ -110,6 +182,6 @@ const SiteData = ({entry}) => (
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('pages', Page);
-CMS.registerPreviewTemplate('posts', Post);
+CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
 CMS.registerPreviewTemplate('site_data', SiteData);
