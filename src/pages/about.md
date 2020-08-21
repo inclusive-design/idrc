@@ -1,6 +1,5 @@
 ---
-title: "About Us"
-subtitle: "Overview"
+title: About Us
 permalink: /about/
 eleventyNavigation:
   key: About

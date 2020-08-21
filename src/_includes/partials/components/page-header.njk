@@ -1,0 +1,10 @@
+<header>
+    <div class="container inner">
+        {% if eleventyNavigation.parent %}
+        {% endif %}
+        <h1>{{ title }}</h1>
+        {% if intro %}
+        <div class="intro">{{ intro | markdownFilter | safe }}</div>
+        {% endif %}
+    </div>
+</header>
