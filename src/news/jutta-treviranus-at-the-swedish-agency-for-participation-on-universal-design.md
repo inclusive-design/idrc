@@ -1,5 +1,4 @@
 ---
-layout: layouts/post.njk
 title: 'Jutta Treviranus at the Swedish Agency for Participation, on Universal Design'
 date: 2020-06-25T15:48:21.244Z
 author: IDRC Team
