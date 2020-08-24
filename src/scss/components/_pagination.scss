@@ -37,11 +37,26 @@
   justify-content: center;
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+  text-decoration: underline;
   vertical-align: middle;
   width: 1.5rem;
+
+  &::after {
+    display: none;
+  }
 }
 
-.pagiantion svg {
+.pagination a[aria-current="page"] {
+  background: $indigo-900;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background: $indigo-500;
+  }
+}
+
+.pagination svg {
   height: 1.5rem;
   width: 1.5rem;
 }
