@@ -7,7 +7,13 @@
         {%- for entry in navItems %}
 	        {% set liClass, currentAttribute, relAttribute, parentAttribute = '' %}
           {% set currentPage = page.url === entry.url %}
-          {% set parentPage = entry.url in page.url %}
+
+          {% if eleventyNavigation.parent %}
+            {% set parentPage = entry.title === eleventyNavigation.parent %}
+          {% else %}
+            {% set parentPage = entry.url in page.url %}
+          {% endif %}
+
 	        {% if entry.rel %}
 	          {% set relAttribute = ' rel="' + entry.rel + '"' %}
 	        {% endif %}

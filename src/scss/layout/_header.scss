@@ -9,17 +9,19 @@
   padding-top: 1.5rem;
 }
 
-.banner--menu-visible {
-  --parent-bg: var(--indigo-900);
-  --header-bg: var(--indigo-900);
-  --header-fg: var(--white);
-  --header-accent: var(--indigo-500);
-}
-
 .banner .container {
   align-items: center;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+@media screen and (max-width: 1023px) {
+  .banner--menu-visible {
+    --parent-bg: var(--indigo-900);
+    --header-bg: var(--indigo-900);
+    --header-fg: var(--white);
+    --header-accent: var(--indigo-500);
+  }
 }

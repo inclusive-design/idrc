@@ -1,6 +1,15 @@
 <header>
     <div class="container inner">
-        {% if eleventyNavigation.parent %}
+        {% set breadcrumbs = [] %}
+        {% if eleventyNavigation.key %}
+        {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+        {% endif %}
+        {% if breadcrumbs.length > 0 %}
+        <p class="breadcrumbs">
+        {% for breadcrumb in breadcrumbs %}
+            <a href="{{ breadcrumb.url | url }}">{{ breadcrumb.key }}</a>
+        {% endfor %}
+        </p>
         {% endif %}
         <h1>{{ title }}</h1>
         {% if intro %}

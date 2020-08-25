@@ -26,8 +26,7 @@ a:focus {
   outline: none;
 }
 
-a:visited,
-a:visited .underline {
+.content a:visited {
   text-decoration-color: #f6e05e;
 }
 

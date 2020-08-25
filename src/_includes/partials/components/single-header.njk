@@ -1,7 +1,7 @@
 <header>
     <div class="container inner">
         {% if postType %}
-        <p class="post-type">{{ postType }}</p>
+        <p class="breadcrumbs"><a href="{{ postTypeUrl }}">{{ postType }}</a></p>
         {% endif %}
         <h1>{{ title }}</h1>
         <p class="metadata">

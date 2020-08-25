@@ -25,6 +25,17 @@ article header .inner {
   padding-right: 1.5rem;
 }
 
+article .breadcrumbs {
+  font-family: $font-display;
+  font-size: 1.375rem;
+  font-weight: 600;
+
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+    width: 50%;
+  }
+}
+
 article header h1 {
   @media screen and (min-width: 1024px) {
     width: 50%;
