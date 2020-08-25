@@ -56,6 +56,7 @@ document.addEventListener('click', event => {
 document.addEventListener('keydown', event => {
 	if (event.key === 'Escape') {
 		menuToggle.setAttribute('aria-expanded', false);
+		banner.classList.remove('banner--menu-visible');
 	}
 });
 
@@ -63,6 +64,7 @@ menuItems.forEach(menuItem => {
 	menuItem.addEventListener('blur', event => {
 		if (event.target === menuItems[menuItems.length - 1] && event.relatedTarget && event.relatedTarget.parentNode.nodeName !== 'LI') {
 			menuToggle.setAttribute('aria-expanded', false);
+			banner.classList.remove('banner--menu-visible');
 		}
 	});
 });

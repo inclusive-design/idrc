@@ -231,6 +231,7 @@
   }
 
   .nav li ul {
+    background: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     left: 0;
     margin-top: 0;
@@ -256,6 +257,13 @@
     height: unset;
     min-height: 3.125rem;
     padding: 0 1.25rem;
+  }
+
+  .page--404 {
+    .nav a,
+    .nav .menu button {
+      color: var(--white);
+    }
   }
 
   .nav [aria-current="page"],
@@ -290,6 +298,10 @@
   .nav .menu button:active {
     background: transparentize(black, 0.5);
     color: var(--white);
+  }
+
+  .page--404 .nav li ul a {
+    color: black;
   }
 
   .nav li ul a:hover,
