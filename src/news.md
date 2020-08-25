@@ -3,6 +3,7 @@ layout: layouts/news.njk
 title: News
 eleventyNavigation:
   key: News
+  parent: About
   order: 2
 headerBgColor: blue-100
 headerBorderColor: blue-500

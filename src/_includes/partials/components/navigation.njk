@@ -7,7 +7,7 @@
         {%- for entry in navItems %}
 	        {% set liClass, currentAttribute, relAttribute, parentAttribute = '' %}
           {% set currentPage = page.url === entry.url %}
-          {% set parentPage = entry.url != '/' and entry.url in page.url %}
+          {% set parentPage = entry.url in page.url %}
 	        {% if entry.rel %}
 	          {% set relAttribute = ' rel="' + entry.rel + '"' %}
 	        {% endif %}
