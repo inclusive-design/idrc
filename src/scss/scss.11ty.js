@@ -38,9 +38,10 @@ module.exports = class {
 				if (err) {
 					reject(err);
 				} else {
-					postcss([ autoprefixer ]).process(result.css, {from: 'undefined'}).then(result => {
+					// Process CSS with PostCSS and Autoprefixer.
+					postcss([autoprefixer]).process(result.css, {from: 'undefined'}).then(result => {
 						resolve(result.css);
-					})
+					});
 				}
 			});
 		});
