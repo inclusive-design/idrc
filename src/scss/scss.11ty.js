@@ -1,5 +1,7 @@
 const path = require('path');
 const sass = require('node-sass');
+const autoprefixer = require('autoprefixer');
+const postcss = require('postcss');
 const CleanCSS = require('clean-css');
 const cssesc = require('cssesc');
 
@@ -36,7 +38,9 @@ module.exports = class {
 				if (err) {
 					reject(err);
 				} else {
-					resolve(result.css.toString());
+					postcss([ autoprefixer ]).process(result.css, {from: 'undefined'}).then(result => {
+						resolve(result.css);
+					})
 				}
 			});
 		});
