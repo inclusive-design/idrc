@@ -399,7 +399,7 @@
     }
 
     &:active {
-      background: transparentize(black, 0.5);
+      background: transparentize(black, 0.3);
       color: var(--white);
     }
   }
