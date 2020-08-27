@@ -1,0 +1,10 @@
+<article class="person">
+    <h2 class="h3">{{ person.data.title }}</h2>
+    <div class="metadata">
+        <p><strong>{{ person.data.job }}</strong></p>
+        {% if person.data.projects.length > 0 %}
+        <p>Projects: {% for project in person.data.projects %}{{ project }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        {% endif %}
+    </div>
+    <p><a class="link--email" href="mailto:{{ person.data.email }}">{% include 'svg/email.svg' %} Email {{ person.data.title | split(' ') | first }}</a></p>
+</article>

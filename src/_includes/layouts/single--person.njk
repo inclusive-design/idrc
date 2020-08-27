@@ -1,0 +1,64 @@
+{% extends 'layouts/base.njk' %}
+
+{% set pageType = 'single single--person' %}
+{% set postType = 'Team' %}
+{% set postTypeUrl = '/team/' %}
+
+{% block content %}
+    <article class="container">
+        {% include 'partials/components/person-header.njk' %}
+        <div class="content">
+            <div class="inner">
+                <h2 class="h3">Projects</h2>
+                <p>
+                {% for project in projects %}
+                    {{ project }}{% if not loop.last %}<br />{% endif %}
+                {% endfor %}
+                </p>
+                {% if interests %}
+                <h2 class="h3">Interests</h2>
+                {{ interests | markdown | safe }}
+                {% endif %}
+                {% if content %}
+                <h2 class="h3">Bio</h2>
+                {{ content | safe }}
+                {% endif %}
+                <h2 class="h3">Connect</h2>
+                <table>
+                {% if email %}
+                <tr>
+                    <th>Email</th>
+                    <td><a href="mailto:{{ email }}">{{ email }}</a></td>
+                </tr>
+                {% endif %}
+                {% if website %}
+                <tr>
+                    <th>Website</th>
+                    <td><a href="{{ website }}">{{ website }}</a></td>
+                </tr>
+                {% endif %}
+                {% if twitter %}
+                <tr>
+                    <th>Twitter</th>
+                    <td><a href="https://twitter.com/{{ twitter | replace('@', '') }}">{{ twitter }}</a></td>
+                </tr>
+                {% endif %}
+                {% if linkedin %}
+                <tr>
+                    <th>LinkedIn</th>
+                    <td><a href="{{ linkedin }}">{{ title }}</a></td>
+                </tr>
+                {% endif %}
+                {% if github %}
+                <tr>
+                    <th>Github</th>
+                    <td><a href="{{ github | replace('https://github.com/', '') }}">{{ github | replace('http://github.com/', '@') | replace('https://github.com/', '@') }}</a></td>
+                </tr>
+                {% endif %}
+                </table>
+            </div>
+        </div>
+    </article>
+{% endblock %}
+
+{{ content | safe }}

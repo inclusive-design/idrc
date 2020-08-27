@@ -39,7 +39,7 @@
                 <div class="section__content">
                     {% if section.borderColor %}<span class="hr hr--{{ section.borderColor }}"></span>{% endif %}
                     <h2>{{ sectionTitle | safe }}</h2>
-                    {{ sectionContent | markdownFilter | safe }}
+                    {{ sectionContent | markdown | safe }}
                 </div>
                 {% if section.image and section.imageOrder == 'end' %}
                 <figure class="{{ imageOrderDesktop }} shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">

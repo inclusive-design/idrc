@@ -1,0 +1,12 @@
+<header>
+    <div class="container inner">
+        {% if postType %}
+        <p class="breadcrumbs"><a href="{{ postTypeUrl }}">{{ postType }}</a></p>
+        {% endif %}
+        <h1>{{ title }}</h1>
+        <div class="metadata">
+            <p class="h3">{{ job }}</p>
+            <p>{{ pronouns | title }}</p>
+        </div>
+    </div>
+</header>

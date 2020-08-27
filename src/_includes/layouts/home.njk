@@ -49,7 +49,7 @@
                             <p>No news items found.</p>
                         {% endif %}
                     {% else %}
-                    {{ sectionContent | markdownFilter | safe }}
+                    {{ sectionContent | markdown | safe }}
                     {% endif %}
                 </div>
                 {% if section.image and section.imageOrder == 'end' %}
