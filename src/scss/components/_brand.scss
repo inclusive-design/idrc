@@ -2,11 +2,17 @@
   color: inherit;
 }
 
-.home .brand {
-  color: $logo;
-}
-
 .brand svg {
   fill: currentColor;
-  width: 2.5rem;
+  width: 12.45689655rem;
+}
+
+.page--home {
+  .brand {
+    color: $logo;
+  }
+
+  .brand svg {
+    width: 2.5rem;
+  }
 }

@@ -1,4 +1,8 @@
 <a class="brand{{ ' text-' + headerTextColor if headerTextColor }}" rel="home" href="/">
-    {% include "svg/logo.svg" %}
+    {% if page.url === '/' %}
+        {% include "svg/logo.svg" %}
+    {% else %}
+        {% include "svg/logo-wordmark.svg" %}
+    {% endif %}
     <span class="sr-only">Inclusive Design Research Centre</span>
 </a>
