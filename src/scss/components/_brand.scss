@@ -1,21 +1,43 @@
 .brand {
   color: inherit;
+  height: 5rem;
+  margin-left: -1.125rem;
+  padding-top: 0.75rem;
+  width: 14.5rem;
   z-index: 20;
-}
 
-.brand:hover,
-.brand:focus {
-  background: var(--header-accent, var(--accent, $yellow-500));
+  &:hover,
+  &:focus {
+    background: black;
+    color: var(--white);
+  }
+
+  &:active {
+    background: transparentize(black, 0.3);
+  }
 }
 
 .brand svg {
+  display: inline;
   fill: currentColor;
+  margin-left: 1.125rem;
   width: 12.45689655rem;
 }
 
 .page--home {
   .brand {
     color: $logo;
+    width: 4.5rem;
+
+    &:hover,
+    &:focus {
+      background: $logo;
+      color: var(--white);
+    }
+
+    &:active {
+      background: transparentize($logo, 0.3);
+    }
   }
 
   .brand svg {
