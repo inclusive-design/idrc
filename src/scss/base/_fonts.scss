@@ -18,6 +18,17 @@
   font-display: swap;
   font-family: 'Work Sans';
   font-style: normal;
+  font-weight: 400;
+  src:
+    local(''),
+    url('../fonts/work-sans-400.woff2') format('woff2'),
+    url('../fonts/work-sans-400.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Work Sans';
+  font-style: normal;
   font-weight: 500;
   src:
     local(''),

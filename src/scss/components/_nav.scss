@@ -1,112 +1,630 @@
 .nav {
+  height: 38px;
   margin-left: auto;
   margin-top: 0;
 }
 
 .nav .menu-toggle {
-  background: var(--header-bg, $indigo-100);
-  color: var(--header-fg, $black);
+  background: var(--header-bg, transparent);
+  border-radius: 3px;
+  color: var(--black);
+  height: 34px;
+  line-height: 0.7;
+  padding: 6px 12px;
+  position: relative;
+  z-index: 20;
 
-  @media screen and (min-width: 1024px) {
-    display: none;
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
   }
 
-  &:hover,
   &:focus {
-    background: var(--header-accent, $yellow-500);
+    background: var(--header-bg, transparent);
+    box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--black), 0 0 0 2px var(--black) inset;
+  }
+
+  &:active {
+    background-color: var(--indigo-900);
+    color: var(--white);
+  }
+
+  &[aria-expanded="true"] {
+    color: var(--header-fg);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: var(--header-fg);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+      color: var(--white);
+    }
+
+    &:active {
+      background: var(--indigo-200);
+      color: var(--indigo-900);
+    }
+  }
+
+  svg {
+    display: inline-block;
+    margin-right: 0.25rem;
   }
 }
 
 .nav .menu {
-  background: var(--header-bg, $indigo-100);
+  background: var(--indigo-900);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  color: var(--white);
   display: none;
   left: 0;
-  margin-top: 1.5rem;
-  padding: 2.5rem 0;
+  padding: 5.5rem 0 2.5rem;
   position: absolute;
   width: 100vw;
   z-index: 10;
+}
 
-  @media screen and (min-width: 1024px) {
+.nav [aria-expanded="true"] + * {
+  display: block;
+}
+
+.menu .menu-label {
+  font-family: $font-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.25;
+  padding: 0 1.5rem;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0;
+
+  &.submenu-parent--submenu-visible {
+    border-bottom: 1px solid black;
+
+    button[data-parent="true"] {
+      text-decoration: none;
+    }
+  }
+}
+
+.menu li ul {
+  display: none;
+  margin-top: 0;
+}
+
+.menu a,
+.menu button {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  font-family: $font-display;
+  font-weight: 600;
+  height: 3.125rem;
+  padding: 0 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover,
+  &:focus {
+    background: var(--indigo-100);
+    color: var(--indigo-900);
+  }
+
+  &:active {
+    background: var(--indigo-1000);
+    color: var(--white);
+  }
+}
+
+.menu [aria-current="page"],
+.menu [data-parent="true"] {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow-200);
+  text-decoration-thickness: 2px;
+
+  &:hover,
+  &:focus {
+    text-decoration-color: var(--indigo-900);
+  }
+}
+
+.menu button svg {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.menu li ul a {
+  background: var(--indigo-1000);
+  font-weight: 400;
+}
+
+.page--404 {
+  .nav .menu-toggle {
+    color: var(--header-fg);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: var(--header-fg);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+      color: var(--white);
+    }
+
+    &:active {
+      background: var(--indigo-200);
+      color: var(--indigo-900);
+    }
+  }
+}
+
+.page--home {
+  .nav .menu-toggle {
+    &:hover {
+      background: var(--indigo-200);
+    }
+
+    &:active {
+      background: var(--indigo-900);
+    }
+
+    &[aria-expanded="true"] {
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &:active {
+        background: var(--white);
+      }
+    }
+  }
+}
+
+.no-js {
+  .nav {
+    height: auto;
+    width: 100%;
+  }
+
+  .nav .menu-toggle {
+    display: none;
+  }
+
+  .nav .menu {
+    background: var(--header-bg);
     box-shadow: none;
-    display: flex;
+    color: var(--header-fg);
+    display: block;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-top: 2rem;
+    position: relative;
+    width: calc(3rem + 100%);
+  }
+
+  .nav .menu-label {
+    @include sr-only();
+  }
+
+  .nav li ul {
+    display: block;
+  }
+
+  .menu a,
+  .menu button {
+    color: black;
+
+    &:hover,
+    &:focus {
+      background: black;
+      color: var(--white);
+    }
+
+    &:active {
+      background: transparentize(black, 0.3);
+      color: var(--white);
+    }
+  }
+
+  .menu a::after {
+    background: currentColor;
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    margin-left: 0.125em;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
+  }
+
+  .menu a:not([rel="external"])::after {
+    margin-bottom: 0;
+    mask-image: url('../images/internal.svg');
+    width: 1em;
+  }
+
+  .menu a[rel~="external"]::after,
+  .menu a[href^="mailto:"]::after {
+    margin-bottom: 0.125em;
+    mask-image: url('../images/external.svg');
+    width: 1.5em;
+  }
+
+  .menu [data-parent="true"] {
+    text-decoration: none;
+  }
+
+  .menu [aria-current="page"],
+  .menu li ul [data-parent="true"] {
+    text-decoration: underline;
+    text-decoration-color: var(--indigo-500);
+    text-decoration-thickness: 0.125rem;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: var(--white);
+    }
+  }
+
+  .menu li ul a {
+    background: var(--header-bg);
+    color: black;
+  }
+
+  .menu a[href="#"] {
+    display: none;
+  }
+
+  .menu a[href="#"] + ul a {
+    font-weight: 600;
+  }
+
+  .page--404 {
+    .menu a,
+    .menu button {
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        background: var(--indigo-100);
+        color: var(--indigo-900);
+      }
+
+      &:active {
+        background: var(--indigo-1000);
+        color: var(--white);
+      }
+    }
+
+    .menu li ul a {
+      background: var(--header-bg);
+      color: var(--white);
+    }
+  }
+
+  .page--home {
+    .menu a,
+    .menu button {
+      &:hover,
+      &:focus {
+        background: var(--blue-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($blue-500, 0.5);
+        color: black;
+      }
+    }
+
+    .menu li ul a {
+      background: var(--header-bg);
+      color: black;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    height: 5rem;
+  }
+
+  .nav .menu-toggle {
+    display: none;
+  }
+
+  .nav .menu {
+    background: transparent;
+    box-shadow: none;
+    display: block;
+    height: 5rem;
+    margin-top: 0;
     padding-bottom: 0;
     padding-top: 0;
     position: relative;
     width: auto;
     z-index: auto;
   }
-}
 
-.nav [aria-expanded="true"] + .menu {
-  display: block;
-}
-
-.nav .menu-label {
-  font-family: $font-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 1.25;
-  padding: 0 1.5rem;
-
-  @media screen and (min-width: 1024px) {
+  .menu .menu-label {
     @include sr-only();
   }
-}
 
-.nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0 1.5rem;
-
-  @media screen and (min-width: 1024px) {
+  .menu ul {
     flex-direction: row;
     margin-top: 0;
     padding: 0;
     position: relative;
   }
-}
 
-.nav li {
-  padding: 0.5rem 0;
-
-  @media screen and (min-width: 1024px) {
-    padding: 0 1rem 0 0;
+  .menu li {
+    padding: 0;
+    position: relative;
   }
-}
 
-.nav a {
-  color: var(--header-fg, $black);
-  font-weight: 500;
-  text-decoration: none;
-}
-
-nav a[aria-current="page"],
-nav a[data-parent="true"] {
-  border-bottom: 2px solid currentColor;
-}
-
-.pagination a {
-  text-decoration: underline;
-
-  &::after {
-    display: none;
+  .menu li ul {
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    left: 0;
+    margin-top: 0;
+    position: absolute;
+    width: 16rem;
+    z-index: 20;
   }
-}
 
-.nav a:hover,
-.nav a:focus {
-  background: var(--header-accent, $yellow-500);
-}
+  .menu a,
+  .menu button {
+    align-items: center;
+    color: var(--black);
+    display: flex;
+    font-weight: 500;
+    height: 5rem;
+    padding: 0 1.25rem;
 
-.pagination a[aria-current="page"] {
-  background: $indigo-900;
-  color: $white;
+    &:hover,
+    &:focus {
+      background: black;
+      color: var(--white);
+    }
 
-  &:hover,
-  &:focus {
-    background: $indigo-500;
+    &:active {
+      background: transparentize(black, 0.5);
+      color: var(--white);
+    }
+  }
+
+  .menu [aria-expanded="true"] {
+    background: black;
+    color: var(--white);
+  }
+
+  .menu [aria-current="page"],
+  .menu [data-parent="true"] {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3125rem;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: var(--white);
+    }
+  }
+
+  .menu li ul a {
+    background: var(--white);
+    color: black;
+    font-weight: 400;
+    height: unset;
+    min-height: 3.125rem;
+    padding: 0 1.25rem;
+
+    &:hover,
+    &:focus {
+      background: var(--yellow-500);
+      color: black;
+    }
+
+    &:active {
+      background: transparentize($yellow-500, 0.5);
+    }
+
+    &[aria-current="page"] {
+      &:hover,
+      &:focus {
+        text-decoration-color: black;
+      }
+    }
+  }
+
+  .page--404 {
+    .menu a,
+    .menu button {
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        background: black;
+      }
+
+      &:active {
+        background: transparentize(black, 0.3);
+      }
+    }
+
+    .menu li ul a {
+      background: var(--white);
+      color: black;
+
+      &:hover,
+      &:focus {
+        background: var(--yellow-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($yellow-500, 0.5);
+      }
+    }
+  }
+
+  .page--home {
+    .menu a,
+    .menu button {
+      &:hover,
+      &:focus {
+        background: var(--blue-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($blue-500, 0.5);
+        color: black;
+      }
+    }
+
+    .menu [aria-expanded="true"] {
+      background: var(--blue-500);
+      color: black;
+    }
+
+    .menu li ul a {
+      &:hover,
+      &:focus {
+        background: var(--yellow-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($yellow-500, 0.5);
+      }
+    }
+  }
+
+  .no-js {
+    .nav {
+      height: 12rem;
+      margin-top: 1.625rem;
+      width: 100%;
+    }
+
+    .nav .menu {
+      height: 12rem;
+      margin-left: 0;
+    }
+
+    .menu ul {
+      columns: 4;
+      display: block;
+      height: 10rem;
+      width: auto;
+    }
+
+    .menu li {
+      padding-top: 0.75rem;
+
+      &.submenu-parent {
+        break-inside: avoid;
+      }
+    }
+
+    .menu li ul {
+      background: transparent;
+      box-shadow: none;
+      break-inside: avoid;
+      columns: 1;
+      height: auto;
+      position: relative;
+      width: 100%;
+    }
+
+    .menu a {
+      display: inline;
+      font-size: 1.375rem;
+      height: auto;
+      padding: 0;
+      text-decoration: none;
+      width: auto;
+
+      &:hover,
+      &:focus {
+        background: var(--yellow-500);
+        color: black;
+      }
+    }
+
+    .menu a:not([rel="external"])::after {
+      margin-bottom: -0.4375em;
+    }
+
+    .menu a[rel~="external"]::after,
+    .menu a[href^="mailto:"]::after {
+      margin-bottom: -0.375em;
+    }
+
+    .menu [aria-current="page"] {
+      text-decoration: underline;
+      text-decoration-color: var(--indigo-500);
+      text-decoration-thickness: 0.1875rem;
+
+      &:hover,
+      &:focus {
+        text-decoration-color: black;
+      }
+    }
+
+    .menu li ul li {
+      break-inside: avoid;
+      padding-top: 0;
+    }
+
+    .menu li ul a {
+      background: transparent;
+      font-size: 1rem;
+      min-height: auto;
+      padding: 0;
+    }
+
+    .menu a[href="#"] + ul a {
+      font-size: 1.375rem;
+      font-weight: 500;
+    }
+
+    .menu a[href="#"] + ul li + li {
+      padding-top: 0.75rem;
+    }
+
+    .menu a:not([href="#"]) + ul li {
+      margin-top: 0.5rem;
+    }
+
+    .menu a:not([href="#"]) + ul li + li {
+      margin-top: 0.5rem;
+    }
+
+    .page--home {
+      .menu a {
+        &:hover,
+        &:focus {
+          background: var(--yellow-500);
+          color: black;
+        }
+
+        &:active {
+          background: var(--yellow-500);
+        }
+      }
+    }
   }
 }

@@ -4,14 +4,7 @@
 
 {% block content %}
     <article class="container">
-        <header>
-            <div class="container inner">
-                <h1>{{ title }}</h1>
-                {% if intro %}
-                <div class="intro">{{ intro | markdownFilter | safe }}</div>
-                {% endif %}
-            </div>
-        </header>
+        {% include 'partials/components/page-header.njk' %}
         {%- if sections %}
             {%- for section in sections %}
             {% set sectionTitle = '' %}
@@ -56,6 +49,12 @@
             </div>
         </section>
             {%- endfor %}
+        {%- else %}
+        <div class="content">
+            <div class="inner">
+                {{ content | safe }}
+            </div>
+        </div>
         {%- endif %}
     </article>
 {% endblock %}

@@ -4,11 +4,14 @@
 
 $black: #00303f;
 $white: #fff;
+$silver: #c4c4c4;
 $indigo-100: #f8fbff;
-$indigo-200: #e4f9ff;
+$indigo-200: #e2edfc;
 $indigo-500: #3544d0;
 $indigo-900: #3c366b;
+$indigo-1000: #251f50;
 $logo: #00a0cc;
+$blue-100: #e4f9ff;
 $blue-500: #41cdfa;
 $red-500: #f56565;
 $red-900: #e53e3e;
@@ -18,11 +21,14 @@ $yellow-500: #f6e05e;
 $colors: (
   'black': $black,
   'white': $white,
+  'silver': $silver,
   'indigo-100': $indigo-100,
   'indigo-200': $indigo-200,
   'indigo-500': $indigo-500,
   'indigo-900': $indigo-900,
+  'indigo-1000': $indigo-1000,
   'logo': $logo,
+  'blue-100': $blue-100,
   'blue-500': $blue-500,
   'red-500': $red-500,
   'red-900': $red-900,

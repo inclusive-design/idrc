@@ -3,9 +3,9 @@ title: IDRC Consulting
 permalink: /consulting/
 eleventyNavigation:
   key: IDRC Consulting
-  order: 6
-headerBgColor: yellow-500
-headerBorderColor: yellow-200
+  parent: Services
+headerBgColor: blue-100
+headerBorderColor: blue-500
 headerTextColor: black
 intro: >
     We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.

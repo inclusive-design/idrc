@@ -1,13 +1,13 @@
 ---
-headerTextColor: white
 layout: layouts/projects.njk
 eleventyNavigation:
-  key: Featured projects and tools
-  order: 4
-headerBorderColor: indigo-500
+  key: Projects and tools
+  order: 2
 permalink: /projects-and-tools/
 title: Featured projects and tools
-headerBgColor: indigo-900
+headerBgColor: red-500
+headerBorderColor: red-900
+headerTextColor: black
 projects:
   - name: Project We Count
     shortName: false

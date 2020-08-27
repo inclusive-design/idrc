@@ -1,5 +1,11 @@
 .brand {
   color: inherit;
+  z-index: 20;
+}
+
+.brand:hover,
+.brand:focus {
+  background: var(--header-accent, var(--accent, $yellow-500));
 }
 
 .brand svg {

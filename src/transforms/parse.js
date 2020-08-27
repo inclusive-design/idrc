@@ -3,7 +3,7 @@ const jsdom = require('@tbranyen/jsdom');
 const {JSDOM} = jsdom;
 
 module.exports = (value, outputPath) => {
-	if (outputPath.endsWith('.html')) {
+	if (outputPath && outputPath.includes('.html')) {
 		const DOM = new JSDOM(value, {
 			resources: 'usable'
 		});

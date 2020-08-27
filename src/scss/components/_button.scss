@@ -1,8 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+button {
+  -webkit-appearance: none;
+}
+
 button:hover,
 button:focus {
-  background: $yellow-500;
   outline: none;
 }
