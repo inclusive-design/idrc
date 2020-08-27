@@ -39,6 +39,12 @@ article.person {
   padding: 3rem 0;
 }
 
+@media screen and (min-width: 768px) {
+  .person + .person {
+    margin-top: 0;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .page--team article .content {
     padding: 6rem 0;
@@ -47,9 +53,5 @@ article.person {
 
   .grid.grid--people {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .person + .person {
-    margin-top: 0;
   }
 }
