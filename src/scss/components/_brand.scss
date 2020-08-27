@@ -3,7 +3,7 @@
   height: 5rem;
   margin-left: -1.125rem;
   padding-top: 0.75rem;
-  width: 14.5rem;
+  width: 4.5rem;
   z-index: 20;
 
   &:hover,
@@ -17,11 +17,25 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .brand {
+    width: 14.5rem;
+  }
+}
+
 .brand svg {
   display: inline;
   fill: currentColor;
   margin-left: 1.125rem;
+  width: 2.5rem;
+}
+
+.brand .hidden-mb svg {
   width: 12.45689655rem;
+}
+
+.brand .hidden-dk svg {
+  width: 2.5rem;
 }
 
 .page--home {
@@ -39,8 +53,34 @@
       background: transparentize($logo, 0.3);
     }
   }
+}
 
-  .brand svg {
-    width: 2.5rem;
+.banner--menu-visible,
+.page--home .banner--menu-visible {
+  .brand {
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+      background: var(--white);
+      color: var(--indigo-900);
+    }
+
+    &:active {
+      background: var(--indigo-1000);
+      color: var(--white);
+    }
+  }
+}
+
+.hidden-mb {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hidden-tb {
+  @media (min-width: 768px) {
+    display: none;
   }
 }

@@ -2,7 +2,12 @@
     {% if page.url === '/' %}
         {% include "svg/logo.svg" %}
     {% else %}
+        <span class="hidden-tb">
+        {% include "svg/logo.svg" %}
+        </span>
+        <span class="hidden-mb">
         {% include "svg/logo-wordmark.svg" %}
+        </span>
     {% endif %}
     <span class="sr-only">Inclusive Design Research Centre</span>
 </a>
