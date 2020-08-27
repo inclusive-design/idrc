@@ -1,0 +1,7 @@
+<article class="person">
+    <h2 class="h3">{{ person.data.title }}</h2>
+    <div class="metadata">
+        <p><strong>{{ person.data.job }}</strong></p>
+    </div>
+    <p><a class="link--email" href="mailto:{{ person.data.email }}">{% include 'svg/email.svg' %} Email {{ person.data.title | split(' ') | first }}</a></p>
+</article>

@@ -9,7 +9,7 @@ const {
 const env = nunjucks.configure();
 
 env.addFilter('w3DateFilter', w3DateFilter);
-env.addFilter('markdownFilter', markdownFilter);
+env.addFilter('markdown', markdownFilter);
 env.addFilter('dateFilter', dateFilter);
 env.addFilter('slug', slugFilter)
 
@@ -65,7 +65,7 @@ const Post = ({entry}) => (
 			date,
 			author,
 			headerBgColor: 'white',
-			content: markdownFilter(body || '')
+			content: markdown(body || '')
 		})}
 	/>
 );
@@ -81,7 +81,7 @@ const Idea = ({entry}) => (
 			date,
 			author,
 			headerBgColor: 'white',
-			content: markdownFilter(body || '')
+			content: markdown(body || '')
 		})}
 	/>
 );

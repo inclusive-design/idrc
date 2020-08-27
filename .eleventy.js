@@ -10,6 +10,7 @@ const dateFilter = require('./src/filters/date-filter.js');
 const limitFilter = require('./src/filters/limit-filter.js');
 const markdownFilter = require('./src/filters/markdown-filter.js');
 const slugFilter = require('./src/filters/slug-filter.js');
+const splitFilter = require('./src/filters/split-filter.js');
 const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const workboxOptions = {
@@ -26,6 +27,23 @@ module.exports = eleventyConfig => {
 	// Collections.
 	const livePosts = post => post.date <= now && !post.data.draft;
 
+	eleventyConfig.addCollection('people', collection => {
+		return collection.getFilteredByGlob('src/people/*.md').sort(function(a, b) {
+			const nameA = a.data.title;
+			const nameB = b.data.title;
+
+			if (nameA < nameB) {
+				return -1;
+			}
+
+			if (nameA > nameB) {
+				return 1;
+			}
+
+			return 0;
+		  });
+	});
+	
 	eleventyConfig.addCollection('news', collection => {
 		return [
 			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))
@@ -58,10 +76,11 @@ module.exports = eleventyConfig => {
 
 	// Filters.
 	eleventyConfig.addFilter('dateFilter', dateFilter);
-	eleventyConfig.addFilter('markdownFilter', markdownFilter);
+	eleventyConfig.addFilter('markdown', markdownFilter);
 	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
 	eleventyConfig.addFilter('limit', limitFilter);
 	eleventyConfig.addFilter('slug', slugFilter);
+	eleventyConfig.addFilter('split', splitFilter);
 
 	eleventyConfig.addWatchTarget('./src/js');
 	eleventyConfig.addWatchTarget('./src/scss');

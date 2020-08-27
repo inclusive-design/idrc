@@ -1,0 +1,57 @@
+
+article.person {
+  border-top: 0.25rem solid var(--indigo-500);
+  margin: 0;
+  padding-top: 1.5rem;
+
+  h2 + .metadata {
+    margin-top: 0.25rem;
+  }
+
+  .metadata p + p {
+    margin-top: 0.25rem;
+  }
+
+  .metadata + p {
+    margin-top: 0.75rem;
+  }
+}
+
+.person + .person {
+  margin-top: 3rem;
+}
+
+.link--email {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link--email svg {
+  display: inline-block;
+  margin-right: 0.25rem;
+}
+
+.page--team article .content {
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .person + .person {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page--team article .content {
+    padding: 6rem 0;
+    width: calc(2 / 3 * 100%);
+  }
+
+  .grid.grid--people {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

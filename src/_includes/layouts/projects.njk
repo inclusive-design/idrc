@@ -14,7 +14,7 @@
                         {% for project in projects %}
                         <div class="project">
                             <h3>{{ project.name }}{{ " (" + project.shortName + ")" if project.shortName }}</h3>
-                            {{ project.description | markdownFilter | safe }}
+                            {{ project.description | markdown | safe }}
                             {% if project.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in project.tags %}
@@ -38,7 +38,7 @@
                         {% for tool in tools %}
                         <div class="tool">
                             <h3>{{ tool.name }}{{ " (" + tool.shortName + ")" if tool.shortName }}</h3>
-                            {{ tool.description | markdownFilter | safe }}
+                            {{ tool.description | markdown | safe }}
                             {% if tool.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in tool.tags %}
