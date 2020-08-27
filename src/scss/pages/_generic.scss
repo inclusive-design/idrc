@@ -9,6 +9,7 @@ article {
 
 article header {
   background: var(--header-bg, $indigo-100);
+  border-bottom: 0.5625rem solid var(--header-border);
   color: var(--header-fg, $black);
   margin-left: 50%;
   padding-bottom: 5rem;
@@ -24,6 +25,17 @@ article header .inner {
   padding-right: 1.5rem;
 }
 
+article .breadcrumbs {
+  font-family: $font-display;
+  font-size: 1.375rem;
+  font-weight: 600;
+
+  @media (min-width: 1024px) {
+    font-size: 1.75rem;
+    width: 50%;
+  }
+}
+
 article header h1 {
   @media screen and (min-width: 1024px) {
     width: 50%;
@@ -36,6 +48,15 @@ article header .intro {
 
   @media screen and (min-width: 1024px) {
     width: 50%;
+  }
+}
+
+.page--generic article .content {
+  padding: 3rem 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 6rem 0;
+    width: 75%;
   }
 }
 

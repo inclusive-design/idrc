@@ -2,9 +2,10 @@
 title: Vision Technology Service
 eleventyNavigation:
   key: Vision Technology Service
-  order: 5
-headerBgColor: red-500
-headerBorderColor: red-900
+  parent: Services
+  order: 1
+headerBgColor: blue-100
+headerBorderColor: blue-500
 headerTextColor: black
 sections:
   - title: About us

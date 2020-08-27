@@ -4,14 +4,7 @@
 
 {% block content %}
     <article class="container">
-        <header>
-            <div class="container inner">
-                <h1>{{ title }}</h1>
-                {% if intro %}
-                <div class="intro">{{ intro | markdownFilter | safe }}</div>
-                {% endif %}
-            </div>
-        </header>
+        {% include 'partials/components/page-header.njk' %}
         <section id="projects" class="section section--full">
             <div class="container">
                 <div class="section__content">

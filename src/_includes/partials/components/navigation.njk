@@ -1,13 +1,19 @@
 <nav class="nav" id="menu" aria-labelledby="menu-label">
     {% set navItems = collections.all | eleventyNavigation %}
-    <button class="menu-toggle" id="menu-toggle" aria-expanded="false">menu</button>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false">{% include 'svg/menu.svg' %} menu</button>
     <div class="menu">
         <p class="menu-label" id="menu-label"><span class="sr-only">main </span>Menu</p>
         <ul>
         {%- for entry in navItems %}
-	        {% set currentAttribute, relAttribute, parentAttribute = '' %}
+	        {% set liClass, currentAttribute, relAttribute, parentAttribute = '' %}
           {% set currentPage = page.url === entry.url %}
-          {% set parentPage = entry.url != '/' and entry.url in page.url %}
+
+          {% if eleventyNavigation.parent %}
+            {% set parentPage = entry.title === eleventyNavigation.parent %}
+          {% else %}
+            {% set parentPage = entry.url in page.url %}
+          {% endif %}
+
 	        {% if entry.rel %}
 	          {% set relAttribute = ' rel="' + entry.rel + '"' %}
 	        {% endif %}
@@ -19,8 +25,30 @@
           {% if parentPage %}
             {% set parentAttribute = ' data-parent="true"' %}
           {% endif %}
-        <li>
+
+          {% if entry.children.length > 0 %}
+          {% set liClass = ' class="submenu-parent"' %}
+          {% endif %}
+        <li{{ liClass | safe }}>
             <a{{ relAttribute | safe }}{{ parentAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
+            {%- if entry.children.length > 0 %}
+            <ul>
+            {%- for child in entry.children %}
+              {% set currentAttribute, relAttribute, parentAttribute = '' %}
+              {% set currentPage = page.url === child.url %}
+              {% if child.rel %}
+                {% set relAttribute = ' rel="' + child.rel + '"' %}
+              {% endif %}
+      
+              {% if currentPage %}
+                {% set currentAttribute = ' aria-current="page"' %}
+              {% endif %}
+              <li>
+                <a{{ relAttribute | safe }}{{ currentAttribute | safe }} href="{{ child.url | url }}">{{ child.title }}</a>
+              </li>
+            {%- endfor %}
+            </ul>
+            {%- endif %}
         </li>
         {%- endfor %}
         </ul>

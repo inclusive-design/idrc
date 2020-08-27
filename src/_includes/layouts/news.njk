@@ -4,11 +4,7 @@
 
 {% block content %}
     <article class="container">
-        <header>
-            <div class="container inner">
-                <h1>{{ title }}</h1>
-            </div>
-        </header>
+        {% include 'partials/components/page-header.njk' %}
         <div class="content">
             <div class="inner">
             {% if posts.length %}

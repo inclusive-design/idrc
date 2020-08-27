@@ -4,12 +4,7 @@ module.exports = {
 		'stylelint-order'
 	],
 	rules: {
-		'scss/at-rule-no-unknown': [
-			true,
-			{
-				ignoreAtRules: ['tailwind']
-			}
-		],
+		'no-descending-specificity': null,
 		'order/order': [
 			'custom-properties',
 			'declarations'
