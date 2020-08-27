@@ -399,15 +399,15 @@ collections:
       - {label: "Pronouns", name: "pronouns", widget: "string"}
       - {label: "Email Address", name: "email", widget: "string"}
       - {label: "Personal Website", name: "website", widget: "string", required: false, hint: "A link to this person's personal website."}      
-      - {label: "Twitter Username", name: "twitter", widget: "text", required: false, hint: "This person's twitter username, e.g. '@username'."}
+      - {label: "Twitter Username", name: "twitter", widget: "string", required: false, hint: "This person's twitter username, e.g. '@username'."}
       - {label: "Github Profile", name: "github", widget: "string", required: false, hint: "A link to this person's profile on GitHub."}      
       - {label: "LinkedIn Profile", name: "linkedin", widget: "string", required: false, hint: "A link to this person's profile on LinkedIn."}      
-      - {label: "Projects", name: "projects", widget: "list", allow_add: true}
-      - {label: "Interests", name: "interests", widget: "markdown", required: false}
+      - {label: "Projects", name: "projects", widget: "list", allow_add: true, hint: "A comma-separated list of projects on which this person has worked."}
+      - {label: "Interests", name: "interests", widget: "text", required: false}
+      - {label: "Bio", name: "body", widget: "markdown"}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
   - label: "Globals"
     name: "globals"
     files:
