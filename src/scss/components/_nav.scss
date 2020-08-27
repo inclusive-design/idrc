@@ -576,7 +576,7 @@
     .menu [aria-current="page"] {
       text-decoration: underline;
       text-decoration-color: var(--indigo-500);
-      text-decoration-thickness: 2px;
+      text-decoration-thickness: 0.25rem;
 
       &:hover,
       &:focus {
