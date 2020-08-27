@@ -1,4 +1,13 @@
 <a class="brand" rel="home" href="/">
-    {% include "svg/logo.svg" %}
+    {% if page.url === '/' %}
+        {% include "svg/logo.svg" %}
+    {% else %}
+        <span class="brand__logo">
+        {% include "svg/logo.svg" %}
+        </span>
+        <span class="brand__logotype">
+        {% include "svg/logo-wordmark.svg" %}
+        </span>
+    {% endif %}
     <span class="sr-only">Inclusive Design Research Centre</span>
 </a>
