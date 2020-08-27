@@ -48,4 +48,8 @@ article.person {
   .grid.grid--people {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .person + .person {
+    margin-top: 0;
+  }
 }
