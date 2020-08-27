@@ -1,3 +1,3 @@
 module.exports = (string, delimiter) => {
-	return string.split(delimiter);	
+	return string.split(delimiter);
 };
