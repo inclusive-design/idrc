@@ -5,7 +5,36 @@ const menuItems = document.querySelectorAll('#menu ul a');
 const menuToggle = document.querySelector('#menu-toggle');
 
 const dropdownLinks = [...document.querySelectorAll('.nav .submenu-parent > a')];
+const dropdownButtons = [];
 
+/**
+ * Collapse the menu.
+ */
+const collapseMenu = () => {
+	menuToggle.setAttribute('aria-expanded', false);
+	banner.classList.remove('banner--menu-visible');
+};
+
+/**
+ * Collapse the submenu corresponding to the toggle button `btn`.
+ * @param {HTMLElement} btn The toggle button whose submenu should be collapsed.
+ */
+const collapseSubmenu = btn => {
+	btn.setAttribute('aria-expanded', false);
+	btn.parentNode.classList.remove('submenu-parent--submenu-visible');
+};
+
+/**
+ * Collapse the menu and any open submenus.
+ */
+const collapseAll = () => {
+	collapseMenu();
+	dropdownButtons.forEach(btn => {
+		collapseSubmenu(btn);
+	});
+};
+
+// Create submenu buttons and submenus
 dropdownLinks.forEach(link => {
 	const toggleButton = document.createElement('button');
 	const dropdown = link.nextElementSibling;
@@ -26,8 +55,11 @@ dropdownLinks.forEach(link => {
 	}
 
 	link.replaceWith(toggleButton);
+
+	dropdownButtons.push(toggleButton);
 });
 
+// Handle click event on menu toggle button.
 document.addEventListener('click', event => {
 	if (!event.target.closest('#menu-toggle')) {
 		return;
@@ -43,32 +75,7 @@ document.addEventListener('click', event => {
 	}
 });
 
-document.addEventListener('click', event => {
-	if (menuToggle.getAttribute('aria-expanded' !== 'true')) {
-		return;
-	}
-
-	if (!event.target.closest('#menu')) {
-		menuToggle.setAttribute('aria-expanded', false);
-	}
-});
-
-document.addEventListener('keydown', event => {
-	if (event.key === 'Escape') {
-		menuToggle.setAttribute('aria-expanded', false);
-		banner.classList.remove('banner--menu-visible');
-	}
-});
-
-menuItems.forEach(menuItem => {
-	menuItem.addEventListener('blur', event => {
-		if (event.target === menuItems[menuItems.length - 1] && event.relatedTarget && event.relatedTarget.parentNode.nodeName !== 'LI') {
-			menuToggle.setAttribute('aria-expanded', false);
-			banner.classList.remove('banner--menu-visible');
-		}
-	});
-});
-
+// Handle click event on submenu toggle button.
 document.addEventListener('click', event => {
 	if (!event.target.closest('.submenu-toggle')) {
 		return;
@@ -79,9 +86,42 @@ document.addEventListener('click', event => {
 	const expanded = submenuToggle.getAttribute('aria-expanded') === 'true' || false;
 	submenuToggle.setAttribute('aria-expanded', !expanded);
 
+	dropdownButtons.forEach(btn => {
+		if (btn !== submenuToggle) {
+			collapseSubmenu(btn);
+		}
+	});
+
 	if (expanded) {
 		submenuToggle.parentNode.classList.remove('submenu-parent--submenu-visible');
 	} else {
 		submenuToggle.parentNode.classList.add('submenu-parent--submenu-visible');
 	}
+});
+
+// Collapse menu and/or submenus if a click happens outside of the menu.
+document.addEventListener('click', event => {
+	if (menuToggle.getAttribute('aria-expanded' !== 'true') && document.querySelectorAll('.menu [aria-expanded="true"]').length === 0) {
+		return;
+	}
+
+	if (!event.target.closest('#menu')) {
+		collapseAll();
+	}
+});
+
+// Collapse menu and/or submenus on <esc>.
+document.addEventListener('keydown', event => {
+	if (event.key === 'Escape') {
+		collapseAll();
+	}
+});
+
+// Handle blur on menu items.
+menuItems.forEach(menuItem => {
+	menuItem.addEventListener('blur', event => {
+		if (event.target === menuItems[menuItems.length - 1] && event.relatedTarget && event.relatedTarget.parentNode.nodeName !== 'LI') {
+			collapseAll();
+		}
+	});
 });
