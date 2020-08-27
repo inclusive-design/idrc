@@ -13,83 +13,44 @@
   padding: 6px 12px;
   position: relative;
   z-index: 20;
-}
 
-.page--404 .nav .menu-toggle {
-  color: var(--header-fg);
-}
-
-.nav .menu-toggle[aria-expanded="true"] {
-  color: var(--header-fg);
-}
-
-.nav .menu-toggle:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-
-.nav .menu-toggle[aria-expanded="true"]:hover {
-  background: rgba(255, 255, 255, 0.3);
-  color: var(--header-fg);
-}
-
-.nav .menu-toggle:focus {
-  background: var(--header-bg, transparent);
-  box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--black), 0 0 0 2px var(--black) inset;
-}
-
-.nav .menu-toggle[aria-expanded="true"]:focus {
-  box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
-  color: var(--white);
-}
-
-.nav .menu-toggle:active {
-  background-color: var(--indigo-900);
-  color: var(--white);
-}
-
-.nav .menu-toggle[aria-expanded="true"]:active {
-  background: var(--indigo-200);
-  color: var(--indigo-900);
-}
-
-.page--home {
-  .nav .menu-toggle:hover {
-    background: var(--indigo-200);
+  &:hover {
+    background: rgba(255, 255, 255, 0.5);
   }
 
-  .nav .menu-toggle:active {
-    background: var(--indigo-900);
+  &:focus {
+    background: var(--header-bg, transparent);
+    box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--black), 0 0 0 2px var(--black) inset;
   }
 
-  .nav .menu-toggle[aria-expanded="true"]:hover {
-    background: rgba(255, 255, 255, 0.3);
-  }
-
-  .nav .menu-toggle[aria-expanded="true"]:active {
-    background: var(--white);
-  }
-}
-
-.page--404 {
-  .nav .menu-toggle:hover {
-    background: rgba(255, 255, 255, 0.3);
-    color: var(--header-fg);
-  }
-
-  .nav .menu-toggle:focus {
-    box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+  &:active {
+    background-color: var(--indigo-900);
     color: var(--white);
   }
 
-  .nav .menu-toggle:active {
-    background: var(--indigo-200);
-    color: var(--indigo-900);
-  }
-}
+  &[aria-expanded="true"] {
+    color: var(--header-fg);
 
-.nav .menu-toggle svg {
-  display: inline-block;
-  margin-right: 0.25rem;
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: var(--header-fg);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+      color: var(--white);
+    }
+
+    &:active {
+      background: var(--indigo-200);
+      color: var(--indigo-900);
+    }
+  }
+
+  svg {
+    display: inline-block;
+    margin-right: 0.25rem;
+  }
 }
 
 .nav .menu {
@@ -108,7 +69,7 @@
   display: block;
 }
 
-.nav .menu-label {
+.menu .menu-label {
   font-family: $font-serif;
   font-size: 3rem;
   font-weight: 900;
@@ -116,24 +77,32 @@
   padding: 0 1.5rem;
 }
 
-.nav ul {
+.menu ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   padding: 0;
 }
 
-.nav li {
+.menu li {
   padding: 0;
+
+  &.submenu-parent--submenu-visible {
+    border-bottom: 1px solid black;
+
+    button[data-parent="true"] {
+      text-decoration: none;
+    }
+  }
 }
 
-.nav li ul {
+.menu li ul {
   display: none;
   margin-top: 0;
 }
 
-.nav a,
-.nav .menu button {
+.menu a,
+.menu button {
   align-items: center;
   color: var(--white);
   display: flex;
@@ -144,52 +113,226 @@
   text-align: left;
   text-decoration: none;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    background: var(--indigo-100);
+    color: var(--indigo-900);
+  }
+
+  &:active {
+    background: var(--indigo-1000);
+    color: var(--white);
+  }
 }
 
-.nav .menu button svg {
+.menu [aria-current="page"],
+.menu [data-parent="true"] {
+  text-decoration: underline;
+  text-decoration-color: var(--yellow-200);
+  text-decoration-thickness: 2px;
+
+  &:hover,
+  &:focus {
+    text-decoration-color: var(--indigo-900);
+  }
+}
+
+.menu button svg {
   display: inline-block;
   margin-left: 0.5rem;
 }
 
-.nav li.submenu-parent--submenu-visible {
-  border-bottom: 1px solid black;
-}
-
-.nav li ul a {
+.menu li ul a {
   background: var(--indigo-1000);
   font-weight: 400;
 }
 
-.nav [aria-current="page"],
-.nav .menu [data-parent="true"] {
-  text-decoration: underline;
-  text-decoration-color: var(--yellow-200);
-  text-decoration-thickness: 2px;
+.page--404 {
+  .nav .menu-toggle {
+    color: var(--header-fg);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: var(--header-fg);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+      color: var(--white);
+    }
+
+    &:active {
+      background: var(--indigo-200);
+      color: var(--indigo-900);
+    }
+  }
 }
 
-.nav a:hover,
-.nav a:focus,
-.nav .menu button:hover,
-.nav .menu button:focus {
-  background: var(--indigo-100);
-  color: var(--indigo-900);
+.page--home {
+  .nav .menu-toggle {
+    &:hover {
+      background: var(--indigo-200);
+    }
+
+    &:active {
+      background: var(--indigo-900);
+    }
+
+    &[aria-expanded="true"] {
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+
+      &:active {
+        background: var(--white);
+      }
+    }
+  }
 }
 
-.nav [aria-current="page"]:hover,
-.nav [data-parent="true"]:hover,
-.nav [aria-current="page"]:focus,
-.nav [data-parent="true"]:focus {
-  text-decoration-color: var(--indigo-900);
-}
+.no-js {
+  .nav {
+    height: auto;
+    width: 100%;
+  }
 
-.nav li.submenu-parent--submenu-visible button[data-parent="true"] {
-  text-decoration: none;
-}
+  .nav .menu-toggle {
+    display: none;
+  }
 
-.nav a:active,
-.nav .menu button:active {
-  background: var(--indigo-1000);
-  color: var(--white);
+  .nav .menu {
+    background: var(--header-bg);
+    box-shadow: none;
+    color: var(--header-fg);
+    display: block;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-top: 2rem;
+    position: relative;
+    width: calc(3rem + 100%);
+  }
+
+  .nav .menu-label {
+    @include sr-only();
+  }
+
+  .nav li ul {
+    display: block;
+  }
+
+  .menu a,
+  .menu button {
+    color: black;
+
+    &:hover,
+    &:focus {
+      background: black;
+      color: var(--white);
+    }
+
+    &:active {
+      background: transparentize(black, 0.3);
+      color: var(--white);
+    }
+  }
+
+  .menu a::after {
+    background: currentColor;
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    margin-left: 0.125em;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
+  }
+
+  .menu a:not([rel="external"])::after {
+    margin-bottom: 0;
+    mask-image: url('../images/internal.svg');
+    width: 1em;
+  }
+
+  .menu a[rel~="external"]::after,
+  .menu a[href^="mailto:"]::after {
+    margin-bottom: 0.125em;
+    mask-image: url('../images/external.svg');
+    width: 1.5em;
+  }
+
+  .menu [data-parent="true"] {
+    text-decoration: none;
+  }
+
+  .menu [aria-current="page"],
+  .menu li ul [data-parent="true"] {
+    text-decoration: underline;
+    text-decoration-color: var(--indigo-500);
+    text-decoration-thickness: 2px;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: var(--white);
+    }
+  }
+
+  .menu li ul a {
+    background: var(--header-bg);
+    color: black;
+  }
+
+  .menu a[href="#"] {
+    display: none;
+  }
+
+  .menu a[href="#"] + ul a {
+    font-weight: 600;
+  }
+
+  .page--404 {
+    .menu a,
+    .menu button {
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        background: var(--indigo-100);
+        color: var(--indigo-900);
+      }
+
+      &:active {
+        background: var(--indigo-1000);
+        color: var(--white);
+      }
+    }
+
+    .menu li ul a {
+      background: var(--header-bg);
+      color: var(--white);
+    }
+  }
+
+  .page--home {
+    .menu a,
+    .menu button {
+      &:hover,
+      &:focus {
+        background: var(--blue-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($blue-500, 0.5);
+        color: black;
+      }
+    }
+
+    .menu li ul a {
+      background: var(--header-bg);
+      color: black;
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -214,23 +357,23 @@
     z-index: auto;
   }
 
-  .nav .menu-label {
+  .menu .menu-label {
     @include sr-only();
   }
 
-  .nav ul {
+  .menu ul {
     flex-direction: row;
     margin-top: 0;
     padding: 0;
     position: relative;
   }
 
-  .nav li {
+  .menu li {
     padding: 0;
     position: relative;
   }
 
-  .nav li ul {
+  .menu li ul {
     background: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     left: 0;
@@ -240,120 +383,248 @@
     z-index: 20;
   }
 
-  .nav a,
-  .nav .menu button {
+  .menu a,
+  .menu button {
     align-items: center;
     color: var(--black);
     display: flex;
     font-weight: 500;
     height: 5rem;
     padding: 0 1.25rem;
+
+    &:hover,
+    &:focus {
+      background: black;
+      color: var(--white);
+    }
+
+    &:active {
+      background: transparentize(black, 0.5);
+      color: var(--white);
+    }
   }
 
-  .nav li ul a {
+  .menu [aria-expanded="true"] {
+    background: black;
+    color: var(--white);
+  }
+
+  .menu [aria-current="page"],
+  .menu [data-parent="true"] {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3125rem;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: var(--white);
+    }
+  }
+
+  .menu li ul a {
     background: var(--white);
     color: black;
     font-weight: 400;
     height: unset;
     min-height: 3.125rem;
     padding: 0 1.25rem;
-  }
 
-  .page--404 {
-    .nav a,
-    .nav .menu button {
-      color: var(--white);
-    }
-  }
-
-  .nav [aria-current="page"],
-  .nav .menu [data-parent="true"] {
-    text-decoration: underline;
-    text-decoration-color: black;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.3125rem;
-  }
-
-  .nav a:hover,
-  .nav a:focus,
-  .nav .menu button:hover,
-  .nav .menu button:focus,
-  .nav .menu [aria-expanded="true"] {
-    background: black;
-    color: var(--white);
-  }
-
-  .nav [aria-current="page"]:hover,
-  .nav [data-parent="true"]:hover,
-  .nav [aria-current="page"]:focus,
-  .nav [data-parent="true"]:focus {
-    text-decoration-color: var(--white);
-  }
-
-  .nav li.submenu-parent--submenu-visible button[data-parent="true"] {
-    text-decoration: none;
-  }
-
-  .nav a:active,
-  .nav .menu button:active {
-    background: transparentize(black, 0.5);
-    color: var(--white);
-  }
-
-  .page--404 .nav li ul a {
-    color: black;
-  }
-
-  .nav li ul a:hover,
-  .nav li ul a:focus {
-    background: var(--yellow-500);
-    color: black;
-  }
-
-  .nav li ul a:active {
-    background: transparentize($yellow-500, 0.5);
-  }
-
-  .nav li ul [aria-current="page"]:hover,
-  .nav li ul [aria-current="page"]:focus {
-    text-decoration-color: black;
-  }
-
-  .page--home {
-    .nav a:hover,
-    .nav a:focus,
-    .nav .menu button:hover,
-    .nav .menu button:focus,
-    .nav .menu [aria-expanded="true"] {
-      background: var(--blue-500);
-      color: black;
-    }
-
-    .nav [aria-current="page"]:hover,
-    .nav [data-parent="true"]:hover,
-    .nav [aria-current="page"]:focus,
-    .nav [data-parent="true"]:focus {
-      text-decoration-color: var(--indigo-900);
-    }
-
-    .nav li.submenu-parent--submenu-visible button[data-parent="true"] {
-      text-decoration: none;
-    }
-
-    .nav a:active,
-    .nav .menu button:active {
-      background: transparentize($blue-500, 0.5);
-      color: black;
-    }
-
-    .nav li ul a:hover,
-    .nav li ul a:focus {
+    &:hover,
+    &:focus {
       background: var(--yellow-500);
       color: black;
     }
 
-    .nav li ul a:active {
+    &:active {
       background: transparentize($yellow-500, 0.5);
+    }
+
+    &[aria-current="page"] {
+      &:hover,
+      &:focus {
+        text-decoration-color: black;
+      }
+    }
+  }
+
+  .page--404 {
+    .menu a,
+    .menu button {
+      color: var(--white);
+
+      &:hover,
+      &:focus {
+        background: black;
+      }
+
+      &:active {
+        background: transparentize(black, 0.3);
+      }
+    }
+
+    .menu li ul a {
+      background: var(--white);
+      color: black;
+
+      &:hover,
+      &:focus {
+        background: var(--yellow-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($yellow-500, 0.5);
+      }
+    }
+  }
+
+  .page--home {
+    .menu a,
+    .menu button {
+      &:hover,
+      &:focus {
+        background: var(--blue-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($blue-500, 0.5);
+        color: black;
+      }
+    }
+
+    .menu [aria-expanded="true"] {
+      background: var(--blue-500);
+      color: black;
+    }
+
+    .menu li ul a {
+      &:hover,
+      &:focus {
+        background: var(--yellow-500);
+        color: black;
+      }
+
+      &:active {
+        background: transparentize($yellow-500, 0.5);
+      }
+    }
+  }
+
+  .no-js {
+    .nav {
+      height: 12rem;
+      margin-top: 1.625rem;
+      width: 100%;
+    }
+
+    .nav .menu {
+      height: 12rem;
+      margin-left: 0;
+    }
+
+    .menu ul {
+      columns: 4;
+      display: block;
+      height: 10rem;
+      width: auto;
+    }
+
+    .menu li {
+      padding-top: 0.75rem;
+
+      &.submenu-parent {
+        break-inside: avoid;
+      }
+    }
+
+    .menu li ul {
+      background: transparent;
+      box-shadow: none;
+      break-inside: avoid;
+      columns: 1;
+      height: auto;
+      position: relative;
+      width: 100%;
+    }
+
+    .menu a {
+      display: inline;
+      font-size: 1.375rem;
+      height: auto;
+      padding: 0;
+      text-decoration: none;
+      width: auto;
+
+      &:hover,
+      &:focus {
+        background: var(--yellow-500);
+        color: black;
+      }
+    }
+
+    .menu a:not([rel="external"])::after {
+      margin-bottom: -0.4375em;
+    }
+
+    .menu a[rel~="external"]::after,
+    .menu a[href^="mailto:"]::after {
+      margin-bottom: -0.375em;
+    }
+
+    .menu [aria-current="page"] {
+      text-decoration: underline;
+      text-decoration-color: var(--indigo-500);
+      text-decoration-thickness: 2px;
+
+      &:hover,
+      &:focus {
+        text-decoration-color: black;
+      }
+    }
+
+    .menu li ul li {
+      break-inside: avoid;
+      padding-top: 0;
+    }
+
+    .menu li ul a {
+      background: transparent;
+      font-size: 1rem;
+      min-height: auto;
+      padding: 0;
+    }
+
+    .menu a[href="#"] + ul a {
+      font-size: 1.375rem;
+      font-weight: 500;
+    }
+
+    .menu a[href="#"] + ul li + li {
+      padding-top: 0.75rem;
+    }
+
+    .menu a:not([href="#"]) + ul li {
+      margin-top: 0.5rem;
+    }
+
+    .menu a:not([href="#"]) + ul li + li {
+      margin-top: 0.5rem;
+    }
+
+    .page--home {
+      .menu a {
+        &:hover,
+        &:focus {
+          background: var(--yellow-500);
+          color: black;
+        }
+
+        &:active {
+          background: var(--yellow-500);
+        }
+      }
     }
   }
 }

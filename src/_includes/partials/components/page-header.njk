@@ -7,7 +7,11 @@
         {% if breadcrumbs.length > 0 %}
         <p class="breadcrumbs">
         {% for breadcrumb in breadcrumbs %}
+            {% if breadcrumb.url !== '#' %}
             <a href="{{ breadcrumb.url | url }}">{{ breadcrumb.key }}</a>
+            {% else %}
+            {{ breadcrumb.key }}
+            {% endif %}
         {% endfor %}
         </p>
         {% endif %}

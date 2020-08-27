@@ -17,6 +17,13 @@
   padding: 0 1.5rem;
 }
 
+.no-js {
+  .banner > .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .banner--menu-visible {
     --parent-bg: var(--indigo-900);

@@ -30,37 +30,35 @@ a:focus {
   text-decoration-color: #f6e05e;
 }
 
-@supports (mask-image: url('dot.svg')) {
-  main h1,
-  main h2,
-  main h3,
-  main h4,
-  .project__link,
-  .tool__link {
-    a:not([rel="external"])::after {
-      background: currentColor;
-      content: "";
-      margin-bottom: -0.25rem;
-      margin-left: 0;
-      mask-image: url('../images/internal.svg');
-      mask-position: center;
-      mask-repeat: no-repeat;
-      mask-size: 1.5em;
-      padding-left: 1em;
-    }
+main h1,
+main h2,
+main h3,
+main h4,
+.project__link,
+.tool__link {
+  a:not([rel="external"])::after {
+    background: currentColor;
+    content: "";
+    margin-bottom: -0.25rem;
+    margin-left: 0;
+    mask-image: url('../images/internal.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
+    padding-left: 1em;
+  }
 
-    a[rel~="external"]::after,
-    a[href^="mailto:"]::after {
-      background-color: currentColor;
-      content: "";
-      margin-bottom: -0.25rem;
-      margin-left: 0.25rem;
-      mask-image: url('../images/external.svg');
-      mask-position: center;
-      mask-repeat: no-repeat;
-      mask-size: 1.5em;
-      padding-left: 1em;
-    }
+  a[rel~="external"]::after,
+  a[href^="mailto:"]::after {
+    background-color: currentColor;
+    content: "";
+    margin-bottom: -0.25rem;
+    margin-left: 0.25rem;
+    mask-image: url('../images/external.svg');
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 1.5em;
+    padding-left: 1em;
   }
 }
 
