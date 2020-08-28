@@ -2,7 +2,9 @@ const {
 	w3DateFilter,
 	markdownFilter,
 	dateFilter,
+	splitFilter,
 	slugFilter,
+	limitFilter,
 	site
 } = previewUtil;
 
@@ -11,7 +13,9 @@ const env = nunjucks.configure();
 env.addFilter('w3DateFilter', w3DateFilter);
 env.addFilter('markdown', markdownFilter);
 env.addFilter('dateFilter', dateFilter);
-env.addFilter('slug', slugFilter)
+env.addFilter('slug', slugFilter);
+env.addFilter('split', splitFilter);
+env.addFilter('limit', limitFilter);
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
@@ -54,7 +58,29 @@ const ProjectsAndTools = ({entry}) => (
 	/>
 );
 
-const Post = ({entry}) => (
+const Person = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--person.njk"
+		context={({ title, intro, pronouns, job, projects, interests, body, email, website, twitter, linkedin, github }) => ({
+			previewMode: true,
+			title,
+			intro,
+			pronouns,
+			job,
+			projects,
+			interests,
+			content: markdownFilter(body || ''),
+			email,
+			website,
+			twitter,
+			linkedin,
+			github
+		})}
+	/>
+);
+
+const News = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/single--news.njk"
@@ -65,7 +91,7 @@ const Post = ({entry}) => (
 			date,
 			author,
 			headerBgColor: 'white',
-			content: markdown(body || '')
+			content: markdownFilter(body || '')
 		})}
 	/>
 );
@@ -81,7 +107,7 @@ const Idea = ({entry}) => (
 			date,
 			author,
 			headerBgColor: 'white',
-			content: markdown(body || '')
+			content: markdownFilter(body || '')
 		})}
 	/>
 );
@@ -109,7 +135,8 @@ const SiteData = ({entry}) => (
 
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
+CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('pages', Page);
-CMS.registerPreviewTemplate('posts', Post);
+CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
 CMS.registerPreviewTemplate('site_data', SiteData);

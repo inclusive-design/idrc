@@ -6,7 +6,7 @@
         <h1>{{ title }}</h1>
         <p class="metadata">
             By {{ author if author else 'IDRC Team' }}
-            <span class="separator" aria-hidden="true"> &middot; </span>
+            <span class="separator" aria-hidden="true">&middot;</span>
             <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
         </p>
     </div>

@@ -1,4 +1,4 @@
-{% if previewMode %}{% else %}<!doctype html>
+<!doctype html>
 <html lang="en-ca" class="no-js">
     <head>
         <meta charset="utf-8">
@@ -58,13 +58,12 @@
         {% endblock %}
     </head>
     <body class="{{ pageType }}">
-        {% include "partials/global/header.njk" %}{% endif %}
+        {% include "partials/global/header.njk" %}
         <main>
             {% block content %}
             {% endblock content %}
         </main>
-        {% if previewMode %}{% else %}{% include "partials/global/footer.njk" %}
+        {% include "partials/global/footer.njk" %}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>
-{% endif %}

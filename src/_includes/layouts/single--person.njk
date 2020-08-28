@@ -1,4 +1,8 @@
-{% extends 'layouts/base.njk' %}
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
 
 {% set pageType = 'single single--person' %}
 {% set postType = 'Team' %}
@@ -34,7 +38,7 @@
                 {% if website %}
                 <tr>
                     <th>Website</th>
-                    <td><a href="{{ website }}">{{ website }}</a></td>
+                    <td><a href="{{ website }}">{{ website | replace('https://', '') | replace('http://', '') }}</a></td>
                 </tr>
                 {% endif %}
                 {% if twitter %}
