@@ -82,6 +82,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('slug', slugFilter);
 	eleventyConfig.addFilter('split', splitFilter);
 
+	// Watch targets.
 	eleventyConfig.addWatchTarget('./src/js');
 	eleventyConfig.addWatchTarget('./src/scss');
 
