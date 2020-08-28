@@ -3,7 +3,7 @@
     <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
     <p class="metadata">
         By {{ item.data.author if item.data.author else 'IDRC Team' }}
-        <span class="separator" aria-hidden="true"> &middot; </span>
+        <span class="separator" aria-hidden="true">&middot;</span>
         <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
     </p>
     {% if item.data.excerpt %}

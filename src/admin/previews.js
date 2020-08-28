@@ -83,6 +83,7 @@ const News = createClass({
 	render: function() {
 		const entry = this.props.entry;
 		const author = entry.getIn(['data', 'author']) ?? 'IDRC Team';
+		const datePublished = dateFilter(entry.getIn(['data', 'date']));
 		return h(
 			'div',
 			{className: 'single single--news'},
@@ -100,7 +101,7 @@ const News = createClass({
 							{className: 'container inner'},
 							h(
 								'p',
-								{className: 'post-type'},
+								{className: 'breadcrumbs'},
 								'News'
 							),
 							h(
@@ -111,9 +112,18 @@ const News = createClass({
 							h(
 								'p',
 								{className: 'metadata'},
-								`By ${author}`
+								`By ${author}`,
+								h(
+									'span',
+									{className: 'separator', ariaHidden: true},
+									'·'
+								),
+								h(
+									'time',
+									{},
+									datePublished
+								)
 							),
-							// TODO: Date
 						)
 					),
 					h(
@@ -126,15 +136,15 @@ const News = createClass({
 						)
 					)
 				)	
-		);
-	  }
+			);
+	}
 });
 
 const Idea = createClass({
 	render: function() {
 		const entry = this.props.entry;
-		console.log(entry);
 		const author = entry.getIn(['data', 'author']) ?? 'IDRC Team';
+		const datePublished = dateFilter(entry.getIn(['data', 'date']));
 		return h(
 			'div',
 			{className: 'single single--idea'},
@@ -152,7 +162,7 @@ const Idea = createClass({
 							{className: 'container inner'},
 							h(
 								'p',
-								{className: 'post-type'},
+								{className: 'breadcrumbs'},
 								'News'
 							),
 							h(
@@ -163,9 +173,18 @@ const Idea = createClass({
 							h(
 								'p',
 								{className: 'metadata'},
-								`By ${author}`
+								`By ${author}`,
+								h(
+									'span',
+									{className: 'separator', ariaHidden: true},
+									'·'
+								),
+								h(
+									'time',
+									{},
+									datePublished
+								)
 							),
-							// TODO: Date
 						)
 					),
 					h(
@@ -174,13 +193,12 @@ const Idea = createClass({
 						h(
 							'div',
 							{className: 'inner'},
-							this.props.widgetFor('body')
+							this.props.widgetFor('body'))
 						)
 					)
-				)
-			)	
-		);
-	  }
+				)	
+			);
+	}
 });
 
 const SiteData = ({entry}) => (
