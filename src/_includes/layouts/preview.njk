@@ -1,0 +1,29 @@
+<div class="{{ pageType }}">
+    {% if headerBgColor or headerTextColor %}
+        <style>
+            :root {
+            {% if headerBgColor %}
+                --header-bg: var(--{{ headerBgColor }});
+            {% endif %}
+            {% if headerTextColor %}
+                --header-fg: var(--{{ headerTextColor }});
+            {% endif %}
+            {% if headerBgColor === 'blue-500' or headerBgColor === 'blue-100' or headerBgColor === 'red-500' or headerBgColor === 'yellow-500' %}
+                {% set headerAccentColor = 'white' %}
+            {% elif headerBgColor === 'indigo-900' %}
+                {% set headerAccentColor = 'indigo-500' %}
+            {% endif %}
+                --header-accent: var(--{{ headerAccentColor }}, var(--yellow-500));
+            {% if headerBorderColor %}
+                --header-border: var(--{{ headerBorderColor }});
+            {% elif headerBgColor %}
+                --header-border: var(--{{ headerBgColor }});
+            {% endif %}
+            }
+        </style>
+    {% endif %}
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+</div>
