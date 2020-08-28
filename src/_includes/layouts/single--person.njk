@@ -34,7 +34,7 @@
                 {% if website %}
                 <tr>
                     <th>Website</th>
-                    <td><a href="{{ website }}">{{ website }}</a></td>
+                    <td><a href="{{ website }}">{{ website | replace('https://', '') | replace('http://', '') }}</a></td>
                 </tr>
                 {% endif %}
                 {% if twitter %}
