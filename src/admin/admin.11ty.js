@@ -1,7 +1,6 @@
 const nunjucks = require('nunjucks');
 const path = require('path');
 
-
 module.exports = class {
 	async data() {
 		return {
@@ -12,17 +11,17 @@ module.exports = class {
 
 	async precompile() {
 		return new Promise((resolve, reject) => {
-            const templates = nunjucks.precompile(
-                path.join(__dirname, '../_includes/'),
-                {
-                    include: ['\\.njk$', '\\.svg$']
-                }
-            );
-            if (templates) {
-                resolve(templates);
-            } else {
-                reject(templates);
-            }
+			const templates = nunjucks.precompile(
+				path.join(__dirname, '../_includes/'),
+				{
+					include: ['\\.njk$', '\\.svg$']
+				}
+			);
+			if (templates) {
+				resolve(templates);
+			} else {
+				reject(templates);
+			}
 		});
 	}
 
