@@ -2,8 +2,8 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-  background: $indigo-900;
-  color: $white;
+  background: var(--indigo-900);
+  color: var(--white);
   margin-top: auto;
 }
 
@@ -19,11 +19,11 @@
 
 .footer a:hover,
 .footer a:focus {
-  background: $indigo-500;
+  background: var(--indigo-500);
 }
 
 .footer a:visited {
-  text-decoration-color: $indigo-500;
+  text-decoration-color: var(--indigo-500);
 }
 
 .footer .social,
@@ -60,7 +60,7 @@
 }
 
 .footer .license-credit {
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   margin-top: 3rem;
 }
 

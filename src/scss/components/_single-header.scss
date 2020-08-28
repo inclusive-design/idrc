@@ -1,6 +1,6 @@
 .single article header {
-  background: $white;
-  color: $black;
+  background: var(--white);
+  color: var(--black);
   padding: 5rem 0;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .single article .metadata {
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   margin-top: 1.5rem;
 }
 

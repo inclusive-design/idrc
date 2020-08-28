@@ -47,12 +47,12 @@
 }
 
 .pagination a[aria-current="page"] {
-  background: $indigo-900;
-  color: $white;
+  background: var(--indigo-900);
+  color: var(--white);
 
   &:hover,
   &:focus {
-    background: $indigo-500;
+    background: var(--indigo-500);
   }
 }
 

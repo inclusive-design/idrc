@@ -1,39 +1,37 @@
 /**
  * Basic typography style for copy text
  */
-h1,
-.h1,
-h2,
-.h2 {
-  font-family: $font-serif;
-  font-weight: 900;
-}
 
 h1,
 .h1 {
-  font-size: 3rem;
-  line-height: 1.25;
+  font-family: var(--ff-serif);
+  font-size: var(--step-6);
+  font-weight: var(--fw-black);
+  line-height: 1.33;
 }
 
 h2,
 .h2 {
-  font-size: 2.25rem;
-  line-height: 1.25;
+  font-family: var(--ff-serif);
+  font-size: var(--step-5);
+  font-weight: var(--fw-black);
+  line-height: 1.4;
 }
 
 h3,
 .h3 {
-  font-family: $font-display;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: var(--ff-display);
+  font-size: var(--step-3);
+  font-weight: var(--fw-semibold);
   line-height: 1.25;
 }
 
 h4,
 .h4 {
-  font-family: $font-display;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-family: var(--ff-display);
+  font-size: var(--step-1);
+  font-weight: var(--fw-semibold);
+  line-height: 1.44;
 }
 
 p + * {
@@ -70,4 +68,26 @@ h4 + ol,
 
 .h3 + p {
   margin-top: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+  h1,
+  .h1 {
+    font-size: var(--step-8);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--step-7);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--step-4);
+  }
+
+  h4,
+  .h4 {
+    font-size: var(--step-2);
+  }
 }

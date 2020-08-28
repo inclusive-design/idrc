@@ -8,7 +8,7 @@
 
   &:hover,
   &:focus {
-    background: black;
+    background: var(--true-black);
     color: var(--white);
   }
 
@@ -49,12 +49,12 @@
 
 .page--home {
   .brand {
-    color: $logo;
+    color: var(--logo);
     width: 4.5rem;
 
     &:hover,
     &:focus {
-      background: $logo;
+      background: var(--logo);
       color: var(--white);
     }
 

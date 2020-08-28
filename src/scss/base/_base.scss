@@ -1,28 +1,31 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-* {
-  font-family: $font-sans;
-  line-height: 1.5;
-}
-
 body {
-  background: $indigo-100;
-  color: $black;
+  background: var(--indigo-100);
+  color: var(--black);
   display: flex;
   flex-direction: column;
+  font-family: var(--ff-sans);
+  font-size: var(--step-0);
+  font-weight: var(--fw-normal);
   justify-content: flex-start;
+  line-height: 1.5;
   min-height: 100vh;
 }
 
+small {
+  font-size: var(--step--1);
+}
+
 a {
-  font-family: $font-display;
+  font-family: var(--ff-display);
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  background: var(--accent, $yellow-500);
+  background: var(--accent, var(--yellow-500));
   outline: none;
 }
 
@@ -85,7 +88,7 @@ blockquote {
   }
 
   ul li::before {
-    background-color: $silver;
+    background-color: var(--silver);
     border-radius: 50%;
     content: "";
     display: inline-block;
@@ -102,13 +105,13 @@ blockquote {
 }
 
 .section.section--bg-indigo-900 {
-  --accent: #{$indigo-500};
+  --accent: var(--indigo-500);
 }
 
 .section.section--bg-blue-500,
 .section.section--bg-red-500,
 .section.section--bg-yellow-500 {
-  --accent: #{$white};
+  --accent: var(--white);
 }
 
 @each $name, $color in $colors {

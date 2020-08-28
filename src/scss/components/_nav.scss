@@ -70,10 +70,6 @@
 }
 
 .menu .menu-label {
-  font-family: $font-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 1.25;
   padding: 0 1.5rem;
 }
 
@@ -106,8 +102,8 @@
   align-items: center;
   color: var(--white);
   display: flex;
-  font-family: $font-display;
-  font-weight: 600;
+  font-family: var(--ff-display);
+  font-weight: var(--fw-semibold);
   height: 3.125rem;
   padding: 0 1.5rem;
   text-align: left;
@@ -145,7 +141,7 @@
 
 .menu li ul a {
   background: var(--indigo-1000);
-  font-weight: 400;
+  font-weight: var(--fw-normal);
 }
 
 .page--404 {
@@ -223,11 +219,11 @@
 
   .menu a,
   .menu button {
-    color: black;
+    color: var(--true-black);
 
     &:hover,
     &:focus {
-      background: black;
+      background: var(--true-black);
       color: var(--white);
     }
 
@@ -279,7 +275,7 @@
 
   .menu li ul a {
     background: var(--header-bg);
-    color: black;
+    color: var(--true-black);
   }
 
   .menu a[href="#"] {
@@ -287,7 +283,7 @@
   }
 
   .menu a[href="#"] + ul a {
-    font-weight: 600;
+    font-weight: var(--fw-semibold);
   }
 
   .page--404 {
@@ -319,18 +315,18 @@
       &:hover,
       &:focus {
         background: var(--blue-500);
-        color: black;
+        color: var(--true-black);
       }
 
       &:active {
         background: transparentize($blue-500, 0.5);
-        color: black;
+        color: var(--true-black);
       }
     }
 
     .menu li ul a {
       background: var(--header-bg);
-      color: black;
+      color: var(--true-black);
     }
   }
 }
@@ -388,13 +384,13 @@
     align-items: center;
     color: var(--black);
     display: flex;
-    font-weight: 500;
+    font-weight: var(--fw-medium);
     height: 5rem;
     padding: 0 1.25rem;
 
     &:hover,
     &:focus {
-      background: black;
+      background: var(--true-black);
       color: var(--white);
     }
 
@@ -405,14 +401,14 @@
   }
 
   .menu [aria-expanded="true"] {
-    background: black;
+    background: var(--true-black);
     color: var(--white);
   }
 
   .menu [aria-current="page"],
   .menu [data-parent="true"] {
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: var(--true-black);
     text-decoration-thickness: 2px;
     text-underline-offset: 0.3125rem;
 
@@ -424,8 +420,8 @@
 
   .menu li ul a {
     background: var(--white);
-    color: black;
-    font-weight: 400;
+    color: var(--true-black);
+    font-weight: var(--fw-normal);
     height: unset;
     min-height: 3.125rem;
     padding: 0 1.25rem;
@@ -433,7 +429,7 @@
     &:hover,
     &:focus {
       background: var(--yellow-500);
-      color: black;
+      color: var(--true-black);
     }
 
     &:active {
@@ -443,7 +439,7 @@
     &[aria-current="page"] {
       &:hover,
       &:focus {
-        text-decoration-color: black;
+        text-decoration-color: var(--true-black);
       }
     }
   }
@@ -455,7 +451,7 @@
 
       &:hover,
       &:focus {
-        background: black;
+        background: var(--true-black);
       }
 
       &:active {
@@ -465,12 +461,12 @@
 
     .menu li ul a {
       background: var(--white);
-      color: black;
+      color: var(--true-black);
 
       &:hover,
       &:focus {
         background: var(--yellow-500);
-        color: black;
+        color: var(--true-black);
       }
 
       &:active {
@@ -485,25 +481,25 @@
       &:hover,
       &:focus {
         background: var(--blue-500);
-        color: black;
+        color: var(--true-black);
       }
 
       &:active {
         background: transparentize($blue-500, 0.5);
-        color: black;
+        color: var(--true-black);
       }
     }
 
     .menu [aria-expanded="true"] {
       background: var(--blue-500);
-      color: black;
+      color: var(--true-black);
     }
 
     .menu li ul a {
       &:hover,
       &:focus {
         background: var(--yellow-500);
-        color: black;
+        color: var(--true-black);
       }
 
       &:active {
@@ -551,7 +547,7 @@
 
     .menu a {
       display: inline;
-      font-size: 1.375rem;
+      font-size: var(--step-2);
       height: auto;
       padding: 0;
       text-decoration: none;
@@ -560,7 +556,7 @@
       &:hover,
       &:focus {
         background: var(--yellow-500);
-        color: black;
+        color: var(--true-black);
       }
     }
 
@@ -580,7 +576,7 @@
 
       &:hover,
       &:focus {
-        text-decoration-color: black;
+        text-decoration-color: var(--true-black);
       }
     }
 
@@ -591,14 +587,14 @@
 
     .menu li ul a {
       background: transparent;
-      font-size: 1rem;
+      font-size: var(--step-0);
       min-height: auto;
       padding: 0;
     }
 
     .menu a[href="#"] + ul a {
-      font-size: 1.375rem;
-      font-weight: 500;
+      font-size: var(--step-2);
+      font-weight: var(--fw-medium);
     }
 
     .menu a[href="#"] + ul li + li {
@@ -618,7 +614,7 @@
         &:hover,
         &:focus {
           background: var(--yellow-500);
-          color: black;
+          color: var(--true-black);
         }
 
         &:active {

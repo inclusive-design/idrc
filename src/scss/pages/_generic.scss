@@ -26,12 +26,11 @@ article header .inner {
 }
 
 article .breadcrumbs {
-  font-family: $font-display;
-  font-size: 1.375rem;
-  font-weight: 600;
+  font-family: var(--ff-display);
+  font-size: var(--step-2);
+  font-weight: var(--fw-semibold);
 
   @media (min-width: 1024px) {
-    font-size: 1.75rem;
     width: 50%;
   }
 }
@@ -43,7 +42,7 @@ article header h1 {
 }
 
 article header .intro {
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   margin-top: 1.25rem;
 
   @media screen and (min-width: 1024px) {
@@ -79,8 +78,8 @@ article .content .inner {
 }
 
 .section {
-  background: $indigo-100;
-  color: $black;
+  background: var(--indigo-100);
+  color: var(--black);
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -114,20 +113,20 @@ article .content .inner {
 }
 
 .section figure {
-  box-shadow: 1.5rem 1.5rem $indigo-500;
+  box-shadow: 1.5rem 1.5rem var(--indigo-500);
   margin-bottom: 5rem;
 }
 
 .section figure.shadow-indigo-500 {
-  box-shadow: 1.5rem 1.5rem $indigo-500;
+  box-shadow: 1.5rem 1.5rem var(--indigo-500);
 }
 
 .section figure.shadow-red-500 {
-  box-shadow: 1.5rem 1.5rem $red-500;
+  box-shadow: 1.5rem 1.5rem var(--red-500);
 }
 
 .section figure.shadow-yellow-500 {
-  box-shadow: 1.5rem 1.5rem $yellow-500;
+  box-shadow: 1.5rem 1.5rem var(--yellow-500);
 }
 
 .section img {
