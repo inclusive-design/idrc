@@ -9,6 +9,7 @@ article {
 
 article header {
   background: var(--header-bg, $indigo-100);
+  border-bottom: 0.5625rem solid var(--header-border);
   color: var(--header-fg, $black);
   margin-left: 50%;
   padding-bottom: 5rem;
@@ -24,6 +25,16 @@ article header .inner {
   padding-right: 1.5rem;
 }
 
+article .breadcrumbs {
+  font-family: var(--ff-display);
+  font-size: var(--step-2);
+  font-weight: var(--fw-semibold);
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
 article header h1 {
   @media screen and (min-width: 1024px) {
     width: 50%;
@@ -31,11 +42,20 @@ article header h1 {
 }
 
 article header .intro {
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   margin-top: 1.25rem;
 
   @media screen and (min-width: 1024px) {
     width: 50%;
+  }
+}
+
+.page--generic article .content {
+  padding: 3rem 0;
+
+  @media screen and (min-width: 1024px) {
+    padding: 6rem 0;
+    width: calc(2 / 3 * 100%);
   }
 }
 
@@ -62,8 +82,8 @@ article .content .inner {
 }
 
 .section {
-  background: $indigo-100;
-  color: $black;
+  background: var(--indigo-100);
+  color: var(--black);
   padding-bottom: 5rem;
   padding-top: 5rem;
 }
@@ -97,20 +117,20 @@ article .content .inner {
 }
 
 .section figure {
-  box-shadow: 1.5rem 1.5rem $indigo-500;
+  box-shadow: 1.5rem 1.5rem var(--indigo-500);
   margin-bottom: 5rem;
 }
 
 .section figure.shadow-indigo-500 {
-  box-shadow: 1.5rem 1.5rem $indigo-500;
+  box-shadow: 1.5rem 1.5rem var(--indigo-500);
 }
 
 .section figure.shadow-red-500 {
-  box-shadow: 1.5rem 1.5rem $red-500;
+  box-shadow: 1.5rem 1.5rem var(--red-500);
 }
 
 .section figure.shadow-yellow-500 {
-  box-shadow: 1.5rem 1.5rem $yellow-500;
+  box-shadow: 1.5rem 1.5rem var(--yellow-500);
 }
 
 .section img {

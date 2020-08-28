@@ -35,9 +35,9 @@
 
   @media (min-width: 1024px) {
     h3 {
-      font-family: $font-serif;
-      font-size: 2.25rem;
-      font-weight: 900;
+      font-family: var(--ff-serif);
+      font-size: var(--step-5);
+      font-weight: var(--fw-black);
       line-height: 1.25;
 
       a {
@@ -58,7 +58,7 @@
   }
 
   main > article header {
-    color: $black;
+    color: var(--black);
     padding: 5rem 0;
   }
 
@@ -82,11 +82,11 @@
   }
 
   .entry .hr {
-    border-bottom-color: $indigo-500;
+    border-bottom-color: var(--indigo-500);
   }
 
   .entry .metadata {
-    font-size: 0.857rem;
+    font-size: var(--step--1);
     margin-top: 1.5rem;
   }
 
@@ -106,10 +106,6 @@
 }
 
 .page--news {
-  main > article header {
-    background: $blue-500;
-  }
-
   .entry + .entry {
     margin-top: 5rem;
   }
@@ -135,7 +131,7 @@
 
 .page--ideas {
   main > article header {
-    background: $yellow-500;
+    background: var(--yellow-500);
   }
 
   main > article .content {
@@ -148,7 +144,7 @@
   .entry .thumbnail {
     background-position: center;
     background-size: cover;
-    border-top: 2px solid $indigo-500;
+    border-top: 2px solid var(--indigo-500);
     height: 0;
     margin-bottom: 1.75rem;
     overflow: hidden;
@@ -156,7 +152,7 @@
   }
 
   .entry .thumbnail--placeholder {
-    background-color: $yellow-500;
+    background: var(--yellow-500);
     background-repeat: no-repeat;
     background-size: 40px 51.0333px;
   }

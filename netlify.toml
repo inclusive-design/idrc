@@ -7,4 +7,4 @@
   targetPort = 3000
   publish = "dist"
   autoLaunch = true
-  framework = '#custom'
+  framework = "#custom"

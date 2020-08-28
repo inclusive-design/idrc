@@ -4,14 +4,7 @@
 
 {% block content %}
     <article class="container">
-        <header>
-            <div class="container inner">
-                <h1>{{ title }}</h1>
-                {% if intro %}
-                <div class="intro">{{ intro | markdownFilter | safe }}</div>
-                {% endif %}
-            </div>
-        </header>
+        {% include 'partials/components/page-header.njk' %}
         {%- if sections %}
             {%- for section in sections %}
             {% set sectionTitle = '' %}
@@ -56,7 +49,7 @@
                             <p>No news items found.</p>
                         {% endif %}
                     {% else %}
-                    {{ sectionContent | markdownFilter | safe }}
+                    {{ sectionContent | markdown | safe }}
                     {% endif %}
                 </div>
                 {% if section.image and section.imageOrder == 'end' %}

@@ -2,13 +2,17 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+$true-black: #000;
 $black: #00303f;
 $white: #fff;
+$silver: #c4c4c4;
 $indigo-100: #f8fbff;
-$indigo-200: #e4f9ff;
+$indigo-200: #e2edfc;
 $indigo-500: #3544d0;
 $indigo-900: #3c366b;
+$indigo-1000: #251f50;
 $logo: #00a0cc;
+$blue-100: #e4f9ff;
 $blue-500: #41cdfa;
 $red-500: #f56565;
 $red-900: #e53e3e;
@@ -16,13 +20,17 @@ $yellow-200: #faf089;
 $yellow-500: #f6e05e;
 
 $colors: (
+  'true-black': $true-black,
   'black': $black,
   'white': $white,
+  'silver': $silver,
   'indigo-100': $indigo-100,
   'indigo-200': $indigo-200,
   'indigo-500': $indigo-500,
   'indigo-900': $indigo-900,
+  'indigo-1000': $indigo-1000,
   'logo': $logo,
+  'blue-100': $blue-100,
   'blue-500': $blue-500,
   'red-500': $red-500,
   'red-900': $red-900,
@@ -34,8 +42,28 @@ $colors: (
   @each $name, $color in $colors {
     --#{$name}: #{$color};
   }
-}
 
-$font-sans: 'Open Sans', sans-serif;
-$font-display: 'Work Sans', sans-serif;
-$font-serif: 'Merriweather', serif;
+  // Fonts
+  --ff-sans: 'Open Sans', sans-serif;
+  --ff-display: 'Work Sans', sans-serif;
+  --ff-serif: 'Merriweather', serif;
+
+  // Font Weights
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  // Type Scale
+  --step--1: calc(14 / 16 * 1rem);
+  --step-0: 1rem;
+  --step-1: calc(18 / 16 * 1rem);
+  --step-2: calc(22 / 16 * 1rem);
+  --step-3: calc(24 / 16 * 1rem);
+  --step-4: calc(28 / 16 * 1rem);
+  --step-5: calc(32 / 16 * 1rem);
+  --step-6: calc(42 / 16 * 1rem);
+  --step-7: calc(44 / 16 * 1rem);
+  --step-8: calc(62 / 16 * 1rem);
+}

@@ -1,6 +1,6 @@
 .single article header {
-  background: $white;
-  color: $black;
+  background: var(--white);
+  color: var(--black);
   padding: 5rem 0;
 }
 
@@ -9,24 +9,14 @@
   padding: 0;
 }
 
-.single article .post-type,
+.single article .breadcrumbs,
 .single article h1,
 .single article .metadata {
   padding: 0 1.5rem;
 }
 
-.single article .post-type {
-  font-family: $font-display;
-  font-size: 1.375rem;
-  font-weight: 600;
-
-  @media (min-width: 1024px) {
-    font-size: 1.75rem;
-  }
-}
-
 .single article .metadata {
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   margin-top: 1.5rem;
 }
 
@@ -37,7 +27,7 @@
 }
 
 @media (min-width: 768px) {
-  .single--news article .post-type,
+  .single--news article .breadcrumbs,
   .single--news article h1,
   .single--news article .metadata {
     margin-left: auto;
@@ -53,7 +43,7 @@
 }
 
 @media (min-width: 1024px) {
-  .single--news article .post-type,
+  .single--news article .breadcrumbs,
   .single--news article h1,
   .single--news article .metadata {
     width: 50%;
@@ -61,7 +51,7 @@
 }
 
 @media (min-width: 1280px) {
-  .single--news article .post-type,
+  .single--news article .breadcrumbs,
   .single--news article h1,
   .single--news article .metadata {
     width: (100% * 5 / 12);

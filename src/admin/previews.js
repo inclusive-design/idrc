@@ -9,7 +9,7 @@ const {
 const env = nunjucks.configure();
 
 env.addFilter('w3DateFilter', w3DateFilter);
-env.addFilter('markdownFilter', markdownFilter);
+env.addFilter('markdown', markdownFilter);
 env.addFilter('dateFilter', dateFilter);
 env.addFilter('slug', slugFilter)
 
@@ -54,6 +54,7 @@ const ProjectsAndTools = ({entry}) => (
 	/>
 );
 
+<<<<<<< HEAD
 const News = createClass({
 	render: function() {
 		const entry = this.props.entry;
@@ -157,6 +158,39 @@ const Idea = createClass({
 		);
 	  }
 });
+=======
+const Post = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--news.njk"
+		context={({ site, title, date, author, body }) => ({
+			previewMode: true,
+			site,
+			title,
+			date,
+			author,
+			headerBgColor: 'white',
+			content: markdown(body || '')
+		})}
+	/>
+);
+
+const Idea = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--idea.njk"
+		context={({ site, title, date, author, body }) => ({
+			previewMode: true,
+			site,
+			title,
+			date,
+			author,
+			headerBgColor: 'white',
+			content: markdown(body || '')
+		})}
+	/>
+);
+>>>>>>> dev
 
 const SiteData = ({entry}) => (
 	<Preview

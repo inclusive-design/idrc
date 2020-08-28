@@ -4,14 +4,7 @@
 
 {% block content %}
     <article class="container">
-        <header>
-            <div class="container inner">
-                <h1>{{ title }}</h1>
-                {% if intro %}
-                <div class="intro">{{ intro | markdownFilter | safe }}</div>
-                {% endif %}
-            </div>
-        </header>
+        {% include 'partials/components/page-header.njk' %}
         <section id="projects" class="section section--full">
             <div class="container">
                 <div class="section__content">
@@ -21,7 +14,7 @@
                         {% for project in projects %}
                         <div class="project">
                             <h3>{{ project.name }}{{ " (" + project.shortName + ")" if project.shortName }}</h3>
-                            {{ project.description | markdownFilter | safe }}
+                            {{ project.description | markdown | safe }}
                             {% if project.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in project.tags %}
@@ -45,7 +38,7 @@
                         {% for tool in tools %}
                         <div class="tool">
                             <h3>{{ tool.name }}{{ " (" + tool.shortName + ")" if tool.shortName }}</h3>
-                            {{ tool.description | markdownFilter | safe }}
+                            {{ tool.description | markdown | safe }}
                             {% if tool.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in tool.tags %}
