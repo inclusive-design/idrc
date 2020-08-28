@@ -2,7 +2,9 @@ const {
 	w3DateFilter,
 	markdownFilter,
 	dateFilter,
+	splitFilter,
 	slugFilter,
+	limitFilter,
 	site
 } = previewUtil;
 
@@ -11,7 +13,9 @@ const env = nunjucks.configure();
 env.addFilter('w3DateFilter', w3DateFilter);
 env.addFilter('markdown', markdownFilter);
 env.addFilter('dateFilter', dateFilter);
-env.addFilter('slug', slugFilter)
+env.addFilter('slug', slugFilter);
+env.addFilter('split', splitFilter);
+env.addFilter('limit', limitFilter);
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());

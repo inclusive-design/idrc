@@ -6,12 +6,11 @@
   "scripts": {
     "build:site": "ELEVENTY_ENV=production eleventy",
     "build:bundle": "rollup --config",
-    "build:cms": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|svg)$\"",
     "build": "run-s clean build:*",
     "clean": "run-p clean:*",
     "clean:dist": "rimraf dist",
     "debug": "DEBUG=Eleventy* eleventy",
-    "start": "npm run clean && npm run build:bundle && npm run build:cms && npm run watch",
+    "start": "npm run clean && npm run build:bundle && npm run watch",
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "xo",
     "lint": "run-s lint:*",
@@ -86,6 +85,7 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "eleventy-plugin-pwa": "^1.0.8"
+    "eleventy-plugin-pwa": "^1.0.8",
+    "glob": "^7.1.6"
   }
 }
