@@ -54,7 +54,31 @@ const ProjectsAndTools = ({entry}) => (
 	/>
 );
 
-<<<<<<< HEAD
+const Person = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--person.njk"
+		context={({ site, title, job, pronouns, email, website, twitter, github, linkedin, projects, interests, body, headerBgColor, headerTextColor, headerBorderColor }) => ({
+			previewMode: true,
+			site,
+			title,
+			job,
+			pronouns,
+			email,
+			website,
+			twitter,
+			github,
+			linkedin,
+			projects,
+			interests,
+			content: markdownFilter(body || ''),
+			headerBgColor,
+			headerTextColor,
+			headerBorderColor
+		})}
+	/>
+);
+
 const News = createClass({
 	render: function() {
 		const entry = this.props.entry;
@@ -158,39 +182,6 @@ const Idea = createClass({
 		);
 	  }
 });
-=======
-const Post = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/single--news.njk"
-		context={({ site, title, date, author, body }) => ({
-			previewMode: true,
-			site,
-			title,
-			date,
-			author,
-			headerBgColor: 'white',
-			content: markdown(body || '')
-		})}
-	/>
-);
-
-const Idea = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/single--idea.njk"
-		context={({ site, title, date, author, body }) => ({
-			previewMode: true,
-			site,
-			title,
-			date,
-			author,
-			headerBgColor: 'white',
-			content: markdown(body || '')
-		})}
-	/>
-);
->>>>>>> dev
 
 const SiteData = ({entry}) => (
 	<Preview
@@ -215,6 +206,7 @@ const SiteData = ({entry}) => (
 
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
+CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('pages', Page);
 CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
