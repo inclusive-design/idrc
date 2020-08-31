@@ -1,6 +1,6 @@
 ---
 title: Ted Thompson
-job: AI Developer
+job: Inclusive Developer
 pronouns: he/him/his
 email: tthompson@ocadu.ca
 website:
