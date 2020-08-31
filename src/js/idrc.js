@@ -1,4 +1,5 @@
-/* global document */
+/* global document, window */
+import * as d3 from 'd3-selection';
 
 const banner = document.querySelector('.banner');
 const menuItems = document.querySelectorAll('#menu ul a');
@@ -125,3 +126,31 @@ menuItems.forEach(menuItem => {
 		}
 	});
 });
+
+if (document.querySelector('.timeline')) {
+	const timeline = document.querySelector('.milestones');
+	const milestones = [...timeline.querySelectorAll('dt')];
+	const first = milestones[0];
+	const last = milestones[milestones.length - 1];
+	let distance = last.offsetTop - first.offsetTop;
+
+	const lineContainer = d3.select('.line')
+		.append('svg')
+		.attr('width', 1)
+		.attr('height', distance);
+
+	const line = lineContainer.append('line')
+		.attr('x1', 1)
+		.attr('y1', 0)
+		.attr('x2', 1)
+		.attr('y2', distance)
+		.attr('stroke-width', 1)
+		.attr('stroke', 'black');
+
+	window.addEventListener('resize', () => {
+		distance = last.offsetTop - first.offsetTop;
+		lineContainer.attr('height', distance);
+		line.attr('y2', distance);
+	});
+}
+

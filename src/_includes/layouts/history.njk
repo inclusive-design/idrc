@@ -1,0 +1,32 @@
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageType = 'page--generic' %}
+
+{% block content %}
+    <article class="container">
+        {% include 'partials/components/page-header.njk' %}
+        <div class="content">
+            <div class="inner">
+                {{ content | safe }}
+                {% if milestones.length > 0 %}
+                <div class="timeline">
+                    <div class="line"></div>
+                    <dl class="milestones">
+                        {% for milestone in milestones %}
+                        <dt{{ ' class="major"' | safe if milestone.major }}>{{ milestone.year }}</dt>
+                        <dd>
+                            <p class="title h4">{% if milestone.major %}<strong>{% endif %}{{ milestone.title }}{% if milestone.major %}</strong>{% endif %}</p>
+                            <p class="description">{{ milestone.description }}</p>
+                        </dd>
+                        {% endfor %}
+                    </dl>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </article>
+{% endblock %}

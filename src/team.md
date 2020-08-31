@@ -4,7 +4,7 @@ title: Team
 eleventyNavigation:
   key: Team
   parent: About
-  order: 3
+  order: 2
 headerBgColor: blue-100
 headerBorderColor: blue-500
 headerTextColor: black

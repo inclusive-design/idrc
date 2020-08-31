@@ -1,0 +1,51 @@
+.timeline {
+  margin-top: 4rem;
+  position: relative;
+}
+
+.line {
+  left: 0;
+  position: absolute;
+  top: 1rem;
+}
+
+.milestones {
+  padding-left: 2.25rem;
+}
+
+.milestones dt {
+  font-size: var(--step-2);
+  position: relative;
+}
+
+.milestones dt::before {
+  background: var(--grey-200);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0.625rem;
+  left: -40px;
+  position: absolute;
+  top: 0.75rem;
+  width: 0.625rem;
+}
+
+.milestones dt.major::before {
+  background: var(--grey-300);
+  height: 1.25rem;
+  left: -45px;
+  top: 0.5rem;
+  width: 1.25rem;
+}
+
+.milestones dd + dt {
+  margin-top: var(--step-5);
+}
+
+.milestones dd {
+  margin-top: 0.5rem;
+}
+
+.milestones dd .description {
+  margin-top: 0.5rem;
+}

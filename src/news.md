@@ -4,7 +4,7 @@ title: News
 eleventyNavigation:
   key: News
   parent: About
-  order: 2
+  order: 4
 headerBgColor: blue-100
 headerBorderColor: blue-500
 headerTextColor: black
