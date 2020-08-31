@@ -5,6 +5,9 @@ eleventyNavigation:
   key: Philosophy
   parent: About
   order: 1
+secondaryNavigation:
+  key: About
+  label: More about us
 headerBgColor: blue-100
 headerBorderColor: blue-500
 headerTextColor: black

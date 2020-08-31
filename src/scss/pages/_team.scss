@@ -47,8 +47,9 @@ article.person {
 
 @media screen and (min-width: 1024px) {
   .page--team article .content {
+    float: left;
     padding: 6rem 0;
-    width: calc(2 / 3 * 100%);
+    width: calc(2 / 3 * (100% - 6rem) + 3rem);
   }
 
   .grid.grid--people {
