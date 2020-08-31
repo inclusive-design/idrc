@@ -113,6 +113,33 @@ collections:
                   - { label: "Full Bleed", value: "full-bleed" }
                 default: ["full"]
                 required: true
+      - name: history
+        label: "History"
+        delete: false
+        file: src/history.md
+        slug: "{{slug}}"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
+          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
+          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
+          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false}
+          - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "blue-100"}
+          - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "blue-500"}
+          - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
+          - label: Milestones
+            label_singular: milestone
+            name: milestones
+            widget: list
+            summary: "{{fields.year}} {{fields.title}}"
+            fields:
+              - {label: Year, name: year, widget: number, value_type: "int", min: 1993}
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text}
+              - {label: Major Milestone, name: major, widget: boolean}
+          - {label: "Body", name: "body", widget: "markdown", required: false}
       - name: "projects-and-tools"
         label: "Projects and Tools"
         delete: false
@@ -125,54 +152,9 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - label: "Header Background Colour"
-            name: "headerBgColor"
-            widget: "select"
-            options:
-              - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }                
-              - { label: "Indigo 100", value: "indigo-100" }
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 900", value: "indigo-900" }
-              - { label: "Blue 500", value: "blue-500" }
-              - { label: "Red 500", value: "red-500" }
-              - { label: "Red 900", value: "red-900" }
-              - { label: "Yellow 500", value: "yellow-500" }
-              - { label: "Yellow 900", value: "yellow-900" }
-            default: ["indigo-100"]
-            required: true
-          - label: "Header Border Colour"
-            name: "headerBorderColor"
-            widget: "select"
-            options:
-              - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }                
-              - { label: "Indigo 100", value: "indigo-100" }
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 900", value: "indigo-900" }
-              - { label: "Blue 500", value: "blue-500" }
-              - { label: "Red 500", value: "red-500" }
-              - { label: "Red 900", value: "red-900" }
-              - { label: "Yellow 500", value: "yellow-500" }
-              - { label: "Yellow 900", value: "yellow-900" }
-            default: ["indigo-100"]
-            required: true
-          - label: "Header Text Colour"
-            name: "headerTextColor"
-            widget: "select"
-            options:
-              - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }                
-              - { label: "Indigo 100", value: "indigo-100" }
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 900", value: "indigo-900" }
-              - { label: "Blue 500", value: "blue-500" }
-              - { label: "Red 500", value: "red-500" }
-              - { label: "Red 900", value: "red-900" }
-              - { label: "Yellow 500", value: "yellow-500" }
-              - { label: "Yellow 900", value: "yellow-900" }
-            default: ["black"]
-            required: true
+          - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "red-500"}
+          - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "red-900"}
+          - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
           - label: "Projects"
             name: "projects"
             widget: "list"
@@ -257,6 +239,7 @@ collections:
       - label: "Sections"
         name: "sections"
         widget: "list"
+        required: false
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
           - {label: "Content", name: "content", widget: "markdown", required: true}
@@ -346,6 +329,7 @@ collections:
               - { label: "Full Bleed", value: "full-bleed" }
             default: ["full"]
             required: false
+      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "news"
     label: "News"
     label_singular: "News Item"

@@ -4,8 +4,10 @@
 
 $true-black: #000;
 $black: #00303f;
+$grey-300: #777;
+$grey-200: #bbb9b9;
+$grey-100: #c4c4c4;
 $white: #fff;
-$silver: #c4c4c4;
 $indigo-100: #f8fbff;
 $indigo-200: #e2edfc;
 $indigo-400: #5a67d8;
@@ -24,7 +26,9 @@ $colors: (
   'true-black': $true-black,
   'black': $black,
   'white': $white,
-  'silver': $silver,
+  'grey-100': $grey-100,
+  'grey-200': $grey-200,
+  'grey-300': $grey-300,
   'indigo-100': $indigo-100,
   'indigo-200': $indigo-200,
   'indigo-400': $indigo-400,
