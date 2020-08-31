@@ -1,6 +1,7 @@
 ---
 layout: layouts/history.njk
 title: History
+permalink: /about/history/
 eleventyNavigation:
   key: History
   parent: About

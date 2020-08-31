@@ -40,6 +40,25 @@ const Page = ({entry}) => (
 	/>
 );
 
+const History = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/history.njk"
+		context={({ site, title, intro, milestones, body, headerBgColor, headerTextColor, headerBorderColor }) => ({
+			previewMode: true,
+			site,
+			title,
+			intro,
+			content: markdownFilter(body || ''),
+			headerBgColor,
+			headerTextColor,
+			headerBorderColor,
+			milestones
+		})}
+	/>
+);
+
+
 const ProjectsAndTools = ({entry}) => (
 	<Preview
 		entry={entry}
@@ -134,6 +153,7 @@ const SiteData = ({entry}) => (
 );
 
 CMS.registerPreviewTemplate('home', Page);
+CMS.registerPreviewTemplate('history', History);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('pages', Page);
