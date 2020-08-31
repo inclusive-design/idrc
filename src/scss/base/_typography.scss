@@ -48,6 +48,11 @@ h2 + *,
   margin-top: 1.5rem;
 }
 
+p + h2,
+p + .h2 {
+  margin-top: 4rem;
+}
+
 h3 + p {
   margin-top: 1rem;
 }

@@ -145,7 +145,7 @@ if (document.querySelector('.timeline')) {
 		.attr('x2', 1)
 		.attr('y2', distance)
 		.attr('stroke-width', 1)
-		.attr('stroke', 'black');
+		.attr('stroke', 'currentColor');
 
 	window.addEventListener('resize', () => {
 		distance = last.offsetTop - first.offsetTop;
