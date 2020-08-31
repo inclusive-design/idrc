@@ -8,5 +8,8 @@ eleventyNavigation:
 headerBgColor: blue-100
 headerBorderColor: blue-500
 headerTextColor: black
+secondaryNavigation:
+  key: About
+  label: More about us
 permalink: /about/team/
 ---

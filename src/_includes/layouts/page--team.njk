@@ -18,5 +18,8 @@
                 </div>
             </div>
         </div>
+        {% if secondaryNavigation %}
+        {% include 'partials/components/secondary-navigation.njk' %}
+        {% endif %}
     </article>
 {% endblock %}
