@@ -144,6 +144,21 @@
   font-weight: var(--fw-normal);
 }
 
+.menu li ul a[rel~="external"]::after,
+.menu li ul a[href^="mailto:"]::after {
+  background: currentColor;
+  content: "";
+  display: inline-block;
+  height: 1.5em;
+  margin-bottom: 0.125em;
+  margin-left: 0.125em;
+  mask-image: url('../images/external.svg');
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 1.5em;
+  width: 1.5em;
+}
+
 .page--404 {
   .nav .menu-toggle {
     color: var(--header-fg);
