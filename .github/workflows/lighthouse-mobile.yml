@@ -1,10 +1,10 @@
-name: Lighthouse CI - Mobile
+name: Lighthouse CI (Mobile)
 
 on: [pull_request]
 
 jobs:
   lhci:
-    name: Lighthouse CI
+    name: Lighthouse CI (Mobile)
     if: ${{ github.repository_owner == 'inclusive-design'}}
     runs-on: ubuntu-latest
     steps:

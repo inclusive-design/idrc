@@ -1,17 +1,10 @@
-name: Lighthouse CI - Desktop
+name: Lighthouse CI (Desktop)
 
-on:
-  push:
-    branches:
-      - dev
-      - master
-  pull_request:
-    branches:
-      - dev
+on: [pull_request]
 
 jobs:
   lhci:
-    name: Lighthouse CI
+    name: Lighthouse CI (Desktop)
     if: ${{ github.repository_owner == 'inclusive-design'}}
     runs-on: ubuntu-latest
     steps:

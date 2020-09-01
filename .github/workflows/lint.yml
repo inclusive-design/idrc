@@ -1,9 +1,17 @@
-name: Test and build
+name: Lint JavaScript and SCSS
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - dev
+      - master
+  pull_request:
+    branches:
+      - dev
 
 jobs:
-  build:
+  lint:
+    name: Lint JavaScript and SCSS
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -12,10 +20,9 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: npm install, build, and test
+    - name: npm install and lint
       run: |
         npm ci
-        npm test
-        npm run build
+        npm run lint
       env:
         CI: true
