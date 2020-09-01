@@ -16,7 +16,17 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const workboxOptions = {
 	cacheId: 'idrc',
 	swDest: './dist/sw.js',
-	globPatterns: ['index.html', 'js/idrc.js', 'css/idrc.css'],
+	globPatterns: [
+		'index.html',
+		'about/**/*index.html',
+		'news/index.html',
+		'ideas/index.html',
+		'projects-and-tools/index.html',
+		'vision-technology-service/index.html',
+		'consulting/index.html',
+		'js/idrc.js',
+		'css/idrc.css'
+	],
 	globIgnores: ['admin/**/*', 'node_modules/**/*'],
 	skipWaiting: false
 };

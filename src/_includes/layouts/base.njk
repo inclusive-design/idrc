@@ -34,12 +34,10 @@
         {% endif %}
         <script>document.documentElement.classList.remove('no-js');</script>
         <script type="text/javascript" src="/js/idrc.js" defer></script>
-        {% if global.environment !== 'development' %}
         <script>
         if ("serviceWorker" in navigator)
             navigator.serviceWorker.register("/sw.js");
         </script>
-        {% endif %}
         {% if global.context == 'production' %}
         <script type="text/javascript">
         var _paq = window._paq || [];
