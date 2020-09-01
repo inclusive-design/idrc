@@ -1,3 +1,5 @@
+/* global CMS, nunjucks, previewUtil, propTypes, React */
+
 const {
 	w3DateFilter,
 	markdownFilter,
@@ -23,11 +25,17 @@ const Preview = ({entry, path, context}) => {
 	return <div dangerouslySetInnerHTML={{__html: html}}/>;
 };
 
+Preview.propTypes = {
+	entry: propTypes.object.isRequired,
+	path: propTypes.string.isRequired,
+	context: propTypes.object.isRequired
+};
+
 const Page = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/page.njk"
-		context={({ site, title, intro, sections, headerBgColor, headerTextColor, headerBorderColor }) => ({
+		context={({site, title, intro, sections, headerBgColor, headerTextColor, headerBorderColor}) => ({
 			previewMode: true,
 			site,
 			title,
@@ -40,11 +48,15 @@ const Page = ({entry}) => (
 	/>
 );
 
+Page.propTypes = {
+	entry: propTypes.object.isRequired
+};
+
 const History = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/history.njk"
-		context={({ site, title, intro, milestones, body, headerBgColor, headerTextColor, headerBorderColor }) => ({
+		context={({site, title, intro, milestones, body, headerBgColor, headerTextColor, headerBorderColor}) => ({
 			previewMode: true,
 			site,
 			title,
@@ -58,12 +70,15 @@ const History = ({entry}) => (
 	/>
 );
 
+History.propTypes = {
+	entry: propTypes.object.isRequired
+};
 
 const ProjectsAndTools = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/projects.njk"
-		context={({ site, title, intro, projects, tools, headerBgColor, headerTextColor, headerBorderColor }) => ({
+		context={({site, title, intro, projects, tools, headerBgColor, headerTextColor, headerBorderColor}) => ({
 			previewMode: true,
 			site,
 			title,
@@ -77,11 +92,15 @@ const ProjectsAndTools = ({entry}) => (
 	/>
 );
 
+ProjectsAndTools.propTypes = {
+	entry: propTypes.object.isRequired
+};
+
 const Person = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/single--person.njk"
-		context={({ title, intro, pronouns, job, projects, interests, body, email, website, twitter, linkedin, github }) => ({
+		context={({title, intro, pronouns, job, projects, interests, body, email, website, twitter, linkedin, github}) => ({
 			previewMode: true,
 			title,
 			intro,
@@ -99,11 +118,15 @@ const Person = ({entry}) => (
 	/>
 );
 
+Person.propTypes = {
+	entry: propTypes.object.isRequired
+};
+
 const News = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/single--news.njk"
-		context={({ site, title, date, author, body }) => ({
+		context={({site, title, date, author, body}) => ({
 			previewMode: true,
 			site,
 			title,
@@ -114,12 +137,16 @@ const News = ({entry}) => (
 		})}
 	/>
 );
+
+News.propTypes = {
+	entry: propTypes.object.isRequired
+};
 
 const Idea = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/single--idea.njk"
-		context={({ site, title, date, author, body }) => ({
+		context={({site, title, date, author, body}) => ({
 			previewMode: true,
 			site,
 			title,
@@ -131,11 +158,15 @@ const Idea = ({entry}) => (
 	/>
 );
 
+Idea.propTypes = {
+	entry: propTypes.object.isRequired
+};
+
 const SiteData = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="partials/global/footer.njk"
-		context={({ name, description, url, email, phone, fax, address, twitter, medium, youtube }) => ({
+		context={({name, description, url, email, phone, fax, address, twitter, medium, youtube}) => ({
 			site: {
 				name,
 				description,
@@ -151,6 +182,10 @@ const SiteData = ({entry}) => (
 		})}
 	/>
 );
+
+SiteData.propTypes = {
+	entry: propTypes.object.isRequired
+};
 
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('history', History);
