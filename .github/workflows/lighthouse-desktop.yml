@@ -1,0 +1,39 @@
+name: Lighthouse CI - Desktop
+
+on: [push, pull_request]
+
+jobs:
+  lhci:
+    name: Lighthouse CI
+    if: ${{ github.repository_owner == 'inclusive-design'}}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Wait for the Netlify Preview
+      uses: jakepartusch/wait-for-netlify-action@v1
+      id: netlify
+      with:
+        site_name: 'idrc'
+    - name: Audit URLs using Lighthouse
+      uses: treosh/lighthouse-ci-action@v3
+      with:
+        runs: 3
+        urls: |
+          ${{ steps.netlify.outputs.url }}
+          ${{ steps.netlify.outputs.url }}/404.html
+          ${{ steps.netlify.outputs.url }}/about/
+          ${{ steps.netlify.outputs.url }}/about/history/
+          ${{ steps.netlify.outputs.url }}/about/philosophy/
+          ${{ steps.netlify.outputs.url }}/about/team/
+          ${{ steps.netlify.outputs.url }}/consulting/
+          ${{ steps.netlify.outputs.url }}/ideas/
+          ${{ steps.netlify.outputs.url }}/ideas/its-time-to-drop-darwinism-and-listen-to-darwin-and-his-successors-on-human-evolution/
+          ${{ steps.netlify.outputs.url }}/news/
+          ${{ steps.netlify.outputs.url }}/news/continuing-our-work-during-covid-19/
+          ${{ steps.netlify.outputs.url }}/projects-and-tools/
+          ${{ steps.netlify.outputs.url }}/vision-technology-service/
+        uploadArtifacts: true
+        temporaryPublicStorage: true
+        configPath: ./.lighthouserc.js
+      env:
+        EMULATE_DEVICE: desktop
