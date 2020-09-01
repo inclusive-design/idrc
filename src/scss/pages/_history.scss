@@ -4,7 +4,7 @@
 }
 
 .line {
-  color: transparentize($indigo-400, 0.5);
+  color: transparentize($indigo-500, 0.5);
   left: 0;
   position: absolute;
   top: 1rem;
@@ -21,7 +21,7 @@
 }
 
 .milestones dt::before {
-  background: var(--indigo-400);
+  background: var(--indigo-500);
   border-radius: 50%;
   content: "";
   display: block;
@@ -33,7 +33,7 @@
 }
 
 .milestones dt.major::before {
-  background: var(--indigo-900);
+  background: var(--indigo-800);
   height: 1.25rem;
   left: -45px;
   top: 0.5rem;

@@ -2,44 +2,36 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-$true-black: #000;
-$black: #00303f;
-$grey-300: #777;
-$grey-200: #bbb9b9;
-$grey-100: #c4c4c4;
+$black: #000;
 $white: #fff;
+$grey-100: #c4c4c4;
 $indigo-100: #f8fbff;
-$indigo-200: #e2edfc;
-$indigo-400: #5a67d8;
-$indigo-500: #3544d0;
-$indigo-900: #3c366b;
-$indigo-1000: #251f50;
-$logo: #00a0cc;
+$indigo-200: #e2edfc; // TODO
+$indigo-500: #5a67d8;
+$indigo-800: #3c366b;
+$indigo-900: #251f50;
 $blue-100: #e4f9ff;
-$blue-500: #41cdfa;
-$red-500: #f56565;
-$red-900: #e53e3e;
+$blue-500: #42cdfa;
+$blue-900: #00303f;
+$coral-500: #f66a6a;
+$coral-800: #e53e3e;
 $yellow-200: #faf089;
 $yellow-500: #f6e05e;
 
 $colors: (
-  'true-black': $true-black,
   'black': $black,
   'white': $white,
   'grey-100': $grey-100,
-  'grey-200': $grey-200,
-  'grey-300': $grey-300,
   'indigo-100': $indigo-100,
   'indigo-200': $indigo-200,
-  'indigo-400': $indigo-400,
   'indigo-500': $indigo-500,
+  'indigo-800': $indigo-800,
   'indigo-900': $indigo-900,
-  'indigo-1000': $indigo-1000,
-  'logo': $logo,
   'blue-100': $blue-100,
   'blue-500': $blue-500,
-  'red-500': $red-500,
-  'red-900': $red-900,
+  'blue-900': $blue-900,
+  'coral-500': $coral-500,
+  'coral-800': $coral-800,
   'yellow-200': $yellow-200,
   'yellow-500': $yellow-500
 );

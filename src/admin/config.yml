@@ -36,12 +36,12 @@ collections:
                   - { label: "Black", value: "black" }                
                   - { label: "Indigo 100", value: "indigo-100" }
                   - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Indigo 800", value: "indigo-800" }
                   - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Coral 500", value: "coral-500" }
+                  - { label: "Coral 800", value: "coral-800" }
+                  - { label: "Yellow 200", value: "yellow-200" }
                   - { label: "Yellow 500", value: "yellow-500" }
-                  - { label: "Yellow 900", value: "yellow-900" }
                 default: ["black"]
                 required: false
               - label: "Background Colour"
@@ -52,12 +52,12 @@ collections:
                   - { label: "Black", value: "black" }                
                   - { label: "Indigo 100", value: "indigo-100" }
                   - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Indigo 800", value: "indigo-800" }
                   - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Coral 500", value: "coral-500" }
+                  - { label: "Coral 800", value: "coral-800" }
+                  - { label: "Yellow 200", value: "yellow-200" }
                   - { label: "Yellow 500", value: "yellow-500" }
-                  - { label: "Yellow 900", value: "yellow-900" }
                 default: ["indigo-100"]
                 required: false
               - label: "Border Colour"
@@ -68,12 +68,12 @@ collections:
                   - { label: "Black", value: "black" }                
                   - { label: "Indigo 100", value: "indigo-100" }
                   - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 900", value: "indigo-900" }
+                  - { label: "Indigo 800", value: "indigo-800" }
                   - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Red 500", value: "red-500" }
-                  - { label: "Red 900", value: "red-900" }
+                  - { label: "Coral 500", value: "coral-500" }
+                  - { label: "Coral 800", value: "coral-800" }
+                  - { label: "Yellow 200", value: "yellow-200" }
                   - { label: "Yellow 500", value: "yellow-500" }
-                  - { label: "Yellow 900", value: "yellow-900" }
                 default: ["indigo-500"]
                 required: false
               - {label: "Image", name: "image", widget: "image", required: false}
@@ -100,7 +100,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Red 500", value: "red-500" }
+                  - { label: "Coral 500", value: "coral-500" }
                   - { label: "Yellow 500", value: "yellow-500" }
                 default: ["indigo-500"]
                 required: false
@@ -152,8 +152,8 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "red-500"}
-          - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "red-900"}
+          - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "coral-500"}
+          - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "coral-800"}
           - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
           - label: "Projects"
             name: "projects"
@@ -196,12 +196,12 @@ collections:
           - { label: "Black", value: "black" }                
           - { label: "Indigo 100", value: "indigo-100" }
           - { label: "Indigo 500", value: "indigo-500" }
-          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Indigo 800", value: "indigo-800" }
           - { label: "Blue 500", value: "blue-500" }
-          - { label: "Red 500", value: "red-500" }
-          - { label: "Red 900", value: "red-900" }
+          - { label: "Coral 500", value: "coral-500" }
+          - { label: "Coral 800", value: "coral-800" }
+          - { label: "Yellow 200", value: "yellow-200" }
           - { label: "Yellow 500", value: "yellow-500" }
-          - { label: "Yellow 900", value: "yellow-900" }
         default: ["indigo-100"]
         required: true
       - label: "Header Border Colour"
@@ -212,12 +212,12 @@ collections:
           - { label: "Black", value: "black" }                
           - { label: "Indigo 100", value: "indigo-100" }
           - { label: "Indigo 500", value: "indigo-500" }
-          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Indigo 800", value: "indigo-800" }
           - { label: "Blue 500", value: "blue-500" }
-          - { label: "Red 500", value: "red-500" }
-          - { label: "Red 900", value: "red-900" }
+          - { label: "Coral 500", value: "coral-500" }
+          - { label: "Coral 800", value: "coral-800" }
+          - { label: "Yellow 200", value: "yellow-200" }
           - { label: "Yellow 500", value: "yellow-500" }
-          - { label: "Yellow 900", value: "yellow-900" }
         default: ["indigo-100"]
         required: true
       - label: "Header Text Colour"
@@ -228,12 +228,12 @@ collections:
           - { label: "Black", value: "black" }                
           - { label: "Indigo 100", value: "indigo-100" }
           - { label: "Indigo 500", value: "indigo-500" }
-          - { label: "Indigo 900", value: "indigo-900" }
+          - { label: "Indigo 800", value: "indigo-800" }
           - { label: "Blue 500", value: "blue-500" }
-          - { label: "Red 500", value: "red-500" }
-          - { label: "Red 900", value: "red-900" }
+          - { label: "Coral 500", value: "coral-500" }
+          - { label: "Coral 800", value: "coral-800" }
+          - { label: "Yellow 200", value: "yellow-200" }
           - { label: "Yellow 500", value: "yellow-500" }
-          - { label: "Yellow 900", value: "yellow-900" }
         default: ["black"]
         required: true
       - label: "Sections"
@@ -251,12 +251,12 @@ collections:
               - { label: "Black", value: "black" }                
               - { label: "Indigo 100", value: "indigo-100" }
               - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Indigo 800", value: "indigo-800" }
               - { label: "Blue 500", value: "blue-500" }
-              - { label: "Red 500", value: "red-500" }
-              - { label: "Red 900", value: "red-900" }
+              - { label: "Coral 500", value: "coral-500" }
+              - { label: "Coral 800", value: "coral-800" }
+              - { label: "Yellow 200", value: "yellow-200" }
               - { label: "Yellow 500", value: "yellow-500" }
-              - { label: "Yellow 900", value: "yellow-900" }
             default: ["black"]
             required: false
           - label: "Background Colour"
@@ -267,12 +267,12 @@ collections:
               - { label: "Black", value: "black" }                
               - { label: "Indigo 100", value: "indigo-100" }
               - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Indigo 800", value: "indigo-800" }
               - { label: "Blue 500", value: "blue-500" }
-              - { label: "Red 500", value: "red-500" }
-              - { label: "Red 900", value: "red-900" }
+              - { label: "Coral 500", value: "coral-500" }
+              - { label: "Coral 800", value: "coral-800" }
+              - { label: "Yellow 200", value: "yellow-200" }
               - { label: "Yellow 500", value: "yellow-500" }
-              - { label: "Yellow 900", value: "yellow-900" }
             default: ["indigo-100"]
             required: false
           - label: "Border Colour"
@@ -283,12 +283,12 @@ collections:
               - { label: "Black", value: "black" }                
               - { label: "Indigo 100", value: "indigo-100" }
               - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 900", value: "indigo-900" }
+              - { label: "Indigo 800", value: "indigo-800" }
               - { label: "Blue 500", value: "blue-500" }
-              - { label: "Red 500", value: "red-500" }
-              - { label: "Red 900", value: "red-900" }
+              - { label: "Coral 500", value: "coral-500" }
+              - { label: "Coral 800", value: "coral-800" }
+              - { label: "Yellow 200", value: "yellow-200" }
               - { label: "Yellow 500", value: "yellow-500" }
-              - { label: "Yellow 900", value: "yellow-900" }
             default: ["indigo-500"]
             required: false
           - {label: "Image", name: "image", widget: "string", required: false}
@@ -315,7 +315,7 @@ collections:
             widget: "select"
             options:
               - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Red 500", value: "red-500" }
+              - { label: "Coral 500", value: "coral-500" }
               - { label: "Yellow 500", value: "yellow-500" }
             default: ["indigo-500"]
             required: false
