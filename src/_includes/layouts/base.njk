@@ -18,7 +18,7 @@
             {% if headerTextColor %}
                 --header-fg: var(--{{ headerTextColor }});
             {% endif %}
-            {% if headerBgColor === 'blue-500' or headerBgColor === 'blue-100' or headerBgColor === 'coral-500' or headerBgColor === 'yellow-500' %}
+            {% if headerBgColor === 'blue-500' or headerBgColor === 'blue-200' or headerBgColor === 'coral-500' or headerBgColor === 'yellow-500' %}
                 {% set headerAccentColor = 'white' %}
             {% elif headerBgColor === 'indigo-800' %}
                 {% set headerAccentColor = 'indigo-500' %}

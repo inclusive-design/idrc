@@ -5,7 +5,7 @@ eleventyNavigation:
   key: Team
   parent: About
   order: 2
-headerBgColor: blue-100
+headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 secondaryNavigation:

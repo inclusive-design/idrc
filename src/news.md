@@ -5,7 +5,7 @@ eleventyNavigation:
   key: News
   parent: About
   order: 4
-headerBgColor: blue-100
+headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 secondaryNavigation:

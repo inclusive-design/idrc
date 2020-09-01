@@ -4,7 +4,7 @@ permalink: /consulting/
 eleventyNavigation:
   key: IDRC Consulting
   parent: Services
-headerBgColor: blue-100
+headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 intro: >
