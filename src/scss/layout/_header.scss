@@ -8,6 +8,12 @@
   color: var(--header-fg, $black);
 }
 
+.page--home .banner {
+  background: var(--white);
+  box-shadow: 0 0.1875rem 0.625rem rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
 .banner .container {
   align-items: center;
   display: flex;
