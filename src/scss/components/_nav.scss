@@ -301,7 +301,8 @@
     font-weight: var(--fw-semibold);
   }
 
-  .page--404 {
+  .page--404,
+  .page--offline {
     .menu a,
     .menu button {
       color: var(--white);
@@ -530,7 +531,8 @@
     }
   }
 
-  .page--404 {
+  .page--404,
+  .page--offline {
     .menu a,
     .menu button {
       color: var(--white);

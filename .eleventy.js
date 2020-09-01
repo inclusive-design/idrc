@@ -17,8 +17,11 @@ const workboxOptions = {
 	cacheId: 'idrc',
 	swDest: './dist/sw.js',
 	globPatterns: [
+		'404.html',
+		'offline.html',
 		'index.html',
-		'about/**/*index.html',
+		'about/index.html',
+		'about/*/*index.html',
 		'news/index.html',
 		'ideas/index.html',
 		'projects-and-tools/index.html',
@@ -28,7 +31,8 @@ const workboxOptions = {
 		'css/idrc.css'
 	],
 	globIgnores: ['admin/**/*', 'node_modules/**/*'],
-	skipWaiting: false
+	skipWaiting: false,
+	navigateFallback: 'offline.html'
 };
 
 module.exports = eleventyConfig => {
