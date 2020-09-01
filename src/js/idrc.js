@@ -127,6 +127,7 @@ menuItems.forEach(menuItem => {
 	});
 });
 
+// Draw timeline.
 if (document.querySelector('.timeline')) {
 	const timeline = document.querySelector('.milestones');
 	const milestones = [...timeline.querySelectorAll('dt')];
