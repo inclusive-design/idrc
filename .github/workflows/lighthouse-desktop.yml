@@ -1,6 +1,6 @@
 name: Lighthouse CI - Desktop
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   lhci:
