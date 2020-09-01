@@ -4,7 +4,7 @@ eleventyNavigation:
   key: Vision Technology Service
   parent: Services
   order: 1
-headerBgColor: blue-100
+headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 sections:

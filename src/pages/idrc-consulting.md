@@ -4,19 +4,19 @@ permalink: /consulting/
 eleventyNavigation:
   key: IDRC Consulting
   parent: Services
-headerBgColor: blue-100
+headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 intro: >
     We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
 sections:
     - title: Consulting
-      borderColor: red-500
+      borderColor: coral-500
       content: >
         The best time to get accessibility advice on your project is right from the start! But whether you are at the wireframe stage, have a site in development, or are implementing the changes recommended by an audit, we can guide you in creating an accessible website at any time in your design and development process.
       desktopWidth: half
     - title: Audits
-      borderColor: red-500
+      borderColor: coral-500
       content: >
         Website accessibility evaluations are available for web sites (including web applications and mobile web apps) to check conformance with the Web Content Accessibility Guidelines (WCAG) 2.0.
 
@@ -32,7 +32,7 @@ sections:
         - and many others.
       desktopWidth: half
     - title: Training
-      borderColor: red-500
+      borderColor: coral-500
       content: >
         ### Website accessibility
 

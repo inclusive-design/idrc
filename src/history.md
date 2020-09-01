@@ -6,7 +6,7 @@ eleventyNavigation:
   key: History
   parent: About
   order: 3
-headerBgColor: blue-100
+headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 secondaryNavigation:

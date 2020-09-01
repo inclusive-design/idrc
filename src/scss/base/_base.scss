@@ -90,7 +90,7 @@ blockquote {
   }
 
   ul li::before {
-    background-color: var(--grey-100);
+    background-color: var(--grey-200);
     border-radius: 50%;
     content: "";
     display: inline-block;
@@ -106,12 +106,12 @@ blockquote {
   }
 }
 
-.section.section--bg-indigo-900 {
+.section.section--bg-indigo-800 {
   --accent: var(--indigo-500);
 }
 
 .section.section--bg-blue-500,
-.section.section--bg-red-500,
+.section.section--bg-coral-500,
 .section.section--bg-yellow-500 {
   --accent: var(--white);
 }

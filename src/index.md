@@ -16,7 +16,7 @@ sections:
     imageOrderDesktop: swap
     desktopWidth: full-bleed
     imageOrder: start
-    backgroundColor: indigo-900
+    backgroundColor: indigo-800
     textColor: white
     borderColor: indigo-500
     title: What we do
@@ -68,7 +68,7 @@ sections:
     content: '[See featured projects and available open tools](/projects-and-tools/)'
     imageAltText: 'Two people trying the inclusive coding learning environment the IDRC has created, which involves robots, tactile boards, and cards.'
     image: /media/projects-and-tools.jpg
-    imageShadow: red-500
+    imageShadow: coral-500
   - title: Our resources
     content: >-
       ### [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
@@ -80,7 +80,7 @@ sections:
 
       A guide for educators, learners and policy makers working in education.
     backgroundColor: null
-    borderColor: red-500
+    borderColor: coral-500
     textColor: null
     desktopWidth: third
   - title: Services we offer
