@@ -30,6 +30,7 @@ jobs:
       run: |
         npm i
         npm i -g backstopjs
+        npm run backstop:init
         npm run test:backstop
       env:
         CI: true
@@ -42,3 +43,8 @@ jobs:
           backstop_data/bitmaps_reference
           backstop_data/html_report
           backstop_data/bitmaps_test
+    - uses: machine-learning-apps/pr-comment@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        path: backstop_data/json_report
