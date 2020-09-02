@@ -28,11 +28,12 @@ jobs:
         BASE_URL: ${{ steps.netlify.outputs.url }}
     - name: npm install and run tests
       run: |
-        npm ci
+        npm i
         npm run test:backstop
       env:
         CI: true
     - uses: actions/upload-artifact@v2
+      if: always()
       with:
         name: backstop-report
         path: backstop_data/html_report

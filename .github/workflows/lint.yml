@@ -22,7 +22,7 @@ jobs:
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
     - name: npm install and lint
       run: |
-        npm ci
+        npm i
         npm run lint
       env:
         CI: true
