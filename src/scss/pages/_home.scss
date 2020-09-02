@@ -29,6 +29,10 @@
   }
 }
 
+.page--home .entry + .entry {
+  margin-top: 1.5rem;
+}
+
 @media screen and (min-width: 1024px) {
   #what-is-inclusive-design {
     .section__content {

@@ -112,3 +112,7 @@ src/_includes/static
 
 # Local Netlify folder
 .netlify
+
+# Backstop data
+backstop_data/*
+!backstop_data/bitmaps_reference

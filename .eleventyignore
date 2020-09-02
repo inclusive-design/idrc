@@ -1,4 +1,5 @@
 .github/**/*.md
+backstop_data
 node_modules
 src/scss/**/*.md
 LICENSE.md
