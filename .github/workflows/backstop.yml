@@ -43,7 +43,7 @@ jobs:
           backstop_data/bitmaps_reference
           backstop_data/html_report
           backstop_data/bitmaps_test
-    - uses: machine-learning-apps/pr-comment@v1.0.0
+    - uses: machine-learning-apps/pr-comment@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
