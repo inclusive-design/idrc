@@ -8,5 +8,5 @@ module.exports = {
 		'react/no-danger': 0
 	},
 	extends: 'xo-react',
-	ignores: ['!.eleventy.js']
+	ignores: ['!.eleventy.js', 'backstop_data/engine_scripts/**/*.js']
 };
