@@ -44,8 +44,8 @@
                     {% if section.borderColor %}<span class="hr hr--{{ section.borderColor }}"></span>{% endif %}
                     <h2>{{ sectionTitle | safe }}</h2>
                     {% if sectionTitle == 'Latest news' %}
-                        {% if collections.posts.length %}
-                            {% for item in collections.posts | limit(2) %}
+                        {% if collections.news.length %}
+                            {% for item in collections.news | limit(2) %}
                             {% include 'partials/components/post-excerpt.njk' %}
                             {% endfor %}
                             <p><a href="/news/">View all</a></p>
