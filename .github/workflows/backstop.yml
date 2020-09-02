@@ -46,7 +46,10 @@ jobs:
       if: always()
       run: |
         sudo apt-get install jq
-        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq 'map(if .status == "fail" then "❌ [\(.pair.label) (\(.pair.viewportLabel))](\(.pair.url)) – \(.pair.diff.misMatchPercentage)% mismatch" else "✅ [\(.pair.label) (\(.pair.viewportLabel))](\(.pair.url))" end) | join("|")' | tr '|' '\n' >> backstop_data/json_report/report.md
+        printf "**Backstop Results**\n\n" > backstop_data/json_report/report.md
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq 'group_by(.status) | map("\(length) scenarios \(.[0].status)ed") | join(", ")' >> backstop_data/json_report/report.md
+        printf "\nTo review the full report, visit [the Github Actions page](https://github.com/inclusive-design/idrc/runs/$GITHUB_RUN_ID) and download the `backstop-report` artifact." >> backstop_data/json_report/report.md
+      # cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq 'map(if .status == "fail" then "❌ [\(.pair.label) (\(.pair.viewportLabel))](\(.pair.url)) – \(.pair.diff.misMatchPercentage)% mismatch" else "✅ [\(.pair.label) (\(.pair.viewportLabel))](\(.pair.url))" end) | join("|")' | tr '|' '\n' >> backstop_data/json_report/report.md
     - uses: machine-learning-apps/pr-comment@master
       if: always()
       env:
