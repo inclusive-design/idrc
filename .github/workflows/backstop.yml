@@ -30,13 +30,12 @@ jobs:
       run: |
         npm i
         npm i -g backstopjs
-        npm run backstop:init
         npm run test:backstop
       env:
         CI: true
     - name: Upload report as downloadable artifact
       uses: actions/upload-artifact@v2
-      if: always()
+      if: failure()
       with:
         name: backstop-report
         path: |
@@ -44,6 +43,7 @@ jobs:
           backstop_data/html_report
           backstop_data/bitmaps_test
     - uses: machine-learning-apps/pr-comment@master
+      if: failure()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
