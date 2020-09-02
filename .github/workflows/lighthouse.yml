@@ -1,0 +1,47 @@
+name: Audit site with Lighthouse CI
+
+on: [pull_request]
+
+jobs:
+  lhci-mobile:
+    name: Run mobile Lighthouse CI audits
+    if: ${{ github.repository_owner == 'inclusive-design'}}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Wait for Netlify deploy preview
+      uses: jakepartusch/wait-for-netlify-action@v1
+      id: netlify
+      with:
+        site_name: 'idrc'
+    - name: Run Lighthouse CI audits
+      uses: treosh/lighthouse-ci-action@v3
+      with:
+        runs: 3
+        urls: |
+          ${{ steps.netlify.outputs.url }}
+        uploadArtifacts: true
+        temporaryPublicStorage: true
+        configPath: ./.lighthouserc.js
+  lhci-desktop:
+    name: Run desktop Lighthouse CI audits
+    if: ${{ github.repository_owner == 'inclusive-design'}}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Wait for Netlify deploy preview
+      uses: jakepartusch/wait-for-netlify-action@v1
+      id: netlify
+      with:
+        site_name: 'idrc'
+    - name: Run Lighthouse CI audits
+      uses: treosh/lighthouse-ci-action@v3
+      with:
+        runs: 3
+        urls: |
+          ${{ steps.netlify.outputs.url }}
+        uploadArtifacts: true
+        temporaryPublicStorage: true
+        configPath: ./.lighthouserc.js
+      env:
+        EMULATE_DEVICE: desktop

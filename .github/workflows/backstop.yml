@@ -1,10 +1,10 @@
-name: Visual regression tests
+name: Run visual regression tests with BackstopJS
 
 on: [pull_request]
 
 jobs:
   backstop:
-    name: Backstop
+    name: Run visual regression tests
     if: ${{ github.repository_owner == 'inclusive-design'}}
     runs-on: ubuntu-latest
     steps:
@@ -17,7 +17,7 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: Wait for the Netlify Preview
+    - name: Wait for Netlify deploy preview
       uses: jakepartusch/wait-for-netlify-action@v1
       id: netlify
       with:
@@ -26,13 +26,15 @@ jobs:
       uses: allenevans/set-env@v1.1.0
       with:
         BASE_URL: ${{ steps.netlify.outputs.url }}
-    - name: npm install and run tests
+    - name: Install dependencies and run visual regression tests
       run: |
         npm i
+        npm i -g backstopjs
         npm run test:backstop
       env:
         CI: true
-    - uses: actions/upload-artifact@v2
+    - name: Upload report as downloadable artifact
+      uses: actions/upload-artifact@v2
       if: always()
       with:
         name: backstop-report
