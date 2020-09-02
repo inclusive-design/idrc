@@ -4,6 +4,9 @@
   "description": "Website for the Inclusive Design Research Centre.",
   "main": "eleventy.config.js",
   "scripts": {
+    "backstop:reference": "backstop reference --config=backstop.config.js",
+    "backstop:test": "backstop test --config=backstop.config.js",
+    "backstop:approve": "backstop approve --config=backstop.config.js",
     "build:site": "ELEVENTY_ENV=production eleventy",
     "build:bundle": "rollup --config",
     "build": "run-s clean build:*",
@@ -14,7 +17,9 @@
     "lint:css": "stylelint src/scss/**/*.scss",
     "lint:js": "xo",
     "lint": "run-s lint:*",
-    "test": "run-s lint",
+    "test:lint": "run-s lint:*",
+    "test:backstop": "run-s backstop:test",
+    "test": "run-s test:*",
     "watch": "ELEVENTY_ENV=development eleventy --serve --port=3000"
   },
   "repository": {

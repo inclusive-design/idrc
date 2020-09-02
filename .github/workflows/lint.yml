@@ -20,9 +20,9 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: npm install and lint
+    - name: Install dependencies and lint JavaScript and SCSS files
       run: |
-        npm ci
+        npm i
         npm run lint
       env:
         CI: true
