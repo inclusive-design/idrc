@@ -47,4 +47,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        path: backstop_data/json_report
+        path: backstop_data/json_report/jsonReport.json
