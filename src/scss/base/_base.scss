@@ -14,7 +14,8 @@ body {
   min-height: 100vh;
 }
 
-small {
+small,
+.small {
   font-size: var(--step--1);
   line-height: 1.6;
 }

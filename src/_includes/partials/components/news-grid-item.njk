@@ -6,6 +6,6 @@
         <time datetime="{{ item.data.date | w3DateFilter }}" class="dt-published">{{ item.data.date | dateFilter }}</time>
     </p>
     {% if item.data.excerpt %}
-    <p>{{ item.data.excerpt | safe }}</p>
+    <p class="small">{{ item.data.excerpt | safe }}</p>
     {% endif %}
 </article>
