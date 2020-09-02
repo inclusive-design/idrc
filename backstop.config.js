@@ -25,7 +25,7 @@ module.exports = {
 	onReadyScript: 'puppet/onReady.js',
 	scenarios: [
 		{
-			label: 'IDRC / Home',
+			label: 'Home',
 			url: `${baseUrl}/`,
 			referenceUrl: 'https://idrc.ocadu.ca/',
 			hideSelectors: [
@@ -33,27 +33,27 @@ module.exports = {
 			]
 		},
 		{
-			label: 'IDRC / News',
+			label: 'News',
 			url: `${baseUrl}/news/`,
 			referenceUrl: 'https://idrc.ocadu.ca/news/'
 		},
 		{
-			label: 'IDRC / Ideas',
+			label: 'Ideas',
 			url: `${baseUrl}/ideas/`,
 			referenceUrl: 'https://idrc.ocadu.ca/ideas/'
 		},
 		{
-			label: 'IDRC / Projects and tools',
+			label: 'Projects and tools',
 			url: `${baseUrl}/projects-and-tools/`,
 			referenceUrl: 'https://idrc.ocadu.ca/projects-and-tools/'
 		},
 		{
-			label: 'IDRC / IDRC Consulting',
+			label: 'IDRC Consulting',
 			url: `${baseUrl}/consulting/`,
 			referenceUrl: 'https://idrc.ocadu.ca/consulting/'
 		},
 		{
-			label: 'IDRC / Vision Technology Service',
+			label: 'Vision Technology Service',
 			url: `${baseUrl}/vision-technology-service/`,
 			referenceUrl: 'https://idrc.ocadu.ca/vision-technology-service/'
 		}

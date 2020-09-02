@@ -42,9 +42,13 @@ jobs:
           backstop_data/bitmaps_reference
           backstop_data/html_report
           backstop_data/bitmaps_test
+    - name: Write report to Markdown file
+      run: |
+        sudo apt-get install jq
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq 'map(if .status == "fail" then "❌ [\(.pair.label) (\(.pair.viewportLabel))](\(.pair.url)) – \(.pair.diff.misMatchPercentage)% mismatch" else "✅ [\(.pair.label) (\(.pair.viewportLabel))](\(.pair.url))" end) | join("|")' | tr '|' '\n' >> backstop_data/json_report/report.md
     - uses: machine-learning-apps/pr-comment@master
       if: failure()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        path: backstop_data/json_report/jsonReport.json
+        path: backstop_data/json_report/report.md
