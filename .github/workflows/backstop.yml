@@ -1,0 +1,34 @@
+name: Visual regression tests
+
+on: [pull_request]
+
+jobs:
+  backstop:
+    name: Backstop
+    if: ${{ github.repository_owner == 'inclusive-design'}}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+    - name: Wait for the Netlify Preview
+      uses: jakepartusch/wait-for-netlify-action@v1
+      id: netlify
+      with:
+        site_name: 'idrc'
+    - name: Set environment variables
+      uses: allenevans/set-env@v1.1.0
+      with:
+        BASE_URL: ${{ steps.netlify.outputs.url }}
+    - name: npm install and run tests
+      run: |
+        npm ci
+        npm run test:backstop
+      env:
+        CI: true
