@@ -48,9 +48,9 @@ jobs:
         sudo apt-get install jq
         printf "**Visual Regression Test Results**\n\n" > backstop_data/json_report/report.md
         cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'group_by(.status) | map(if .[0].status == "pass" then "✅ \(length) scenarios passed" else "❌ \(length) scenarios failed" end) | join(", ")' >> backstop_data/json_report/report.md
-        printf "\n\n<details><summary>Scenario Details</summary>\n" >> backstop_data/json_report/report.md
-        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'map(if .status == "fail" then "❌ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" else "✅ \(.pair.label) (\(.pair.viewportLabel) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" end) | join("|")' | tr '|' '<br />' >> backstop_data/json_report/report.md
-        printf "</details>\n\nTo review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\n" >> backstop_data/json_report/report.md
+        printf "\n<details><summary>Scenario Details</summary>\n" >> backstop_data/json_report/report.md
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'map(if .status == "fail" then "❌ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" else "✅ \(.pair.label) (\(.pair.viewportLabel) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" end) | join("<br />")' >> backstop_data/json_report/report.md
+        printf "</details><br />\nTo review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\n" >> backstop_data/json_report/report.md
     - uses: machine-learning-apps/pr-comment@master
       if: always()
       env:
