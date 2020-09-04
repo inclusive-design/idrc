@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: main
 publish_mode: editorial_workflow
 site_url: "https://idrc.ocadu.ca"
 media_folder: "src/media"
