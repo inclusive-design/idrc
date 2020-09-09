@@ -5,7 +5,7 @@
 h1,
 .h1 {
   font-family: var(--ff-serif);
-  font-size: var(--step-6);
+  font-size: var(--step-4);
   font-weight: var(--fw-black);
   line-height: 1.3;
 }
@@ -13,7 +13,7 @@ h1,
 h2,
 .h2 {
   font-family: var(--ff-serif);
-  font-size: var(--step-5);
+  font-size: var(--step-3);
   font-weight: var(--fw-black);
   line-height: 1.3;
 }
@@ -21,7 +21,7 @@ h2,
 h3,
 .h3 {
   font-family: var(--ff-display);
-  font-size: var(--step-3);
+  font-size: var(--step-2);
   font-weight: var(--fw-semibold);
   line-height: 1.3;
 }
@@ -75,24 +75,11 @@ h4 + ol,
   margin-top: 0.25rem;
 }
 
-@media (min-width: 1024px) {
-  h1,
-  .h1 {
-    font-size: var(--step-8);
-  }
-
-  h2,
-  .h2 {
-    font-size: var(--step-7);
-  }
-
-  h3,
-  .h3 {
-    font-size: var(--step-4);
-  }
-
-  h4,
-  .h4 {
-    font-size: var(--step-2);
+@include breakpoint-up(md) {
+  :root {
+    --step-1: calc(22 / 16 * 1rem);
+    --step-2: calc(28 / 16 * 1rem);
+    --step-3: calc(44 / 16 * 1rem);
+    --step-4: calc(62 / 16 * 1rem);
   }
 }

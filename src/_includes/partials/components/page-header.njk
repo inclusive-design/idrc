@@ -1,5 +1,5 @@
 <header>
-    <div class="container inner">
+    <div class="wrapper">
         {% set breadcrumbs = [] %}
         {% if eleventyNavigation.key %}
         {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}

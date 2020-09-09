@@ -7,12 +7,12 @@
 {% set pageType = 'page--news' %}
 
 {% block content %}
-    <article class="container">
+    <article>
         {% include 'partials/components/page-header.njk' %}
         <div class="content">
-            <div class="inner">
+            <div class="wrapper">
             {% if posts.length %}
-                <div class="grid">
+                <div class="entries">
                 {% for item in posts %}
                 {% include 'partials/components/news-grid-item.njk' %}
                 {% endfor %}
@@ -21,20 +21,7 @@
             </div>
         </div>
         {% if pagination.pages.length > 1 %}
-        <nav class="pagination" aria-labelledby="pagination">
-            <h2 id="pagination" class="sr-only">news page navigation</h2>
-            <ul class="container">
-            {%- if pagination.href.previous %}
-                <li><a href="{{ pagination.href.previous }}">{% include 'svg/previous.svg' %}<span class="sr-only">previous</span></a></li>
-            {%- endif %}
-            {%- for pageEntry in pagination.pages %}
-                <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a></li>
-            {%- endfor %}
-            {%- if pagination.href.next %}
-                <li><a href="{{ pagination.href.next }}"><span class="sr-only">next</span>{% include 'svg/next.svg' %}</a></li>
-            {%- endif %}
-            </ul>
-        </nav>
+        {% include 'partials/components/pagination.njk' %}
         {% endif %}
         {% if secondaryNavigation %}
         {% include 'partials/components/secondary-navigation.njk' %}

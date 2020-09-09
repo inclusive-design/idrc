@@ -2,70 +2,79 @@
 // This file contains generic page styles.
 // -----------------------------------------------------------------------------
 
-article {
+main > article {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-}
+  max-width: calc(100vw - var(--gutter));
+  width: calc(100vw - var(--gutter));
 
-article header {
-  background: var(--header-bg, $indigo-100);
-  border-bottom: 0.5625rem solid var(--header-border);
-  color: var(--header-fg, $black);
-  margin-left: 50%;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  transform: translateX(-50%);
-  width: 100vw;
-}
+  header {
+    color: var(--header-fg, $black);
+    flex: 0 0 100%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    position: relative;
 
-article header .inner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+    &::after {
+      background: var(--header-bg, $indigo-100);
+      border-bottom: 0.5625rem solid var(--header-border);
+      content: "";
+      display: block;
+      height: 100%;
+      margin-left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: 100vw;
+      z-index: -1;
+    }
 
-article .breadcrumbs {
-  font-family: var(--ff-display);
-  font-size: var(--step-2);
-  font-weight: var(--fw-semibold);
+    .wrapper {
+      margin: 0;
+    }
 
-  @media (min-width: 1024px) {
-    width: 50%;
+    .breadcrumbs {
+      font-family: var(--ff-display);
+      font-size: var(--step-2);
+      font-weight: var(--fw-semibold);
+    }
+
+    .intro {
+      font-size: var(--step--1);
+      margin-top: rem(20);
+    }
+  }
+
+  .content {
+    flex: 0 0 100%;
+    padding-bottom: rem(48);
+    padding-top: rem(48);
+
+    .wrapper {
+      margin: 0;
+    }
   }
 }
 
-article header h1 {
-  @media screen and (min-width: 1024px) {
-    width: 50%;
-  }
-}
+@include breakpoint-up(md) {
+  main > article {
+    max-width: calc(var(--max-width) + var(--gutter));
 
-article header .intro {
-  font-size: var(--step--1);
-  margin-top: 1.25rem;
+    header {
+      .wrapper {
+        width: 50%;
+      }
+    }
 
-  @media screen and (min-width: 1024px) {
-    width: 50%;
-  }
-}
-
-.page--generic article .content {
-  padding: 3rem 0;
-
-  @media screen and (min-width: 1024px) {
-    float: left;
-    padding: 6rem 0;
-    width: calc(2 / 3 * (100% - 6rem) + 3rem);
-  }
-}
-
-article .content .inner {
-  max-width: 100%;
-  padding: 0 1.5rem;
-
-  div + p {
-    margin-top: 1.5rem;
+    .content {
+      flex: 0 0 calc(100% * 2 / 3);
+      padding-bottom: rem(96);
+      padding-top: rem(96);
+    }
   }
 }
 
@@ -90,10 +99,7 @@ article .content .inner {
 }
 
 .section--full {
-  margin-left: 50%;
-  margin-right: auto;
-  transform: translateX(-50%);
-  width: 100vw;
+  flex: 0 0 100%;
 }
 
 .section--full .subsection + .subsection {
@@ -101,16 +107,21 @@ article .content .inner {
 }
 
 .section--full-bleed {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-}
+  flex: 0 0 100%;
+  position: relative;
 
-.section .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  &::after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .section--image .section__content {
@@ -143,7 +154,7 @@ article .content .inner {
   margin-top: 1.5rem;
 }
 
-@media (min-width: 1024px) {
+@include breakpoint-up(md) {
   .section.center {
     text-align: center;
   }
@@ -155,9 +166,9 @@ article .content .inner {
 
   .section--half {
     display: inline-block;
+    flex: 0 0 50%;
     margin: 0 auto;
     max-width: 640px;
-    width: 50%;
   }
 
   .section--full .subsection {
@@ -179,9 +190,8 @@ article .content .inner {
 
   .section--third {
     display: inline-block;
+    flex: 0 0 calc(100% / 3);
     margin: 0 auto;
-    max-width: 640px;
-    width: (100% / 3);
   }
 
   .section .container {

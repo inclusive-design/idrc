@@ -4,34 +4,26 @@
 
 .page--projects-and-tools .project,
 .page--projects-and-tools .tool {
-  margin-top: 3rem;
+  margin-top: rem(48);
 }
 
 .page--projects-and-tools .project__link,
 .page--projects-and-tools .tool__link {
-  margin-top: 1rem;
+  margin-top: rem(16);
 }
 
-@media screen and (min-width: 1024px) {
+@include breakpoint-up(md) {
   .page--projects-and-tools .projects,
   .page--projects-and-tools .tools {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    margin-left: calc(-1 / 2 * var(--gutter));
+    width: calc(100% + var(--gutter));
   }
 
   .page--projects-and-tools .project,
   .page--projects-and-tools .tool {
-    width: 50%;
-  }
-
-  .page--projects-and-tools .project:nth-child(odd),
-  .page--projects-and-tools .tool:nth-child(odd) {
-    padding-right: 1.5rem;
-  }
-
-  .page--projects-and-tools .project:nth-child(even),
-  .page--projects-and-tools .tool:nth-child(even) {
-    padding-left: 1.5rem;
+    flex: 0 0 50%;
+    padding: 0 calc(var(--gutter) / 2);
   }
 }

@@ -99,6 +99,10 @@ blockquote {
     margin: 0.1875rem 0.5rem 0.1875rem 0;
     width: 0.375rem;
   }
+
+  div + p {
+    margin-top: 1.5rem;
+  }
 }
 
 @each $name, $color in $colors {

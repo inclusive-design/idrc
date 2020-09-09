@@ -1,0 +1,41 @@
+{% set sectionTitle = '' %}
+{% set sectionContent = '' %}
+{% set desktopWidth = 'section--full' %}
+{% set imageOrderDesktop = '' %}
+
+{% if section.title %}
+    {% set sectionTitle = section.title %}
+{% endif %}
+{% if section.content %}
+    {% set sectionContent = section.content %}
+{% endif %}
+{% if section.desktopWidth %}
+    {% set desktopWidth = 'section--' + section.desktopWidth %}
+{% endif %}
+{% if section.imageOrderDesktop %}
+    {% set imageOrderDesktop = section.imageOrderDesktop %}
+{% endif %}
+<section id="{{ sectionTitle | slug }}" class="section
+{{ desktopWidth }}
+{{ 'section--image' if section.image }}
+{{ section.desktopAlignment if section.desktopAlignment }}
+{{ 'section--bg-' + section.backgroundColor if section.backgroundColor }}
+{{ 'section--fg-' + section.textColor if section.textColor }}"> 
+    <div class="wrapper">
+        {% if section.image and section.imageOrder == 'start' %}
+        <figure class="{{ imageOrderDesktop }} {{ 'shadow-' + section.imageShadow if section.imageShadow else 'indigo-500' }}">
+            <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
+        </figure>
+        {% endif %}
+        <div class="section__content">
+            {% if section.borderColor %}<span class="hr hr--{{ section.borderColor }}"></span>{% endif %}
+            <h2>{{ sectionTitle | safe }}</h2>
+            {{ sectionContent | markdown | safe }}
+        </div>
+        {% if section.image and section.imageOrder == 'end' %}
+        <figure class="{{ imageOrderDesktop }} shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
+            <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
+        </figure>
+        {% endif %}
+    </div>
+</section>

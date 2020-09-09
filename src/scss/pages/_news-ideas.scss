@@ -1,4 +1,4 @@
-.grid {
+.entries {
   .entry {
     margin: 0;
   }
@@ -7,9 +7,9 @@
     margin-top: 3rem;
   }
 
-  @media (min-width: 768px) {
+  @include breakpoint-up(sm) {
     display: grid;
-    grid-gap: 3rem;
+    grid-gap: var(--gutter);
     grid-template-columns: repeat(2, 1fr);
 
     .entry + .entry {
@@ -17,7 +17,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @include breakpoint-up(md) {
     .page--ideas & {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -55,29 +55,6 @@
 
 .page--news,
 .page--ideas {
-  main > article {
-    margin: 0 auto;
-  }
-
-  main > article header {
-    color: var(--blue-900);
-    padding: 5rem 0;
-  }
-
-  main > article header .inner {
-    margin: 0 auto;
-  }
-
-  main > article header h1 {
-    padding: 0;
-    width: 100%;
-
-    @media (min-width: 768px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
   main > article .content {
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
