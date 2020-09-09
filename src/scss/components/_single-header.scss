@@ -1,60 +1,24 @@
 .single article header {
   background: var(--white);
   color: var(--blue-900);
-  padding: 5rem 0;
-}
-
-.single article header .inner {
-  margin: 0 auto;
-  padding: 0;
-}
-
-.single article .breadcrumbs,
-.single article h1,
-.single article .metadata {
-  padding: 0 1.5rem;
 }
 
 .single article .metadata {
   font-size: var(--step--1);
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 .single article .separator {
   color: transparent;
   display: block;
-  height: 0.25rem;
+  height: rem(4);
   padding: 0 0.5em;
 }
 
-@media (min-width: 768px) {
-  .single--news article .breadcrumbs,
-  .single--news article h1,
-  .single--news article .metadata {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-  }
-
+@include breakpoint-up(sm) {
   .single article .separator {
     color: inherit;
     display: inline;
     height: auto;
-  }
-}
-
-@media (min-width: 1024px) {
-  .single--news article .breadcrumbs,
-  .single--news article h1,
-  .single--news article .metadata {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .single--news article .breadcrumbs,
-  .single--news article h1,
-  .single--news article .metadata {
-    width: (100% * 5 / 12);
   }
 }

@@ -1,26 +1,50 @@
 .single {
-  article {
-    margin: 0 auto;
+  main > article header .wrapper {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  article .content {
+  main > article .content {
+    flex: 0 0 100%;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
+  }
+}
 
-    @media (min-width: 768px) {
-      margin-left: auto;
-      margin-right: auto;
+@include breakpoint-up(sm) {
+  .single {
+    main > article header .wrapper {
       width: 75%;
     }
 
-    @media (min-width: 1024px) {
-      padding-bottom: 5rem;
-      padding-top: 5rem;
+    main > article .content {
+      flex: 0 0 75%;
+    }
+
+    &.single--idea {
+      main > article header .wrapper {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint-up(md) {
+  .single {
+    main > article header .wrapper {
       width: 50%;
     }
 
-    @media (min-width: 1280px) {
-      width: (100% * 5 / 12);
+    main > article .content {
+      flex: 0 0 50%;
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+    }
+
+    &.single--idea {
+      main > article header .wrapper {
+        width: 75%;
+      }
     }
   }
 }
