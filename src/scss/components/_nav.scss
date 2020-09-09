@@ -417,6 +417,13 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav--secondary {
+    box-shadow: 0.5625rem 0.5625rem 0 0 var(--indigo-500);
+    margin: 3rem 0 6rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .nav {
     height: 5rem;
@@ -713,7 +720,7 @@
   .nav--secondary {
     box-shadow: 0.5625rem 0.5625rem 0 0 var(--indigo-500);
     float: left;
-    margin: 6rem 0 0 3rem;
+    margin: 6rem 0 6rem 3rem;
     width: calc(1 / 3 * (100% - 6rem));
   }
 }

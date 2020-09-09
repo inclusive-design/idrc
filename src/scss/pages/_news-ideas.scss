@@ -18,7 +18,9 @@
   }
 
   @media (min-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
+    .page--ideas & {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
@@ -106,25 +108,16 @@
 }
 
 .page--news {
-  .entry + .entry {
-    margin-top: 5rem;
+  .entry {
+    border-top: 0.1875rem solid var(--indigo-500);
+    padding-top: 1.5rem;
   }
 
   main > article .content {
-    @media (min-width: 768px) {
-      margin-left: auto;
-      margin-right: auto;
-      width: 75%;
-    }
-
     @media (min-width: 1024px) {
-      padding-bottom: 5rem;
-      padding-top: 5rem;
-      width: 50%;
-    }
-
-    @media (min-width: 1280px) {
-      width: (100% * 5 / 12);
+      float: left;
+      padding: 6rem 0;
+      width: calc(2 / 3 * (100% - 6rem) + 3rem);
     }
   }
 }

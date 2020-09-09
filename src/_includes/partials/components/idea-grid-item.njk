@@ -12,7 +12,7 @@
         <time datetime="{{ post.data.date | w3DateFilter }}" class="dt-published">{{ post.data.date | dateFilter }}</time>
     </p>
     {% if post.data.excerpt %}
-    <p>{{ post.data.excerpt | safe }}</p>
+    <p class="small">{{ post.data.excerpt | safe }}</p>
     {% endif %}
     </div>
 </article>

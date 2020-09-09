@@ -12,9 +12,11 @@
         <div class="content">
             <div class="inner">
             {% if posts.length %}
+                <div class="grid">
                 {% for item in posts %}
                 {% include 'partials/components/news-grid-item.njk' %}
                 {% endfor %}
+                </div>
             {% endif %}
             </div>
         </div>
@@ -33,6 +35,9 @@
             {%- endif %}
             </ul>
         </nav>
+        {% endif %}
+        {% if secondaryNavigation %}
+        {% include 'partials/components/secondary-navigation.njk' %}
         {% endif %}
     </article>
 {% endblock %}

@@ -42,3 +42,18 @@ jobs:
           backstop_data/bitmaps_reference
           backstop_data/html_report
           backstop_data/bitmaps_test
+    - name: Write report to Markdown file
+      if: always()
+      run: |
+        sudo apt-get install jq
+        printf "**Visual Regression Test Results**\n\n" > backstop_data/json_report/report.md
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'group_by(.status) | map(if .[0].status == "pass" then "✅ \(length) scenarios passed" else "❌ \(length) scenarios failed" end) | join(", ")' >> backstop_data/json_report/report.md
+        printf "\n<details><summary>Scenario Details</summary>\n" >> backstop_data/json_report/report.md
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'map(if .status == "fail" then "❌ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a> (\(.pair.diff.misMatchPercentage)% mismatch)" else "✅ \(.pair.label) (\(.pair.viewportLabel) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" end) | join("<br />")' >> backstop_data/json_report/report.md
+        printf "</details>\n\nTo review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/actions/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\nIf these changes were intended, run \`npm run backstop:test && npm run backstop:approve\` locally and commit your changes." >> backstop_data/json_report/report.md
+    - uses: machine-learning-apps/pr-comment@master
+      if: always()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        path: backstop_data/json_report/report.md
