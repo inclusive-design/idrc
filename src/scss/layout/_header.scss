@@ -30,9 +30,13 @@
 }
 
 .page--home .banner {
-  background: var(--header-bg, var(--white));
-  box-shadow: 0 rem(3) rem(10) rgba(0, 0, 0, 0.05);
+  background: var(--white);
   z-index: 1;
+
+  &::after {
+    background: var(--white);
+    box-shadow: 0 rem(3) rem(10) rgba(0, 0, 0, 0.05);
+  }
 }
 
 .banner .wrapper {
