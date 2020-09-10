@@ -8,7 +8,7 @@
   margin-top: rem(24);
 }
 
-.single article .separator {
+.separator {
   color: transparent;
   display: block;
   height: rem(4);
@@ -16,7 +16,7 @@
 }
 
 @include breakpoint-up(sm) {
-  .single article .separator {
+  .separator {
     color: inherit;
     display: inline;
     height: auto;

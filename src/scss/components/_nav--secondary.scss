@@ -7,18 +7,18 @@
   .wrapper {
     background: var(--indigo-200);
     margin-left: calc(-1 * var(--gutter));
-    padding: 2.5rem var(--gutter);
+    padding: rem(40) var(--gutter);
     width: calc(100% + (2 * var(--gutter)));
   }
 }
 
 .menu--secondary a {
   align-items: center;
-  border-bottom: 0.0625rem solid var(--black);
+  border-bottom: rem(1) solid var(--black);
   display: block;
   display: flex;
   flex-direction: row;
-  height: 3.125rem;
+  height: rem(50);
   justify-content: space-between;
   text-decoration: none;
 
@@ -26,13 +26,13 @@
   &:focus {
     background: var(--indigo-800);
     border-bottom-color: transparent;
-    box-shadow: calc(-1 * var(--gutter)) -1px 0 1px var(--indigo-800), var(--gutter) -1px 0 1px var(--indigo-800);
+    box-shadow: calc(-1 * var(--gutter)) rem(-1) 0 rem(1) var(--indigo-800), var(--gutter) rem(-1) 0 rem(1) var(--indigo-800);
     color: var(--white);
   }
 
   &:active {
     background: var(--indigo-500);
-    box-shadow: calc(-1 * var(--gutter)) -1px 0 1px var(--indigo-500), var(--gutter) -1px 0 1px var(--indigo-500);
+    box-shadow: calc(-1 * var(--gutter)) rem(-1) 0 rem(1) var(--indigo-500), var(--gutter) rem(-1) 0 rem(1) var(--indigo-500);
   }
 
   &::after {
@@ -62,18 +62,18 @@
   &[aria-current="page"],
   &[data-parent="true"] {
     border-bottom-color: var(--indigo-500);
-    box-shadow: inset 0 -0.0625rem 0 0 var(--indigo-500);
+    box-shadow: inset 0 rem(-1) 0 0 var(--indigo-500);
     font-weight: var(--fw-bold);
 
     &:hover,
     &:focus {
       border-bottom-color: transparent;
-      box-shadow: calc(-1 * var(--gutter)) -1px 0 1px var(--indigo-800), var(--gutter) -1px 0 1px var(--indigo-800);
+      box-shadow: calc(-1 * var(--gutter)) rem(-1) 0 rem(1) var(--indigo-800), var(--gutter) rem(-1) 0 rem(1) var(--indigo-800);
     }
 
     &:active {
       border-bottom-color: transparent;
-      box-shadow: calc(-1 * var(--gutter)) -1px 0 1px var(--indigo-500), var(--gutter) -1px 0 1px var(--indigo-500);
+      box-shadow: calc(-1 * var(--gutter)) rem(-1) 0 rem(1) var(--indigo-500), var(--gutter) rem(-1) 0 rem(1) var(--indigo-500);
     }
   }
 }
@@ -81,15 +81,15 @@
 @include breakpoint-up(md) {
   .nav--secondary {
     flex: 0 0 calc(1 / 3 * 100%);
-    margin-bottom: 6rem;
-    margin-top: 6rem;
+    margin-bottom: rem(144);
+    margin-top: rem(144);
 
     &::after {
       display: none;
     }
 
     .wrapper {
-      box-shadow: 9px 9px 0 0 var(--indigo-500);
+      box-shadow: rem(9) rem(9) 0 0 var(--indigo-500);
       margin-left: 0;
       width: 100%;
     }

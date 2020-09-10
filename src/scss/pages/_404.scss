@@ -17,10 +17,10 @@
 
 .page--404 article {
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: rem(80);
 
   @media (min-width: 1024px) {
-    padding-top: 16rem;
+    padding-top: rem(256);
   }
 }
 
@@ -33,7 +33,7 @@
 }
 
 .page--404 article h1 {
-  padding: 0 1.5rem;
+  padding: 0 rem(24);
 
   @media (min-width: 768px) {
     margin-left: auto;
@@ -51,7 +51,7 @@
 }
 
 .page--404 article .content {
-  padding-top: 1rem;
+  padding-top: rem(16);
   text-align: center;
 
   @media (min-width: 768px) {

@@ -13,21 +13,22 @@ main > article {
   width: calc(100vw - var(--gutter));
 
   header {
+    border-bottom: rem(10) solid var(--header-border);
     color: var(--header-fg, $black);
     flex: 0 0 100%;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    padding-bottom: rem(80);
+    padding-top: rem(80);
     position: relative;
 
     &::after {
       background: var(--header-bg, $indigo-100);
-      border-bottom: 0.5625rem solid var(--header-border);
+      border-bottom: rem(10) solid var(--header-border);
+      bottom: rem(-10);
       content: "";
       display: block;
-      height: 100%;
+      height: calc(100% + #{rem(10)});
       margin-left: 50%;
       position: absolute;
-      top: 0;
       transform: translateX(-50%);
       width: 100vw;
       z-index: -1;
@@ -81,8 +82,8 @@ main > article {
 .hr {
   border-bottom: 2px solid;
   display: block;
-  margin-bottom: 2.5rem;
-  width: 5rem;
+  margin-bottom: rem(40);
+  width: rem(80);
 }
 
 @each $name, $color in $colors {
@@ -94,8 +95,8 @@ main > article {
 .section {
   background: var(--indigo-100);
   color: var(--blue-900);
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-bottom: rem(80);
+  padding-top: rem(80);
 }
 
 .section--full {
@@ -103,7 +104,7 @@ main > article {
 }
 
 .section--full .subsection + .subsection {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 .section--full-bleed {
@@ -125,24 +126,24 @@ main > article {
 }
 
 .section--image .section__content {
-  margin-top: 4rem;
+  margin-top: rem(64);
 }
 
 .section figure {
-  box-shadow: 1.5rem 1.5rem var(--indigo-500);
-  margin-bottom: 5rem;
+  box-shadow: rem(24) rem(24) var(--indigo-500);
+  margin-bottom: rem(80);
 }
 
 .section figure.shadow-indigo-500 {
-  box-shadow: 1.5rem 1.5rem var(--indigo-500);
+  box-shadow: rem(24) rem(24) var(--indigo-500);
 }
 
 .section figure.shadow-coral-500 {
-  box-shadow: 1.5rem 1.5rem var(--coral-500);
+  box-shadow: rem(24) rem(24) var(--coral-500);
 }
 
 .section figure.shadow-yellow-500 {
-  box-shadow: 1.5rem 1.5rem var(--yellow-500);
+  box-shadow: rem(24) rem(24) var(--yellow-500);
 }
 
 .section img {
@@ -151,7 +152,7 @@ main > article {
 
 .section .section__content + figure {
   margin-bottom: 0;
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 @include breakpoint-up(md) {
@@ -177,15 +178,15 @@ main > article {
   }
 
   .section--full .subsection:nth-child(odd) {
-    margin-left: -1.5rem;
-    margin-right: 1.5rem;
-    padding-left: 1.5rem;
+    margin-left: rem(-24);
+    margin-right: rem(24);
+    padding-left: rem(24);
   }
 
   .section--full .subsection:nth-child(even) {
-    margin-left: 1.5rem;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
+    margin-left: rem(24);
+    margin-right: rem(-24);
+    padding-right: rem(24);
   }
 
   .section--third {
@@ -203,13 +204,13 @@ main > article {
 
   .section figure {
     margin-left: 0;
-    margin-right: 3rem;
+    margin-right: rem(48);
     order: 0;
     width: 50%;
   }
 
   .section figure.swap {
-    margin-left: 3rem;
+    margin-left: rem(48);
     margin-right: 0;
     order: 2;
   }
@@ -226,7 +227,7 @@ main > article {
 
   .section figure + .section__content {
     margin-left: 0;
-    margin-right: 3rem;
+    margin-right: rem(48);
     margin-top: 0;
     order: 0;
   }
@@ -238,13 +239,13 @@ main > article {
 
   .section .section__content + figure {
     margin-left: 0;
-    margin-right: 3rem;
-    margin-top: -3rem;
+    margin-right: rem(48);
+    margin-top: rem(-48);
     order: 0;
   }
 
   .section .section__content + figure.swap {
-    margin-left: 3rem;
+    margin-left: rem(48);
     margin-right: 0;
     margin-top: 0;
     order: 2;

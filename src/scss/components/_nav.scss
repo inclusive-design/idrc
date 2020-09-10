@@ -49,7 +49,7 @@
 
   svg {
     display: inline-block;
-    margin-right: 0.25rem;
+    margin-right: rem(4);
   }
 }
 
@@ -59,7 +59,7 @@
   color: var(--white);
   display: none;
   left: 0;
-  padding: 5.5rem 0 2.5rem;
+  padding: rem(88) 0 rem(40);
   position: absolute;
   width: 100vw;
   z-index: 10;
@@ -70,7 +70,7 @@
 }
 
 .menu .menu-label {
-  padding: 0 1.5rem;
+  padding: 0 rem(24);
 }
 
 .menu ul {
@@ -84,7 +84,7 @@
   padding: 0;
 
   &.submenu-parent--submenu-visible {
-    border-bottom: 1px solid black;
+    border-bottom: rem(1) solid black;
 
     button[data-parent="true"] {
       text-decoration: none;
@@ -104,8 +104,8 @@
   display: flex;
   font-family: var(--ff-display);
   font-weight: var(--fw-semibold);
-  height: 3.125rem;
-  padding: 0 1.5rem;
+  height: rem(50);
+  padding: 0 rem(24);
   text-align: left;
   text-decoration: none;
   width: 100%;
@@ -136,7 +136,7 @@
 
 .menu button svg {
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-left: rem(8);
 }
 
 .menu li ul a {
@@ -169,7 +169,7 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+      box-shadow: 0 0 0 rem(2) var(--parent-bg), 0 0 0 rem(4) var(--header-fg), 0 0 0 rem(2) var(--header-fg) inset;
       color: var(--white);
     }
 
@@ -217,11 +217,11 @@
     box-shadow: none;
     color: var(--header-fg);
     display: block;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    padding-top: 2rem;
+    margin-left: rem(-24);
+    margin-right: rem(-24);
+    padding-top: rem(32);
     position: relative;
-    width: calc(3rem + 100%);
+    width: calc(#{rem(48)} + 100%);
   }
 
   .nav .menu-label {
@@ -280,7 +280,7 @@
   .menu li ul [data-parent="true"] {
     text-decoration: underline;
     text-decoration-color: var(--indigo-500);
-    text-decoration-thickness: 0.125rem;
+    text-decoration-thickness: rem(2);
 
     &:hover,
     &:focus {
@@ -348,7 +348,7 @@
 
 @include breakpoint-up(md) {
   .nav {
-    height: 5rem;
+    height: rem(80);
   }
 
   .nav .menu-toggle {
@@ -359,7 +359,7 @@
     background: transparent;
     box-shadow: none;
     display: block;
-    height: 5rem;
+    height: rem(80);
     margin-top: 0;
     padding-bottom: 0;
     padding-top: 0;
@@ -386,11 +386,11 @@
 
   .menu li ul {
     background: var(--white);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.25);
     left: 0;
     margin-top: 0;
     position: absolute;
-    width: 16rem;
+    width: rem(256);
     z-index: 20;
   }
 
@@ -400,8 +400,8 @@
     color: var(--blue-900);
     display: flex;
     font-weight: var(--fw-medium);
-    height: 5rem;
-    padding: 0 1.25rem;
+    height: rem(80);
+    padding: 0 rem(20);
 
     &:hover,
     &:focus {
@@ -424,8 +424,8 @@
   .menu [data-parent="true"] {
     text-decoration: underline;
     text-decoration-color: var(--black);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.3125rem;
+    text-decoration-thickness: rem(2);
+    text-underline-offset: rem(5);
 
     &:hover,
     &:focus {
@@ -438,8 +438,8 @@
     color: var(--black);
     font-weight: var(--fw-normal);
     height: unset;
-    min-height: 3.125rem;
-    padding: 0 1.25rem;
+    min-height: rem(50);
+    padding: 0 rem(20);
 
     &:hover,
     &:focus {
@@ -525,25 +525,25 @@
 
   .no-js {
     .nav {
-      height: 12rem;
-      margin-top: 1.625rem;
+      height: rem(192);
+      margin-top: rem(26);
       width: 100%;
     }
 
     .nav .menu {
-      height: 12rem;
+      height: rem(192);
       margin-left: 0;
     }
 
     .menu ul {
       columns: 4;
       display: block;
-      height: 10rem;
+      height: rem(160);
       width: auto;
     }
 
     .menu li {
-      padding-top: 0.75rem;
+      padding-top: rem(12);
 
       &.submenu-parent {
         break-inside: avoid;
@@ -587,7 +587,7 @@
     .menu [aria-current="page"] {
       text-decoration: underline;
       text-decoration-color: var(--indigo-500);
-      text-decoration-thickness: 0.1875rem;
+      text-decoration-thickness: rem(3);
 
       &:hover,
       &:focus {
@@ -613,15 +613,15 @@
     }
 
     .menu a[href="#"] + ul li + li {
-      padding-top: 0.75rem;
+      padding-top: rem(12);
     }
 
     .menu a:not([href="#"]) + ul li {
-      margin-top: 0.5rem;
+      margin-top: rem(8);
     }
 
     .menu a:not([href="#"]) + ul li + li {
-      margin-top: 0.5rem;
+      margin-top: rem(8);
     }
 
     .page--home {

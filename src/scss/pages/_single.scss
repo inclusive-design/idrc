@@ -6,8 +6,8 @@
 
   main > article .content {
     flex: 0 0 100%;
-    padding-bottom: 2.5rem;
-    padding-top: 2.5rem;
+    padding-bottom: rem(40);
+    padding-top: rem(40);
   }
 }
 
@@ -37,8 +37,8 @@
 
     main > article .content {
       flex: 0 0 50%;
-      padding-bottom: 5rem;
-      padding-top: 5rem;
+      padding-bottom: rem(80);
+      padding-top: rem(80);
     }
 
     &.single--idea {

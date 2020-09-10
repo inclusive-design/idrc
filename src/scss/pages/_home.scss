@@ -4,7 +4,7 @@
 
 #what-is-inclusive-design {
   .section__content {
-    padding: 8rem 0 0;
+    padding: rem(128) 0 0;
     position: relative;
 
     > * {
@@ -16,35 +16,35 @@
       background: radial-gradient(50% 50% at 50% 50%, $white 0%, rgba(255, 255, 255, 0) 100%) no-repeat 50% 50% / 100% 100%;
       content: "";
       display: block;
-      height: 40rem;
-      left: -5rem;
+      height: rem(640);
+      left: rem(-80);
       mask-image: url('../images/scatterplot.svg');
       mask-position: center;
       mask-repeat: no-repeat;
-      mask-size: 40rem;
+      mask-size: rem(640);
       position: absolute;
-      top: -15rem;
+      top: rem(-240);
       width: 100vw;
     }
   }
 }
 
 .page--home .entry + .entry {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
-@media screen and (min-width: 1024px) {
+@include breakpoint-up(md) {
   #what-is-inclusive-design {
     .section__content {
-      padding-left: calc(50% + 3rem);
+      padding-left: calc(50% + #{rem(48)});
       padding-top: 0;
 
       &::before {
-        height: 56rem;
+        height: rem(896);
         left: -14vw;
-        mask-size: 56rem;
-        top: -16rem;
-        width: 56rem;
+        mask-size: rem(896);
+        top: rem(-256);
+        width: rem(896);
       }
     }
   }

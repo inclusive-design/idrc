@@ -1,42 +1,42 @@
 
 article.person {
-  border-top: 0.25rem solid var(--indigo-500);
+  border-top: rem(4) solid var(--indigo-500);
   margin: 0;
-  padding-top: 1.5rem;
+  padding-top: rem(24);
 
   h2 + .metadata {
-    margin-top: 0.25rem;
+    margin-top: rem(4);
   }
 
   .metadata p + p {
-    margin-top: 0.25rem;
+    margin-top: rem(4);
   }
 
   .metadata + p {
-    margin-top: 0.75rem;
+    margin-top: rem(12);
   }
 }
 
 .person + .person {
-  margin-top: 3rem;
+  margin-top: rem(48);
 }
 
 .link--email {
   align-items: center;
   display: inline-flex;
   flex-direction: row;
-  font-size: 0.875rem;
+  font-size: var(--step--1);
   font-weight: var(--fw-semibold);
   text-decoration: none;
 }
 
 .link--email svg {
   display: inline-block;
-  margin-right: 0.25rem;
+  margin-right: rem(4);
 }
 
 .page--team article .content {
-  padding: 3rem 0;
+  padding: rem(48) 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,8 +48,8 @@ article.person {
 @media screen and (min-width: 1024px) {
   .page--team article .content {
     float: left;
-    padding: 6rem 0;
-    width: calc(2 / 3 * (100% - 6rem) + 3rem);
+    padding: rem(96) 0;
+    width: calc(2 / 3 * (100% - #{rem(96)}) + #{rem(48)});
   }
 
   .grid.grid--people {

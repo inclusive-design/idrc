@@ -35,31 +35,31 @@ h4,
 }
 
 p + * {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 ul + *,
 ol + * {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 h2 + *,
 .h2 + * {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 p + h2,
 p + .h2 {
-  margin-top: 4rem;
+  margin-top: rem(64);
 }
 
 h3 + p {
-  margin-top: 1rem;
+  margin-top: rem(16);
 }
 
 * + ul,
 * + ol {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 h4 + p,
@@ -68,11 +68,11 @@ h4 + ol,
 .h4 + p,
 .h4 + ul,
 .h4 + ol {
-  margin-top: 0.75rem;
+  margin-top: rem(12);
 }
 
 .h3 + p {
-  margin-top: 0.25rem;
+  margin-top: rem(4);
 }
 
 @include breakpoint-up(md) {

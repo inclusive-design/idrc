@@ -14,7 +14,7 @@
             {% if pagination.pageNumber == 0 %}
                 {% if collections.featured.length %}
                 <h2 class="h4">Featured</h2>
-                <div class="grid grid--featured">
+                <div class="entries entries--featured">
                 {% for post in collections.featured | limit(2) %}
                     {% include 'partials/components/idea-grid-item.njk' %}
                 {% endfor %}
@@ -23,7 +23,7 @@
             {% endif %}
             <h2 class="h4">Latest</h2>
             {% if posts.length %}
-                <div class="grid">
+                <div class="entries">
                 {% for post in posts %}
                 {% include 'partials/components/idea-grid-item.njk' %}
                 {% endfor %}

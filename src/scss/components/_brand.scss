@@ -1,9 +1,9 @@
 .brand {
   color: inherit;
-  height: 5rem;
-  margin-left: -1.125rem;
-  padding-top: 0.75rem;
-  width: 4.5rem;
+  height: rem(80);
+  margin-left: rem(-18);
+  padding-top: rem(12);
+  width: rem(72);
   z-index: 20;
 
   &:hover,
@@ -19,19 +19,19 @@
 
 @media (min-width: 768px) {
   .brand {
-    width: 14.5rem;
+    width: rem(232);
   }
 }
 
 .brand svg {
   fill: currentColor;
-  margin-left: 1.125rem;
-  width: 2.5rem;
+  margin-left: rem(18);
+  width: rem(40);
 }
 
 .brand .brand__logo svg {
   display: inline;
-  width: 2.5rem;
+  width: rem(40);
 
   @media (min-width: 768px) {
     display: none;
@@ -40,7 +40,7 @@
 
 .brand .brand__logotype svg {
   display: none;
-  width: 12.45689655rem;
+  width: rem(200);
 
   @media (min-width: 768px) {
     display: inline;
@@ -50,7 +50,7 @@
 .page--home {
   .brand {
     color: var(--blue-500);
-    width: 4.5rem;
+    width: rem(72);
 
     &:hover,
     &:focus {
