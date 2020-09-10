@@ -31,7 +31,7 @@
   margin-top: rem(48);
 
   &::before {
-    border-bottom: 2px solid $white;
+    border-bottom: rem(2) solid $white;
     content: "";
     display: block;
     margin-bottom: rem(8);
@@ -64,7 +64,7 @@
   margin-top: rem(48);
 }
 
-@media screen and (min-width: 1024px) {
+@include breakpoint-up(md) {
   .footer .container {
     display: flex;
     flex-direction: row;

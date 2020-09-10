@@ -3,19 +3,19 @@
   padding-top: rem(40);
   text-align: center;
 
-  @media (min-width: 768px) {
+  @include breakpoint-up(sm) {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
   }
 
-  @media (min-width: 1024px) {
+  @include breakpoint-up(md) {
     padding-bottom: rem(80);
     padding-top: rem(80);
     width: 50%;
   }
 
-  @media (min-width: 1280px) {
+  @include breakpoint-up(lg) {
     width: (100% * 5 / 12);
   }
 }

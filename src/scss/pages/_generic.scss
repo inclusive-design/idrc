@@ -80,7 +80,7 @@ main > article {
 }
 
 .hr {
-  border-bottom: 2px solid;
+  border-bottom: rem(2) solid;
   display: block;
   margin-bottom: rem(40);
   width: rem(80);
@@ -169,7 +169,7 @@ main > article {
     display: inline-block;
     flex: 0 0 50%;
     margin: 0 auto;
-    max-width: 640px;
+    max-width: rem(640);
   }
 
   .section--full .subsection {
@@ -252,7 +252,7 @@ main > article {
   }
 }
 
-@media (min-width: 1280px) {
+@include breakpoint-up(lg) {
   .section--half {
     width: 100%;
   }

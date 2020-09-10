@@ -1,7 +1,7 @@
 .brand {
   color: inherit;
   height: rem(80);
-  margin-left: rem(-18);
+  margin-left: calc(-1 * var(--gutter) + #{rem(-18)});
   padding-top: rem(12);
   width: rem(72);
   z-index: 20;
@@ -17,12 +17,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .brand {
-    width: rem(232);
-  }
-}
-
 .brand svg {
   fill: currentColor;
   margin-left: rem(18);
@@ -32,19 +26,11 @@
 .brand .brand__logo svg {
   display: inline;
   width: rem(40);
-
-  @media (min-width: 768px) {
-    display: none;
-  }
 }
 
 .brand .brand__logotype svg {
   display: none;
   width: rem(200);
-
-  @media (min-width: 768px) {
-    display: inline;
-  }
 }
 
 .page--home {
@@ -87,5 +73,25 @@
       background: var(--indigo-900);
       color: var(--white);
     }
+  }
+}
+
+@include breakpoint-up(sm) {
+  .brand {
+    width: rem(232);
+  }
+
+  .brand .brand__logo svg {
+    display: none;
+  }
+
+  .brand .brand__logotype svg {
+    display: inline;
+  }
+}
+
+@include breakpoint-up(md) {
+  .brand {
+    margin-left: rem(-18);
   }
 }

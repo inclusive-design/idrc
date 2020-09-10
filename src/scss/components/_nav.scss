@@ -1,16 +1,17 @@
 .nav {
-  height: 38px;
+  height: rem(38);
   margin-left: auto;
   margin-top: 0;
 }
 
 .nav .menu-toggle {
   background: var(--header-bg, transparent);
-  border-radius: 3px;
+  border-radius: rem(3);
   color: var(--blue-900);
-  height: 34px;
+  height: 3rem(4);
   line-height: 0.7;
-  padding: 6px 12px;
+  margin-right: calc(-1 * var(--gutter) + #{rem(-12)});
+  padding: rem(6) rem(12);
   position: relative;
   z-index: 20;
 
@@ -20,7 +21,7 @@
 
   &:focus {
     background: var(--header-bg, transparent);
-    box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--blue-900), 0 0 0 2px var(--blue-900) inset;
+    box-shadow: 0 0 0 rem(2) var(--parent-bg), 0 0 0 rem(4) var(--blue-900), 0 0 0 rem(2) var(--blue-900) inset;
   }
 
   &:active {
@@ -37,7 +38,7 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px var(--parent-bg), 0 0 0 4px var(--header-fg), 0 0 0 2px var(--header-fg) inset;
+      box-shadow: 0 0 0 rem(2) var(--parent-bg), 0 0 0 rem(4) var(--header-fg), 0 0 0 rem(2) var(--header-fg) inset;
       color: var(--white);
     }
 
@@ -55,7 +56,7 @@
 
 .nav .menu {
   background: var(--indigo-800);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 rem(20) rem(25) rem(-5) rgba(0, 0, 0, 0.1), 0 rem(10) rem(10) rem(-5) rgba(0, 0, 0, 0.04);
   color: var(--white);
   display: none;
   left: 0;
@@ -126,7 +127,7 @@
 .menu [data-parent="true"] {
   text-decoration: underline;
   text-decoration-color: var(--yellow-200);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: rem(2);
 
   &:hover,
   &:focus {
@@ -349,6 +350,7 @@
 @include breakpoint-up(md) {
   .nav {
     height: rem(80);
+    margin-right: rem(-20);
   }
 
   .nav .menu-toggle {
