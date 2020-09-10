@@ -21,7 +21,7 @@
   }
 }
 
-html::before {
+html.grid::before {
   background-image: var(--background-columns);
   background-size: var(--background-width) 100%;
   bottom: 0;

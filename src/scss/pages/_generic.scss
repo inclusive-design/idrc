@@ -129,20 +129,20 @@ main > article {
   margin-top: rem(64);
 }
 
-.section figure {
+.section--image figure {
   box-shadow: rem(24) rem(24) var(--indigo-500);
   margin-bottom: rem(80);
 }
 
-.section figure.shadow-indigo-500 {
+.section--image figure.shadow-indigo-500 {
   box-shadow: rem(24) rem(24) var(--indigo-500);
 }
 
-.section figure.shadow-coral-500 {
+.section--image figure.shadow-coral-500 {
   box-shadow: rem(24) rem(24) var(--coral-500);
 }
 
-.section figure.shadow-yellow-500 {
+.section--image figure.shadow-yellow-500 {
   box-shadow: rem(24) rem(24) var(--yellow-500);
 }
 
@@ -195,23 +195,26 @@ main > article {
     margin: 0 auto;
   }
 
-  .section .container {
+  .section--image .wrapper {
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 
-  .section figure {
-    margin-left: 0;
-    margin-right: rem(48);
-    order: 0;
-    width: 50%;
+  .section--image .wrapper > * {
+    flex: 0 0 50%;
   }
 
-  .section figure.swap {
-    margin-left: rem(48);
-    margin-right: 0;
+  .section--image .wrapper > figure {
+    flex: 0 0 calc(50% - var(--gutter) / 2);
+  }
+
+  .section--image figure {
+    margin-left: rem(-24);
+    order: 0;
+  }
+
+  .section--image figure.swap {
     order: 2;
   }
 
@@ -222,31 +225,23 @@ main > article {
 
   .section--image .section__content {
     margin-top: 0;
-    width: 50%;
   }
 
-  .section figure + .section__content {
-    margin-left: 0;
-    margin-right: rem(48);
+  .section--image figure + .section__content {
     margin-top: 0;
     order: 0;
+    padding-left: calc(var(--gutter) / 2);
   }
 
-  .section figure.swap + .section__content {
-    margin-left: 0;
-    margin-right: 0;
+  .section--image figure.swap + .section__content {
+    padding-left: 0;
   }
 
-  .section .section__content + figure {
-    margin-left: 0;
-    margin-right: rem(48);
-    margin-top: rem(-48);
+  .section--image .section__content + figure {
     order: 0;
   }
 
-  .section .section__content + figure.swap {
-    margin-left: rem(48);
-    margin-right: 0;
+  .section--image .section__content + figure.swap {
     margin-top: 0;
     order: 2;
   }

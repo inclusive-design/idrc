@@ -36,7 +36,7 @@
 @include breakpoint-up(md) {
   #what-is-inclusive-design {
     .section__content {
-      padding-left: calc(50% + #{rem(48)});
+      padding-left: calc(50% + (var(--gutter) / 2));
       padding-top: 0;
 
       &::before {
