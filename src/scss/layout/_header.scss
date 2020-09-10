@@ -4,20 +4,23 @@
 .banner {
   --parent-bg: var(--header-bg, $indigo-100);
 
+  align-items: center;
   background: var(--header-bg, $indigo-100);
   color: var(--header-fg, $black);
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--max-width);
+  max-width: calc(var(--max-width) + var(--gutter));
+  padding: 0;
   position: relative;
-  width: calc(100vw - (2 * var(--gutter)));
+  width: calc(100vw - var(--gutter));
 
   &::after {
     background: var(--header-bg, $indigo-100);
-    bottom: rem(-10);
+    bottom: 0;
     content: "";
     display: block;
-    height: calc(100% + #{rem(10)});
+    height: 100%;
     margin-left: 50%;
     position: absolute;
     transform: translateX(-50%);

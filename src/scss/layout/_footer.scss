@@ -4,12 +4,32 @@
 .footer {
   background: var(--indigo-800);
   color: var(--white);
-  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto 0;
+  max-width: calc(var(--max-width) + var(--gutter));
+  padding-bottom: rem(80);
+  padding-top: rem(80);
+  position: relative;
+  width: calc(100vw - var(--gutter));
+
+  &::after {
+    background: var(--indigo-800);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
-.footer .container {
-  margin: 0 auto;
-  padding: rem(80) rem(24);
+.footer > * {
+  flex: 0 0 100%;
+  padding: 0 calc(var(--gutter) / 2);
 }
 
 .footer .logo svg {
@@ -65,26 +85,19 @@
 }
 
 @include breakpoint-up(md) {
-  .footer .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .footer .logo {
-    width: 100%;
+    flex: 0 0 100%;
   }
 
   .footer .social {
-    padding-right: rem(24);
-    width: (100% / 3);
+    flex: 0 0 calc(100% / 3);
   }
 
   .footer .contact {
     display: flex;
+    flex: 0 0 calc(100% * 2 / 3);
     flex-direction: row;
     flex-wrap: wrap;
-    width: (100% * 2 / 3);
 
     .h3 {
       margin-bottom: rem(24);
@@ -95,5 +108,9 @@
       margin-top: 0;
       width: 50%;
     }
+  }
+
+  .footer .license-credit {
+    flex: 0 0 100%;
   }
 }

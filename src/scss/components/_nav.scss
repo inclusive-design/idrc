@@ -10,7 +10,7 @@
   color: var(--blue-900);
   height: 3rem(4);
   line-height: 0.7;
-  margin-right: calc(-1 * var(--gutter) + #{rem(-12)});
+  margin-right: rem(2);
   padding: rem(6) rem(12);
   position: relative;
   z-index: 20;
@@ -59,7 +59,7 @@
   box-shadow: 0 rem(20) rem(25) rem(-5) rgba(0, 0, 0, 0.1), 0 rem(10) rem(10) rem(-5) rgba(0, 0, 0, 0.04);
   color: var(--white);
   display: none;
-  left: calc(-1 * var(--gutter));
+  left: calc(-1 / 2 * var(--gutter));
   padding: rem(88) 0 rem(40);
   position: absolute;
   width: 100vw;
@@ -71,7 +71,7 @@
 }
 
 .menu .menu-label {
-  padding: 0 rem(24);
+  padding: 0 var(--gutter);
 }
 
 .menu ul {

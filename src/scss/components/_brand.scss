@@ -1,7 +1,7 @@
 .brand {
   color: inherit;
   height: rem(80);
-  margin-left: calc(-1 * var(--gutter) + #{rem(-18)});
+  margin-left: rem(-3);
   padding-top: rem(12);
   width: rem(72);
   z-index: 20;
@@ -87,11 +87,5 @@
 
   .brand .brand__logotype svg {
     display: inline;
-  }
-}
-
-@include breakpoint-up(md) {
-  .brand {
-    margin-left: rem(-18);
   }
 }
