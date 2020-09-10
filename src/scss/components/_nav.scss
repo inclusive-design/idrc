@@ -59,7 +59,7 @@
   box-shadow: 0 rem(20) rem(25) rem(-5) rgba(0, 0, 0, 0.1), 0 rem(10) rem(10) rem(-5) rgba(0, 0, 0, 0.04);
   color: var(--white);
   display: none;
-  left: 0;
+  left: calc(-1 * var(--gutter));
   padding: rem(88) 0 rem(40);
   position: absolute;
   width: 100vw;
@@ -106,7 +106,7 @@
   font-family: var(--ff-display);
   font-weight: var(--fw-semibold);
   height: rem(50);
-  padding: 0 rem(24);
+  padding: 0 var(--gutter);
   text-align: left;
   text-decoration: none;
   width: 100%;
