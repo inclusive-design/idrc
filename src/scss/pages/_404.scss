@@ -4,67 +4,55 @@
 .page--404 {
   background: var(--indigo-800);
   color: var(--white);
-}
 
-.page--404 a {
-  text-decoration-color: var(--indigo-500);
-}
+  main > article {
+    margin: 0 auto;
+    padding-top: rem(80);
+  }
 
-.page--404 a:hover,
-.page--404 a:focus {
-  background: var(--indigo-500);
-}
+  main > article header {
+    text-align: center;
+  }
 
-.page--404 article {
-  margin: 0 auto;
-  padding-top: rem(80);
+  main > article header .wrapper {
+    width: 100%;
+  }
 
-  @media (min-width: 1024px) {
-    padding-top: rem(256);
+  main > article .content {
+    padding-top: rem(16);
+    text-align: center;
+  }
+
+  h1 {
+    padding: 0 rem(24);
+  }
+
+  a {
+    text-decoration-color: var(--indigo-500);
+
+    &:hover,
+    &:focus {
+      background: var(--indigo-500);
+    }
   }
 }
 
-.page--404 article header {
-  text-align: center;
-}
-
-.page--404 article header .inner {
-  margin: 0 auto;
-}
-
-.page--404 article h1 {
-  padding: 0 rem(24);
-
-  @media (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-  }
-
-  @media (min-width: 1024px) {
-    width: 50%;
-  }
-
-  @media (min-width: 1280px) {
-    width: (100% * 5 / 12);
+@include breakpoint-up(sm) {
+  .page--404 {
+    main > article .content {
+      flex: 0 0 100%;
+    }
   }
 }
 
-.page--404 article .content {
-  padding-top: rem(16);
-  text-align: center;
+@include breakpoint-up(md) {
+  .page--404 {
+    main > article {
+      padding-top: rem(256);
+    }
 
-  @media (min-width: 768px) {
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-  }
-
-  @media (min-width: 1024px) {
-    width: 50%;
-  }
-
-  @media (min-width: 1280px) {
-    width: (100% * 5 / 12);
+    main > article .content {
+      flex: 0 0 100%;
+    }
   }
 }
