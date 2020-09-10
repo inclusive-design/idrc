@@ -2,78 +2,88 @@
 // This file contains generic page styles.
 // -----------------------------------------------------------------------------
 
-article {
+main > article {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-}
+  max-width: calc(100vw - var(--gutter));
+  width: calc(100vw - var(--gutter));
 
-article header {
-  background: var(--header-bg, $indigo-100);
-  border-bottom: 0.5625rem solid var(--header-border);
-  color: var(--header-fg, $black);
-  margin-left: 50%;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  transform: translateX(-50%);
-  width: 100vw;
-}
+  header {
+    border-bottom: rem(10) solid var(--header-border);
+    color: var(--header-fg, $black);
+    flex: 0 0 100%;
+    padding-bottom: rem(80);
+    padding-top: rem(80);
+    position: relative;
 
-article header .inner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+    &::after {
+      background: var(--header-bg, $indigo-100);
+      border-bottom: rem(10) solid var(--header-border);
+      bottom: rem(-10);
+      content: "";
+      display: block;
+      height: calc(100% + #{rem(10)});
+      margin-left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 100vw;
+      z-index: -1;
+    }
 
-article .breadcrumbs {
-  font-family: var(--ff-display);
-  font-size: var(--step-2);
-  font-weight: var(--fw-semibold);
+    .wrapper {
+      margin: 0;
+    }
 
-  @media (min-width: 1024px) {
-    width: 50%;
+    .breadcrumbs {
+      font-family: var(--ff-display);
+      font-size: var(--step-2);
+      font-weight: var(--fw-semibold);
+    }
+
+    .intro {
+      font-size: var(--step--1);
+      margin-top: rem(20);
+    }
+  }
+
+  .content {
+    flex: 0 0 100%;
+    padding-bottom: rem(48);
+    padding-top: rem(48);
+
+    .wrapper {
+      margin: 0;
+    }
   }
 }
 
-article header h1 {
-  @media screen and (min-width: 1024px) {
-    width: 50%;
-  }
-}
+@include breakpoint-up(md) {
+  main > article {
+    max-width: calc(var(--max-width) + var(--gutter));
 
-article header .intro {
-  font-size: var(--step--1);
-  margin-top: 1.25rem;
+    header {
+      .wrapper {
+        width: 50%;
+      }
+    }
 
-  @media screen and (min-width: 1024px) {
-    width: 50%;
-  }
-}
-
-.page--generic article .content {
-  padding: 3rem 0;
-
-  @media screen and (min-width: 1024px) {
-    float: left;
-    padding: 6rem 0;
-    width: calc(2 / 3 * (100% - 6rem) + 3rem);
-  }
-}
-
-article .content .inner {
-  max-width: 100%;
-  padding: 0 1.5rem;
-
-  div + p {
-    margin-top: 1.5rem;
+    .content {
+      flex: 0 0 calc(100% * 2 / 3);
+      padding-bottom: rem(96);
+      padding-top: rem(96);
+    }
   }
 }
 
 .hr {
-  border-bottom: 2px solid;
+  border-bottom: rem(2) solid;
   display: block;
-  margin-bottom: 2.5rem;
-  width: 5rem;
+  margin-bottom: rem(40);
+  width: rem(80);
 }
 
 @each $name, $color in $colors {
@@ -85,53 +95,55 @@ article .content .inner {
 .section {
   background: var(--indigo-100);
   color: var(--blue-900);
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  padding-bottom: rem(80);
+  padding-top: rem(80);
 }
 
 .section--full {
-  margin-left: 50%;
-  margin-right: auto;
-  transform: translateX(-50%);
-  width: 100vw;
+  flex: 0 0 100%;
 }
 
 .section--full .subsection + .subsection {
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 .section--full-bleed {
-  margin-left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-}
+  flex: 0 0 100%;
+  position: relative;
 
-.section .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  &::after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .section--image .section__content {
-  margin-top: 4rem;
+  margin-top: rem(64);
 }
 
-.section figure {
-  box-shadow: 1.5rem 1.5rem var(--indigo-500);
-  margin-bottom: 5rem;
+.section--image figure {
+  box-shadow: rem(24) rem(24) var(--indigo-500);
+  margin-bottom: rem(80);
 }
 
-.section figure.shadow-indigo-500 {
-  box-shadow: 1.5rem 1.5rem var(--indigo-500);
+.section--image figure.shadow-indigo-500 {
+  box-shadow: rem(24) rem(24) var(--indigo-500);
 }
 
-.section figure.shadow-coral-500 {
-  box-shadow: 1.5rem 1.5rem var(--coral-500);
+.section--image figure.shadow-coral-500 {
+  box-shadow: rem(24) rem(24) var(--coral-500);
 }
 
-.section figure.shadow-yellow-500 {
-  box-shadow: 1.5rem 1.5rem var(--yellow-500);
+.section--image figure.shadow-yellow-500 {
+  box-shadow: rem(24) rem(24) var(--yellow-500);
 }
 
 .section img {
@@ -140,10 +152,10 @@ article .content .inner {
 
 .section .section__content + figure {
   margin-bottom: 0;
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
-@media (min-width: 1024px) {
+@include breakpoint-up(md) {
   .section.center {
     text-align: center;
   }
@@ -155,9 +167,9 @@ article .content .inner {
 
   .section--half {
     display: inline-block;
+    flex: 0 0 50%;
     margin: 0 auto;
-    max-width: 640px;
-    width: 50%;
+    max-width: rem(640);
   }
 
   .section--full .subsection {
@@ -166,41 +178,43 @@ article .content .inner {
   }
 
   .section--full .subsection:nth-child(odd) {
-    margin-left: -1.5rem;
-    margin-right: 1.5rem;
-    padding-left: 1.5rem;
+    margin-left: rem(-24);
+    margin-right: rem(24);
+    padding-left: rem(24);
   }
 
   .section--full .subsection:nth-child(even) {
-    margin-left: 1.5rem;
-    margin-right: -1.5rem;
-    padding-right: 1.5rem;
+    margin-left: rem(24);
+    margin-right: rem(-24);
+    padding-right: rem(24);
   }
 
   .section--third {
     display: inline-block;
+    flex: 0 0 calc(100% / 3);
     margin: 0 auto;
-    max-width: 640px;
-    width: (100% / 3);
   }
 
-  .section .container {
+  .section--image .wrapper {
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 
-  .section figure {
-    margin-left: 0;
-    margin-right: 3rem;
-    order: 0;
-    width: 50%;
+  .section--image .wrapper > * {
+    flex: 0 0 50%;
   }
 
-  .section figure.swap {
-    margin-left: 3rem;
-    margin-right: 0;
+  .section--image .wrapper > figure {
+    flex: 0 0 calc(50% - var(--gutter) / 2);
+  }
+
+  .section--image figure {
+    margin-left: rem(-24);
+    order: 0;
+  }
+
+  .section--image figure.swap {
     order: 2;
   }
 
@@ -211,37 +225,29 @@ article .content .inner {
 
   .section--image .section__content {
     margin-top: 0;
-    width: 50%;
   }
 
-  .section figure + .section__content {
-    margin-left: 0;
-    margin-right: 3rem;
+  .section--image figure + .section__content {
     margin-top: 0;
     order: 0;
+    padding-left: calc(var(--gutter) / 2);
   }
 
-  .section figure.swap + .section__content {
-    margin-left: 0;
-    margin-right: 0;
+  .section--image figure.swap + .section__content {
+    padding-left: 0;
   }
 
-  .section .section__content + figure {
-    margin-left: 0;
-    margin-right: 3rem;
-    margin-top: -3rem;
+  .section--image .section__content + figure {
     order: 0;
   }
 
-  .section .section__content + figure.swap {
-    margin-left: 3rem;
-    margin-right: 0;
+  .section--image .section__content + figure.swap {
     margin-top: 0;
     order: 2;
   }
 }
 
-@media (min-width: 1280px) {
+@include breakpoint-up(lg) {
   .section--half {
     width: 100%;
   }

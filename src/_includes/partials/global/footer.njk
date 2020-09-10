@@ -1,36 +1,34 @@
 <footer role="contentinfo" class="footer">
-    <div class="container">
-        <div class="logo">
-            <a rel="home" href="/">
-                {% include "svg/logo-wordmark.svg" %}
-                <span class="sr-only">Inclusive Design Research Centre</span>
-            </a>
+    <div class="logo">
+        <a rel="home" href="/">
+            {% include "svg/logo-wordmark.svg" %}
+            <span class="visually-hidden">Inclusive Design Research Centre</span>
+        </a>
+    </div>
+    <div class="social">
+        <p class="h3">Social media</p>
+        <ul>
+            <li><a rel="external" href="https://twitter.com/{{ site.twitter | replace('@', '') }}/">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
+            <li><a rel="external" href="https://medium.com/{{ site.medium }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
+            <li><a rel="external" href="{{ site.youtube }}">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
+        </ul>
+    </div>
+    <div id="contact-us" class="contact">
+        <p class="h3">Contact us</p>
+        <div>
+            <p class="h4">Email</p>
+            <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+            <p class="h4">Address</p>
+            {{ site.address | markdown | safe }}
         </div>
-        <div class="social">
-            <p class="h3">Social media</p>
-            <ul>
-                <li><a rel="external" href="https://twitter.com/{{ site.twitter | replace('@', '') }}/">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
-                <li><a rel="external" href="https://medium.com/{{ site.medium }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
-                <li><a rel="external" href="{{ site.youtube }}">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
-            </ul>
+        <div>
+            <p class="h4">Phone</p>
+            <p>{{ site.phone }}</p>
+            <p class="h4">Fax</p>
+            <p>{{ site.fax }}</p>
         </div>
-        <div id="contact-us" class="contact">
-            <p class="h3">Contact us</p>
-            <div>
-                <p class="h4">Email</p>
-                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-                <p class="h4">Address</p>
-                {{ site.address | markdown | safe }}
-            </div>
-            <div>
-                <p class="h4">Phone</p>
-                <p>{{ site.phone }}</p>
-                <p class="h4">Fax</p>
-                <p>{{ site.fax }}</p>
-            </div>
-        </div>
-        <div class="license-credit">
-            <p>This work is licensed under a <a rel="external license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>. Hosting provided by <a rel="external" href="https://netlify.com">Netlify</a>.</p>
-        </div>
+    </div>
+    <div class="license-credit">
+        <p>This work is licensed under a <a rel="external license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>. Hosting provided by <a rel="external" href="https://netlify.com">Netlify</a>.</p>
     </div>
 </footer>

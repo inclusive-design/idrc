@@ -44,7 +44,7 @@ main h4,
   a:not([rel="external"])::after {
     background: currentColor;
     content: "";
-    margin-bottom: -0.25rem;
+    margin-bottom: rem(-4);
     margin-left: 0;
     mask-image: url('../images/internal.svg');
     mask-position: center;
@@ -57,8 +57,8 @@ main h4,
   a[href^="mailto:"]::after {
     background-color: currentColor;
     content: "";
-    margin-bottom: -0.25rem;
-    margin-left: 0.25rem;
+    margin-bottom: rem(-4);
+    margin-left: rem(4);
     mask-image: url('../images/external.svg');
     mask-position: center;
     mask-repeat: no-repeat;
@@ -68,7 +68,7 @@ main h4,
 }
 
 blockquote {
-  padding-left: 2rem;
+  padding-left: rem(32);
 }
 
 .content,
@@ -87,7 +87,7 @@ blockquote {
   }
 
   li + li {
-    margin-top: 0.875rem;
+    margin-top: rem(14);
   }
 
   ul li::before {
@@ -95,9 +95,13 @@ blockquote {
     border-radius: 50%;
     content: "";
     display: inline-block;
-    height: 0.375rem;
-    margin: 0.1875rem 0.5rem 0.1875rem 0;
-    width: 0.375rem;
+    height: rem(6);
+    margin: rem(3) rem(8) rem(3) 0;
+    width: rem(6);
+  }
+
+  div + p {
+    margin-top: rem(24);
   }
 }
 

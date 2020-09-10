@@ -7,10 +7,10 @@
 {% set pageType = 'page--generic' %}
 
 {% block content %}
-    <article class="container">
+    <article>
         {% include 'partials/components/page-header.njk' %}
         <div class="content">
-            <div class="inner">
+            <div class="wrapper">
                 {{ content | safe }}
                 {% if milestones.length > 0 %}
                 <div class="timeline">

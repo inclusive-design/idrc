@@ -222,7 +222,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: rem(1) dotted ButtonText;
 }
 
 /**
@@ -389,7 +389,7 @@ button {
    */
 
 button:focus {
-  outline: 1px dotted;
+  outline: rem(1) dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
@@ -461,7 +461,7 @@ html {
    */
 
 hr {
-  border-top-width: 1px;
+  border-top-width: rem(1);
 }
 
 /**

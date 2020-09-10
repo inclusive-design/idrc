@@ -7,62 +7,11 @@
 {% set pageType = 'page--home' %}
 
 {% block content %}
-    <article class="container">
+    <article>
         {% include 'partials/components/page-header.njk' %}
         {%- if sections %}
             {%- for section in sections %}
-            {% set sectionTitle = '' %}
-            {% set sectionContent = '' %}
-            {% set desktopWidth = 'section--full' %}
-            {% set imageOrderDesktop = '' %}
-
-            {% if section.title %}
-                {% set sectionTitle = section.title %}
-            {% endif %}
-            {% if section.content %}
-                {% set sectionContent = section.content %}
-            {% endif %}
-            {% if section.desktopWidth %}
-                {% set desktopWidth = 'section--' + section.desktopWidth %}
-            {% endif %}
-            {% if section.imageOrderDesktop %}
-                {% set imageOrderDesktop = section.imageOrderDesktop %}
-            {% endif %}
-        <section id="{{ sectionTitle | slug }}" class="section
-        {{ desktopWidth }}
-        {{ 'section--image' if section.image }}
-        {{ section.desktopAlignment if section.desktopAlignment }}
-        {{ 'section--bg-' + section.backgroundColor if section.backgroundColor }}
-        {{ 'section--fg-' + section.textColor if section.textColor }}"> 
-            <div class="container">
-                {% if section.image and section.imageOrder == 'start' %}
-                <figure class="{{ imageOrderDesktop }} {{ 'shadow-' + section.imageShadow if section.imageShadow else 'indigo-500' }}">
-                    <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
-                </figure>
-                {% endif %}
-                <div class="section__content">
-                    {% if section.borderColor %}<span class="hr hr--{{ section.borderColor }}"></span>{% endif %}
-                    <h2>{{ sectionTitle | safe }}</h2>
-                    {% if sectionTitle == 'Latest news' %}
-                        {% if collections.news.length %}
-                            {% for item in collections.news | limit(2) %}
-                            {% include 'partials/components/post-excerpt.njk' %}
-                            {% endfor %}
-                            <p><a href="/news/">View all</a></p>
-                        {% else %}
-                            <p>No news items found.</p>
-                        {% endif %}
-                    {% else %}
-                    {{ sectionContent | markdown | safe }}
-                    {% endif %}
-                </div>
-                {% if section.image and section.imageOrder == 'end' %}
-                <figure class="{{ imageOrderDesktop }} shadow-{{ section.imageShadow if section.imageShadow else 'indigo-500' }}">
-                    <img src="{{ section.image }}" {% if section.image2x %}srcset="{{ section.image }} 1x, {{ section.image2x }} 2x" {% endif %}alt="{{ section.imageAltText }}" width="640" height="427" />
-                </figure>
-                {% endif %}
-            </div>
-        </section>
+            {% include 'partials/components/section.njk' %}
             {%- endfor %}
         {%- endif %}
     </article>

@@ -4,36 +4,67 @@
 .banner {
   --parent-bg: var(--header-bg, $indigo-100);
 
+  align-items: center;
   background: var(--header-bg, $indigo-100);
   color: var(--header-fg, $black);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(var(--max-width) + var(--gutter));
+  padding: 0;
+  position: relative;
+  width: calc(100vw - var(--gutter));
+
+  &::after {
+    background: var(--header-bg, $indigo-100);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .page--home .banner {
   background: var(--white);
-  box-shadow: 0 0.1875rem 0.625rem rgba(0, 0, 0, 0.05);
   z-index: 1;
+
+  &::after {
+    background: var(--white);
+    box-shadow: 0 rem(3) rem(10) rgba(0, 0, 0, 0.05);
+  }
 }
 
-.banner .container {
+.banner .wrapper {
   align-items: center;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--gutter);
 }
 
 .no-js {
-  .banner > .container {
+  .banner > .wrapper {
     align-items: flex-start;
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@include breakpoint-down(md) {
   .banner--menu-visible {
     --parent-bg: var(--indigo-800);
     --header-bg: var(--indigo-800);
     --header-fg: var(--white);
     --header-accent: var(--indigo-500);
+  }
+}
+
+@include breakpoint-up(md) {
+  .banner .wrapper {
+    padding: 0;
   }
 }

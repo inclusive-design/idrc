@@ -1,3 +1,38 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
+@function rem($size) {
+  $rem: $size / 16;
+
+  @return #{$rem}rem;
+}
+
+@function breakpoint-next(
+  $name,
+  $breakpoints: $breakpoints,
+  $breakpoint-names: map-keys($breakpoints)
+) {
+  $n: index($breakpoint-names, $name);
+
+  @if not $n {
+    @error "Breakpoint `#{$name}` not found in `#{$breakpoints}`.";
+  }
+
+  @return if(
+    $n < length($breakpoint-names),
+    nth($breakpoint-names, $n + 1),
+    null
+  );
+}
+
+@function breakpoint-min($name, $breakpoints: $breakpoints) {
+  $min: map-get($breakpoints, $name);
+
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+
+  @return if($next, breakpoint-min($next, $breakpoints) - 1, null);
+}

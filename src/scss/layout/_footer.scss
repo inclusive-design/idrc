@@ -4,17 +4,37 @@
 .footer {
   background: var(--indigo-800);
   color: var(--white);
-  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto 0;
+  max-width: calc(var(--max-width) + var(--gutter));
+  padding-bottom: rem(80);
+  padding-top: rem(80);
+  position: relative;
+  width: calc(100vw - var(--gutter));
+
+  &::after {
+    background: var(--indigo-800);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
-.footer .container {
-  margin: 0 auto;
-  padding: 5rem 1.5rem;
+.footer > * {
+  flex: 0 0 100%;
+  padding: 0 calc(var(--gutter) / 2);
 }
 
 .footer .logo svg {
   fill: currentColor;
-  width: 12rem;
+  width: rem(192);
 }
 
 .footer a:hover,
@@ -28,24 +48,24 @@
 
 .footer .social,
 .footer .contact {
-  margin-top: 3rem;
+  margin-top: rem(48);
 
   &::before {
-    border-bottom: 2px solid $white;
+    border-bottom: rem(2) solid $white;
     content: "";
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: rem(8);
     width: 100%;
   }
 }
 
 .footer ul {
   list-style: none;
-  margin-top: 1.5rem;
+  margin-top: rem(24);
 }
 
 .footer li {
-  margin-bottom: 0.5rem;
+  margin-bottom: rem(8);
 }
 
 .footer .social a {
@@ -55,39 +75,32 @@
 .footer .social svg {
   display: inline;
   fill: currentColor;
-  margin-top: -0.25rem;
-  width: 1rem;
+  margin-top: rem(-4);
+  width: rem(16);
 }
 
 .footer .license-credit {
   font-size: var(--step--1);
-  margin-top: 3rem;
+  margin-top: rem(48);
 }
 
-@media screen and (min-width: 1024px) {
-  .footer .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
+@include breakpoint-up(md) {
   .footer .logo {
-    width: 100%;
+    flex: 0 0 100%;
   }
 
   .footer .social {
-    padding-right: 1.5rem;
-    width: (100% / 3);
+    flex: 0 0 calc(100% / 3);
   }
 
   .footer .contact {
     display: flex;
+    flex: 0 0 calc(100% * 2 / 3);
     flex-direction: row;
     flex-wrap: wrap;
-    width: (100% * 2 / 3);
 
     .h3 {
-      margin-bottom: 1.5rem;
+      margin-bottom: rem(24);
       width: 100%;
     }
 
@@ -95,5 +108,9 @@
       margin-top: 0;
       width: 50%;
     }
+  }
+
+  .footer .license-credit {
+    flex: 0 0 100%;
   }
 }
