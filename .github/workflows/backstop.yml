@@ -61,14 +61,13 @@ jobs:
           body="${body//$'\n'/'%0A'}"
           body="${body//$'\r'/'%0D'}"
           echo ::set-output name=body::$body
-    - name: Find Comment
+    - name: Find existing comment
       uses: peter-evans/find-comment@v1
       if: always()
       id: fc
       with:
         issue-number: ${{ github.event.number }}
         body-includes: Visual Regression Test Results
-    - run: echo ${{ steps.fc.outputs.comment-id }}
     - name: Create comment
       uses: peter-evans/create-or-update-comment@v1
       if: always()
