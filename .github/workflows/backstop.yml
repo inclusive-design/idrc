@@ -72,7 +72,6 @@ jobs:
       id: fc
       with:
         issue-number: ${{ github.event.number }}
-        comment-author: github-actions
         body-includes: Visual Regression Test Results
     - run: echo ${{ steps.fc.outputs.comment-id }}
     - name: Create comment
