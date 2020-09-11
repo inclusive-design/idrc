@@ -116,6 +116,14 @@ collections:
                   - { label: "Full Bleed", value: "full-bleed" }
                 default: ["full"]
                 required: true
+              - label: "Subsection Header Level"
+                name: "subsectionLevel"
+                widget: "select"
+                options:
+                  - { label: "3", value: "H3" }
+                  - { label: "4", value: "H4" }
+                default: ["3"]
+                required: true
       - name: history
         label: "History"
         delete: false
@@ -320,6 +328,14 @@ collections:
               - { label: "Full Bleed", value: "full-bleed" }
             default: ["full"]
             required: false
+          - label: "Subsection Header Level"
+            name: "subsectionLevel"
+            widget: "select"
+            options:
+              - { label: "3", value: "H3" }
+              - { label: "4", value: "H4" }
+            default: ["3"]
+            required: true
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "news"
     label: "News"

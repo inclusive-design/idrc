@@ -53,8 +53,13 @@ p + .h2 {
   margin-top: rem(64);
 }
 
-h3 + p {
+h3 + * {
   margin-top: rem(16);
+}
+
+* + h3,
+* + .h3 {
+  margin-top: rem(24);
 }
 
 * + ul,
