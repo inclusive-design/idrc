@@ -6,4 +6,5 @@ description: >-
   diverse and inclusive.
 tags: []
 link: https://cities.inclusivedesign.ca/
+order: 40
 ---

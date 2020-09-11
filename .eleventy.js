@@ -32,7 +32,7 @@ module.exports = eleventyConfig => {
 	const livePosts = post => post.date <= now && !post.data.draft;
 
 	eleventyConfig.addCollection('people', collection => {
-		return collection.getFilteredByGlob('src/people/*.md').sort(function(a, b) {
+		return collection.getFilteredByGlob('src/people/*.md').sort((a, b) => {
 			const nameA = a.data.title;
 			const nameB = b.data.title;
 
@@ -49,11 +49,15 @@ module.exports = eleventyConfig => {
 	});
 
 	eleventyConfig.addCollection('projects', collection => {
-		return collection.getFilteredByGlob('src/projects/*.md');
+		return [
+			...collection.getFilteredByGlob('src/projects/*.md').sort((a, b) => b.data.order - a.data.order)
+		].reverse();
 	});
 
 	eleventyConfig.addCollection('tools', collection => {
-		return collection.getFilteredByGlob('src/tools/*.md');
+		return [
+			...collection.getFilteredByGlob('src/tools/*.md').sort((a, b) => b.data.order - a.data.order)
+		].reverse();
 	});
 
 	eleventyConfig.addCollection('news', collection => {
