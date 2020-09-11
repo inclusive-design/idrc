@@ -63,6 +63,7 @@ jobs:
           echo ::set-output name=body::$body
     - name: Find Comment
       uses: peter-evans/find-comment@v1
+      if: always()
       id: fc
       with:
         issue-number: ${{ github.event.number }}
