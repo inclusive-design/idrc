@@ -54,6 +54,7 @@ jobs:
     #     printf "</details>\n\nTo review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/actions/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\nIf these changes were intended, run \`npm run backstop:test && npm run backstop:approve\` locally and commit your changes." >> backstop_data/json_report/report.md
     - name: Write report
       run: |
+        mkdir -p backstop_data/json_report/
         printf "**Visual Regression Test Results**\n\n" > backstop_data/json_report/report.md
         printf "This is a test." >> backstop_data/json_report/report.md
     - name: Retrieve comment body
