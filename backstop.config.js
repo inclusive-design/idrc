@@ -1,9 +1,10 @@
 /* eslint-disable camelcase */
 
-const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+const baseUrl = process.env.BASE_URL || 'http://host.docker.internal:3000';
 
 module.exports = {
 	id: 'backstop_default',
+	dockerCommandTemplate: 'docker run --rm -i --mount type=bind,source="{cwd}",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}',
 	viewports: [
 		{
 			label: 'phone',
@@ -27,7 +28,7 @@ module.exports = {
 		{
 			label: 'Home',
 			url: `${baseUrl}/`,
-			referenceUrl: 'https://idrc.ocadu.ca/',
+			referenceUrl: 'https://dev--idrc.netlify.app/',
 			hideSelectors: [
 				'#latest-news .section__content .entry'
 			]
@@ -35,27 +36,27 @@ module.exports = {
 		{
 			label: 'News',
 			url: `${baseUrl}/news/`,
-			referenceUrl: 'https://idrc.ocadu.ca/news/'
+			referenceUrl: 'https://dev--idrc.netlify.app/news/'
 		},
 		{
 			label: 'Ideas',
 			url: `${baseUrl}/ideas/`,
-			referenceUrl: 'https://idrc.ocadu.ca/ideas/'
+			referenceUrl: 'https://dev--idrc.netlify.app/ideas/'
 		},
 		{
 			label: 'Projects and tools',
 			url: `${baseUrl}/projects-and-tools/`,
-			referenceUrl: 'https://idrc.ocadu.ca/projects-and-tools/'
+			referenceUrl: 'https://dev--idrc.netlify.app/projects-and-tools/'
 		},
 		{
 			label: 'IDRC Consulting',
 			url: `${baseUrl}/consulting/`,
-			referenceUrl: 'https://idrc.ocadu.ca/consulting/'
+			referenceUrl: 'https://dev--idrc.netlify.app/consulting/'
 		},
 		{
 			label: 'Vision Technology Service',
 			url: `${baseUrl}/vision-technology-service/`,
-			referenceUrl: 'https://idrc.ocadu.ca/vision-technology-service/'
+			referenceUrl: 'https://dev--idrc.netlify.app/vision-technology-service/'
 		}
 	],
 	paths: {

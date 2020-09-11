@@ -5,7 +5,9 @@
   "main": "eleventy.config.js",
   "scripts": {
     "backstop:reference": "backstop reference --config=backstop.config.js",
+    "backstop:reference-docker": "backstop reference --docker --config=backstop.config.js",
     "backstop:test": "backstop test --config=backstop.config.js",
+    "backstop:test-docker": "backstop test --docker --config=backstop.config.js",
     "backstop:approve": "backstop approve --config=backstop.config.js",
     "build:site": "ELEVENTY_ENV=production eleventy",
     "build:bundle": "rollup --config",
@@ -58,6 +60,7 @@
     "@tbranyen/jsdom": "^13.0.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
+    "backstopjs": "^5.0.6",
     "clean-css": "^4.2.3",
     "cssesc": "^3.0.0",
     "dotenv": "^8.2.0",
