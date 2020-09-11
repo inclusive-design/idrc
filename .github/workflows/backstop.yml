@@ -52,9 +52,27 @@ jobs:
         printf "\n<details><summary>Scenario Details</summary>\n" >> backstop_data/json_report/report.md
         cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'map(if .status == "fail" then "❌ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a> (\(.pair.diff.misMatchPercentage)% mismatch)" else "✅ \(.pair.label) (\(.pair.viewportLabel) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" end) | join("<br />")' >> backstop_data/json_report/report.md
         printf "</details>\n\nTo review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/actions/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\nIf these changes were intended, run \`npm run backstop:test && npm run backstop:approve\` locally and commit your changes." >> backstop_data/json_report/report.md
-    - uses: machine-learning-apps/pr-comment@master
+    - name: Retrieve comment body
       if: always()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      id: retrieve-comment-body
+      run: |
+          body=$(cat backstop_data/json_report/report.md)
+          body="${body//'%'/'%25'}"
+          body="${body//$'\n'/'%0A'}"
+          body="${body//$'\r'/'%0D'}" 
+          echo ::set-output name=body::$body
+    - name: Find Comment
+      uses: peter-evans/find-comment@v1
+      id: fc
       with:
-        path: backstop_data/json_report/report.md
+        issue-number: ${{ github.event.number }}
+        comment-author: github-actions
+        body-includes: Visual Regression Test Results
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v1
+      if: always()
+      with:
+        issue-number: ${{ github.event.number }}
+        body: ${{ steps.retrieve-comment-body.outputs.body }}
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        edit-mode: replace
