@@ -29,8 +29,6 @@ jobs:
     - name: Install dependencies, generate reference images, run visual regression tests
       run: |
         npm i
-        npm i -g backstopjs
-        npm run backstop:reference
         npm run backstop:test
       env:
         CI: true
