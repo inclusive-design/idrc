@@ -47,7 +47,15 @@ module.exports = eleventyConfig => {
 			return 0;
 		  });
 	});
-	
+
+	eleventyConfig.addCollection('projects', collection => {
+		return collection.getFilteredByGlob('src/projects/*.md');
+	});
+
+	eleventyConfig.addCollection('tools', collection => {
+		return collection.getFilteredByGlob('src/tools/*.md');
+	});
+
 	eleventyConfig.addCollection('news', collection => {
 		return [
 			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))
