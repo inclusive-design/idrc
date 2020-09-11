@@ -1,6 +1,6 @@
 ---
 title: UI Options
-shortName: UIO
+shortName: false
 description: Adapting the user interface to meet diverse and variable personal needs.
 tags: []
 link: https://floeproject.org/ui-options.html
