@@ -4,7 +4,7 @@ const baseUrl = process.env.BASE_URL || 'http://host.docker.internal:3000';
 
 module.exports = {
 	id: 'backstop_default',
-	dockerCommandTemplate: "docker run --rm -i --mount type=bind,source=\"{cwd}\",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}",
+	dockerCommandTemplate: 'docker run --rm -i --mount type=bind,source="{cwd}",target=/src backstopjs/backstopjs:{version} {backstopCommand} {args}',
 	viewports: [
 		{
 			label: 'phone',
