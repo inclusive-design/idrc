@@ -33,7 +33,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }                
+                  - { label: "Black", value: "black" }
                   - { label: "Indigo 100", value: "indigo-100" }
                   - { label: "Indigo 200", value: "indigo-200" }
                   - { label: "Indigo 500", value: "indigo-500" }
@@ -50,7 +50,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }                
+                  - { label: "Black", value: "black" }
                   - { label: "Indigo 100", value: "indigo-100" }
                   - { label: "Indigo 200", value: "indigo-200" }
                   - { label: "Indigo 500", value: "indigo-500" }
@@ -67,7 +67,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }                
+                  - { label: "Black", value: "black" }
                   - { label: "Indigo 100", value: "indigo-100" }
                   - { label: "Indigo 200", value: "indigo-200" }
                   - { label: "Indigo 500", value: "indigo-500" }
@@ -87,7 +87,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "Start", value: "start" }
-                  - { label: "End", value: "end" } 
+                  - { label: "End", value: "end" }
                 default: ["start"]
                 required: false
               - label: "Image Order (Desktop)"
@@ -95,7 +95,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "Auto", value: "auto" }
-                  - { label: "Swap", value: "swap" } 
+                  - { label: "Swap", value: "swap" }
                 default: ["auto"]
                 required: false
               - label: "Image Shadow"
@@ -112,7 +112,7 @@ collections:
                 widget: "select"
                 options:
                   - { label: "Half", value: "half" }
-                  - { label: "Full", value: "full" } 
+                  - { label: "Full", value: "full" }
                   - { label: "Full Bleed", value: "full-bleed" }
                 default: ["full"]
                 required: true
@@ -158,24 +158,6 @@ collections:
           - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "coral-500"}
           - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "coral-800"}
           - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
-          - label: "Projects"
-            name: "projects"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "name", widget: "string", required: true}
-              - {label: "Short Name", name: "shortName", widget: "string", required: false}
-              - {label: "Description", name: "description", widget: "markdown", required: true}
-              - {label: "Tags", name: "tags", widget: "list", required: false}
-              - {label: "Link", name: "link", widget: "string", required: true}
-          - label: "Tools"
-            name: "tools"
-            widget: "list"
-            fields:
-              - {label: "Name", name: "name", widget: "string", required: true}
-              - {label: "Short Name", name: "shortName", widget: "string", required: false}
-              - {label: "Description", name: "description", widget: "markdown", required: true}
-              - {label: "Tags", name: "tags", widget: "list", required: false}
-              - {label: "Link", name: "link", widget: "string", required: true}
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
@@ -196,7 +178,7 @@ collections:
         widget: "select"
         options:
           - { label: "White", value: "white" }
-          - { label: "Black", value: "black" }                
+          - { label: "Black", value: "black" }
           - { label: "Indigo 100", value: "indigo-100" }
           - { label: "Indigo 200", value: "indigo-200" }
           - { label: "Indigo 500", value: "indigo-500" }
@@ -213,7 +195,7 @@ collections:
         widget: "select"
         options:
           - { label: "White", value: "white" }
-          - { label: "Black", value: "black" }                
+          - { label: "Black", value: "black" }
           - { label: "Indigo 100", value: "indigo-100" }
           - { label: "Indigo 200", value: "indigo-200" }
           - { label: "Indigo 500", value: "indigo-500" }
@@ -230,7 +212,7 @@ collections:
         widget: "select"
         options:
           - { label: "White", value: "white" }
-          - { label: "Black", value: "black" }                
+          - { label: "Black", value: "black" }
           - { label: "Indigo 100", value: "indigo-100" }
           - { label: "Indigo 200", value: "indigo-200" }
           - { label: "Indigo 500", value: "indigo-500" }
@@ -254,7 +236,7 @@ collections:
             widget: "select"
             options:
               - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }                
+              - { label: "Black", value: "black" }
               - { label: "Indigo 100", value: "indigo-100" }
               - { label: "Indigo 200", value: "indigo-200" }
               - { label: "Indigo 500", value: "indigo-500" }
@@ -271,7 +253,7 @@ collections:
             widget: "select"
             options:
               - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }                
+              - { label: "Black", value: "black" }
               - { label: "Indigo 100", value: "indigo-100" }
               - { label: "Indigo 200", value: "indigo-200" }
               - { label: "Indigo 500", value: "indigo-500" }
@@ -288,7 +270,7 @@ collections:
             widget: "select"
             options:
               - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }                
+              - { label: "Black", value: "black" }
               - { label: "Indigo 100", value: "indigo-100" }
               - { label: "Indigo 200", value: "indigo-200" }
               - { label: "Indigo 500", value: "indigo-500" }
@@ -308,7 +290,7 @@ collections:
             widget: "select"
             options:
               - { label: "Start", value: "start" }
-              - { label: "End", value: "end" } 
+              - { label: "End", value: "end" }
             default: ["start"]
             required: false
           - label: "Image Order (Desktop)"
@@ -316,7 +298,7 @@ collections:
             widget: "select"
             options:
               - { label: "Auto", value: "auto" }
-              - { label: "Swap", value: "swap" } 
+              - { label: "Swap", value: "swap" }
             default: ["auto"]
             required: false
           - label: "Image Shadow"
@@ -334,7 +316,7 @@ collections:
             options:
               - { label: "Third", value: "third" }
               - { label: "Half", value: "half" }
-              - { label: "Full", value: "full" } 
+              - { label: "Full", value: "full" }
               - { label: "Full Bleed", value: "full-bleed" }
             default: ["full"]
             required: false
@@ -391,16 +373,46 @@ collections:
       - {label: "Job Title", name: "job", widget: "string"}
       - {label: "Pronouns", name: "pronouns", widget: "string"}
       - {label: "Email Address", name: "email", widget: "string"}
-      - {label: "Personal Website", name: "website", widget: "string", required: false, hint: "A link to this person's personal website."}      
+      - {label: "Personal Website", name: "website", widget: "string", required: false, hint: "A link to this person's personal website."}
       - {label: "Twitter Username", name: "twitter", widget: "string", required: false, hint: "This person's twitter username, e.g. '@username'."}
-      - {label: "Github Profile", name: "github", widget: "string", required: false, hint: "A link to this person's profile on GitHub."}      
-      - {label: "LinkedIn Profile", name: "linkedin", widget: "string", required: false, hint: "A link to this person's profile on LinkedIn."}      
+      - {label: "Github Profile", name: "github", widget: "string", required: false, hint: "A link to this person's profile on GitHub."}
+      - {label: "LinkedIn Profile", name: "linkedin", widget: "string", required: false, hint: "A link to this person's profile on LinkedIn."}
       - {label: "Projects", name: "projects", widget: "list", allow_add: true, hint: "A comma-separated list of projects on which this person has worked."}
       - {label: "Interests", name: "interests", widget: "text", required: false}
       - {label: "Bio", name: "body", widget: "markdown"}
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "src/projects"
+    slug: "{{slug}}"
+    preview_path: "/projects/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Short Name", name: "shortName", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Link", name: "link", widget: "string", required: true}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "tools"
+      label: "Tools"
+      label_singular: "Tool"
+      folder: "src/tools"
+      slug: "{{slug}}"
+      preview_path: "/tools/{{slug}}"
+      create: true
+      fields:
+        - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
+        - {label: "Title", name: "title", widget: "string", required: true}
+        - {label: "Short Name", name: "shortName", widget: "string", required: false}
+        - {label: "Description", name: "description", widget: "markdown", required: true}
+        - {label: "Tags", name: "tags", widget: "list", required: false}
+        - {label: "Link", name: "link", widget: "string", required: true}
+        - {label: "Body", name: "body", widget: "markdown", required: false}
   - label: "Globals"
     name: "globals"
     files:

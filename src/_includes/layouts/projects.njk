@@ -15,18 +15,18 @@
                     <span class="hr"></span>
                     <h2>Projects</h2>
                     <div class="projects">
-                        {% for project in projects %}
+                        {% for project in collections.projects %}
                         <div class="project">
-                            <h3>{{ project.name }}{{ " (" + project.shortName + ")" if project.shortName }}</h3>
-                            {{ project.description | markdown | safe }}
-                            {% if project.tags.length > 0 %}
+                            <h3>{{ project.data.title }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
+                            {{ project.data.description | markdown | safe }}
+                            {% if project.data.tags.length > 0 %}
                             <p class="tags">
-                                {% for tag in project.tags %}
+                                {% for tag in project.data.tags %}
                                 <span class="tag">{{ tag | safe }}</span>
                                 {% endfor %}
                             </p>
                             {% endif %}
-                            <p class="project__link"><a rel="external" href="{{ project.link }}">Visit {{ project.shortName if project.shortName else project.name }} website</a></p>
+                            <p class="project__link"><a rel="external" href="{{ project.data.link }}">Visit {{ project.data.shortName if project.data.shortName else project.data.title }} website</a></p>
                         </div>
                         {% endfor %}
                     </div>
@@ -39,18 +39,18 @@
                     <span class="hr"></span>
                     <h2>Tools</h2>
                     <div class="tools">
-                        {% for tool in tools %}
+                        {% for tool in collections.tools %}
                         <div class="tool">
-                            <h3>{{ tool.name }}{{ " (" + tool.shortName + ")" if tool.shortName }}</h3>
-                            {{ tool.description | markdown | safe }}
-                            {% if tool.tags.length > 0 %}
+                            <h3>{{ tool.data.title }}{{ " (" + tool.data.shortName + ")" if tool.data.shortName }}</h3>
+                            {{ tool.data.description | markdown | safe }}
+                            {% if tool.data.tags.length > 0 %}
                             <p class="tags">
-                                {% for tag in tool.tags %}
+                                {% for tag in tool.data.tags %}
                                 <span class="tag">{{ tag | safe }}</span>
                                 {% endfor %}
                             </p>
                             {% endif %}
-                            <p class="tool__link"><a rel="external" href="{{ tool.link }}">Visit {{ tool.shortName if tool.shortName else tool.name }} website</a></p>
+                            <p class="tool__link"><a rel="external" href="{{ tool.data.link }}">Visit {{ tool.data.shortName if tool.data.shortName else tool.data.title }} website</a></p>
                         </div>
                         {% endfor %}
                     </div>
