@@ -99,7 +99,9 @@ main > article {
   padding-top: rem(80);
 }
 
-.section--full {
+.section--full,
+.section--half,
+.section--third {
   flex: 0 0 100%;
 }
 
@@ -166,10 +168,7 @@ main > article {
   }
 
   .section--half {
-    display: inline-block;
     flex: 0 0 50%;
-    margin: 0 auto;
-    max-width: rem(640);
   }
 
   .section--full .subsection {
@@ -190,9 +189,7 @@ main > article {
   }
 
   .section--third {
-    display: inline-block;
     flex: 0 0 calc(100% / 3);
-    margin: 0 auto;
   }
 
   .section--image .wrapper {
