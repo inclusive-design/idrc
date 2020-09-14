@@ -1,5 +1,5 @@
 ---
 title: Philip Tchernavskij
-job: Research Fellow
+job: Postdoctoral Researcher
 email: ptchernavskij@ocadu.ca
 ---

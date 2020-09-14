@@ -1,5 +1,5 @@
 ---
 title: Caren Watkins
-job: Inclusive Designer
+job: SNOW Coordinator, Inclusive Designer
 email: cwatkins@ocadu.ca
 ---
