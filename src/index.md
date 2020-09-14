@@ -4,12 +4,15 @@ title: Inclusive Design Research Centre
 intro: >
   An international community of open source developers, designers, researchers,
   educators and co-designers who work together to **proactively ensure that
-  emerging technology and practices are designed inclusively**. 
+  emerging technology and practices are designed inclusively**.
 
 
   Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates
   the [Inclusive Design Institute](https://inclusivedesign.ca/). Both were
   founded by Dr. Jutta Treviranus with the help of her team and community.
+
+
+  [Learn more about us](/about/)
 headerBgColor: indigo-100
 sections:
   - image2x: /media/what-we-do@2x.jpg
@@ -49,10 +52,8 @@ sections:
       to ability, language, culture, gender, age, and other forms of human
       difference.
 
-      ### Learn more
 
-      [The three dimensions of inclusive
-      design](https://medium.com/fwd50/the-three-dimensions-of-inclusive-design-part-one-103cad1ffdc2)
+      [Learn more about our philosophy](/about/philosophy/)
     backgroundColor: blue-500
     borderColor: white
     textColor: black
@@ -73,7 +74,7 @@ sections:
     content: >-
       ### [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
 
-      An open, evolving guide to the process of inclusive design. 
+      An open, evolving guide to the process of inclusive design.
 
       ### [Inclusive Learning Design
       Handbook](https://handbook.floeproject.org/)
