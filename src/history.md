@@ -2,10 +2,10 @@
 layout: layouts/history.njk
 title: History
 permalink: /about/history/
-eleventyNavigation:
-  key: History
-  parent: About
-  order: 3
+# eleventyNavigation:
+#   key: History
+#   parent: About
+#   order: 3
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black

@@ -1,5 +1,5 @@
 ---
 title: Gloria Bernal Gomez
-job: Administrative Assistant
+job: Assistant IDRC & Vision Technology Service
 email: gbernalgomez@ocadu.ca
 ---

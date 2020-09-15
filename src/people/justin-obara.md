@@ -1,5 +1,5 @@
 ---
 title: Justin Obara
-job: Inclusive Developer
+job: Senior Inclusive Developer
 email: jobara@ocadu.ca
 ---
