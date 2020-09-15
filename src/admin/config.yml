@@ -326,7 +326,7 @@ collections:
     label_singular: "News Item"
     folder: "src/news"
     slug: "{{slug}}"
-    preview_path: "/news/{{slug}}"
+    preview_path: "/about/news/{{slug}}"
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--news.njk"}
