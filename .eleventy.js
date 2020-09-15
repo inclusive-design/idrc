@@ -2,6 +2,7 @@ const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
 const eleventyPWA = require('eleventy-plugin-pwa');
+const eleventySharp = require('eleventy-plugin-sharp');
 const fs = require('fs');
 
 const htmlMinTransform = require('./src/transforms/html-min.js');
@@ -85,6 +86,10 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPlugin(errorOverlay);
 	eleventyConfig.addPlugin(eleventyPWA, workboxOptions);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
+	eleventyConfig.addPlugin(eleventySharp({
+		urlPath: '/media',
+		outputDir: 'dist/media/'
+	}));
 
 	// Transforms.
 	eleventyConfig.addTransform('htmlmin', htmlMinTransform);

@@ -42,19 +42,10 @@
   }
 
   .entry .thumbnail {
-    background-position: center;
-    background-size: cover;
     border-top: rem(2) solid var(--indigo-500);
-    height: 0;
+    height: auto;
     margin-bottom: rem(28);
-    overflow: hidden;
-    padding-top: (2 / 3 * 100%);
-  }
-
-  .entry .thumbnail--placeholder {
-    background: var(--yellow-500);
-    background-repeat: no-repeat;
-    background-size: rem(40) rem(51.0333);
+    width: 100%;
   }
 }
 
