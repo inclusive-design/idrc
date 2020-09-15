@@ -1,5 +1,5 @@
 ---
 title: Vera Roberts
-job: Manager
+job: Senior Manager, Research, Consulting & Projects
 email: vroberts@ocadu.ca
 ---
