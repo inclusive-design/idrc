@@ -34,11 +34,11 @@
         {% endif %}
         <script>document.documentElement.classList.remove('no-js');</script>
         <script type="text/javascript" src="/js/idrc.js" defer></script>
+        {% if global.context == 'production' %}
         <script>
         if ("serviceWorker" in navigator)
             navigator.serviceWorker.register("/sw.js");
         </script>
-        {% if global.context == 'production' %}
         <script type="text/javascript">
         var _paq = window._paq || [];
         _paq.push(['trackPageView']);
