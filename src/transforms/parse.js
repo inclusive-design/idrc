@@ -68,8 +68,8 @@ module.exports = (value, outputPath) => {
 				// of the content between this <h2> and the next
 				const getContent = element => {
 					const elems = [];
-					const headings = ['H2', 'H3', 'H4'];
-					while (element.nextElementSibling && !headings.includes(element.nextElementSibling.tagName)) {
+					const headings = new Set(['H2', 'H3', 'H4']);
+					while (element.nextElementSibling && !headings.has(element.nextElementSibling.tagName)) {
 						elems.push(element.nextElementSibling);
 						element = element.nextElementSibling;
 					}
