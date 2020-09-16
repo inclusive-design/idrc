@@ -41,6 +41,7 @@ sections:
         ### Audits
 
         Website accessibility evaluations are available for web sites (including web applications and mobile web apps) to check conformance with the Web Content Accessibility Guidelines (WCAG) 2.0.
+        
 
         Conforming to WCAG 2.0 is key to ensuring usability by diverse users and for meeting the various legislative requirements that are emerging around the world:
 
