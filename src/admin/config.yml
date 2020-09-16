@@ -120,9 +120,10 @@ collections:
                 name: "subsectionLevel"
                 widget: "select"
                 options:
+                  - { label: "None", value: "0"}
                   - { label: "3", value: "H3" }
                   - { label: "4", value: "H4" }
-                default: ["3"]
+                default: ["0"]
                 required: true
       - name: history
         label: "History"
@@ -332,9 +333,10 @@ collections:
             name: "subsectionLevel"
             widget: "select"
             options:
+              - { label: "None", value: "0"}
               - { label: "3", value: "H3" }
               - { label: "4", value: "H4" }
-            default: ["3"]
+            default: ["0"]
             required: true
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "news"

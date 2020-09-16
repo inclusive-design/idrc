@@ -26,6 +26,7 @@ sections:
     desktopWidth: half
   - title: Services
     borderColor: yellow-500
+    subsectionLevel: 3
     content: >-
       ### Assistive devices program
 
