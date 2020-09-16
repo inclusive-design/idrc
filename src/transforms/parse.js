@@ -67,7 +67,6 @@ module.exports = (value, outputPath) => {
 				// Function to create a node list
 				// of the content between this <h2> and the next
 				const getContent = element => {
-					const headingTag = element.tagName;
 					const elems = [];
 					const headings = (element.tagName === 'H3') ? new Set(['H2', 'H3']) : new Set(['H2', 'H3', 'H4']);
 					while (element.nextElementSibling && !headings.has(element.nextElementSibling.tagName)) {
