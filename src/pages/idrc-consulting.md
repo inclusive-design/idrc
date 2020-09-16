@@ -60,5 +60,11 @@ sections:
         Consultations, website evaluations, and accessibility training are completed by the IDRC's own experts, all of whom possess years of experience in web and office document accessibility.
 
 
-        To enquire about any of our services or to receive a free quote, please [contact the IDRC Consulting Coordinator](mailto:lliskovoi@ocadu.ca).
+        To enquire about any of our services or to receive a free quote, please contact us.
+    
+
+
+        [**Contact us about consulting and training**](mailto:vroberts@ocadu.ca)
+
+        [**Contact us about audits**](mailto:lliskovoi@ocadu.ca)
 ---
