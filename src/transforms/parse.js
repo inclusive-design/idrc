@@ -26,7 +26,7 @@ module.exports = (value, outputPath) => {
 				const file = image.getAttribute('src');
 
 				if (!file.includes('http')) {
-					const dimensions = getSize('src' + file);
+					const dimensions = getSize('dist' + file);
 
 					image.setAttribute('width', dimensions.width);
 					image.setAttribute('height', dimensions.height);
