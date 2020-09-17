@@ -98,6 +98,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "d3-selection": "^2.0.0",
     "eleventy-plugin-pwa": "^1.0.8",
+    "eleventy-plugin-sharp": "0.0.3",
     "glob": "^7.1.6"
   }
 }
