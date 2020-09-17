@@ -101,7 +101,8 @@ main > article {
 
 .section--full,
 .section--half,
-.section--third {
+.section--third,
+.section--two-thirds {
   flex: 0 0 100%;
 }
 
@@ -110,7 +111,6 @@ main > article {
 }
 
 .section--full-bleed {
-  flex: 0 0 100%;
   position: relative;
 
   &::after {
@@ -173,6 +173,10 @@ main > article {
 
   .section--third {
     flex: 0 0 calc(100% / 3);
+  }
+
+  .section--two-thirds {
+    flex: 0 0 calc(100% * 2 / 3);
   }
 
   .section--image .wrapper {

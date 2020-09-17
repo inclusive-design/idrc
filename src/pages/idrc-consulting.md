@@ -13,6 +13,7 @@ sections:
     - title: Our offerings
       borderColor: coral-500
       subsectionLevel: 4
+      desktopWidth: two-thirds
       content: >
         ### Consulting
 
@@ -55,7 +56,8 @@ sections:
     - title: Contact IDRC Consulting
       backgroundColor: indigo-200
       borderColor:
-      desktopWidth: full-bleed
+      desktopWidth: two-thirds
+      fullBleed: true
       desktopAlignment: center
       content: >
         Consultations, website evaluations, and accessibility training are completed by the IDRC's own experts, all of whom possess years of experience in web and office document accessibility.

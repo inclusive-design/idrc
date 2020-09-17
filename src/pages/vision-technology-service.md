@@ -110,6 +110,7 @@ sections:
       You can contact Vision Technology Services through email at
       [vts@ocadu.ca](mailto:vts@ocadu.ca), or by telephone at (416) 977-6000 ext
       3967.
-    desktopWidth: full-bleed
+    desktopWidth: full
+    fullBleed: true
     desktopAlignment: center
 ---
