@@ -59,7 +59,7 @@ h3 + * {
 
 * + h3,
 * + .h3 {
-  margin-top: rem(24);
+  margin-top: rem(60);
 }
 
 * + ul,
@@ -67,17 +67,21 @@ h3 + * {
   margin-top: rem(24);
 }
 
-h4 + p,
-h4 + ul,
-h4 + ol,
-.h4 + p,
-.h4 + ul,
-.h4 + ol {
-  margin-top: rem(12);
+h4 + *,
+.h4 + * {
+  margin-top: rem(24);
 }
 
-.h3 + p {
-  margin-top: rem(4);
+h3 + *,
+.h3 + * {
+  margin-top: rem(40);
+}
+
+h3 + h4,
+h3 + .h4,
+.h3 + h4,
+.h3 + .h4 {
+  margin-top: rem(36);
 }
 
 @include breakpoint-up(md) {
