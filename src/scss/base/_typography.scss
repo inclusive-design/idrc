@@ -67,11 +67,6 @@ h3 + * {
   margin-top: rem(24);
 }
 
-h4 + *,
-.h4 + * {
-  margin-top: rem(24);
-}
-
 h3 + *,
 .h3 + * {
   margin-top: rem(40);
@@ -82,6 +77,11 @@ h3 + .h4,
 .h3 + h4,
 .h3 + .h4 {
   margin-top: rem(36);
+}
+
+h4 + *,
+.h4 + * {
+  margin-top: rem(24);
 }
 
 @include breakpoint-up(md) {

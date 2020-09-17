@@ -106,8 +106,14 @@ main > article {
   flex: 0 0 100%;
 }
 
-.section--full .subsection + .subsection {
+.section--full[data-subsection-level="3"] .subsection + .subsection,
+.section--two-thirds[data-subsection-level="3"] .subsection + .subsection {
   margin-top: rem(24);
+}
+
+.section--full[data-subsection-level="4"] .subsection + .subsection,
+.section--two-thirds[data-subsection-level="4"] .subsection + .subsection {
+  margin-top: rem(40);
 }
 
 .section--full-bleed {
