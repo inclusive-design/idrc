@@ -34,9 +34,14 @@ module.exports = {
 			]
 		},
 		{
+			label: 'About',
+			url: `${baseUrl}/about/`,
+			referenceUrl: 'https://dev--idrc.netlify.app/about/'
+		},
+		{
 			label: 'News',
-			url: `${baseUrl}/news/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/news/'
+			url: `${baseUrl}/about/news/`,
+			referenceUrl: 'https://dev--idrc.netlify.app/about/news/'
 		},
 		{
 			label: 'Ideas',
