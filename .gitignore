@@ -113,6 +113,10 @@ src/_includes/static
 # Local Netlify folder
 .netlify
 
+# Cypress data
+cypress/screenshots
+cypress/videos
+
 # Backstop data
 backstop_data/*
 !backstop_data/engine_scripts
