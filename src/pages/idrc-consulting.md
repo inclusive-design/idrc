@@ -10,18 +10,18 @@ headerTextColor: black
 intro: >
     We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
 sections:
-    - title: Our offerings
+    - title: Consulting
       borderColor: coral-500
-      subsectionLevel: 4
       desktopWidth: two-thirds
       content: >
-        ### Consulting
-
         The best time to get accessibility advice on your project is right from the start! But whether you are at the wireframe stage, have a site in development, or are implementing the changes recommended by an audit, we can guide you in creating an accessible website at any time in your design and development process.
 
-        ### Training
-
-        #### Website accessibility
+    - title: Training
+      borderColor: coral-500
+      subsectionLevel: 3
+      desktopWidth: two-thirds
+      content: >
+        ### Website accessibility
 
         Group training is available for both technical and non-technical audiences. Training sessions cover:
 
@@ -35,14 +35,16 @@ sections:
 
         - Authoring tool support for WCAG 2.0.
 
-        #### Office document accessibility
+        ### Office document accessibility
 
         Group training is also available on creating accessible office documents (Word, PDF) with Microsoft Word and Adobe Acrobat. This non-technical training is a companion to the free Accessible Digital Office Document (ADOD) resource that the IDRC maintains.
 
-        ### Audits
-
+    - title: Audits
+      borderColor: coral-500
+      desktopWidth: two-thirds
+      content: >
         Website accessibility evaluations are available for web sites (including web applications and mobile web apps) to check conformance with the Web Content Accessibility Guidelines (WCAG) 2.0.
-        
+
 
         Conforming to WCAG 2.0 is key to ensuring usability by diverse users and for meeting the various legislative requirements that are emerging around the world:
 
@@ -64,7 +66,7 @@ sections:
 
 
         To enquire about any of our services or to receive a free quote, please contact us.
-    
+
 
 
         [**Contact us about consulting and training**](mailto:vroberts@ocadu.ca)
