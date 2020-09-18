@@ -20,3 +20,6 @@ jobs:
         CI: true
     - name: Run Cypress
       uses: cypress-io/github-action@v2
+      with:
+        start: npm start
+        wait-on: 'http://localhost:3000'
