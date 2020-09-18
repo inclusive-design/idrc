@@ -19,7 +19,7 @@ function backstopExec(payload, refreshReferences = true) {
 		const configuration = config;
 		// Config.scenarios = payload.scenarios
 		config.paths.html_report = `cypress/reports/backstop/${payload.folder}/html_report`;
-		config.paths.ci_report = `cypress/reports/backstop/${payload.folder}/ci_report`;
+		config.paths.json_report = `cypress/reports/backstop/${payload.folder}/json_report`;
 
 		if (refreshReferences) {
 			backstop('reference', {config: configuration, docker: true}).then(() => {
