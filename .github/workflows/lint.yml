@@ -14,7 +14,8 @@ jobs:
     name: Lint JavaScript and SCSS
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Cache node modules
       uses: actions/cache@v1
       with:
