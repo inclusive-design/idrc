@@ -1,5 +1,3 @@
-/* global describe, cy, it */
-
 describe('Mobile menu', () => {
 	it('Mobile menu expands when clicked', () => {
 		cy.visit('http://localhost:3000');
