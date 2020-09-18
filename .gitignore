@@ -116,6 +116,7 @@ src/_includes/static
 # Cypress data
 cypress/screenshots
 cypress/videos
+cypress/reports
 
 # Backstop data
 backstop_data/*
