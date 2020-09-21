@@ -3,8 +3,6 @@ title: "Inclusive Design: The Bell Curve, the Starburst and the Virtuous Tornado
 author: Jutta Treviranus
 date: 2019-04-21
 thumbnailImage: /media/exploding-star.png
-tags:
-    - featured
 ---
 As the director of the [Inclusive Design Research Centre](https://idrc.ocadu.ca/), I have frequently been asked how inclusive design relates to data and evidence. The answer is complex and involves theorists from the 1800’s, how their theories have been applied to people, and phenomena that permeate many natural spheres. Let me explain…
 
