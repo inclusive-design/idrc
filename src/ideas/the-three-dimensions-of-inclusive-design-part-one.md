@@ -6,11 +6,13 @@ thumbnailImage: /media/handprints.jpg
 tags:
 	- featured
 ---
+![](/media/handprints.jpg 'Handprints')
+
 With the help of my team at the [Inclusive Design Research Centre](https://idrc.ocadu.ca/) and our amazing global community I have tried to develop a guiding framework for inclusive design, suitable for a digitally transformed and increasingly connected context. It doesn’t lay out testable criteria, or an ordered checklist, because inclusive design is about diversity, variability and complexity.
 
-![](/media/trellis.jpg 'The framework is a trellis that supports organic growth')
-
 It is not a set of static structures that assist in engineering a solution, because the complex adaptive system that is our current society is a domain where solutions can no longer be engineered but approaches must be grown, and investment in a fix for some creates greater barriers for others. The framework is intended to be more like a trellis that supports organic growth and provides a foundation from which to innovate and evolve. It has emerged, evolved, been tested, and refined over the 25-year history of our centre, in dozens of [global initiatives](https://idrc.ocadu.ca/research-and-development).
+
+![](/media/trellis.jpg 'The framework is a trellis that supports organic growth')
 
 The three dimensions of the framework are:
 
