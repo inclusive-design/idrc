@@ -98,6 +98,23 @@ main > article {
   padding-top: rem(100);
 }
 
+.section:not([class*="section--bg"]) {
+  padding-top: rem(100);
+}
+
+.section + .section:not([class*="section--bg"]) {
+  padding-bottom: rem(100);
+  padding-top: 0;
+}
+
+.section--image:not([class*="section--bg"]) {
+  padding-bottom: rem(124);
+}
+
+.section[class*="section--bg"] + .section:not([class*="section--bg"]) {
+  padding-top: rem(100);
+}
+
 .section--full,
 .section--half,
 .section--third,
@@ -138,7 +155,7 @@ main > article {
 
 .section--image figure {
   box-shadow: rem(24) rem(24) var(--indigo-500);
-  margin-bottom: rem(80);
+  margin-bottom: rem(100);
 }
 
 .section--image figure.shadow-indigo-500 {
@@ -199,6 +216,7 @@ main > article {
   }
 
   .section--image figure {
+    margin-bottom: rem(24);
     margin-left: rem(-24);
     order: 0;
   }
