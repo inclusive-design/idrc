@@ -1,7 +1,7 @@
 ---
-title: Get Involved
+title: Connect
 eleventyNavigation:
-    key: Get Involved
+    key: Connect
     order: 7
 headerBgColor: blue-200
 headerBorderColor: blue-500
@@ -11,21 +11,22 @@ sections:
       subsectionLevel: 3
       desktopWidth: two-thirds
       content: >-
-        ### [Open Meetings](https://wiki.fluidproject.org/display/fluid/Community+workshops+and+design+crits)
+       ### [General inquiry](mailto:community@idrc.ocadu.ca)
 
-        These are meetings where everyone is welcome to join. There are two types – community workshops, and design crits.
-
-        ### [With a specific project team](/projects-and-tools/)
-
-        Connect with us about a specific project.
+        Email our Community Embassadors at [community@idrc.ocadu.ca](mailto:community@idrc.ocadu.ca).
 
         ### [With a specific person](/about/team/)
 
         Connect with a specific team member at the IDRC.
 
-        ### [For a general inquiry](mailto:community@idrc.ocadu.ca)
+        ### [With a specific project team](/projects-and-tools/)
 
-        Email our Community Embassadors at [community@idrc.ocadu.ca](mailto:community@idrc.ocadu.ca).
+        Connect with us about a specific project.
+
+        ### [Open Meetings](https://wiki.fluidproject.org/display/fluid/Community+workshops+and+design+crits)
+
+        These are meetings where everyone is welcome to join. There are two types – community workshops, and design crits.
+
     - title: With the Inclusive Design Community
       subsectionLevel: 3
       desktopWidth: two-thirds

@@ -115,10 +115,10 @@ sections:
     imageAltText: 'An IDRC team member and visitor smiling and chatting about a project demonstration at an event.'
     image: /media/job-postings.jpg
     imageShadow: yellow-500
-  - title: Get involved
+  - title: Connect
     content: >-
-      [Find out how you can get involved in our
-      work](/get-involved/)
+      [Find out how you can connect with our
+      work](/connect/)
     backgroundColor: indigo-200
     borderColor: null
     textColor: black
