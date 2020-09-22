@@ -112,7 +112,7 @@ main > article {
 }
 
 .section[class*="section--bg"] + .section:not([class*="section--bg"]) {
-  padding-top: rem(100);
+  padding-top: rem(50);
 }
 
 .section--full,
@@ -187,6 +187,10 @@ main > article {
   .section.center .hr {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .section[class*="section--bg"] + .section:not([class*="section--bg"]) {
+    padding-top: rem(100);
   }
 
   .section--half {
