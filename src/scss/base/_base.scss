@@ -87,7 +87,7 @@ blockquote {
   }
 
   li + li {
-    margin-top: rem(14);
+    margin-top: rem(20);
   }
 
   ul li::before {
@@ -99,10 +99,12 @@ blockquote {
     margin: rem(3) rem(8) rem(3) 0;
     width: rem(6);
   }
+}
 
-  div + p {
-    margin-top: rem(24);
-  }
+* + p,
+* + ul,
+* + ol {
+  margin-top: rem(20);
 }
 
 @each $name, $color in $colors {

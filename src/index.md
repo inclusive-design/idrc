@@ -17,7 +17,8 @@ headerBgColor: indigo-100
 sections:
   - image2x: /media/what-we-do@2x.jpg
     imageOrderDesktop: swap
-    desktopWidth: full-bleed
+    desktopWidth: full
+    fullBleed: true
     imageOrder: start
     backgroundColor: indigo-800
     textColor: white
@@ -57,7 +58,8 @@ sections:
     backgroundColor: blue-500
     borderColor: white
     textColor: black
-    desktopWidth: full-bleed
+    desktopWidth: full
+    fullBleed: true
   - image2x: /media/projects-and-tools@2x.jpg
     imageOrderDesktop: swap
     desktopWidth: full
@@ -120,7 +122,8 @@ sections:
     backgroundColor: indigo-200
     borderColor: null
     textColor: black
-    desktopWidth: full-bleed
+    desktopWidth: two-thirds
+    fullBleed: true
     desktopAlignment: center
 ---
 ***
