@@ -1,5 +1,6 @@
 {% set sectionTitle = '' %}
 {% set sectionContent = '' %}
+{% set subsectionLevel = 0 %}
 {% set desktopWidth = 'section--full' %}
 {% set imageOrderDesktop = '' %}
 
@@ -8,6 +9,9 @@
 {% endif %}
 {% if section.content %}
     {% set sectionContent = section.content %}
+{% endif %}
+{% if section.subsectionLevel %}
+    {% set subsectionLevel = section.subsectionLevel %}
 {% endif %}
 {% if section.desktopWidth %}
     {% set desktopWidth = 'section--' + section.desktopWidth %}
@@ -19,8 +23,10 @@
 {{ desktopWidth }}
 {{ 'section--image' if section.image }}
 {{ section.desktopAlignment if section.desktopAlignment }}
+{{ 'section--full-bleed' if section.fullBleed }}
 {{ 'section--bg-' + section.backgroundColor if section.backgroundColor }}
-{{ 'section--fg-' + section.textColor if section.textColor }}">
+{{ 'section--fg-' + section.textColor if section.textColor }}"
+data-subsection-level="{{ subsectionLevel }}">
     <div class="wrapper">
         {% if section.image and section.imageOrder == 'start' %}
         <figure class="{{ imageOrderDesktop }} {{ 'shadow-' + section.imageShadow if section.imageShadow else 'indigo-500' }}">
