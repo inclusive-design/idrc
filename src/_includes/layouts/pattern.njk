@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-ca" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		{% include "partials/global/meta-info.njk" %}
+		<link rel="stylesheet" type="text/css" href="/css/idrc.css" />
+		<link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href="/images/favicon.png" />
+		<link rel="apple-touch-icon" href="/images/icon-192.png">
+		<link rel="manifest" href="/manifest.webmanifest">
+		<script>document.documentElement.classList.remove('no-js');</script>
+		<script type="text/javascript" src="/js/idrc.js" defer></script>
+		{% if global.context == 'production' %}
+		<script>
+		if ("serviceWorker" in navigator)
+			navigator.serviceWorker.register("/sw.js");
+		</script>
+		<script type="text/javascript">
+		var _paq = window._paq || [];
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://analytics.inclusivedesign.ca/";
+			_paq.push(['setTrackerUrl', u+'matomo.php']);
+			_paq.push(['setSiteId', '3']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		})();
+		</script>
+		{% endif %}
+		{% block head %}
+		{% endblock %}
+	</head>
+	<body class="pattern">
+		<main>
+			<article>
+				<div class="content">
+					<div class="wrapper">
+					{% block content %}
+					{{ content | safe }}
+					{% endblock content %}
+					</div>
+				</div>
+				{% include 'partials/components/pattern-navigation.njk' %}
+			</article>
+		</main>
+	</body>
+</html>

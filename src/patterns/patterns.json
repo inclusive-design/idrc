@@ -1,0 +1,8 @@
+{
+	"layout": "layouts/pattern.njk",
+	"permalink": "/patterns/{{ title | slug }}/",
+	"secondaryNavigation": {
+		"key": "Patterns",
+		"label": "Patterns"
+	}
+}
