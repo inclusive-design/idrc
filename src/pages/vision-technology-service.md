@@ -15,7 +15,7 @@ sections:
       Technology Vision Aids for the [Assistive Devices
       Program](https://www.ontario.ca/page/assistive-devices-program), a funding
       program run by the Ontario Ministry of Health and Long-Term Care.
-    desktopWidth: half
+    desktopWidth: two-thirds
   - title: Who's eligible
     borderColor: yellow-500
     content: >
@@ -23,7 +23,7 @@ sections:
       significantly impairing their ability to perform common, regular, every
       day, age-related visual tasks (i.e. corrected vision in the range of
       20/70).
-    desktopWidth: half
+    desktopWidth: two-thirds
   - title: Services
     borderColor: yellow-500
     subsectionLevel: 3
@@ -92,7 +92,7 @@ sections:
 
       3. Email or fax it back to us at [vts@ocadu.ca](mailto:vts@ocadu.ca) or
       416-977-9844
-    desktopWidth: full
+    desktopWidth: two-thirds
   - title: Join our mailing list to stay updated
     borderColor: yellow-500
     content: |
@@ -102,7 +102,7 @@ sections:
       - New services and opportunities
 
       [Join our mailing list](mailto:vts@ocadu.ca)
-    desktopWidth: full
+    desktopWidth: two-thirds
   - title: Contact Vision Technology Service
     borderColor: null
     backgroundColor: indigo-200
@@ -110,7 +110,7 @@ sections:
       You can contact Vision Technology Services through email at
       [vts@ocadu.ca](mailto:vts@ocadu.ca), or by telephone at (416) 977-6000 ext
       3967.
-    desktopWidth: full
+    desktopWidth: two-thirds
     fullBleed: true
     desktopAlignment: center
 ---
