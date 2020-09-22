@@ -8,6 +8,7 @@ headerBorderColor: blue-500
 headerTextColor: black
 sections:
     - title: With the IDRC
+      subsectionLevel: 3
       content: >-
         ### [Open Meetings](https://wiki.fluidproject.org/display/fluid/Community+workshops+and+design+crits)
 
@@ -25,6 +26,7 @@ sections:
 
         Email our Community Embassadors at [community@idrc.ocadu.ca](mailto:community@idrc.ocadu.ca).
     - title: With the Inclusive Design Community
+      subsectionLevel: 3
       content: >-
         ### [Sign up for the mailing list](https://lists.idrc.ocadu.ca/mailman/listinfo/community)
 
