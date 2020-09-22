@@ -46,12 +46,12 @@ h1 + *,
 
 h2 + *,
 .h2 + * {
-  margin-top: rem(40);
+  margin-top: rem(50);
 }
 
 * + h2,
 * + .h2 {
-  margin-top: rem(40);
+  margin-top: rem(80);
 }
 
 .hr + h2,
@@ -89,12 +89,12 @@ h4 + *,
 
   h2 + *,
   .h2 + * {
-    margin-top: rem(32);
+    margin-top: rem(40);
   }
 
   * + h2,
   * + .h2 {
-    margin-top: rem(50);
+    margin-top: rem(100);
   }
 
   .hr + h2,
