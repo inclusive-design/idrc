@@ -2,10 +2,10 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .banner {
-  --parent-bg: var(--header-bg, $indigo-100);
+  --parent-bg: var(--header-bg, var(--indigo-100));
 
   align-items: center;
-  background: var(--header-bg, $indigo-100);
+  background: var(--header-bg, var(--indigo-100));
   color: var(--header-fg, $black);
   display: flex;
   margin-left: auto;
@@ -16,7 +16,7 @@
   width: calc(100vw - var(--gutter));
 
   &::after {
-    background: var(--header-bg, $indigo-100);
+    background: var(--header-bg, var(--indigo-100));
     bottom: 0;
     content: "";
     display: block;
@@ -30,11 +30,11 @@
 }
 
 .page--home .banner {
-  background: var(--white);
+  --header-bg: var(--white);
+
   z-index: 1;
 
   &::after {
-    background: var(--white);
     box-shadow: 0 rem(3) rem(10) rgba(0, 0, 0, 0.05);
   }
 }
@@ -55,7 +55,8 @@
 }
 
 @include breakpoint-down(md) {
-  .banner--menu-visible {
+  .banner.banner--menu-visible,
+  .page--home .banner.banner--menu-visible {
     --parent-bg: var(--indigo-800);
     --header-bg: var(--indigo-800);
     --header-fg: var(--white);
