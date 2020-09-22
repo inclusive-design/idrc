@@ -118,7 +118,7 @@ sections:
   - title: Get involved
     content: >-
       [Find out how you can get involved in our
-      work](https://wiki.fluidproject.org/)
+      work](/get-involved/)
     backgroundColor: indigo-200
     borderColor: null
     textColor: black

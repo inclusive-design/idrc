@@ -2,8 +2,8 @@ https://idrc.ocad.ca/*                                                          
 https://www.idrc.ocad.ca/*                                                              https://idrc.ocadu.ca/:splat                                            301!
 https://www.idrc.ocadu.ca/*                                                             https://idrc.ocadu.ca/:splat                                            301!
 /about-the-idrc                                                                         /about                                                                  301
-/news                                                                                   /about/news/                                                            301            
-/about-the-idrc/idrc-news                                                               /about/news/                                                            301            
+/news                                                                                   /about/news/                                                            301
+/about-the-idrc/idrc-news                                                               /about/news/                                                            301
 /news/continuing-our-work-during-covid-19                                               /about/news/continuing-our-work-during-covid-19/                        301
 /about-the-idrc/idrc-news/534-continuing-our-work-during-covid-19                       /about/news/continuing-our-work-during-covid-19/                        301
 /news/we-count-removing-bias-and-exclusion-in-the-data-economy                          /about/news/we-count-removing-bias-and-exclusion-in-the-data-economy/   301
@@ -11,7 +11,7 @@ https://www.idrc.ocadu.ca/*                                                     
 /about-the-idrc/idrc-news/*                                                             https://legacy.idrc.ocadu.ca/about-the-idrc/idrc-news/:splat            302 # Temporarily redirect all legacy news items to legacy site.
 /about-the-idrc/contact-us                                                              /#contact-us                                                            302
 /about-the-idrc/employment-opportunities                                                /#job-postings                                                          302
-/about-the-idrc/getinvolved                                                             /#get-involved                                                          302
+/about-the-idrc/getinvolved                                                             /get-involved/                                                      	301
 /about-the-idrc/*                                                                       https://legacy.idrc.ocadu.ca/about-the-idrc/:splat                      302 # Temporarily redirect all subpages of "About the IDRC" to the legacy site.
 /research-and-development                                                               /projects-and-tools/                                                    301
 /research-and-development/*                                                             https://legacy.idrc.ocadu.ca/research-and-development/:splat            302
