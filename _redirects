@@ -11,7 +11,7 @@ https://www.idrc.ocadu.ca/*                                                     
 /about-the-idrc/idrc-news/*                                                             https://legacy.idrc.ocadu.ca/about-the-idrc/idrc-news/:splat            302 # Temporarily redirect all legacy news items to legacy site.
 /about-the-idrc/contact-us                                                              /#contact-us                                                            302
 /about-the-idrc/employment-opportunities                                                /#job-postings                                                          302
-/about-the-idrc/getinvolved                                                             /get-involved/                                                      	301
+/about-the-idrc/getinvolved                                                             /connect/                                                      			301
 /about-the-idrc/*                                                                       https://legacy.idrc.ocadu.ca/about-the-idrc/:splat                      302 # Temporarily redirect all subpages of "About the IDRC" to the legacy site.
 /research-and-development                                                               /projects-and-tools/                                                    301
 /research-and-development/*                                                             https://legacy.idrc.ocadu.ca/research-and-development/:splat            302
