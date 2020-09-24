@@ -13,6 +13,7 @@ main > article {
   width: calc(100vw - var(--gutter));
 
   header {
+    background: var(--header-bg, var(--indigo-100));
     border-bottom: rem(10) solid var(--header-border);
     color: var(--header-fg, $black);
     flex: 0 0 100%;
@@ -21,7 +22,7 @@ main > article {
     position: relative;
 
     &::after {
-      background: var(--header-bg, $indigo-100);
+      background: inherit;
       border-bottom: rem(10) solid var(--header-border);
       bottom: rem(-10);
       content: "";

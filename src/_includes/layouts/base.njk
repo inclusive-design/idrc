@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         {% include "partials/global/meta-info.njk" %}
         <link rel="stylesheet" type="text/css" href="/css/idrc.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/lib/normalize/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/core/css/fluid.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/Enactors.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/PrefsEditor.css" />
+        <link rel="stylesheet" type="text/css" href="/lib/infusion/src/framework/preferences/css/SeparatedPanelPrefsEditor.css" />
+
         <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/images/favicon.png" />
         <link rel="apple-touch-icon" href="/images/icon-192.png">
@@ -33,7 +39,9 @@
         </style>
         {% endif %}
         <script>document.documentElement.classList.remove('no-js');</script>
+        <script type="text/javascript" src="/lib/infusion/infusion-uio.min.js"></script>
         <script type="text/javascript" src="/js/idrc.js" defer></script>
+
         {% if global.context == 'production' %}
         <script>
         if ("serviceWorker" in navigator)
@@ -56,12 +64,24 @@
         {% endblock %}
     </head>
     <body class="{{ pageType }}">
+        {% include "partials/global/uio.njk" %}
         {% include "partials/global/header.njk" %}
         <main>
             {% block content %}
             {% endblock content %}
         </main>
         {% include "partials/global/footer.njk" %}
+        <script>
+        var path = "/";
+        fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": path + "lib/infusion/src/framework/preferences/html",
+                "messagePrefix": path + "lib/infusion/src/framework/preferences/messages"
+            },
+            "tocTemplate": path + "lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+            "tocMessage": path + "lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
+        });
+        </script>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>
