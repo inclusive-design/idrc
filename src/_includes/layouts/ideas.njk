@@ -31,7 +31,7 @@
                         <p class="metadata">
                             By {{ post.data.author if post.data.author else 'IDRC Team' }}
                             <span class="separator" aria-hidden="true">&middot;</span>
-                            <time datetime="{{ post.data.date | w3DateFilter }}" class="dt-published">{{ post.data.date | dateFilter }}</time>
+                            <time datetime="{{ post.data.date | isoDate }}" class="dt-published">{{ post.data.date | formatDate }}</time>
                         </p>
                         {% if post.data.excerpt %}
                         <p class="small">{{ post.data.excerpt | safe }}</p>
@@ -61,7 +61,7 @@
                         <p class="metadata">
                             By {{ post.data.author if post.data.author else 'IDRC Team' }}
                             <span class="separator" aria-hidden="true">&middot;</span>
-                            <time datetime="{{ post.data.date | w3DateFilter }}" class="dt-published">{{ post.data.date | dateFilter }}</time>
+                            <time datetime="{{ post.data.date | isoDate }}" class="dt-published">{{ post.data.date | formatDate }}</time>
                         </p>
                         {% if post.data.excerpt %}
                         <p class="small">{{ post.data.excerpt | safe }}</p>

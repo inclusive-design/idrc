@@ -57,6 +57,7 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
+    "@fluid-project/eleventy-plugin-fluid": "fluid-project/eleventy-plugin-fluid#ce1fbfd",
     "@tbranyen/jsdom": "^13.0.0",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",

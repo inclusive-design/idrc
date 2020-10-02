@@ -3,16 +3,12 @@ const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
 const eleventyPWA = require('eleventy-plugin-pwa');
 const eleventySharp = require('eleventy-plugin-sharp');
+const fluidPlugin = require('@fluid-project/eleventy-plugin-fluid');
 const fs = require('fs');
 
 const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
-const dateFilter = require('./src/filters/date-filter.js');
-const limitFilter = require('./src/filters/limit-filter.js');
-const markdownFilter = require('./src/filters/markdown-filter.js');
-const slugFilter = require('./src/filters/slug-filter.js');
 const splitFilter = require('./src/filters/split-filter.js');
-const w3DateFilter = require('./src/filters/w3-date-filter.js');
 
 const workboxOptions = {
 	cacheId: 'idrc',
@@ -86,6 +82,7 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPlugin(errorOverlay);
 	eleventyConfig.addPlugin(eleventyPWA, workboxOptions);
 	eleventyConfig.addPlugin(eleventyRssPlugin);
+	eleventyConfig.addPlugin(fluidPlugin);
 	eleventyConfig.addPlugin(eleventySharp({
 		urlPath: '/media',
 		outputDir: 'dist/media/'
@@ -96,11 +93,6 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Filters.
-	eleventyConfig.addFilter('dateFilter', dateFilter);
-	eleventyConfig.addFilter('markdown', markdownFilter);
-	eleventyConfig.addFilter('w3DateFilter', w3DateFilter);
-	eleventyConfig.addFilter('limit', limitFilter);
-	eleventyConfig.addFilter('slug', slugFilter);
 	eleventyConfig.addFilter('split', splitFilter);
 
 	// Watch targets.
