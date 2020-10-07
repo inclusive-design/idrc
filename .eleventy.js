@@ -13,13 +13,10 @@ const splitFilter = require('./src/filters/split-filter.js');
 const workboxOptions = {
 	cacheId: 'idrc',
 	swDest: './dist/sw.js',
-	globPatterns: [
-		'index.html',
-		'js/idrc.js',
-		'css/idrc.css'
-	],
+	globPatterns: ['fonts/*.{woff,woff2}', 'images/*.{png,svg}'],
 	globIgnores: ['admin/**/*', 'node_modules/**/*'],
-	skipWaiting: false
+	clientsClaim: true,
+	skipWaiting: true
 };
 
 module.exports = eleventyConfig => {
