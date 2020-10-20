@@ -20,7 +20,7 @@ headerTextColor: black
 
 ### Recognize diversity and uniqueness
 
-Inclusive design keeps the diversity and uniqueness of each individual in mind. As individuals spread out from the hypothetical average, the needs of individuals at the margins become ever more diverse. This means that mass and segregated solutions do not work well, as they are not sustainable economically or technically. The optimal inclusive design is best achieved through one-size-fit-one configurations or considerations within an integrated system. Inclusively designed individualization and flexible configurations must be integrated to maintain interoperability and currency. This also does not imply systems make choices for the user - inclusive design recognizes the importance of self-determination and self-knowledge.
+Inclusive design keeps the diversity and uniqueness of each individual in mind. As individuals spread out from the hypothetical average, the needs of individuals at the margins become ever more diverse. This means that mass and segregated solutions do not work well, as they are not sustainable economically or technically. The optimal inclusive design is best achieved through one-size-fit-one configurations or considerations within an integrated system. Inclusively designed individualization and flexible configurations must be integrated to maintain interoperability and currency. This also does not imply systems make choices for the user – inclusive design recognizes the importance of self-determination and self-knowledge.
 
 ### Inclusive process and tools
 
