@@ -14,7 +14,7 @@ headerTextColor: black
 ---
 ## What is inclusive design?
 
-**Inclusive design is design that considers the full range of human diversity with respect to ability, language, culture, gender, age and other forms of human difference.**
+Inclusive design is design that considers the full range of human diversity with respect to ability, language, culture, gender, age and other forms of human difference.
 
 ## The Three Dimensions of Inclusive Design
 
