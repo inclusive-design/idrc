@@ -8,7 +8,7 @@ thumbnailImage: /media/school-closed.jpg
 
 If you are a lucky enough to be able to work from home at this time, you may be juggling childcare at the same time. One creative strategy that some organizations are trying is to mobilize an “Ageless Kids’ Club.” These invite all the generations and ages of the families of staff teams to engage. It reduces the load on parents and spreads the responsibility for occupying kids during these trying times. You may be surprised how well kids follow through when more than a nagging parent is counting on them.
 
-(To appropriately acknowledge, I was asked to share this idea here on Medium, I’m not the originator of the idea, the idea comes from friends and the members of my team at the [Inclusive Design Research Centre](https://idrc.ocadu.ca/about-the-idrc). I expect the experience will be shared by other members of some Ageless Kids’ Clubs when they get a moment.)
+(To appropriately acknowledge, I was asked to share this idea here on Medium, I’m not the originator of the idea, the idea comes from friends and the members of my team at the [Inclusive Design Research Centre](https://idrc.ocadu.ca/about). I expect the experience will be shared by other members of some Ageless Kids’ Clubs when they get a moment.)
 
 ## Basic Steps
 
