@@ -1,6 +1,8 @@
 ---
 title: Accessibility for co-designers
 permalink: ''
+type: guide
+building-block: community-engagement
 ---
 # About this guide
 
