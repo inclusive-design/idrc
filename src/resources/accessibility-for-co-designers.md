@@ -2,8 +2,6 @@
 title: Accessibility for co-designers
 permalink: ''
 ---
-
-
 # About this guide
 
 Co-designers may have different accessibility needs - whether they be physical, cognitive, mental health-related, or social location-related. When co-designing with those who are most impacted or those on the margins, many people may have accessibility needs that have contributed to them being at the margins in the first place. Therefore, it's crucial to ensure accessibility barriers are removed as much as possible, so these critical perspectives can be incorporated.
@@ -74,9 +72,9 @@ Facilitators will be reminded to be mindful of different needs and preferences i
 
 ## Space
 
-* Organizers are encouraged to prepare an[access guide](https://cities.inclusivedesign.ca/resources/access-guide/)including information and images of the venue, public transit access to the venue, details about the facilities, food, and activities and send it to participants at least 3 days ahead of the session ([See sample access guide](https://docs.google.com/document/d/1wkB87u0Y_kAsFeilsYwLGOq-z5NOnLsM7W0cTd1rdnU/edit)). This will give participants enough time to become familiar with the space and to know what to expect.
+* Organizers are encouraged to prepare an [access guide ](https://cities.inclusivedesign.ca/resources/access-guide/)including information and images of the venue, public transit access to the venue, details about the facilities, food, and activities and send it to participants at least 3 days ahead of the session ([See sample access guide](https://docs.google.com/document/d/1wkB87u0Y_kAsFeilsYwLGOq-z5NOnLsM7W0cTd1rdnU/edit)). This will give participants enough time to become familiar with the space and to know what to expect.
 * The most accessible path to the event should be included in the access guide or sent to the participants via email ahead of time.
-* [Accessibility of the space](https://cities.inclusivedesign.ca/resources/accessibility-of-the-space/)can be described at the beginning of the session
+* [Accessibility of the space ](https://cities.inclusivedesign.ca/resources/accessibility-of-the-space/)can be described at the beginning of the session
 * The room should be set up to best facilitate the activities and provide enough space for participants to move freely
 
   * For small group work, workstations can be created as needed by grouping tables and/or chairs
@@ -86,7 +84,7 @@ Facilitators will be reminded to be mindful of different needs and preferences i
 
 ## Co-designing remotely
 
-Check out our[Remote Co-design Guide](https://www.notion.so/Remote-co-design-guide-4db0ffac5a2c48d5b6bf5cc2e3128feb)for tips on ensuring accessibility during remote design sessions.
+Check out our [Remote Co-design Guide](https://www.notion.so/Remote-co-design-guide-4db0ffac5a2c48d5b6bf5cc2e3128feb) for tips on ensuring accessibility during remote design sessions.
 
 ## Important required forms
 
