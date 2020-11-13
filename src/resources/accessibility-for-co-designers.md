@@ -1,6 +1,6 @@
 ---
 title: Accessibility for co-designers
-permalink: /resources/accessibility-for-codesigners/
+permalink: ''
 ---
 
 
