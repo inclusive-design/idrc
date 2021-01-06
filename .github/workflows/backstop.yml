@@ -23,7 +23,7 @@ jobs:
       with:
         site_name: 'idrc'
     - name: Set environment variables
-      uses: allenevans/set-env@v1.1.0
+      uses: allenevans/set-env@v2.0.0
       with:
         BASE_URL: ${{ steps.netlify.outputs.url }}
     - name: Install dependencies, generate reference images, run visual regression tests
