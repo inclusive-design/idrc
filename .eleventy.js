@@ -17,7 +17,7 @@ const w3DateFilter = require('./src/filters/w3-date-filter.js');
 const workboxOptions = {
 	cacheId: 'idrc',
 	swDest: './dist/sw.js',
-	globPatterns: ['fonts/*.{woff,woff2}', 'images/*.{png,svg}'],
+	globPatterns: ['assets/fonts/*.{woff,woff2}', 'assets/images/*.{png,svg}'],
 	globIgnores: ['admin/**/*', 'node_modules/**/*'],
 	clientsClaim: true,
 	skipWaiting: true
@@ -100,13 +100,9 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addFilter('slug', slugFilter);
 	eleventyConfig.addFilter('split', splitFilter);
 
-	// Watch targets.
-	eleventyConfig.addWatchTarget('./src/js');
-	eleventyConfig.addWatchTarget('./src/scss');
-
 	// Passthrough file copy.
-	eleventyConfig.addPassthroughCopy({'src/fonts': 'fonts'});
-	eleventyConfig.addPassthroughCopy({'src/images': 'images'});
+    eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
+    eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
