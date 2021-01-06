@@ -58,7 +58,7 @@
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "@tbranyen/jsdom": "^13.0.0",
     "babel-loader": "^8.1.0",
-    "backstopjs": "^5.0.6",
+    "backstopjs": "^5.0.7",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
