@@ -108,7 +108,7 @@ _site
 
 .now
 
-src/_includes/static
+src/_data/assets.json
 
 # Local Netlify folder
 .netlify
