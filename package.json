@@ -15,7 +15,7 @@
     "build": "npm-run-all -l clean build:*",
     "clean": "rimraf dist",
     "debug": "DEBUG=Eleventy* eleventy",
-    "lint:css": "stylelint src/scss/**/*.scss",
+    "lint:css": "stylelint src/assets/styles/**/*.scss",
     "lint:js": "xo",
     "lint": "run-s lint:*",
     "test:lint": "run-s lint:*",
@@ -45,10 +45,10 @@
     }
   },
   "lint-staged": {
-    "src/scss/**/*.scss": [
+    "src/assets/styles/**/*.scss": [
       "stylelint"
     ],
-    "src/js/**/*.js": [
+    "src/assets/scripts/**/*.js": [
       "xo"
     ]
   },

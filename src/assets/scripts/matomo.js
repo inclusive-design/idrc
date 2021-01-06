@@ -9,17 +9,24 @@ Licensed under the New BSD license. You may not use this file except in complian
 You may obtain a copy of the New BSD License at
 https://github.com/inclusive-design/idrc/raw/main/LICENSE.md.
 */
+/* global document, window */
 
-"use strict";
+'use strict';
 
-var _paq = window._paq || [];
-_paq.push(["trackPageView"]);
-_paq.push(["enableLinkTracking"]);
+const _paq = window._paq || [];
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
 (function () {
-    var siteId = "3"; // Set this to the ID of your site in Matomo. Value must be quoted.
-    var u = "https://analytics.inclusivedesign.ca/";
-    _paq.push(["setTrackerUrl", u + "matomo.php"]);
-    _paq.push(["setSiteId", siteId]);
-    var d = document, g = d.createElement("script"), s = d.getElementsByTagName("script")[0];
-    g.type = "text/javascript"; g.async = true; g.defer = true; g.src = u + "matomo.js"; s.parentNode.insertBefore(g,s);
+	const siteId = '3'; // Set this to the ID of your site in Matomo. Value must be quoted.
+	const u = 'https://analytics.inclusivedesign.ca/';
+	_paq.push(['setTrackerUrl', u + 'matomo.php']);
+	_paq.push(['setSiteId', siteId]);
+	const d = document;
+	const g = d.createElement('script');
+	const s = d.querySelectorAll('script')[0];
+	g.type = 'text/javascript';
+	g.async = true;
+	g.defer = true;
+	g.src = u + 'matomo.js';
+	s.parentNode.insertBefore(g, s);
 })();
