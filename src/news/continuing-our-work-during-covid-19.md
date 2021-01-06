@@ -20,7 +20,7 @@ The workers in our communities, that have been taken for granted, are being reco
 
 We desperately need [decision systems that attend to, and work for, our diversity, variability and complexity](https://wecount.inclusivedesign.ca/), during a time when our leaders are making hard decisions. We can’t ignore the small minorities and outliers. People who we dismiss as outliers and minority communities are also the first to notice the weak signals that we don’t expect and the disruptive events for which we are not prepared.
 
-The IDRC is lucky to have an amazing global community network. If you feel socially isolated or alone, please [come join us](https://idrc.ocadu.ca/#get-involved), we have a remote “table” that can stretch, and you can help us iteratively co-design it to fit your needs.
+The IDRC is lucky to have an amazing global community network. If you feel socially isolated or alone, please [come join us](https://idrc.ocadu.ca/connect), we have a remote “table” that can stretch, and you can help us iteratively co-design it to fit your needs.
 
 Thank you for your support and continued commitment to this shared mission as we work together to build a better future for us all.
 

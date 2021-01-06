@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1.4.3
+    - uses: actions/setup-node@v2
       with:
         node-version: '12'
     - name: Cache node modules
@@ -23,7 +23,7 @@ jobs:
       with:
         site_name: 'idrc'
     - name: Set environment variables
-      uses: allenevans/set-env@v1.1.0
+      uses: allenevans/set-env@v2.0.0
       with:
         BASE_URL: ${{ steps.netlify.outputs.url }}
     - name: Install dependencies, generate reference images, run visual regression tests
