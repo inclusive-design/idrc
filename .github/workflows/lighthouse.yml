@@ -10,10 +10,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Wait for Netlify deploy preview
-      uses: jakepartusch/wait-for-netlify-action@v1
+      uses: jakepartusch/wait-for-netlify-action@v1.2
       id: netlify
       with:
         site_name: 'idrc'
+        max_timeout: 300
     - name: Run Lighthouse CI audits
       uses: treosh/lighthouse-ci-action@v3
       with:
