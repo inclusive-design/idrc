@@ -3,12 +3,11 @@ const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
 const errorOverlay = require('eleventy-plugin-error-overlay');
 const eleventyPWA = require('eleventy-plugin-pwa');
 const eleventySharp = require('eleventy-plugin-sharp');
-const fluidPlugin = require('@fluid-project/eleventy-plugin-fluid');
+const fluidPlugin = require('eleventy-plugin-fluid');
 const fs = require('fs');
 
 const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
-const splitFilter = require('./src/filters/split-filter.js');
 
 const workboxOptions = {
 	cacheId: 'idrc',
@@ -88,9 +87,6 @@ module.exports = eleventyConfig => {
 	// Transforms.
 	eleventyConfig.addTransform('htmlmin', htmlMinTransform);
 	eleventyConfig.addTransform('parse', parseTransform);
-
-	// Filters.
-	eleventyConfig.addFilter('split', splitFilter);
 
 	// Passthrough file copy.
     eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
