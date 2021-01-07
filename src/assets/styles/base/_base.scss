@@ -71,6 +71,10 @@ blockquote {
   padding-left: rem(32);
 }
 
+* + blockquote {
+  margin-top: rem(18);
+}
+
 .content,
 .section {
   ul {
