@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-const baseUrl = process.env.BASE_URL || 'http://host.docker.internal:3000';
+const baseUrl = process.env.BASE_URL || 'http://host.docker.internal:8080';
 
 module.exports = {
 	id: 'backstop_default',

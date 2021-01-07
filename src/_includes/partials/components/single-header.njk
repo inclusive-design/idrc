@@ -7,7 +7,7 @@
         <p class="metadata">
             By {{ author if author else 'IDRC Team' }}
             <span class="separator" aria-hidden="true">&middot;</span>
-            <time datetime="{{ date | w3DateFilter }}" class="dt-published">{{ date | dateFilter }}</time>
+            <time datetime="{{ date | isoDate }}" class="dt-published">{{ date | formatDate }}</time>
         </p>
     </div>
 </header>
