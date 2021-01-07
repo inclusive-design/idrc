@@ -18,10 +18,11 @@ jobs:
         path: node_modules
         key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
     - name: Wait for Netlify deploy preview
-      uses: jakepartusch/wait-for-netlify-action@v1
+      uses: jakepartusch/wait-for-netlify-action@v1.2
       id: netlify
       with:
         site_name: 'idrc'
+        max_timeout: 300
     - name: Set environment variables
       uses: allenevans/set-env@v2.0.0
       with:
