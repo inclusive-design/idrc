@@ -1,23 +1,23 @@
 /* global CMS, nunjucks, previewUtil, PropTypes, React */
 
 const {
-	w3DateFilter,
-	markdownFilter,
-	dateFilter,
-	splitFilter,
-	slugFilter,
+	formatDateFilter,
+	isoDateFilter,
 	limitFilter,
+	markdownFilter,
+	slugFilter,
+	splitFilter,
 	site
 } = previewUtil;
 
 const env = nunjucks.configure();
 
-env.addFilter('w3DateFilter', w3DateFilter);
+env.addFilter('formatDate', formatDateFilter);
+env.addFilter('isoDate', isoDateFilter);
+env.addFilter('limit', limitFilter);
 env.addFilter('markdown', markdownFilter);
-env.addFilter('dateFilter', dateFilter);
 env.addFilter('slug', slugFilter);
 env.addFilter('split', splitFilter);
-env.addFilter('limit', limitFilter);
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
