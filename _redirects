@@ -28,4 +28,5 @@ https://websavvy.idrc.ocad.ca/*                                                 
 /services/33-services/57-vision-technology-service                                      /vision-technology-service/                                             301
 /services/34-services/consultation/58-employment-accommodation-services                 /vision-technology-service/                                             301
 /websavvy/                                                                              /consulting/                                                            301
-/resources/idrc-online/*                                                                https://legacy.idrc.ocadu.ca/index.php/resources/idrc-online/:splat     302 # Temporary redirect "IDRC Online" page to legacy site.
+/index.php/resources/idrc-online/*                                                      https://legacy.idrc.ocadu.ca/index.php/resources/idrc-online/:splat     302 # Temporary redirect "IDRC Online" page to legacy site.
+
