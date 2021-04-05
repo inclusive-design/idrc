@@ -1,7 +1,7 @@
 ---
 layout: layouts/home.njk
 title: Inclusive Design Research Centre
-intro: >
+intro: >-
   An international community of open source developers, designers, researchers,
   educators and co-designers who work together to **proactively ensure that
   emerging technology and practices are designed inclusively**.
@@ -9,7 +9,7 @@ intro: >
 
   Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates
   the [Inclusive Design Institute](https://inclusivedesign.ca/). Both were
-  founded by Dr. Jutta Treviranus with the help of her team and community.
+  founded by Dr. Jutta Treviranus with the help of her team and community. 
 
 
   [Learn more about us](/about/)
@@ -44,7 +44,9 @@ sections:
 
       The IDRC offers consulting services and training in digital accessibility
       and inclusive design.
-    imageAltText: 'Two people demonstrating a prototype created at an inclusive cities hackathon that the IDRC facilitated.'
+    imageAltText: >-
+      Two people demonstrating a prototype created at an inclusive cities
+      hackathon that the IDRC facilitated.
     image: /media/what-we-do.jpg
   - title: What is inclusive design?
     content: >-
@@ -67,7 +69,9 @@ sections:
     borderColor: indigo-500
     title: Featured projects and tools
     content: '[See featured projects and available open tools](/projects-and-tools/)'
-    imageAltText: 'Two people trying the inclusive coding learning environment the IDRC has created, which involves robots, tactile boards, and cards.'
+    imageAltText: >-
+      Two people trying the inclusive coding learning environment the IDRC has
+      created, which involves robots, tactile boards, and cards.
     image: /media/projects-and-tools.jpg
     imageShadow: coral-500
   - title: Our resources
@@ -85,9 +89,12 @@ sections:
     textColor: null
     desktopWidth: third
   - title: Services we offer
-    content: |-
+    content: >-
       ### [IDRC Consulting](/consulting/)
-      We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
+
+      We offer accessibility services that help organizations, governments,
+      corporations, and non-profits ensure their offerings are inclusive.
+
       ### [Vision Technology Service](/vision-technology-service/)
     backgroundColor: null
     borderColor: blue-500
@@ -107,9 +114,10 @@ sections:
     textColor: null
     borderColor: indigo-500
     title: Job postings
-    content: >-
-      _No listings available._
-    imageAltText: 'An IDRC team member and visitor smiling and chatting about a project demonstration at an event.'
+    content: _No listings available._
+    imageAltText: >-
+      An IDRC team member and visitor smiling and chatting about a project
+      demonstration at an event.
     image: /media/job-postings.jpg
     imageShadow: yellow-500
   - title: Get involved
