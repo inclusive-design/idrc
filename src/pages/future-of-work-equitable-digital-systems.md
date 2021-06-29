@@ -4,8 +4,8 @@ title: "Future of Work: Equitable Digital Systems"
 permalink: /eds/
 metaTitle: "Future of Work: Equitable Digital Systems"
 intro: ""
-headerBgColor: coral-500
-headerBorderColor: coral-800
+headerBgColor: indigo-200
+headerBorderColor: indigo-500
 headerTextColor:
   - black
 sections: []
