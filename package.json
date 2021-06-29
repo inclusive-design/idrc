@@ -79,7 +79,7 @@
     "postcss": "^8.2.2",
     "resolve-url-loader": "^3.1.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.36.1",
+    "rollup": "^2.52.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
