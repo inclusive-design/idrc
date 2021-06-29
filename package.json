@@ -83,7 +83,7 @@
     "sass": "^1.32.8",
     "sass-loader": "^11.1.1",
     "slugify": "^1.5.0",
-    "stylelint": "^13.12.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.15.0",
