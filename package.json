@@ -63,7 +63,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
-    "eslint-config-xo-react": "^0.24.0",
+    "eslint-config-xo-react": "^0.25.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "glob": "^7.1.6",
