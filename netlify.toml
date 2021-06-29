@@ -5,7 +5,7 @@
 
 [dev]
   command = "npm run start"
-  targetPort = 3000
+  targetPort = 8080
   publish = "dist"
   autoLaunch = true
   framework = "#custom"

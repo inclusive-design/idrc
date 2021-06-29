@@ -16,7 +16,7 @@ module.exports = (value, outputPath) => {
 			...document.querySelectorAll('main a')
 		];
 		const subheads = [
-			...document.querySelectorAll('.page--generic main .section--full h3')
+			...document.querySelectorAll('[data-subsection-level="3"] h3, [data-subsection-level="4"] h4')
 		];
 
 		if (images.length > 0) {
@@ -26,7 +26,7 @@ module.exports = (value, outputPath) => {
 				const file = image.getAttribute('src');
 
 				if (!file.includes('http')) {
-					const dimensions = getSize('src' + file);
+					const dimensions = getSize('dist' + file);
 
 					image.setAttribute('width', dimensions.width);
 					image.setAttribute('height', dimensions.height);
@@ -68,7 +68,8 @@ module.exports = (value, outputPath) => {
 				// of the content between this <h2> and the next
 				const getContent = element => {
 					const elems = [];
-					while (element.nextElementSibling && element.nextElementSibling.tagName !== 'H3') {
+					const headings = (element.tagName === 'H3') ? new Set(['H2', 'H3']) : new Set(['H2', 'H3', 'H4']);
+					while (element.nextElementSibling && !headings.has(element.nextElementSibling.tagName)) {
 						elems.push(element.nextElementSibling);
 						element = element.nextElementSibling;
 					}

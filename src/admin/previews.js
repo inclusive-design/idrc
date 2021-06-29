@@ -1,23 +1,23 @@
-/* global CMS, nunjucks, previewUtil, propTypes, React */
+/* global CMS, nunjucks, previewUtil, PropTypes, React */
 
 const {
-	w3DateFilter,
-	markdownFilter,
-	dateFilter,
-	splitFilter,
-	slugFilter,
+	formatDateFilter,
+	isoDateFilter,
 	limitFilter,
+	markdownFilter,
+	slugFilter,
+	splitFilter,
 	site
 } = previewUtil;
 
 const env = nunjucks.configure();
 
-env.addFilter('w3DateFilter', w3DateFilter);
+env.addFilter('formatDate', formatDateFilter);
+env.addFilter('isoDate', isoDateFilter);
+env.addFilter('limit', limitFilter);
 env.addFilter('markdown', markdownFilter);
-env.addFilter('dateFilter', dateFilter);
 env.addFilter('slug', slugFilter);
 env.addFilter('split', splitFilter);
-env.addFilter('limit', limitFilter);
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
@@ -26,9 +26,9 @@ const Preview = ({entry, path, context}) => {
 };
 
 Preview.propTypes = {
-	entry: propTypes.object.isRequired,
-	path: propTypes.string.isRequired,
-	context: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired,
+	path: PropTypes.string.isRequired,
+	context: PropTypes.func.isRequired
 };
 
 const Page = ({entry}) => (
@@ -49,7 +49,7 @@ const Page = ({entry}) => (
 );
 
 Page.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 const History = ({entry}) => (
@@ -71,7 +71,7 @@ const History = ({entry}) => (
 );
 
 History.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 const ProjectsAndTools = ({entry}) => (
@@ -93,7 +93,7 @@ const ProjectsAndTools = ({entry}) => (
 );
 
 ProjectsAndTools.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 const Person = ({entry}) => (
@@ -119,7 +119,7 @@ const Person = ({entry}) => (
 );
 
 Person.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 const News = ({entry}) => (
@@ -139,7 +139,7 @@ const News = ({entry}) => (
 );
 
 News.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 const Idea = ({entry}) => (
@@ -159,7 +159,7 @@ const Idea = ({entry}) => (
 );
 
 Idea.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 const SiteData = ({entry}) => (
@@ -184,7 +184,7 @@ const SiteData = ({entry}) => (
 );
 
 SiteData.propTypes = {
-	entry: propTypes.object.isRequired
+	entry: PropTypes.object.isRequired
 };
 
 CMS.registerPreviewTemplate('home', Page);

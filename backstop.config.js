@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 
-const baseUrl = process.env.BASE_URL || 'http://host.docker.internal:3000';
+const baseUrl = process.env.BASE_URL || 'http://host.docker.internal:8080';
 
 module.exports = {
 	id: 'backstop_default',
@@ -26,37 +26,9 @@ module.exports = {
 	onReadyScript: 'puppet/onReady.js',
 	scenarios: [
 		{
-			label: 'Home',
-			url: `${baseUrl}/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/',
-			hideSelectors: [
-				'#latest-news .section__content .entry'
-			]
-		},
-		{
-			label: 'News',
-			url: `${baseUrl}/news/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/news/'
-		},
-		{
-			label: 'Ideas',
-			url: `${baseUrl}/ideas/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/ideas/'
-		},
-		{
-			label: 'Projects and tools',
-			url: `${baseUrl}/projects-and-tools/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/projects-and-tools/'
-		},
-		{
-			label: 'IDRC Consulting',
-			url: `${baseUrl}/consulting/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/consulting/'
-		},
-		{
-			label: 'Vision Technology Service',
-			url: `${baseUrl}/vision-technology-service/`,
-			referenceUrl: 'https://dev--idrc.netlify.app/vision-technology-service/'
+			label: 'Repertoire',
+			url: `${baseUrl}/repertoire/`,
+			referenceUrl: 'https://dev--idrc.netlify.app/repertoire/'
 		}
 	],
 	paths: {

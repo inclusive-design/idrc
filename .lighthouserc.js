@@ -8,8 +8,9 @@ module.exports = {
 				throttlingMethod: "provided",
 				// Skipping "uses-http2" due to errors with reports see: http2 https://github.com/GoogleChrome/lighthouse/issues/6539
 				// Skipping "is-crawlable" because Netlify's preview preview for PRs add `x-robots-tag: noindex`
-				// Skipping "works-offline" because only the homepage is cached for offline access.
-				skipAudits: ["uses-http2", "is-crawlable", "works-offline"]
+				// Skipping "service-worker" because the service worker is disabled on deploy previews.
+				// Skipping "works-offline" and "offline-start-url" because the service worker is disabled on deploy previews.
+				skipAudits: ["uses-http2", "is-crawlable", "service-worker", "offline-start-url", "works-offline"]
 			}
 		},
 		assert: {

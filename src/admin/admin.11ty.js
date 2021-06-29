@@ -14,7 +14,22 @@ module.exports = class {
 			const templates = nunjucks.precompile(
 				path.join(__dirname, '../_includes/'),
 				{
-					include: ['\\.njk$', '\\.svg$']
+					include: [
+						'preview.njk',
+						'page.njk',
+						'page-header.njk',
+						'history.njk',
+						'projects.njk',
+						'section.njk',
+						'single.njk',
+						'single-header.njk',
+						'person-header.njk',
+						'single--person.njk',
+						'single--news.njk',
+						'single--idea.njk',
+						'footer.njk',
+						'\\.svg$'
+					]
 				}
 			);
 			if (templates) {

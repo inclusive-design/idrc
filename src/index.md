@@ -17,7 +17,8 @@ headerBgColor: indigo-100
 sections:
   - image2x: /media/what-we-do@2x.jpg
     imageOrderDesktop: swap
-    desktopWidth: full-bleed
+    desktopWidth: full
+    fullBleed: true
     imageOrder: start
     backgroundColor: indigo-800
     textColor: white
@@ -57,7 +58,8 @@ sections:
     backgroundColor: blue-500
     borderColor: white
     textColor: black
-    desktopWidth: full-bleed
+    desktopWidth: full
+    fullBleed: true
   - image2x: /media/projects-and-tools@2x.jpg
     imageOrderDesktop: swap
     desktopWidth: full
@@ -112,14 +114,15 @@ sections:
     imageAltText: 'An IDRC team member and visitor smiling and chatting about a project demonstration at an event.'
     image: /media/job-postings.jpg
     imageShadow: yellow-500
-  - title: Get involved
+  - title: Connect
     content: >-
-      [Find out how you can get involved in our
-      work](https://wiki.fluidproject.org/)
+      [Find out how you can connect with our
+      work](/connect/)
     backgroundColor: indigo-200
     borderColor: null
     textColor: black
-    desktopWidth: full-bleed
+    desktopWidth: two-thirds
+    fullBleed: true
     desktopAlignment: center
 ---
 ***
