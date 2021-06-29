@@ -13,7 +13,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline' identity.netlify.com;"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' identity.netlify.com cdn.jsdelivr.net;"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
