@@ -5,7 +5,7 @@ on: [pull_request]
 jobs:
   backstop:
     name: Run visual regression tests
-    if: ${{ github.repository_owner == 'inclusive-design'}}
+    if: github.repository_owner == 'inclusive-design' && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2

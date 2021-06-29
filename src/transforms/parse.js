@@ -1,5 +1,5 @@
 const getSize = require('image-size');
-const jsdom = require('@tbranyen/jsdom');
+const jsdom = require('jsdom');
 const {JSDOM} = jsdom;
 
 module.exports = (value, outputPath) => {

@@ -1,6 +1,11 @@
 https://idrc.ocad.ca/*                                                                  https://idrc.ocadu.ca/:splat                                            301!
 https://www.idrc.ocad.ca/*                                                              https://idrc.ocadu.ca/:splat                                            301!
 https://www.idrc.ocadu.ca/*                                                             https://idrc.ocadu.ca/:splat                                            301!
+https://unpopular.ca/*                                                                  https://idrc.ocadu.ca/:splat                                            301!
+https://in-kind.ca/*                                                                    https://idrc.ocadu.ca/:splat                                            301!
+https://includenet.ca/*                                                                 https://idrc.ocadu.ca/:splat                                            301!
+https://websavvy.idrc.ocadu.ca/*                                                        /consulting                                                             301!
+https://websavvy.idrc.ocad.ca/*                                                         /consulting                                                             301!
 /about-the-idrc                                                                         /about                                                                  301
 /news                                                                                   /about/news/                                                            301
 /about-the-idrc/idrc-news                                                               /about/news/                                                            301
@@ -23,3 +28,5 @@ https://www.idrc.ocadu.ca/*                                                     
 /services/33-services/57-vision-technology-service                                      /vision-technology-service/                                             301
 /services/34-services/consultation/58-employment-accommodation-services                 /vision-technology-service/                                             301
 /websavvy/                                                                              /consulting/                                                            301
+/index.php/resources/idrc-online/*                                                      https://legacy.idrc.ocadu.ca/index.php/resources/idrc-online/:splat     302 # Temporary redirect "IDRC Online" page to legacy site.
+
