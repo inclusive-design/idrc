@@ -1,6 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
+@use "sass:math";
+
 body {
   background: var(--indigo-100);
   color: var(--black);
@@ -87,7 +89,7 @@ blockquote {
   }
 
   li {
-    line-height: (24 / 16);
+    line-height: math.div(24, 16);
   }
 
   li + li {
