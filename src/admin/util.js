@@ -1,17 +1,17 @@
-import dateFilter from '../filters/date-filter';
-import markdownFilter from '../filters/markdown-filter';
-import slugFilter from '../filters/slug-filter';
+import formatDateFilter from '@fluid-project/eleventy-plugin-fluid/src/filters/format-date-filter';
+import isoDateFilter from '@fluid-project/eleventy-plugin-fluid/src/filters/iso-date-filter';
+import limitFilter from '@fluid-project/eleventy-plugin-fluid/src/filters/limit-filter';
+import markdownFilter from '@fluid-project/eleventy-plugin-fluid/src/filters/markdown-filter';
+import slugFilter from '@fluid-project/eleventy-plugin-fluid/src/filters/slug-filter';
 import splitFilter from '../filters/split-filter';
-import limitFilter from '../filters/limit-filter';
-import w3DateFilter from '../filters/w3-date-filter';
 import site from '../_data/site.json';
 
 export {
-	dateFilter,
+	formatDateFilter,
+	isoDateFilter,
+	limitFilter,
 	markdownFilter,
 	slugFilter,
 	splitFilter,
-	limitFilter,
-	w3DateFilter,
 	site
 };

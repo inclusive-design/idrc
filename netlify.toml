@@ -1,6 +1,7 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  ignore = "git log -1 --pretty=%B | grep dependabot"
 
 [dev]
   command = "npm run start"
@@ -8,3 +9,11 @@
   publish = "dist"
   autoLaunch = true
   framework = "#custom"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' identity.netlify.com;"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"

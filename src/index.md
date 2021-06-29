@@ -110,8 +110,7 @@ sections:
     borderColor: indigo-500
     title: Job postings
     content: >-
-      **[Post-Doctoral Research
-      Fellow](https://trr.tbe.taleo.net/trr01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=1811)**
+      _No listings available._
     imageAltText: 'An IDRC team member and visitor smiling and chatting about a project demonstration at an event.'
     image: /media/job-postings.jpg
     imageShadow: yellow-500
