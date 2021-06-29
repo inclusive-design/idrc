@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .pagination {
   padding-bottom: rem(40);
   padding-top: rem(40);
@@ -16,7 +18,7 @@
   }
 
   @include breakpoint-up(lg) {
-    width: (100% * 5 / 12);
+    width: math.div(100% * 5, 12);
   }
 }
 

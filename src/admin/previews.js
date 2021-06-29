@@ -35,11 +35,12 @@ const Page = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/page.njk"
-		context={({site, title, intro, sections, headerBgColor, headerTextColor, headerBorderColor}) => ({
+		context={({site, title, intro, body, sections, headerBgColor, headerTextColor, headerBorderColor}) => ({
 			previewMode: true,
 			site,
 			title,
 			intro,
+			content: markdownFilter(body || ''),
 			sections,
 			headerBgColor,
 			headerTextColor,

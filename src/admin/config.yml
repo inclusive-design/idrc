@@ -353,7 +353,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--news.njk"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
+      - {label: "Date", name: "date", widget: "datetime", time_format: false}
       - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
       - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
       - {label: "Permalink Override (Pattern: '/news/your-news-item/index.html')", name: "permalink", widget: "string", required: false}
@@ -372,7 +372,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--idea.njk"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", timeFormat: false}
+      - {label: "Date", name: "date", widget: "datetime", time_format: false}
       - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
       - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
