@@ -350,6 +350,7 @@
 @include breakpoint-up(md) {
   .nav {
     height: rem(80);
+    margin-right: rem(-20);
   }
 
   .nav .menu-toggle {
