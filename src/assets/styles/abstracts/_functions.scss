@@ -1,8 +1,10 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
+@use "sass:math";
+
 @function rem($size) {
-  $rem: $size / 16;
+  $rem: math.div($size, 16);
 
   @return #{$rem}rem;
 }
