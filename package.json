@@ -91,7 +91,7 @@
     "stylelint-config-standard-scss": "^1.1.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^3.19.0",
-    "xo": "^0.33.0"
+    "xo": "^0.44.0"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.1",
