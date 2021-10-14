@@ -44,12 +44,24 @@
         {% endblock %}
     </head>
     <body class="{{ pageType }}">
+        {% include "partials/global/uio.njk" %}
         {% include "partials/global/header.njk" %}
         <main>
             {% block content %}
             {% endblock content %}
         </main>
         {% include "partials/global/footer.njk" %}
+        <script>
+        var path = "/";
+        fluid.uiOptions.prefsEditor(".flc-prefsEditor-separatedPanel", {
+            terms: {
+                "templatePrefix": path + "lib/infusion/src/framework/preferences/html",
+                "messagePrefix": path + "lib/infusion/src/framework/preferences/messages"
+            },
+            "tocTemplate": path + "lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+            "tocMessage": path + "lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json"
+        });
+        </script>
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>

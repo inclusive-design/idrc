@@ -100,6 +100,7 @@
     "d3-selection": "^2.0.0",
     "eleventy-plugin-fluid": "0.2.0",
     "eleventy-plugin-pwa": "^1.0.8",
-    "eleventy-plugin-sharp": "0.0.3"
+    "eleventy-plugin-sharp": "^0.0.3",
+    "infusion": "dev"
   }
 }

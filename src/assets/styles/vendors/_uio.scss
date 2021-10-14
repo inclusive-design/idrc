@@ -1,0 +1,27 @@
+
+[class*="fl-theme-"]:not(.fl-theme-prefsEditor-default) {
+  main > article header::after {
+    background: transparent;
+    border-color: inherit;
+    z-index: 0;
+  }
+
+  .content a:visited,
+  .footer a:visited {
+    text-decoration-color: currentColor;
+  }
+
+  .section--image figure,
+  .section--image figure.shadow-indigo-500,
+  .section--image figure.shadow-coral-500,
+  .section--image figure.shadow-yellow-500 {
+    box-shadow: rem(24) rem(24) currentColor;
+  }
+
+  @include breakpoint-up(md) {
+    .nav--secondary .wrapper {
+      border: 1px solid currentColor;
+      box-shadow: rem(8) rem(8) 0 0 currentColor;
+    }
+  }
+}

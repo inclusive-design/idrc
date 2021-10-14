@@ -16,11 +16,11 @@
   width: calc(100vw - var(--gutter));
 
   &::after {
-    background: var(--header-bg, var(--indigo-100));
-    bottom: 0;
+    background: inherit;
+    bottom: -1px;
     content: "";
     display: block;
-    height: 100%;
+    height: calc(1px + 100%);
     margin-left: 50%;
     position: absolute;
     transform: translateX(-50%);

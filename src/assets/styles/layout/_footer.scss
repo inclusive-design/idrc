@@ -14,7 +14,7 @@
   width: calc(100vw - var(--gutter));
 
   &::after {
-    background: var(--indigo-800);
+    background: inherit;
     bottom: 0;
     content: "";
     display: block;
@@ -51,7 +51,7 @@
   margin-top: rem(48);
 
   &::before {
-    border-bottom: rem(2) solid $white;
+    border-bottom: rem(2) solid currentColor;
     content: "";
     display: block;
     margin-bottom: rem(8);
