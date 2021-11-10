@@ -4,7 +4,7 @@ title: Latest from We Count
 date: 2021-11-10T11:58:14.958Z
 author: IDRC Team
 ---
-### ,A Message from Our Director
+## A Message from Our Director
 
 Friends and colleagues,
 
@@ -18,7 +18,7 @@ All my best,
 
 Jutta 
 
-### News from the Field
+## News from the Field
 
 [Gathering Strength, Gathering Storms: The One Hundred Year Study on Artificial Intelligence (AI100) 2021 Study Panel Report](https://ai100.stanford.edu/2021-report/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence)
 The 2021 AI100 report is out! Learn more about the current state of AI, its impacts and where the technology is moving in this report written by multidisciplinary researchers in the field. 
@@ -51,7 +51,7 @@ In this TED Interview, OpenAI CEO Sam Altman makes a case for AI's potential to 
 
 Watch Abhishek Gupta's (MAIEI) talk about how a disconnect between the theoretical advances in solving AI ethics challenges and their practical implementation has led to a stasis in AI ethics. 
 
-### This Month
+## This Month
 
 <!--StartFragment-->
 
@@ -65,7 +65,7 @@ Think of something you experience in your life that is difficult to demonstrate.
 
 Share your ideas of how to approach this challenge with the We Count community by leaving a comment on the [We Count website](https://wecount.inclusivedesign.ca/initiatives/designing-proof-and-evidence-with-minorities-and-outlier-data/). 
 
-### Graduate Research Assistant Positions
+## Graduate Research Assistant Positions
 
 <!--StartFragment-->
 
@@ -79,7 +79,7 @@ The EDS team is developing a research knowledge base of current and emerging tec
 
 [Learn more and apply](https://tre.tbe.taleo.net/tre01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=2174) 
 
-### Initiatives
+## Initiatives
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3qdgMkIxjtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -91,13 +91,13 @@ In this video, discover how we're helping to create an inclusive and balanced da
 
 Visit our [YouTube channel](https://www.youtube.com/channel/UC6iJU0P9YVg9oes1gE6AV3g) to see past webinar recordings. New videos are released regularly, so be sure to subscribe.
 
-### We Count Badges
+## We Count Badges
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t5CSlGcmln8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Want to earn We Count badges? Find out more about our badges and how you can earn them in this video. 
 
-#### AI and Disability Learner Badge
+### AI and Disability Learner Badge
 
 Wendy Chisholm (Microsoft) and Jutta Treviranus (IDRC, OCAD University) discuss the complex relationship between innovative technology and disability, with a focus on AI. 
 
@@ -117,9 +117,9 @@ You will learn:
 
 Earn badges with We Count! Our badges enable earners to showcase their proficiency in AI, data systems and inclusive data practices. To find out more about the types of badges we offer and which badges are currently available, [visit our website](https://wecount.inclusivedesign.ca/badges/). 
 
-### IDRC News
+## IDRC News
 
-#### Accessibility in Action Co-Design
+### Accessibility in Action Co-Design
 
 Accessibility in Action sets out to create a platform that will bring disability communities together with the thousands of entities regulated under the [Accessible Canada Act of 2019](https://www.canada.ca/en/employment-social-development/programs/accessible-canada.html). The initiative aims to facilitate effective engagement of people with disabilities and federally regulated entities in creating an accessible and inclusive Canada that fully respects and protects the human rights of people with disabilities.
 
@@ -131,7 +131,7 @@ One of the main outcomes of the discovery co-design workshops was the outlining 
 
 After building rough versions of the project website based on what the team learned from the discovery co-design workshops, the team is now running brainstorming co-design workshops, working in small groups that are a mix of individuals, disability organizations and federally regulated entities. 
 
-#### AccessArt Project for 2021–2022 Year of Public Art
+### AccessArt Project for 2021–2022 Year of Public Art
 
 After wrapping up four workshops in July 2021, with the support of We Count, AccessArt continues its co-design process with Deaf, Disabled, and Neurodiverse Artists and Arts Workers with disabilities and friends. This fall, virtual drop-in co-development sessions have continued to refine the assessment criteria and playtest and research the accessibility of public art spaces. Work also continues on creative access and improving the institutions and processes that shape our shared spaces. 
 
@@ -142,7 +142,7 @@ Recent co-development guests include Accessibility Specialist Anika Abdullah fro
 
 If you’re interested in contributing to the mapping and casebuilding process, AccessArt invites you to sign up for paid roles! Please register to the [Access Art Alliance](https://forms.office.com/pages/responsepage.aspx?id=I_xtpezzh0KvmtifGtydJfhHVUlWwJhPuoeADOrVqwRUQVRFSzBLT1I1N0swWUQ3SDhJVldBTjNYTy4u), and a member of our team will contact you with more information. 
 
-### Learn More
+## Learn More
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mFvXgQMLdNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -150,7 +150,7 @@ Discover how We Count is addressing bias and developing new machine learning str
 
 [Visit our website](https://wecount.inclusivedesign.ca/) and follow us on social media to stay up-to-date with We Count initiatives and developments in the data science, disability and AI communities.
 
-### We Count acknowledges the support of:
+## We Count acknowledges the support of:
 
 * The Inclusive Design Research Centre
 * OCAD University
