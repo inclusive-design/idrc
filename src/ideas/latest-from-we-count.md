@@ -3,6 +3,7 @@ layout: layouts/single--idea.njk
 title: Latest from We Count
 date: 2021-11-10T11:58:14.958Z
 author: IDRC Team
+thumbnailImage: /media/we-count-logo_colour_no-background.png
 ---
 ## A Message from Our Director
 
