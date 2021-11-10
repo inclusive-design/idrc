@@ -53,35 +53,47 @@ Watch Abhishek Gupta's (MAIEI) talk about how a disconnect between the theoretic
 
 ### This Month
 
+<!--StartFragment-->
+
+![Designing Proof and Evidence with Minorities and Outlier Data Digging DEEPer Workshop](https://mcusercontent.com/df09b45913649b12f2a2aef66/images/5a85d174-50e0-9b14-062f-59355e3670fe.jpg)
+
+<!--EndFragment-->
+
 In preparation for our Minorities and Outlier Data co-design, we’re encouraging everyone to think about the challenge of proof for a small group, even a group that is just one person: you.
 
 Think of something you experience in your life that is difficult to demonstrate. Perhaps it’s an emotion you feel, a value you hold or a pain you experience. How might you go about proving your experience to someone else? How might you document or demonstrate it? What kind of proof could you produce to convince someone about the validity of your experience?
 
-Share your ideas of how to approach this challenge with the We Count community by leaving a comment on the We Count website. 
+Share your ideas of how to approach this challenge with the We Count community by leaving a comment on the [We Count website](https://wecount.inclusivedesign.ca/initiatives/designing-proof-and-evidence-with-minorities-and-outlier-data/). 
 
 ### Graduate Research Assistant Positions
+
+<!--StartFragment-->
+
+![Equitable Digital Systems logo](https://mcusercontent.com/df09b45913649b12f2a2aef66/images/0eb8197b-9697-c2da-f337-60a4e6faea55.png)
+
+<!--EndFragment-->
 
 The IDRC is hiring three research assistants to integrate with the Equitable Digital Systems (EDS) team and support their work with identifying gaps in currently available standards that address the accessibility of digital tools, systems and associated practices deployed by organizations regulated by Bill C-81, the Accessible Canada Act.
 
 The EDS team is developing a research knowledge base of current and emerging technical systems that present barriers to employees and prospective employees with disabilities. The team is co-creating an open platform that collects community research, new knowledge and input regarding emerging technical systems from a disability and accessibility perspective.
 
-Learn more and apply 
+[Learn more and apply](https://tre.tbe.taleo.net/tre01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=2174) 
 
 ### Initiatives
 
-Were you unable to attend our AI and Disability webinar with Wendy Chisholm and Jutta Treviranus? Discover the risks and rewards of AI for people with disabilities and how future developments in different industries may impact the disability community in this webinar video with Microsoft's Wendy Chisholm and the IDRC's Jutta Treviranus on our YouTube channel!  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3qdgMkIxjtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Were you unable to attend our AI and Disability webinar with Wendy Chisholm and Jutta Treviranus? Discover the risks and rewards of AI for people with disabilities and how future developments in different industries may impact the disability community in this webinar video with Microsoft's Wendy Chisholm and the IDRC's Jutta Treviranus on our [YouTube channel](https://youtu.be/3qdgMkIxjtY)!  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cEnONDRi-_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 In this video, discover how we're helping to create an inclusive and balanced data ecosystem for persons with disabilities through our ongoing call for challenges and challenge workshops.
 
-What Is a We Count Challenge? 
-
-In this video, discover how we're helping to create an inclusive and balanced data ecosystem for persons with disabilities through our ongoing call for challenges and challenge workshops. 
-
-Visit our YouTube channel to see past webinar recordings. New videos are released regularly, so be sure to subscribe.
+Visit our [YouTube channel](https://www.youtube.com/channel/UC6iJU0P9YVg9oes1gE6AV3g) to see past webinar recordings. New videos are released regularly, so be sure to subscribe.
 
 ### We Count Badges
 
-#### What Is a We Count Badge?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t5CSlGcmln8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Want to earn We Count badges? Find out more about our badges and how you can earn them in this video. 
 
@@ -95,9 +107,15 @@ You will learn:
 * How future developments in different industries may impact the disability community
   Apply for your Learner badge 
 
-Apply for your Learner badge 
+[Apply for your Learner badge ](https://factory.cancred.ca/c/earnablebadge/QZ5R8Ya1Q08Ra34G/apply)
 
-Earn badges with We Count! Our badges enable earners to showcase their proficiency in AI, data systems and inclusive data practices. To find out more about the types of badges we offer and which badges are currently available, visit our website. 
+<!--StartFragment-->
+
+![We Count badges: Learner, Brainstormer, Collaborator and Communicator](https://mcusercontent.com/df09b45913649b12f2a2aef66/images/726ebd05-222d-056d-7492-2ae11d08d0de.jpg)
+
+<!--EndFragment-->
+
+Earn badges with We Count! Our badges enable earners to showcase their proficiency in AI, data systems and inclusive data practices. To find out more about the types of badges we offer and which badges are currently available, [visit our website](https://wecount.inclusivedesign.ca/badges/). 
 
 ### IDRC News
 
