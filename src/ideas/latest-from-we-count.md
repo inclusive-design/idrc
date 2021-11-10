@@ -20,32 +20,34 @@ Jutta
 
 ### News from the Field
 
-Gathering Strength, Gathering Storms: The One Hundred Year Study on Artificial Intelligence (AI100) 2021 Study Panel Report
+[Gathering Strength, Gathering Storms: The One Hundred Year Study on Artificial Intelligence (AI100) 2021 Study Panel Report](https://ai100.stanford.edu/2021-report/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence)
 The 2021 AI100 report is out! Learn more about the current state of AI, its impacts and where the technology is moving in this report written by multidisciplinary researchers in the field. 
 
-Toyota Pauses Paralympics Self-Driving Buses after One Hits Visually Impaired Athlete
-During the Paralympics in Tokyo, as this Guardian article reveals, Toyota paused their self-driving shuttle service after an athlete who has a vision disability was struck by one of their self-driving buses. Like the pedestrian who was killed by a self-driving car in 2018, this athlete did not fit the "standard" pedestrian model, which suggests that self-driving AI systems may not yet be built for diversity or be able to work with outlier data.  
+[Toyota Pauses Paralympics Self-Driving Buses after One Hits Visually Impaired Athlete](https://www.theguardian.com/technology/2021/aug/28/toyota-pauses-paralympics-self-driving-buses-after-one-hits-visually-impaired-athlete)
+During the Paralympics in Tokyo, as this Guardian article reveals, Toyota paused their self-driving shuttle service after an athlete who has a vision disability was struck by one of their self-driving buses. Like the[ pedestrian who was killed by a self-driving car in 2018](https://www.theguardian.com/technology/2018/may/23/uber-shuts-down-self-driving-operation-in-arizona-two-months-after-fatal-crash), this athlete did not fit the "standard" pedestrian model, which suggests that self-driving AI systems may not yet be built for diversity or be able to work with outlier data.  
 
-Now That Machines Can Learn, Can They Unlearn?
+[Now That Machines Can Learn, Can They Unlearn?](https://www.wired.com/story/machines-can-learn-can-they-unlearn)
 With increased privacy concerns about AI systems, as this WIRED article explains, researchers are testing whether sensitive data can be removed from those systems without completely retraining them. 
 
-The Machine and Deep Learning Compendium
+[The Machine and Deep Learning Compendium](https://book.mlcompendium.com/)
 Want to learn more about machine and deep learning? Check out the ML Compendium, a highly detailed resource with over 500 ML-related topics, and participate in expanding the resource and making it more accessible. 
 
-How AI Can Help Shatter Barriers to Equality
+[How AI Can Help Shatter Barriers to Equality](https://www.ted.com/talks/jamila_gordon_how_ai_can_help_shatter_barriers_to_equality)
 In this TED Talk, Jamila Gordon shows how AI is helping refugees, migrants and those from disadvantaged backgrounds find jobs and develop the skills they need to work effectively and safely. 
 
-Foundation Models Risk Exacerbating ML’s Ethical Challenges
+[Foundation Models Risk Exacerbating ML’s Ethical Challenges](https://venturebeat.com/2021/08/18/foundation-models-risk-exacerbating-mls-ethical-challenges/)
 Learn about the far-reaching consequences of foundation models in this VentureBeat article. 
 
-How Bad Data Keeps Us from Good AI
+[How Bad Data Keeps Us from Good AI](https://www.ted.com/talks/mainak_mazumdar_how_bad_data_keeps_us_from_good_ai)
 Mainak Mazumdar shows in this TED Talk how less-than-quality data leads to AI that makes wrong decisions and predictions, and he reveals three infrastructural resets needed to make ethical AI possible. 
 
-Why Some Cities Are Banning Facial Recognition Technology
+[Why Some Cities Are Banning Facial Recognition Technology](https://www.wired.com/video/watch/why-some-cities-are-banning-facial-recognition-technology)
 Want to know more about how facial recognition technology works and why some cities are banning it? Check out this WIRED video. 
 
-The Race to Build AI That Benefits Humanity with Sam Altman
-In this TED Interview, OpenAI CEO Sam Altman makes a case for AI's potential to make the future better for all of us. 
+[The Race to Build AI That Benefits Humanity with Sam Altman](https://www.ted.com/talks/the_ted_interview_the_race_to_build_ai_that_benefits_humanity_with_sam_altman)
+In this TED Interview, OpenAI CEO Sam Altman makes a case for AI's potential to make the future better for all of us.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sjkIWubV-rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Watch Abhishek Gupta's (MAIEI) talk about how a disconnect between the theoretical advances in solving AI ethics challenges and their practical implementation has led to a stasis in AI ethics. 
 
@@ -70,3 +72,64 @@ Learn more and apply
 Were you unable to attend our AI and Disability webinar with Wendy Chisholm and Jutta Treviranus? Discover the risks and rewards of AI for people with disabilities and how future developments in different industries may impact the disability community in this webinar video with Microsoft's Wendy Chisholm and the IDRC's Jutta Treviranus on our YouTube channel!  
 
 In this video, discover how we're helping to create an inclusive and balanced data ecosystem for persons with disabilities through our ongoing call for challenges and challenge workshops.
+
+What Is a We Count Challenge? 
+
+In this video, discover how we're helping to create an inclusive and balanced data ecosystem for persons with disabilities through our ongoing call for challenges and challenge workshops. 
+
+Visit our YouTube channel to see past webinar recordings. New videos are released regularly, so be sure to subscribe.
+
+### We Count Badges
+
+#### What Is a We Count Badge?
+
+Want to earn We Count badges? Find out more about our badges and how you can earn them in this video. 
+
+#### AI and Disability Learner Badge
+
+Wendy Chisholm (Microsoft) and Jutta Treviranus (IDRC, OCAD University) discuss the complex relationship between innovative technology and disability, with a focus on AI. 
+
+You will learn:
+
+* The risks and rewards of AI for people with disabilities 
+* How future developments in different industries may impact the disability community
+  Apply for your Learner badge 
+
+Apply for your Learner badge 
+
+Earn badges with We Count! Our badges enable earners to showcase their proficiency in AI, data systems and inclusive data practices. To find out more about the types of badges we offer and which badges are currently available, visit our website. 
+
+### IDRC News
+
+#### Accessibility in Action Co-Design
+
+Accessibility in Action sets out to create a platform that will bring disability communities together with the thousands of entities regulated under the Accessible Canada Act of 2019. The initiative aims to facilitate effective engagement of people with disabilities and federally regulated entities in creating an accessible and inclusive Canada that fully respects and protects the human rights of people with disabilities.
+
+The IDRC team worked with the disability and Deaf community, disability organizations, and federally regulated entities to understand what a meaningful consultation means to them through the completion of discovery co-design workshops.
+
+To summarize the workshop results, the team has created documents that address accessible design guidelines, best practices for entities before engagement, recommended topics for training and resources, and website technical features. These documents will be available in the coming weeks on the project's Accessibility in Action Co-Design website. 
+
+One of the main outcomes of the discovery co-design workshops was the outlining of a consultation process, which describes the nine main steps of the consultation process, including outreach and preparation and training. 
+
+After building rough versions of the project website based on what the team learned from the discovery co-design workshops, the team is now running brainstorming co-design workshops, working in small groups that are a mix of individuals, disability organizations and federally regulated entities. 
+
+#### AccessArt Project for 2021–2022 Year of Public Art
+
+After wrapping up four workshops in July 2021, with the support of We Count, AccessArt continues its co-design process with Deaf, Disabled, and Neurodiverse Artists and Arts Workers with disabilities and friends. This fall, virtual drop-in co-development sessions have continued to refine the assessment criteria and playtest and research the accessibility of public art spaces. Work also continues on creative access and improving the institutions and processes that shape our shared spaces. 
+
+Recent co-development guests include Accessibility Specialist Anika Abdullah from DesignAble, assisting on refining standards, Kat Germain, sharing her expertise in the field of audio and visual descriptions, and Melanie Marsden, sharing insights and benefits of effective visual descriptions when experiencing art as someone with lived experience of disability. 
+
+Download posters from July’s workshops.
+Access visual descriptions for posters and workshop session notes.
+
+If you’re interested in contributing to the mapping and casebuilding process, AccessArt invites you to sign up for paid roles! Please register to the Access Art Alliance, and a member of our team will contact you with more information. 
+
+### Learn More
+
+What Is We Count? 
+
+Discover how We Count is addressing bias and developing new machine learning strategies that recognize and serve people with disabilities in this video. 
+
+Visit our website and follow us on social media to stay up-to-date with We Count initiatives and developments in the data science, disability and AI communities.
+
+### We Count acknowledges the support of:
