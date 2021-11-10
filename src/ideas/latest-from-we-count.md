@@ -121,11 +121,11 @@ Earn badges with We Count! Our badges enable earners to showcase their proficien
 
 #### Accessibility in Action Co-Design
 
-Accessibility in Action sets out to create a platform that will bring disability communities together with the thousands of entities regulated under the Accessible Canada Act of 2019. The initiative aims to facilitate effective engagement of people with disabilities and federally regulated entities in creating an accessible and inclusive Canada that fully respects and protects the human rights of people with disabilities.
+Accessibility in Action sets out to create a platform that will bring disability communities together with the thousands of entities regulated under the [Accessible Canada Act of 2019](https://www.canada.ca/en/employment-social-development/programs/accessible-canada.html). The initiative aims to facilitate effective engagement of people with disabilities and federally regulated entities in creating an accessible and inclusive Canada that fully respects and protects the human rights of people with disabilities.
 
 The IDRC team worked with the disability and Deaf community, disability organizations, and federally regulated entities to understand what a meaningful consultation means to them through the completion of discovery co-design workshops.
 
-To summarize the workshop results, the team has created documents that address accessible design guidelines, best practices for entities before engagement, recommended topics for training and resources, and website technical features. These documents will be available in the coming weeks on the project's Accessibility in Action Co-Design website. 
+To summarize the workshop results, the team has created documents that address accessible design guidelines, best practices for entities before engagement, recommended topics for training and resources, and website technical features. These documents will be available in the coming weeks on the project's [Accessibility in Action Co-Design website](https://accessibility-in-action.inclusivedesign.ca/). 
 
 One of the main outcomes of the discovery co-design workshops was the outlining of a consultation process, which describes the nine main steps of the consultation process, including outreach and preparation and training. 
 
@@ -135,7 +135,7 @@ After building rough versions of the project website based on what the team lear
 
 After wrapping up four workshops in July 2021, with the support of We Count, AccessArt continues its co-design process with Deaf, Disabled, and Neurodiverse Artists and Arts Workers with disabilities and friends. This fall, virtual drop-in co-development sessions have continued to refine the assessment criteria and playtest and research the accessibility of public art spaces. Work also continues on creative access and improving the institutions and processes that shape our shared spaces. 
 
-Recent co-development guests include Accessibility Specialist Anika Abdullah from DesignAble, assisting on refining standards, Kat Germain, sharing her expertise in the field of audio and visual descriptions, and Melanie Marsden, sharing insights and benefits of effective visual descriptions when experiencing art as someone with lived experience of disability. 
+Recent co-development guests include Accessibility Specialist Anika Abdullah from [DesignAble](http://www.designable.ca/), assisting on refining standards, [Kat Germain](https://katgermain.com/), sharing her expertise in the field of audio and visual descriptions, and Melanie Marsden, sharing insights and benefits of effective visual descriptions when experiencing art as someone with lived experience of disability. 
 
 Download posters from July’s workshops.
 Access visual descriptions for posters and workshop session notes.
