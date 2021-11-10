@@ -4,7 +4,7 @@ title: Latest from We Count
 date: 2021-11-10T11:58:14.958Z
 author: IDRC Team
 ---
-### A Message from Our Director
+### ,A Message from Our Director
 
 Friends and colleagues,
 
@@ -135,19 +135,24 @@ After building rough versions of the project website based on what the team lear
 
 After wrapping up four workshops in July 2021, with the support of We Count, AccessArt continues its co-design process with Deaf, Disabled, and Neurodiverse Artists and Arts Workers with disabilities and friends. This fall, virtual drop-in co-development sessions have continued to refine the assessment criteria and playtest and research the accessibility of public art spaces. Work also continues on creative access and improving the institutions and processes that shape our shared spaces. 
 
-Recent co-development guests include Accessibility Specialist Anika Abdullah from [DesignAble](http://www.designable.ca/), assisting on refining standards, [Kat Germain](https://katgermain.com/), sharing her expertise in the field of audio and visual descriptions, and Melanie Marsden, sharing insights and benefits of effective visual descriptions when experiencing art as someone with lived experience of disability. 
+Recent co-development guests include Accessibility Specialist Anika Abdullah from [DesignAble](http://www.designable.ca/), assisting on refining standards, [Kat Germain](https://katgermain.com/), sharing her expertise in the field of audio and visual descriptions, and [Melanie Marsden](https://dawncanada.net/news/melanieidam-13-11-2020/), sharing insights and benefits of effective visual descriptions when experiencing art as someone with lived experience of disability. 
 
-Download posters from July’s workshops.
-Access visual descriptions for posters and workshop session notes.
+[Download posters](https://drive.google.com/drive/folders/1U4Nk9nCkwhU8BYe2eMYWcdRx81jljduk) from July’s workshops.
+[Access visual descriptions](https://docs.google.com/document/d/1TDYnhTTo2RcQ9j9HSVgF4cCs0Pr3hMx5tu7IxB6FSGw/edit) for posters and workshop session notes.
 
-If you’re interested in contributing to the mapping and casebuilding process, AccessArt invites you to sign up for paid roles! Please register to the Access Art Alliance, and a member of our team will contact you with more information. 
+If you’re interested in contributing to the mapping and casebuilding process, AccessArt invites you to sign up for paid roles! Please register to the [Access Art Alliance](https://forms.office.com/pages/responsepage.aspx?id=I_xtpezzh0KvmtifGtydJfhHVUlWwJhPuoeADOrVqwRUQVRFSzBLT1I1N0swWUQ3SDhJVldBTjNYTy4u), and a member of our team will contact you with more information. 
 
 ### Learn More
 
-What Is We Count? 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mFvXgQMLdNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Discover how We Count is addressing bias and developing new machine learning strategies that recognize and serve people with disabilities in this video. 
 
-Visit our website and follow us on social media to stay up-to-date with We Count initiatives and developments in the data science, disability and AI communities.
+[Visit our website](https://wecount.inclusivedesign.ca/) and follow us on social media to stay up-to-date with We Count initiatives and developments in the data science, disability and AI communities.
 
 ### We Count acknowledges the support of:
+
+* The Inclusive Design Research Centre
+* OCAD University
+* Innovation Science and Economic Development, Canada's Accessible Technology Program
+* The William and Flora Hewlett Foundation
