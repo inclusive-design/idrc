@@ -1,7 +1,5 @@
 ---
-layout: layouts/page.njk
 title: ODD
-permalink: ""
 headerBgColor:
   - indigo-100
 headerBorderColor:
