@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: ODD
-permalink: ODD
+permalink: https://idrc.ocadu.ca/odd
 socialImage: ""
 intro: "![]()"
 headerBgColor:
