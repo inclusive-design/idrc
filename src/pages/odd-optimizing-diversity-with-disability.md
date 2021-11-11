@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: "ODD: Optimizing Diversity with Disability"
+title: ODD
 permalink: ODD
 socialImage: ""
 intro: "![]()"
