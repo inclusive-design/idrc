@@ -97,7 +97,7 @@
     "@11ty/eleventy": "0.12.1",
     "@11ty/eleventy-navigation": "0.3.2",
     "@11ty/eleventy-plugin-rss": "1.1.2",
-    "d3-selection": "2.0.0",
+    "d3-selection": "3.0.0",
     "eleventy-plugin-fluid": "0.3.1",
     "eleventy-plugin-pwa": "1.0.8",
     "eleventy-plugin-sharp": "0.0.3",
