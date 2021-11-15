@@ -564,7 +564,7 @@
 
     .menu button {
       background-color: var(--fl-buttonBgColor);
-      color: var(--fl-butonFgColor, var(--white));
+      color: var(--fl-buttonFgColor, var(--white));
 
       &:active {
         background: var(--fl-buttonBgColor, transparentize(black, 0.3));

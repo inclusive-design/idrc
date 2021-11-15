@@ -21,7 +21,7 @@
 }
 
 .milestones dt::before {
-  background: var(--fl-bgColor, var(--indigo-500));
+  background: var(--fl-fgColor, var(--indigo-500));
   border-radius: 50%;
   content: "";
   display: block;
@@ -33,7 +33,7 @@
 }
 
 .milestones dt.major::before {
-  background: var(--fl-bgColor, var(--indigo-800));
+  background: var(--fl-fgColor, var(--indigo-800));
   height: rem(20);
   left: rem(-45);
   top: rem(8);
