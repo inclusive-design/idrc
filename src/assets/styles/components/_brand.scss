@@ -8,8 +8,8 @@
 
   &:hover,
   &:focus {
-    background: var(--black);
-    color: var(--white);
+    background: var(--fl-bgColor, var(--black));
+    color: var(--fl-fgColor, var(--white));
   }
 
   &:active {
@@ -35,13 +35,13 @@
 
 .page--home {
   .brand {
-    color: var(--blue-500);
+    color: var(--fl-fgColor, var(--blue-500));
     width: rem(72);
 
     &:hover,
     &:focus {
-      background: var(--blue-500);
-      color: var(--white);
+      background: var(--fl-fgColor, var(--blue-500));
+      color: var(--fl-bgColor, var(--white));
     }
 
     &:active {
@@ -61,17 +61,17 @@
 .banner--menu-visible,
 .page--home .banner--menu-visible {
   .brand {
-    color: var(--white);
+    color: var(--fl-fgColor, var(--white));
 
     &:hover,
     &:focus {
-      background: var(--white);
-      color: var(--indigo-800);
+      background: var(--fl-fgColor, var(--white));
+      color: var(--fl-bgColor, var(--indigo-800));
     }
 
     &:active {
-      background: var(--indigo-900);
-      color: var(--white);
+      background: var(--fl-fgColor, var(--indigo-900));
+      color: var(--fl-bgColor, var(--white));
     }
   }
 }

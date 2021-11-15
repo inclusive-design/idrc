@@ -1,14 +1,22 @@
 
 [class*="fl-theme-"]:not(.fl-theme-prefsEditor-default) {
-  main > article header::after {
-    background: transparent;
-    border-color: inherit;
-    z-index: 0;
-  }
-
   .content a:visited,
   .footer a:visited {
     text-decoration-color: currentColor;
+  }
+
+  img {
+    filter: grayscale(100%);
+  }
+
+  &.fl-theme-by img,
+  &.fl-theme-bbr img {
+    mix-blend-mode: multiply;
+  }
+
+  // Use an SVG filter for yellow-on-black because we want it to blend with yellow, not the black background
+  &.fl-theme-yb img {
+    filter: grayscale(100%) url("../images/filters.svg#yellow");
   }
 
   .section--image figure,
@@ -19,9 +27,35 @@
   }
 
   @include breakpoint-up(md) {
+    .menu li ul {
+      box-shadow: none;
+    }
+
     .nav--secondary .wrapper {
       border: 1px solid currentColor;
       box-shadow: rem(8) rem(8) 0 0 currentColor;
     }
   }
+}
+
+.fl-prefsEditor-buttons button:focus,
+.fl-prefsEditor-buttons button:hover {
+  outline: 2px solid var(--fl-fgColor, currentColor);
+}
+
+.fl-input-enhanced {
+  a,
+  button,
+  input,
+  select,
+  textarea,
+  .fl-input-enhance {
+    font-size: var(--fl-enhance-font-size);
+  }
+}
+
+// UI Enhancer 'enhanced links' styling
+.fl-input-enhanced a {
+  font-weight: var(--fl-enhance-font-weight);
+  text-decoration: var(--fl-enhance-text-decoration);
 }

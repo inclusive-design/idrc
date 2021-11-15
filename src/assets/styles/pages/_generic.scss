@@ -13,9 +13,9 @@ main > article {
   width: calc(100vw - var(--gutter));
 
   header {
-    background: var(--header-bg, var(--indigo-100));
-    border-bottom: rem(10) solid var(--header-border);
-    color: var(--header-fg, $black);
+    background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
+    border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
+    color: var(--fl-fgColor, var(--header-fg, $black));
     flex: 0 0 100%;
     padding-bottom: rem(80);
     padding-top: rem(80);
@@ -23,7 +23,7 @@ main > article {
 
     &::after {
       background: inherit;
-      border-bottom: rem(10) solid var(--header-border);
+      border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
       bottom: rem(-10);
       content: "";
       display: block;
@@ -40,7 +40,7 @@ main > article {
     }
 
     .breadcrumbs {
-      font-family: var(--ff-display);
+      font-family: var(--fl-font-family, var(--ff-display));
       font-size: var(--step-2);
       font-weight: var(--fw-semibold);
     }
@@ -88,13 +88,13 @@ main > article {
 
 @each $name, $color in $colors {
   .hr--#{$name} {
-    border-bottom-color: $color;
+    border-bottom-color: var(--fl-fgColor, $color);
   }
 }
 
 .section {
-  background: var(--indigo-100);
-  color: var(--blue-900);
+  background: var(--fl-bgColor, var(--indigo-100));
+  color: var(--fl-fgColor, var(--blue-900));
   padding-bottom: rem(100);
   padding-top: rem(100);
 }
@@ -155,20 +155,20 @@ main > article {
 }
 
 .section--image figure {
-  box-shadow: rem(24) rem(24) var(--indigo-500);
+  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--indigo-500));
   margin-bottom: rem(100);
 }
 
 .section--image figure.shadow-indigo-500 {
-  box-shadow: rem(24) rem(24) var(--indigo-500);
+  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--indigo-500));
 }
 
 .section--image figure.shadow-coral-500 {
-  box-shadow: rem(24) rem(24) var(--coral-500);
+  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--coral-500));
 }
 
 .section--image figure.shadow-yellow-500 {
-  box-shadow: rem(24) rem(24) var(--yellow-500);
+  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--yellow-500));
 }
 
 .section img {

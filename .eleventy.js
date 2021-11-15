@@ -89,30 +89,11 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Passthrough file copy.
-    eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
-    eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
+	eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
+	eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/dist/infusion-uio.min.js": "lib/infusion/infusion-uio.min.js"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/components/tableOfContents/css/": "lib/infusion/src/components/tableOfContents/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/components/tableOfContents/html/": "lib/infusion/src/components/tableOfContents/html/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/components/textfieldControl/css/": "lib/infusion/src/components/textfieldControl/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/components/switch/css/": "lib/infusion/src/components/switch/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/Infusion-LICENSE.txt": "lib/infusion/Infusion-LICENSE.txt"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/preferences/css/": "lib/infusion/src/framework/preferences/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/preferences/fonts/": "lib/infusion/src/framework/preferences/fonts/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/preferences/html/": "lib/infusion/src/framework/preferences/html/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/preferences/messages/": "lib/infusion/src/framework/preferences/messages/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/preferences/preferencesDependencies.json": "lib/infusion/src/framework/preferences/preferencesDependencies.json"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/enhancement/css/": "lib/infusion/src/framework/enhancement/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/core/css/": "lib/infusion/src/framework/core/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/framework/core/images/": "lib/infusion/src/framework/core/images/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/lib/jquery/ui/css/default-theme/": "lib/infusion/src/lib/jquery/ui/css/default-theme/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/lib/normalize/css/": "lib/infusion/src/lib/normalize/css/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/lib/open-dyslexic/fonts/": "lib/infusion/src/lib/open-dyslexic/fonts"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/lib/opensans/fonts/": "lib/infusion/src/lib/opensans/fonts/"});
-	eleventyConfig.addPassthroughCopy({"node_modules/infusion/src/lib/roboto/fonts/": "lib/infusion/src/lib/roboto/fonts/"});
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 	eleventyConfig.addPassthroughCopy('_redirects');
 

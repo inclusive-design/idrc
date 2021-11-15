@@ -2,8 +2,8 @@
 // This file contains styles that are specific to the 404 page.
 // -----------------------------------------------------------------------------
 .page--404 {
-  background: var(--indigo-800);
-  color: var(--white);
+  background: var(--fl-bgColor, var(--indigo-800));
+  color: var(--fl-fgColor, var(--white));
 
   main > article {
     margin: 0 auto;
@@ -28,11 +28,12 @@
   }
 
   a {
-    text-decoration-color: var(--indigo-500);
+    text-decoration-color: var(--fl-linkColor, var(--indigo-500));
 
     &:hover,
     &:focus {
-      background: var(--indigo-500);
+      background: var(--fl-fgColor, var(--indigo-500));
+      color: var(--fl-bgColor);
     }
   }
 }

@@ -13,7 +13,7 @@
     }
 
     &::before {
-      background: radial-gradient(50% 50% at 50% 50%, $white 0%, rgba(255, 255, 255, 0) 100%) no-repeat 50% 50% / 100% 100%;
+      background: radial-gradient(50% 50% at 50% 50%, var(--fl-fgColor, $white) 0%, var(--fl-bgColor, rgba(255, 255, 255, 0) 100%)) no-repeat 50% 50% / 100% 100%;
       content: "";
       display: block;
       height: rem(640);

@@ -5,46 +5,49 @@
 }
 
 .nav .menu-toggle {
-  background: var(--header-bg, transparent);
+  background: var(--fl-buttonBgColor, var(--header-bg, transparent));
   border-radius: rem(3);
-  color: var(--blue-900);
+  color: var(--fl-buttonFgColor, var(--blue-900));
   height: 3rem(4);
-  line-height: 0.7;
+  line-height: calc(0.7 * var(--fl-lineSpace-factor, 1));
   margin-right: rem(2);
   padding: rem(6) rem(12);
   position: relative;
   z-index: 20;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--fl-buttonFgColor, rgba(255, 255, 255, 0.5));
+    color: var(--fl-buttonBgColor);
   }
 
   &:focus {
-    background: var(--header-bg, transparent);
-    box-shadow: 0 0 0 rem(2) var(--parent-bg), 0 0 0 rem(4) var(--blue-900), 0 0 0 rem(2) var(--blue-900) inset;
+    background: var(--fl-buttonFgColor, var(--header-bg, transparent));
+    box-shadow: 0 0 0 rem(2) var(--fl-buttonFgColor, var(--parent-bg)), 0 0 0 rem(4) var(--fl-buttonFgColor, var(--blue-900)), 0 0 0 rem(2) var(--fl-buttonFgColor, var(--blue-900)) inset;
+    color: var(--fl-buttonBgColor);
   }
 
   &:active {
-    background-color: var(--indigo-800);
-    color: var(--white);
+    background-color: var(--fl-buttongBgColor, var(--indigo-800));
+    color: var(--fl-buttonFgColor, var(--white));
   }
 
   &[aria-expanded="true"] {
-    color: var(--header-fg);
+    color: var(--fl-buttonFgColor, var(--header-fg));
 
     &:hover {
-      background: rgba(255, 255, 255, 0.3);
-      color: var(--header-fg);
+      background: var(--fl-buttonFgColor, rgba(255, 255, 255, 0.3));
+      color: var(--fl-buttonBgColor, var(--header-fg));
     }
 
     &:focus {
-      box-shadow: 0 0 0 rem(2) var(--parent-bg), 0 0 0 rem(4) var(--header-fg), 0 0 0 rem(2) var(--header-fg) inset;
-      color: var(--white);
+      background: var(--fl-buttonFgColor);
+      box-shadow: 0 0 0 rem(2) var(--fl-buttonFgColor, var(--parent-bg)), 0 0 0 rem(4) var(--fl-buttonFgColor, var(--header-fg)), 0 0 0 rem(2) var(--fl-buttonFgColor, var(--header-fg)) inset;
+      color: var(--fl-buttonBgColor, var(--white));
     }
 
     &:active {
-      background: var(--indigo-200);
-      color: var(--indigo-800);
+      background: var(--fl-buttonBgColor, var(--indigo-200));
+      color: var(--fl-buttonFgColor, var(--indigo-800));
     }
   }
 
@@ -55,9 +58,9 @@
 }
 
 .nav .menu {
-  background: var(--indigo-800);
-  box-shadow: 0 rem(20) rem(25) rem(-5) rgba(0, 0, 0, 0.1), 0 rem(10) rem(10) rem(-5) rgba(0, 0, 0, 0.04);
-  color: var(--white);
+  background: var(--fl-bgColor, var(--indigo-800));
+  box-shadow: 0 rem(20) rem(25) rem(-5) var(--fl-fgColor, rgba(0, 0, 0, 0.1)), 0 rem(10) rem(10) rem(-5) var(--fl-fgColor, rgba(0, 0, 0, 0.04));
+  color: var(--fl-fgColor, var(--white));
   display: none;
   left: calc(-1 / 2 * var(--gutter));
   padding: rem(88) 0 rem(40);
@@ -85,7 +88,7 @@
   padding: 0;
 
   &.submenu-parent--submenu-visible {
-    border-bottom: rem(1) solid black;
+    border-bottom: rem(1) solid var(--fl-fgColor, black);
 
     button[data-parent="true"] {
       text-decoration: none;
@@ -101,9 +104,8 @@
 .menu a,
 .menu button {
   align-items: center;
-  color: var(--white);
   display: flex;
-  font-family: var(--ff-display);
+  font-family: var(--fl-font-family, var(--ff-display));
   font-weight: var(--fw-semibold);
   height: rem(50);
   padding: 0 var(--gutter);
@@ -113,25 +115,47 @@
 
   &:hover,
   &:focus {
-    background: var(--indigo-100);
-    color: var(--indigo-800);
+    background: var(--fl-fgColor, var(--indigo-100));
+    color: var(--fl-bgColor, var(--indigo-800));
   }
+}
 
-  &:active {
-    background: var(--indigo-900);
-    color: var(--white);
+.menu a {
+  &:hover,
+  &:focus {
+    background: var(--fl-linkColor, var(--indigo-100));
+    color: var(--fl-bgColor, var(--indigo-800));
   }
+}
+
+.menu button {
+  &:hover,
+  &:focus {
+    background: var(--fl-buttonFgColor, var(--indigo-100));
+    color: var(--fl-buttonBgColor, var(--indigo-800));
+  }
+}
+
+.menu a,
+.menu a:active {
+  color: var(--fl-linkColor, var(--fl-fgColor, var(--white)));
+}
+
+.menu button,
+.menu button:active {
+  background-color: var(--fl-buttonBgColor, var(--fl-fgColor, var(--white)));
+  color: var(--fl-buttonFgColor, var(--fl-fgColor, var(--white)));
 }
 
 .menu [aria-current="page"],
 .menu [data-parent="true"] {
   text-decoration: underline;
-  text-decoration-color: var(--yellow-200);
+  text-decoration-color: var(--fl-linkColor, var(--yellow-200));
   text-decoration-thickness: rem(2);
 
   &:hover,
   &:focus {
-    text-decoration-color: var(--indigo-800);
+    text-decoration-color: var(--fl-bgColor, var(--indigo-800));
   }
 }
 
@@ -141,7 +165,7 @@
 }
 
 .menu li ul a {
-  background: var(--indigo-900);
+  background: var(--fl-linkColor, var(--fl-bgColor, var(--indigo-900)));
   font-weight: var(--fw-normal);
 }
 
@@ -162,21 +186,21 @@
 
 .page--404 {
   .nav .menu-toggle {
-    color: var(--header-fg);
+    color: var(--fl-fgColor, var(--header-fg));
 
     &:hover {
-      background: rgba(255, 255, 255, 0.3);
-      color: var(--header-fg);
+      background: var(--fl-fgColor, rgba(255, 255, 255, 0.3));
+      color: var(--fl-bgColor, var(--header-fg));
     }
 
     &:focus {
-      box-shadow: 0 0 0 rem(2) var(--parent-bg), 0 0 0 rem(4) var(--header-fg), 0 0 0 rem(2) var(--header-fg) inset;
-      color: var(--white);
+      box-shadow: 0 0 0 rem(2) var(--fl-fgColor, var(--parent-bg)), 0 0 0 rem(4) var(--fl-fgColor, var(--header-fg)), 0 0 0 rem(2) var(--fl-fgColor, var(--header-fg)) inset;
+      color: var(--fl-bgColor, var(--white));
     }
 
     &:active {
-      background: var(--indigo-200);
-      color: var(--indigo-800);
+      background: var(--fl-fgColor, var(--indigo-200));
+      color: var(--fl-bgColor, var(--indigo-800));
     }
   }
 }
@@ -184,20 +208,20 @@
 .page--home {
   .nav .menu-toggle {
     &:hover {
-      background: var(--indigo-200);
+      background: var(--fl-fgColor, var(--indigo-200));
     }
 
     &:active {
-      background: var(--indigo-800);
+      background: var(--fl-bgColor, var(--indigo-800));
     }
 
     &[aria-expanded="true"] {
       &:hover {
-        background: rgba(255, 255, 255, 0.3);
+        background: var(--fl-fgColor, rgba(255, 255, 255, 0.3));
       }
 
       &:active {
-        background: var(--white);
+        background: var(--fl-bgColor, var(--white));
       }
     }
   }
@@ -214,9 +238,9 @@
   }
 
   .nav .menu {
-    background: var(--header-bg);
+    background: var(--fl-bgColor, var(--header-bg));
     box-shadow: none;
-    color: var(--header-fg);
+    color: var(--fl-fgColor, var(--header-fg));
     display: block;
     margin-left: rem(-24);
     margin-right: rem(-24);
@@ -233,19 +257,34 @@
     display: block;
   }
 
-  .menu a,
-  .menu button {
-    color: var(--black);
+  .menu a {
+    color: var(--fl-linkColor, var(--black));
 
     &:hover,
     &:focus {
-      background: var(--black);
-      color: var(--white);
+      background: var(--fl-linkColor, var(--black));
+      color: var(--fl-bgColor, var(--white));
     }
 
     &:active {
-      background: transparentize(black, 0.3);
-      color: var(--white);
+      background: var(--fl-bgColor, transparentize(black, 0.3));
+      color: var(--fl-linkColor, var(--white));
+    }
+  }
+
+  .menu button {
+    background-color: var(--fl-buttonBgColor);
+    color: var(--fl-buttonFgColor, var(--black));
+
+    &:hover,
+    &:focus {
+      background: var(--fl-buttonFgColor, var(--black));
+      color: var(--fl-buttonBgColor, var(--white));
+    }
+
+    &:active {
+      background: var(--fl-buttonBgColor, transparentize(black, 0.3));
+      color: var(--fl-buttonFgColor, var(--white));
     }
   }
 
@@ -280,18 +319,18 @@
   .menu [aria-current="page"],
   .menu li ul [data-parent="true"] {
     text-decoration: underline;
-    text-decoration-color: var(--indigo-500);
+    text-decoration-color: var(--fl-fgColor, var(--indigo-500));
     text-decoration-thickness: rem(2);
 
     &:hover,
     &:focus {
-      text-decoration-color: var(--white);
+      text-decoration-color: var(--fl-bgColor, var(--white));
     }
   }
 
   .menu li ul a {
-    background: var(--header-bg);
-    color: var(--black);
+    background: var(--fl-bgColor, var(--header-bg));
+    color: var(--fl-linkColor, var(--black));
   }
 
   .menu a[href="#"] {
@@ -303,46 +342,73 @@
   }
 
   .page--404 {
-    .menu a,
-    .menu button {
-      color: var(--white);
+    .menu a {
+      color: var(--fl-linkColor, var(--white));
+
+      &:active {
+        background: var(--fl-bgColor, var(--indigo-900));
+        color: var(--fl-linkColor, var(--white));
+      }
 
       &:hover,
       &:focus {
-        background: var(--indigo-100);
-        color: var(--indigo-800);
+        background: var(--fl-linkColor, var(--indigo-100));
+        color: var(--fl-bgColor, var(--indigo-800));
       }
+    }
+
+    .menu button {
+      background-color: var(--fl-buttonBgColor);
+      color: var(--fl-buttonFgColor, var(--white));
 
       &:active {
-        background: var(--indigo-900);
-        color: var(--white);
+        background: var(--fl-buttonBgColor, var(--indigo-900));
+        color: var(--fl-buttonFgColor, var(--white));
+      }
+
+      &:hover,
+      &:focus {
+        background: var(--fl-buttonFgColor, var(--indigo-100));
+        color: var(--fl-buttonBgColor, var(--indigo-800));
       }
     }
 
     .menu li ul a {
-      background: var(--header-bg);
-      color: var(--white);
+      background: var(--fl-bgColor, var(--header-bg));
+      color: var(--fl-linkColor, var(--white));
     }
   }
 
   .page--home {
-    .menu a,
-    .menu button {
+    .menu a {
       &:hover,
       &:focus {
-        background: var(--blue-500);
-        color: var(--black);
+        background: var(--fl-linkColor, var(--blue-500));
+        color: var(--fl-bgColor, var(--black));
       }
 
       &:active {
-        background: transparentize($blue-500, 0.5);
-        color: var(--black);
+        background: var(--fl-bgColor, transparentize($blue-500, 0.5));
+        color: var(--fl-linkColor, var(--black));
+      }
+    }
+
+    .menu button {
+      &:active {
+        background: var(--fl-buttonBgColor, transparentize($blue-500, 0.5));
+        color: var(--fl-buttonFgColor, var(--black));
+      }
+
+      &:hover,
+      &:focus {
+        background: var(--fl-buttonFgColor, var(--blue-500));
+        color: var(--fl-buttonBgColor, var(--black));
       }
     }
 
     .menu li ul a {
-      background: var(--header-bg);
-      color: var(--black);
+      background: var(--fl-bgColor, var(--header-bg));
+      color: var(--fl-linkColor, var(--black));
     }
   }
 }
@@ -387,7 +453,8 @@
   }
 
   .menu li ul {
-    background: var(--white);
+    background: var(--fl-bgColor, var(--white));
+    border: rem(5) solid var(--fl-buttonFgColor, transparent);
     box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.25);
     left: 0;
     margin-top: 0;
@@ -399,45 +466,64 @@
   .menu a,
   .menu button {
     align-items: center;
-    color: var(--blue-900);
     display: flex;
     font-weight: var(--fw-medium);
     height: rem(80);
     padding: 0 rem(20);
+  }
+
+  .menu a {
+    color: var(--fl-linkColor, var(--blue-900));
+
+    &:active {
+      background: var(--fl-bgColor, transparentize(black, 0.3));
+      color: var(--fl-linkColor, var(--white));
+    }
 
     &:hover,
     &:focus {
-      background: var(--black);
-      color: var(--white);
+      background: var(--fl-linkColor, var(--black));
+      color: var(--fl-bgColor, var(--white));
     }
+  }
+
+  .menu button {
+    background-color: var(--fl-buttonBgColor);
+    color: var(--fl-buttonFgColor, var(--blue-900));
 
     &:active {
-      background: transparentize(black, 0.3);
-      color: var(--white);
+      background: var(--fl-buttonBgColor, transparentize(black, 0.3));
+      color: var(--fl-buttongFgColor, var(--white));
+    }
+
+    &:hover,
+    &:focus {
+      background: var(--fl-buttonFgColor, var(--black));
+      color: var(--fl-buttonBgColor, var(--white));
     }
   }
 
   .menu [aria-expanded="true"] {
-    background: var(--black);
-    color: var(--white);
+    background: var(--fl-bgColor, var(--black));
+    color: var(--fl-fgColor, var(--white));
   }
 
   .menu [aria-current="page"],
   .menu [data-parent="true"] {
     text-decoration: underline;
-    text-decoration-color: var(--black);
+    text-decoration-color: var(currentColor, var(--black));
     text-decoration-thickness: rem(2);
     text-underline-offset: rem(5);
 
     &:hover,
     &:focus {
-      text-decoration-color: var(--white);
+      text-decoration-color: var(--fl-bgColor, var(--white));
     }
   }
 
   .menu li ul a {
-    background: var(--white);
-    color: var(--black);
+    background: var(--fl-bgColor, var(--white));
+    color: var(--fl-linkColor, var(--black));
     font-weight: var(--fw-normal);
     height: unset;
     min-height: rem(50);
@@ -445,82 +531,109 @@
 
     &:hover,
     &:focus {
-      background: var(--yellow-500);
-      color: var(--black);
+      background: var(--fl-linkColor, var(--yellow-500));
+      color: var(--fl-bgColor, var(--black));
     }
 
     &:active {
-      background: transparentize($yellow-500, 0.5);
+      background: var(--fl-bgColor, transparentize($yellow-500, 0.5));
     }
 
     &[aria-current="page"] {
       &:hover,
       &:focus {
-        text-decoration-color: var(--black);
+        text-decoration-color: var(--fl-bgColor, var(--black));
       }
     }
   }
 
   .page--404 {
-    .menu a,
-    .menu button {
-      color: var(--white);
+    .menu a {
+      color: var(--fl-linkColor, var(--white));
+
+      &:active {
+        background: var(--fl-bgColor, transparentize(black, 0.3));
+      }
 
       &:hover,
       &:focus {
-        background: var(--black);
+        background: var(--fl-linkColor, var(--black));
+        color: var(--fl-bgColor);
       }
+    }
+
+    .menu button {
+      background-color: var(--fl-buttonBgColor);
+      color: var(--fl-butonFgColor, var(--white));
 
       &:active {
-        background: transparentize(black, 0.3);
+        background: var(--fl-buttonBgColor, transparentize(black, 0.3));
+      }
+
+      &:hover,
+      &:focus {
+        background: var(--fl-buttonFgColor, var(--black));
+        color: var(--fl-buttonBgColor);
       }
     }
 
     .menu li ul a {
-      background: var(--white);
-      color: var(--black);
+      background: var(--fl-bgColor, var(--white));
+      color: var(--fl-linkColor, var(--black));
 
       &:hover,
       &:focus {
-        background: var(--yellow-500);
-        color: var(--black);
+        background: var(--fl-linkColor, var(--yellow-500));
+        color: var(--fl-bgColor, var(--black));
       }
 
       &:active {
-        background: transparentize($yellow-500, 0.5);
+        background: var(--fl-bgColor, transparentize($yellow-500, 0.5));
       }
     }
   }
 
   .page--home {
-    .menu a,
-    .menu button {
-      &:hover,
-      &:focus {
-        background: var(--blue-500);
-        color: var(--black);
+    .menu a {
+      &:active {
+        background: var(--fl-bgColor, transparentize($blue-500, 0.5));
+        color: var(--fl-linkColor, var(--black));
       }
 
+      &:hover,
+      &:focus {
+        background: var(--fl-linkColor, var(--blue-500));
+        color: var(--fl-bgColor, var(--black));
+      }
+    }
+
+    .menu button {
       &:active {
-        background: transparentize($blue-500, 0.5);
-        color: var(--black);
+        background: var(--fl-buttonBgColor, transparentize($blue-500, 0.5));
+        color: var(--fl-buttonFgColor, var(--black));
+      }
+
+      &:hover,
+      &:focus {
+        background: var(--fl-buttonFgColor, var(--blue-500));
+        color: var(--fl-buttonBgColor, var(--black));
       }
     }
 
     .menu [aria-expanded="true"] {
-      background: var(--blue-500);
-      color: var(--black);
+      background: var(--fl-bgColor, var(--blue-500));
+      color: var(--fl-fgColor, var(--black));
     }
 
     .menu li ul a {
       &:hover,
       &:focus {
-        background: var(--yellow-500);
-        color: var(--black);
+        background: var(--fl-linkColor, var(--yellow-500));
+        color: var(--fl-bgColor, var(--black));
       }
 
       &:active {
-        background: transparentize($yellow-500, 0.5);
+        background: var(--fl-bgColor, transparentize($yellow-500, 0.5));
       }
     }
   }
@@ -572,8 +685,8 @@
 
       &:hover,
       &:focus {
-        background: var(--yellow-500);
-        color: var(--black);
+        background: var(--fl-linkColor, var(--yellow-500));
+        color: var(--fl-bgColor, var(--black));
       }
     }
 
@@ -588,12 +701,12 @@
 
     .menu [aria-current="page"] {
       text-decoration: underline;
-      text-decoration-color: var(--indigo-500);
+      text-decoration-color: var(--fl-fgColor, var(--indigo-500));
       text-decoration-thickness: rem(3);
 
       &:hover,
       &:focus {
-        text-decoration-color: var(--black);
+        text-decoration-color: var(--fl-bgColor, var(--black));
       }
     }
 
@@ -630,12 +743,12 @@
       .menu a {
         &:hover,
         &:focus {
-          background: var(--yellow-500);
-          color: var(--black);
+          background: var(--fl-linkColor, var(--yellow-500));
+          color: var(--fl-bgColor, var(--black));
         }
 
         &:active {
-          background: var(--yellow-500);
+          background: var(--fl-bgColor, var(--yellow-500));
         }
       }
     }
