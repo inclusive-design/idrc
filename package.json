@@ -14,6 +14,7 @@
     "build:bundle": "rollup --config",
     "build": "npm-run-all -l clean build:*",
     "clean": "rimraf dist",
+    "cms": "netlify-cms-proxy-server",
     "debug": "DEBUG=Eleventy* eleventy",
     "dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "lint:css": "stylelint src/assets/styles/**/*.scss",
@@ -24,7 +25,7 @@
     "test": "run-s test:*",
     "start": "npm-run-all -l clean build:bundle -p start:*",
     "start:webpack": "mix watch",
-    "start:eleventy": "concurrently \"npm run dev\" \"netlify-cms-proxy-server\""
+    "start:eleventy": "run-p dev cms"
   },
   "repository": {
     "type": "git",
@@ -59,7 +60,6 @@
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "backstopjs": "^5.4.4",
     "babel-loader": "^8.2.3",
-    "concurrently": "^6.3.0",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
