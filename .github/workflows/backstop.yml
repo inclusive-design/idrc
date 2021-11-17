@@ -52,7 +52,7 @@ jobs:
         cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'map(if .status == "fail" then "❌ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a> (\(.pair.diff.misMatchPercentage)% mismatch)" else "✅ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" end) | join("<br />")' >> backstop_data/json_report/report.md
         printf "</details>\n\n" >> backstop_data/json_report/report.md
         printf "To review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/actions/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\n" >> backstop_data/json_report/report.md
-        printf "If these changes were intended, run \`npm run backstop:test-docker && npm run backstop:approve\` locally and commit your changes." >> backstop_data/json_report/report.md
+        printf "If these changes were intended, run \`npm run backstop:test && npm run backstop:approve\` locally and commit your changes." >> backstop_data/json_report/report.md
     - name: Retrieve comment body
       if: always()
       id: retrieve-comment-body
