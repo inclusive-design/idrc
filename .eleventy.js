@@ -95,7 +95,6 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
-	eleventyConfig.addPassthroughCopy('src/robots.txt');
 	eleventyConfig.addPassthroughCopy('_redirects');
 
 	// BrowserSync.
