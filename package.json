@@ -6,6 +6,7 @@
   "scripts": {
     "backstop:reference": "backstop reference --docker --config=backstop.config.js",
     "backstop:test": "backstop test --docker --config=backstop.config.js",
+    "backstop:test:ci": "backstop test --config=backstop.config.js",
     "backstop:approve": "backstop approve --config=backstop.config.js",
     "build:webpack": "mix --production",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",

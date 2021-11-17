@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies, generate reference images, run visual regression tests
       run: |
         npm i
-        npm run backstop:test
+        npm run backstop:test:ci
       env:
         CI: true
     - name: Upload report as downloadable artifact
