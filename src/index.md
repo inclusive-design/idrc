@@ -13,10 +13,10 @@ intro: >
   [Learn more about us](/about/)
 headerBgColor: indigo-100
 sections:
-  - image2x: /media/what-we-do@2x.jpg
+  - image2x: /media/idrc-home-page-we-count.jpg
     imageOrderDesktop: swap
     desktopWidth: full
-    fullBleed: true
+    fullBleed: false
     imageOrder: start
     backgroundColor: indigo-800
     textColor: white
@@ -38,8 +38,8 @@ sections:
       ### Consulting and training
 
       The IDRC offers consulting services and training in digital accessibility and inclusive design.
-    imageAltText: Two people demonstrating a prototype created at an inclusive
-      cities hackathon that the IDRC facilitated.
+    imageAltText: People of different ages and ethnicity gathered around a table
+      making personalized contraptions.
     image: /media/idrc-home-page-we-count.jpg
     subsectionLevel: "0"
   - title: What is inclusive design?
@@ -54,7 +54,7 @@ sections:
     borderColor: white
     textColor: black
     desktopWidth: full
-    fullBleed: true
+    fullBleed: false
     subsectionLevel: "0"
   - image2x: /media/projects-and-tools@2x.jpg
     imageOrderDesktop: swap
@@ -85,7 +85,7 @@ sections:
     textColor: null
     desktopWidth: third
     subsectionLevel: "0"
-    fullBleed: true
+    fullBleed: false
   - title: Services we offer
     content: >-
       ### [IDRC Consulting](/consulting/)
@@ -98,7 +98,7 @@ sections:
     textColor: null
     desktopWidth: third
     subsectionLevel: "0"
-    fullBleed: true
+    fullBleed: false
   - title: Latest news
     content: This space intentionally left blank.
     backgroundColor: null
@@ -106,11 +106,11 @@ sections:
     textColor: null
     desktopWidth: third
     subsectionLevel: "0"
-    fullBleed: true
+    fullBleed: false
   - image2x: /media/job-postings@2x.jpg
     imageOrderDesktop: first
     desktopWidth: full
-    fullBleed: true
+    fullBleed: false
     imageOrder: start
     backgroundColor: null
     textColor: null
