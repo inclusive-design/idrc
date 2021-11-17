@@ -16,7 +16,7 @@ sections:
   - image2x: /media/idrc-home-page-we-count.jpg
     imageOrderDesktop: swap
     desktopWidth: full
-    fullBleed: false
+    fullBleed: true
     imageOrder: start
     backgroundColor: indigo-800
     textColor: white
@@ -54,7 +54,7 @@ sections:
     borderColor: white
     textColor: black
     desktopWidth: full
-    fullBleed: false
+    fullBleed: true
     subsectionLevel: "0"
   - image2x: /media/projects-and-tools@2x.jpg
     imageOrderDesktop: swap
