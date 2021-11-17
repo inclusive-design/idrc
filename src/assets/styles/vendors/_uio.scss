@@ -16,7 +16,9 @@
 
   // Use an SVG filter for yellow-on-black because we want it to blend with yellow, not the black background
   &.fl-theme-yb img {
-    filter: grayscale(100%) url("../images/filters.svg#yellow");
+    // Due to https://bugs.webkit.org/show_bug.cgi?id=127102 we need to access the SVG filter from an embedded SVG
+    // instead of an external one.
+    filter: grayscale(100%) url("#yellow");
   }
 
   .section--image figure,
@@ -58,4 +60,14 @@
 .fl-input-enhanced a {
   font-weight: var(--fl-enhance-font-weight);
   text-decoration: var(--fl-enhance-text-decoration);
+}
+
+// hide the colour filters used for theming images
+.color-filters {
+  height: 0;
+  left: -9999em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 0;
 }
