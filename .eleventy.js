@@ -89,12 +89,13 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Passthrough file copy.
-	eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
-	eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
+	eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});
+	eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
+	eleventyConfig.addPassthroughCopy('src/robots.txt');
 	eleventyConfig.addPassthroughCopy('_redirects');
 
 	// BrowserSync.
