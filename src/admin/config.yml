@@ -416,7 +416,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Description", name: "description", widget: "markdown", buttons: ['bold', 'italic'], editor_components: [], required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -431,7 +431,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Description", name: "description", widget: "markdown", buttons: ['bold', 'italic'], editor_components: [], required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
