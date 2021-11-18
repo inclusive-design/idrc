@@ -26,6 +26,12 @@
                                 {% endfor %}
                             </p>
                             {% endif %}
+                            {% if project.data.thumbnailImage %}
+                                {% set thumbnail = 'src' + project.data.thumbnailImage %}
+                                {% set thumbnail1x = thumbnail | resize({width: 570, height: 382, fit: 'cover'}) | png %}
+                                {% set thumbnail2x = thumbnail | resize({width: 1140, height: 764, fit: 'cover'}) | png %}
+                                <img class="thumbnail" src="{% getUrl thumbnail1x %}" srcset="{% getUrl thumbnail1x %} 1x, {% getUrl thumbnail2x %} 2x" width="570" height="382" alt="" />
+                            {% endif %}
                             <p class="project__link"><a rel="external" href="{{ project.data.link }}">Visit {{ project.data.shortName if project.data.shortName else project.data.title }} website</a></p>
                         </div>
                         {% endfor %}
@@ -49,6 +55,12 @@
                                 <span class="tag">{{ tag | safe }}</span>
                                 {% endfor %}
                             </p>
+                            {% endif %}
+                            {% if tool.data.thumbnailImage %}
+                                {% set thumbnail = 'src' + tool.data.thumbnailImage %}
+                                {% set thumbnail1x = thumbnail | resize({width: 570, height: 382, fit: 'cover'}) | png %}
+                                {% set thumbnail2x = thumbnail | resize({width: 1140, height: 764, fit: 'cover'}) | png %}
+                                <img class="thumbnail" src="{% getUrl thumbnail1x %}" srcset="{% getUrl thumbnail1x %} 1x, {% getUrl thumbnail2x %} 2x" width="570" height="382" alt="" />
                             {% endif %}
                             <p class="tool__link"><a rel="external" href="{{ tool.data.link }}">Visit {{ tool.data.shortName if tool.data.shortName else tool.data.title }} website</a></p>
                         </div>

@@ -418,6 +418,7 @@ collections:
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "tools"
@@ -433,6 +434,7 @@ collections:
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
       - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - label: "Globals"

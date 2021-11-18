@@ -12,6 +12,15 @@
   margin-top: rem(16);
 }
 
+.page--projects-and-tools {
+  .thumbnail {
+    border-top: rem(2) solid var(--fl-fgColor, var(--indigo-500));
+    height: auto;
+    margin-bottom: rem(28);
+    width: 100%;
+  }
+}
+
 @include breakpoint-up(md) {
   .page--projects-and-tools .projects,
   .page--projects-and-tools .tools {
