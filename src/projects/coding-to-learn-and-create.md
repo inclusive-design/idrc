@@ -8,4 +8,6 @@ tags: []
 link: https://www.codelearncreate.org/
 order: 20
 ---
-![](/media/large-logo-black-on-transparent-bg.png)
+
+
+![Coding to Learn and Create wordmark logo](/media/large-logo-black-on-transparent-bg.png)
