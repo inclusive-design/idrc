@@ -8,4 +8,4 @@ tags: []
 link: https://www.codelearncreate.org/
 order: 20
 ---
-![](/media/artboard-1.png)
+![Coding to Learn and Create wordmark logo](/media/artboard-1.png)
