@@ -5,6 +5,11 @@ shortName: false
 description: >-
   Providing the tools and resources to start, grow and convert to platform
   co-ops.
+
+
+
+
+  ![Platform Cooperative Consortium logo](/media/pcc.png)
 tags: []
 link: https://platform.coop/blog/the-platform-co-op-development-kit/
 order: 30
