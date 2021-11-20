@@ -7,7 +7,7 @@ description: >-
   co-ops.
 
 
-  ![Platform Cooperative Consortium logo](/media/pdkit.png)
+  ![Illustration of four people around an open suitcase from overhead. The suitcase has ten different sections of the Platform co-op development kit](/media/pdkit.png)
 tags: []
 link: https://platform.coop/blog/the-platform-co-op-development-kit/
 order: 30
