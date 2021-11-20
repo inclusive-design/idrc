@@ -7,9 +7,7 @@ description: >-
   co-ops.
 
 
-
-
-  ![Platform Cooperative Consortium logo](/media/pcc.png)
+  ![Platform Cooperative Consortium logo](/media/pdkit.png)
 tags: []
 link: https://platform.coop/blog/the-platform-co-op-development-kit/
 order: 30
