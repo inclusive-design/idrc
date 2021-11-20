@@ -11,8 +11,6 @@ description: >-
   and employment as they mainly relate to persons with disabilities.
 
 
-
-
-  ![](/media/fwd.png)
+  ![FWD logo](/media/fwd.png)
 link: https://wecount.inclusivedesign.ca/views/fwd/
 ---
