@@ -4,9 +4,7 @@ shortName: FLOE
 description: |-
   Designing open education for diverse learners.
 
-
-
-  ![FLOE logo](/media/floe.png)
+  ![FLOE logo]()
 tags: []
 link: http://floeproject.org/
 order: 10
