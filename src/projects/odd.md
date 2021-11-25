@@ -6,8 +6,6 @@ description: >-
   non-disability specific and synthesized disability specific employment data.
 
 
-
-
-  ![](/media/odd.png)
+  ![ODD logo](/media/odd.png)
 link: https://idrc.ocadu.ca/odd
 ---
