@@ -165,8 +165,15 @@
 }
 
 .menu li ul a {
-  background: var(--fl-linkColor, var(--fl-bgColor, var(--indigo-900)));
+  background: var(--fl-linkColor, var(--indigo-900));
+  color: var(--fl-bgColor);
   font-weight: var(--fw-normal);
+
+  &:hover,
+  &:focus {
+    background: var(--fl-bgColor, var(--indigo-100));
+    color: var(--fl-linkColor, var(--indigo-800));
+  }
 }
 
 .menu li ul a[rel~="external"]::after,
