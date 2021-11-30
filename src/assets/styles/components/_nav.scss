@@ -536,7 +536,8 @@
     }
 
     &:active {
-      background: var(--fl-bgColor, transparentize($yellow-500, 0.5));
+      background: var(--fl-linkColor, transparentize($yellow-500, 0.5));
+      color: var(--fl-bgColor);
     }
 
     &[aria-current="page"] {
