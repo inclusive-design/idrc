@@ -101,6 +101,6 @@
     "eleventy-plugin-fluid": "0.3.1",
     "eleventy-plugin-pwa": "1.0.8",
     "eleventy-plugin-sharp": "0.0.3",
-    "infusion": "4.0.0-FLUID-6605.20211110T225230Z.0692b7da3.FLUID-6605"
+    "infusion": "4.0.0-dev.20211125T195630Z.60d4b3be8.main"
   }
 }
