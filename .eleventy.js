@@ -89,8 +89,8 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Passthrough file copy.
-    eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});
-    eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
+	eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});
+	eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('src/admin/previews.js');

@@ -1,5 +1,5 @@
 .page--projects-and-tools .hr {
-  border-bottom-color: var(--indigo-500);
+  border-bottom-color: var(--fl-fgColor, var(--indigo-500));
 }
 
 .page--projects-and-tools .project,

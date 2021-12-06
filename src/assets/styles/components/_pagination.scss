@@ -49,12 +49,13 @@
 }
 
 .pagination a[aria-current="page"] {
-  background: var(--indigo-800);
-  color: var(--white);
+  background: var(--fl-bgColor, var(--indigo-800));
+  color: var(--fl-linkColor, var(--white));
 
   &:hover,
   &:focus {
-    background: var(--indigo-500);
+    background: var(--fl-fgColor, var(--indigo-500));
+    color: var(--fl-bgColor);
   }
 }
 
