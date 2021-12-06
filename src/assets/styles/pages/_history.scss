@@ -4,7 +4,7 @@
 }
 
 .line {
-  color: transparentize($indigo-500, 0.5);
+  color: var(--fl-fgColor, transparentize($indigo-500, 0.5));
   left: 0;
   position: absolute;
   top: rem(16);
@@ -15,13 +15,13 @@
 }
 
 .milestones dt {
-  font-family: var(--ff-display);
+  font-family: var(--fl-font-family, var(--ff-display));
   font-size: var(--step-2);
   position: relative;
 }
 
 .milestones dt::before {
-  background: var(--indigo-500);
+  background: var(--fl-fgColor, var(--indigo-500));
   border-radius: 50%;
   content: "";
   display: block;
@@ -33,7 +33,7 @@
 }
 
 .milestones dt.major::before {
-  background: var(--indigo-800);
+  background: var(--fl-fgColor, var(--indigo-800));
   height: rem(20);
   left: rem(-45);
   top: rem(8);

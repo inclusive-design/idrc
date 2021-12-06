@@ -1,6 +1,6 @@
 figcaption {
-  color: #4f4f4f;
-  font-family: var(--ff-sans);
+  color: var(--fl-fgColor, #4f4f4f);
+  font-family: var(--fl-font-family, var(--ff-sans));
   font-size: var(--step--1);
   font-style: italic;
   margin-top: rem(10);
