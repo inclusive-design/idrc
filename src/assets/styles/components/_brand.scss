@@ -1,5 +1,5 @@
 .brand {
-  color: inherit;
+  color: var(--fl-linkColor, inherit);
   height: rem(80);
   margin-left: rem(-3);
   padding-top: rem(12);
@@ -8,12 +8,13 @@
 
   &:hover,
   &:focus {
-    background: var(--fl-bgColor, var(--black));
-    color: var(--fl-fgColor, var(--white));
+    background: var(--fl-linkColor, var(--black));
+    color: var(--fl-bgColor, var(--white));
   }
 
   &:active {
-    background: transparentize(black, 0.3);
+    background: var(--fl-linkColor, transparentize(black, 0.3));
+    color: var(--fl-bgColor);
   }
 }
 
@@ -35,17 +36,18 @@
 
 .page--home {
   .brand {
-    color: var(--fl-fgColor, var(--blue-500));
+    color: var(--fl-linkColor, var(--blue-500));
     width: rem(72);
 
     &:hover,
     &:focus {
-      background: var(--fl-fgColor, var(--blue-500));
+      background: var(--fl-linkColor, var(--blue-500));
       color: var(--fl-bgColor, var(--white));
     }
 
     &:active {
-      background: transparentize($blue-500, 0.3);
+      background: var(--fl-linkColor, transparentize($blue-500, 0.3));
+      color: var(--fl-bgColor);
     }
   }
 
