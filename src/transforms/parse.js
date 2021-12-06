@@ -1,9 +1,9 @@
 const getSize = require('image-size');
-const {parseHTML} = require("linkedom");
+const {parseHTML} = require('linkedom');
 
 module.exports = (value, outputPath) => {
 	if (outputPath && outputPath.includes('.html')) {
-		let {document} = parseHTML(value);
+		const {document} = parseHTML(value);
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
