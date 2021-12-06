@@ -7,13 +7,7 @@
   'abstracts/mixins',
   'abstracts/grid';
 
-// 2. Vendors
-
-// @import
-//  'vendors/uio';
-// TODO: User Interface Options
-
-// 3. Base stuff
+// 2. Base stuff
 @import
   'base/reset',
   'base/base',
@@ -21,12 +15,12 @@
   'base/typography',
   'base/helpers';
 
-// 4. Layout-related sections
+// 3. Layout-related sections
 @import
   'layout/header',
   'layout/footer';
 
-// 5. Components
+// 4. Components
 @import
   'components/brand',
   'components/button',
@@ -35,7 +29,7 @@
   'components/pagination',
   'components/metadata';
 
-// 6. Page-specific styles
+// 5. Page-specific styles
 @import
   'pages/generic',
   'pages/home',
@@ -45,6 +39,10 @@
   'pages/single',
   'pages/team',
   'pages/404';
+
+// 6. Vendors
+@import
+  'vendors/uio';
 
 // 7. Themes
 @import

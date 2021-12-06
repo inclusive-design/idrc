@@ -30,13 +30,13 @@ const collapseSubmenu = btn => {
  */
 const collapseAll = () => {
 	collapseMenu();
-	dropdownButtons.forEach(btn => {
+	for (const btn of dropdownButtons) {
 		collapseSubmenu(btn);
-	});
+	}
 };
 
 // Create submenu buttons and submenus
-dropdownLinks.forEach(link => {
+for (const link of dropdownLinks) {
 	const toggleButton = document.createElement('button');
 	const dropdown = link.nextElementSibling;
 
@@ -58,7 +58,7 @@ dropdownLinks.forEach(link => {
 	link.replaceWith(toggleButton);
 
 	dropdownButtons.push(toggleButton);
-});
+}
 
 // Handle click event on menu toggle button.
 document.addEventListener('click', event => {
@@ -87,11 +87,11 @@ document.addEventListener('click', event => {
 	const expanded = submenuToggle.getAttribute('aria-expanded') === 'true' || false;
 	submenuToggle.setAttribute('aria-expanded', !expanded);
 
-	dropdownButtons.forEach(btn => {
+	for (const btn of dropdownButtons) {
 		if (btn !== submenuToggle) {
 			collapseSubmenu(btn);
 		}
-	});
+	}
 
 	if (expanded) {
 		submenuToggle.parentNode.classList.remove('submenu-parent--submenu-visible');
@@ -119,13 +119,13 @@ document.addEventListener('keydown', event => {
 });
 
 // Handle blur on menu items.
-menuItems.forEach(menuItem => {
+for (const menuItem of menuItems) {
 	menuItem.addEventListener('blur', event => {
 		if (event.target === menuItems[menuItems.length - 1] && event.relatedTarget && event.relatedTarget.parentNode.nodeName !== 'LI') {
 			collapseAll();
 		}
 	});
-});
+}
 
 // Draw timeline.
 if (document.querySelector('.timeline')) {

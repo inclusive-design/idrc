@@ -1,6 +1,6 @@
 .single article header {
-  background: var(--white);
-  color: var(--blue-900);
+  background: var(--fl-bgColor, var(--white));
+  color: var(--fl-fgColor, var(--blue-900));
 }
 
 .single article .metadata {

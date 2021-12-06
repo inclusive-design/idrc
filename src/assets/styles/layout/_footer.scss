@@ -2,8 +2,8 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-  background: var(--indigo-800);
-  color: var(--white);
+  background: var(--fl-bgColor, var(--indigo-800));
+  color: var(--fl-fgColor, var(--white));
   display: flex;
   flex-wrap: wrap;
   margin: auto auto 0;
@@ -14,7 +14,7 @@
   width: calc(100vw - var(--gutter));
 
   &::after {
-    background: var(--indigo-800);
+    background: inherit;
     bottom: 0;
     content: "";
     display: block;
@@ -39,11 +39,17 @@
 
 .footer a:hover,
 .footer a:focus {
-  background: var(--indigo-500);
+  background: var(--fl-linkColor, var(--indigo-500));
+  color: var(--fl-bgColor);
+
+  svg {
+    background-color: var(--fl-linkColor);
+    outline: rem(5) solid var(--fl-linkColor, var(--indigo-500));
+  }
 }
 
 .footer a:visited {
-  text-decoration-color: var(--indigo-500);
+  text-decoration-color: var(--fl-linkColor, var(--indigo-500));
 }
 
 .footer .social,
@@ -51,7 +57,7 @@
   margin-top: rem(48);
 
   &::before {
-    border-bottom: rem(2) solid $white;
+    border-bottom: rem(2) solid currentColor;
     content: "";
     display: block;
     margin-bottom: rem(8);

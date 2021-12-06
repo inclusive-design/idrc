@@ -9,7 +9,7 @@
 {% block content %}
     <article>
         {% include 'partials/components/page-header.njk' %}
-        {%- if sections %}
+        {%- if sections and sections.length > 0 %}
             {%- for section in sections %}
             {% include 'partials/components/section.njk' %}
             {%- endfor %}

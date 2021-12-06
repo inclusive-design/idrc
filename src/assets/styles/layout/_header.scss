@@ -5,8 +5,8 @@
   --parent-bg: var(--header-bg, var(--indigo-100));
 
   align-items: center;
-  background: var(--header-bg, var(--indigo-100));
-  color: var(--header-fg, $black);
+  background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
+  color: var(--fl-fgColor, var(--header-fg, $black));
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -16,11 +16,11 @@
   width: calc(100vw - var(--gutter));
 
   &::after {
-    background: var(--header-bg, var(--indigo-100));
-    bottom: 0;
+    background: inherit;
+    bottom: -1px;
     content: "";
     display: block;
-    height: 100%;
+    height: calc(1px + 100%);
     margin-left: 50%;
     position: absolute;
     transform: translateX(-50%);
@@ -35,7 +35,7 @@
   z-index: 1;
 
   &::after {
-    box-shadow: 0 rem(3) rem(10) rgba(0, 0, 0, 0.05);
+    box-shadow: 0 rem(3) rem(10) var(--fl-fgColor, rgba(0, 0, 0, 0.05));
   }
 }
 

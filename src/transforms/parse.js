@@ -1,14 +1,9 @@
 const getSize = require('image-size');
-const jsdom = require('jsdom');
-const {JSDOM} = jsdom;
+const {parseHTML} = require('linkedom');
 
 module.exports = (value, outputPath) => {
 	if (outputPath && outputPath.includes('.html')) {
-		const DOM = new JSDOM(value, {
-			resources: 'usable'
-		});
-
-		const document = DOM.window.document;
+		const {document} = parseHTML(value);
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
@@ -20,7 +15,7 @@ module.exports = (value, outputPath) => {
 		];
 
 		if (images.length > 0) {
-			images.forEach(image => {
+			for (const image of images) {
 				image.setAttribute('loading', 'lazy');
 
 				const file = image.getAttribute('src');
@@ -47,23 +42,23 @@ module.exports = (value, outputPath) => {
 
 					image.replaceWith(figure);
 				}
-			});
+			}
 		}
 
 		if (links.length > 0) {
-			links.forEach(link => {
+			for (const link of links) {
 				if (
 					!link.href.startsWith('/') &&
 					(!['localhost:3000', 'idrc.ocadu.ca'].includes(link.host) || !link.host.endsWith('idrc.netlify.app'))
 				) {
 					link.setAttribute('rel', 'external');
 				}
-			});
+			}
 		}
 
 		if (subheads.length > 0) {
 			// Loop each heading and add a little anchor and an ID to each one
-			subheads.forEach(heading => {
+			for (const heading of subheads) {
 				// Function to create a node list
 				// of the content between this <h2> and the next
 				const getContent = element => {
@@ -75,9 +70,9 @@ module.exports = (value, outputPath) => {
 					}
 
 					// Delete the old versions of the content nodes
-					elems.forEach(node => {
+					for (const node of elems) {
 						node.remove();
-					});
+					}
 
 					return elems;
 				};
@@ -89,15 +84,15 @@ module.exports = (value, outputPath) => {
 				wrapper.className = 'subsection';
 
 				// Add each element of `contents` to `wrapper`
-				contents.forEach(node => {
+				for (const node of contents) {
 					wrapper.append(node);
-				});
+				}
 
 				// Add the wrapped content back into the DOM
 				// after the heading
 				heading.parentNode.insertBefore(wrapper, heading.nextElementSibling);
 				wrapper.prepend(heading);
-			});
+			}
 		}
 
 		return '<!DOCTYPE html>\r\n' + document.documentElement.outerHTML;

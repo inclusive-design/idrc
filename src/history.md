@@ -9,9 +9,9 @@ permalink: /about/history/
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
-secondaryNavigation:
-  key: About
-  label: More about us
+# secondaryNavigation:
+#   key: About
+#   label: More about us
 milestones:
     - year: 1993
       title: Adaptive Technology Resource Centre established
