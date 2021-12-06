@@ -1,14 +1,9 @@
 const getSize = require('image-size');
-const jsdom = require('jsdom');
-const {JSDOM} = jsdom;
+const {parseHTML} = require('linkedom');
 
 module.exports = (value, outputPath) => {
 	if (outputPath && outputPath.includes('.html')) {
-		const DOM = new JSDOM(value, {
-			resources: 'usable'
-		});
-
-		const document = DOM.window.document;
+		const {document} = parseHTML(value);
 		const images = [
 			...document.querySelectorAll('main article img')
 		];
