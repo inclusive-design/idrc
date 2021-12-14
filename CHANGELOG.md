@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.1](https://www.github.com/inclusive-design/idrc/compare/v1.3.0...v1.3.1) (2021-12-14)
+
+
+### Bug Fixes
+
+* update phone number ([#266](https://www.github.com/inclusive-design/idrc/issues/266)) ([e37fd19](https://www.github.com/inclusive-design/idrc/commit/e37fd19fd2c65baf85c6ccd60a9e2e5ccf56db41))
+
 ## [1.3.0](https://www.github.com/inclusive-design/idrc/compare/v1.2.3...v1.3.0) (2021-12-06)
 
 
