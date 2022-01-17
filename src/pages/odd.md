@@ -1,5 +1,6 @@
 ---
-title: ODD
+title: "Optimizing Diversity with Disability "
+permalink: /odd
 headerBgColor:
   - indigo-100
 headerBorderColor:
