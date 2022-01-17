@@ -1,5 +1,5 @@
 ---
-title: "Optimizing Diversity with Disability "
+title: ODD
 headerBgColor:
   - indigo-100
 headerBorderColor:
