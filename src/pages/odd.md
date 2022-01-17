@@ -20,6 +20,16 @@ In the work with did in our [We Count project ](https://wecount.inclusivedesign.
 
 We chose the name ODD because we are reclaiming a word that is often used pejoratively. People with disabilities are rejected because they are “odd,” but it is that oddness that prompts innovation and means that you can see the things that other people miss.
 
+## Our Team
+
+Jutta Treviranus – Director\
+Vera Roberts – Project Manager\
+Cindy Li – Technical Manager\
+Antranig Basman – Sr. Inclusive Developer\
+David Pereyra – Project Coordinator\
+Caren Watkins – Inclusive Designer\
+Edward Thomas – Research Assistant
+
 ## Project Architecture
 
 ![Project Architecture described below in detail. External data sources are aggregated to from synthetic data sets that will be tested with LinkedIn Recruiter.](/media/architecture.png)
