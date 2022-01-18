@@ -40,7 +40,7 @@ sections:
       The IDRC offers consulting services and training in digital accessibility and inclusive design.
     imageAltText: People of different ages and ethnicity gathered around a table
       making personalized contraptions.
-    image: /media/idrc-home-page-we-count.jpg
+    image: /media/codesign.jpg
     subsectionLevel: "0"
   - title: What is inclusive design?
     content: >-
