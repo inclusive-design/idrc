@@ -34,7 +34,46 @@ The _Guide_ is organized in five sections related to healthcare:
 
 Each section consists of guidelines covering many scenarios that can help identify areas to improve inclusion and accessibility.
 
-## About the Software Approach 
+### About the Software Approach 
 The _Software Approach for Expressing Personal Preferences for Healthcare_ outlines a method for reducing barriers using a system that gathers, stores, and applies personal preferences. Implementing this approach can address issues identified by the Guide.
 
 The _Approach_ does not prescribe a particular technology, rather it leaves those choices open so system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
+
+## Using the Guide and the Approach
+The following examples show how the _Guide_ and the _Approach_ can be used to reduce barriers to healthcare.
+
+**Healthcare providers** can use the _Guide_’s guidelines to inspire change to their practices and policies for inclusion and access. 
+
+Relevant guidelines:
+* 5.1 Understandable Communication
+* 2.4 Enhancing intake process to personalize service delivery
+* 2.6 Improving Service by storing and sharing complimentary information
+* 3.3 Interoperability with assistive technology
+
+Possible Service / Policy Change:
+* Allow patient to indicate the need of any supports, such as a screen reader or interpreter.
+* Policy for all print and digital material machine readable.
+* Ensure digital platforms used for virtual visits comply with accessibility standards.
+* Service delivery change to prepare additional description during virtual and in-person appointments.
+
+Barriers addressed:
+* Some patients / clients have low or no vision and experience challenges when using online virtual visit platform, or during in-person visits. 
+* Some patients / clients may need translation or assistance in understanding what is being communicated.
+
+**Software developers and platform builders** can use the Guide to create functional specifications and the Approach as a strategy for an architecture that can support personalization for both recipients and providers of care.
+
+Feature:
+* Allow patient or caregivers specify preferences for access and care. 
+
+Relevant guidelines:
+* 1.2 Supports for using technology
+* 2.4 Enhancing intake process to personalize service delivery
+
+Example functional specifications:
+* Electronic web form that is accessible (WCAG 3 compliant) and is printable.
+* Web forms should be understandable in plain language, and easily translatable to another language by a person or software. 
+* Completing the form should use multiple choice answers to simplify input and processing.
+* Using an architecture based on the Personal Preferences Approach, submitted preferences are stored in a central location following privacy and security policies.
+* Provide a way for office administrators, clinicians, and doctors to access relevant patient preferences and make meaningful changes to delivery of care.
+* Virtual meeting tool can automatically change to meet relevant preferences (i.e. if patient requires readable text, or a particular language, the UI adapts).
+* Automated appointment reminders sent via email now include adaptations based on preferences.
