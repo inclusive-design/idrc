@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Intelligent User Interfaces for Virtual Healthcare
-permalink: /reducing-healthcare-barriers/
+permalink: ""
 headerBgColor:
   - indigo-100
 headerBorderColor:
