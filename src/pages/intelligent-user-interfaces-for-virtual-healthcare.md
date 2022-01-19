@@ -104,17 +104,15 @@ How to design inclusively
 * [Community Co-design Kit](https://co-design.inclusivedesign.ca/)
 
 Accessibility
-* 
-* Web Accessibility
-** [Web Content Accessibility Guidelines](https://www.w3.org/WAI/standards-guidelines/wcag/) (WCAG) 2.0 and 2.1
-** [WebAIM](https://webaim.org/)
-** [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
+* [Accessibility Canada](https://accessibilitycanada.ca/resources/)
+* [Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/) 
+* [WebAIM](https://webaim.org/)
+* [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 * [Print Accessibility – CNIB Clear Print Accessibility Guidelines](https://cnib.ca/sites/default/files/2018-07/CNIB Clear Print Guide.pdf) (PDF)
-* [Examples / guides for Physical spaces]
 
 Policy
-* Provincial Accessibility Policies and Regulations
-* Accessible Canada Act
+* [Provincial Accessibility Policies and Regulations](https://airtable.com/shr57RHr5jcKO8Kzr)
+* [Accessible Canada Act](https://accessible.canada.ca/)
 
 Use of AI and analytics
-* We Count – Removing bias and exclusion in the data economy, including resources.
+* [We Count](https://wecount.inclusivedesign.ca/) – Removing bias and exclusion in the data economy, including resources.
