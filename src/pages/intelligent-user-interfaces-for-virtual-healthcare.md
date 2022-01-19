@@ -45,6 +45,8 @@ The *Software Approach for Expressing Personal Preferences for Healthcare* outli
 
 The *Approach* does not prescribe a particular technology, rather it leaves those choices open so system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
 
+![Drawing of a computer, telephone, and a smart phone.](/media/inclusive-virtual-healthcare-02.png)
+
 ## Using the Guide and the Approach
 
 The following examples show how the *Guide* and the *Approach* can be used to reduce barriers to healthcare.
@@ -90,6 +92,8 @@ Example functional specifications:
 * Provide a way for office administrators, clinicians, and doctors to access relevant patient preferences and make meaningful changes to delivery of care.
 * Virtual meeting tool can automatically change to meet relevant preferences (i.e. if patient requires readable text, or a particular language, the UI adapts).
 * Automated appointment reminders sent via email now include adaptations based on preferences.
+
+![Drawing of a group of people who are loved ones.](/media/inclusive-virtual-healthcare-03.png)
 
 ## Project Links
 
