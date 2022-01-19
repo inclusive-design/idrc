@@ -10,8 +10,6 @@ headerTextColor:
   - black
 sections: []
 ---
-## Objective
-
 Reduce barriers to virtual healthcare
 
 ## About the Intelligent User Interfaces for Virtual Healthcare Project?
@@ -20,6 +18,8 @@ During the pandemic response and recovery, many health units are moving to virtu
 
 1. create guidelines for virtual healthcare systems that are inclusive and address the diversity of human needs, including cognitive, age-related and cultural barriers.  
 2. develop an architecture plan for an openly licensed software platform that enables interaction and interface personalization to meet currently unmet needs faced by individuals when engaging in virtual healthcare. 
+
+![Drawing of a person thinking about technology, loved ones, health and wellbeing.](/media/inclusive-virtual-healthcare.png)
 
 ## Outcomes
 
@@ -44,6 +44,8 @@ Each section consists of guidelines covering many scenarios that can help identi
 The *Software Approach for Expressing Personal Preferences for Healthcare* outlines a method for reducing barriers using a system that gathers, stores, and applies personal preferences. Implementing this approach can address issues identified by the Guide.
 
 The *Approach* does not prescribe a particular technology, rather it leaves those choices open so system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
+
+
 
 ## Using the Guide and the Approach
 
@@ -92,6 +94,7 @@ Example functional specifications:
 * Automated appointment reminders sent via email now include adaptations based on preferences.
 
 ## Project Links
+
 [Guide for Reducing Barriers to Virtual Healthcare](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare)
 [Software Approaches for Expressing Personal Preferences for Healthcare](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Software+Approaches+for+Expressing+Personal+Preferences+for+Healthcare)
 
@@ -100,19 +103,23 @@ Example functional specifications:
 In addition to the ideas and concepts presented in the Guide and Software Approach, the following resources can be used to broaden inclusion and accessibility of virtual healthcare systems and services:
 
 How to design inclusively
+
 * [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
 * [Community Co-design Kit](https://co-design.inclusivedesign.ca/)
 
 Accessibility
+
 * [Accessibility Canada](https://accessibilitycanada.ca/resources/)
 * [Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/) 
 * [WebAIM](https://webaim.org/)
 * [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
-* [Print Accessibility – CNIB Clear Print Accessibility Guidelines](https://cnib.ca/sites/default/files/2018-07/CNIB Clear Print Guide.pdf) (PDF)
+* \[Print Accessibility – CNIB Clear Print Accessibility Guidelines](https://cnib.ca/sites/default/files/2018-07/CNIB Clear Print Guide.pdf) (PDF)
 
 Policy
+
 * [Provincial Accessibility Policies and Regulations](https://airtable.com/shr57RHr5jcKO8Kzr)
 * [Accessible Canada Act](https://accessible.canada.ca/)
 
 Use of AI and analytics
+
 * [We Count](https://wecount.inclusivedesign.ca/) – Removing bias and exclusion in the data economy, including resources.
