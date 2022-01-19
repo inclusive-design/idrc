@@ -1,6 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Intelligent User Interfaces for Virtual Healthcare
+permalink: ""
 headerBgColor:
   - indigo-100
 headerBorderColor:
@@ -9,16 +10,16 @@ headerTextColor:
   - black
 sections: []
 ---
-Reduce barriers to virtual healthcare
+## About the Intelligent User Interfaces for Virtual Healthcare Project
 
-## About the Intelligent User Interfaces for Virtual Healthcare Project?
+![Image of a medical practitioner, a service animal, and a person stretching.](/media/inclusive-virtual-healthcare-01.png)
 
-During the pandemic response and recovery, many health units are moving to virtual care. With this transition there is a risk that vulnerable individuals and communities will be excluded which harms and poses risks for the excluded individuals. Inclusive Design Research Centre (IDRC) and the National Research Council (NRC) under the [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program) collaborated to:
+Objective: Reduce barriers to virtual healthcare
+
+During the pandemic response and recovery, many health units are moving to virtual care. With this transition there is a risk that vulnerable individuals and communities will be excluded which harms and poses risks for the excluded individuals. Inclusive Design Research Centre (IDRC) and the National Research Council (NRC) under the [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program) collaborated to: 
 
 1. create guidelines for virtual healthcare systems that are inclusive and address the diversity of human needs, including cognitive, age-related and cultural barriers.  
-2. develop an architecture plan for an openly licensed software platform that enables interaction and interface personalization to meet currently unmet needs faced by individuals when engaging in virtual healthcare.
-
-![Drawing of a person thinking about technology, loved ones, health and wellbeing.](/media/inclusive-virtual-healthcare.png)
+2. develop an architecture plan for an openly licensed software platform that enables interaction and interface personalization to meet currently unmet needs faced by individuals when engaging in virtual healthcare. 
 
 ## Outcomes
 
@@ -44,13 +45,11 @@ The *Software Approach for Expressing Personal Preferences for Healthcare* outli
 
 The *Approach* does not prescribe a particular technology, rather it leaves those choices open so system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
 
-
-
 ## Using the Guide and the Approach
 
 The following examples show how the *Guide* and the *Approach* can be used to reduce barriers to healthcare.
 
-**Healthcare providers** can use the *Guide*’s guidelines to inspire change to their practices and policies for inclusion and access.
+**Healthcare providers** can use the *Guide*’s guidelines to inspire change to their practices and policies for inclusion and access. 
 
 Relevant guidelines:
 
@@ -68,14 +67,14 @@ Possible Service / Policy Change:
 
 Barriers addressed:
 
-* Some patients / clients have low or no vision and experience challenges when using online virtual visit platform, or during in-person visits.
+* Some patients / clients have low or no vision and experience challenges when using online virtual visit platform, or during in-person visits. 
 * Some patients / clients may need translation or assistance in understanding what is being communicated.
 
 **Software developers and platform builders** can use the Guide to create functional specifications and the Approach as a strategy for an architecture that can support personalization for both recipients and providers of care.
 
 Feature:
 
-* Allow patient or caregivers specify preferences for access and care.
+* Allow patient or caregivers specify preferences for access and care. 
 
 Relevant guidelines:
 
@@ -85,7 +84,7 @@ Relevant guidelines:
 Example functional specifications:
 
 * Electronic web form that is accessible (WCAG 3 compliant) and is printable.
-* Web forms should be understandable in plain language, and easily translatable to another language by a person or software.
+* Web forms should be understandable in plain language, and easily translatable to another language by a person or software. 
 * Completing the form should use multiple choice answers to simplify input and processing.
 * Using an architecture based on the Personal Preferences Approach, submitted preferences are stored in a central location following privacy and security policies.
 * Provide a way for office administrators, clinicians, and doctors to access relevant patient preferences and make meaningful changes to delivery of care.
@@ -109,7 +108,7 @@ How to design inclusively
 Accessibility
 
 * [Accessibility Canada](https://accessibilitycanada.ca/resources/)
-* [Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/)
+* [Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/) 
 * [WebAIM](https://webaim.org/)
 * [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 * \[Print Accessibility – CNIB Clear Print Accessibility Guidelines](https://cnib.ca/sites/default/files/2018-07/CNIB Clear Print Guide.pdf) (PDF)
