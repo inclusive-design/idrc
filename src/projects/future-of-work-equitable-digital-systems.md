@@ -12,5 +12,5 @@ description: >-
 
 
   ![EDS logo](/media/eds.png)
-link: https://idrc.ocadu.ca/eds/
+link: /eds/
 ---

@@ -1,9 +1,9 @@
 ---
 title: Jess Mitchell
 job: Senior Manager, Research + Design
-pronouns: i opt out of choosing -- ask me why!
+pronouns: I opt out of choosing pronouns — ask me why?
 email: jmitchell@ocadu.ca
-website: https://jessmitchell.com
+website: https://jesshmitchell.com
 twitter: "@jesshmitchell"
 linkedin: https://www.linkedin.com/in/jesshmitchell/
 projects:

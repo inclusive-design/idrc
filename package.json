@@ -58,7 +58,7 @@
     "@commitlint/config-conventional": "^15.0.0",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "babel-loader": "^8.2.3",
-    "backstopjs": "^6.0.1",
+    "backstopjs": "^6.0.4",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
