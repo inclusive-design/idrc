@@ -9,9 +9,6 @@ headerTextColor:
   - black
 sections: []
 ---
-
-## About the Intelligent User Interfaces for Virtual Healthcare Project?
-
 Project objective: Reduce barriers to virtual healthcare.
 
 During the pandemic response and recovery, many health units are moving to virtual care. With this transition there is a risk that vulnerable individuals and communities will be excluded which harms and poses risks for the excluded individuals. Inclusive Design Research Centre (IDRC) and the National Research Council (NRC) under the [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program) collaborated to:
