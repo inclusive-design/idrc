@@ -20,7 +20,7 @@ During the pandemic response and recovery, many health units are moving to virtu
 
 * Guide for Reducing Barriers to Virtual Healthcare: [Latest web version](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare), [PDF version July 5 2021](https://wiki.fluidproject.org/download/attachments/237470030/Guide-for-Reducing-Barriers-to-Virtual-Healthcare.pdf)
 * [Software Approaches for Expressing Personal Preferences for Healthcare](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Software+Approaches+for+Expressing+Personal+Preferences+for+Healthcare)
-* [Project Wiki](https://wiki.fluidproject.org/display/IUIGFVP/Intelligent+User+Interfaces+and+Guidelines+for+Vulnerable+Populations) - detailed information including methology, feedback, and future direction
+* [Project Wiki](https://wiki.fluidproject.org/display/IUIGFVP/Intelligent+User+Interfaces+and+Guidelines+for+Vulnerable+Populations) - detailed information including methodology, feedback, and future direction
 
 ## Outcomes
 
