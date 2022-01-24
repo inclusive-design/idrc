@@ -20,7 +20,7 @@ During the pandemic response and recovery, many health units are moving to virtu
 
 * Guide for Reducing Barriers to Virtual Healthcare: [Latest web version](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare), [PDF version July 5 2021](https://wiki.fluidproject.org/download/attachments/237470030/Guide-for-Reducing-Barriers-to-Virtual-Healthcare.pdf)
 * [Software Approaches for Expressing Personal Preferences for Healthcare](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Software+Approaches+for+Expressing+Personal+Preferences+for+Healthcare)
-* [Project Wiki](https://wiki.fluidproject.org/display/IUIGFVP/Intelligent+User+Interfaces+and+Guidelines+for+Vulnerable+Populations) - detailed information including methology, feedback, and future direction
+* [Project Wiki](https://wiki.fluidproject.org/display/IUIGFVP/Intelligent+User+Interfaces+and+Guidelines+for+Vulnerable+Populations) - detailed information including methodology, feedback, and future direction
 
 ## Outcomes
 
@@ -50,7 +50,7 @@ The *Approach* does not prescribe a particular technology, rather it leaves thos
 
 The following examples show how the *Guide* and the *Approach* can be used to reduce barriers to healthcare.
 
-**Healthcare providers** can use the *Guide*’s guidelines to inspire change to their practices and policies for inclusion and access.
+**Healthcare providers** can use the *Guide’s* guidelines to inspire change to their practices and policies for inclusion and access.
 
 Relevant guidelines:
 
@@ -71,7 +71,7 @@ Barriers addressed:
 * Some patients / clients have low or no vision and experience challenges when using online virtual visit platform, or during in-person visits.
 * Some patients / clients may need translation or assistance in understanding what is being communicated.
 
-**Software developers and platform builders** can use the Guide to create functional specifications and the Approach as a strategy for an architecture that can support personalization for both recipients and providers of care.
+**Software developers and platform builders** can use the *Guide* to create functional specifications and the *Approach* as a strategy for an architecture that can support personalization for both recipients and providers of care.
 
 Feature:
 
