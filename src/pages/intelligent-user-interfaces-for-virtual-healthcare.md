@@ -71,7 +71,7 @@ Barriers addressed:
 * Some patients / clients have low or no vision and experience challenges when using online virtual visit platform, or during in-person visits.
 * Some patients / clients may need translation or assistance in understanding what is being communicated.
 
-**Software developers and platform builders** can use the Guide to create functional specifications and the Approach as a strategy for an architecture that can support personalization for both recipients and providers of care.
+**Software developers and platform builders** can use the *Guide* to create functional specifications and the *Approach* as a strategy for an architecture that can support personalization for both recipients and providers of care.
 
 Feature:
 
