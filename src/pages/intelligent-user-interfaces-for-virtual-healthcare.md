@@ -50,7 +50,7 @@ The *Approach* does not prescribe a particular technology, rather it leaves thos
 
 The following examples show how the *Guide* and the *Approach* can be used to reduce barriers to healthcare.
 
-**Healthcare providers** can use the *Guide*’s guidelines to inspire change to their practices and policies for inclusion and access.
+**Healthcare providers** can use the *Guide’s* guidelines to inspire change to their practices and policies for inclusion and access.
 
 Relevant guidelines:
 
