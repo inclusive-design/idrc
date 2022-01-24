@@ -96,22 +96,22 @@ Example functional specifications:
 
 In addition to the ideas and concepts presented in the Guide and Software Approach, the following resources can be used to broaden inclusion and accessibility of virtual healthcare systems and services:
 
-How to design inclusively:
+### How to design inclusively
 * [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
 * [Community Co-design Kit](https://co-design.inclusivedesign.ca/)
 
-Accessibility:
+### Accessibility
 * [Accessibility Canada](https://accessibilitycanada.ca/resources/)
 * [Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [WebAIM](https://webaim.org/)
 * [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/)
 * [CNIB Clear Print Accessibility Guidelines](https://cnib.ca/sites/default/files/2018-07/CNIB%20Clear%20Print%20Guide.pdf)
 
-Policy:
+### Policy
 * [Provincial Accessibility Policies and Regulations](https://airtable.com/shr57RHr5jcKO8Kzr)
 * [Accessible Canada Act](https://accessible.canada.ca/)
 
-Use of AI and analytics:
+### Use of AI and analytics
 * [We Count](https://wecount.inclusivedesign.ca/) – Removing bias and exclusion in the data economy, including resources.
 
 ## Funders
