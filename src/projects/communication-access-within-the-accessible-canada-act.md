@@ -9,6 +9,6 @@ description: >-
   acquired cognitive and/or neurological disabilities.
 
 
-  ![Communication Access Within the Accessible Canada Act logo](/media/commacc.png)
+  ![Communication Access Within the Accessible Canada Act logo](/media/commacc1.png)
 link: https://idrc.ocadu.ca/commacc
 ---
