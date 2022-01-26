@@ -11,7 +11,7 @@ headerTextColor:
   - black
 sections: []
 ---
-![Communication Access with the Accessible Canada Act logo](/media/commacc-horizontal-logo.png)
+![Communication Access with the Accessible Canada Act logo](/media/commacc2.png)
 
 IDRC and Communication Disability Access Canada is working together to address communication access for people who have speech, language and communication disabilities. This project will focus on communication access for people who have speech, language and communication disabilities due to life-long or acquired cognitive and/or neurological disabilities, such as cerebral palsy, autism spectrum disorder, Down Syndrome, learning disability, intellectual disability, fetal alcohol spectrum disorder, traumatic brain injury, aphasia after a stroke, dementia, amyotrophic lateral sclerosis, parkinson’s disease, or multiple sclerosis. 
 
