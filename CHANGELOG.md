@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.3.2](https://www.github.com/inclusive-design/idrc/compare/v1.3.1...v1.3.2) (2022-01-26)
+
+
+### Bug Fixes
+
+* merge conflict with main contents to dev ([5b9fb14](https://www.github.com/inclusive-design/idrc/commit/5b9fb14a587e5e54fbe9c9738e8a83cb86e987b4))
+
 ### [1.3.1](https://www.github.com/inclusive-design/idrc/compare/v1.3.0...v1.3.1) (2021-12-14)
 
 
