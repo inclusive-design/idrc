@@ -26,9 +26,11 @@ IDRC is working to address communication access for people who have speech, lang
 2. Scoping report: Define the scope of accessibility barriers, and accommodations that people with communication disabilities may require to access different federal services. 
 3. Research report: Project findings and our recommended guidelines and standards.
 
-## Acknowledgements
+   ![communication access symbol](/media/commaccsymbol.png)
 
-![Communication Disability Access symbol](/media/commaccsymbol.png)
+   [Learn about the communication access symbol (c)](https://www.cdacanada.com/resources/accessible-businesses-and-services/communication-access-symbol/)
+
+## Acknowledgements
 
 This project is funded by a grant from Accessibility Standards Canada
 
