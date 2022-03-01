@@ -63,7 +63,7 @@
     "dotenv": "^10.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
     "eslint-config-xo-react": "^0.25.0",
-    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react": "^7.29.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "glob": "^7.2.0",
     "html-minifier": "^4.0.0",
