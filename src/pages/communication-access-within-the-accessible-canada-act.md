@@ -62,7 +62,7 @@ Lois Turner, MS, RSLP, CCC-SLP, ATP, is a Speech Language Pathologist who has be
 
 In addition to providing clinical and consultative services to clients, she contributed authorship to the CAYA CAAP (assessment protocol), AAC Expanded Core Curriculum (province of BC), and SAC-OAC (national) Position Statement on AAC. Lois sits on the board of the Stroke Recovery Association of BC, is the Past President of ISAAC Canada, served on the RESNA Professional Standards Board from 2015-2021, and was a member of the province of BC’s Accessibility Legislation & COVID-19 Advisory Committee from 2020-2021. She is a co-author of a chapter on assessing adults in the textbook Fundamentals of AAC: A Case-Based Approach to Enhancing Communication, by Hall, Juengling-Sudkamp, Gutmann, Cohn, Plural Publishing, 2022.
 
-Lois joined forces with Communication Disabilities Access Canada from 2013‐2016, where she was the BC regional coordinator for Communication Access Now (CAN), a national campaign that promoted communication accessibility and the communication access disability symbol, for people who have speech and language disabilities.
+Lois joined forces with Communication Disabilities Access Canada from 2013-2016, where she was the BC regional coordinator for Communication Access Now (CAN), a national campaign that promoted communication accessibility and the communication access disability symbol, for people who have speech and language disabilities.
 
 Lois is the co-creator and current Program Manager at CAYA, a province-wide service program that supports the complex communication needs of non-speaking adults in British Columbia, Canada.
 
