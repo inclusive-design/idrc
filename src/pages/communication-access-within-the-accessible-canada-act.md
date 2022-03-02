@@ -1,6 +1,6 @@
 ---
 layout: layouts/page.njk
-title: Communication Access Within the Accessible Canada Act
+title: Communication Access within the Accessible Canada Act
 permalink: /commacc/
 intro: ""
 headerBgColor:
