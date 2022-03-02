@@ -64,7 +64,7 @@ In addition to providing clinical and consultative services to clients, she cont
 
 Lois joined forces with Communication Disabilities Access Canada from 2013‐2016, where she was the BC regional coordinator for Communication Access Now (CAN), a national campaign that promoted communication accessibility and the communication access disability symbol, for people who have speech and language disabilities.
 
-Lois is the co‐creator and current Program Manager at CAYA, a province-wide service program that supports the complex communication needs of non-speaking adults in British Columbia, Canada.
+Lois is the co-creator and current Program Manager at CAYA, a province-wide service program that supports the complex communication needs of non-speaking adults in British Columbia, Canada.
 
 ### Meredith Wright
 
