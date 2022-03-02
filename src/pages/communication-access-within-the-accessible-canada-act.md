@@ -50,6 +50,8 @@ Kathy provides ongoing consultation to Alberta school jurisdictions in the areas
 
 ### Krystine Donato
 
+Krystine Donato lives in St. Catharines, Ontario. She has worked as an assistive technologist, research project coordinator, research assistant, and as a job coach with the Ontario March of Dimes. She also volunteers her time with Community Living St. Catharines, wherever help is needed. Krystine brings first-hand knowledge as an individual with a disability. She has been working as an advocate with Communication Disabilities Access Canada for a number of years and is currently on the CDAC board of directors as well as CA-Just (Communication Access to Justice), where she currently sits as one of the Co-chairs. 
+
 ### Lois Turner
 
 ![Head and shoulders photograph of Lois Turner](/media/lois-turner-headshot.png)
