@@ -38,7 +38,7 @@ Colin communicates by spelling out what he wants to say on a word board and thei
 
 ![Head and shoulders photograph of Kathy Howery](/media/kathy.jpg)
 
-Kathy Howery received her PhD in Special Education from the University of Alberta in 2017. She is currently an educational consultant and a sessional lecturer at several Universities in Alberta. Her doctoral research drew upon hermeneutic phenomenology to seek to understand what is it like for young people with complex communication needs (CCN) to communicate with speech generating devices.
+Kathy Howery received her PhD in Special Education from the University of Alberta in 2017. She is currently an educational consultant and a sessional lecturer at several Universities in Alberta. Her doctoral research drew upon hermeneutic phenomenology to seek to understand what it is like for young people with complex communication needs (CCN) to communicate with speech generating devices.
 
 Kathy began her career over thirty years ago focusing on finding ways for students with the most complex needs share their voices in the world. Since that time Kathy has worked in a variety setting including schools for students with significant disabilities, inclusive preschool programs, and the I CAN Centre for Assistive Technology at the Glenrose Hospital in Edmonton. From 2004 to 2008 Kathy was seconded to work for Alberta Education as the lead for the Assistive Technology for Learning Initiative. She has developed and taught graduate level courses in Assistive Technology, Learning and Development, Special Education, Universal Design for Learning, and Augmentative and Alternative Communication.
 
