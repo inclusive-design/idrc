@@ -50,6 +50,8 @@ Kathy provides ongoing consultation to Alberta school jurisdictions in the areas
 
 ### Krystine Donato
 
+![Head and shoulders photograph of Krystine Donato](/media/k-donato-biopic.jpg)
+
 Krystine Donato lives in St. Catharines, Ontario. She has worked as an assistive technologist, research project coordinator, research assistant, and as a job coach with the Ontario March of Dimes. She also volunteers her time with Community Living St. Catharines, wherever help is needed. Krystine brings first-hand knowledge as an individual with a disability. She has been working as an advocate with Communication Disabilities Access Canada for a number of years and is currently on the CDAC board of directors as well as CA-Just (Communication Access to Justice), where she currently sits as one of the Co-chairs. 
 
 ### Lois Turner
@@ -58,15 +60,26 @@ Krystine Donato lives in St. Catharines, Ontario. She has worked as an assistive
 
 Lois Turner, MS, RSLP, CCC-SLP, ATP, is a Speech Language Pathologist who has been working for over 35 years as a specialist in AAC and Assistive Technology, enjoying employment in preschool, school, adult, and community settings in Manitoba and British Columbia.
 
-In addition to providing clinical and consultative services to clients, she contributed authorship to the CAYA CAAP (assessment protocol), AAC Expanded Core Curriculum (province of BC), and SAC‐OAC (national) Position Statement on AAC. Lois sits on the board of the Stroke Recovery Association of BC, is the Past President of ISAAC Canada, served on the RESNA Professional Standards Board from 2015‐2021, and was a member of the province of BC’s Accessibility Legislation & COVID‐19 Advisory Committee from 2020‐2021. She is a co‐author of a chapter on assessing adults in the textbook Fundamentals of AAC: A Case‐Based Approach to Enhancing Communication, by Hall, Juengling‐Sudkamp, Gutmann, Cohn, Plural Publishing, 2022.
+In addition to providing clinical and consultative services to clients, she contributed authorship to the CAYA CAAP (assessment protocol), AAC Expanded Core Curriculum (province of BC), and SAC-OAC (national) Position Statement on AAC. Lois sits on the board of the Stroke Recovery Association of BC, is the Past President of ISAAC Canada, served on the RESNA Professional Standards Board from 2015-2021, and was a member of the province of BC’s Accessibility Legislation & COVID-19 Advisory Committee from 2020-2021. She is a co-author of a chapter on assessing adults in the textbook Fundamentals of AAC: A Case-Based Approach to Enhancing Communication, by Hall, Juengling-Sudkamp, Gutmann, Cohn, Plural Publishing, 2022.
 
 Lois joined forces with Communication Disabilities Access Canada from 2013‐2016, where she was the BC regional coordinator for Communication Access Now (CAN), a national campaign that promoted communication accessibility and the communication access disability symbol, for people who have speech and language disabilities.
 
-Lois is the co‐creator and current Program Manager at CAYA, a province‐wide service program that supports the complex communication needs of non‐speaking adults in British Columbia, Canada.
+Lois is the co‐creator and current Program Manager at CAYA, a province-wide service program that supports the complex communication needs of non-speaking adults in British Columbia, Canada.
 
 ### Meredith Wright
 
 ### Tara Levandier
+
+![Head and shoulders photograph of Tara Levandier](/media/tlevandierheadshot-2021.jpeg)
+
+Executive Director, Operations & Social Impact \
+Inclusion Canada 
+
+An experienced human rights advocate and operations executive, Tara has led pioneering policy and programmatic initiatives at the provincial, national, and international level to advance the full inclusion and rights of people with intellectual and developmental disabilities.  
+
+Tara has significant experience in policy reform and program development, results-based management, and systemic advocacy. For over a decade her disability rights work has covered a range of policy areas including legal capacity, employment, safeguards in healthcare, sexual health and abuse prevention, family supports, and building inclusive communities. Tara sits on a number of national advisory groups, including the Accessibility Standards Canada Technical Committee for Plain Language, and has presented to the United Nations Committee on the Rights of Persons with Disabilities as a member of the Canadian civil society delegation. 
+
+Tara holds a Master's degree in Philanthropy and Nonprofit Leadership from the School of Public Policy & Administration at Carleton University and is a regular presenter on topics related to disability rights, diversity and inclusion, and the social purpose sector.
 
 ## Planned Reports
 
