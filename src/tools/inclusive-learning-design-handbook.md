@@ -7,8 +7,6 @@ description: A free Open Educational Resource (OER) designed to assist in
   accommodate a diversity of learning preferences and individual needs.
 link: https://handbook.floeproject.org/
 ---
-
-
 ![Inclusive Learning Design Handbook](/media/ildh-logo.gif)
 
-<https://handbook.floeproject.org/>
+[](https://handbook.floeproject.org/)
