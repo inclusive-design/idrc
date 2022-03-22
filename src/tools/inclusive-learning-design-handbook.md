@@ -8,4 +8,4 @@ description: The FLOE Inclusive Learning Design Handbook (ILDH) is a free Open
   learning preferences and individual needs.
 link: https://handbook.floeproject.org/
 ---
-![](/media/ildh-logo.gif)
+![Inclusive Learning Design Handbook](/media/ildh-logo.gif)
