@@ -89,8 +89,6 @@ Dr. Vera Roberts is Senior Manager Consulting, Training and Research at the Incl
 
 ### *Caren Watkins,* Project coordinator
 
-![Head and shoulders photograph of Tara Levandier]()
-
 Caren Watkins is the coordinator of [SNOW: Inclusive Learning and Education](https://snow.idrc.ocadu.ca/) and an Inclusive Designer at the at the Inclusive Design Research Centre (IDRC) of OCAD University. She has extensive experience in communication and information design, education, and neurodivergence. Caren has contributed to the research and design of various projects at the IDRC including PhET, UIO interface development, and federal and provincial government accessibility consulting projects. Caren has over a decade of teaching and curriculum development experience as a partial load professor at York/Sheridan and OCAD U, as well as over 20 years of award-winning communication design and publishing experience. Caren holds a Masters of Inclusive Design focused on inclusion in the public-school classroom. Caren encourages open resources and community involvement to foster a collaborative approach toward an inclusive model of education for all.
 
 ### *Dr. David H. Pereyra,* Project coordinator
