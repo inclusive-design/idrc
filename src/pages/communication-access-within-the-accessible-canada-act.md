@@ -66,8 +66,6 @@ Lois joined forces with Communication Disabilities Access Canada from 2013-2016,
 
 Lois is the co-creator and current Program Manager at CAYA, a province-wide service program that supports the complex communication needs of non-speaking adults in British Columbia, Canada.
 
-### Meredith Wright
-
 ### Tara Levandier
 
 ![Head and shoulders photograph of Tara Levandier](/media/tlevandierheadshot-2021.jpeg)
