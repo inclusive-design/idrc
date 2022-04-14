@@ -95,11 +95,7 @@ Dr. David H. Pereyra is Project & Outreach Coordinator at the Inclusive Design 
 
 ### *Ali Kazimi,* Research Assistant
 
-Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre. Ali’s previous research focuses have been on the development of accessible and robust online education platforms, with an emphasis on micro-credentialing, industry alignment, and formal accreditation. This has included developing online learning badges for the Inclusive Design Research Centre’s We Count Project, which enables earners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills.\
-\
-Ali is currently working on the Communication Access project team to research the incidence of communication disability and personal communication supports for people with life-long and acquired disabilities. The research outcomes from this initiative will help produce recommendations for Accessibility Standards Canada to increase visibility and recognition of communication disability\
-\
-As a former staff member and user of the University of Toronto’s Accessibility Services, Ali strives to keep his research and professional contributions committed to EDI (Equity, Diversity, Inclusion) principles and advocacy to better serve persons with disabilities and other communities on the margins.
+Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre. Ali’s previous research focuses have been on the development of accessible and robust online education platforms, with an emphasis on micro-credentialing, industry alignment, and formal accreditation. This has included developing online learning badges for the Inclusive Design Research Centre’s We Count Project, which enables learners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. As a former staff member and user of the University of Toronto’s Accessibility Services, Ali strives to keep his research and professional contributions committed to EDI (Equity, Diversity, Inclusion) principles and advocacy to better serve persons with disabilities and other communities on the margins.
 
 ## Planned Reports
 
