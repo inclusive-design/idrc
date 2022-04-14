@@ -83,7 +83,7 @@ Tara holds a Master's degree in Philanthropy and Nonprofit Leadership from the S
 
 ### *Dr. Vera Roberts,* Project Manager
 
-![Head and shoulders photograph of Vera Roberts](/media/vera_headshot-2021-1-.jpg)
+![Head and shoulders photograph of Vera Roberts](/media/screen-shot-2022-04-14-at-12.47.51-pm.png)
 
 Dr. Vera Roberts is Senior Manager Consulting, Training and Research at the Inclusive Design Research Centre (IDRC) of OCAD University. She holds a Ph.D. in Applied Cognitive Science from the Ontario Institute for Studies in Education at the University of Toronto. Roberts’ primary research area is generating a culture of inclusion through outreach activities, training and implementation of inclusive technology and digital sharing platforms. As a researcher at the IDRC for over 20 years, Roberts has participated in numerous multi-partner inclusion projects Recent projects include We Count, Equitable Digital Systems, Future of Work and Disability, BIG IDeA and Our Doors are Open. Roberts coordinates, develops and provides consulting and training on inclusion and diversity to the public and private sector. She is a sessional instructor in Inclusive Research Methods in the Master of Inclusive Design program and in Innovation Research Methods in the Strategic Foresight & Innovation graduate programs at OCAD U. 
 
@@ -93,13 +93,13 @@ Caren Watkins is the coordinator of [SNOW: Inclusive Learning and Education](htt
 
 ### *Dr. David H. Pereyra,* Project coordinator
 
-![Head and shoulders photograph of David Pereyra](/media/pereyra-headshot.png)
+![Head and shoulders photograph of David Pereyra](/media/screen-shot-2022-04-14-at-12.48.19-pm.png)
 
 Dr. David H. Pereyra is Project & Outreach Coordinator at the Inclusive Design Research Center (IDRC) of OCAD University. He is an architect from Buenos Aires and holds a Ph.D. in Philosophy of Theology from the University of Toronto. His Post-doc work focused on community engagement with the disability community and outreach related to inclusive design. Dr. Pereyra's research centres on interdisciplinary aspects of our multicultural society. He is particularly interested in how creative experiences of transmitting information and communication can reach users and vice-versa. At the Inclusive Design Research Centre, David is responsible for outreach, collaboration and community engagement. He has coordinated several outreach projects (e.g.: We Count, EDS, BIG IDeA, Our Doors are Open, CanHack150 and aha!). David developed and maintains a community of expert advisors from the disability community who collaborate in design workshops, accessibility challenge events and sensitivity training activities. These activities are as diverse as setting/learning policies, designing built environments, developing services, creating accessible workflows, and workshops. His Latin American, European and North American multicultural background greatly enrich his knowledge of the world and his scholarly work. 
 
 ### *Ali Kazimi,* Research Assistant
 
-![Head and shoulders photograph of Ali Kazimi](/media/akazmi-bio-picture-2-1-.jpg)
+![Head and shoulders photograph of Ali Kazimi](/media/screen-shot-2022-04-14-at-12.48.07-pm.png)
 
 Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre. Ali’s previous research focuses have been on the development of accessible and robust online education platforms, with an emphasis on micro-credentialing, industry alignment, and formal accreditation. This has included developing online learning badges for the Inclusive Design Research Centre’s We Count Project, which enables earners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills.\
 \
