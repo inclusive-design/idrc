@@ -79,6 +79,36 @@ Tara has significant experience in policy reform and program development, result
 
 Tara holds a Master's degree in Philanthropy and Nonprofit Leadership from the School of Public Policy & Administration at Carleton University and is a regular presenter on topics related to disability rights, diversity and inclusion, and the social purpose sector.
 
+## Project Team
+
+### *Dr. Vera Roberts,* Project Manager
+
+![Head and shoulders photograph of Vera Roberts](/media/vera_headshot-2021-1-.jpg)
+
+Dr. Vera Roberts is Senior Manager Consulting, Training and Research at the Inclusive Design Research Centre (IDRC) of OCAD University. She holds a Ph.D. in Applied Cognitive Science from the Ontario Institute for Studies in Education at the University of Toronto. Roberts’ primary research area is generating a culture of inclusion through outreach activities, training and implementation of inclusive technology and digital sharing platforms. As a researcher at the IDRC for over 20 years, Roberts has participated in numerous multi-partner inclusion projects Recent projects include We Count, Equitable Digital Systems, Future of Work and Disability, BIG IDeA and Our Doors are Open. Roberts coordinates, develops and provides consulting and training on inclusion and diversity to the public and private sector. She is a sessional instructor in Inclusive Research Methods in the Master of Inclusive Design program and in Innovation Research Methods in the Strategic Foresight & Innovation graduate programs at OCAD U. 
+
+### *Caren Watkins,* Project coordinator
+
+![Head and shoulders photograph of Tara Levandier]()
+
+Caren Watkins is the coordinator of [SNOW: Inclusive Learning and Education](https://snow.idrc.ocadu.ca/) and an Inclusive Designer at the at the Inclusive Design Research Centre (IDRC) of OCAD University. She has extensive experience in communication and information design, education, and neurodivergence. Caren has contributed to the research and design of various projects at the IDRC including PhET, UIO interface development, and federal and provincial government accessibility consulting projects. Caren has over a decade of teaching and curriculum development experience as a partial load professor at York/Sheridan and OCAD U, as well as over 20 years of award-winning communication design and publishing experience. Caren holds a Masters of Inclusive Design focused on inclusion in the public-school classroom. Caren encourages open resources and community involvement to foster a collaborative approach toward an inclusive model of education for all.
+
+### *Dr. David H. Pereyra,* Project coordinator
+
+![Head and shoulders photograph of David Pereyra](/media/pereyra-headshot.png)
+
+Dr. David H. Pereyra is Project & Outreach Coordinator at the Inclusive Design Research Center (IDRC) of OCAD University. He is an architect from Buenos Aires and holds a Ph.D. in Philosophy of Theology from the University of Toronto. His Post-doc work focused on community engagement with the disability community and outreach related to inclusive design. Dr. Pereyra's research centres on interdisciplinary aspects of our multicultural society. He is particularly interested in how creative experiences of transmitting information and communication can reach users and vice-versa. At the Inclusive Design Research Centre, David is responsible for outreach, collaboration and community engagement. He has coordinated several outreach projects (e.g.: We Count, EDS, BIG IDeA, Our Doors are Open, CanHack150 and aha!). David developed and maintains a community of expert advisors from the disability community who collaborate in design workshops, accessibility challenge events and sensitivity training activities. These activities are as diverse as setting/learning policies, designing built environments, developing services, creating accessible workflows, and workshops. His Latin American, European and North American multicultural background greatly enrich his knowledge of the world and his scholarly work. 
+
+### *Ali Kazimi,* Research Assistant
+
+![Head and shoulders photograph of Ali Kazimi](/media/akazmi-bio-picture-2-1-.jpg)
+
+Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre. Ali’s previous research focuses have been on the development of accessible and robust online education platforms, with an emphasis on micro-credentialing, industry alignment, and formal accreditation. This has included developing online learning badges for the Inclusive Design Research Centre’s We Count Project, which enables earners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills.\
+\
+Ali is currently working on the Communication Access project team to research the incidence of communication disability and personal communication supports for people with life-long and acquired disabilities. The research outcomes from this initiative will help produce recommendations for Accessibility Standards Canada to increase visibility and recognition of communication disability\
+\
+As a former staff member and user of the University of Toronto’s Accessibility Services, Ali strives to keep his research and professional contributions committed to EDI (Equity, Diversity, Inclusion) principles and advocacy to better serve persons with disabilities and other communities on the margins.
+
 ## Planned Reports
 
 1. Framing report: Define the disability populations and personal communication supports for Canadians requiring access to federal services 
