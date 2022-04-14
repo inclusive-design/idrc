@@ -95,7 +95,7 @@ Caren Watkins is the coordinator of [SNOW: Inclusive Learning and Education](htt
 
 ### *Dr. David H. Pereyra,* Project coordinator
 
-![Head and shoulders photograph of Tara Levandier](/media/pereyra-headshot.png)
+![Head and shoulders photograph of David Pereyra](/media/pereyra-headshot.png)
 
 Dr. David H. Pereyra is Project & Outreach Coordinator at the Inclusive Design Research Center (IDRC) of OCAD University. He is an architect from Buenos Aires and holds a Ph.D. in Philosophy of Theology from the University of Toronto. His Post-doc work focused on community engagement with the disability community and outreach related to inclusive design. Dr. Pereyra's research centres on interdisciplinary aspects of our multicultural society. He is particularly interested in how creative experiences of transmitting information and communication can reach users and vice-versa. At the Inclusive Design Research Centre, David is responsible for outreach, collaboration and community engagement. He has coordinated several outreach projects (e.g.: We Count, EDS, BIG IDeA, Our Doors are Open, CanHack150 and aha!). David developed and maintains a community of expert advisors from the disability community who collaborate in design workshops, accessibility challenge events and sensitivity training activities. These activities are as diverse as setting/learning policies, designing built environments, developing services, creating accessible workflows, and workshops. His Latin American, European and North American multicultural background greatly enrich his knowledge of the world and his scholarly work. 
 
@@ -108,8 +108,6 @@ Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre.
 Ali is currently working on the Communication Access project team to research the incidence of communication disability and personal communication supports for people with life-long and acquired disabilities. The research outcomes from this initiative will help produce recommendations for Accessibility Standards Canada to increase visibility and recognition of communication disability\
 \
 As a former staff member and user of the University of Toronto’s Accessibility Services, Ali strives to keep his research and professional contributions committed to EDI (Equity, Diversity, Inclusion) principles and advocacy to better serve persons with disabilities and other communities on the margins.
-
-
 
 ## Planned Reports
 
