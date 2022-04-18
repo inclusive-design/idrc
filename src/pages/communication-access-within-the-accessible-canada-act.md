@@ -20,6 +20,8 @@ IDRC is working to address communication access for people who have speech, lang
 * Communication is an interactive, two-way process that includes both understanding and being understood. It involves a range of communication methods in face-to-face interactions, over the telephone and remote communications, online and via reading and writing.
 * Communication methods include speech, gestures, body language, writing, drawing, pictures, symbol and letter boards, speech-generating devices, as well as human services such as sign language interpreting, captioning in real time, informal and formal communication assistance. 
 
+(Communication Disabilities Access Canada. Retrieved April 18, 2022, from <https://www.cdacanada.com/>)
+
 ## Advisory Committee
 
 ### Anne Abbott
@@ -84,6 +86,10 @@ Tara holds a Master's degree in Philanthropy and Nonprofit Leadership from the S
 ### *Dr. Vera Roberts,* Project Manager
 
 Dr. Vera Roberts is Senior Manager Consulting, Training and Research at the Inclusive Design Research Centre (IDRC) of OCAD University. She holds a Ph.D. in Applied Cognitive Science from the Ontario Institute for Studies in Education at the University of Toronto. Roberts’ primary research area is generating a culture of inclusion through outreach activities, training and implementation of inclusive technology and digital sharing platforms. As a researcher at the IDRC for over 20 years, Roberts has participated in numerous multi-partner inclusion projects Recent projects include We Count, Equitable Digital Systems, Future of Work and Disability, BIG IDeA and Our Doors are Open. Roberts coordinates, develops and provides consulting and training on inclusion and diversity to the public and private sector. She is a sessional instructor in Inclusive Research Methods in the Master of Inclusive Design program and in Innovation Research Methods in the Strategic Foresight & Innovation graduate programs at OCAD U. 
+
+### ***Barbara Collier, Reg. CASLPO, F. ISAAC,* Project Consultant**
+
+Barbara Collier is executive director and co-founder of Communication Disabilities Access Canada and Augmentative Communication Community Partnerships Canada. Since 2001, she has developed and managed CDAC's projects relating to human rights, social justice and accessibility for people who have disabilities that affect communication. Barbara’s background is in Speech-Language Pathology, Augmentative Communication, human rights and accessibility legislation. She has published extensively in peer-reviewed journals and has authored numerous books, DVDs, and online courses. She is the primary author of all CDAC's reports, online resources and courses.   Through her work with CDAC, Barbara established Canada’s first communication intermediary program and has provided trainings for over 500 Speech-Language Pathologists to work as intermediaries to support victims, witnesses and accused persons communicating in police, legal and justice services. She has participated on Ontario’s customer service and healthcare accessibility standards committees and provided input to draft standards on provincial and federal levels. In 2018, Barbara was responsible for having Bill C81 amended to include communication as a priority area of focus in the Accessible Canada Act. In 2010, Barbara was recognized as a Fellow of the International Society for Augmentative and Alternative Communication (ISAAC).  She is co-recipient of the ISAAC President’s Award and in 2016, on behalf of CDAC, she accepted the David C. Onley Award for Leadership in Accessibility. In 2019, the Ontario Association of Speech Language Pathologists and Audiologists awarded Barbara with the lifetime honours of the association for her outstanding contribution to Speech-Language Pathology in Ontario.
 
 ### *Caren Watkins,* Project coordinator
 
