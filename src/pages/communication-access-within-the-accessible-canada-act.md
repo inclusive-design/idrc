@@ -20,6 +20,8 @@ IDRC is working to address communication access for people who have speech, lang
 * Communication is an interactive, two-way process that includes both understanding and being understood. It involves a range of communication methods in face-to-face interactions, over the telephone and remote communications, online and via reading and writing.
 * Communication methods include speech, gestures, body language, writing, drawing, pictures, symbol and letter boards, speech-generating devices, as well as human services such as sign language interpreting, captioning in real time, informal and formal communication assistance. 
 
+(Communication Disabilities Access Canada. Retrieved April 18, 2022, from <https://www.cdacanada.com/>)
+
 ## Advisory Committee
 
 ### Anne Abbott
