@@ -38,7 +38,7 @@ Colin communicates by spelling out what he wants to say on a word board and thei
 
 ### John Ward
 
-![Head and shoulders photograph of John Ward](/media/j.ward_pic.jpg)
+![Head and shoulders photograph of John Ward](/media/j.ward-photo.png)
 
 John, a resident of Gatineau, is pursuing a PhD in Education at the University of Ottawa. His specialization is in alternate education, Indigenous wholistic knowledge, ethics concerning disabilities, learning disabilities and dyslexia. He has worked in the area of disability, primarily learning disabilities and dyslexia, for the majority of his life. He is empowered by traditional wholistic knowledge as a way of building dialogue. He enjoys wood, bone, and antler carving, as well as working with birch bark. Above all, he excels at passing on knowledge that will make a difference within disability studies. 
 
