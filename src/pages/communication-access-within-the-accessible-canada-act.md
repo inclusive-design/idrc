@@ -74,6 +74,18 @@ Lois joined forces with Communication Disabilities Access Canada from 2013-2016,
 
 Lois is the co-creator and current Program Manager at CAYA, a province-wide service program that supports the complex communication needs of non-speaking adults in British Columbia, Canada.
 
+### Sam Savona
+
+![Head and shoulders photograph of Sam Savona](/media/st-bonaventure-2020.jpg.jpg)
+
+Sam Savona, from Toronto, has worked for the full equality of people with disabilities for many of years. He has been active on numerous committees, advisory boards, boards of directors, and worked for an organisation, which advocated for the rights of people with disabilities. He also advocated successfully in bringing accessible taxi service to the city of Toronto, and wheel-chair-accessible bus service to Pearson Airport.
+
+Sam has been a constructive critic of the Toronto Transit Commission for many years because he believes it must be accessible to all. One of his major achievements thus far is that he, along with his fellow activists, convinced local politicians to begin to retrofit the conventional public transportation system for wheelchair accessibility. As a result, Sam was one of the first people in an electric wheelchair to board the subway unassisted. Sam is the first person to successfully be appointed five terms by the Toronto Transit Commission to its Advisory Committee on Accessible Transit. He has filled the Chair position when asked, and was elected for one year. Sam has also sat on the city of Toronto’s Disability Issues committee as Co-Chair.
+
+In 2013, Sam was honoured the medal of Ontario’s Good Citizenship for his advocacy work on accessible transit in Toronto. In 2009 an accessible playground was named in his honour, and in 2007 was given the City of Toronto Unsung Hero Award for his advocacy work within the disability community.
+
+Sam has sat on a couple of standard development committees for the Accessibility for Ontarians with Disabilities Act. He has also been appointed to the Emergency Measures Technical Committee under the Accessible Canada Act.
+
 ### Tara Levandier
 
 ![Head and shoulders photograph of Tara Levandier](/media/tlevandierheadshot-2021.jpeg)
