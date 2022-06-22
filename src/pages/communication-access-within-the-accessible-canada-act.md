@@ -36,6 +36,8 @@ Colin communicates by spelling out what he wants to say on a word board and thei
 
 ### Elyse Shumway
 
+### Glenda Watson Hyatt
+
 ### John Ward
 
 ![Head and shoulders photograph of John Ward](/media/j.ward_pic.jpg)
