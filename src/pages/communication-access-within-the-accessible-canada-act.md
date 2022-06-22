@@ -22,7 +22,7 @@ IDRC is working to address communication access for people who have speech, lang
 
 (Communication Disabilities Access Canada. Retrieved April 18, 2022, from <https://www.cdacanada.com/>)
 
-## Environmental Scan
+## Research and Data Scan
 
 Global and national scan of existing data and research related to incidence and prevalence of communication disability.
 
