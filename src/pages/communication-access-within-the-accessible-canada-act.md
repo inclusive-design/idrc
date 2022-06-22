@@ -22,6 +22,12 @@ IDRC is working to address communication access for people who have speech, lang
 
 (Communication Disabilities Access Canada. Retrieved April 18, 2022, from <https://www.cdacanada.com/>)
 
+## Environmental Scan
+
+Global and national scan of existing data and research related to incidence and prevalence of communication disability.
+
+<iframe class="airtable-embed" src="https://airtable.com/embed/shr0NHM9zvbug0nAh?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
 ## Advisory Committee
 
 ### Anne Abbott
