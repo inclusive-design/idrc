@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^15.0.0",
-    "@commitlint/config-conventional": "^15.0.0",
+    "@commitlint/config-conventional": "^17.0.3",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "babel-loader": "^8.2.3",
     "backstopjs": "^6.0.4",
