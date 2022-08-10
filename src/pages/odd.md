@@ -64,3 +64,5 @@ Edward Thomas – *Research Assistant*
 <!--EndFragment-->
 
 ![Kessler Foundation logo](/media/kesslerfoundation-logo_color-socialmedia-1080px-wide.png)
+
+![Microsoft logo](/media/microsoft-logo-white.png)
