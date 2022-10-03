@@ -1,7 +1,7 @@
 ---
 layout: layouts/single--news.njk
 title: W﻿e Count Recount Newsletter
-date: 2022-10-03T17:54:42.913Z
+date: 2022-10-03T18:14:34.304Z
 author: IDRC Team
 excerpt: Read all past issues of the We Count Recount, We Count's monthly newsletter.
 socialImage: /media/we_count_recount_new_banner.jpg
