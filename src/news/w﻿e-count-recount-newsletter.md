@@ -6,7 +6,11 @@ author: IDRC Team
 excerpt: Read all past issues of the We Count Recount, We Count's monthly newsletter.
 socialImage: /media/we_count_recount_new_banner.jpg
 ---
+![](/media/we_count_recount_new_banner.jpg)
+
 Read all past issues of the We Count Recount, We Count's monthly newsletter.
+
+
 
 <style type="text/css">
 <!--
