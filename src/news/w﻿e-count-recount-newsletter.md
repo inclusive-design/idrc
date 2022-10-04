@@ -4,6 +4,7 @@ title: IDRC's Newsletter
 date: 2022-10-03T18:14:34.304Z
 author: IDRC Team
 excerpt: Read all past issues of the IDRC monthly newsletter.
+permalink: newsletter
 socialImage: /media/we_count_recount_new_banner.jpg
 ---
 ![](/media/we_count_recount_new_banner.jpg)
