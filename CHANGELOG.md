@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://www.github.com/inclusive-design/idrc/compare/v1.3.1...v1.4.0) (2022-10-25)
+
+
+### Features
+
+* Redirect achecker.ca to primary domain ([#331](https://www.github.com/inclusive-design/idrc/issues/331)) ([4293fae](https://www.github.com/inclusive-design/idrc/commit/4293fae1711467882ab85b234f70f706b213ce04))
+
+
+### Bug Fixes
+
+* merge conflict with main contents to dev ([5b9fb14](https://www.github.com/inclusive-design/idrc/commit/5b9fb14a587e5e54fbe9c9738e8a83cb86e987b4))
+* resolve mixed content error ([afb9e26](https://www.github.com/inclusive-design/idrc/commit/afb9e2695c0cbaa32514688a86aedde5a13b6374))
+
 ### [1.3.1](https://www.github.com/inclusive-design/idrc/compare/v1.3.0...v1.3.1) (2021-12-14)
 
 
