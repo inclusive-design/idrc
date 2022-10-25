@@ -39,21 +39,21 @@ Edward Thomas – *Research Assistant*
 
 ### Project Architecture Description
 
-**There are four main phases:**
+#### **There are four main phases:**
 
 1. collect external data sources,
 2. synthesize data and create an aggregated data set,
 3. test the data set with various hiring filters and
 4. present the data set in multiple formats for new algorithm development, testing and front-end presentation.
 
-**The flow of the Current project scope is as follows:**
+#### **The flow of the Current project scope is as follows:**
 
 * Data is collected from external sources such as LinkedIn or Korn Ferry. Help is needed from LinkedIn for their data set. A potential future data set is the Azure open data sets.
 * Next, we will perform co-design with applicants with disabilities to collect the unusual but justifiable evidence of skill that would not be considered by an AI tool to create a synthetic dataset. We will combine the synthetic data with the external data to create an aggregated data set. This work was retained from the original project scope.
 * Next, we will use the LinkedIn Recruiter testing environment to track the number applicants with disabilities chosen for consideration. This work is from the original project plan.
 * We have extended the project scope to include testing with various filters offered by LinkedIn Recruiter and analyzing results to address bias. We will require assistance from LinkedIn for the test environment.
 
-**Potential future project scope includes:**
+#### **Potential future project scope includes:**
 
 * Publish the aggregated dataset as private Azure datasets as the first option. Other alternatives to make aggregated datasets available to other communities include Frictionless data packages such as using private Github repositories, Azure Postgres SQL or Azure MySQL databases
 * Implement the matching algorithm using LinkedIn API
@@ -64,3 +64,5 @@ Edward Thomas – *Research Assistant*
 <!--EndFragment-->
 
 ![Kessler Foundation logo](/media/kesslerfoundation-logo_color-socialmedia-1080px-wide.png)
+
+![Microsoft logo](http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWEDnc?ver=9fb4)
