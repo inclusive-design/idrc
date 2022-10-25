@@ -61,7 +61,7 @@
     "backstopjs": "^6.0.4",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
-    "eleventy-plugin-error-overlay": "^0.1.2",
+    "eleventy-plugin-error-overlay": "^1.0.0",
     "eslint-config-xo-react": "^0.25.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.2.0",
@@ -94,7 +94,7 @@
     "xo": "^0.39.1"
   },
   "dependencies": {
-    "@11ty/eleventy": "0.12.1",
+    "@11ty/eleventy": "1.0.2",
     "@11ty/eleventy-navigation": "0.3.2",
     "@11ty/eleventy-plugin-rss": "1.1.2",
     "d3-selection": "3.0.0",
