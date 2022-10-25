@@ -9,5 +9,5 @@ description: |-
   ![SJRK logo](/media/sjrk.png)
 tags: []
 link: https://www.sojustrepairit.org/
-order: 50
+order: 35
 ---
