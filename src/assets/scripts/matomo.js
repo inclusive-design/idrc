@@ -9,7 +9,6 @@ Licensed under the New BSD license. You may not use this file except in complian
 You may obtain a copy of the New BSD License at
 https://github.com/inclusive-design/idrc/raw/main/LICENSE.md.
 */
-/* global document, window */
 
 'use strict';
 

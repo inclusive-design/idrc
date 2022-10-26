@@ -120,3 +120,6 @@ backstop_data/*
 
 # Nova configuration
 .nova
+
+# VS Code configuration
+.vscode
