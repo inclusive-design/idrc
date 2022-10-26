@@ -1,65 +1,65 @@
 @use "sass:math";
 
 .pagination {
-	padding-bottom: rem(40);
-	padding-top: rem(40);
-	text-align: center;
+  padding-bottom: rem(40);
+  padding-top: rem(40);
+  text-align: center;
 
-	@include breakpoint-up(sm) {
-		margin-left: auto;
-		margin-right: auto;
-		width: 75%;
-	}
+  @include breakpoint-up(sm) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
 
-	@include breakpoint-up(md) {
-		padding-bottom: rem(80);
-		padding-top: rem(80);
-		width: 50%;
-	}
+  @include breakpoint-up(md) {
+    padding-bottom: rem(80);
+    padding-top: rem(80);
+    width: 50%;
+  }
 
-	@include breakpoint-up(lg) {
-		width: math.div(100% * 5, 12);
-	}
+  @include breakpoint-up(lg) {
+    width: math.div(100% * 5, 12);
+  }
 }
 
 .pagination ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	list-style: none;
-	padding-left: rem(24);
-	padding-right: rem(24);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding-left: rem(24);
+  padding-right: rem(24);
 }
 
 .pagination a {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	height: rem(32);
-	justify-content: center;
-	margin-left: rem(4);
-	margin-right: rem(4);
-	text-decoration: underline;
-	vertical-align: middle;
-	width: rem(24);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: rem(32);
+  justify-content: center;
+  margin-left: rem(4);
+  margin-right: rem(4);
+  text-decoration: underline;
+  vertical-align: middle;
+  width: rem(24);
 
-	&::after {
-		display: none;
-	}
+  &::after {
+    display: none;
+  }
 }
 
 .pagination a[aria-current="page"] {
-	background: var(--fl-bgColor, var(--indigo-800));
-	color: var(--fl-linkColor, var(--white));
+  background: var(--fl-bgColor, var(--indigo-800));
+  color: var(--fl-linkColor, var(--white));
 
-	&:hover,
-	&:focus {
-		background: var(--fl-fgColor, var(--indigo-500));
-		color: var(--fl-bgColor);
-	}
+  &:hover,
+  &:focus {
+    background: var(--fl-fgColor, var(--indigo-500));
+    color: var(--fl-bgColor);
+  }
 }
 
 .pagination svg {
-	height: rem(24);
-	width: rem(24);
+  height: rem(24);
+  width: rem(24);
 }

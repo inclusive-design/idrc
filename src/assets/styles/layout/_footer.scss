@@ -2,120 +2,120 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 .footer {
-	background: var(--fl-bgColor, var(--indigo-800));
-	color: var(--fl-fgColor, var(--white));
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto auto 0;
-	max-width: calc(var(--max-width) + var(--gutter));
-	padding-bottom: rem(80);
-	padding-top: rem(80);
-	position: relative;
-	width: calc(100vw - var(--gutter));
+  background: var(--fl-bgColor, var(--indigo-800));
+  color: var(--fl-fgColor, var(--white));
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto auto 0;
+  max-width: calc(var(--max-width) + var(--gutter));
+  padding-bottom: rem(80);
+  padding-top: rem(80);
+  position: relative;
+  width: calc(100vw - var(--gutter));
 
-	&::after {
-		background: inherit;
-		bottom: 0;
-		content: "";
-		display: block;
-		height: 100%;
-		margin-left: 50%;
-		position: absolute;
-		transform: translateX(-50%);
-		width: 100vw;
-		z-index: -1;
-	}
+  &::after {
+    background: inherit;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+    z-index: -1;
+  }
 }
 
 .footer > * {
-	flex: 0 0 100%;
-	padding: 0 calc(var(--gutter) / 2);
+  flex: 0 0 100%;
+  padding: 0 calc(var(--gutter) / 2);
 }
 
 .footer .logo svg {
-	fill: currentcolor;
-	width: rem(192);
+  fill: currentcolor;
+  width: rem(192);
 }
 
 .footer a:hover,
 .footer a:focus {
-	background: var(--fl-linkColor, var(--indigo-500));
-	color: var(--fl-bgColor);
+  background: var(--fl-linkColor, var(--indigo-500));
+  color: var(--fl-bgColor);
 
-	svg {
-		background-color: var(--fl-linkColor);
-		outline: rem(5) solid var(--fl-linkColor, var(--indigo-500));
-	}
+  svg {
+    background-color: var(--fl-linkColor);
+    outline: rem(5) solid var(--fl-linkColor, var(--indigo-500));
+  }
 }
 
 .footer a:visited {
-	text-decoration-color: var(--fl-linkColor, var(--indigo-500));
+  text-decoration-color: var(--fl-linkColor, var(--indigo-500));
 }
 
 .footer .social,
 .footer .contact {
-	margin-top: rem(48);
+  margin-top: rem(48);
 
-	&::before {
-		border-bottom: rem(2) solid currentcolor;
-		content: "";
-		display: block;
-		margin-bottom: rem(8);
-		width: 100%;
-	}
+  &::before {
+    border-bottom: rem(2) solid currentcolor;
+    content: "";
+    display: block;
+    margin-bottom: rem(8);
+    width: 100%;
+  }
 }
 
 .footer ul {
-	list-style: none;
-	margin-top: rem(24);
+  list-style: none;
+  margin-top: rem(24);
 }
 
 .footer li {
-	margin-bottom: rem(8);
+  margin-bottom: rem(8);
 }
 
 .footer .social a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .footer .social svg {
-	display: inline;
-	fill: currentcolor;
-	margin-top: rem(-4);
-	width: rem(16);
+  display: inline;
+  fill: currentcolor;
+  margin-top: rem(-4);
+  width: rem(16);
 }
 
 .footer .license-credit {
-	font-size: var(--step--1);
-	margin-top: rem(48);
+  font-size: var(--step--1);
+  margin-top: rem(48);
 }
 
 @include breakpoint-up(md) {
-	.footer .logo {
-		flex: 0 0 100%;
-	}
+  .footer .logo {
+    flex: 0 0 100%;
+  }
 
-	.footer .social {
-		flex: 0 0 calc(100% / 3);
-	}
+  .footer .social {
+    flex: 0 0 calc(100% / 3);
+  }
 
-	.footer .contact {
-		display: flex;
-		flex: 0 0 calc(100% * 2 / 3);
-		flex-flow: row wrap;
+  .footer .contact {
+    display: flex;
+    flex: 0 0 calc(100% * 2 / 3);
+    flex-flow: row wrap;
 
-		.h3 {
-			margin-bottom: rem(24);
-			width: 100%;
-		}
+    .h3 {
+      margin-bottom: rem(24);
+      width: 100%;
+    }
 
-		div {
-			margin-top: 0;
-			width: 50%;
-		}
-	}
+    div {
+      margin-top: 0;
+      width: 50%;
+    }
+  }
 
-	.footer .license-credit {
-		flex: 0 0 100%;
-	}
+  .footer .license-credit {
+    flex: 0 0 100%;
+  }
 }

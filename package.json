@@ -47,10 +47,10 @@
   },
   "lint-staged": {
     "src/assets/styles/**/*.scss": [
-      "stylelint"
+      "stylelint --fix"
     ],
     "src/assets/scripts/**/*.js": [
-      "eslint"
+      "eslint --fix"
     ]
   },
   "devDependencies": {

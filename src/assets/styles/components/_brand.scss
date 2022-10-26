@@ -1,95 +1,95 @@
 @use "sass:color";
 
 .brand {
-	color: var(--fl-linkColor, inherit);
-	height: rem(80);
-	margin-left: rem(-3);
-	padding-top: rem(12);
-	width: rem(72);
-	z-index: 20;
+  color: var(--fl-linkColor, inherit);
+  height: rem(80);
+  margin-left: rem(-3);
+  padding-top: rem(12);
+  width: rem(72);
+  z-index: 20;
 
-	&:hover,
-	&:focus {
-		background: var(--fl-linkColor, var(--black));
-		color: var(--fl-bgColor, var(--white));
-	}
+  &:hover,
+  &:focus {
+    background: var(--fl-linkColor, var(--black));
+    color: var(--fl-bgColor, var(--white));
+  }
 
-	&:active {
-		background: var(--fl-linkColor, color.adjust(black, $alpha: -0.3));
-		color: var(--fl-bgColor);
-	}
+  &:active {
+    background: var(--fl-linkColor, color.adjust(black, $alpha: -0.3));
+    color: var(--fl-bgColor);
+  }
 }
 
 .brand svg {
-	fill: currentcolor;
-	margin-left: rem(18);
-	width: rem(40);
+  fill: currentcolor;
+  margin-left: rem(18);
+  width: rem(40);
 }
 
 .brand .brand__logo svg {
-	display: inline;
-	width: rem(40);
+  display: inline;
+  width: rem(40);
 }
 
 .brand .brand__logotype svg {
-	display: none;
-	width: rem(200);
+  display: none;
+  width: rem(200);
 }
 
 .page--home {
-	.brand {
-		color: var(--fl-linkColor, var(--blue-500));
-		width: rem(72);
+  .brand {
+    color: var(--fl-linkColor, var(--blue-500));
+    width: rem(72);
 
-		&:hover,
-		&:focus {
-			background: var(--fl-linkColor, var(--blue-500));
-			color: var(--fl-bgColor, var(--white));
-		}
+    &:hover,
+    &:focus {
+      background: var(--fl-linkColor, var(--blue-500));
+      color: var(--fl-bgColor, var(--white));
+    }
 
-		&:active {
-			background: var(--fl-linkColor, color.adjust($blue-500, $alpha: -0.3));
-			color: var(--fl-bgColor);
-		}
-	}
+    &:active {
+      background: var(--fl-linkColor, color.adjust($blue-500, $alpha: -0.3));
+      color: var(--fl-bgColor);
+    }
+  }
 
-	.brand__logo {
-		display: inline;
-	}
+  .brand__logo {
+    display: inline;
+  }
 
-	.brand__logotype {
-		display: none;
-	}
+  .brand__logotype {
+    display: none;
+  }
 }
 
 .banner--menu-visible,
 .page--home .banner--menu-visible {
-	.brand {
-		color: var(--fl-fgColor, var(--white));
+  .brand {
+    color: var(--fl-fgColor, var(--white));
 
-		&:hover,
-		&:focus {
-			background: var(--fl-fgColor, var(--white));
-			color: var(--fl-bgColor, var(--indigo-800));
-		}
+    &:hover,
+    &:focus {
+      background: var(--fl-fgColor, var(--white));
+      color: var(--fl-bgColor, var(--indigo-800));
+    }
 
-		&:active {
-			background: var(--fl-fgColor, var(--indigo-900));
-			color: var(--fl-bgColor, var(--white));
-		}
-	}
+    &:active {
+      background: var(--fl-fgColor, var(--indigo-900));
+      color: var(--fl-bgColor, var(--white));
+    }
+  }
 }
 
 @include breakpoint-up(sm) {
-	.brand {
-		width: rem(232);
-	}
+  .brand {
+    width: rem(232);
+  }
 
-	.brand .brand__logo svg {
-		display: none;
-	}
+  .brand .brand__logo svg {
+    display: none;
+  }
 
-	.brand .brand__logotype svg {
-		display: inline;
-	}
+  .brand .brand__logotype svg {
+    display: inline;
+  }
 }

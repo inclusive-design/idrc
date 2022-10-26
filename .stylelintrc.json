@@ -4,6 +4,6 @@
         "no-descending-specificity": null,
         "selector-class-pattern": null,
         "custom-property-pattern": null,
-        "indentation": "tab"
+        "indentation": 2
     }
 }
