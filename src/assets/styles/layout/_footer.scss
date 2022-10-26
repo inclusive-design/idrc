@@ -16,7 +16,7 @@
   &::after {
     background: inherit;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     height: 100%;
     margin-left: 50%;
@@ -33,7 +33,7 @@
 }
 
 .footer .logo svg {
-  fill: currentColor;
+  fill: currentcolor;
   width: rem(192);
 }
 
@@ -57,8 +57,8 @@
   margin-top: rem(48);
 
   &::before {
-    border-bottom: rem(2) solid currentColor;
-    content: "";
+    border-bottom: rem(2) solid currentcolor;
+    content: '';
     display: block;
     margin-bottom: rem(8);
     width: 100%;
@@ -80,7 +80,7 @@
 
 .footer .social svg {
   display: inline;
-  fill: currentColor;
+  fill: currentcolor;
   margin-top: rem(-4);
   width: rem(16);
 }
@@ -102,8 +102,7 @@
   .footer .contact {
     display: flex;
     flex: 0 0 calc(100% * 2 / 3);
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
     .h3 {
       margin-bottom: rem(24);

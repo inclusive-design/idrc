@@ -19,7 +19,7 @@
 {% if section.imageOrderDesktop %}
     {% set imageOrderDesktop = section.imageOrderDesktop %}
 {% endif %}
-<section id="{{ sectionTitle | slug }}" class="section
+<section id="{{ sectionTitle | slugify }}" class="section
 {{ desktopWidth }}
 {{ 'section--image' if section.image }}
 {{ section.desktopAlignment if section.desktopAlignment }}

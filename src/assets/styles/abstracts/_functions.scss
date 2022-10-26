@@ -1,7 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
-@use "sass:math";
+@use 'sass:list';
+@use 'sass:map';
+@use 'sass:math';
 
 @function rem($size) {
   $rem: math.div($size, 16);
@@ -14,10 +16,10 @@
   $breakpoints: $breakpoints,
   $breakpoint-names: map-keys($breakpoints)
 ) {
-  $n: index($breakpoint-names, $name);
+  $n: list.index($breakpoint-names, $name);
 
   @if not $n {
-    @error "Breakpoint `#{$name}` not found in `#{$breakpoints}`.";
+    @error 'Breakpoint `#{$name}` not found in `#{$breakpoints}`.';
   }
 
   @return if(
@@ -28,7 +30,7 @@
 }
 
 @function breakpoint-min($name, $breakpoints: $breakpoints) {
-  $min: map-get($breakpoints, $name);
+  $min: map.get($breakpoints, $name);
 
   @return if($min != 0, $min, null);
 }

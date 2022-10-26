@@ -2,7 +2,7 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 button {
-  -webkit-appearance: none;
+  appearance: none;
   background-color: var(--fl-buttonBgColor);
   color: var(--fl-buttonFgColor);
 }

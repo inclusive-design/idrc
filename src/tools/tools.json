@@ -1,5 +1,5 @@
 {
 	"layout": "layouts/base.njk",
-	"permalink": "/tools/{{ title | slug }}/",
+	"permalink": "/tools/{{ title | slugify }}/",
 	"headerBgColor": "white"
 }

@@ -18,7 +18,7 @@
   &::after {
     background: inherit;
     bottom: -1px;
-    content: "";
+    content: '';
     display: block;
     height: calc(1px + 100%);
     margin-left: 50%;
@@ -35,7 +35,7 @@
   z-index: 1;
 
   &::after {
-    box-shadow: 0 rem(3) rem(10) var(--fl-fgColor, rgba(0, 0, 0, 0.05));
+    box-shadow: 0 rem(3) rem(10) var(--fl-fgColor, rgb(0 0 0 / 5%));
   }
 }
 

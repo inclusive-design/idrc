@@ -2,7 +2,7 @@
 // This file contains CSS helper classes.
 // -----------------------------------------------------------------------------
 .visually-hidden {
-  @include visually-hidden();
+  @include visually-hidden;
 }
 
 .container,

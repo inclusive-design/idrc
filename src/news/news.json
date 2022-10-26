@@ -1,6 +1,6 @@
 {
     "layout": "layouts/single--news.njk",
-    "permalink": "/about/news/{{ title | slug }}/",
+    "permalink": "/about/news/{{ title | slugify }}/",
     "headerBgColor": "white",
     "author": "IDRC Team"
 }

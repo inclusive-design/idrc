@@ -104,7 +104,7 @@ module.exports = eleventyConfig => {
 				const content404 = fs.readFileSync('dist/404.html');
 
 				browserSync.addMiddleware('*', (request, response) => {
-				// Provides the 404 content without redirect.
+					// Provides the 404 content without redirect.
 					response.write(content404);
 					response.writeHead(404);
 					response.end();

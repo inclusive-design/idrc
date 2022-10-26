@@ -9,5 +9,5 @@ description: >-
   ![Collage of city elements including a bicycle, detached homes, downtown high rise buildings, tree, and bird. ](/media/cities.png)
 tags: []
 link: https://cities.inclusivedesign.ca/
-order: 40
+order: 70
 ---
