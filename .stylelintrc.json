@@ -4,6 +4,7 @@
         "no-descending-specificity": null,
         "selector-class-pattern": null,
         "custom-property-pattern": null,
-        "indentation": 2
+        "indentation": 2,
+        "string-quotes": "single"
     }
 }

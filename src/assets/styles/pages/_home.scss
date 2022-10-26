@@ -20,11 +20,11 @@
         )
         no-repeat
         50% 50% / 100% 100%;
-      content: "";
+      content: '';
       display: block;
       height: rem(640);
       left: rem(-80);
-      mask-image: url("../images/scatterplot.svg");
+      mask-image: url('../images/scatterplot.svg');
       mask-position: center;
       mask-repeat: no-repeat;
       mask-size: rem(640);

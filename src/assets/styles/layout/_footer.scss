@@ -16,7 +16,7 @@
   &::after {
     background: inherit;
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     height: 100%;
     margin-left: 50%;
@@ -58,7 +58,7 @@
 
   &::before {
     border-bottom: rem(2) solid currentcolor;
-    content: "";
+    content: '';
     display: block;
     margin-bottom: rem(8);
     width: 100%;

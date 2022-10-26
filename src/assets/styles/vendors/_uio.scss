@@ -1,4 +1,4 @@
-[class*="fl-theme-"]:not(.fl-theme-prefsEditor-default) {
+[class*='fl-theme-']:not(.fl-theme-prefsEditor-default) {
   .content a:visited,
   .footer a:visited {
     text-decoration-color: currentcolor;
@@ -17,7 +17,7 @@
   &.fl-theme-yb img {
     // Due to https://bugs.webkit.org/show_bug.cgi?id=127102 we need to access the SVG filter from an embedded SVG
     // instead of an external one.
-    filter: grayscale(100%) url("#yellow");
+    filter: grayscale(100%) url('#yellow');
   }
 
   .section--image figure,

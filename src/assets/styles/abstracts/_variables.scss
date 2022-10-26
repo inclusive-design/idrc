@@ -19,22 +19,22 @@ $coral-800: #e53e3e;
 $yellow-200: #faf089;
 $yellow-500: #f6e05e;
 $colors: (
-  "black": $black,
-  "white": $white,
-  "grey-100": $grey-100,
-  "grey-200": $grey-200,
-  "indigo-100": $indigo-100,
-  "indigo-200": $indigo-200,
-  "indigo-500": $indigo-500,
-  "indigo-800": $indigo-800,
-  "indigo-900": $indigo-900,
-  "blue-200": $blue-200,
-  "blue-500": $blue-500,
-  "blue-900": $blue-900,
-  "coral-500": $coral-500,
-  "coral-800": $coral-800,
-  "yellow-200": $yellow-200,
-  "yellow-500": $yellow-500
+  'black': $black,
+  'white': $white,
+  'grey-100': $grey-100,
+  'grey-200': $grey-200,
+  'indigo-100': $indigo-100,
+  'indigo-200': $indigo-200,
+  'indigo-500': $indigo-500,
+  'indigo-800': $indigo-800,
+  'indigo-900': $indigo-900,
+  'blue-200': $blue-200,
+  'blue-500': $blue-500,
+  'blue-900': $blue-900,
+  'coral-500': $coral-500,
+  'coral-800': $coral-800,
+  'yellow-200': $yellow-200,
+  'yellow-500': $yellow-500
 );
 $breakpoints: (
   xs: 0,
@@ -50,9 +50,9 @@ $breakpoints: (
   }
 
   // Fonts
-  --ff-sans: "Open Sans", sans-serif;
-  --ff-display: "Work Sans", sans-serif;
-  --ff-serif: "Merriweather", serif;
+  --ff-sans: 'Open Sans', sans-serif;
+  --ff-display: 'Work Sans', sans-serif;
+  --ff-serif: 'Merriweather', serif;
 
   // Font Weights
   --fw-normal: 400;
