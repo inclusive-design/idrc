@@ -99,7 +99,7 @@
     "eleventy-plugin-pwa": "1.0.8",
     "eleventy-plugin-sharp": "0.1.1",
     "eslint-config-fluid": "2.1.1",
-    "infusion": "4.0.0",
+    "infusion": "4.5.0",
     "stylelint-order": "5.0.0"
   }
 }
