@@ -1,5 +1,5 @@
 {
     "layout": "layouts/single--person.njk",
-    "permalink": "/about/team/{{ title | slug }}/",
+    "permalink": "/about/team/{{ title | slugify }}/",
     "headerBgColor": "white"
 }
