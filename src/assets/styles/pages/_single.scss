@@ -1,50 +1,50 @@
 .single {
-  main > article header .wrapper {
-    margin-left: auto;
-    margin-right: auto;
-  }
+	main > article header .wrapper {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  main > article .content {
-    flex: 0 0 100%;
-    padding-bottom: rem(40);
-    padding-top: rem(40);
-  }
+	main > article .content {
+		flex: 0 0 100%;
+		padding-bottom: rem(40);
+		padding-top: rem(40);
+	}
 }
 
 @include breakpoint-up(sm) {
-  .single {
-    main > article header .wrapper {
-      width: 75%;
-    }
+	.single {
+		main > article header .wrapper {
+			width: 75%;
+		}
 
-    main > article .content {
-      flex: 0 0 75%;
-    }
+		main > article .content {
+			flex: 0 0 75%;
+		}
 
-    &.single--idea {
-      main > article header .wrapper {
-        margin-left: 0;
-      }
-    }
-  }
+		&.single--idea {
+			main > article header .wrapper {
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 @include breakpoint-up(md) {
-  .single {
-    main > article header .wrapper {
-      width: 50%;
-    }
+	.single {
+		main > article header .wrapper {
+			width: 50%;
+		}
 
-    main > article .content {
-      flex: 0 0 50%;
-      padding-bottom: rem(80);
-      padding-top: rem(80);
-    }
+		main > article .content {
+			flex: 0 0 50%;
+			padding-bottom: rem(80);
+			padding-top: rem(80);
+		}
 
-    &.single--idea {
-      main > article header .wrapper {
-        width: 75%;
-      }
-    }
-  }
+		&.single--idea {
+			main > article header .wrapper {
+				width: 75%;
+			}
+		}
+	}
 }

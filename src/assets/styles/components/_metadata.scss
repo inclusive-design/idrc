@@ -1,24 +1,24 @@
 .single article header {
-  background: var(--fl-bgColor, var(--white));
-  color: var(--fl-fgColor, var(--blue-900));
+	background: var(--fl-bgColor, var(--white));
+	color: var(--fl-fgColor, var(--blue-900));
 }
 
 .single article .metadata {
-  font-size: var(--step--1);
-  margin-top: rem(24);
+	font-size: var(--step--1);
+	margin-top: rem(24);
 }
 
 .separator {
-  color: transparent;
-  display: block;
-  height: rem(4);
-  padding: 0 0.5em;
+	color: transparent;
+	display: block;
+	height: rem(4);
+	padding: 0 0.5em;
 }
 
 @include breakpoint-up(sm) {
-  .separator {
-    color: inherit;
-    display: inline;
-    height: auto;
-  }
+	.separator {
+		color: inherit;
+		display: inline;
+		height: auto;
+	}
 }

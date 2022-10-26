@@ -1,84 +1,83 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
-
 @font-face {
-  font-display: swap;
-  font-family: 'Merriweather';
-  font-style: normal;
-  font-weight: 900;
-  src:
-    local('Merriweather Black'),
-    local('Merriweather-Black'),
-    url('../fonts/merriweather-900.woff2') format('woff2'),
-    url('../fonts/merriweather-900.woff') format('woff');
+	font-display: swap;
+	font-family: Merriweather;
+	font-style: normal;
+	font-weight: 900;
+	src:
+		local("Merriweather Black"),
+		local("Merriweather-Black"),
+		url("../fonts/merriweather-900.woff2") format("woff2"),
+		url("../fonts/merriweather-900.woff") format("woff");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local(''),
-    url('../fonts/work-sans-400.woff2') format('woff2'),
-    url('../fonts/work-sans-400.woff') format('woff');
+	font-display: swap;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local(""),
+		url("../fonts/work-sans-400.woff2") format("woff2"),
+		url("../fonts/work-sans-400.woff") format("woff");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 500;
-  src:
-    local(''),
-    url('../fonts/work-sans-500.woff2') format('woff2'),
-    url('../fonts/work-sans-500.woff') format('woff');
+	font-display: swap;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 500;
+	src:
+		local(""),
+		url("../fonts/work-sans-500.woff2") format("woff2"),
+		url("../fonts/work-sans-500.woff") format("woff");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Work Sans';
-  font-style: normal;
-  font-weight: 600;
-  src:
-    local(''),
-    url('../fonts/work-sans-600.woff2') format('woff2'),
-    url('../fonts/work-sans-600.woff') format('woff');
+	font-display: swap;
+	font-family: "Work Sans";
+	font-style: normal;
+	font-weight: 600;
+	src:
+		local(""),
+		url("../fonts/work-sans-600.woff2") format("woff2"),
+		url("../fonts/work-sans-600.woff") format("woff");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local('Open Sans Regular'),
-    local('OpenSans-Regular'),
-    url('../fonts/open-sans-400.woff2') format('woff2'),
-    url('../fonts/open-sans-400.woff') format('woff');
+	font-display: swap;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Open Sans Regular"),
+		local("OpenSans-Regular"),
+		url("../fonts/open-sans-400.woff2") format("woff2"),
+		url("../fonts/open-sans-400.woff") format("woff");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 400;
-  src:
-    local('Open Sans Italic'),
-    local('OpenSans-Italic'),
-    url('../fonts/open-sans-italic.woff2') format('woff2'),
-    url('../fonts/open-sans-italic.woff') format('woff');
+	font-display: swap;
+	font-family: "Open Sans";
+	font-style: italic;
+	font-weight: 400;
+	src:
+		local("Open Sans Italic"),
+		local("OpenSans-Italic"),
+		url("../fonts/open-sans-italic.woff2") format("woff2"),
+		url("../fonts/open-sans-italic.woff") format("woff");
 }
 
 @font-face {
-  font-display: swap;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local('Open Sans Bold'),
-    local('OpenSans-Bold'),
-    url('../fonts/open-sans-700.woff2') format('woff2'),
-    url('../fonts/open-sans-700.woff') format('woff');
+	font-display: swap;
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("Open Sans Bold"),
+		local("OpenSans-Bold"),
+		url("../fonts/open-sans-700.woff2") format("woff2"),
+		url("../fonts/open-sans-700.woff") format("woff");
 }

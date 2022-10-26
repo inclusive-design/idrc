@@ -1,40 +1,42 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
+@use "sass:list";
+@use "sass:map";
 @use "sass:math";
 
 @function rem($size) {
-  $rem: math.div($size, 16);
+	$rem: math.div($size, 16);
 
-  @return #{$rem}rem;
+	@return #{$rem}rem;
 }
 
 @function breakpoint-next(
-  $name,
-  $breakpoints: $breakpoints,
-  $breakpoint-names: map-keys($breakpoints)
+	$name,
+	$breakpoints: $breakpoints,
+	$breakpoint-names: map-keys($breakpoints)
 ) {
-  $n: index($breakpoint-names, $name);
+	$n: list.index($breakpoint-names, $name);
 
-  @if not $n {
-    @error "Breakpoint `#{$name}` not found in `#{$breakpoints}`.";
-  }
+	@if not $n {
+		@error "Breakpoint `#{$name}` not found in `#{$breakpoints}`.";
+	}
 
-  @return if(
-    $n < length($breakpoint-names),
-    nth($breakpoint-names, $n + 1),
-    null
-  );
+	@return if(
+		$n < length($breakpoint-names),
+		nth($breakpoint-names, $n + 1),
+		null
+	);
 }
 
 @function breakpoint-min($name, $breakpoints: $breakpoints) {
-  $min: map-get($breakpoints, $name);
+	$min: map.get($breakpoints, $name);
 
-  @return if($min != 0, $min, null);
+	@return if($min != 0, $min, null);
 }
 
 @function breakpoint-max($name, $breakpoints: $breakpoints) {
-  $next: breakpoint-next($name, $breakpoints);
+	$next: breakpoint-next($name, $breakpoints);
 
-  @return if($next, breakpoint-min($next, $breakpoints) - 1, null);
+	@return if($next, breakpoint-min($next, $breakpoints) - 1, null);
 }

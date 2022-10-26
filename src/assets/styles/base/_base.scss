@@ -4,39 +4,39 @@
 @use "sass:math";
 
 body {
-  background: var(--fl-bgColor, var(--indigo-100));
-  color: var(--fl-fgColor, var(--black));
-  display: flex;
-  flex-direction: column;
-  font-family: var(--fl-font-family, var(--ff-sans));
-  font-size: var(--step-0);
-  font-weight: var(--fw-normal);
-  justify-content: flex-start;
-  line-height: calc(1.5 * var(--fl-lineSpace-factor, 1));
-  min-height: 100vh;
+	background: var(--fl-bgColor, var(--indigo-100));
+	color: var(--fl-fgColor, var(--black));
+	display: flex;
+	flex-direction: column;
+	font-family: var(--fl-font-family, var(--ff-sans));
+	font-size: var(--step-0);
+	font-weight: var(--fw-normal);
+	justify-content: flex-start;
+	line-height: calc(1.5 * var(--fl-lineSpace-factor, 1));
+	min-height: 100vh;
 }
 
 small,
 .small {
-  font-size: var(--step--1);
-  line-height: calc(1.6 * var(--fl-lineSpace-factor, 1));
+	font-size: var(--step--1);
+	line-height: calc(1.6 * var(--fl-lineSpace-factor, 1));
 }
 
 a {
-  color: var(--fl-linkColor);
-  font-family: var(--fl-font-family, var(--ff-display));
-  text-decoration: underline;
+	color: var(--fl-linkColor);
+	font-family: var(--fl-font-family, var(--ff-display));
+	text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
-  color: var(--fl-bgColor, currentColor);
-  outline: none;
+	background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+	color: var(--fl-bgColor, currentColor);
+	outline: none;
 }
 
 .content a:visited {
-  text-decoration-color: var(--fl-linkColor, var(--yellow-500));
+	text-decoration-color: var(--fl-linkColor, var(--yellow-500));
 }
 
 main h1,
@@ -45,94 +45,94 @@ main h3,
 main h4,
 .project__link,
 .tool__link {
-  a:not([rel="external"])::after {
-    background: currentColor;
-    content: "";
-    margin-bottom: rem(-4);
-    margin-left: 0;
-    mask-image: url('../images/internal.svg');
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 1.5em;
-    padding-left: 1em;
-  }
+	a:not([rel="external"])::after {
+		background: currentcolor;
+		content: "";
+		margin-bottom: rem(-4);
+		margin-left: 0;
+		mask-image: url("../images/internal.svg");
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-size: 1.5em;
+		padding-left: 1em;
+	}
 
-  a[rel~="external"]::after,
-  a[href^="mailto:"]::after {
-    background-color: currentColor;
-    content: "";
-    margin-bottom: rem(-4);
-    margin-left: rem(4);
-    mask-image: url('../images/external.svg');
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 1.5em;
-    padding-left: 1em;
-  }
+	a[rel~="external"]::after,
+	a[href^="mailto:"]::after {
+		background-color: currentcolor;
+		content: "";
+		margin-bottom: rem(-4);
+		margin-left: rem(4);
+		mask-image: url("../images/external.svg");
+		mask-position: center;
+		mask-repeat: no-repeat;
+		mask-size: 1.5em;
+		padding-left: 1em;
+	}
 }
 
 blockquote {
-  padding-left: rem(32);
+	padding-left: rem(32);
 }
 
 * + blockquote {
-  margin-top: rem(18);
+	margin-top: rem(18);
 }
 
 .content,
 .section {
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
 
-  ol {
-    list-style-type: decimal;
-  }
+	ol {
+		list-style-type: decimal;
+	}
 
-  li {
-    line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1));
-  }
+	li {
+		line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1));
+	}
 
-  li + li {
-    margin-top: rem(20);
-  }
+	li + li {
+		margin-top: rem(20);
+	}
 
-  ul li::before {
-    background-color: var(--fl-bgColor, var(--grey-200));
-    border-radius: 50%;
-    content: "";
-    display: inline-block;
-    height: rem(6);
-    margin: rem(3) rem(8) rem(3) 0;
-    width: rem(6);
-  }
+	ul li::before {
+		background-color: var(--fl-bgColor, var(--grey-200));
+		border-radius: 50%;
+		content: "";
+		display: inline-block;
+		height: rem(6);
+		margin: rem(3) rem(8) rem(3) 0;
+		width: rem(6);
+	}
 }
 
 * + p,
 * + ul,
 * + ol {
-  margin-top: rem(20);
+	margin-top: rem(20);
 }
 
 @each $name, $color in $colors {
-  .section.section--bg-#{$name} {
-    background: var(--fl-bgColor, $color);
-  }
+	.section.section--bg-#{$name} {
+		background: var(--fl-bgColor, $color);
+	}
 }
 
 .section.section--bg-indigo-800 {
-  --accent: var(--indigo-500);
+	--accent: var(--indigo-500);
 }
 
 .section.section--bg-blue-500,
 .section.section--bg-coral-500,
 .section.section--bg-yellow-500 {
-  --accent: var(--white);
+	--accent: var(--white);
 }
 
 @each $name, $color in $colors {
-  .section.section--fg-#{$name} {
-    color: var(--fl-fgColor, $color);
-  }
+	.section.section--fg-#{$name} {
+		color: var(--fl-fgColor, $color);
+	}
 }

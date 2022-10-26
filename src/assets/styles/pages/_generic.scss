@@ -3,280 +3,280 @@
 // -----------------------------------------------------------------------------
 
 main > article {
-  align-items: flex-start;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(100vw - var(--gutter));
-  width: calc(100vw - var(--gutter));
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: calc(100vw - var(--gutter));
+	width: calc(100vw - var(--gutter));
 
-  header {
-    background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
-    border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
-    color: var(--fl-fgColor, var(--header-fg, $black));
-    flex: 0 0 100%;
-    padding-bottom: rem(80);
-    padding-top: rem(80);
-    position: relative;
+	header {
+		background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
+		border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
+		color: var(--fl-fgColor, var(--header-fg, $black));
+		flex: 0 0 100%;
+		padding-bottom: rem(80);
+		padding-top: rem(80);
+		position: relative;
 
-    &::after {
-      background: inherit;
-      border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
-      bottom: rem(-10);
-      content: "";
-      display: block;
-      height: calc(100% + #{rem(10)});
-      margin-left: 50%;
-      position: absolute;
-      transform: translateX(-50%);
-      width: 100vw;
-      z-index: -1;
-    }
+		&::after {
+			background: inherit;
+			border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
+			bottom: rem(-10);
+			content: "";
+			display: block;
+			height: calc(100% + #{rem(10)});
+			margin-left: 50%;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 100vw;
+			z-index: -1;
+		}
 
-    .wrapper {
-      margin: 0;
-    }
+		.wrapper {
+			margin: 0;
+		}
 
-    .breadcrumbs {
-      font-family: var(--fl-font-family, var(--ff-display));
-      font-size: var(--step-2);
-      font-weight: var(--fw-semibold);
-    }
+		.breadcrumbs {
+			font-family: var(--fl-font-family, var(--ff-display));
+			font-size: var(--step-2);
+			font-weight: var(--fw-semibold);
+		}
 
-    .intro {
-      font-size: var(--step--1);
-      margin-top: rem(20);
-    }
-  }
+		.intro {
+			font-size: var(--step--1);
+			margin-top: rem(20);
+		}
+	}
 
-  .content {
-    flex: 0 0 100%;
-    padding-bottom: rem(48);
-    padding-top: rem(48);
+	.content {
+		flex: 0 0 100%;
+		padding-bottom: rem(48);
+		padding-top: rem(48);
 
-    .wrapper {
-      margin: 0;
-    }
-  }
+		.wrapper {
+			margin: 0;
+		}
+	}
 }
 
 @include breakpoint-up(md) {
-  main > article {
-    max-width: calc(var(--max-width) + var(--gutter));
+	main > article {
+		max-width: calc(var(--max-width) + var(--gutter));
 
-    header {
-      .wrapper {
-        width: 50%;
-      }
-    }
+		header {
+			.wrapper {
+				width: 50%;
+			}
+		}
 
-    .content {
-      flex: 0 0 calc(100% * 2 / 3);
-      padding-bottom: rem(96);
-      padding-top: rem(96);
-    }
-  }
+		.content {
+			flex: 0 0 calc(100% * 2 / 3);
+			padding-bottom: rem(96);
+			padding-top: rem(96);
+		}
+	}
 }
 
 .hr {
-  border-bottom: rem(2) solid;
-  display: block;
-  width: rem(80);
+	border-bottom: rem(2) solid;
+	display: block;
+	width: rem(80);
 }
 
 @each $name, $color in $colors {
-  .hr--#{$name} {
-    border-bottom-color: var(--fl-fgColor, $color);
-  }
+	.hr--#{$name} {
+		border-bottom-color: var(--fl-fgColor, $color);
+	}
 }
 
 .section {
-  background: var(--fl-bgColor, var(--indigo-100));
-  color: var(--fl-fgColor, var(--blue-900));
-  padding-bottom: rem(100);
-  padding-top: rem(100);
+	background: var(--fl-bgColor, var(--indigo-100));
+	color: var(--fl-fgColor, var(--blue-900));
+	padding-bottom: rem(100);
+	padding-top: rem(100);
 }
 
 .section:not([class*="section--bg"]) {
-  padding-top: rem(100);
+	padding-top: rem(100);
 }
 
 .section + .section:not([class*="section--bg"]) {
-  padding-bottom: rem(100);
-  padding-top: 0;
+	padding-bottom: rem(100);
+	padding-top: 0;
 }
 
 .section--image:not([class*="section--bg"]) {
-  padding-bottom: rem(124);
+	padding-bottom: rem(124);
 }
 
 .section[class*="section--bg"] + .section:not([class*="section--bg"]) {
-  padding-top: rem(50);
+	padding-top: rem(50);
 }
 
 .section--full,
 .section--half,
 .section--third,
 .section--two-thirds {
-  flex: 0 0 100%;
+	flex: 0 0 100%;
 }
 
 .section--full[data-subsection-level="3"] .subsection + .subsection,
 .section--two-thirds[data-subsection-level="3"] .subsection + .subsection {
-  margin-top: rem(50);
+	margin-top: rem(50);
 }
 
 .section--full[data-subsection-level="4"] .subsection + .subsection,
 .section--two-thirds[data-subsection-level="4"] .subsection + .subsection {
-  margin-top: rem(20);
+	margin-top: rem(20);
 }
 
 .section--full-bleed {
-  position: relative;
+	position: relative;
 
-  &::after {
-    background: inherit;
-    content: "";
-    display: block;
-    height: 100%;
-    margin-left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    width: 100vw;
-    z-index: -1;
-  }
+	&::after {
+		background: inherit;
+		content: "";
+		display: block;
+		height: 100%;
+		margin-left: 50%;
+		position: absolute;
+		top: 0;
+		transform: translateX(-50%);
+		width: 100vw;
+		z-index: -1;
+	}
 }
 
 .section--image .section__content {
-  margin-top: rem(64);
+	margin-top: rem(64);
 }
 
 .section--image figure {
-  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--indigo-500));
-  margin-bottom: rem(100);
+	box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--indigo-500));
+	margin-bottom: rem(100);
 }
 
 .section--image figure.shadow-indigo-500 {
-  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--indigo-500));
+	box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--indigo-500));
 }
 
 .section--image figure.shadow-coral-500 {
-  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--coral-500));
+	box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--coral-500));
 }
 
 .section--image figure.shadow-yellow-500 {
-  box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--yellow-500));
+	box-shadow: rem(24) rem(24) var(--fl-fgColor, var(--yellow-500));
 }
 
 .section img {
-  width: 100%;
+	width: 100%;
 }
 
 .section .section__content + figure {
-  margin-bottom: 0;
-  margin-top: rem(24);
+	margin-bottom: 0;
+	margin-top: rem(24);
 }
 
 @include breakpoint-up(md) {
-  .section.center {
-    text-align: center;
-  }
+	.section.center {
+		text-align: center;
+	}
 
-  .section.center .hr {
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.section.center .hr {
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  .section[class*="section--bg"] + .section:not([class*="section--bg"]) {
-    padding-top: rem(100);
-  }
+	.section[class*="section--bg"] + .section:not([class*="section--bg"]) {
+		padding-top: rem(100);
+	}
 
-  .section--half {
-    flex: 0 0 50%;
-  }
+	.section--half {
+		flex: 0 0 50%;
+	}
 
-  .section--third {
-    flex: 0 0 calc(100% / 3);
-  }
+	.section--third {
+		flex: 0 0 calc(100% / 3);
+	}
 
-  .section--two-thirds {
-    flex: 0 0 calc(100% * 2 / 3);
-  }
+	.section--two-thirds {
+		flex: 0 0 calc(100% * 2 / 3);
+	}
 
-  .section--image .wrapper {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-  }
+	.section--image .wrapper {
+		align-items: flex-start;
+		display: flex;
+		justify-content: space-between;
+	}
 
-  .section--image .wrapper > * {
-    flex: 0 0 50%;
-  }
+	.section--image .wrapper > * {
+		flex: 0 0 50%;
+	}
 
-  .section--image .wrapper > figure {
-    flex: 0 0 calc(50% - var(--gutter) / 2);
-  }
+	.section--image .wrapper > figure {
+		flex: 0 0 calc(50% - var(--gutter) / 2);
+	}
 
-  .section--image figure {
-    margin-bottom: rem(24);
-    margin-left: rem(-24);
-    order: 0;
-  }
+	.section--image figure {
+		margin-bottom: rem(24);
+		margin-left: rem(-24);
+		order: 0;
+	}
 
-  .section--image figure.swap {
-    order: 2;
-  }
+	.section--image figure.swap {
+		order: 2;
+	}
 
-  .section__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    order: 1;
-    width: 100%;
-  }
+	.section__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		order: 1;
+		width: 100%;
+	}
 
-  .section__content > *:not(.hr) {
-    flex: 0 0 100%;
-  }
+	.section__content > *:not(.hr) {
+		flex: 0 0 100%;
+	}
 
-  .section__content > .subsection {
-    flex: 0 0 calc(50% - (var(--gutter) / 2));
-  }
+	.section__content > .subsection {
+		flex: 0 0 calc(50% - (var(--gutter) / 2));
+	}
 
-  .section--image .section__content {
-    margin-top: 0;
-  }
+	.section--image .section__content {
+		margin-top: 0;
+	}
 
-  .section--image figure + .section__content {
-    margin-top: 0;
-    order: 0;
-    padding-left: calc(var(--gutter) / 2);
-  }
+	.section--image figure + .section__content {
+		margin-top: 0;
+		order: 0;
+		padding-left: calc(var(--gutter) / 2);
+	}
 
-  .section--image figure.swap + .section__content {
-    padding-left: 0;
-  }
+	.section--image figure.swap + .section__content {
+		padding-left: 0;
+	}
 
-  .section--image .section__content + figure {
-    order: 0;
-  }
+	.section--image .section__content + figure {
+		order: 0;
+	}
 
-  .section--image .section__content + figure.swap {
-    margin-top: 0;
-    order: 2;
-  }
+	.section--image .section__content + figure.swap {
+		margin-top: 0;
+		order: 2;
+	}
 
-  .section--full[data-subsection-level="3"] .subsection + .subsection,
-  .section--two-thirds[data-subsection-level="3"] .subsection + .subsection {
-    margin-top: rem(40);
-  }
+	.section--full[data-subsection-level="3"] .subsection + .subsection,
+	.section--two-thirds[data-subsection-level="3"] .subsection + .subsection {
+		margin-top: rem(40);
+	}
 }
 
 @include breakpoint-up(lg) {
-  .section--half {
-    width: 100%;
-  }
+	.section--half {
+		width: 100%;
+	}
 }
