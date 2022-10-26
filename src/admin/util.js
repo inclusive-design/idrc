@@ -4,8 +4,11 @@ import limitFilter from 'eleventy-plugin-fluid/src/filters/limit-filter.js';
 import splitFilter from '../filters/split-filter.js';
 import site from '../_data/site.json';
 
+const MarkdownIt = require('markdown-it');
+const slugify = require('@sindresorhus/slugify');
+
 const slugifyFilter = function (str, options = {}) {
-	return require('@sindresorhus/slugify')(
+	return slugify(
 		'' + str,
 		Object.assign(
 			{
@@ -17,7 +20,7 @@ const slugifyFilter = function (str, options = {}) {
 };
 
 const markdownFilter = function (value) {
-	const md = require('markdown-it')({
+	const md = new MarkdownIt({
 		html: true
 	});
 	return md.render(value);
