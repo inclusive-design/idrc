@@ -5,7 +5,7 @@ const {
 	isoDateFilter,
 	limitFilter,
 	markdownFilter,
-	slugFilter,
+	slugifyFilter,
 	splitFilter,
 	site
 } = previewUtil;
@@ -16,7 +16,7 @@ env.addFilter('formatDate', formatDateFilter);
 env.addFilter('isoDate', isoDateFilter);
 env.addFilter('limit', limitFilter);
 env.addFilter('markdown', markdownFilter);
-env.addFilter('slug', slugFilter);
+env.addFilter('slugify', slugifyFilter);
 env.addFilter('split', splitFilter);
 
 const Preview = ({entry, path, context}) => {
