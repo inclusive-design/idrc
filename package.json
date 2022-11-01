@@ -83,7 +83,7 @@
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "sass": "^1.44.0",
-    "sass-loader": "^12.3.0",
+    "sass-loader": "^13.1.0",
     "slugify": "^1.6.5",
     "start-server-and-test": "^1.14.0",
     "stylelint": "^14.14.0",
