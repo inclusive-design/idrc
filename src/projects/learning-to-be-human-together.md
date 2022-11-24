@@ -10,7 +10,7 @@ description: >-
   at its core.
 
 
-  src/media/philosophy-textbook-ebook-cover-1.png
+  ![Cover page of a book](/src/media/philosophy-textbook-ebook-cover-1.png)
 tags:
   - inclusive
   - openeducation
