@@ -2,11 +2,12 @@
 layout: layouts/base.njk
 title: Learning to Be Human Together
 shortName: Humanizing Learning
-description: "This resource explores the importance of, and processes for,
-  humanizing education. We start by exploring what humanizing teaching and
-  learning means: to acknowledge that our relationships are foundational to the
-  work that we do. It aims to make learning inclusive with connection, access,
-  and meaning-making at its core."
+description: "https://ecampusontario.pressbooks.pub/app/uploads/sites/2126/2022\
+  /02/Philosophy-Textbook-eBook-Cover-1.png This resource explores the
+  importance of, and processes for, humanizing education. We start by exploring
+  what humanizing teaching and learning means: to acknowledge that our
+  relationships are foundational to the work that we do. It aims to make
+  learning inclusive with connection, access, and meaning-making at its core."
 tags:
   - inclusive
   - openeducation
