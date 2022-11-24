@@ -10,14 +10,8 @@ description: >-
   at its core.
 
 
-  ![Cover page of a book](/src/media/philosophy-textbook-ebook-cover-1.png)
-tags:
-  - inclusive
-  - openeducation
-  - pedagogyofcare
-  - trauma-informedpedagogy
-  - ethics
-  - co-design
+  ![Cover page of a book](/media/philosophy-textbook-ebook-cover-1.png)
+tags: []
 link: https://ecampusontario.pressbooks.pub/onhumanlearn/
 ---
 This resource explores what *humanizing* teaching and learning means: to acknowledge that our relationships are foundational to the work that we do. It means to make learning inclusive with connection, access, and meaning-making at its core.
