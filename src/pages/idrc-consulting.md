@@ -16,16 +16,36 @@ intro: >-
   •	Digital accessibility reviews
 
   •	Inclusive employee experience consulting
-
-
-  ## Ways to Begin
-
-
-  There will never be just one way to do the work of inclusion or inclusive design. Rather than a framework or an ideology, inclusive design is a perspective shift that requires unlearning, questioning, and reimagining. Inclusive Design is the horizontal thread that stretches throughout  the vertical functions/pillars of organizations. This work stretches from very tactical, technical know-how to having a mature emotional intelligence to discern the context, the stakeholders, the needs, and the complex relational aspects of everything. Our mix of services can help you meet your inclusion goals.
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 sections:
+  - imageOrderDesktop:
+      - auto
+    desktopWidth:
+      - full
+    fullBleed: true
+    imageOrder:
+      - start
+    backgroundColor:
+      - indigo-100
+    textColor:
+      - black
+    borderColor:
+      - indigo-500
+    title: Ways to begin
+    content: There will never be just one way to do the work of inclusion or
+      inclusive design. Rather than a framework or an ideology, inclusive design
+      is a perspective shift that requires unlearning, questioning, and
+      reimagining. Inclusive Design is the horizontal thread that stretches
+      throughout  the vertical functions/pillars of organizations. This work
+      stretches from very tactical, technical know-how to having a mature
+      emotional intelligence to discern the context, the stakeholders, the
+      needs, and the complex relational aspects of everything. Our mix of
+      services can help you meet your inclusion goals.
+    imageShadow:
+      - indigo-500
+    subsectionLevel: H3
   - title: Consulting
     borderColor: coral-500
     desktopWidth: two-thirds
@@ -47,10 +67,10 @@ sections:
 
       * Building capacity in inclusive design within processes, policies, practices, and products
     fullBleed: true
-    subsectionLevel: H3
+    subsectionLevel: H4
   - title: Training
     borderColor: coral-500
-    subsectionLevel: H3
+    subsectionLevel: H4
     desktopWidth: two-thirds
     content: >-
       We offer a wide range of customizable training and workshops for all your
@@ -92,7 +112,7 @@ sections:
 
       * Accessibility plans
     fullBleed: true
-    subsectionLevel: H3
+    subsectionLevel: H4
   - title: Contact IDRC Consulting
     backgroundColor: indigo-200
     borderColor: null
@@ -111,5 +131,5 @@ sections:
       **[Contact us about consulting and training](mailto:vroberts@ocadu.ca)**
 
       **[Contact us about accessibility assessments](mailto:lliskovoi@ocadu.ca)**
-    subsectionLevel: H3
+    subsectionLevel: H4
 ---
