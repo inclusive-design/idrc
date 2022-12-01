@@ -1,21 +1,7 @@
 ---
 title: Consulting, Training and Services
 permalink: /consulting/
-eleventyNavigation:
-  key: IDRC Consulting
-  parent: Services
-intro: >-
-  
-  The Inclusive Design Research Centre offers several ways that organizations can learn, collaborate, and gain experience with Inclusive Design through four core areas: 
-
-
-  * Inclusive design consulting
-
-  * T﻿raining
-
-  * D﻿igital accessibility reviews
-
-  * Inclusive employee experience consulting
+intro: ""
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
@@ -24,7 +10,7 @@ sections:
       - auto
     desktopWidth:
       - full
-    fullBleed: true
+    fullBleed: false
     imageOrder:
       - start
     backgroundColor:
@@ -33,28 +19,32 @@ sections:
       - black
     borderColor:
       - indigo-500
-    title: Ways to begin
-    content: There will never be just one way to do the work of inclusion or
-      inclusive design. Rather than a framework or an ideology, inclusive design
-      is a perspective shift that requires unlearning, questioning, and
-      reimagining. Inclusive Design is the horizontal thread that stretches
-      throughout  the vertical functions/pillars of organizations. This work
-      stretches from very tactical, technical know-how to having a mature
-      emotional intelligence to discern the context, the stakeholders, the
-      needs, and the complex relational aspects of everything. Our mix of
-      services can help you meet your inclusion goals.
-    imageShadow:
-      - indigo-500
-    subsectionLevel: "0"
-  - title: Consulting
-    borderColor: coral-500
-    desktopWidth: null
+    title: What we offer
     content: >-
-      We work closely with clients across organizational levels  to meet them
-      where they are and help them define and achieve sustainable inclusion
-      goals. Together we create customized approaches that are specific to an
-      organization’s context, challenges and goals. We also provide flexible, as
-      needed, consulting support. Consulting services can help you in: 
+      
+
+      The Inclusive Design Research Centre offers several ways that organizations can learn, collaborate, and gain experience with Inclusive Design through four core areas: 
+
+
+      * Inclusive design consulting
+
+      * T﻿raining
+
+      * D﻿igital accessibility reviews
+
+      * Inclusive employee experience consulting
+
+
+      ## W﻿ays to begin
+
+
+      There will never be just one way to do the work of inclusion or inclusive design. Rather than a framework or an ideology, inclusive design is a perspective shift that requires unlearning, questioning, and reimagining. Inclusive Design is the horizontal thread that stretches throughout  the vertical functions/pillars of organizations. This work stretches from very tactical, technical know-how to having a mature emotional intelligence to discern the context, the stakeholders, the needs, and the complex relational aspects of everything. Our mix of services can help you meet your inclusion goals.
+
+
+      ## C﻿onsulting
+
+
+      We work closely with clients across organizational levels  to meet them where they are and help them define and achieve sustainable inclusion goals. Together we create customized approaches that are specific to an organization’s context, challenges and goals. We also provide flexible, as needed, consulting support. Consulting services can help you in: 
 
 
       * Creating a more inclusive culture
@@ -66,16 +56,12 @@ sections:
       * Improving external collaboration and communication on inclusion
 
       * Building capacity in inclusive design within processes, policies, practices, and products
-    fullBleed: true
-    subsectionLevel: "0"
-  - title: Training
-    borderColor: coral-500
-    subsectionLevel: "0"
-    desktopWidth: null
-    content: >-
-      We offer a wide range of customizable training and workshops for all your
-      teams, whether you’re looking to change minds, learn practical skills, or
-      inspire hearts. Topics include:
+
+
+      ## T﻿raining
+
+
+      We offer a wide range of customizable training and workshops for all your teams, whether you’re looking to change minds, learn practical skills, or inspire hearts. Topics include:
 
 
       * Accessible content creation
@@ -87,21 +73,12 @@ sections:
       * Accessible & Inclusive communications
 
       * Physical space design
-    fullBleed: true
-  - title: Digital Accessibility and Compliance
-    borderColor: coral-500
-    desktopWidth: null
-    content: >-
-      We offer accessibility reviews, audits, and consulting at every stage of
-      the design process. Grounded in our expertise in inclusion and the Web
-      Content Accessibility Guidelines (WCAG), we review designs, websites,
-      mobile apps, and other digital interactions and provide you with the
-      guidance you need to create accessible experiences. You don’t need wait
-      until you've built something to review it. Whether you have napkin
-      sketches, wireframes, functional prototypes, design systems, or anything
-      in between, we can help you identify potential accessibility barriers
-      early and provide specific guidance on how to implement designs and
-      interactions in the most accessible way possible.
+
+
+      ## D﻿igital accessibility and compliance
+
+
+      We offer accessibility reviews, audits, and consulting at every stage of the design process. Grounded in our expertise in inclusion and the Web Content Accessibility Guidelines (WCAG), we review designs, websites, mobile apps, and other digital interactions and provide you with the guidance you need to create accessible experiences. You don’t need wait until you've built something to review it. Whether you have napkin sketches, wireframes, functional prototypes, design systems, or anything in between, we can help you identify potential accessibility barriers early and provide specific guidance on how to implement designs and interactions in the most accessible way possible.
 
 
       * WCAG audits
@@ -111,8 +88,10 @@ sections:
       * Accessibility annotation
 
       * Accessibility plans
-    fullBleed: true
-    subsectionLevel: "0"
+    imageShadow:
+      - indigo-500
+    subsectionLevel:
+      - "0"
   - title: Contact IDRC Consulting
     backgroundColor: indigo-200
     borderColor: null
@@ -132,4 +111,7 @@ sections:
 
       **[Contact us about accessibility assessments](mailto:lliskovoi@ocadu.ca)**
     subsectionLevel: "0"
+eleventyNavigation:
+  key: IDRC Consulting
+  parent: Services
 ---
