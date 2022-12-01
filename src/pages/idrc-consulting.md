@@ -14,7 +14,7 @@ intro: >-
 
   * T﻿raining
 
-  * D﻿igital Accessibility Reviews
+  * D﻿igital accessibility reviews
 
   * Inclusive employee experience consulting
 headerBgColor: blue-200
