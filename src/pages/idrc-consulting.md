@@ -21,9 +21,9 @@ sections:
       - indigo-500
     title: What we offer
     content: >-
-      
-
-      The Inclusive Design Research Centre offers several ways that organizations can learn, collaborate, and gain experience with Inclusive Design through four core areas: 
+      The Inclusive Design Research Centre offers several ways that
+      organizations can learn, collaborate, and gain experience with Inclusive
+      Design through four core areas: 
 
 
       * Inclusive design consulting
@@ -41,7 +41,7 @@ sections:
       There will never be just one way to do the work of inclusion or inclusive design. Rather than a framework or an ideology, inclusive design is a perspective shift that requires unlearning, questioning, and reimagining. Inclusive Design is the horizontal thread that stretches throughout  the vertical functions/pillars of organizations. This work stretches from very tactical, technical know-how to having a mature emotional intelligence to discern the context, the stakeholders, the needs, and the complex relational aspects of everything. Our mix of services can help you meet your inclusion goals.
 
 
-      ## C﻿onsulting
+      ### C﻿onsulting
 
 
       We work closely with clients across organizational levels  to meet them where they are and help them define and achieve sustainable inclusion goals. Together we create customized approaches that are specific to an organization’s context, challenges and goals. We also provide flexible, as needed, consulting support. Consulting services can help you in: 
