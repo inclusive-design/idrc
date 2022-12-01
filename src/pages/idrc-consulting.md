@@ -9,13 +9,14 @@ intro: >-
   can learn, collaborate, and gain experience with Inclusive Design through four
   core areas: 
 
-  •	Inclusive design consulting
 
-  •	Training
+  * Inclusive design consulting
 
-  •	Digital accessibility reviews
+  * T﻿raining
 
-  •	Inclusive employee experience consulting
+  * D﻿igital Accessibility Reviews
+
+  * Inclusive employee experience consulting
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
