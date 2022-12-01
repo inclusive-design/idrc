@@ -49,7 +49,7 @@ sections:
     subsectionLevel: H3
   - title: Consulting
     borderColor: coral-500
-    desktopWidth: two-thirds
+    desktopWidth: null
     content: >-
       We work closely with clients across organizational levels  to meet them
       where they are and help them define and achieve sustainable inclusion
@@ -72,7 +72,7 @@ sections:
   - title: Training
     borderColor: coral-500
     subsectionLevel: H4
-    desktopWidth: two-thirds
+    desktopWidth: null
     content: >-
       We offer a wide range of customizable training and workshops for all your
       teams, whether you’re looking to change minds, learn practical skills, or
@@ -91,7 +91,7 @@ sections:
     fullBleed: true
   - title: Digital Accessibility and Compliance
     borderColor: coral-500
-    desktopWidth: two-thirds
+    desktopWidth: null
     content: >-
       We offer accessibility reviews, audits, and consulting at every stage of
       the design process. Grounded in our expertise in inclusion and the Web
@@ -117,7 +117,7 @@ sections:
   - title: Contact IDRC Consulting
     backgroundColor: indigo-200
     borderColor: null
-    desktopWidth: two-thirds
+    desktopWidth: null
     fullBleed: true
     desktopAlignment: center
     content: >-
