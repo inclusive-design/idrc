@@ -5,8 +5,9 @@ eleventyNavigation:
   key: IDRC Consulting
   parent: Services
 intro: >-
-  
-  The Inclusive Design Research Centre offers several ways that organizations can learn, collaborate, and gain experience with Inclusive Design through four core areas: 
+  The Inclusive Design Research Centre offers several ways that organizations
+  can learn, collaborate, and gain experience with Inclusive Design through four
+  core areas: 
 
 
   * Inclusive design consulting
