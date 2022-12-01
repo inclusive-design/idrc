@@ -1,5 +1,5 @@
 ---
-title: IDRC Inclusion Consulting, Training and Services
+title: Consulting and Training
 permalink: /consulting/
 eleventyNavigation:
   key: IDRC Consulting
