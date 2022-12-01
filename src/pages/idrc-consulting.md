@@ -1,13 +1,12 @@
 ---
-title: Consulting and Training
+title: Consulting, Training and Services
 permalink: /consulting/
 eleventyNavigation:
   key: IDRC Consulting
   parent: Services
 intro: >-
-  The Inclusive Design Research Centre offers several ways that organizations
-  can learn, collaborate, and gain experience with Inclusive Design through four
-  core areas: 
+  
+  The Inclusive Design Research Centre offers several ways that organizations can learn, collaborate, and gain experience with Inclusive Design through four core areas: 
 
 
   * Inclusive design consulting
@@ -46,7 +45,7 @@ sections:
       services can help you meet your inclusion goals.
     imageShadow:
       - indigo-500
-    subsectionLevel: H3
+    subsectionLevel: "0"
   - title: Consulting
     borderColor: coral-500
     desktopWidth: null
@@ -68,10 +67,10 @@ sections:
 
       * Building capacity in inclusive design within processes, policies, practices, and products
     fullBleed: true
-    subsectionLevel: H4
+    subsectionLevel: "0"
   - title: Training
     borderColor: coral-500
-    subsectionLevel: H4
+    subsectionLevel: "0"
     desktopWidth: null
     content: >-
       We offer a wide range of customizable training and workshops for all your
@@ -113,7 +112,7 @@ sections:
 
       * Accessibility plans
     fullBleed: true
-    subsectionLevel: H4
+    subsectionLevel: "0"
   - title: Contact IDRC Consulting
     backgroundColor: indigo-200
     borderColor: null
@@ -132,5 +131,5 @@ sections:
       **[Contact us about consulting and training](mailto:vroberts@ocadu.ca)**
 
       **[Contact us about accessibility assessments](mailto:lliskovoi@ocadu.ca)**
-    subsectionLevel: H4
+    subsectionLevel: "0"
 ---
