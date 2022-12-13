@@ -1,14 +1,13 @@
-/* global CMS, nunjucks, previewUtil, PropTypes, React */
+/* eslint-disable react/display-name */
+/* global CMS, nunjucks, PropTypes, React */
 
-const {
-	formatDateFilter,
-	isoDateFilter,
-	limitFilter,
-	markdownFilter,
-	slugifyFilter,
-	splitFilter,
-	site
-} = previewUtil;
+import formatDateFilter from 'eleventy-plugin-fluid/src/filters/format-date-filter.js';
+import isoDateFilter from 'eleventy-plugin-fluid/src/filters/iso-date-filter.js';
+import limitFilter from 'eleventy-plugin-fluid/src/filters/limit-filter.js';
+import splitFilter from '../filters/split-filter.js';
+import site from '../_data/site.json';
+import slugifyFilter from '@sindresorhus/slugify';
+import markdownFilter from '../filters/markdown';
 
 const env = nunjucks.configure();
 

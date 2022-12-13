@@ -24,19 +24,13 @@
     },
     "overrides": [
         {
-            "files": "rollup.config.js",
-            "parserOptions": {
-                "sourceType": "module"
-            }
-        },
-        {
             "files": "src/assets/scripts/app.js",
             "parserOptions": {
                 "sourceType": "module"
             }
         },
         {
-            "files": "src/admin/util.js",
+            "files": "src/admin/previews.js",
             "parserOptions": {
                 "sourceType": "module"
             }
