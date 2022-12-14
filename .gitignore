@@ -123,3 +123,6 @@ backstop_data/*
 
 # VS Code configuration
 .vscode
+
+# Mac OSX
+.DS_Store

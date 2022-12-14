@@ -1,0 +1,24 @@
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% block content %}
+    <div class="project">
+        <h3>{{ title }}{{ " (" + shortName + ")" if shortName }}</h3>
+        {% if description %}
+        {{ description | markdown | safe }}
+        {% endif %}
+        {% if tags.length > 0 %}
+        <p class="tags">
+            {% for tag in tags %}
+            <span class="tag">{{ tag | safe }}</span>
+            {% endfor %}
+        </p>
+        {% endif %}
+        <p class="project__link"><a rel="external" href="{{ link }}">Visit {{ shortName if shortName else title }} website</a></p>
+    </div>
+{% endblock %}
+
+{{ content | safe }}

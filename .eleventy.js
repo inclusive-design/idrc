@@ -93,7 +93,6 @@ module.exports = eleventyConfig => {
 	eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
-	eleventyConfig.addPassthroughCopy('src/admin/previews.js');
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 	eleventyConfig.addPassthroughCopy('_redirects');
 

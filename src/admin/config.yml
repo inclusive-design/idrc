@@ -420,13 +420,12 @@ collections:
     preview_path: "/projects/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--project.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", buttons: ['bold', 'italic'], editor_components: [], required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "tools"
     label: "Tools"
     label_singular: "Tool"
@@ -435,13 +434,12 @@ collections:
     preview_path: "/tools/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--tool.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", buttons: ['bold', 'italic'], editor_components: [], required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
   - label: "Globals"
     name: "globals"
     files:
