@@ -7,7 +7,6 @@ headerBorderColor:
   - indigo-100
 headerTextColor:
   - black
-sections: []
 ---
 ![ODD: Optimizing Diversity with Disability logo](/media/odd-logo-only.svg)
 
