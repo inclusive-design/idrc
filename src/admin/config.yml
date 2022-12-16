@@ -7,7 +7,7 @@ backend:
     update: 'chore(cms): update "{{path}}"'
     delete: 'chore(cms): delete "{{path}}"'
     uploadMedia: 'chore(cms): upload "{{path}}"'
-    deleteMedia: 'chore(cms): delete "{{path}}"'  
+    deleteMedia: 'chore(cms): delete "{{path}}"'
 local_backend: true
 publish_mode: editorial_workflow
 site_url: "https://idrc.ocadu.ca"
@@ -40,34 +40,34 @@ collections:
                 name: "textColor"
                 widget: "select"
                 options:
-                  - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }
-                  - { label: "Indigo 100", value: "indigo-100" }
-                  - { label: "Indigo 200", value: "indigo-200" }
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 800", value: "indigo-800" }
-                  - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Coral 500", value: "coral-500" }
-                  - { label: "Coral 800", value: "coral-800" }
-                  - { label: "Yellow 200", value: "yellow-200" }
-                  - { label: "Yellow 500", value: "yellow-500" }
+                  - {label: "White", value: "white"}
+                  - {label: "Black", value: "black"}
+                  - {label: "Indigo 100", value: "indigo-100"}
+                  - {label: "Indigo 200", value: "indigo-200"}
+                  - {label: "Indigo 500", value: "indigo-500"}
+                  - {label: "Indigo 800", value: "indigo-800"}
+                  - {label: "Blue 500", value: "blue-500"}
+                  - {label: "Coral 500", value: "coral-500"}
+                  - {label: "Coral 800", value: "coral-800"}
+                  - {label: "Yellow 200", value: "yellow-200"}
+                  - {label: "Yellow 500", value: "yellow-500"}
                 default: ["black"]
                 required: false
               - label: "Background Colour"
                 name: "backgroundColor"
                 widget: "select"
                 options:
-                  - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }
-                  - { label: "Indigo 100", value: "indigo-100" }
-                  - { label: "Indigo 200", value: "indigo-200" }
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 800", value: "indigo-800" }
-                  - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Coral 500", value: "coral-500" }
-                  - { label: "Coral 800", value: "coral-800" }
-                  - { label: "Yellow 200", value: "yellow-200" }
-                  - { label: "Yellow 500", value: "yellow-500" }
+                  - {label: "White", value: "white"}
+                  - {label: "Black", value: "black"}
+                  - {label: "Indigo 100", value: "indigo-100"}
+                  - {label: "Indigo 200", value: "indigo-200"}
+                  - {label: "Indigo 500", value: "indigo-500"}
+                  - {label: "Indigo 800", value: "indigo-800"}
+                  - {label: "Blue 500", value: "blue-500"}
+                  - {label: "Coral 500", value: "coral-500"}
+                  - {label: "Coral 800", value: "coral-800"}
+                  - {label: "Yellow 200", value: "yellow-200"}
+                  - {label: "Yellow 500", value: "yellow-500"}
                 default: ["indigo-100"]
                 required: false
               - {label: "Full Bleed Background", name: "fullBleed", widget: "boolean", default: false}
@@ -75,17 +75,17 @@ collections:
                 name: "borderColor"
                 widget: "select"
                 options:
-                  - { label: "White", value: "white" }
-                  - { label: "Black", value: "black" }
-                  - { label: "Indigo 100", value: "indigo-100" }
-                  - { label: "Indigo 200", value: "indigo-200" }
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Indigo 800", value: "indigo-800" }
-                  - { label: "Blue 500", value: "blue-500" }
-                  - { label: "Coral 500", value: "coral-500" }
-                  - { label: "Coral 800", value: "coral-800" }
-                  - { label: "Yellow 200", value: "yellow-200" }
-                  - { label: "Yellow 500", value: "yellow-500" }
+                  - {label: "White", value: "white"}
+                  - {label: "Black", value: "black"}
+                  - {label: "Indigo 100", value: "indigo-100"}
+                  - {label: "Indigo 200", value: "indigo-200"}
+                  - {label: "Indigo 500", value: "indigo-500"}
+                  - {label: "Indigo 800", value: "indigo-800"}
+                  - {label: "Blue 500", value: "blue-500"}
+                  - {label: "Coral 500", value: "coral-500"}
+                  - {label: "Coral 800", value: "coral-800"}
+                  - {label: "Yellow 200", value: "yellow-200"}
+                  - {label: "Yellow 500", value: "yellow-500"}
                 default: ["indigo-500"]
                 required: false
               - {label: "Image", name: "image", widget: "image", required: false}
@@ -95,44 +95,44 @@ collections:
                 name: "imageOrder"
                 widget: "select"
                 options:
-                  - { label: "Start", value: "start" }
-                  - { label: "End", value: "end" }
+                  - {label: "Start", value: "start"}
+                  - {label: "End", value: "end"}
                 default: ["start"]
                 required: false
               - label: "Image Order (Desktop)"
                 name: "imageOrderDesktop"
                 widget: "select"
                 options:
-                  - { label: "Auto", value: "auto" }
-                  - { label: "Swap", value: "swap" }
+                  - {label: "Auto", value: "auto"}
+                  - {label: "Swap", value: "swap"}
                 default: ["auto"]
                 required: false
               - label: "Image Shadow"
                 name: "imageShadow"
                 widget: "select"
                 options:
-                  - { label: "Indigo 500", value: "indigo-500" }
-                  - { label: "Coral 500", value: "coral-500" }
-                  - { label: "Yellow 500", value: "yellow-500" }
+                  - {label: "Indigo 500", value: "indigo-500"}
+                  - {label: "Coral 500", value: "coral-500"}
+                  - {label: "Yellow 500", value: "yellow-500"}
                 default: ["indigo-500"]
                 required: false
               - label: "Desktop Width"
                 name: "desktopWidth"
                 widget: "select"
                 options:
-                - { label: "Third", value: "third" }
-                - { label: "Half", value: "half" }
-                - { label: "Two Thirds", value: "two-thirds" }
-                - { label: "Full", value: "full" }
+                - {label: "Third", value: "third"}
+                - {label: "Half", value: "half"}
+                - {label: "Two Thirds", value: "two-thirds"}
+                - {label: "Full", value: "full"}
                 default: ["full"]
                 required: true
               - label: "Subsection Header Level"
                 name: "subsectionLevel"
                 widget: "select"
                 options:
-                  - { label: "None", value: "0"}
-                  - { label: "3", value: "H3" }
-                  - { label: "4", value: "H4" }
+                  - {label: "None", value: "0"}
+                  - {label: "3", value: "H3"}
+                  - {label: "4", value: "H4"}
                 default: ["0"]
                 required: true
       - name: history
@@ -196,51 +196,51 @@ collections:
         name: "headerBgColor"
         widget: "select"
         options:
-          - { label: "White", value: "white" }
-          - { label: "Black", value: "black" }
-          - { label: "Indigo 100", value: "indigo-100" }
-          - { label: "Indigo 200", value: "indigo-200" }
-          - { label: "Indigo 500", value: "indigo-500" }
-          - { label: "Indigo 800", value: "indigo-800" }
-          - { label: "Blue 500", value: "blue-500" }
-          - { label: "Coral 500", value: "coral-500" }
-          - { label: "Coral 800", value: "coral-800" }
-          - { label: "Yellow 200", value: "yellow-200" }
-          - { label: "Yellow 500", value: "yellow-500" }
+          - {label: "White", value: "white"}
+          - {label: "Black", value: "black"}
+          - {label: "Indigo 100", value: "indigo-100"}
+          - {label: "Indigo 200", value: "indigo-200"}
+          - {label: "Indigo 500", value: "indigo-500"}
+          - {label: "Indigo 800", value: "indigo-800"}
+          - {label: "Blue 500", value: "blue-500"}
+          - {label: "Coral 500", value: "coral-500"}
+          - {label: "Coral 800", value: "coral-800"}
+          - {label: "Yellow 200", value: "yellow-200"}
+          - {label: "Yellow 500", value: "yellow-500"}
         default: ["indigo-100"]
         required: true
       - label: "Header Border Colour"
         name: "headerBorderColor"
         widget: "select"
         options:
-          - { label: "White", value: "white" }
-          - { label: "Black", value: "black" }
-          - { label: "Indigo 100", value: "indigo-100" }
-          - { label: "Indigo 200", value: "indigo-200" }
-          - { label: "Indigo 500", value: "indigo-500" }
-          - { label: "Indigo 800", value: "indigo-800" }
-          - { label: "Blue 500", value: "blue-500" }
-          - { label: "Coral 500", value: "coral-500" }
-          - { label: "Coral 800", value: "coral-800" }
-          - { label: "Yellow 200", value: "yellow-200" }
-          - { label: "Yellow 500", value: "yellow-500" }
+          - {label: "White", value: "white"}
+          - {label: "Black", value: "black"}
+          - {label: "Indigo 100", value: "indigo-100"}
+          - {label: "Indigo 200", value: "indigo-200"}
+          - {label: "Indigo 500", value: "indigo-500"}
+          - {label: "Indigo 800", value: "indigo-800"}
+          - {label: "Blue 500", value: "blue-500"}
+          - {label: "Coral 500", value: "coral-500"}
+          - {label: "Coral 800", value: "coral-800"}
+          - {label: "Yellow 200", value: "yellow-200"}
+          - {label: "Yellow 500", value: "yellow-500"}
         default: ["indigo-100"]
         required: true
       - label: "Header Text Colour"
         name: "headerTextColor"
         widget: "select"
         options:
-          - { label: "White", value: "white" }
-          - { label: "Black", value: "black" }
-          - { label: "Indigo 100", value: "indigo-100" }
-          - { label: "Indigo 200", value: "indigo-200" }
-          - { label: "Indigo 500", value: "indigo-500" }
-          - { label: "Indigo 800", value: "indigo-800" }
-          - { label: "Blue 500", value: "blue-500" }
-          - { label: "Coral 500", value: "coral-500" }
-          - { label: "Coral 800", value: "coral-800" }
-          - { label: "Yellow 200", value: "yellow-200" }
-          - { label: "Yellow 500", value: "yellow-500" }
+          - {label: "White", value: "white"}
+          - {label: "Black", value: "black"}
+          - {label: "Indigo 100", value: "indigo-100"}
+          - {label: "Indigo 200", value: "indigo-200"}
+          - {label: "Indigo 500", value: "indigo-500"}
+          - {label: "Indigo 800", value: "indigo-800"}
+          - {label: "Blue 500", value: "blue-500"}
+          - {label: "Coral 500", value: "coral-500"}
+          - {label: "Coral 800", value: "coral-800"}
+          - {label: "Yellow 200", value: "yellow-200"}
+          - {label: "Yellow 500", value: "yellow-500"}
         default: ["black"]
         required: true
       - label: "Sections"
@@ -254,34 +254,34 @@ collections:
             name: "textColor"
             widget: "select"
             options:
-              - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }
-              - { label: "Indigo 100", value: "indigo-100" }
-              - { label: "Indigo 200", value: "indigo-200" }
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 800", value: "indigo-800" }
-              - { label: "Blue 500", value: "blue-500" }
-              - { label: "Coral 500", value: "coral-500" }
-              - { label: "Coral 800", value: "coral-800" }
-              - { label: "Yellow 200", value: "yellow-200" }
-              - { label: "Yellow 500", value: "yellow-500" }
+              - {label: "White", value: "white"}
+              - {label: "Black", value: "black"}
+              - {label: "Indigo 100", value: "indigo-100"}
+              - {label: "Indigo 200", value: "indigo-200"}
+              - {label: "Indigo 500", value: "indigo-500"}
+              - {label: "Indigo 800", value: "indigo-800"}
+              - {label: "Blue 500", value: "blue-500"}
+              - {label: "Coral 500", value: "coral-500"}
+              - {label: "Coral 800", value: "coral-800"}
+              - {label: "Yellow 200", value: "yellow-200"}
+              - {label: "Yellow 500", value: "yellow-500"}
             default: ["black"]
             required: false
           - label: "Background Colour"
             name: "backgroundColor"
             widget: "select"
             options:
-              - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }
-              - { label: "Indigo 100", value: "indigo-100" }
-              - { label: "Indigo 200", value: "indigo-200" }
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 800", value: "indigo-800" }
-              - { label: "Blue 500", value: "blue-500" }
-              - { label: "Coral 500", value: "coral-500" }
-              - { label: "Coral 800", value: "coral-800" }
-              - { label: "Yellow 200", value: "yellow-200" }
-              - { label: "Yellow 500", value: "yellow-500" }
+              - {label: "White", value: "white"}
+              - {label: "Black", value: "black"}
+              - {label: "Indigo 100", value: "indigo-100"}
+              - {label: "Indigo 200", value: "indigo-200"}
+              - {label: "Indigo 500", value: "indigo-500"}
+              - {label: "Indigo 800", value: "indigo-800"}
+              - {label: "Blue 500", value: "blue-500"}
+              - {label: "Coral 500", value: "coral-500"}
+              - {label: "Coral 800", value: "coral-800"}
+              - {label: "Yellow 200", value: "yellow-200"}
+              - {label: "Yellow 500", value: "yellow-500"}
             default: ["indigo-100"]
             required: false
           - {label: "Full Bleed Background", name: "fullBleed", widget: "boolean", default: false}
@@ -289,17 +289,17 @@ collections:
             name: "borderColor"
             widget: "select"
             options:
-              - { label: "White", value: "white" }
-              - { label: "Black", value: "black" }
-              - { label: "Indigo 100", value: "indigo-100" }
-              - { label: "Indigo 200", value: "indigo-200" }
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Indigo 800", value: "indigo-800" }
-              - { label: "Blue 500", value: "blue-500" }
-              - { label: "Coral 500", value: "coral-500" }
-              - { label: "Coral 800", value: "coral-800" }
-              - { label: "Yellow 200", value: "yellow-200" }
-              - { label: "Yellow 500", value: "yellow-500" }
+              - {label: "White", value: "white"}
+              - {label: "Black", value: "black"}
+              - {label: "Indigo 100", value: "indigo-100"}
+              - {label: "Indigo 200", value: "indigo-200"}
+              - {label: "Indigo 500", value: "indigo-500"}
+              - {label: "Indigo 800", value: "indigo-800"}
+              - {label: "Blue 500", value: "blue-500"}
+              - {label: "Coral 500", value: "coral-500"}
+              - {label: "Coral 800", value: "coral-800"}
+              - {label: "Yellow 200", value: "yellow-200"}
+              - {label: "Yellow 500", value: "yellow-500"}
             default: ["indigo-500"]
             required: false
           - {label: "Image", name: "image", widget: "string", required: false}
@@ -309,44 +309,44 @@ collections:
             name: "imageOrder"
             widget: "select"
             options:
-              - { label: "Start", value: "start" }
-              - { label: "End", value: "end" }
+              - {label: "Start", value: "start"}
+              - {label: "End", value: "end"}
             default: ["start"]
             required: false
           - label: "Image Order (Desktop)"
             name: "imageOrderDesktop"
             widget: "select"
             options:
-              - { label: "Auto", value: "auto" }
-              - { label: "Swap", value: "swap" }
+              - {label: "Auto", value: "auto"}
+              - {label: "Swap", value: "swap"}
             default: ["auto"]
             required: false
           - label: "Image Shadow"
             name: "imageShadow"
             widget: "select"
             options:
-              - { label: "Indigo 500", value: "indigo-500" }
-              - { label: "Coral 500", value: "coral-500" }
-              - { label: "Yellow 500", value: "yellow-500" }
+              - {label: "Indigo 500", value: "indigo-500"}
+              - {label: "Coral 500", value: "coral-500"}
+              - {label: "Yellow 500", value: "yellow-500"}
             default: ["indigo-500"]
             required: false
           - label: "Desktop Width"
             name: "desktopWidth"
             widget: "select"
             options:
-              - { label: "Third", value: "third" }
-              - { label: "Half", value: "half" }
-              - { label: "Two Thirds", value: "two-thirds" }
-              - { label: "Full", value: "full" }
+              - {label: "Third", value: "third"}
+              - {label: "Half", value: "half"}
+              - {label: "Two Thirds", value: "two-thirds"}
+              - {label: "Full", value: "full"}
             default: ["full"]
             required: false
           - label: "Subsection Header Level"
             name: "subsectionLevel"
             widget: "select"
             options:
-              - { label: "None", value: "0"}
-              - { label: "3", value: "H3" }
-              - { label: "4", value: "H4" }
+              - {label: "None", value: "0"}
+              - {label: "3", value: "H3"}
+              - {label: "4", value: "H4"}
             default: ["0"]
             required: true
       - {label: "Body", name: "body", widget: "markdown", required: false}
@@ -420,13 +420,12 @@ collections:
     preview_path: "/projects/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--project.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", buttons: ['bold', 'italic'], editor_components: [], required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "tools"
     label: "Tools"
     label_singular: "Tool"
@@ -435,13 +434,12 @@ collections:
     preview_path: "/tools/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--tool.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", buttons: ['bold', 'italic'], editor_components: [], required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
   - label: "Globals"
     name: "globals"
     files:

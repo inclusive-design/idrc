@@ -9,7 +9,6 @@ headerBorderColor:
   - indigo-100
 headerTextColor:
   - black
-sections: []
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
 

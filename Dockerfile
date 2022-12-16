@@ -1,6 +1,6 @@
 FROM node:16.16.0-alpine AS builder
 
-RUN apk add --no-cache python make git g++
+RUN apk add --no-cache python3 make git g++
 
 WORKDIR /app
 

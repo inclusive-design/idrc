@@ -7,7 +7,6 @@ headerBorderColor:
   - indigo-100
 headerTextColor:
   - black
-sections: []
 ---
 Project objective: Reduce barriers to virtual healthcare.
 

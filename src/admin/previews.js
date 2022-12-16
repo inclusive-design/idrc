@@ -1,14 +1,13 @@
-/* global CMS, nunjucks, previewUtil, PropTypes, React */
+/* eslint-disable react/display-name */
+/* global CMS, nunjucks, PropTypes, React */
 
-const {
-	formatDateFilter,
-	isoDateFilter,
-	limitFilter,
-	markdownFilter,
-	slugifyFilter,
-	splitFilter,
-	site
-} = previewUtil;
+import formatDateFilter from 'eleventy-plugin-fluid/src/filters/format-date-filter.js';
+import isoDateFilter from 'eleventy-plugin-fluid/src/filters/iso-date-filter.js';
+import limitFilter from 'eleventy-plugin-fluid/src/filters/limit-filter.js';
+import splitFilter from '../filters/split-filter.js';
+import site from '../_data/site.json';
+import slugifyFilter from '@sindresorhus/slugify';
+import markdownFilter from '../filters/markdown';
 
 const env = nunjucks.configure();
 
@@ -163,6 +162,44 @@ Idea.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
+const Project = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--project.njk"
+		context={({title, shortName, description, tags, link}) => ({
+			previewMode: true,
+			title,
+			shortName,
+			description,
+			tags,
+			link
+		})}
+	/>
+);
+
+Project.propTypes = {
+	entry: PropTypes.object.isRequired
+};
+
+const Tool = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--tool.njk"
+		context={({title, shortName, description, tags, link}) => ({
+			previewMode: true,
+			title,
+			shortName,
+			description,
+			tags,
+			link
+		})}
+	/>
+);
+
+Tool.propTypes = {
+	entry: PropTypes.object.isRequired
+};
+
 const SiteData = ({entry}) => (
 	<Preview
 		entry={entry}
@@ -191,8 +228,10 @@ SiteData.propTypes = {
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('history', History);
 CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
-CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('pages', Page);
 CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
+CMS.registerPreviewTemplate('people', Person);
+CMS.registerPreviewTemplate('projects', Project);
+CMS.registerPreviewTemplate('tools', Tool);
 CMS.registerPreviewTemplate('site_data', SiteData);

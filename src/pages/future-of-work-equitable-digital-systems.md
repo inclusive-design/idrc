@@ -8,7 +8,6 @@ headerBgColor: indigo-200
 headerBorderColor: indigo-500
 headerTextColor:
   - black
-sections: []
 ---
 ![Logo of the Equitable Digital Systems project.](/media/eds-colored-03.png)
 

@@ -74,7 +74,7 @@
 // Prefs Editor style overrides
 
 .fl-prefsEditor-separatedPanel {
-  background: var(--fl-bgColor, var(--header-bg));
+  background: var(--fl-bgColor, var(--header-bg)) !important;
   border-bottom: none !important;
   position: relative;
   z-index: 2;
