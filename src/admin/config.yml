@@ -196,9 +196,9 @@ collections:
         name: "headerBgColor"
         widget: "select"
         options:
-          - {label: "Indigo 100 (Default)", value: "indigo-100"}
           - {label: "White", value: "white"}
           - {label: "Black", value: "black"}
+          - {label: "Indigo 100 (Default)", value: "indigo-100"}
           - {label: "Indigo 200", value: "indigo-200"}
           - {label: "Indigo 500", value: "indigo-500"}
           - {label: "Indigo 800", value: "indigo-800"}
