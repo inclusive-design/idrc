@@ -41,7 +41,7 @@ collections:
                 widget: "select"
                 options:
                   - {label: "White", value: "white"}
-                  - {label: "Black", value: "black"}
+                  - {label: "Black (Default)", value: "black"}
                   - {label: "Indigo 100", value: "indigo-100"}
                   - {label: "Indigo 200", value: "indigo-200"}
                   - {label: "Indigo 500", value: "indigo-500"}
@@ -59,7 +59,7 @@ collections:
                 options:
                   - {label: "White", value: "white"}
                   - {label: "Black", value: "black"}
-                  - {label: "Indigo 100", value: "indigo-100"}
+                  - {label: "Indigo 100 (Default)", value: "indigo-100"}
                   - {label: "Indigo 200", value: "indigo-200"}
                   - {label: "Indigo 500", value: "indigo-500"}
                   - {label: "Indigo 800", value: "indigo-800"}
@@ -79,7 +79,7 @@ collections:
                   - {label: "Black", value: "black"}
                   - {label: "Indigo 100", value: "indigo-100"}
                   - {label: "Indigo 200", value: "indigo-200"}
-                  - {label: "Indigo 500", value: "indigo-500"}
+                  - {label: "Indigo 500 (Default)", value: "indigo-500"}
                   - {label: "Indigo 800", value: "indigo-800"}
                   - {label: "Blue 500", value: "blue-500"}
                   - {label: "Coral 500", value: "coral-500"}
@@ -120,10 +120,10 @@ collections:
                 name: "desktopWidth"
                 widget: "select"
                 options:
-                - {label: "Third", value: "third"}
-                - {label: "Half", value: "half"}
-                - {label: "Two Thirds", value: "two-thirds"}
-                - {label: "Full", value: "full"}
+                  - {label: "Third", value: "third"}
+                  - {label: "Half", value: "half"}
+                  - {label: "Two Thirds", value: "two-thirds"}
+                  - {label: "Full", value: "full"}
                 default: ["full"]
                 required: true
               - label: "Subsection Header Level"
@@ -198,7 +198,7 @@ collections:
         options:
           - {label: "White", value: "white"}
           - {label: "Black", value: "black"}
-          - {label: "Indigo 100", value: "indigo-100"}
+          - {label: "Indigo 100 (Default)", value: "indigo-100"}
           - {label: "Indigo 200", value: "indigo-200"}
           - {label: "Indigo 500", value: "indigo-500"}
           - {label: "Indigo 800", value: "indigo-800"}
@@ -215,7 +215,7 @@ collections:
         options:
           - {label: "White", value: "white"}
           - {label: "Black", value: "black"}
-          - {label: "Indigo 100", value: "indigo-100"}
+          - {label: "Indigo 100 (Default)", value: "indigo-100"}
           - {label: "Indigo 200", value: "indigo-200"}
           - {label: "Indigo 500", value: "indigo-500"}
           - {label: "Indigo 800", value: "indigo-800"}
@@ -231,7 +231,7 @@ collections:
         widget: "select"
         options:
           - {label: "White", value: "white"}
-          - {label: "Black", value: "black"}
+          - {label: "Black (Default)", value: "black"}
           - {label: "Indigo 100", value: "indigo-100"}
           - {label: "Indigo 200", value: "indigo-200"}
           - {label: "Indigo 500", value: "indigo-500"}
@@ -247,6 +247,8 @@ collections:
         name: "sections"
         widget: "list"
         required: false
+        hint: |-
+          Once Sections content is provided, the body content in the following text area will not be displayed.
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
           - {label: "Content", name: "content", widget: "markdown", required: true}
@@ -255,7 +257,7 @@ collections:
             widget: "select"
             options:
               - {label: "White", value: "white"}
-              - {label: "Black", value: "black"}
+              - {label: "Black (Default)", value: "black"}
               - {label: "Indigo 100", value: "indigo-100"}
               - {label: "Indigo 200", value: "indigo-200"}
               - {label: "Indigo 500", value: "indigo-500"}
@@ -273,7 +275,7 @@ collections:
             options:
               - {label: "White", value: "white"}
               - {label: "Black", value: "black"}
-              - {label: "Indigo 100", value: "indigo-100"}
+              - {label: "Indigo 100 (Default)", value: "indigo-100"}
               - {label: "Indigo 200", value: "indigo-200"}
               - {label: "Indigo 500", value: "indigo-500"}
               - {label: "Indigo 800", value: "indigo-800"}
@@ -293,7 +295,7 @@ collections:
               - {label: "Black", value: "black"}
               - {label: "Indigo 100", value: "indigo-100"}
               - {label: "Indigo 200", value: "indigo-200"}
-              - {label: "Indigo 500", value: "indigo-500"}
+              - {label: "Indigo 500 (Default)", value: "indigo-500"}
               - {label: "Indigo 800", value: "indigo-800"}
               - {label: "Blue 500", value: "blue-500"}
               - {label: "Coral 500", value: "coral-500"}
@@ -349,7 +351,12 @@ collections:
               - {label: "4", value: "H4"}
             default: ["0"]
             required: true
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: |-
+          To show the body content, remove all Sections content provided in the Sections area above.
   - name: "news"
     label: "News"
     label_singular: "News Item"
