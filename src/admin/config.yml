@@ -51,7 +51,7 @@ collections:
                   - {label: "Coral 800", value: "coral-800"}
                   - {label: "Yellow 200", value: "yellow-200"}
                   - {label: "Yellow 500", value: "yellow-500"}
-                default: ["black"]
+                default: "black"
                 required: false
               - label: "Background Colour"
                 name: "backgroundColor"
@@ -68,7 +68,7 @@ collections:
                   - {label: "Coral 800", value: "coral-800"}
                   - {label: "Yellow 200", value: "yellow-200"}
                   - {label: "Yellow 500", value: "yellow-500"}
-                default: ["indigo-100"]
+                default: "indigo-100"
                 required: false
               - {label: "Full Bleed Background", name: "fullBleed", widget: "boolean", default: false}
               - label: "Border Colour"
@@ -86,7 +86,7 @@ collections:
                   - {label: "Coral 800", value: "coral-800"}
                   - {label: "Yellow 200", value: "yellow-200"}
                   - {label: "Yellow 500", value: "yellow-500"}
-                default: ["indigo-500"]
+                default: "indigo-500"
                 required: false
               - {label: "Image", name: "image", widget: "image", required: false}
               - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
@@ -97,7 +97,7 @@ collections:
                 options:
                   - {label: "Start", value: "start"}
                   - {label: "End", value: "end"}
-                default: ["start"]
+                default: "start"
                 required: false
               - label: "Image Order (Desktop)"
                 name: "imageOrderDesktop"
@@ -105,7 +105,7 @@ collections:
                 options:
                   - {label: "Auto", value: "auto"}
                   - {label: "Swap", value: "swap"}
-                default: ["auto"]
+                default: "auto"
                 required: false
               - label: "Image Shadow"
                 name: "imageShadow"
@@ -114,7 +114,7 @@ collections:
                   - {label: "Indigo 500", value: "indigo-500"}
                   - {label: "Coral 500", value: "coral-500"}
                   - {label: "Yellow 500", value: "yellow-500"}
-                default: ["indigo-500"]
+                default: "indigo-500"
                 required: false
               - label: "Desktop Width"
                 name: "desktopWidth"
@@ -124,7 +124,7 @@ collections:
                   - {label: "Half", value: "half"}
                   - {label: "Two Thirds", value: "two-thirds"}
                   - {label: "Full", value: "full"}
-                default: ["full"]
+                default: "full"
                 required: true
               - label: "Subsection Header Level"
                 name: "subsectionLevel"
@@ -133,7 +133,7 @@ collections:
                   - {label: "None", value: "0"}
                   - {label: "3", value: "H3"}
                   - {label: "4", value: "H4"}
-                default: ["0"]
+                default: "0"
                 required: true
       - name: history
         label: "History"
@@ -207,7 +207,7 @@ collections:
           - {label: "Coral 800", value: "coral-800"}
           - {label: "Yellow 200", value: "yellow-200"}
           - {label: "Yellow 500", value: "yellow-500"}
-        default: ["indigo-100"]
+        default: "indigo-100"
         required: true
       - label: "Header Border Colour"
         name: "headerBorderColor"
@@ -224,7 +224,7 @@ collections:
           - {label: "Coral 800", value: "coral-800"}
           - {label: "Yellow 200", value: "yellow-200"}
           - {label: "Yellow 500", value: "yellow-500"}
-        default: ["indigo-100"]
+        default: "indigo-100"
         required: true
       - label: "Header Text Colour"
         name: "headerTextColor"
@@ -241,7 +241,7 @@ collections:
           - {label: "Coral 800", value: "coral-800"}
           - {label: "Yellow 200", value: "yellow-200"}
           - {label: "Yellow 500", value: "yellow-500"}
-        default: ["black"]
+        default: "black"
         required: true
       - label: "Sections"
         name: "sections"
@@ -267,7 +267,7 @@ collections:
               - {label: "Coral 800", value: "coral-800"}
               - {label: "Yellow 200", value: "yellow-200"}
               - {label: "Yellow 500", value: "yellow-500"}
-            default: ["black"]
+            default: "black"
             required: false
           - label: "Background Colour"
             name: "backgroundColor"
@@ -284,7 +284,7 @@ collections:
               - {label: "Coral 800", value: "coral-800"}
               - {label: "Yellow 200", value: "yellow-200"}
               - {label: "Yellow 500", value: "yellow-500"}
-            default: ["indigo-100"]
+            default: "indigo-100"
             required: false
           - {label: "Full Bleed Background", name: "fullBleed", widget: "boolean", default: false}
           - label: "Border Colour"
@@ -302,7 +302,7 @@ collections:
               - {label: "Coral 800", value: "coral-800"}
               - {label: "Yellow 200", value: "yellow-200"}
               - {label: "Yellow 500", value: "yellow-500"}
-            default: ["indigo-500"]
+            default: "indigo-500"
             required: false
           - {label: "Image", name: "image", widget: "string", required: false}
           - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
@@ -313,7 +313,7 @@ collections:
             options:
               - {label: "Start", value: "start"}
               - {label: "End", value: "end"}
-            default: ["start"]
+            default: "start"
             required: false
           - label: "Image Order (Desktop)"
             name: "imageOrderDesktop"
@@ -321,7 +321,7 @@ collections:
             options:
               - {label: "Auto", value: "auto"}
               - {label: "Swap", value: "swap"}
-            default: ["auto"]
+            default: "auto"
             required: false
           - label: "Image Shadow"
             name: "imageShadow"
@@ -330,7 +330,7 @@ collections:
               - {label: "Indigo 500", value: "indigo-500"}
               - {label: "Coral 500", value: "coral-500"}
               - {label: "Yellow 500", value: "yellow-500"}
-            default: ["indigo-500"]
+            default: "indigo-500"
             required: false
           - label: "Desktop Width"
             name: "desktopWidth"
@@ -340,7 +340,7 @@ collections:
               - {label: "Half", value: "half"}
               - {label: "Two Thirds", value: "two-thirds"}
               - {label: "Full", value: "full"}
-            default: ["full"]
+            default: "full"
             required: false
           - label: "Subsection Header Level"
             name: "subsectionLevel"
@@ -349,7 +349,7 @@ collections:
               - {label: "None", value: "0"}
               - {label: "3", value: "H3"}
               - {label: "4", value: "H4"}
-            default: ["0"]
+            default: "0"
             required: true
       - label: "Body"
         name: "body"
