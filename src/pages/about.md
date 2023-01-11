@@ -1,15 +1,16 @@
 ---
-title: About Us
-permalink: /about/
-eleventyNavigation:
-  key: About
-  order: 1
 secondaryNavigation:
   key: About
   label: More about us
+title: About Us
+permalink: /about/
+intro: an intro
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
+eleventyNavigation:
+  key: About
+  order: 1
 ---
 ## Who we are
 
