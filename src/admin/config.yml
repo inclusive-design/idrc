@@ -29,13 +29,13 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false, editorComponents: ["image"]}
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: true}
-              - {label: "Content", name: "content", widget: "markdown", required: true}
+              - {label: "Content", name: "content", widget: "markdown", required: true, editorComponents: ["image"]}
               - label: "Text Colour"
                 name: "textColor"
                 widget: "select"
@@ -147,7 +147,7 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false, editorComponents: ["image"]}
           - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "blue-200"}
           - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "blue-500"}
           - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
@@ -191,7 +191,7 @@ collections:
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Intro", name: "intro", widget: "markdown", required: false}
+      - {label: "Intro", name: "intro", widget: "markdown", required: false, editorComponents: ["image"]}
       - label: "Header Background Colour"
         name: "headerBgColor"
         widget: "select"
@@ -259,7 +259,7 @@ collections:
         default: []
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
-          - {label: "Content", name: "content", widget: "markdown", required: true}
+          - {label: "Content", name: "content", widget: "markdown", required: true, editorComponents: ["image"]}
           - label: "Text Colour"
             name: "textColor"
             widget: "select"
@@ -432,7 +432,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--project.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true, editorComponents: ["image"]}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
   - name: "tools"
@@ -446,7 +446,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--tool.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true, editorComponents: ["image"]}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
   - label: "Globals"
