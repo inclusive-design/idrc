@@ -8,6 +8,9 @@ const fs = require('fs');
 
 const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
+const imageAndTextShortcode = require('./src/shortcodes/image-and-text.js');
+const youtubeShortcode = require('./src/shortcodes/youtube.js');
+const imagePositionShortcode = require('./src/shortcodes/image-position.js');
 
 const workboxOptions = {
 	cacheId: 'idrc',
@@ -87,6 +90,11 @@ module.exports = eleventyConfig => {
 	// Transforms.
 	eleventyConfig.addTransform('htmlmin', htmlMinTransform);
 	eleventyConfig.addTransform('parse', parseTransform);
+
+	// Add shortcodes.
+	eleventyConfig.addPairedShortcode('imageAndText', imageAndTextShortcode);
+	eleventyConfig.addShortcode('youtube', youtubeShortcode);
+	eleventyConfig.addShortcode('imagePosition', imagePositionShortcode);
 
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});

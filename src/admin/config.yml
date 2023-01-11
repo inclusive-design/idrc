@@ -243,12 +243,20 @@ collections:
           - {label: "Yellow 500", value: "yellow-500"}
         default: "black"
         required: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: |-
+          To show the "body" content, remove all Sections content in the "Sections" area below. Once Sections content is provided, the body content will be overwritten.
       - label: "Sections"
         name: "sections"
         widget: "list"
         required: false
+        min: 0
         hint: |-
-          Once Sections content is provided, the body content in the following text area will not be displayed.
+          Once Sections content is provided, the body content in the "body" area above will be overwritten.
+        default: []
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
           - {label: "Content", name: "content", widget: "markdown", required: true}
@@ -304,8 +312,8 @@ collections:
               - {label: "Yellow 500", value: "yellow-500"}
             default: "indigo-500"
             required: false
-          - {label: "Image", name: "image", widget: "string", required: false}
-          - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
           - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
           - label: "Image Order"
             name: "imageOrder"
@@ -351,12 +359,6 @@ collections:
               - {label: "4", value: "H4"}
             default: "0"
             required: true
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
-        hint: |-
-          To show the body content, remove all Sections content provided in the Sections area above.
   - name: "news"
     label: "News"
     label_singular: "News Item"
