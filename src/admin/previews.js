@@ -273,6 +273,7 @@ CMS.registerEditorComponent({
 			name: 'content',
 			label: 'Content',
 			widget: 'markdown',
+			editor_components: [],
 			required: true
 		}
 	],
