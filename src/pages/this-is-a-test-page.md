@@ -8,14 +8,12 @@ sections: []
 ---
 {% youtube "https://www.youtube.com/watch?v=r6HQ4OtL4nA" %}
 
-This is some text that appears before an image.
+{% imagePosition "/media/80-20-disparity.png", "80 20 disparity", "center", "100%", "k" %}
 
-{% imageAndText "/media/3-dimensions.png", "Image of 3 dimensions of inclusive design.", "right", "center" %}
-
-
-{% youtube "https://www.youtube.com/watch?v=r6HQ4OtL4nA" %}
-
-This is a description that should appear to the left of the image.
+{% imageAndText "/media/3-dimensions.png", "Three dimensions", "right", "center" %}
+This is some text that appears along the image.
 {% endimageAndText %}
+
+This is some text that appears before an image.
 
 This is text that appears after an image.
