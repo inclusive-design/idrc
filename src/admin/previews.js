@@ -8,8 +8,7 @@ import splitFilter from '../filters/split-filter.js';
 import site from '../_data/site.json';
 import slugifyFilter from '@sindresorhus/slugify';
 import markdownFilter from '../filters/markdown';
-import imageAndTextShortcode from '../shortcodes/image-and-text.js';
-import imagePositionShortcode from '../shortcodes/image-position.js';
+import imagePositionWithTextShortcode from '../shortcodes/image-position-with-text.js';
 import getId from '../utils/extract-youtube-id.js';
 
 const env = nunjucks.configure();
@@ -243,8 +242,8 @@ CMS.registerPreviewTemplate('site_data', SiteData);
 
 // Custom widgets
 CMS.registerEditorComponent({
-	id: 'image-and-text',
-	label: 'Image and Text',
+	id: 'image-position-with-text',
+	label: 'Image Position with Text',
 	fields: [
 		{
 			name: 'image',
@@ -260,41 +259,61 @@ CMS.registerEditorComponent({
 		{
 			name: 'imagePosition',
 			label: 'Image Position',
+			hint: 'The "center" choice applies to the image only case when the content is not provided. If the "center" is selected when the content is provided, the image position will be reset to "left"',
 			widget: 'select',
-			options: [{value:'left', label: 'Left'}, {value:'right', label: 'Right'}]
+			options: [{value:'left', label: 'Left'}, {value:'center', label: 'Center'}, {value:'right', label: 'Right'}]
 		},
 		{
-			name: 'verticalAlignment',
-			label: 'Vertical Alignment',
+			name: 'scale',
+			label: 'Scale',
 			widget: 'select',
-			options: [{value:'top', label: 'Top'}, {value:'center', label: 'Center'}, {value:'bottom', label: 'Bottom'}]
+			default: '100%',
+			options: [{value:'25%', label: '25%'}, {value:'50%', label: '50%'}, {value:'75%', label: '75%'}, {value:'100%', label: '100%'}]
+		},
+		{
+			name: 'maxHeight',
+			label: 'Max Height in Pixel',
+			widget: 'string',
+			default: 'auto',
+			hint: 'Enter a number. For example 100.'
 		},
 		{
 			name: 'content',
-			label: 'Content',
+			label: 'Content (Optional)',
 			widget: 'markdown',
+			default: '',
 			editor_components: [],
-			required: true
+			required: false
+		},
+		{
+			name: 'verticalAlignment',
+			label: 'Vertical Alignment of Content (Optional)',
+			hint: 'Only select when the content is provided.',
+			required: false,
+			widget: 'select',
+			options: [{value:'top', label: 'Top'}, {value:'center', label: 'Center'}, {value:'bottom', label: 'Bottom'}]
 		}
 	],
-	pattern: /^{% imageAndText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimageAndText %}/,
+	pattern: /^{% imagePositionWithText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimagePositionWithText %}/,
 	fromBlock: function (match) {
 		return {
 			image: match[1],
 			alt: match[2],
 			imagePosition: match[3],
-			verticalAlignment: match[4],
-			content: match[5]
+			scale: match[4],
+			maxHeight: match[5],
+			verticalAlignment: match[6],
+			content: match[7]
 		};
 	},
 	toBlock: function (obj) {
-		return `{% imageAndText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimageAndText %}`;
+		return `{% imagePositionWithText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.scale}", "${obj.maxHeight}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimagePositionWithText %}`;
 	},
 	toPreview: function (obj, getAsset, fields) {
-		const {content, image, alt, imagePosition, verticalAlignment} = obj;
+		const {content, image, alt, imagePosition, scale, maxHeight, verticalAlignment} = obj;
 		const imageField = fields.find(f => f.get('widget') === 'image');
 		const src = getAsset(image, imageField);
-		return imageAndTextShortcode(content, src, alt, imagePosition, verticalAlignment);
+		return imagePositionWithTextShortcode(content, src, alt, imagePosition, scale, maxHeight, verticalAlignment);
 	}
 });
 
@@ -317,63 +336,5 @@ CMS.registerEditorComponent({
 		return (
 			`<figure class="embed--youtube"><iframe class="video" src="https://youtube.com/embed/${getId(obj.url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`
 		);
-	}
-});
-
-CMS.registerEditorComponent({
-	id: 'image-position',
-	label: 'Image Position',
-	fields: [
-		{
-			name: 'image',
-			label: 'Image',
-			widget: 'image',
-			required: true
-		},
-		{
-			name: 'alt',
-			label: 'Alternative Text',
-			widget: 'string'
-		},
-		{
-			name: 'imagePosition',
-			label: 'Image Position',
-			widget: 'select',
-			default: 'center',
-			options: [{value:'left', label: 'Left'}, {value:'center', label: 'Center'}, {value:'right', label: 'Right'}]
-		},
-		{
-			name: 'scale',
-			label: 'Scale',
-			widget: 'select',
-			default: '100%',
-			options: [{value:'25%', label: '25%'}, {value:'50%', label: '50%'}, {value:'75%', label: '75%'}, {value:'100%', label: '100%'}]
-		},
-		{
-			name: 'maxHeight',
-			label: 'Max Height in Pixel',
-			widget: 'string',
-			default: 'auto',
-			hint: 'Enter a number. For example 100.'
-		}
-	],
-	pattern: /^{% imagePosition "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}/,
-	fromBlock: function (match) {
-		return {
-			image: match[1],
-			alt: match[2],
-			imagePosition: match[3],
-			scale: match[4],
-			maxHeight: match[5]
-		};
-	},
-	toBlock: function (obj) {
-		return `{% imagePosition "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.scale}", "${obj.maxHeight}" %}`;
-	},
-	toPreview: function (obj, getAsset, fields) {
-		const {image, alt, imagePosition, scale, maxHeight} = obj;
-		const imageField = fields.find(f => f.get('widget') === 'image');
-		const src = getAsset(image, imageField);
-		return imagePositionShortcode(src, alt, imagePosition, scale, maxHeight);
 	}
 });
