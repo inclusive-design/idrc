@@ -279,7 +279,7 @@ CMS.registerEditorComponent({
 		},
 		{
 			name: 'content',
-			label: 'Content (Optional)',
+			label: 'Content',
 			widget: 'markdown',
 			default: '',
 			editor_components: [],
@@ -287,7 +287,7 @@ CMS.registerEditorComponent({
 		},
 		{
 			name: 'verticalAlignment',
-			label: 'Vertical Alignment of Content (Optional)',
+			label: 'Vertical Alignment of Content',
 			hint: 'Only select when the content is provided.',
 			required: false,
 			widget: 'select',
