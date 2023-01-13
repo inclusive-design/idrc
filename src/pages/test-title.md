@@ -6,6 +6,6 @@ headerBorderColor: indigo-100
 headerTextColor: black
 sections: []
 ---
-{% imagePositionWithText "/media/3-dimensions.png", "3 dimensions", "center", "100%", "auto", "undefined" %}
-
+{% imagePositionWithText "/media/3-dimensions.png", "3 dimensions", "center", "100%", "auto", "center" %}
+Test text for the image
 {% endimagePositionWithText %}
