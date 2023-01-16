@@ -29,13 +29,13 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image"]}
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: true}
-              - {label: "Content", name: "content", widget: "markdown", required: true}
+              - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image"]}
               - label: "Text Colour"
                 name: "textColor"
                 widget: "select"
@@ -147,7 +147,7 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image"]}
           - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "blue-200"}
           - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "blue-500"}
           - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
@@ -191,7 +191,7 @@ collections:
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Intro", name: "intro", widget: "markdown", required: false}
+      - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image"]}
       - label: "Header Background Colour"
         name: "headerBgColor"
         widget: "select"
@@ -243,15 +243,23 @@ collections:
           - {label: "Yellow 500", value: "yellow-500"}
         default: "black"
         required: true
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        required: false
+        hint: |-
+          To show the "body" content, remove all Sections content in the "Sections" area below. Once Sections content is provided, the body content will be overwritten.
       - label: "Sections"
         name: "sections"
         widget: "list"
         required: false
+        min: 0
         hint: |-
-          Once Sections content is provided, the body content in the following text area will not be displayed.
+          Once Sections content is provided, the body content in the "body" area above will be overwritten.
+        default: []
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
-          - {label: "Content", name: "content", widget: "markdown", required: true}
+          - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image"]}
           - label: "Text Colour"
             name: "textColor"
             widget: "select"
@@ -304,8 +312,8 @@ collections:
               - {label: "Yellow 500", value: "yellow-500"}
             default: "indigo-500"
             required: false
-          - {label: "Image", name: "image", widget: "string", required: false}
-          - {label: "Image (2x)", name: "image2x", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
           - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
           - label: "Image Order"
             name: "imageOrder"
@@ -351,12 +359,6 @@ collections:
               - {label: "4", value: "H4"}
             default: "0"
             required: true
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
-        required: false
-        hint: |-
-          To show the body content, remove all Sections content provided in the Sections area above.
   - name: "news"
     label: "News"
     label_singular: "News Item"
@@ -430,7 +432,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--project.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
   - name: "tools"
@@ -444,7 +446,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--tool.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
   - label: "Globals"
