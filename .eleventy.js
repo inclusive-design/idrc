@@ -44,9 +44,77 @@ module.exports = eleventyConfig => {
 	});
 
 	eleventyConfig.addCollection('projects', collection => {
-		return [
-			...collection.getFilteredByGlob('src/projects/*.md').sort((a, b) => b.data.order - a.data.order)
-		].reverse();
+		let projects = [...collection.getFilteredByGlob('src/projects/*.md').sort((a, b) => b.data.order - a.data.order)].reverse(),
+			uniqueProjects = [];
+
+		// Skip project subpages.
+		projects.forEach(project => {
+			if (!project.data.parentPageTitle || project.data.parentPageTitle === '') {
+				uniqueProjects.push(project);
+			}
+		});
+
+		return uniqueProjects;
+	});
+
+	eleventyConfig.addCollection('projectPages', collection => {
+		let projectPages = collection.getFilteredByGlob('src/projects/*.md'),
+			parentPageTitles = [],
+			childrenPages = [];
+
+		// Create two arrays. One has titles of all parent pages. The other contains all pages that
+		// have a parent page.
+		projectPages.forEach(project => {
+			if (project.data.parentPageTitle && project.data.parentPageTitle !== '') {
+				childrenPages.push({
+					title: project.data.title,
+					url: project.url,
+					parentPageTitle: project.data.parentPageTitle,
+					subPageOrder: project.data.subPageOrder
+				});
+				if (!parentPageTitles.includes(project.data.parentPageTitle)) {
+					parentPageTitles.push(project.data.parentPageTitle);
+				}
+			}
+		});
+
+		// Add children pages to pages that have subpages.
+		projectPages.forEach(topPage => {
+			if (parentPageTitles.includes(topPage.data.title)) {
+				topPage.children = [];
+				childrenPages.forEach(childPage => {
+					if (childPage.parentPageTitle === topPage.data.title) {
+						childPage.parentPageUrl = topPage.url;
+						topPage.children.push(childPage);
+					}
+				});
+			}
+		});
+
+		// Sort children pages first by the subpage order then by alphabetic
+		projectPages.forEach(topPage => {
+			if (topPage.children) {
+				topPage.children.sort((a, b) => {
+					if (a.subPageOrder === b.subPageOrder) {
+						return a.title > b.title ? 1 : -1;
+					}
+					return a.subPageOrder - b.subPageOrder > 0 ? 1 : -1;
+				});
+			}
+		});
+
+		// When a top page is a child page, add parent page url its `data` path
+		projectPages.forEach(topPage => {
+			if (topPage.data.parentPageTitle && topPage.data.parentPageTitle !== '') {
+				for (let i = 0; i < childrenPages.length; i++) {
+					if (childrenPages[i].parentPageTitle === topPage.data.parentPageTitle) {
+						topPage.data.parentPageUrl = childrenPages[i].parentPageUrl;
+						break;
+					}
+				}
+			}
+		});
+		return projectPages;
 	});
 
 	eleventyConfig.addCollection('tools', collection => {

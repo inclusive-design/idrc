@@ -1,4 +1,5 @@
 ---
+projectName: Social Justice Repair Kit
 title: Social Justice Repair Kit
 shortName: false
 description: |-

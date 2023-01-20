@@ -1,4 +1,5 @@
 ---
+projectName: We Count
 title: We Count
 shortName: false
 description: >-

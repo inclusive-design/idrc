@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+projectName: Our Doors Are Open
 title: Our Doors Are Open
 description: >-
   Our Doors Are Open offers faith communities creative ideas and guidance to

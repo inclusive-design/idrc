@@ -1,4 +1,5 @@
 ---
+projectName: Platform Co-op Development Kit
 title: Platform Co-op Development Kit
 permalink: /projects/platform-coop-development-kit/
 shortName: false

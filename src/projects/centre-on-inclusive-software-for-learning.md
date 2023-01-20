@@ -1,4 +1,5 @@
 ---
+projectName: Centre on Inclusive Software for Learning
 title: Centre on Inclusive Software for Learning
 shortName: CISL
 description: >-

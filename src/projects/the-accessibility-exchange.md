@@ -1,4 +1,5 @@
 ---
+projectName: The Accessibility Exchange
 title: The Accessibility Exchange
 shortName: TAE
 description: >-

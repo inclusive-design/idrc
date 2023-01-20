@@ -429,12 +429,16 @@ collections:
     preview_path: "/projects/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--project.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk"}
+      - {label: "Project Name", name: "projectName", widget: "string", required: true}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
+      - {label: "Parent Page", name: "parentPageTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "Only select for sub-page of a project."}
+      - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Only select for sub-page of a project."}
+      - {label: "Project Listing Description", name: "description", widget: "markdown", required: true, editor_components: ["image"], hint: "Only write this description for the main page of a project."}
       - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Link", name: "link", widget: "string", required: true}
+      - {label: "External Project Website", name: "link", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "tools"
     label: "Tools"
     label_singular: "Tool"

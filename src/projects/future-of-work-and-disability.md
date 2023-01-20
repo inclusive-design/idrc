@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+projectName: Future of Work and Disability
 title: Future of Work and Disability
 shortName: FWD
 description: >-

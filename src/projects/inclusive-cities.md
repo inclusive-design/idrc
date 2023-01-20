@@ -1,4 +1,5 @@
 ---
+projectName: Inclusive Cities
 title: Inclusive Cities
 shortName: false
 description: >-
