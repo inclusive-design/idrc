@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains generic page styles.
+// This file contains project page styles.
 // -----------------------------------------------------------------------------
 
 .page--project {
@@ -7,6 +7,16 @@
     flex: 0 0 100%;
     padding-left: calc(var(--gutter) / 2);
     padding-top: 4rem;
+
+    a {
+      display: inline-flex;
+      padding-right: rem(8);
+
+      svg {
+        height: rem(24);
+        width: rem(24);
+      }
+    }
   }
 
   .content {

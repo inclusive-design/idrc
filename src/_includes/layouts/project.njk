@@ -15,7 +15,7 @@
         <div class="back-to-parent">
         {%- for projectPage in collections.projectPages %}
             {%- if projectPage.data.title === articleTitle and projectPage.data.parentPageTitle %}
-            <a href="{{ projectPage.data.parentPageUrl }}">Back to {{ projectPage.data.parentPageTitle | safe }}</a>
+            <a href="{{ projectPage.data.parentPageUrl }}">{% include "svg/previous.svg" %} Back to {{ projectPage.data.parentPageTitle | safe }}</a>
             {% endif %}
         {%- endfor %}
         </div>
