@@ -430,15 +430,15 @@ collections:
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk"}
-      - {label: "Project Name", name: "projectName", widget: "string", required: true}
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Short Name", name: "shortName", widget: "string", required: false}
+      - {label: "Project Name", name: "projectName", widget: "string", required: true, hint: "Suggestion: If this is a subpage of a project, enter the name of the project here."}
+      - {label: "Title", name: "title", widget: "string", required: true, hint: "Suggestion: use a descriptive title which includes keywords from the project."}
+      - {label: "Project Short Name", name: "shortName", widget: "string", required: false, hint: "Short name for the project. This is used to generate the name for external project website links."}
       - {label: "Parent Page", name: "parentPageTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "Only select for sub-page of a project."}
       - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Only select for sub-page of a project."}
-      - {label: "Project Listing Description", name: "description", widget: "markdown", required: true, editor_components: ["image"], hint: "Only write this description for the main page of a project."}
+      - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image"], hint: "Only write this description for the main page of a project."}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "External Project Website", name: "link", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", required: false, widget: "markdown"}
   - name: "tools"
     label: "Tools"
     label_singular: "Tool"
