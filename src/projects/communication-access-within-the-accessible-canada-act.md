@@ -7,11 +7,9 @@ description: >-
   communication access for people who have speech, language and communication
   disabilities due to life-long or acquired cognitive and/or neurological
   disabilities.
-
-
-  ![Communication Access Within the Accessible Canada Act logo](/media/commacc1.png)
 link: https://idrc.ocadu.ca/commacc
 order: 110
+thumbnailImage: /media/commacc1.png
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
 
