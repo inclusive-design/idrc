@@ -20,10 +20,8 @@
       width: rem(266);
     }
 
-    .project-content {
-      a[href^='/projects/'] {
-        font-weight: 500;
-      }
+    a[href^='/projects/'] {
+      font-weight: 500;
     }
   }
 }
