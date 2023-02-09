@@ -19,6 +19,8 @@
                         <article class="project">
                             {% if project.data.thumbnailImage %}
                             <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="" />
+                            {% else %}
+                            <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
                             {% endif %}
                             <h3>{{ project.data.title }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
                             {% if project.data.content %}
@@ -31,7 +33,9 @@
                             {% if project.data.tags.length > 0 %}
                             <p class="tags">
                                 {% for tag in project.data.tags %}
+                                {% if tag.trim() !== '' %}
                                 <span class="tag">{{ tag | safe }}</span>
+                                {% endif %}
                                 {% endfor %}
                             </p>
                             {% endif %}
