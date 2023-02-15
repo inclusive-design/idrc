@@ -437,7 +437,6 @@ collections:
       - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Only select for sub-page of a project."}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image"], hint: "Only write this description for the main page of a project."}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "External Project Website", name: "link", widget: "string", required: false}
       - {label: "Body", name: "body", required: false, widget: "markdown"}
   - name: "tools"

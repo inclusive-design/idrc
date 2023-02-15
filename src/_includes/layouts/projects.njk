@@ -30,15 +30,6 @@
                             {{ project.data.description | markdown | safe }}
                             {% endif %}
                             <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.title }} website</a></p>
-                            {% if project.data.tags.length > 0 %}
-                            <p class="tags">
-                                {% for tag in project.data.tags %}
-                                {% if tag.trim() !== '' %}
-                                <span class="tag">{{ tag | safe }}</span>
-                                {% endif %}
-                                {% endfor %}
-                            </p>
-                            {% endif %}
                         </article>
                         {% endfor %}
                     </div>
