@@ -1,7 +1,5 @@
 name: Run visual regression tests with BackstopJS
 
-on: []
-
 jobs:
   backstop:
     name: Run visual regression tests
