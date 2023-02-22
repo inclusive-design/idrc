@@ -1,6 +1,6 @@
 name: Run visual regression tests with BackstopJS
 
-on: [pull_request]
+on: []
 
 jobs:
   backstop:
