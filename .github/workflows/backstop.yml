@@ -1,0 +1,83 @@
+name: Run visual regression tests with BackstopJS
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+
+jobs:
+  backstop:
+    name: Run visual regression tests
+    if: github.repository_owner == 'inclusive-design' && github.actor != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+    - name: Cache node modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+    - name: Wait for Netlify deploy preview
+      uses: jakepartusch/wait-for-netlify-action@v1.2
+      id: netlify
+      with:
+        site_name: 'idrc'
+        max_timeout: 300
+    - name: Set environment variables
+      uses: allenevans/set-env@v2.0.0
+      with:
+        BASE_URL: ${{ steps.netlify.outputs.url }}
+    - name: Install dependencies, generate reference images, run visual regression tests
+      run: |
+        npm i
+        npm run backstop:test:ci
+      env:
+        CI: true
+    - name: Upload report as downloadable artifact
+      uses: actions/upload-artifact@v2
+      if: always()
+      with:
+        name: backstop-report
+        path: |
+          backstop_data/bitmaps_reference
+          backstop_data/html_report
+          backstop_data/bitmaps_test
+    - name: Write report to Markdown file
+      if: always()
+      run: |
+        sudo apt-get install jq
+        printf "## Visual Regression Test Results\n\n" > backstop_data/json_report/report.md
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'group_by(.status) | map(if .[0].status == "pass" then "✅ \(length) scenarios passed" else "❌ \(length) scenarios failed" end) | join(", ")' >> backstop_data/json_report/report.md
+        printf "\n<details><summary>Scenario Details</summary>\n" >> backstop_data/json_report/report.md
+        cat backstop_data/json_report/jsonReport.json | jq '.tests' | jq -r 'map(if .status == "fail" then "❌ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a> (\(.pair.diff.misMatchPercentage)% mismatch)" else "✅ \(.pair.label) (\(.pair.viewportLabel)) &mdash; <a href=\"\(.pair.referenceUrl)\">Before</a> / <a href=\"\(.pair.url)\">After</a>" end) | join("<br />")' >> backstop_data/json_report/report.md
+        printf "</details>\n\n" >> backstop_data/json_report/report.md
+        printf "To review the full report with screenshots, visit [the Github Actions page](https://github.com/inclusive-design/idrc/actions/runs/$GITHUB_RUN_ID) and download the _backstop-report_ artifact.\n\n" >> backstop_data/json_report/report.md
+        printf "If these changes were intended, run \`npm run backstop:test && npm run backstop:approve\` locally and commit your changes." >> backstop_data/json_report/report.md
+    - name: Retrieve comment body
+      if: always()
+      id: retrieve-comment-body
+      run: |
+          body=$(cat backstop_data/json_report/report.md)
+          body="${body//'%'/'%25'}"
+          body="${body//$'\n'/'%0A'}"
+          body="${body//$'\r'/'%0D'}"
+          echo ::set-output name=body::$body
+    - name: Find existing comment
+      uses: peter-evans/find-comment@v1
+      if: always()
+      id: fc
+      with:
+        issue-number: ${{ github.event.number }}
+        body-includes: Visual Regression Test Results
+    - name: Create comment
+      uses: peter-evans/create-or-update-comment@v1
+      if: always()
+      with:
+        issue-number: ${{ github.event.number }}
+        body: ${{ steps.retrieve-comment-body.outputs.body }}
+        comment-id: ${{ steps.fc.outputs.comment-id }}
+        edit-mode: replace
