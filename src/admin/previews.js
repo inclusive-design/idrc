@@ -255,6 +255,7 @@ CMS.registerEditorComponent({
 		{
 			name: 'alt',
 			label: 'Alternative Text',
+			default: '',
 			widget: 'string'
 		},
 		{

@@ -1,6 +1,10 @@
 name: Run visual regression tests with BackstopJS
 
-on: [pull_request]
+on:
+  push:
+    branches:
+      - dev
+      - main
 
 jobs:
   backstop:
