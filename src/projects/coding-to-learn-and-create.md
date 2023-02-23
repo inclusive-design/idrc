@@ -8,5 +8,5 @@ description: >-
   skills, and express themselves with code.
 link: https://www.codelearncreate.org/
 order: 120
-thumbnailImage: /media/c2lc.png
+thumbnailImage: /media/project-c2lc.png
 ---

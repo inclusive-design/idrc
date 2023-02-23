@@ -7,9 +7,8 @@ description: >-
   digital tools and systems we use for work. We will use our shared experiences
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
-link: /eds/
 order: 80
-thumbnailImage: /media/eds.png
+thumbnailImage: /media/project-EDS.png
 ---
 ![Logo of the Equitable Digital Systems project.](/media/eds-colored-03.png)
 

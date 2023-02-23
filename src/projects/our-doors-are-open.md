@@ -6,5 +6,5 @@ description: >-
   increase inclusion and accessibility for people with disabilities.
 link: https://opendoors.idrc.ocadu.ca/
 order: 40
-thumbnailImage: /media/doors-open.png
+thumbnailImage: /media/project-Open-Doors.png
 ---

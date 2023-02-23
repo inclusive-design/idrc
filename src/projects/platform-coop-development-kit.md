@@ -8,5 +8,5 @@ description: >-
   co-ops.
 link: https://platform.coop/blog/the-platform-co-op-development-kit/
 order: 30
-thumbnailImage: /media/pdkit.png
+thumbnailImage: /media/project-Platform-Coop.png
 ---

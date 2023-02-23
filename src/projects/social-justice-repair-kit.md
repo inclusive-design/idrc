@@ -6,5 +6,5 @@ description: |-
   Helping to make youth movements welcoming for everyone.
 link: https://www.sojustrepairit.org/
 order: 35
-thumbnailImage: /media/sjrk.png
+thumbnailImage: /media/project-SJRK.png
 ---

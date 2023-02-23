@@ -29,7 +29,9 @@
                             {% else %}
                             {{ project.data.description | markdown | safe }}
                             {% endif %}
+                            {% if project.data.link %}
                             <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.title }} website</a></p>
+                            {% endif %}
                         </article>
                         {% endfor %}
                     </div>

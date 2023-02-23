@@ -5,9 +5,8 @@ title: Optimizing Diversity with Disability
 description: >-
   The goal of ODD is to investigate bias in hiring algorithms using
   non-disability specific and synthesized disability specific employment data.
-link: https://idrc.ocadu.ca/odd
 order: 50
-thumbnailImage: /media/odd.png
+thumbnailImage: /media/project-ODD.png
 ---
 ![ODD: Optimizing Diversity with Disability logo](/media/odd-logo-only.svg)
 

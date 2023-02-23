@@ -11,5 +11,5 @@ description: >-
   and employment as they mainly relate to persons with disabilities.
 link: https://wecount.inclusivedesign.ca/views/fwd/
 order: 90
-thumbnailImage: /media/fwd.png
+thumbnailImage: /media/project-FWD.png
 ---

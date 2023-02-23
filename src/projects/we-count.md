@@ -7,5 +7,5 @@ description: >-
   people with disabilities can help to shape the future of data science.
 link: https://wecount.inclusivedesign.ca/
 order: 10
-thumbnailImage: /media/wecount.png
+thumbnailImage: /media/project-WeCount.png
 ---

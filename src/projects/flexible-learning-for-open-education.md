@@ -6,5 +6,5 @@ description: |-
   Designing open education for diverse learners.
 link: http://floeproject.org/
 order: 100
-thumbnailImage: /media/floe.png
+thumbnailImage: /media/project-floe.png
 ---
