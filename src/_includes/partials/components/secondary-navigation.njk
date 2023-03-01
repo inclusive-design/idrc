@@ -32,7 +32,7 @@
                 {% if parentPage %}
                     {% set parentAttribute = ' data-parent="true"' %}
                 {% endif %}
-            <li{{ liClass | safe }}>
+            <li>
                 <a{{ relAttribute | safe }}{{ parentAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
             {%- endfor %}

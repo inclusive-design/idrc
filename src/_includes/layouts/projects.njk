@@ -16,18 +16,23 @@
                     <h2>Projects</h2>
                     <div class="projects">
                         {% for project in collections.projects %}
-                        <div class="project">
-                            <h3>{{ project.data.title }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
-                            {{ project.data.description | markdown | safe }}
-                            {% if project.data.tags.length > 0 %}
-                            <p class="tags">
-                                {% for tag in project.data.tags %}
-                                <span class="tag">{{ tag | safe }}</span>
-                                {% endfor %}
-                            </p>
+                        <article class="project">
+                            {% if project.data.thumbnailImage %}
+                            <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="" />
+                            {% else %}
+                            <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
                             {% endif %}
-                            <p class="project__link"><a rel="external" href="{{ project.data.link }}">Visit {{ project.data.shortName if project.data.shortName else project.data.title }} website</a></p>
-                        </div>
+                            <h3>{{ project.data.title }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
+                            {% if project.data.content %}
+                            {% set fullDescription = project.data.description + " [More about " + project.data.title + "](" + project.url + ")" %}
+                            {{ fullDescription | markdown | safe }}
+                            {% else %}
+                            {{ project.data.description | markdown | safe }}
+                            {% endif %}
+                            {% if project.data.link %}
+                            <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.title }} website</a></p>
+                            {% endif %}
+                        </article>
                         {% endfor %}
                     </div>
                 </div>

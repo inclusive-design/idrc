@@ -169,14 +169,15 @@ Idea.propTypes = {
 const Project = ({entry}) => (
 	<Preview
 		entry={entry}
-		path="layouts/single--project.njk"
-		context={({title, shortName, description, tags, link}) => ({
+		path="layouts/project.njk"
+		context={({projectName, title, body}) => ({
 			previewMode: true,
+			projectName,
 			title,
-			shortName,
-			description,
-			tags,
-			link
+			headerBgColor: 'coral-500',
+			headerBorderColor: 'coral-800',
+			headerTextColor: 'black',
+			content: markdownFilter(body || '')
 		})}
 	/>
 );

@@ -151,12 +151,6 @@
   color: var(--fl-linkColor, var(--fl-fgColor, var(--white)));
 }
 
-.menu button,
-.menu button:active {
-  background-color: var(--fl-buttonBgColor, var(--fl-fgColor, var(--white)));
-  color: var(--fl-buttonFgColor, var(--fl-fgColor, var(--white)));
-}
-
 .menu [aria-current='page'],
 .menu [data-parent='true'] {
   text-decoration: underline;

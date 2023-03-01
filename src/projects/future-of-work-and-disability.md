@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+projectName: Future of Work and Disability
 title: Future of Work and Disability
 shortName: FWD
 description: >-
@@ -9,9 +9,7 @@ description: >-
   organizations and others engaged in the data ecosystem. The goal of the group
   was to understand and examine intersecting topics of AI, automation, standards
   and employment as they mainly relate to persons with disabilities.
-
-
-  ![FWD logo](/media/fwd.png)
 link: https://wecount.inclusivedesign.ca/views/fwd/
 order: 90
+thumbnailImage: /media/project-FWD.png
 ---
