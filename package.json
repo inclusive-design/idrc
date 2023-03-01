@@ -22,7 +22,8 @@
     "test": "run-s test:*",
     "start": "npm-run-all -l clean -p start:*",
     "start:webpack": "mix watch",
-    "start:eleventy": "concurrently \"cross-env ELEVENTY_ENV=development eleventy --serve\" \"node ./build-cms.js -w\" \"netlify-cms-proxy-server\""
+    "start:eleventy": "concurrently \"cross-env ELEVENTY_ENV=development eleventy --serve\" \"node ./build-cms.js -w\" \"netlify-cms-proxy-server\"",
+    "serve": "npx serve dist"
   },
   "repository": {
     "type": "git",
