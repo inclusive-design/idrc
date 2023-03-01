@@ -25,10 +25,7 @@ To build and serve a static version of the website, enter the following in your 
 
 ```bash
 npm run build
-npm run serve
 ```
-
-The website will be available at [http://localhost:3000](http://localhost:3000).
 
 ## How to Start a Server for Development
 
