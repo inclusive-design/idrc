@@ -131,6 +131,10 @@ Dr. David H. Pereyra is Project & Outreach Coordinator at the Inclusive Design 
 
 Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre. Ali’s previous research focuses have been on the development of accessible and robust online education platforms, with an emphasis on micro-credentialing, industry alignment, and formal accreditation. This has included developing online learning badges for the Inclusive Design Research Centre’s We Count Project, which enables learners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. As a former staff member and user of the University of Toronto’s Accessibility Services, Ali strives to keep his research and professional contributions committed to EDI (Equity, Diversity, Inclusion) principles and advocacy to better serve persons with disabilities and other communities on the margins.
 
+### Shalaine Sedres
+
+Shalaine Sedres is a graduate student pursuing a Master’s degree at the University of Toronto’s Rehabilitation Science Institute. She obtained her Bachelor’s degree in Community Rehabilitation and Disability Studies from the University of Calgary. As a research assistant, Shalaine has made valuable contributions to the Inclusive Design Research Centre’s Equitable Digital Systems project by facilitating co-design sessions and interpreting insights. Her current research focuses on leveraging accessible playgrounds by incorporating rehabilitation and educational programming. She is dedicated to promoting inclusivity and reducing barriers that hinder the full participation of children with disabilities.
+
 ## Planned Reports
 
 1. Framing report: Define the disability populations and personal communication supports for Canadians requiring access to federal services 
