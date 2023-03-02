@@ -15,11 +15,6 @@
   .project {
     margin-top: rem(48);
 
-    .thumbnail {
-      height: rem(177);
-      width: rem(266);
-    }
-
     a[href^='/projects/'] {
       font-weight: 500;
     }
@@ -33,13 +28,6 @@
       display: grid;
       grid-gap: var(--gutter);
       grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project {
-      .thumbnail {
-        height: rem(247);
-        width: rem(370);
-      }
     }
   }
 }
