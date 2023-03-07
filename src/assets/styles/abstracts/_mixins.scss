@@ -20,6 +20,7 @@
     @media (min-width: rem($min)) {
       @content;
     }
+    /* stylelint-disable-next-line block-closing-brace-newline-after */
   } @else {
     @content;
   }
@@ -32,6 +33,7 @@
     @media (max-width: rem($max)) {
       @content;
     }
+    /* stylelint-disable-next-line block-closing-brace-newline-after */
   } @else {
     @content;
   }
@@ -45,10 +47,12 @@
     @media (min-width: rem($min)) and (max-width: rem($max)) {
       @content;
     }
+    /* stylelint-disable-next-line block-closing-brace-newline-after */
   } @else if $max == null {
     @include media-breakpoint-up($lower, $breakpoints) {
       @content;
     }
+    /* stylelint-disable-next-line block-closing-brace-newline-after */
   } @else if $min == null {
     @include media-breakpoint-down($upper, $breakpoints) {
       @content;
@@ -64,10 +68,12 @@
     @media (min-width: rem($min)) and (max-width: rem($max)) {
       @content;
     }
+    /* stylelint-disable-next-line block-closing-brace-newline-after */
   } @else if $max == null {
     @include media-breakpoint-up($name, $breakpoints) {
       @content;
     }
+    /* stylelint-disable-next-line block-closing-brace-newline-after */
   } @else if $min == null {
     @include media-breakpoint-down($name, $breakpoints) {
       @content;
