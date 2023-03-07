@@ -18,6 +18,7 @@
     .thumbnail {
       height: rem(177);
       width: rem(266);
+      object-fit: contain;
     }
 
     a[href^='/projects/'] {
