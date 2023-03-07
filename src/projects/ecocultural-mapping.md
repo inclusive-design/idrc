@@ -7,4 +7,5 @@ description: >-
 tags: []
 link: https://floeproject.org/ecocultural-mapping-project/
 order: 31
+thumbnailImage: /media/eco-cultural-mapping.png
 ---
