@@ -7,4 +7,5 @@ description: >-
 tags: []
 link: https://co-design.inclusivedesign.ca/
 order: 25
+thumbnailImage: /media/community-led-codesign.png
 ---
