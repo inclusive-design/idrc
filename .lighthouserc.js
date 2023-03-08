@@ -2,6 +2,9 @@ module.exports = {
 	ci: {
 		collect: {
 			settings: {
+				// Fix the CI failure with error "Unable to connect to chrome".
+				// See: https://github.com/GoogleChrome/lighthouse-ci/issues/802
+				hostname: "127.0.0.1",
 				// Source the form factor from an environment variable set in the CI run
 				emulatedFormFactor: process.env.EMULATE_DEVICE || "mobile",
 				// Do not apply any throttling
