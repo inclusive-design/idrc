@@ -6,7 +6,7 @@ module.exports = {
 				// See: https://github.com/GoogleChrome/lighthouse-ci/issues/802
 				hostname: "127.0.0.1",
 				// Source the form factor from an environment variable set in the CI run
-				emulatedFormFactor: process.env.EMULATE_DEVICE || "mobile",
+				formFactor: process.env.EMULATE_DEVICE || "mobile",
 				// Do not apply any throttling
 				throttlingMethod: "provided",
 				// Skipping "uses-http2" due to errors with reports see: http2 https://github.com/GoogleChrome/lighthouse/issues/6539
