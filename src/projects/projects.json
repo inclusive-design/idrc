@@ -1,6 +1,6 @@
 {
 	"layout": "layouts/project.njk",
-	"permalink": "/projects/{{ title | slugify }}/",
+	"permalink": "/projects/{{ page.fileSlug | slugify }}/",
 	"headerBgColor": "coral-500",
 	"headerBorderColor": "coral-800",
 	"headerTextColor": "black"
