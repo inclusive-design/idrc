@@ -18,7 +18,11 @@
                         {% for project in collections.projects %}
                         <article class="project">
                             {% if project.data.thumbnailImage %}
-                            <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="" />
+                            <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="{{
+                                project.data.thumbnailAltText
+                                if project.data.thumbnailAltText
+                                else "Thumbnail image for " + project.data.projectName
+                            }}" />
                             {% else %}
                             <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
                             {% endif %}
