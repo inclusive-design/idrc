@@ -1,0 +1,22 @@
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageType = 'page--projects-and-tools' %}
+
+{% block content %}
+    <article>
+        {% include 'partials/components/page-header.njk' %}
+        <form method="get" action="/resources/">
+        {# {% include 'partials/components/filter-resources.njk' %} #}
+        </form>
+
+        <div class="content">
+        </div>
+
+        <nav class="pagination" aria-label="pagination">
+        </nav>
+    </article>
+{% endblock %}
