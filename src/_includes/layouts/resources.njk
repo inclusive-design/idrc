@@ -13,22 +13,22 @@
         {# {% include 'partials/components/filter-resources.njk' %} #}
         </form>
 
-        <div class="content resources">
+        <div class="content">
             <div class="filter__container">
                 <div class="filter__button">filter</div>
                 <div class="filter__button">filter</div>
             </div>
-            <div class="resource__container">
+            <div class="container">
                 {% for i in range(0, 30) %}
-                    <div class="resource--card">
-                        <div class="resource--card--image">
+                    <div class="card">
+                        <div class="card-image">
                         </div>
-                        <h3 class="resource--card--title">
+                        <h3 class="card-title">
                             example title
                         </h3>
-                        <div class="resource--card--tag--container">
+                        <div class="card-tag__container">
                             {% for i in range(0, 2) %}
-                            <div class="resource--card--tag">
+                            <div class="card-tag">
                                 filter
                             </div>
                             {% endfor %}
