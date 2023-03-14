@@ -453,6 +453,77 @@ collections:
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
       - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Link", name: "link", widget: "string", required: true}
+  - name: "resources"
+    label: "Resources"
+    label_singular: "Resource"
+    folder: "src/resources"
+    slug: "{{slug}}"
+    preview_path: "/resources/{{slug}}"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resources.njk"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
+      - label: "Topics"
+        name: "topics"
+        widget: "relation"
+        multiple: true
+        collection: resourceMetadata
+        file: topics
+        value_field: topics.*.value
+        display_fields: [topics.*.label]
+        search_fields: [topics.*.label]
+        required: false
+      - label: "Resource Types"
+        name: "resourceType"
+        widget: "relation"
+        multiple: true
+        collection: resourceMetadata
+        file: resourceTypes
+        value_field: resourceTypes.*.value
+        display_fields: [resourceTypes.*.label]
+        search_fields: [resourceTypes.*.label]
+        required: false
+      - {label: "Resource URL", name: "link", widget: "string", required: true}
+  - name: resourceMetadata
+    label: Resource Metadata
+    files:
+      - label: Topics
+        name: topics
+        file: "src/_data/topics.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Topics"
+            label_singular: "Topic"
+            name: "topics"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+              - label: "Label"
+                name: "label"
+                widget: "string"
+      - label: Resource Types
+        name: resourceTypes
+        file: "src/_data/resourceTypes.json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resource Types"
+            label_singular: "Resource Type"
+            name: "resourceTypes"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+              - label: "Label"
+                name: "label"
+                widget: "string"
   - label: "Globals"
     name: "globals"
     files:
