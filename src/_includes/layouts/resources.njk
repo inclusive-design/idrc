@@ -4,7 +4,7 @@
     {% extends 'layouts/base.njk' %}
 {% endif %}
 
-{% set pageType = 'page--projects-and-tools' %}
+{% set pageType = 'page--resources' %}
 
 {% block content %}
     <article>
@@ -13,7 +13,34 @@
         {# {% include 'partials/components/filter-resources.njk' %} #}
         </form>
 
-        <div class="content">
+        <div class="content resources">
+            <div class="filter__container">
+                <div class="filter__button">filter</div>
+                <div class="filter__button">filter</div>
+            </div>
+            <div class="resource__container">
+                {% for i in range(0, 30) %}
+                    <div class="resource--card">
+                        <div class="resource--card--image">
+                        </div>
+                        <h3 class="resource--card--title">
+                            example title
+                        </h3>
+                        <div class="resource--card--tag--container">
+                            {% for i in range(0, 2) %}
+                            <div class="resource--card--tag">
+                                filter
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="resource--card--description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
 
         <nav class="pagination" aria-label="pagination">
