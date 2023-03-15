@@ -17,14 +17,14 @@
             {% if topics.length > 0 %}
                 {% for topic in topics %}
                     <div class="card-tag">
-                        {{ topic | safe }}
+                        {{ topic | getResourceMetadataLabel('topics') | safe }}
                     </div>
                 {% endfor %}
             {% endif %}
             {% if types.length > 0 %}
                 {% for type in types %}
                     <div class="card-tag">
-                        {{ type | safe }}
+                        {{ type | getResourceMetadataLabel('types') | safe }}
                     </div>
                 {% endfor %}
             {% endif %}

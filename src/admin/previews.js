@@ -5,6 +5,7 @@ import formatDateFilter from 'eleventy-plugin-fluid/src/filters/format-date-filt
 import isoDateFilter from 'eleventy-plugin-fluid/src/filters/iso-date-filter.js';
 import limitFilter from 'eleventy-plugin-fluid/src/filters/limit-filter.js';
 import splitFilter from '../filters/split-filter.js';
+import getResourceMetadataLabelFilter from '../filters/getResourceMetadataLabel.js';
 import site from '../_data/site.json';
 import slugifyFilter from '@sindresorhus/slugify';
 import markdownFilter from '../filters/markdown';
@@ -19,6 +20,7 @@ env.addFilter('limit', limitFilter);
 env.addFilter('markdown', markdownFilter);
 env.addFilter('slugify', slugifyFilter);
 env.addFilter('split', splitFilter);
+env.addFilter('getResourceMetadataLabel', getResourceMetadataLabelFilter);
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
