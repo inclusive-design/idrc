@@ -5,7 +5,7 @@ description: A handbook to help people create personalized and flexible
   educational resources for diverse learners.
 topics:
   - education
-resourceType:
+types:
   - toolkit
 link: https://handbook.floeproject.org/
 ---

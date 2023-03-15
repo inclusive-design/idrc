@@ -464,18 +464,18 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resources.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
-      - label: "Topics"
+      - label: "Resource Topics"
         name: "topics"
         widget: "relation"
         multiple: true
         collection: resourceMetadata
-        file: topics
-        value_field: topics.*.value
-        display_fields: [topics.*.label]
-        search_fields: [topics.*.label]
+        file: resourceTopics
+        value_field: resourceTopics.*.value
+        display_fields: [resourceTopics.*.label]
+        search_fields: [resourceTopics.*.label]
         required: false
       - label: "Resource Types"
-        name: "resourceType"
+        name: "types"
         widget: "relation"
         multiple: true
         collection: resourceMetadata
@@ -488,15 +488,15 @@ collections:
   - name: resourceMetadata
     label: Resource Metadata
     files:
-      - label: Topics
-        name: topics
-        file: "src/_data/topics.json"
+      - label: Resource Topics
+        name: resourceTopics
+        file: "src/_data/resourceTopics.json"
         editor:
           preview: false
         fields:
-          - label: "Topics"
-            label_singular: "Topic"
-            name: "topics"
+          - label: "Resource Topics"
+            label_singular: "Resource Topic"
+            name: "resourceTopics"
             widget: "list"
             summary: "{{fields.label}}"
             fields:

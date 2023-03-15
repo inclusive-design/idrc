@@ -6,7 +6,7 @@ description: A guide that provides design insights, activities, tools, and
   products.
 topics:
   - design
-resourceType:
+types:
   - toolkit
 link: https://guide.inclusivedesign.ca/
 ---

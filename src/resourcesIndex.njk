@@ -1,0 +1,26 @@
+---
+permalink: resourceData.json
+---
+{
+  "resources": [
+  {%- for item in collections.resources %}
+    {
+      "title": {{ item.data.title | dump | safe }},
+      "description": {{ item.data.description | dump | safe }},
+      "topics": [
+        {%- for topic in item.data.topics -%}
+        {{ topic | dump | safe }}{% if not loop.last %},{% endif %}
+        {%- endfor -%}
+      ],
+      "resourceTypes": [
+        {%- for type in item.data.types -%}
+        {{ type | dump | safe }}{% if not loop.last %},{% endif %}
+        {%- endfor -%}
+      ],
+      "link": {% if item.data.link -%} {{- item.data.link | dump | safe -}} {%- else -%} "" {%- endif %}
+    }{% if not loop.last %},{% endif %}
+  {%- endfor %}
+  ],
+  "resourceTopics": {{ resourceTopics.resourceTopics | dump | safe }},
+  "resourceTypes": {{ resourceTypes.resourceTypes | dump | safe }}
+}

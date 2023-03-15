@@ -5,7 +5,7 @@ description: Clusive is a flexible, customizable learning environment that
   adapts to learners' needs.
 topics:
   - education
-resourceType:
+types:
   - webApp
 link: "  https://clusive.cast.org/"
 ---

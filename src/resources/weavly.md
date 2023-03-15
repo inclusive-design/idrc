@@ -6,7 +6,7 @@ description: An educational coding tool for kids who have been left out of
   that educators and parents can use to teach coding.
 topics:
   - education
-resourceType:
+types:
   - webApp
 link: https://create.weavly.org/
 ---

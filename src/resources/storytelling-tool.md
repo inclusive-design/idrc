@@ -1,11 +1,11 @@
 ---
 layout: layouts/resources.njk
-title: "  Storytelling Tool"
+title: "Storytelling Tool"
 description: A tool to allow people of all abilities to share their stories
   using text, video, audio, and images.
 topics:
   - design
-resourceType:
+types:
   - webApp
 link: "  https://stories.floeproject.org/"
 ---
