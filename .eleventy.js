@@ -141,7 +141,7 @@ module.exports = eleventyConfig => {
 			.slice(0, 10);
 	});
 
-	eleventyConfig.addCollection("resources", collection => {
+	eleventyConfig.addCollection('resources', collection => {
 		return collection.getFilteredByGlob('src/resources/*.md');
 	});
 
