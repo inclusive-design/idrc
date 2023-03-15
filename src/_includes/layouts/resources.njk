@@ -4,7 +4,7 @@
     {% extends 'layouts/base.njk' %}
 {% endif %}
 
-{% set pageType = 'page--projects-and-tools' %}
+{% set pageType = 'page--resources' %}
 
 {% block content %}
     <article>
@@ -14,6 +14,34 @@
         </form>
 
         <div class="content">
+            <div class="filter__container">
+                <div class="filter__button">filter</div>
+                <div class="filter__button">filter</div>
+            </div>
+            <div class="container">
+                {% for i in range(0, 30) %}
+                    <div class="card">
+                        <div class="card-image">
+                        </div>
+                        <h3 class="card-title">
+                            example title
+                        </h3>
+                        <div class="card-tag__container">
+                            {% for i in range(0, 2) %}
+                            <div class="card-tag">
+                                filter
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="card-link"><a rel="external" href="#">Visit resource</a></div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
 
         <nav class="pagination" aria-label="pagination">
