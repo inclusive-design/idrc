@@ -461,7 +461,7 @@ collections:
     preview_path: "/resources/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/resources.njk"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
       - label: "Topics"
@@ -475,7 +475,7 @@ collections:
         search_fields: [topics.*.label]
         required: false
       - label: "Resource Types"
-        name: "resourceType"
+        name: "resourceTypes"
         widget: "relation"
         multiple: true
         collection: resourceMetadata

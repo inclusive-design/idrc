@@ -1,0 +1,41 @@
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageType = 'single page--resources' %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-image">
+        </div>
+        <h3 class="card-title">
+            {{ title | safe }}
+        </h3>
+        <div class="card-tag__container">
+            {% if topics.length > 0 %}
+                {% for topic in topics %}
+                    <div class="card-tag">
+                        {{ topic | safe }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% if resourceTypes.length > 0 %}
+                {% for resourceType in resourceTypes %}
+                    <div class="card-tag">
+                        {{ resourceType | safe }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="card-description">
+            <p>
+                {{ description | markdown | safe }}
+            </p>
+        </div>
+        <div class="card-link"><a rel="external">Visit resource</a></div>
+    </div>
+{% endblock %}
+
+{{ content | safe }}

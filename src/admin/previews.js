@@ -186,6 +186,24 @@ Project.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
+const Resource = ({entry}) => (
+	<Preview
+		entry={entry}
+		path="layouts/single--resource.njk"
+		context={({title, description, topics, resourceTypes }) => ({
+			previewMode: true,
+			title,
+			description,
+			topics,
+			resourceTypes
+		})}
+	/>
+);
+
+Resource.propTypes = {
+	entry: PropTypes.object.isRequired
+};
+
 const Tool = ({entry}) => (
 	<Preview
 		entry={entry}
@@ -238,6 +256,7 @@ CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
 CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('projects', Project);
+CMS.registerPreviewTemplate('resources', Resource);
 CMS.registerPreviewTemplate('tools', Tool);
 CMS.registerPreviewTemplate('site_data', SiteData);
 
