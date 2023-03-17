@@ -12,7 +12,7 @@ permalink: resourceData.json
         {{ topic | dump | safe }}{% if not loop.last %},{% endif %}
         {%- endfor -%}
       ],
-      "resourceTypes": [
+      "types": [
         {%- for type in item.data.types -%}
         {{ type | dump | safe }}{% if not loop.last %},{% endif %}
         {%- endfor -%}

@@ -7,6 +7,15 @@
 {% set pageType = 'page--resources' %}
 
 {% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="previous" viewBox="0 0 26 26" fill="none">
+        {% include 'svg/previous.svg' %}
+        </symbol>
+        <symbol id="next" viewBox="0 0 26 26" fill="none">
+        {% include 'svg/next.svg' %}
+        </symbol>
+    </svg>
+    
     <article>
         {% include 'partials/components/page-header.njk' %}
         <form method="get" action="/resources/">
@@ -14,11 +23,11 @@
         </form>
 
         <div class="content">
-            <div class="filter__container">
+            <div class="filter">
                 <div class="filter__button">filter</div>
                 <div class="filter__button">filter</div>
             </div>
-            <div class="container">
+            <div class="resources-result">
                 {% for i in range(0, 30) %}
                     <div class="card">
                         <div class="card-image">
@@ -26,7 +35,7 @@
                         <h3 class="card-title">
                             example title
                         </h3>
-                        <div class="card-tag__container">
+                        <div class="card-tags">
                             {% for i in range(0, 2) %}
                             <div class="card-tag">
                                 filter
@@ -47,4 +56,9 @@
         <nav class="pagination" aria-label="pagination">
         </nav>
     </article>
+{% endblock %}
+
+{% block footerScripts %}
+<script src="/assets/scripts/resources-utils.js"></script>
+<script src="/assets/scripts/resources-dynamic-handler.js" defer></script>
 {% endblock %}

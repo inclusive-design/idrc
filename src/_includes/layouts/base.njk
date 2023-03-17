@@ -54,6 +54,7 @@
             {% endblock content %}
         </main>
         {% include "partials/global/footer.njk" %}
+        {% block footerScripts %}{% endblock %}
         <script>
             fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
                 preferences: [
