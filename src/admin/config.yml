@@ -464,6 +464,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
+      - {label: "Published Year", name: "publishedYear", widget: "string", required: false}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
       - label: "Resource Topics"
         name: "topics"
         widget: "relation"
@@ -473,7 +475,7 @@ collections:
         value_field: resourceTopics.*.value
         display_fields: [resourceTopics.*.label]
         search_fields: [resourceTopics.*.label]
-        required: false
+        required: true
       - label: "Resource Types"
         name: "types"
         widget: "relation"
@@ -483,7 +485,7 @@ collections:
         value_field: resourceTypes.*.value
         display_fields: [resourceTypes.*.label]
         search_fields: [resourceTypes.*.label]
-        required: false
+        required: true
       - {label: "Resource URL", name: "link", widget: "string", required: true}
   - name: resourceMetadata
     label: Resource Metadata
@@ -492,7 +494,7 @@ collections:
         name: resourceTopics
         file: "src/_data/resourceTopics.json"
         editor:
-          preview: false
+          preview: true
         fields:
           - label: "Resource Topics"
             label_singular: "Resource Topic"
@@ -510,7 +512,7 @@ collections:
         name: resourceTypes
         file: "src/_data/resourceTypes.json"
         editor:
-          preview: false
+          preview: true
         fields:
           - label: "Resource Types"
             label_singular: "Resource Type"
