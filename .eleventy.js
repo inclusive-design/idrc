@@ -117,12 +117,6 @@ module.exports = eleventyConfig => {
 		return projectPages;
 	});
 
-	eleventyConfig.addCollection('tools', collection => {
-		return [
-			...collection.getFilteredByGlob('src/tools/*.md').sort((a, b) => b.data.order - a.data.order)
-		].reverse();
-	});
-
 	eleventyConfig.addCollection('news', collection => {
 		return [
 			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))

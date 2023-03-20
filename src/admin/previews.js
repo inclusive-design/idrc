@@ -80,28 +80,6 @@ History.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-const ProjectsAndTools = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/projects.njk"
-		context={({site, title, intro, projects, tools, headerBgColor, headerTextColor, headerBorderColor}) => ({
-			previewMode: true,
-			site,
-			title,
-			intro,
-			projects,
-			tools,
-			headerBgColor,
-			headerTextColor,
-			headerBorderColor
-		})}
-	/>
-);
-
-ProjectsAndTools.propTypes = {
-	entry: PropTypes.object.isRequired
-};
-
 const Person = ({entry}) => (
 	<Preview
 		entry={entry}
@@ -206,25 +184,6 @@ Resource.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-const Tool = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/single--tool.njk"
-		context={({title, shortName, description, tags, link}) => ({
-			previewMode: true,
-			title,
-			shortName,
-			description,
-			tags,
-			link
-		})}
-	/>
-);
-
-Tool.propTypes = {
-	entry: PropTypes.object.isRequired
-};
-
 const SiteData = ({entry}) => (
 	<Preview
 		entry={entry}
@@ -252,14 +211,12 @@ SiteData.propTypes = {
 
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('history', History);
-CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('pages', Page);
 CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
 CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('projects', Project);
 CMS.registerPreviewTemplate('resources', Resource);
-CMS.registerPreviewTemplate('tools', Tool);
 CMS.registerPreviewTemplate('site_data', SiteData);
 
 // Custom widgets

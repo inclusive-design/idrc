@@ -162,10 +162,10 @@ collections:
               - {label: Description, name: description, widget: text}
               - {label: Major Milestone, name: major, widget: boolean}
           - {label: "Body", name: "body", widget: "markdown", required: false}
-      - name: "projects-and-tools"
-        label: "Projects and Tools"
+      - name: "projects"
+        label: "Projects"
         delete: false
-        file: "src/projects-and-tools.md"
+        file: "src/projects.md"
         slug: "{{slug}}"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/projects.njk"}
@@ -439,20 +439,6 @@ collections:
       - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages."}
       - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages."}
       - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site."}
-  - name: "tools"
-    label: "Tools"
-    label_singular: "Tool"
-    folder: "src/tools"
-    slug: "{{slug}}"
-    preview_path: "/tools/{{slug}}"
-    create: true
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--tool.njk"}
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Short Name", name: "shortName", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Link", name: "link", widget: "string", required: true}
   - name: "resources"
     label: "Resources"
     label_singular: "Resource"

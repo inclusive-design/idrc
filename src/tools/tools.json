@@ -1,5 +1,0 @@
-{
-	"layout": "layouts/single--tool.njk",
-	"permalink": "/tools/{{ title | slugify }}/",
-	"headerBgColor": "white"
-}
