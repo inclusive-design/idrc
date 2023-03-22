@@ -7,34 +7,47 @@
 {% set pageType = 'single page--resources' %}
 
 {% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="topic" viewBox="0 0 14 20" fill="none">
+        {% include 'svg/icon-topics.svg' %}
+        </symbol>
+        <symbol id="type" viewBox="0 0 16 18" fill="none">
+        {% include 'svg/icon-resource-type.svg' %}
+        </symbol>
+    </svg>
+
     <div class="card">
+        <div class="card-detail">
+            <h3 class="card-title">
+                {{ title | safe }}
+            </h3>
+            <div class="card-tags">
+                {% if topics.length > 0 %}
+                    {% for topic in topics %}
+                        <div class="card-tag">
+                            <svg role="presentation"><use xlink:href="#topic" /></svg>
+                            <p>{{ topic | getResourceMetadataLabel('topics') | safe }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if types.length > 0 %}
+                    {% for type in types %}
+                        <div class="card-tag">
+                            <svg role="presentation"><use xlink:href="#type" /></svg>
+                            <p>{{ type | getResourceMetadataLabel('types') | safe }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="card-description">
+                <p>
+                    {{ description | markdown | safe }}
+                </p>
+            </div>
+            <div class="card-link"><a rel="external">Visit resource</a></div>
+        </div>
         <div class="card-image">
         </div>
-        <h3 class="card-title">
-            {{ title | safe }}
-        </h3>
-        <div class="card-tags">
-            {% if topics.length > 0 %}
-                {% for topic in topics %}
-                    <div class="card-tag">
-                        {{ topic | getResourceMetadataLabel('topics') | safe }}
-                    </div>
-                {% endfor %}
-            {% endif %}
-            {% if types.length > 0 %}
-                {% for type in types %}
-                    <div class="card-tag">
-                        {{ type | getResourceMetadataLabel('types') | safe }}
-                    </div>
-                {% endfor %}
-            {% endif %}
-        </div>
-        <div class="card-description">
-            <p>
-                {{ description | markdown | safe }}
-            </p>
-        </div>
-        <div class="card-link"><a rel="external">Visit resource</a></div>
     </div>
 {% endblock %}
 
