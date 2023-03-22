@@ -21,8 +21,16 @@
     }
 
     // Override the default style defined in _base.scss
-    ul li::before {
-      content: none;
+    ul {
+      margin: rem(16) 0 rem(16) 0;
+
+      li {
+        margin-bottom: rem(8);
+
+        &::before {
+          content: none;
+        }
+      }
     }
 
     // Custom checkboxes. Reference: https://codepen.io/spacemonkey/pen/vmZROv

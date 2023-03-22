@@ -28,10 +28,31 @@
             <div class="filter">
                 <h2 class="visually-hidden">Resource filter</h2>
                 <form method="get" action="/resources/">
-                    <div class="filter-section">filter</div>
-                    <div class="filter-section">filter</div>
+                    <div class="filter-section" data-section="topics">
+                        Topic
+                        <ul>
+                        {% for topic in resourceTopics.resourceTopics %}
+                            <li>
+                                <input class="filter-checkbox" type="checkbox" id="{{ topic.value }}" name="{{ 'to_' + topic.value }}">
+                                <label for="{{ topic.value }}">{{ topic.label }}</label>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="filter-section" data-section="types">
+                        Resource Type
+                        <ul>
+                        {% for type in resourceTypes.resourceTypes %}
+                            <li>
+                                <input class="filter-checkbox" type="checkbox" id="{{ type.value }}" name="{{ 'to_' + type.value }}">
+                                <label for="{{ type.value }}">{{ type.label }}</label>
+                            </li>
+                        {% endfor %}
+                        </ul>
+                    </div>
                 </form>
             </div>
+            
             <div class="content">
                 <h2 class="visually-hidden">Resources</h2>
                 <div class="resources-result">
