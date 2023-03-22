@@ -8,9 +8,55 @@
     flex-direction: column;
     row-gap: rem(16);
 
-    .filter__button {
+    .filter-section {
       border-top: 2px solid currentcolor;
     }
+
+    // Override the default style defined in _base.scss
+    ul li::before {
+      content: none;
+    }
+
+    // Custom checkboxes. Reference: https://codepen.io/spacemonkey/pen/vmZROv
+    .filter-checkbox {
+      opacity: 0; // hide it
+      position: absolute; // take it out of document flow
+
+      & + label,
+      & + span {
+        cursor: pointer;
+        padding: 0;
+        position: relative;
+      }
+
+      // Box
+      & + label::before,
+      & + span::before {
+        content: '';
+        display: inline-block;
+        height: rem(20);
+        margin: rem(4) rem(10) 0 0;
+        outline: rem(1) solid var(--fl-fgColor, var(--indigo-500));
+        vertical-align: text-top;
+        width: rem(20);
+      }
+
+      // Checkmark
+      &:checked + label::after,
+      &:checked + span::after {
+        color: var(--fl-bgColor, $white);
+        content: '\2713';
+        display: inline-block;
+        font-size: rem(18);
+        height: rem(2);
+        left: rem(4);
+        position: absolute;
+        top: 0;
+        width: rem(2);
+      }
+    }
+
+    // End of custom checkboxes
   }
 
   .resources-result {
@@ -50,6 +96,36 @@
       margin-top: rem(16);
     }
   }
+}
+
+// Custom styles when "enhance inputs" is enabled
+// Custom checkbox
+.fl-input-enhanced .filter-checkbox + label::before {
+  outline: rem(3) double var(--fl-fgColor, var(--indigo-500));
+}
+
+// Box checked
+.filter .filter-checkbox:checked + label::before {
+  background: var(--fl-fgColor, var(--indigo-500));
+}
+
+// Box active
+.filter .filter-checkbox:active + label::before {
+  background-color: var(--fl-bgColor, var(--indigo-500));
+  border: rem(2.5) solid var(--fl-fgColor, var(--indigo-500));
+}
+
+// Box focus
+.filter .filter-checkbox:focus + label::before,
+.filter .filter-checkbox:hover + label::before {
+  outline: rem(3.5) double var(--fl-fgColor, var(--indigo-500));
+}
+
+// Box focus when "enhance inputs" is enabled
+.fl-input-enhanced .filter-checkbox:focus + label::before,
+.fl-input-enhanced .filter-checkbox:hover + label::before {
+  border: rem(2.5) solid var(--fl-fgColor, var(--indigo-500));
+  outline: none;
 }
 
 @include breakpoint-up(sm) {
