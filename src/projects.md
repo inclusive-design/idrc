@@ -1,10 +1,10 @@
 ---
 layout: layouts/projects.njk
 eleventyNavigation:
-  key: Projects and tools
+  key: Projects
   order: 2
-permalink: /projects-and-tools/
-title: Featured projects and tools
+permalink: /projects/
+title: Projects
 headerBgColor: coral-500
 headerBorderColor: coral-800
 headerTextColor: black
