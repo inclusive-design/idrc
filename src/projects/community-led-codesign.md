@@ -1,4 +1,5 @@
 ---
+projectName: Community-Led Co-design Kit
 title: Community-Led Co-design Kit
 permalink: /projects/community-led-codesign-kit/
 shortName: false

@@ -436,6 +436,7 @@ collections:
       - {label: "Parent Page", name: "parentPageTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "This is required for sub-pages of a project to define the sub-page hierarchy."}
       - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order. "}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
+      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."}
       - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages."}
       - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages."}
       - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site."}
