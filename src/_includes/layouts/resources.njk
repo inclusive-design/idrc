@@ -44,15 +44,16 @@
                         <ul>
                         {% for type in resourceTypes.resourceTypes %}
                             <li>
-                                <input class="filter-checkbox" type="checkbox" id="{{ type.value }}" name="{{ 'to_' + type.value }}">
+                                <input class="filter-checkbox" type="checkbox" id="{{ type.value }}" name="{{ 'ty_' + type.value }}">
                                 <label for="{{ type.value }}">{{ type.label }}</label>
                             </li>
                         {% endfor %}
                         </ul>
                     </div>
+                    <button class="apply-button" type="submit">Apply filter</button>
                 </form>
             </div>
-            
+
             <div class="content">
                 <h2 class="visually-hidden">Resources</h2>
                 <div class="resources-result">

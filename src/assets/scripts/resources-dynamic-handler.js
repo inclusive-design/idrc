@@ -1,8 +1,8 @@
 // The main process that dynamically renders the Resources page.
 
-/* global createPagination, processResourcesDisplayResults, filterResources, renderResources, renderPagination */
+/* global createPagination, processResourcesDisplayResults, filterResources, renderCheckboxStats, renderResources, renderPagination */
 
-const pageSize = 4;
+const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
 let pageInQuery = params.get('page');
 
@@ -67,10 +67,9 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 			// // Display the number of search results
 			// document.querySelector('.search-result').innerHTML = `${results.length} of ${resourcesData.resources.length} resources matched`;
 
-			// // Display the search term in the search input field and the result status container
-			// // add checked states for resourceTopics and media types
-			// renderCheckboxStats(document.querySelector('.filter-body[data-section='resourceTopics']'), 'to_', selectedTopics);
-			// renderCheckboxStats(document.querySelector('.filter-body[data-section='resourceTypes']'), 'ty_', selectedTypes);
+			// add checked states for resourceTopics and media types
+			renderCheckboxStats(document.querySelector('.filter-section[data-section="topics"]'), 'to_', selectedTopics);
+			renderCheckboxStats(document.querySelector('.filter-section[data-section="types"]'), 'ty_', selectedTypes);
 		}
 		renderResources(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
 		if (pagination) {
