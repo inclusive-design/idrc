@@ -14,42 +14,58 @@
         <symbol id="next" viewBox="0 0 26 26" fill="none">
         {% include 'svg/next.svg' %}
         </symbol>
+        <symbol id="topic" viewBox="0 0 14 20" fill="none">
+        {% include 'svg/icon-topics.svg' %}
+        </symbol>
+        <symbol id="type" viewBox="0 0 16 18" fill="none">
+        {% include 'svg/icon-resource-type.svg' %}
+        </symbol>
     </svg>
     
     <article>
         {% include 'partials/components/page-header.njk' %}
-        <form method="get" action="/resources/">
-        {# {% include 'partials/components/filter-resources.njk' %} #}
-        </form>
-
-        <div class="content">
+        <div class="resources-container">
             <div class="filter">
-                <div class="filter__button">filter</div>
-                <div class="filter__button">filter</div>
+                <h2 class="visually-hidden">Resource filter</h2>
+                <form method="get" action="/resources/">
+                    <div class="filter__button">filter</div>
+                    <div class="filter__button">filter</div>
+                </form>
             </div>
-            <div class="resources-result">
-                {% for i in range(0, 30) %}
-                    <div class="card">
-                        <div class="card-image">
-                        </div>
-                        <h3 class="card-title">
-                            example title
-                        </h3>
-                        <div class="card-tags">
-                            {% for i in range(0, 2) %}
-                            <div class="card-tag">
-                                filter
+            <div class="content">
+                <h2 class="visually-hidden">Resources</h2>
+                <div class="resources-result">
+                    {% for i in range(0, 10) %}
+                        <div class="card">
+                            <div class="card-detail">
+                                <h3 class="card-title">
+                                    example title
+                                </h3>
+                                <div class="card-tags">
+                                    {% for i in range(0, 2) %}
+                                    <div class="card-tag">
+                                        <svg role="presentation"><use xlink:href="#topic" /></svg>
+                                        <p>topic</p>
+                                    </div>
+                                    {% endfor %}
+                                    {% for i in range(0, 2) %}
+                                    <div class="card-tag">
+                                        <svg role="presentation"><use xlink:href="#type" /></svg>
+                                        <p>type</p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="card-description">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="card-link"><a rel="external" href="#">Visit resource</a></div>
                             </div>
-                            {% endfor %}
+                            <div class="card-image"></div>
                         </div>
-                        <div class="card-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <div class="card-link"><a rel="external" href="#">Visit resource</a></div>
-                    </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
 

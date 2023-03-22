@@ -139,29 +139,36 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 
 	resources.forEach(resource => {
 		resourcesHtml += `    	<div class='card'>
-			<div class='card-image'>
-			</div>
+			<div class='card-detail'>
 			<h3 class='card-title'>${resource.title}</h3>
 			<div class='card-tags'>
 		`;
 		if (resource.topics) {
 			resource.topics.forEach(topicValue => {
 				let found = resourceTopics.find(topicObj => topicObj.value === topicValue);
-				resourcesHtml += `    <div class='card-tag'>${found.label}</div>`;
+				resourcesHtml += `    <div class='card-tag'>
+					<svg role="presentation"><use xlink:href="#topic" /></svg>
+					<p>${found.label}</p>
+				</div>`;
 			});
 		}
 		if (resource.types) {
 			resource.types.forEach(typeValue => {
 				let found = resourceTypes.find(typeObj => typeObj.value === typeValue);
-				resourcesHtml += `    <div class='card-tag'>${found.label}</div>`;
+				resourcesHtml += `    <div class='card-tag'>
+					<svg role="presentation"><use xlink:href="#type" /></svg>	
+					<p>${found.label}</p>
+				</div>`;
 			});
 		}
 		resourcesHtml += `
+				</div>
+				<div class='card-description'>
+					<p>${resource.description}</p>
+				</div>
+				<div class='card-link'><a rel='external'>Visit resource</a></div>
 			</div>
-			<div class='card-description'>
-			<p>${resource.description}</p>
-			</div>
-			<div class='card-link'><a rel='external'>Visit resource</a></div>
+			<div class='card-image'></div>
 		</div>`;
 	});
 
