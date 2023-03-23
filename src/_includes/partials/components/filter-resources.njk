@@ -1,0 +1,39 @@
+<div class="filter">
+    {# Topic selections #}
+    {% set filterIconId = "#topic" %}
+    {% set filterTitle = "Topic" %}
+    {% set filterType = "topics" %}
+    {% include 'partials/components/filter-resources-header.njk' %}
+
+    <div class="filter-section" data-section="topics">
+        <ul>
+            {% for topic in resourceTopics.resourceTopics %}
+                <li>
+                    <input class="filter-checkbox" type="checkbox" id="{{ topic.value }}" name="{{ 'to_' + topic.value }}">
+                    <label for="{{ topic.value }}">{{ topic.label }}</label>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {# Type selections #}
+    {% set filterIconId = "#type" %}
+    {% set filterTitle = "Type" %}
+    {% set filterType = "types" %}
+    {% include 'partials/components/filter-resources-header.njk' %}
+
+    <div class="filter-section" data-section="types">
+        <ul>
+            {% for type in resourceTypes.resourceTypes %}
+                <li>
+                    <input class="filter-checkbox" type="checkbox" id="{{ type.value }}" name="{{ 'ty_' + type.value }}">
+                    <label for="{{ type.value }}">{{ type.label }}</label>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="apply-button" type="submit">Apply filter</button>
+    </div>
+</div>
