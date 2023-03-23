@@ -12,12 +12,29 @@
   .filter {
     display: flex;
     flex-direction: column;
-    padding-left: rem(64);
+    padding-left: rem(8);
+    padding-right: rem(8);
     padding-top: rem(32);
     row-gap: rem(16);
 
-    .filter-section {
-      border-top: 2px solid currentcolor;
+    .filter-header {
+      border-top: 2px solid var(--fl-fgColor, var(--indigo-500));
+      column-gap: rem(8);
+      display: grid;
+      grid-template-columns: 1fr 20fr 1fr;
+      padding-top: rem(8);
+
+      p {
+        color: var(--fl-fgColor, var(--indigo-500));
+        margin-top: 0;
+      }
+
+      svg {
+        height: rem(16);
+        margin: auto;
+        stroke: var(--fl-fgColor, var(--indigo-500));
+        width: rem(16);
+      }
     }
 
     // Override the default style defined in _base.scss
@@ -75,6 +92,7 @@
 
   .apply-button {
     background-color: var(--fl-fgColor, var(--indigo-500));
+    border: 2px solid var(--fl-fgColor, var(--indigo-500));
     border-radius: rem(5);
     color: var(--fl-bgColor, $white);
     font-size: rem(16);
@@ -87,7 +105,8 @@
   .resources-result {
     margin-bottom: rem(16);
     margin-top: rem(96);
-    padding-right: rem(64);
+    padding-left: rem(8);
+    padding-right: rem(8);
   }
 
   .card {
@@ -175,9 +194,18 @@
       grid-template-columns: 1fr 2fr;
     }
 
+    .resources-result {
+      padding-right: rem(64);
+    }
+
     .card {
       display: grid;
       grid-template-columns: 2fr 1fr;
+    }
+
+    .filter {
+      padding-left: rem(64);
+      padding-right: 0;
     }
   }
 }

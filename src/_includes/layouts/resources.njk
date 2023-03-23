@@ -25,34 +25,7 @@
     <article>
         {% include 'partials/components/page-header.njk' %}
         <div class="resources-container">
-            <div class="filter">
-                <h2 class="visually-hidden">Resource filter</h2>
-                <form method="get" action="/resources/">
-                    <div class="filter-section" data-section="topics">
-                        Topic
-                        <ul>
-                        {% for topic in resourceTopics.resourceTopics %}
-                            <li>
-                                <input class="filter-checkbox" type="checkbox" id="{{ topic.value }}" name="{{ 'to_' + topic.value }}">
-                                <label for="{{ topic.value }}">{{ topic.label }}</label>
-                            </li>
-                        {% endfor %}
-                        </ul>
-                    </div>
-                    <div class="filter-section" data-section="types">
-                        Resource Type
-                        <ul>
-                        {% for type in resourceTypes.resourceTypes %}
-                            <li>
-                                <input class="filter-checkbox" type="checkbox" id="{{ type.value }}" name="{{ 'ty_' + type.value }}">
-                                <label for="{{ type.value }}">{{ type.label }}</label>
-                            </li>
-                        {% endfor %}
-                        </ul>
-                    </div>
-                    <button class="apply-button" type="submit">Apply filter</button>
-                </form>
-            </div>
+            {% include 'partials/components/filter-resources.njk' %}
 
             <div class="content">
                 <h2 class="visually-hidden">Resources</h2>
