@@ -431,7 +431,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk"}
       - {label: "Project Name", name: "projectName", widget: "string", required: true, hint: "Suggestion: If this is a sub-page of a project, enter the name of the project here."}
-      - {label: "Permalink Override (Pattern: '/projects/my-project/')", name: "permalink", widget: "string", required: false, hint: "Hint: permalink must be unique."}
+      - {label: "Override Default Project URL ", name: "permalink", widget: "string", required: false, hint: "Default URL is '/projects/[project-name]/'. To override enter a string including '/' (slash) at start and end (i.e. '/example/url/'). This must be unique."}
       - {label: "Body Title", name: "title", widget: "string", required: true, hint: "The title that appears after the Project Name and before the Body content. Suggestion: use a descriptive title which includes keywords from the project."}
       - {label: "Project Short Name", name: "shortName", widget: "string", required: false, hint: "Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project."}
       - {label: "Parent Page", name: "parentPageTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "This is required for sub-pages of a project to define the sub-page hierarchy."}
