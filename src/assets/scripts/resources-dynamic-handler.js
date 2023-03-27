@@ -64,12 +64,22 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 		// selectedTopics = resourcesData.resourceTopics.filter(tag => selectedTopics.includes(tag.value));
 		resultsToDisplay = pagination ? pagination.items : results;
 		if (!isInitialRender) {
-			// // Display the number of search results
-			// document.querySelector('.search-result').innerHTML = `${results.length} of ${resourcesData.resources.length} resources matched`;
-
+			// When the page is not initially rendered like page is refreshed or search is done
+			// make sure that filter sections are expanded/collapsed as it was before
+			for(const expandButton of document.querySelectorAll('.filter-expand-button')) {
+				const section = expandButton.dataset.section;
+				if (section != null) {
+					expandButton.setAttribute("aria-expanded", localStorage.getItem(section));
+				}
+				const filterBodySelector = '.filter-section[data-section=\'' + section + '\']';
+				const filter = $(expandButton).parent().siblings(filterBodySelector);
+				filter[localStorage.getItem(section) === 'false' ? 'hide' : 'show']();
+			}
 			// add checked states for resourceTopics and media types
 			renderCheckboxStats(document.querySelector('.filter-section[data-section="topics"]'), 'to_', selectedTopics);
+			renderNumberOfAppliedFilters(document.querySelector('#filter-topics'), 'to_');
 			renderCheckboxStats(document.querySelector('.filter-section[data-section="types"]'), 'ty_', selectedTypes);
+			renderNumberOfAppliedFilters(document.querySelector('#filter-types'), 'ty_');
 		}
 		renderResources(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
 		if (pagination) {
@@ -78,26 +88,10 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 	});
 });
 
-/*
- * Show/hide the corresponding arrow up and down buttons based on the expand state
- * @param {DOM element} expandButtonElm - The DOM element of the expand button.
- * @param {String} expandButtonState - A value of 'true' or 'false'.
- */
-function setExpandSVGState(expandButtonElm, expandButtonState) {
-	const arrowupSVG = $(expandButtonElm).find('.arrowup');
-	arrowupSVG[expandButtonState === 'false' ? 'hide' : 'show']();
-	const arrowdownSVG = $(expandButtonElm).find('.arrowdown');
-	arrowdownSVG[expandButtonState === 'true' ? 'hide' : 'show']();
-}
-
 // Clicking the expand button on the filter header opens/closes the filter
 const expandButtons = document.querySelectorAll('.filter .filter-expand-button');
 
 for (let i = 0; i < expandButtons.length; i++) {
-	// At the page load, show/hide arrow up and down buttons based on the aria-expand state of the expand button
-	const initialExpandedValue = expandButtons[i].getAttribute('aria-expanded');
-	setExpandSVGState(expandButtons[i], initialExpandedValue);
-
 	// Add event listener for expand buttons
 	expandButtons[i].addEventListener('click', (e) => {
 		e.preventDefault();
@@ -105,17 +99,19 @@ for (let i = 0; i < expandButtons.length; i++) {
 		const currentExpandedValue = expandButtons[i].getAttribute('aria-expanded');
 		const expandedState = currentExpandedValue === 'true' ? 'false' : 'true';
 		expandButtons[i].setAttribute('aria-expanded', expandedState);
+		// Store expanded status into local storage, so that expanded status for specific 
+		// filter section is remembered.
+		if (e.target.dataset.section) {
+			localStorage.setItem(e.target.dataset.section, expandedState);
+		}
 
 		// Open/close the appropriate filter
 		// Find the filter body by using its position relative to the button as well as the css selector
 		// since there are two elements that match the selector (one each for static the and dynamic views).
 		// Clicking on one of expand buttons only opens the form that this button corresponds to.
-		const filterBodySelector = '.filter-body[data-section=\'' + expandButtons[i].dataset.section + '\']';
+		const filterBodySelector = '.filter-section[data-section=\'' + expandButtons[i].dataset.section + '\']';
 		const filter = $(expandButtons[i]).parent().siblings(filterBodySelector);
 		filter[expandedState === 'false' ? 'hide' : 'show']();
-
-		// Show/hide the expand svg
-		setExpandSVGState(expandButtons[i], expandedState);
 	});
 }
 
@@ -133,3 +129,17 @@ for (let i = 0; i < filterHeaders.length; i++) {
 // document.querySelector('.reset-button').addEventListener('click', () => {
 // 	window.location = '/resources';
 // });
+
+
+// Add change event listener to each checkbox, so that can trigger update to
+// number of applied filters to the filter header
+const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+
+for (const checkbox of filterCheckboxes) {
+	checkbox.addEventListener('change', () => {
+		const checkboxPrefix = checkbox.name.split('_')[0] + '_';
+		if (checkboxPrefix && checkbox.dataset.filter) {
+			renderNumberOfAppliedFilters(document.querySelector('#filter-' + checkbox.dataset.filter), checkboxPrefix);
+		}
+	});
+}
