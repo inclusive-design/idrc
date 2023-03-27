@@ -1,6 +1,6 @@
 // The main process that dynamically renders the Resources page.
 
-/* global createPagination, processResourcesDisplayResults, filterResources, renderCheckboxStats, renderResources, renderPagination */
+/* global createPagination, processResourcesDisplayResults, filterResources, renderCheckboxStats, renderNumberOfAppliedFilters, renderResources, renderPagination */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -66,10 +66,10 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 		if (!isInitialRender) {
 			// When the page is not initially rendered like page is refreshed or search is done
 			// make sure that filter sections are expanded/collapsed as it was before
-			for(const expandButton of document.querySelectorAll('.filter-expand-button')) {
+			for (const expandButton of document.querySelectorAll('.filter-expand-button')) {
 				const section = expandButton.dataset.section;
 				if (section != null) {
-					expandButton.setAttribute("aria-expanded", localStorage.getItem(section));
+					expandButton.setAttribute('aria-expanded', localStorage.getItem(section));
 				}
 				const filterBodySelector = '.filter-section[data-section=\'' + section + '\']';
 				const filter = $(expandButton).parent().siblings(filterBodySelector);
@@ -99,7 +99,7 @@ for (let i = 0; i < expandButtons.length; i++) {
 		const currentExpandedValue = expandButtons[i].getAttribute('aria-expanded');
 		const expandedState = currentExpandedValue === 'true' ? 'false' : 'true';
 		expandButtons[i].setAttribute('aria-expanded', expandedState);
-		// Store expanded status into local storage, so that expanded status for specific 
+		// Store expanded status into local storage, so that expanded status for specific
 		// filter section is remembered.
 		if (e.target.dataset.section) {
 			localStorage.setItem(e.target.dataset.section, expandedState);

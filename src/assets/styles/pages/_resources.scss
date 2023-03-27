@@ -44,20 +44,24 @@
 
     .filter-expand-button {
       color: var(--fl-fgColor, var(--indigo-500));
-      &[aria-expanded="false"] {
+
+      &[aria-expanded='false'] {
         .icon-plus {
           display: block;
         }
+
         .icon-minus {
-            display: none;
+          display: none;
         }
       }
-      &[aria-expanded="true"] {
+
+      &[aria-expanded='true'] {
         .icon-plus {
           display: none;
         }
+
         .icon-minus {
-            display: block;
+          display: block;
         }
       }
     }

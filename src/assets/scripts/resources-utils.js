@@ -101,7 +101,7 @@ function renderCheckboxStats(container, checkboxPrefix, checkedValue) { // eslin
  *  @param {Object} container - The container within a filter header, where the number should be rendered
  *  @param {String} checkboxPrefix - The prefix of the checkbox name
  */
-function renderNumberOfAppliedFilters(container, checkboxPrefix) {
+function renderNumberOfAppliedFilters(container, checkboxPrefix) { // eslint-disable-line no-unused-vars
 	const appliedFilter = document.querySelectorAll('.filter-checkbox[name^="' + checkboxPrefix + '"]:checked');
 	if (appliedFilter.length > 0) {
 		container.innerHTML = '(' + appliedFilter.length + ')';
