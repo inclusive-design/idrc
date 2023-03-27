@@ -20,12 +20,20 @@
         <symbol id="type" viewBox="0 0 16 18" fill="none">
         {% include 'svg/icon-resource-type.svg' %}
         </symbol>
+        <symbol id="plus" width="10" height="10" viewBox="0 0 10 10" fill="none">
+        {% include 'svg/icon-plus.svg' %}
+        </symbol>
+        <symbol id="minus" width="10" height="2" viewBox="0 0 10 2" fill="none">
+        {% include 'svg/icon-minus.svg' %}
+        </symbol>
     </svg>
     
     <article>
         {% include 'partials/components/page-header.njk' %}
         <div class="resources-container">
-            {% include 'partials/components/filter-resources.njk' %}
+            <form method="get" action="/resources/">
+                {% include 'partials/components/filter-resources.njk' %}
+            </form>
 
             <div class="content">
                 <h2 class="visually-hidden">Resources</h2>
