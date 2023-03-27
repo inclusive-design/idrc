@@ -24,9 +24,14 @@
       grid-template-columns: 1fr 20fr 1fr;
       padding-top: rem(8);
 
-      p {
-        color: var(--fl-fgColor, var(--indigo-500));
-        margin-top: 0;
+      .filter-title {
+        column-gap: rem(8);
+        display: flex;
+
+        p {
+          color: var(--fl-fgColor, var(--indigo-500));
+          margin-top: 0;
+        }
       }
 
       svg {
@@ -34,6 +39,26 @@
         margin: auto;
         stroke: var(--fl-fgColor, var(--indigo-500));
         width: rem(16);
+      }
+    }
+
+    .filter-expand-button {
+      color: var(--fl-fgColor, var(--indigo-500));
+      &[aria-expanded="false"] {
+        .icon-plus {
+          display: block;
+        }
+        .icon-minus {
+            display: none;
+        }
+      }
+      &[aria-expanded="true"] {
+        .icon-plus {
+          display: none;
+        }
+        .icon-minus {
+            display: block;
+        }
       }
     }
 
@@ -103,10 +128,7 @@
   }
 
   .resources-result {
-    margin-bottom: rem(16);
-    margin-top: rem(96);
-    padding-left: rem(8);
-    padding-right: rem(8);
+    margin: 0 rem(8) rem(16) rem(8);
   }
 
   .card {
