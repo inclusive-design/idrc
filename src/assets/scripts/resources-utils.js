@@ -103,11 +103,7 @@ function renderCheckboxStats(container, checkboxPrefix, checkedValue) { // eslin
  */
 function renderNumberOfAppliedFilters(container, checkboxPrefix) { // eslint-disable-line no-unused-vars
 	const appliedFilter = document.querySelectorAll('.filter-checkbox[name^="' + checkboxPrefix + '"]:checked');
-	if (appliedFilter.length > 0) {
-		container.innerHTML = '(' + appliedFilter.length + ')';
-	} else {
-		container.innerHTML = '';
-	}
+	container.innerHTML = appliedFilter.length > 0 ? '(' + appliedFilter.length + ')' : '';
 }
 
 /*
