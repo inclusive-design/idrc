@@ -138,13 +138,13 @@
     &:hover {
       background-color: var(--fl-fgColor, var(--indigo-800)) !important;
       border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
-      color: var(--fl-bgColor, #ffffff) !important;
+      color: var(--fl-bgColor, #fff) !important;
     }
 
     &:focus {
       background-color: var(--fl-fgColor, var(--indigo-800));
       border: 2px solid var(--fl-fgColor, var(--indigo-800));
-      color: var(--fl-bgColor, #ffffff);
+      color: var(--fl-bgColor, #fff);
       outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
       outline-offset: rem(3);
     }
@@ -153,22 +153,22 @@
   .reset-button {
     background-color: var(--fl-fgColor, var(--grey-100));
     border: 2px solid var(--fl-fgColor, var(--indigo-500));
-    color: var(--fl-bgColor, var(--indigo-500));
     border-radius: rem(5);
-    padding: rem(10) rem(14);
+    color: var(--fl-bgColor, var(--indigo-500));
     font-size: rem(16);
     font-weight: var(--fw-medium);
+    padding: rem(10) rem(14);
 
     &:hover {
       background-color: var(--fl-fgColor, var(--indigo-800)) !important;
       border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
-      color: var(--fl-bgColor, #ffffff) !important;
+      color: var(--fl-bgColor, #fff) !important;
     }
 
     &:focus {
       background-color: var(--fl-fgColor, var(--indigo-800));
       border: 2px solid var(--fl-fgColor, var(--indigo-800));
-      color: var(--fl-bgColor, #ffffff);
+      color: var(--fl-bgColor, #fff);
       outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
       outline-offset: rem(3);
     }
@@ -183,8 +183,8 @@
   }
 
   .resources-applied-filters {
-    padding-bottom: rem(16);
     margin: 0;
+    padding-bottom: rem(16);
 
     h3 {
       margin-top: 0;
@@ -223,30 +223,30 @@
 
           p {
             background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            color: var(--fl-bgColor, #ffffff) !important;
+            color: var(--fl-bgColor, #fff) !important;
           }
 
           svg {
             background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            stroke: var(--fl-bgColor, #ffffff) !important;
+            stroke: var(--fl-bgColor, #fff) !important;
           }
         }
     
         &:focus {
           background-color: var(--fl-fgColor, var(--indigo-800));
           border: 2px solid var(--fl-fgColor, var(--indigo-800));
-          color: var(--fl-bgColor, #ffffff);
+          color: var(--fl-bgColor, #fff);
           outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
           outline-offset: rem(3);
 
           p {
             background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            color: var(--fl-bgColor, #ffffff) !important;
+            color: var(--fl-bgColor, #fff) !important;
           }
 
           svg {
             background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            stroke: var(--fl-bgColor, #ffffff) !important;
+            stroke: var(--fl-bgColor, #fff) !important;
           }
         }
       }
@@ -314,6 +314,7 @@
 
     .card-link {
       margin-top: rem(16);
+
       a {
         display: grid;
         gap: rem(4);
