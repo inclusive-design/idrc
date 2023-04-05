@@ -1,10 +1,11 @@
 ---
 layout: layouts/resources.njk
-title: "Make your web content accessible"
+title: Make your web content accessible
 description: A course that covers what accessibility means on the web, how to
   create accessible web content, how to test it, and the principles of
   accessible design. You'll also learn to design more inclusively from the
   start, and communicate your accessible designs across teams.
+publishedYear: "2020"
 topics:
   - design
 types:
