@@ -451,8 +451,9 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
       - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
-      - {label: "Published Year", name: "publishedYear", widget: "string", required: false}
+      - {label: "Published Year", name: "publishedYear", widget: "string", required: true}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
+      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
       - label: "Resource Topics"
         name: "topics"
         widget: "relation"
