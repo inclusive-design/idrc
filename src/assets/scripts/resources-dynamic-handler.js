@@ -1,6 +1,6 @@
 // The main process that dynamically renders the Resources page.
 
-/* global createPagination, processResourcesDisplayResults, filterResources, renderCheckboxStats, renderNumberOfAppliedFilters, renderResources, renderPagination */
+/* global createPagination, processResourcesDisplayResults, filterResources, renderCheckboxStats, renderNumberOfAppliedFilters, renderAppliedFilters, renderResources, renderPagination */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -81,9 +81,45 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 			renderCheckboxStats(document.querySelector('.filter-section[data-section="types"]'), 'ty_', selectedTypes);
 			renderNumberOfAppliedFilters(document.querySelector('#filter-types'), 'ty_');
 		}
+		renderAppliedFilters(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
 		renderResources(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
 		if (pagination) {
 			renderPagination(pagination);
+		}
+
+		// Clicking 'reset filter' button redirects the page to the initial state without search term and filtering conditions
+		document.querySelector('.reset-button').addEventListener('click', () => {
+			localStorage.setItem('returnFocusQuery', '.reset-button');
+			window.location = '/resources';
+		});
+
+		// Clicking 'apply filter' button redirects the page with applied filter options
+ 		document.querySelector('.apply-button').addEventListener('click', () => {
+			localStorage.setItem('returnFocusQuery', '.apply-button');
+		});
+
+		// Save element to focus after a filer option is removed by clicking on applied filter options
+		for (const filterTag of document.querySelectorAll('.filter-tag')) {
+			filterTag.addEventListener('click', (e) => {
+				const filterTags = [...document.querySelectorAll('.filter-tag')];
+				const currentFilterIndex = filterTags.indexOf(e.target);
+				if (currentFilterIndex > 0) {
+					localStorage.setItem('returnFocusQuery', `.filter-tag[data-tag='${filterTags[currentFilterIndex - 1].dataset.tag}']`);
+				} else if (currentFilterIndex === 0 && filterTags[currentFilterIndex + 1] != null){
+					localStorage.setItem('returnFocusQuery', `.filter-tag[data-tag='${filterTags[currentFilterIndex + 1].dataset.tag}']`);
+				} else {
+					localStorage.setItem('returnFocusQuery', '.reset-button');
+				}
+			});
+		}
+
+		// Set focus back on items before the refresh by filter changes
+		if (localStorage.getItem('returnFocusQuery')) {
+			const focusElement = document.querySelector(localStorage.getItem('returnFocusQuery'));
+			if (focusElement && focusElement.focus) {
+				focusElement.focus();
+			}
+			localStorage.removeItem('returnFocusQuery');
 		}
 	});
 });
@@ -102,6 +138,9 @@ for (let i = 0; i < expandButtons.length; i++) {
 		// Store expanded status into local storage, so that expanded status for specific
 		// filter section is remembered.
 		if (e.target.dataset.section) {
+			expandedState === 'true' ?
+				expandButtons[i].setAttribute('aria-label', `collapse the ${e.target.dataset.section} filter`) :
+				expandButtons[i].setAttribute('aria-label', `expand the ${e.target.dataset.section} filter`);
 			localStorage.setItem(e.target.dataset.section, expandedState);
 		}
 
@@ -124,11 +163,6 @@ for (let i = 0; i < filterHeaders.length; i++) {
 		$(filterHeaders[i]).find('.filter-expand-button').click();
 	});
 }
-
-// Clicking 'reset filter' buttons redirects the page to the initial state without search term and filtering conditions
-// document.querySelector('.reset-button').addEventListener('click', () => {
-// 	window.location = '/resources';
-// });
 
 
 // Add change event listener to each checkbox, so that can trigger update to

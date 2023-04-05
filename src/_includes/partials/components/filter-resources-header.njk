@@ -4,7 +4,7 @@
         <p>{{ filterTitle }}</p>
         <p class="filter-applied-number" id="{{ 'filter-' + filterType }}"></p>
     </div>
-    <button type="button" class="filter-expand-button" data-section="{{ filterType | replace(" ", "") }}" aria-expanded="true" aria-label="expand or collapse the {{ filterType }} filter">
+    <button type="button" class="filter-expand-button" data-section="{{ filterType | replace(" ", "") }}" aria-expanded="true" aria-label="collapse the {{ filterType }} filter">
         <svg class="icon-minus" data-section="{{ filterType | replace(" ", "") }}"><use xlink:href="#minus" /></svg>
         <svg class="icon-plus" data-section="{{ filterType | replace(" ", "") }}"><use xlink:href="#plus" /></svg>
     </button>

@@ -17,11 +17,16 @@
     padding-top: rem(32);
     row-gap: rem(16);
 
+    h2 {
+      margin-bottom: rem(8);
+    }
+
     .filter-header {
       border-top: 2px solid var(--fl-fgColor, var(--indigo-500));
       column-gap: rem(8);
       display: grid;
       grid-template-columns: 1fr 20fr 1fr;
+      margin-top: 0;
       padding-top: rem(8);
 
       .filter-title {
@@ -125,23 +130,148 @@
     border-radius: rem(5);
     color: var(--fl-bgColor, $white);
     font-size: rem(16);
-    font-weight: var(--fl-medium);
+    font-weight: var(--fw-medium);
     line-height: rem(24);
     margin-top: rem(16);
     padding: rem(10) rem(14);
+
+    &:hover {
+      background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+      border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
+      color: var(--fl-bgColor, #ffffff) !important;
+    }
+
+    &:focus {
+      background-color: var(--fl-fgColor, var(--indigo-800));
+      border: 2px solid var(--fl-fgColor, var(--indigo-800));
+      color: var(--fl-bgColor, #ffffff);
+      outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+      outline-offset: rem(3);
+    }
   }
 
-  .resources-result {
-    margin: 0 rem(8) rem(16) rem(8);
+  .reset-button {
+    background-color: var(--fl-fgColor, var(--grey-100));
+    border: 2px solid var(--fl-fgColor, var(--indigo-500));
+    color: var(--fl-bgColor, var(--indigo-500));
+    border-radius: rem(5);
+    padding: rem(10) rem(14);
+    font-size: rem(16);
+    font-weight: var(--fw-medium);
+
+    &:hover {
+      background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+      border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
+      color: var(--fl-bgColor, #ffffff) !important;
+    }
+
+    &:focus {
+      background-color: var(--fl-fgColor, var(--indigo-800));
+      border: 2px solid var(--fl-fgColor, var(--indigo-800));
+      color: var(--fl-bgColor, #ffffff);
+      outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+      outline-offset: rem(3);
+    }
+  }
+
+  .resources-no-results {
+    background-color: #f2f2f2;
+    font-size: 22px;
+    font-weight: 600;
+    padding: rem(16);
+    padding-left: rem(20);
+  }
+
+  .resources-applied-filters {
+    padding-bottom: rem(16);
+    margin: 0;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(16);
+
+      .filter-tag {
+        background-color: #f2f2f2;
+        border: 2px solid var(--fl-fgColor, var(--indigo-500));
+        border-radius: rem(48);
+        column-gap: rem(4);
+        display: flex;
+        justify-content: center;
+        padding: rem(8);
+        white-space: nowrap;
+
+        p {
+          color: var(--fl-fgColor, var(--indigo-500));
+          margin: auto;
+        }
+
+        svg {
+          height: rem(16);
+          margin: auto;
+          stroke: var(--fl-fgColor, var(--indigo-500));
+          width: rem(16);
+        }
+
+        &:hover {
+          background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+          border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
+
+          p {
+            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+            color: var(--fl-bgColor, #ffffff) !important;
+          }
+
+          svg {
+            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+            stroke: var(--fl-bgColor, #ffffff) !important;
+          }
+        }
+    
+        &:focus {
+          background-color: var(--fl-fgColor, var(--indigo-800));
+          border: 2px solid var(--fl-fgColor, var(--indigo-800));
+          color: var(--fl-bgColor, #ffffff);
+          outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+          outline-offset: rem(3);
+
+          p {
+            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+            color: var(--fl-bgColor, #ffffff) !important;
+          }
+
+          svg {
+            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+            stroke: var(--fl-bgColor, #ffffff) !important;
+          }
+        }
+      }
+
+      .filter-clear-all {
+        margin: auto 0;
+      }
+    }
+  }
+
+  .resources-filtered-number {
+    border-bottom: 2px solid var(--grey-200);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: rem(16);
+    padding: rem(16) 0 rem(16) 0;
   }
 
   .card {
-    border-top: 2px solid red;
-    margin-bottom: rem(64);
+    border-top: 2px solid var(--coral-500);
+    margin-bottom: rem(48);
 
     .card-image {
-      background-color: gray;
-      height: rem(102);
+      margin: rem(16);
+      object-fit: contain;
     }
 
     .card-title {
@@ -178,8 +308,24 @@
       }
     }
 
+    .card-publishedYear {
+      margin-top: rem(16);
+    }
+
     .card-link {
       margin-top: rem(16);
+      a {
+        display: grid;
+        gap: rem(4);
+        grid-template-columns: max-content min-content;
+        width: min-content;
+      }
+
+      svg {
+        height: rem(16);
+        margin: auto;
+        width: rem(16);
+      }
     }
   }
 }
@@ -218,6 +364,10 @@
   .page--resources {
     .resources-container {
       grid-template-columns: 1fr 2fr;
+    }
+
+    .resources-applied-filters {
+      padding-right: rem(64);
     }
 
     .resources-result {

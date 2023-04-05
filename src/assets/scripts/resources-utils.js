@@ -129,15 +129,75 @@ function htmlDecode(input) {
 
 /*
  * Process each object in the data set to convert some field value to formats for display.
+ * By default sort by publishedYear. 
  * @param {Array<Object>} dataSet - The data set to process.
  * @return The same set of the data set with fields converted.
  */
 function processResourcesDisplayResults(inArray) { // eslint-disable-line no-unused-vars
-	return inArray.map((oneRecord) => {
+	const sortedArray = [];
+	const resultsWithPublishedYear = inArray.filter(result => result.publishedYear);
+	const resultsWithoutPublishedYear = inArray.filter(result => !result.publishedYear);
+	resultsWithPublishedYear.sort((a, b) => {
+		let compare = b.publishedYear.localeCompare(a.publishedYear);
+		if (compare === 0) {
+			compare = a.title.localeCompare(b.title);
+		}
+		return compare;
+	});
+	resultsWithoutPublishedYear.sort((a, b) => (a.title.localeCompare(b.title)));
+
+	sortedArray.push(...resultsWithPublishedYear, ...resultsWithoutPublishedYear);
+
+	return sortedArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.description = stripHtmlTags(oneRecord.description);
 		return oneRecord;
 	});
+}
+
+/*
+ * Render the applied filters
+ * @param {Array} resources - An array of resources to be rendered.
+ * @return directly add the applied filter html to the content selector.
+ */
+function renderAppliedFilters(resources, resourceTopics, resourceTypes) {
+	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
+	let appliedFilterHtml = '';
+
+	if (resources.length === 0) {
+		appliedFilterHtml += `<div class="resources-no-results"><p>Sorry, no results were found based on your applied filters.</p></div>`;
+	} else {
+		appliedFilterHtml += `<div class="resources-filtered-number" role="alert"><p>Showing ${resources.length} ${resources.length === 1 ? 'result' : 'results'}</p></div>`
+	}
+
+	appliedFilterHtml += '<h3>Applied filters</h3><div class="filter-tags">';
+
+	for (const appliedFilter of appliedFilters) {
+		const tagType = resourceTopics.find(topicObj => topicObj.value === appliedFilter.id) ? 'topic': 'type';
+		let filterLabel = '';
+		if (tagType === 'topic') {
+			filterLabel = resourceTopics.find(topicObj => topicObj.value === appliedFilter.id).label;
+		} else if (tagType === 'type') {
+			filterLabel = resourceTypes.find(typeObj => typeObj.value === appliedFilter.id).label;
+		}
+
+		const params = new URLSearchParams(window.location.search);
+		params.delete(appliedFilter.name);
+
+		appliedFilterHtml += `<button aria-label="Remove filter resource ${tagType} ${filterLabel}" data-tag=${appliedFilter.id} class="filter-tag" onClick="window.location.href='${window.location.href.split('?')[0]}?${params.toString()}'">
+			<svg role="presentation"><use xlink:href="#${tagType}" /></svg>
+			<p>${filterLabel}</p>
+			<svg role="presentation"><use xlink:href="#close" /></svg>
+		</button>`
+	}
+	
+	appliedFilterHtml += `
+			<div class="filter-clear-all">
+				<button class="reset-button">Clear all filters</button>
+			</div>
+		</div>`;
+
+	document.querySelector('.resources-applied-filters').innerHTML = appliedFilterHtml;
 }
 
 /*
@@ -146,9 +206,12 @@ function processResourcesDisplayResults(inArray) { // eslint-disable-line no-unu
  * @return directly add the resources html to the content selector.
  */
 function renderResources(resources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
+	const hostURL = window.location.host;
 	let resourcesHtml = '';
 
 	resources.forEach(resource => {
+		const resourceLink = document.createElement('a');
+		resourceLink.href = resource.link;
 		resourcesHtml += `    	<div class='card'>
 			<div class='card-detail'>
 			<h3 class='card-title'>${resource.title}</h3>
@@ -173,13 +236,14 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 			});
 		}
 		resourcesHtml += `
-				</div>
-				<div class='card-description'>
-					<p>${resource.description}</p>
-				</div>
-				<div class='card-link'><a rel='external'>Visit resource</a></div>
 			</div>
-			<div class='card-image'></div>
+			<div class='card-description'>
+				<p>${resource.description}</p>
+			</div>
+			${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${resource.publishedYear}</p></div>` : ''}
+			<div class='card-link'><a rel='external'>Visit ${resource.title}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
+			</div>
+			${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt=${resource.thumbnailAltText ? resource.thumbnailAltText : `Thumbnail image for ${resource.title}`}></div>` : ''}
 		</div>`;
 	});
 

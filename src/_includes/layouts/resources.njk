@@ -26,6 +26,12 @@
         <symbol id="minus" width="10" height="2" viewBox="0 0 10 2" fill="none">
         {% include 'svg/icon-minus.svg' %}
         </symbol>
+        <symbol id="external" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        {% include 'svg/external.svg' %}
+        </symbol>
+        <symbol id="close" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        {% include 'svg/icon-x.svg' %}
+        </symbol>
     </svg>
     
     <article>
@@ -36,8 +42,26 @@
             </form>
 
             <div class="content">
+                <h2>Search results</h2>
+                <div class="resources-applied-filters">
+                </div>
                 <h2 class="visually-hidden">Resources</h2>
                 <div class="resources-result">
+                    <div class="resources-applied-filters">
+                        <h3>Applied filters</h3>
+                        <div class="filter-tags">
+                            <div class="filter-tag">
+                                <svg role="presentation"><use xlink:href="#topic" /></svg>
+                                <p>topic</p>
+                            </div>
+                            <div class="filter-clear-all">
+                                <button>Clear all filters</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resources-filtered-number">
+                        <p>Showing 10 results</p>
+                    </div>
                     {% for i in range(0, 10) %}
                         <div class="card">
                             <div class="card-detail">
@@ -61,6 +85,11 @@
                                 <div class="card-description">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <div class="card-publishedYear">
+                                    <p>
+                                        Published in 2023
                                     </p>
                                 </div>
                                 <div class="card-link"><a rel="external" href="#">Visit resource</a></div>
