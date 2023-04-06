@@ -21,13 +21,13 @@
       margin-bottom: rem(8);
     }
 
-    .filter-header {
-      border-top: 2px solid var(--fl-fgColor, var(--indigo-500));
+    .filter-expand-button {
+      border-top: rem(3) solid var(--fl-fgColor, var(--indigo-500));
       column-gap: rem(8);
       display: grid;
       grid-template-columns: 1fr 20fr 1fr;
       margin-top: 0;
-      padding-top: rem(8);
+      padding: rem(8) 0;
 
       .filter-title {
         column-gap: rem(8);
@@ -45,10 +45,30 @@
         stroke: var(--fl-fgColor, var(--indigo-500));
         width: rem(16);
       }
-    }
 
-    .filter-expand-button {
-      color: var(--fl-fgColor, var(--indigo-500));
+      &:hover {
+        background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        border-top: rem(3) solid var(--fl-bgColor, var(--indigo-800));
+
+        .filter-title {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        p {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          color: var(--fl-bgColor, var(--indigo-800)) !important;
+        }
+
+        svg {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          stroke: var(--fl-bgColor, var(--indigo-800));
+        }
+      }
+
+      &:focus {
+        border-top: rem(3) solid transparent;
+        outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+      }
 
       &[aria-expanded='false'] {
         .icon-plus {
@@ -160,16 +180,16 @@
     padding: rem(10) rem(14);
 
     &:hover {
-      background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+      background-color: var(--fl-fgColor, var(--grey-100)) !important;
       border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
-      color: var(--fl-bgColor, #fff) !important;
+      color: var(--fl-bgColor, --indigo-800) !important;
     }
 
     &:focus {
-      background-color: var(--fl-fgColor, var(--indigo-800));
+      background-color: var(--fl-fgColor, var(--grey-100));
       border: 2px solid var(--fl-fgColor, var(--indigo-800));
-      color: var(--fl-bgColor, #fff);
-      outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+      color: var(--fl-bgColor, --indigo-800);
+      outline: var(--fl-fgColor, var(--indigo-800)) solid rem(3);
       outline-offset: rem(3);
     }
   }
@@ -213,40 +233,40 @@
         svg {
           height: rem(16);
           margin: auto;
-          stroke: var(--fl-fgColor, var(--indigo-500));
+          stroke: var(--fl-buttonFgColor, var(--indigo-500));
           width: rem(16);
         }
 
         &:hover {
-          background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+          background-color: var(--fl-fgColor, var(--grey-100)) !important;
           border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
 
-          p {
-            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            color: var(--fl-bgColor, #fff) !important;
+          p:not(:focus) {
+            background-color: var(--fl-fgColor, var(--grey-100)) !important;
+            color: var(--fl-bgColor, var(--indigo-800)) !important;
           }
 
-          svg {
-            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            stroke: var(--fl-bgColor, #fff) !important;
+          svg:not(:focus) {
+            background-color: var(--fl-fgColor, var(--grey-100)) !important;
+            stroke: var(--fl-bgColor, var(--indigo-800)) !important;
           }
         }
     
         &:focus {
-          background-color: var(--fl-fgColor, var(--indigo-800));
+          background-color: var(--fl-fgColor, var(--grey-100));
           border: 2px solid var(--fl-fgColor, var(--indigo-800));
-          color: var(--fl-bgColor, #fff);
-          outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+          color: var(--fl-bgColor, var(--indigo-800));
+          outline: var(--fl-fgColor, var(--indigo-800)) solid rem(3);
           outline-offset: rem(3);
 
           p {
-            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            color: var(--fl-bgColor, #fff) !important;
+            background-color: var(--fl-buttonBgColor, var(--grey-100)) !important;
+            color: var(--fl-buttonFgColor, var(--indigo-800)) !important;
           }
 
           svg {
-            background-color: var(--fl-fgColor, var(--indigo-800)) !important;
-            stroke: var(--fl-bgColor, #fff) !important;
+            background-color: var(--fl-buttonBgColor, var(--grey-100)) !important;
+            stroke: var(--fl-buttonFgColor, var(--indigo-800)) !important;
           }
         }
       }
@@ -287,7 +307,6 @@
 
       .card-tag {
         background-color: #f2f2f2;
-        border: 1px solid black;
         border-radius: rem(48);
         column-gap: rem(4);
         display: flex;

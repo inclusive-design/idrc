@@ -149,21 +149,10 @@ for (let i = 0; i < expandButtons.length; i++) {
 		// since there are two elements that match the selector (one each for static the and dynamic views).
 		// Clicking on one of expand buttons only opens the form that this button corresponds to.
 		const filterBodySelector = '.filter-section[data-section=\'' + expandButtons[i].dataset.section + '\']';
-		const filter = $(expandButtons[i]).parent().siblings(filterBodySelector);
+		const filter = $(expandButtons[i]).siblings(filterBodySelector);
 		filter[expandedState === 'false' ? 'hide' : 'show']();
 	});
 }
-
-// clicking a filter header opens/closes the corresponding filter. It behaves the same as clicking the corresponding
-// expand/collapse button.
-const filterHeaders = document.querySelectorAll('.filter .filter-header');
-
-for (let i = 0; i < filterHeaders.length; i++) {
-	filterHeaders[i].addEventListener('click', () => {
-		$(filterHeaders[i]).find('.filter-expand-button').click();
-	});
-}
-
 
 // Add change event listener to each checkbox, so that can trigger update to
 // number of applied filters to the filter header
