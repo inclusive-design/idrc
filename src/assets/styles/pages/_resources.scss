@@ -15,7 +15,6 @@
     padding-left: rem(8);
     padding-right: rem(8);
     padding-top: rem(32);
-    row-gap: rem(16);
 
     h2 {
       margin-bottom: rem(8);
@@ -195,9 +194,11 @@
   }
 
   .resources-no-results {
-    background-color: #f2f2f2;
-    font-size: 22px;
+    background-color: var(--grey-100);
+    font-size: rem(20);
     font-weight: 600;
+    margin-bottom: rem(24);
+    margin-top: rem(16);
     padding: rem(16);
     padding-left: rem(20);
   }
@@ -207,7 +208,9 @@
     padding-bottom: rem(16);
 
     h3 {
+      border-top: 2px solid var(--grey-200);
       margin-top: 0;
+      padding-top: rem(16);
     }
 
     .filter-tags {
@@ -278,10 +281,8 @@
   }
 
   .resources-filtered-number {
-    border-bottom: 2px solid var(--grey-200);
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: 400;
-    margin-bottom: rem(16);
     padding: rem(16) 0 rem(16) 0;
   }
 

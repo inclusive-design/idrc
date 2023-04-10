@@ -14,6 +14,9 @@
         <symbol id="type" viewBox="0 0 16 18" fill="none">
         {% include 'svg/icon-resource-type.svg' %}
         </symbol>
+        <symbol id="external" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        {% include 'svg/external.svg' %}
+        </symbol>
     </svg>
 
     <div class="card">
@@ -44,10 +47,30 @@
                     {{ description | markdown | safe }}
                 </p>
             </div>
-            <div class="card-link"><a rel="external">Visit resource</a></div>
+            {% if publishedYear %}
+                <div class="card-publishedYear">
+                    <p>Published in {{ publishedYear | safe }}</p>
+                </div>
+            {% endif %}
+            <div class="card-link">
+                <a rel="external">
+                    Visit {{ title }}
+                    <svg role="presentation"><use xlink:href="#external" /></svg>
+                </a>
+            </div>
         </div>
+        {% if thumbnailImage %}
         <div class="card-image">
+           <div class='card-image'>
+            <img src="{{ thumbnailImage | safe }}" 
+                {% if thumbnailAltText %}
+                    alt="{{ thumbnailAltText | safe }}"
+                {% else %}
+                    alt = "Thumbnail image for {{ title | safe }}"
+                {% endif %}
+            />
         </div>
+        {% endif %}
     </div>
 {% endblock %}
 

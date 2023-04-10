@@ -6,7 +6,7 @@
     {% set filterType = "topics" %}
     {% include 'partials/components/filter-resources-header.njk' %}
 
-    <div class="filter-section" data-section="topics">
+    <div class="filter-section" id="filterBody-topics">
         <ul>
             {% for topic in resourceTopics.resourceTopics %}
                 <li>
@@ -23,7 +23,7 @@
     {% set filterType = "types" %}
     {% include 'partials/components/filter-resources-header.njk' %}
 
-    <div class="filter-section" data-section="types">
+    <div class="filter-section" id="filterBody-types">
         <ul>
             {% for type in resourceTypes.resourceTypes %}
                 <li>

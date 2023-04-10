@@ -1,4 +1,4 @@
-<button type="button" class="filter-expand-button" data-section="{{ filterType | replace(" ", "") }}" aria-expanded="true" aria-label="collapse the {{ filterType }} filter">
+<button type="button" class="filter-expand-button" id="filterHeader-{{ filterType }}" aria-expanded="true" aria-label="collapse the {{ filterType }} filter">
     <svg role="presentation"><use xlink:href="{{ filterIconId }}" /></svg>
     <div class="filter-title">
         <p>{{ filterTitle }}</p>

@@ -8,6 +8,8 @@ permalink: resourceData.json
       "title": {{ item.data.title | dump | safe }},
       "description": {{ item.data.description | dump | safe }},
       "publishedYear": {% if item.data.publishedYear %} {{ item.data.publishedYear | dump | safe }} {% else %} "" {% endif %},
+      "thumbnailImage": {% if item.data.thumbnailImage %} {{ item.data.thumbnailImage | dump | safe }} {% else %} "" {% endif %},
+      "thumbnailAltText": {% if item.data.thumbnailAltText %} {{ item.data.thumbnailAltText | dump | safe }} {% else %} "" {% endif %},
       "topics": [
         {%- for topic in item.data.topics -%}
         {{ topic | dump | safe }}{% if not loop.last %},{% endif %}

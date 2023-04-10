@@ -170,10 +170,13 @@ const Resource = ({entry}) => (
 	<Preview
 		entry={entry}
 		path="layouts/single--resource.njk"
-		context={({title, description, topics, types }) => ({
+		context={({title, description, publishedYear, topics, types, thumbnailImage, thumbnailAltText }) => ({
 			previewMode: true,
 			title,
 			description,
+			publishedYear,
+			thumbnailImage,
+			thumbnailAltText,
 			topics,
 			types
 		})}

@@ -83,6 +83,35 @@ function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) { // e
 }
 
 /*
+ * Render filters section with states
+ *
+ * @param {Array} selectedTopics - An array of the suffix of the topic checkbox name that are checked
+ * @param {Array} selectedTypes - An array of the suffix of the type checkbox name that are checked
+*/
+function renderFilters (selectedTopics, selectedTypes) {
+	const sections = ["topics", "types"];
+	for (const section of sections) {
+		// When the page is not initially rendered like page is refreshed or search is done
+		// make sure that filter sections are expanded/collapsed as it was before
+		const expandButton = document.querySelector(`#filterHeader-${section}`);
+		if (expandButton) {
+			expandButton.setAttribute('aria-expanded', localStorage.getItem(section));
+		}
+		const filterBodySelector = `#filterBody-${section}`;
+		const filter = $(expandButton).siblings(filterBodySelector);
+		filter[localStorage.getItem(section) === 'false' ? 'hide' : 'show']();
+		// add checked states for resourceTopics and media types
+		if (section === "topics") {
+			renderCheckboxStats(document.querySelector(`#filterBody-topics`), 'to_', selectedTopics);
+			renderNumberOfAppliedFilters(document.querySelector('#filter-topics'), 'to_');
+		} else {
+			renderCheckboxStats(document.querySelector(`#filterBody-types`), 'ty_', selectedTypes);
+			renderNumberOfAppliedFilters(document.querySelector('#filter-types'), 'ty_');
+		}
+	}
+}
+
+/*
  * Set the given list of checkbox values to 'checked' state.
  *
  * @param {Object} container - The container that has all checkbox elements
@@ -128,15 +157,15 @@ function htmlDecode(input) {
 }
 
 /*
- * Process each object in the data set to convert some field value to formats for display.
- * By default sort by publishedYear. 
- * @param {Array<Object>} dataSet - The data set to process.
- * @return The same set of the data set with fields converted.
+ * Process each resource in the resources to convert some field value to be formated for display.
+ * By default, the resources to be displayed are sorted by publishedYear. 
+ * @param {Array<Object>} resources - An array of resources to be processed.
+ * @return sorted resources with fields converted.
  */
-function processResourcesDisplayResults(inArray) { // eslint-disable-line no-unused-vars
+function processResourcesDisplayResults(resources) { // eslint-disable-line no-unused-vars
 	const sortedArray = [];
-	const resultsWithPublishedYear = inArray.filter(result => result.publishedYear);
-	const resultsWithoutPublishedYear = inArray.filter(result => !result.publishedYear);
+	const resultsWithPublishedYear = resources.filter(result => result.publishedYear);
+	const resultsWithoutPublishedYear = resources.filter(result => !result.publishedYear);
 	resultsWithPublishedYear.sort((a, b) => {
 		let compare = b.publishedYear.localeCompare(a.publishedYear);
 		if (compare === 0) {
@@ -160,9 +189,9 @@ function processResourcesDisplayResults(inArray) { // eslint-disable-line no-unu
  * @param {Array} resources - An array of resources to be rendered.
  * @return directly add the applied filter html to the content selector.
  */
-function renderAppliedFilters(resources, resourceTopics, resourceTypes) {
+function renderSearchResults(resources, resourceTopics, resourceTypes) {
 	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
-	let appliedFilterHtml = '';
+	let appliedFilterHtml = '<h2>Search results</h2><div class="resources-applied-filters">';
 
 	if (resources.length === 0) {
 		appliedFilterHtml += `<div class="resources-no-results"><p>Sorry, no results were found based on your applied filters.</p></div>`;
@@ -184,7 +213,7 @@ function renderAppliedFilters(resources, resourceTopics, resourceTypes) {
 		const params = new URLSearchParams(window.location.search);
 		params.delete(appliedFilter.name);
 
-		appliedFilterHtml += `<button aria-label="Remove filter resource ${tagType} ${filterLabel}" data-tag=${appliedFilter.id} class="filter-tag" onClick="window.location.href='${window.location.href.split('?')[0]}?${params.toString()}'">
+		appliedFilterHtml += `<button aria-label="Remove the filtering on a resource ${tagType} ${filterLabel}" id="filterTag-${appliedFilter.id}" class="filter-tag" onClick="window.location.href='${window.location.href.split('?')[0]}?${params.toString()}'">
 			<svg role="presentation"><use xlink:href="#${tagType}" /></svg>
 			<p>${filterLabel}</p>
 			<svg role="presentation"><use xlink:href="#close" /></svg>
@@ -195,9 +224,10 @@ function renderAppliedFilters(resources, resourceTopics, resourceTypes) {
 			<div class="filter-clear-all">
 				<button class="reset-button">Clear all filters</button>
 			</div>
-		</div>`;
+		</div>
+	</div>`;
 
-	document.querySelector('.resources-applied-filters').innerHTML = appliedFilterHtml;
+	document.querySelector('.content').innerHTML = appliedFilterHtml;
 }
 
 /*
@@ -207,7 +237,7 @@ function renderAppliedFilters(resources, resourceTopics, resourceTypes) {
  */
 function renderResources(resources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
 	const hostURL = window.location.host;
-	let resourcesHtml = '';
+	let resourcesHtml = '<div class="resources-result">';
 
 	resources.forEach(resource => {
 		const resourceLink = document.createElement('a');
@@ -236,18 +266,19 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 			});
 		}
 		resourcesHtml += `
+				</div>
+				<div class='card-description'>
+					<p>${resource.description}</p>
+				</div>
+				${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${resource.publishedYear}</p></div>` : ''}
+				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${resource.title}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
+				</div>
+				${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt=${resource.thumbnailAltText ? resource.thumbnailAltText : `Thumbnail image for ${resource.title}`}></div>` : ''}
 			</div>
-			<div class='card-description'>
-				<p>${resource.description}</p>
-			</div>
-			${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${resource.publishedYear}</p></div>` : ''}
-			<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${resource.title}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
-			</div>
-			${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt=${resource.thumbnailAltText ? resource.thumbnailAltText : `Thumbnail image for ${resource.title}`}></div>` : ''}
 		</div>`;
 	});
 
-	document.querySelector('.resources-result').innerHTML = resourcesHtml;
+	document.querySelector('.content').innerHTML += resourcesHtml;
 }
 
 /*
@@ -279,4 +310,17 @@ function renderPagination(pagination) { // eslint-disable-line no-unused-vars
 	paginationHtml += `
 		</ul>`;
 	document.querySelector('.pagination').innerHTML = paginationHtml;
+}
+
+/*
+ * Set focus back on items before the refresh by filter changes
+*/
+function restoreFocus() {
+	if (localStorage.getItem('setFocusOn')) {
+		const focusElement = document.querySelector(localStorage.getItem('setFocusOn'));
+		if (focusElement && focusElement.focus) {
+			focusElement.focus();
+		}
+		localStorage.removeItem('setFocusOn');
+	}
 }
