@@ -186,17 +186,17 @@ function processResourcesDisplayResults(resources) { // eslint-disable-line no-u
 
 /*
  * Render the applied filters
- * @param {Array} resources - An array of resources to be rendered.
+ * @param {Integer} numberOfResources - number of resources to be rendered.
  * @return directly add the applied filter html to the content selector.
  */
-function renderSearchResults(resources, resourceTopics, resourceTypes) {
+function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
 	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
 	let appliedFilterHtml = '<h2>Search results</h2><div class="resources-applied-filters">';
 
-	if (resources.length === 0) {
+	if (numberOfResources === 0) {
 		appliedFilterHtml += `<div class="resources-no-results"><p>Sorry, no results were found based on your applied filters.</p></div>`;
 	} else {
-		appliedFilterHtml += `<div class="resources-filtered-number" role="alert"><p>Showing ${resources.length} ${resources.length === 1 ? 'result' : 'results'}</p></div>`
+		appliedFilterHtml += `<div class="resources-filtered-number" role="alert"><p>Showing ${numberOfResources} ${numberOfResources === 1 ? 'result' : 'results'}</p></div>`
 	}
 
 	appliedFilterHtml += '<h3>Applied filters</h3><div class="filter-tags">';

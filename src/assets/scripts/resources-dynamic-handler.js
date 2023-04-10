@@ -66,7 +66,7 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 			renderFilters(selectedTopics, selectedTypes);
 		}
 		if (filterQuery) {
-			renderSearchResults(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
+			renderSearchResults(resultsToDisplay.length, resourcesData.resourceTopics, resourcesData.resourceTypes);
 		}
 		renderResources(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
 		if (pagination) {
