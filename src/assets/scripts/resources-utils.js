@@ -274,9 +274,10 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 				<div class='card-link'><a rel='external' href='${escapeSpecialCharactersForHTML(resource.link)}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
 				</div>
 				${resource.thumbnailImage ? `<div class='card-image'><img src="${escapeSpecialCharactersForHTML(resource.thumbnailImage)}" alt="${resource.thumbnailAltText ? `${escapeSpecialCharactersForHTML(resource.thumbnailAltText)}` : `Thumbnail image for ${escapeSpecialCharactersForHTML(resource.title)}`}"></div>` : ''}
-			</div>
-		</div>`;
+			</div>`;
 	});
+
+	resourcesHtml += '</div>';
 
 	document.querySelector('.content').innerHTML += resourcesHtml;
 }
