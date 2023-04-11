@@ -273,7 +273,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 				${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${resource.publishedYear}</p></div>` : ''}
 				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${resource.title}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
 				</div>
-				${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt=${resource.thumbnailAltText ? `${resource.thumbnailAltText}` : `Thumbnail image for ${resource.title}`}></div>` : ''}
+				${resource.thumbnailImage ? `<div class='card-image'><img src="${resource.thumbnailImage}" alt="${resource.thumbnailAltText ? `${resource.thumbnailAltText}` : `Thumbnail image for ${resource.title}`}"></div>` : ''}
 			</div>
 		</div>`;
 	});
