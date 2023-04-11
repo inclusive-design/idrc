@@ -29,13 +29,11 @@ Jutta
 
 ![Graphic indicanting the local and global optima](/media/392206aa-418f-510d-d8bf-2b4af0ef124a.jpg "Finding the global optima")
 
-
-
 ## C﻿omunity News
 
 ### The Honourable David C. Onley, Former Lieutenant-Governor of Ontario
 
-<p><a href="https://commons.wikimedia.org/wiki/File:David_Onley_with_Her_Majesty.jpg#/media/File:David_Onley_with_Her_Majesty.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/David_Onley_with_Her_Majesty.jpg/1200px-David_Onley_with_Her_Majesty.jpg" alt="David Onley with Her Majesty.jpg"></a><br>By &lt;a href="//commons.wikimedia.org/w/index.php?title=User:LgOntario&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="User:LgOntario (page does not exist)"&gt;LgOntario&lt;/a&gt; - &lt;span class="int-own-work" lang="en"&gt;Own work&lt;/span&gt;, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=5174703">Link</a></p>
+![https://commons.wikimedia.org/wiki/File:David_Onley_with_Her_Majesty.jpg#/media/File:David_Onley_with_Her_Majesty.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/David_Onley_with_Her_Majesty.jpg/440px-David_Onley_with_Her_Majesty.jpg)
 
 The IDRC community is mourning the loss of former Lieutenant-Governor David Onley, who passed away in January. David was a passionate advocate for disability rights and accessibility who made a difference in the lives of so many Ontarians, both as a journalist and as the Lieutenant-Governor of Ontario.\
 \
@@ -45,15 +43,15 @@ David was always a good friend to the IDRC and made the time to come to campus l
 
 ## Initiatives
 
-## A Clusive Success Story
+### A Clusive Success Story
 
 [Clusive](https://www.cast.org/products-services/products/clusive) is a free, flexible, adaptive and customizable learning environment. It is a web application for students and teachers that addresses access and learning barriers present in digital and open learning materials. Teachers can create classes of students, upload and assign ebooks to those classes, and monitor students' progress. Students can upload books as well and create their own virtual library. They can use built-in tools to alter the display of the contents of a book in terms of text size, line spacing, letter spacing, colour contrast themes and font, including a font developed for reading with dyslexia. The Reader component provides read-aloud and can be configured with different voices and reading speeds. When activated, read-aloud speaks the text and highlights individual words as they are spoken. There are also supports for notetaking, word definition lookup and text simplification.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0vauZJBWhXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\
 \
-Clusive was developed by the Center on Inclusive Software for Learning (CISL). [Learn more about Clusive](https://clusive.cast.org/).\
+Clusive was developed by the Center on Inclusive Software for Learning (CISL). \\[Learn more about Clusive](https://clusive.cast.org/).\
 \
-Read about a [real-life Clusive success story](https://wecount.inclusivedesign.ca/views/a-clusive-success-story/).
+Read about a \\[real-life Clusive success story](https://wecount.inclusivedesign.ca/views/a-clusive-success-story/).
 
 ## Healthcare OER
 
