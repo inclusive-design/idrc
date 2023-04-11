@@ -388,10 +388,10 @@ function restoreFocus() { // eslint-disable-line no-unused-vars
  * Replace special characters with their entity name
 */
 function escapeSpecialCharactersForHTML(htmlStr) {
-	htmlStr.replace(/&/g, "&amp;")
-         .replace(/</g, "&lt;")
-         .replace(/>/g, "&gt;")
-         .replace(/"/g, "&quot;")
-         .replace(/'/g, "&#39;");
+	htmlStr.replace(/&/g, '&amp;')
+		.replace(/</g, '&lt;')
+		.replace(/>/g, '&gt;')
+		.replace(/"/g, '&quot;')
+		.replace(/'/g, '&#39;');
 	return htmlStr;
 }
