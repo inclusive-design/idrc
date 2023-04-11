@@ -244,7 +244,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 		resourceLink.href = resource.link;
 		resourcesHtml += `    	<div class='card'>
 			<div class='card-detail'>
-			<h3 class='card-title'>${resource.title}</h3>
+			<h3 class='card-title'>${escapeSpecialCharactersForHTML(resource.title)}</h3>
 			<div class='card-tags'>
 		`;
 		if (resource.topics) {
@@ -268,12 +268,12 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 		resourcesHtml += `
 				</div>
 				<div class='card-description'>
-					<p>${resource.description}</p>
+					<p>${escapeSpecialCharactersForHTML(resource.description)}</p>
 				</div>
-				${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${resource.publishedYear}</p></div>` : ''}
-				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${resource.title}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
+				${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${escapeSpecialCharactersForHTML(resource.publishedYear)}</p></div>` : ''}
+				<div class='card-link'><a rel='external' href='${escapeSpecialCharactersForHTML(resource.link)}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
 				</div>
-				${resource.thumbnailImage ? `<div class='card-image'><img src="${resource.thumbnailImage}" alt="${resource.thumbnailAltText ? `${resource.thumbnailAltText}` : `Thumbnail image for ${resource.title}`}"></div>` : ''}
+				${resource.thumbnailImage ? `<div class='card-image'><img src="${escapeSpecialCharactersForHTML(resource.thumbnailImage)}" alt="${resource.thumbnailAltText ? `${escapeSpecialCharactersForHTML(resource.thumbnailAltText)}` : `Thumbnail image for ${escapeSpecialCharactersForHTML(resource.title)}`}"></div>` : ''}
 			</div>
 		</div>`;
 	});
@@ -381,4 +381,16 @@ function restoreFocus() { // eslint-disable-line no-unused-vars
 		}
 		localStorage.removeItem('setFocusOn');
 	}
+}
+
+/*
+ * Replace special characters with their entity name
+*/
+function escapeSpecialCharactersForHTML(htmlStr) {
+	htmlStr.replace(/&/g, "&amp;")
+         .replace(/</g, "&lt;")
+         .replace(/>/g, "&gt;")
+         .replace(/"/g, "&quot;")
+         .replace(/'/g, "&#39;");
+	return htmlStr;
 }
