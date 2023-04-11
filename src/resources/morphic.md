@@ -5,6 +5,7 @@ description: A centralized tool bar that allows users to easily access and
   customize the accessibility preferences on their computer, and export it to
   bring with them to any other computer they use.
 publishedYear: "2020"
+thumbnailImage: /media/resource-morphic.png
 topics:
   - design
 types:
