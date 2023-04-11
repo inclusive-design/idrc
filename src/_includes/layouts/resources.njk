@@ -42,12 +42,14 @@
             </form>
 
             <div class="content">
-                {# content of this block is generated from renderSearchResults and renderResources methods in resources-utils, #}
-                {# two methods are called from resources-dynamic-handler.js #}
+                {# This container lists either all resources or resources filtered based on user's filtering selections. #}
+                {# It's dynamically rendered at the page load by resources-dynamic-handler.js #}
             </div>
         </div>
 
         <nav class="pagination" aria-label="pagination">
+            {# This container lists pagination to show set amount of resources at a time. #}
+            {# It's dynamically rendered at the page load by resources-dynamic-handler.js #}
         </nav>
     </article>
 {% endblock %}

@@ -1,6 +1,6 @@
 // The main process that dynamically renders the Resources page.
 
-/* global createPagination, processResourcesDisplayResults, filterResources, renderFilters, renderSearchResults, renderResources, renderPagination, restoreFocus*/
+/* global createPagination, processResourcesDisplayResults, filterResources, renderFilters, renderNumberOfAppliedFilters, renderSearchResults, renderResources, renderPagination, bindEventListeners, restoreFocus */
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -73,69 +73,15 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 			renderPagination(pagination);
 		}
 
-		// Clicking the expand button on the filter header opens/closes the filter
-		const expandButtons = document.querySelectorAll('.filter-expand-button');
-
-		for (let i = 0; i < expandButtons.length; i++) {
-			// Add event listener for expand buttons
-			expandButtons[i].addEventListener('click', (e) => {
-				e.preventDefault();
-				e.stopPropagation();
-				const currentExpandedValue = expandButtons[i].getAttribute('aria-expanded');
-				const expandedState = currentExpandedValue === 'true' ? 'false' : 'true';
-				const filterType = expandButtons[i].getAttribute('id').split('-')[1];
-				expandButtons[i].setAttribute('aria-expanded', expandedState);
-				expandButtons[i].setAttribute('aria-label', `${expandedState === 'true' ? "collapse" : "expand"} the ${filterType} filter`);
-				
-				// Store expanded status into local storage, so that expanded status for specific filter section is remembered.
-				localStorage.setItem(filterType, expandedState);
-
-				// Open/close the appropriate filter
-				// Find the filter body by using its position relative to the button as well as the css selector
-				// since there are two elements that match the selector (one each for static the and dynamic views).
-				// Clicking on one of expand buttons only opens the form that this button corresponds to.
-				const filterBodySelector = `#filterBody-${filterType}`;
-				const filter = $(expandButtons[i]).siblings(filterBodySelector);
-				filter[expandedState === 'false' ? 'hide' : 'show']();
-			});
-		}
-
-
-		// Clicking 'reset filter' button redirects the page to the initial state without search term and filtering conditions
-		if (filterQuery) {
-			document.querySelector('.reset-button').addEventListener('click', () => {
-				localStorage.setItem('setFocusOn', '.apply-button');
-				window.location = '/resources';
-			});
-		}
-
-		// Clicking 'apply filter' button redirects the page with applied filter options
- 		document.querySelector('.apply-button').addEventListener('click', () => {
-			localStorage.setItem('setFocusOn', '.apply-button');
-		});
-
-		// Save element to focus after a filer option is removed by clicking on applied filter options
-		for (const filterTag of document.querySelectorAll('.filter-tag')) {
-			filterTag.addEventListener('click', (e) => {
-				const filter = $(filterTag);
-				if (filter.prev().length > 0) {
-					localStorage.setItem('setFocusOn', `#${filter.prev()[0].getAttribute('id')}`);
-				} else {
-					localStorage.setItem('setFocusOn', `#${filter.next()[0].getAttribute('id')}`);
-				}
-			});
-		}
-
 		restoreFocus();
-		
+		bindEventListeners();
 	});
 });
 
-// Add change event listener to each checkbox, so that can trigger update to
-// number of applied filters to the filter header
-const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
-
-for (const checkbox of filterCheckboxes) {
+// Add change event listener to each checkbox, so that can trigger update to number of applied filters to the filter header.
+// Note that this bind listeners are outside of the fetch function, because rendering of filters are not dynamic and
+// doesn't rely on the fetch of resources data to complete.
+for (const checkbox of document.querySelectorAll('.filter-checkbox')) {
 	checkbox.addEventListener('change', () => {
 		const checkboxPrefix = checkbox.name.split('_')[0] + '_';
 		if (checkboxPrefix && checkbox.dataset.filter) {

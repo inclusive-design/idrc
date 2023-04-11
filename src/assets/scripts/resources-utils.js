@@ -88,8 +88,8 @@ function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) { // e
  * @param {Array} selectedTopics - An array of the suffix of the topic checkbox name that are checked
  * @param {Array} selectedTypes - An array of the suffix of the type checkbox name that are checked
 */
-function renderFilters (selectedTopics, selectedTypes) {
-	const sections = ["topics", "types"];
+function renderFilters(selectedTopics, selectedTypes) { // eslint-disable-line no-unused-vars
+	const sections = ['topics', 'types'];
 	for (const section of sections) {
 		// When the page is not initially rendered like page is refreshed or search is done
 		// make sure that filter sections are expanded/collapsed as it was before
@@ -101,11 +101,11 @@ function renderFilters (selectedTopics, selectedTypes) {
 		const filter = $(expandButton).siblings(filterBodySelector);
 		filter[localStorage.getItem(section) === 'false' ? 'hide' : 'show']();
 		// add checked states for resourceTopics and media types
-		if (section === "topics") {
-			renderCheckboxStats(document.querySelector(`#filterBody-topics`), 'to_', selectedTopics);
+		if (section === 'topics') {
+			renderCheckboxStats(document.querySelector('#filterBody-topics'), 'to_', selectedTopics);
 			renderNumberOfAppliedFilters(document.querySelector('#filter-topics'), 'to_');
 		} else {
-			renderCheckboxStats(document.querySelector(`#filterBody-types`), 'ty_', selectedTypes);
+			renderCheckboxStats(document.querySelector('#filterBody-types'), 'ty_', selectedTypes);
 			renderNumberOfAppliedFilters(document.querySelector('#filter-types'), 'ty_');
 		}
 	}
@@ -158,7 +158,7 @@ function htmlDecode(input) {
 
 /*
  * Process each resource in the resources to convert some field value to be formated for display.
- * By default, the resources to be displayed are sorted by publishedYear. 
+ * By default, the resources to be displayed are sorted by publishedYear.
  * @param {Array<Object>} resources - An array of resources to be processed.
  * @return sorted resources with fields converted.
  */
@@ -189,20 +189,20 @@ function processResourcesDisplayResults(resources) { // eslint-disable-line no-u
  * @param {Integer} numberOfResources - number of resources to be rendered.
  * @return directly add the applied filter html to the content selector.
  */
-function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
+function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
 	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
 	let appliedFilterHtml = '<h2>Search results</h2><div class="resources-applied-filters">';
 
 	if (numberOfResources === 0) {
-		appliedFilterHtml += `<div class="resources-no-results"><p>Sorry, no results were found based on your applied filters.</p></div>`;
+		appliedFilterHtml += '<div class="resources-no-results"><p>Sorry, no results were found based on your applied filters.</p></div>';
 	} else {
-		appliedFilterHtml += `<div class="resources-filtered-number" role="alert"><p>Showing ${numberOfResources} ${numberOfResources === 1 ? 'result' : 'results'}</p></div>`
+		appliedFilterHtml += `<div class="resources-filtered-number" role="alert"><p>Showing ${numberOfResources} ${numberOfResources === 1 ? 'result' : 'results'}</p></div>`;
 	}
 
 	appliedFilterHtml += '<h3>Applied filters</h3><div class="filter-tags">';
 
 	for (const appliedFilter of appliedFilters) {
-		const tagType = resourceTopics.find(topicObj => topicObj.value === appliedFilter.id) ? 'topic': 'type';
+		const tagType = resourceTopics.find(topicObj => topicObj.value === appliedFilter.id) ? 'topic' : 'type';
 		let filterLabel = '';
 		if (tagType === 'topic') {
 			filterLabel = resourceTopics.find(topicObj => topicObj.value === appliedFilter.id).label;
@@ -217,9 +217,9 @@ function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
 			<svg role="presentation"><use xlink:href="#${tagType}" /></svg>
 			<p>${filterLabel}</p>
 			<svg role="presentation"><use xlink:href="#close" /></svg>
-		</button>`
+		</button>`;
 	}
-	
+
 	appliedFilterHtml += `
 			<div class="filter-clear-all">
 				<button class="reset-button">Clear all filters</button>
@@ -273,7 +273,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 				${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${resource.publishedYear}</p></div>` : ''}
 				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${resource.title}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
 				</div>
-				${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt=${resource.thumbnailAltText ? resource.thumbnailAltText : `Thumbnail image for ${resource.title}`}></div>` : ''}
+				${resource.thumbnailImage ? `<div class='card-image'><img src="${resource.thumbnailImage}" alt="${resource.thumbnailAltText ? resource.thumbnailAltText : `Thumbnail image for ${resource.title}`}></div>` : ''}"
 			</div>
 		</div>`;
 	});
@@ -313,9 +313,67 @@ function renderPagination(pagination) { // eslint-disable-line no-unused-vars
 }
 
 /*
+* Set bind event listeners to the filter components
+*/
+function bindEventListeners() { // eslint-disable-line no-unused-vars
+	// Clicking the expand button on the filter header opens/closes the filter
+	const expandButtons = document.querySelectorAll('.filter-expand-button');
+
+	for (let i = 0; i < expandButtons.length; i++) {
+		// Add event listener for expand buttons
+		expandButtons[i].addEventListener('click', (e) => {
+			e.preventDefault();
+			e.stopPropagation();
+			const currentExpandedValue = expandButtons[i].getAttribute('aria-expanded');
+			const expandedState = currentExpandedValue === 'true' ? 'false' : 'true';
+			const filterType = expandButtons[i].getAttribute('id').split('-')[1];
+			expandButtons[i].setAttribute('aria-expanded', expandedState);
+			expandButtons[i].setAttribute('aria-label', `${expandedState === 'true' ? 'collapse' : 'expand'} the ${filterType} filter`);
+
+			// Store expanded status into local storage, so that expanded status for specific filter section is remembered.
+			localStorage.setItem(filterType, expandedState);
+
+			// Open/close the appropriate filter
+			// Find the filter body by using its position relative to the button as well as the css selector
+			// since there are two elements that match the selector (one each for static the and dynamic views).
+			// Clicking on one of expand buttons only opens the form that this button corresponds to.
+			const filterBodySelector = `#filterBody-${filterType}`;
+			const filter = $(expandButtons[i]).siblings(filterBodySelector);
+			filter[expandedState === 'false' ? 'hide' : 'show']();
+		});
+	}
+
+
+	// Clicking 'reset filter' button redirects the page to the initial state without search term and filtering conditions
+	if (document.querySelector('.reset-button') != null) {
+		document.querySelector('.reset-button').addEventListener('click', () => {
+			localStorage.setItem('setFocusOn', '.apply-button');
+			window.location = '/resources';
+		});
+	}
+
+	// Clicking 'apply filter' button redirects the page with applied filter options
+	 document.querySelector('.apply-button').addEventListener('click', () => {
+		localStorage.setItem('setFocusOn', '.apply-button');
+	});
+
+	// Save element to focus after a filer option is removed by clicking on applied filter options
+	for (const filterTag of document.querySelectorAll('.filter-tag')) {
+		filterTag.addEventListener('click', () => {
+			const filter = $(filterTag);
+			if (filter.prev().length > 0) {
+				localStorage.setItem('setFocusOn', `#${filter.prev()[0].getAttribute('id')}`);
+			} else {
+				localStorage.setItem('setFocusOn', `#${filter.next()[0].getAttribute('id')}`);
+			}
+		});
+	}
+}
+
+/*
  * Set focus back on items before the refresh by filter changes
 */
-function restoreFocus() {
+function restoreFocus() { // eslint-disable-line no-unused-vars
 	if (localStorage.getItem('setFocusOn')) {
 		const focusElement = document.querySelector(localStorage.getItem('setFocusOn'));
 		if (focusElement && focusElement.focus) {
