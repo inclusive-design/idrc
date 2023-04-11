@@ -1,90 +1,83 @@
 ---
 layout: layouts/single--idea.njk
-title: Latest from We Count
-date: 2021-11-10T11:58:14.958Z
+title: We Count Recount
+date: 2023-04-11T12:42:34.514Z
 author: IDRC Team
 thumbnailImage: /media/we-count-logo_colour_no-background.png
 ---
 ## A Message from Our Director
 
-Friends and colleagues,
+Dear Community,\
+\
+Lately I’ve come to wonder: if our human endeavour on this planet is a vehicle, does it have a brake, warning lights, a reverse gear or even a steering wheel that isn’t stuck on forward?\
+ \
+I don’t think I’m a luddite and I don’t think it is just my age. I’m seeing the prescient warnings of wise women like Ursula Franklin playing out. She warned us about the [harms of prescriptive technologies](https://en.wikipedia.org/wiki/Ursula_Franklin). I argued that the benefits for people with disabilities of emerging technologies outweighed the harms. I think that balance has been tipping in the wrong direction of late. Beyond the direct harms of things like automated decision systems, the most liberating technologies are not financially accessible or usable by the people that need them the most. The existence of these technologies gives the false impression that the barriers can be dismissed or ignored (for example, see [How Innovation Sets Me Backwards](https://immerse.news/how-innovation-sets-me-backwards-91b30e0b6b95)).\
+\
+It isn’t only people who are marginalized who are harmed by the lack of a safe and humanely controllable vehicle to navigate the increasingly unpredictable terrain in our future. It ultimately harms our human endeavour as a whole. To illustrate this with another analogy, I’ve turned to complexity theory to illustrate my concern. Complexity theory offers the hill climbing model to demonstrate the dilemma we face as a civilization. Think of our collective human journey through history as navigating a complex, unpredictable, changing terrain of mountains and valleys that is shrouded by fog (see figure below). One of the dangers we face is flooding and the water level is rising. To survive as a species, we need to find a generous high place that has room for all of us.\
+  \
+Unfortunately, we are stuck on a small, steep, spiky mountain. In our attempt to get to the top of this small mountain we are eroding the slope, making it harder for many people to climb out of danger and destroying everything we need to survive in the long term. Because the hill is steep and space is scarce, we think we need to compete. We believe that if one of us makes it up, others must come down, and when others win, we lose. The popular and respected message is that safety and success is to go higher up. We are told that to succeed we need to do what we have been doing more effectively, efficiently, accurately and consistently.\
+ \
+The tragedy is that within the same terrain there is a large, generous mountain that could fit all of us and that won’t be submerged. However, to get to it we need to reverse direction and go against much of what we have been taught, all the formula we think will lead to our success. Rather than going up our local steep mountain, we need to go down to find the more generous higher plateau where we can collectively survive and thrive. We have been taught that going down is failing, dangerous and shameful.\
+\
+To reach our destination we also need to collaborate rather than compete and seek our collective success because to make it we need as many diverse views as possible. We need to listen to the people who are currently at the bottom; they are closest to the place we need to go, collectively they have the best sense of the most promising terrain, and they also have the best view of where the rising water is. This is hard for most people to do because the people at the bottom have been denigrated and labelled as failures. Our systems of communication, navigation, education, transportation, reward and valuation have been designed to exclude them. Our respected systems of knowledge and evidence don’t support them. We have broken their trust. We have sacrificed them in the rush to progress up our steep hill. In the process we have chosen to create systems that won’t work for us when we are vulnerable, and we will all be vulnerable.\
+ \
+At the IDRC we are working to increase the safety and choices available in our adoption of new innovations such as artificial intelligence. We are drafting possible AI Accessibility and Equity requirements. We welcome your input and ideas.\
+\
+All my best,\
+\
+Jutta
 
-What is intelligence? The Merriam-Webster Dictionary definition is: “The ability to learn or understand or to deal with new or trying situations. Also: the skilled use of reason.” What we consider to be human intelligence appears to have created a swarm of trying situations that we do not know how to deal with. Is it time to reconsider what we mean by intelligence? We have had one expansion of intelligence when we admitted that there might be another dimension to intelligence, namely emotional intelligence. The Psychology Today definition is: “Emotional intelligence refers to the ability to identify and manage one’s own emotions, as well as the emotions of others.”
+![Graphic indicanting the local and global optima](/media/392206aa-418f-510d-d8bf-2b4af0ef124a.jpg "Finding the global optima")
 
-Neither of these dimensions of intelligence appears to have considered the broader or long-term consequences of our decisions. Our reasoning has been short-ranged and over-simplistic. Our strategizing has been enamored of reducing considerations to numbers and complex factors into cleanly boxed categories, ignoring the entangled connections and relationships.
 
-Our intelligence, even when expanded to include emotional intelligence, appears to be bereft of a global view and an ethical compass. We seem not to be cognizant of the simple fact that we are all connected and living on a single planet. That what goes around, comes around. We can’t recognize the importance of maintaining our diversity or learning to navigate complexity. Because we have created artificial intelligence in our image, it has only amplified, accelerated, and automated our deficient form of intelligence. It has become a power tool that speeds us to further trying situations. At Project We Count we hope to do a small part to create a more complete, long-term, broader definition of human and machine intelligence.
 
-All my best,
+## C﻿omunity News
 
-Jutta 
+### The Honourable David C. Onley, Former Lieutenant-Governor of Ontario
 
-## News from the Field
+<p><a href="https://commons.wikimedia.org/wiki/File:David_Onley_with_Her_Majesty.jpg#/media/File:David_Onley_with_Her_Majesty.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/David_Onley_with_Her_Majesty.jpg/1200px-David_Onley_with_Her_Majesty.jpg" alt="David Onley with Her Majesty.jpg"></a><br>By &lt;a href="//commons.wikimedia.org/w/index.php?title=User:LgOntario&amp;amp;action=edit&amp;amp;redlink=1" class="new" title="User:LgOntario (page does not exist)"&gt;LgOntario&lt;/a&gt; - &lt;span class="int-own-work" lang="en"&gt;Own work&lt;/span&gt;, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=5174703">Link</a></p>
 
-[Gathering Strength, Gathering Storms: The One Hundred Year Study on Artificial Intelligence (AI100) 2021 Study Panel Report](https://ai100.stanford.edu/2021-report/gathering-strength-gathering-storms-one-hundred-year-study-artificial-intelligence)
-The 2021 AI100 report is out! Learn more about the current state of AI, its impacts and where the technology is moving in this report written by multidisciplinary researchers in the field. 
-
-[Toyota Pauses Paralympics Self-Driving Buses after One Hits Visually Impaired Athlete](https://www.theguardian.com/technology/2021/aug/28/toyota-pauses-paralympics-self-driving-buses-after-one-hits-visually-impaired-athlete)
-During the Paralympics in Tokyo, as this Guardian article reveals, Toyota paused their self-driving shuttle service after an athlete who has a vision disability was struck by one of their self-driving buses. Like the[ pedestrian who was killed by a self-driving car in 2018](https://www.theguardian.com/technology/2018/may/23/uber-shuts-down-self-driving-operation-in-arizona-two-months-after-fatal-crash), this athlete did not fit the "standard" pedestrian model, which suggests that self-driving AI systems may not yet be built for diversity or be able to work with outlier data.  
-
-[Now That Machines Can Learn, Can They Unlearn?](https://www.wired.com/story/machines-can-learn-can-they-unlearn)
-With increased privacy concerns about AI systems, as this WIRED article explains, researchers are testing whether sensitive data can be removed from those systems without completely retraining them. 
-
-[The Machine and Deep Learning Compendium](https://book.mlcompendium.com/)
-Want to learn more about machine and deep learning? Check out the ML Compendium, a highly detailed resource with over 500 ML-related topics, and participate in expanding the resource and making it more accessible. 
-
-[How AI Can Help Shatter Barriers to Equality](https://www.ted.com/talks/jamila_gordon_how_ai_can_help_shatter_barriers_to_equality)
-In this TED Talk, Jamila Gordon shows how AI is helping refugees, migrants and those from disadvantaged backgrounds find jobs and develop the skills they need to work effectively and safely. 
-
-[Foundation Models Risk Exacerbating ML’s Ethical Challenges](https://venturebeat.com/2021/08/18/foundation-models-risk-exacerbating-mls-ethical-challenges/)
-Learn about the far-reaching consequences of foundation models in this VentureBeat article. 
-
-[How Bad Data Keeps Us from Good AI](https://www.ted.com/talks/mainak_mazumdar_how_bad_data_keeps_us_from_good_ai)
-Mainak Mazumdar shows in this TED Talk how less-than-quality data leads to AI that makes wrong decisions and predictions, and he reveals three infrastructural resets needed to make ethical AI possible. 
-
-[Why Some Cities Are Banning Facial Recognition Technology](https://www.wired.com/video/watch/why-some-cities-are-banning-facial-recognition-technology)
-Want to know more about how facial recognition technology works and why some cities are banning it? Check out this WIRED video. 
-
-[The Race to Build AI That Benefits Humanity with Sam Altman](https://www.ted.com/talks/the_ted_interview_the_race_to_build_ai_that_benefits_humanity_with_sam_altman)
-In this TED Interview, OpenAI CEO Sam Altman makes a case for AI's potential to make the future better for all of us.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sjkIWubV-rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Watch Abhishek Gupta's (MAIEI) talk about how a disconnect between the theoretical advances in solving AI ethics challenges and their practical implementation has led to a stasis in AI ethics. 
-
-## This Month
-
-<!--StartFragment-->
-
-![Designing Proof and Evidence with Minorities and Outlier Data Digging DEEPer Workshop](https://mcusercontent.com/df09b45913649b12f2a2aef66/images/5a85d174-50e0-9b14-062f-59355e3670fe.jpg)
-
-<!--EndFragment-->
-
-In preparation for our Minorities and Outlier Data co-design, we’re encouraging everyone to think about the challenge of proof for a small group, even a group that is just one person: you.
-
-Think of something you experience in your life that is difficult to demonstrate. Perhaps it’s an emotion you feel, a value you hold or a pain you experience. How might you go about proving your experience to someone else? How might you document or demonstrate it? What kind of proof could you produce to convince someone about the validity of your experience?
-
-Share your ideas of how to approach this challenge with the We Count community by leaving a comment on the [We Count website](https://wecount.inclusivedesign.ca/initiatives/designing-proof-and-evidence-with-minorities-and-outlier-data/). 
-
-## Graduate Research Assistant Positions
-
-<!--StartFragment-->
-
-![Equitable Digital Systems logo](https://mcusercontent.com/df09b45913649b12f2a2aef66/images/0eb8197b-9697-c2da-f337-60a4e6faea55.png)
-
-<!--EndFragment-->
-
-The IDRC is hiring three research assistants to integrate with the Equitable Digital Systems (EDS) team and support their work with identifying gaps in currently available standards that address the accessibility of digital tools, systems and associated practices deployed by organizations regulated by Bill C-81, the Accessible Canada Act.
-
-The EDS team is developing a research knowledge base of current and emerging technical systems that present barriers to employees and prospective employees with disabilities. The team is co-creating an open platform that collects community research, new knowledge and input regarding emerging technical systems from a disability and accessibility perspective.
-
-[Learn more and apply](https://tre.tbe.taleo.net/tre01/ats/careers/v2/viewRequisition?org=OCADU&cws=37&rid=2174) 
+The IDRC community is mourning the loss of former Lieutenant-Governor David Onley, who passed away in January. David was a passionate advocate for disability rights and accessibility who made a difference in the lives of so many Ontarians, both as a journalist and as the Lieutenant-Governor of Ontario.\
+\
+A survivor of childhood polio, David was the first Canadian broadcaster with a visible disability, and his career spanned two decades. He was also an accessibility consultant for the Rogers Centre and Air Canada Centre and the inaugural chair of the Ontario Accessibility Standards Advisory Council. In 2018, David lead a review of the AODA and wrote a report that was highly critical of the current progress that was being made toward achieving the AODA's 2025 accessibility goals. His meaningful and accurate report highlighted particular problem areas, including physical barriers, the high unemployment rate for people with disabilities, and ableism. \
+\
+David was always a good friend to the IDRC and made the time to come to campus last year to speak to our students. He will be missed by the entire IDRC community.
 
 ## Initiatives
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3qdgMkIxjtY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## A Clusive Success Story
 
-Were you unable to attend our AI and Disability webinar with Wendy Chisholm and Jutta Treviranus? Discover the risks and rewards of AI for people with disabilities and how future developments in different industries may impact the disability community in this webinar video with Microsoft's Wendy Chisholm and the IDRC's Jutta Treviranus on our [YouTube channel](https://youtu.be/3qdgMkIxjtY)!  
+[Clusive](https://www.cast.org/products-services/products/clusive) is a free, flexible, adaptive and customizable learning environment. It is a web application for students and teachers that addresses access and learning barriers present in digital and open learning materials. Teachers can create classes of students, upload and assign ebooks to those classes, and monitor students' progress. Students can upload books as well and create their own virtual library. They can use built-in tools to alter the display of the contents of a book in terms of text size, line spacing, letter spacing, colour contrast themes and font, including a font developed for reading with dyslexia. The Reader component provides read-aloud and can be configured with different voices and reading speeds. When activated, read-aloud speaks the text and highlights individual words as they are spoken. There are also supports for notetaking, word definition lookup and text simplification.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0vauZJBWhXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>\
+\
+Clusive was developed by the Center on Inclusive Software for Learning (CISL). [Learn more about Clusive](https://clusive.cast.org/).\
+\
+Read about a [real-life Clusive success story](https://wecount.inclusivedesign.ca/views/a-clusive-success-story/).
+
+## Healthcare OER
+
+![Floe logo](/media/project-floe.png)
+
+Blind, deafblind and partially sighted individuals face many barriers while accessing healthcare services including inaccessible healthcare resources, difficult interactions with providers, and inaccessible physical and digital spaces. At the root of these issues is the lack of practitioner knowledge and competency in topics related to low vision and blindness.
+
+The Floe project is working with researchers and educators at Queen’s University to bring together people with low vision and blindness, healthcare providers and curriculum creators to codesign and create educational materials that all healthcare providers can use to address these issues.\
+\
+[Learn more](https://floeproject.org/news/2023-01-17-healthcare-oer/)
+
+## Learning to Be Human Together is a favourite Pressbook of 2022
+
+![Cover of the book](/media/f5539c6c-a447-fb7d-ee5e-fce00dda70d7.png)
+
+We are proud to announce that Learning to Be Human Together was included in the [favourite Pressbooks of 2022 list](https://pressbooks.com/open-education/pressbooks-community-favorites-2022/)!\
+\
+In March 2022, the IDRC released a new resource that explores the importance of, and processes for, humanizing education, starting with an exploration of what humanizing teaching and learning means. Humanizing Learning, the result of a year-long exploration into how education can be transformed, aims to make learning inclusive, with connection, access and meaning-making at its core.\
+\
+Broken down into four modules, this book highlights the importance of twelve core super themes, such as trust, vulnerability, re-framing failure, and friction. These super themes are multi-layered ideas that intersect and weave together across the humanizing learning spectrum.\
+\
+[Read Humanizing Learning](https://ecampusontario.pressbooks.pub/onhumanlearn/) 
+
+## W﻿hat is a We Count Challenge?
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cEnONDRi-_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
