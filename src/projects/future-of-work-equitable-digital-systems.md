@@ -23,9 +23,9 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 ## Final Report and Project Outcomes
 
-[English version of the Final Report](src/media/equitable-digital-systems-research-report-final_english.docx)
+[English version of the Final Report](/media/equitable-digital-systems-research-report-final_english.docx)
 
-[French version of the Final Report](src/media/equitable-digital-systems-research-report-final_french.docx)
+[French version of the Final Report](/media/equitable-digital-systems-research-report-final_french.docx)
 
 ## Partners
 
