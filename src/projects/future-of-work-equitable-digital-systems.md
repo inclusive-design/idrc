@@ -21,6 +21,12 @@ We developed an accessible, open online resource site where our research is stor
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research. This is how we carve a path towards equitable and inclusive digital systems.
 
+## Final Report and Project Outcomes
+
+English version of the Final Report
+
+French version of the Final Report
+
 ## Partners
 
 [L'Arche Canada](https://larche.ca)
