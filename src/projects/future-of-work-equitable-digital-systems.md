@@ -2,11 +2,11 @@
 projectName: "Future of Work: Equitable Digital Systems"
 title: "Future of Work: Equitable Digital Systems"
 shortName: EDS
-description: >-
-  Equitable Digital Systems focuses on examining the accessibility of the
-  digital tools and systems we use for work. We will use our shared experiences
-  to make recommendations for Accessibility Standards Canada on how to prevent
-  accessibility barriers at work from information and communication systems.
+description: Equitable Digital Systems focuses on examining the accessibility of
+  the digital tools and systems we use for work. We will use our shared
+  experiences to make recommendations for Accessibility Standards Canada on how
+  to prevent accessibility barriers at work from information and communication
+  systems.
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
@@ -36,7 +36,7 @@ Throughout the *Equitable Digital Systems* project, people with disabilities w
 
 [IRIS Institute](https://irisinstitute.ca)
 
-[READ Initiative and Canadian Accessibility Network – Carleton](https://carleton.ca/read/can/)
+[Accessibility Institute – Carleton](https://carleton.ca/accessibility-institute/)
 
 [Centre for Independent Living Toronto](https://cilt.ca)
 
