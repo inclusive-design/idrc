@@ -29,6 +29,8 @@ The final report and project outcomes can be downloaded.
 
 ## Partners
 
+![Logos for each of the partners listed below who contributed to the project.](/media/partners_eds.png)
+
 [L'Arche Canada](https://larche.ca)
 
 [CNIB Foundation](https://cnib.ca)
