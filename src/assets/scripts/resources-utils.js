@@ -274,7 +274,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 				${resource.publishedYear ? `<div class="card-publishedYear"><p>Published in ${escapeSpecialCharactersForHTML(resource.publishedYear)}</p></div>` : ''}
 				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? '' : '<svg role=\'presentation\'><use xlink:href=\'#external\' /></svg>'}</a></div>
 				</div>
-				${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt='${replaceSingleQuote(altText)}'></div>` : ''}
+				${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt='${altText}'></div>` : ''}
 			</div>`;
 	});
 
