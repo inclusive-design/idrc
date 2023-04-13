@@ -265,7 +265,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 				</div>`;
 			});
 		}
-		const altText = resource.thumbnailAltText ? replaceSingleQuote(resource.thumbnailAltText) : `Thumbnail image for ${replaceSingleQuote(resource.title)}`;
+		const altText = resource.thumbnailAltText ? escapeSpecialCharactersForHTML(resource.thumbnailAltText) : `Thumbnail image for ${escapeSpecialCharactersForHTML(resource.title)}`;
 		resourcesHtml += `
 				</div>
 				<div class='card-description'>
@@ -395,11 +395,4 @@ function escapeSpecialCharactersForHTML(htmlStr) {
 		.replace(/"/g, '&quot;')
 		.replace(/'/g, '&#39;');
 	return htmlStr;
-}
-
-/*
-* Replace single quote character with its entity name
-*/
-function replaceSingleQuote(attributeValue) {
-	return attributeValue.replace(/'/g, '&#39;');
 }
