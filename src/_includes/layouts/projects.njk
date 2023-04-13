@@ -26,9 +26,9 @@
                             {% else %}
                             <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
                             {% endif %}
-                            <h3>{{ project.data.title }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
+                            <h3>{{ project.data.projectName }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
                             {% if project.data.content %}
-                            {% set fullDescription = project.data.description + " [More about " + project.data.title + "](" + project.url + ")" %}
+                            {% set fullDescription = project.data.description + " [More about " + project.data.projectName + "](" + project.url + ")" %}
                             {{ fullDescription | markdown | safe }}
                             {% else %}
                             {{ project.data.description | markdown | safe }}
