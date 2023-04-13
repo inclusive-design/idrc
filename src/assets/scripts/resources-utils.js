@@ -191,15 +191,15 @@ function processResourcesDisplayResults(resources) { // eslint-disable-line no-u
  */
 function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
 	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
-	let appliedFilterHtml = '<h2>Search results</h2><div class="resources-applied-filters">';
+	let appliedFilterHtml = '<h2>Search results</h2><div class=\'resources-applied-filters\'>';
 
 	if (numberOfResources === 0) {
-		appliedFilterHtml += '<div class="resources-no-results"><p>Sorry, no results were found based on your applied filters.</p></div>';
+		appliedFilterHtml += '<div class=\'resources-no-results\'><p>Sorry, no results were found based on your applied filters.</p></div>';
 	} else {
-		appliedFilterHtml += `<div class="resources-filtered-number" role="alert"><p>Showing ${numberOfResources} ${numberOfResources === 1 ? 'result' : 'results'}</p></div>`;
+		appliedFilterHtml += `<div class='resources-filtered-number' role='alert'><p>Showing ${numberOfResources} ${numberOfResources === 1 ? 'result' : 'results'}</p></div>`;
 	}
 
-	appliedFilterHtml += '<h3>Applied filters</h3><div class="filter-tags">';
+	appliedFilterHtml += '<h3>Applied filters</h3><div class=\'filter-tags\'>';
 
 	for (const appliedFilter of appliedFilters) {
 		const tagType = resourceTopics.find(topicObj => topicObj.value === appliedFilter.id) ? 'topic' : 'type';
@@ -213,16 +213,16 @@ function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
 		const params = new URLSearchParams(window.location.search);
 		params.delete(appliedFilter.name);
 
-		appliedFilterHtml += `<button aria-label="Remove the filtering on a resource ${tagType} ${filterLabel}" id="filterTag-${appliedFilter.id}" class="filter-tag" onClick="window.location.href='${window.location.href.split('?')[0]}?${params.toString()}'">
-			<svg role="presentation"><use xlink:href="#${tagType}" /></svg>
+		appliedFilterHtml += `<button aria-label='Remove the filtering on a resource ${tagType} ${filterLabel}' id='filterTag-${appliedFilter.id}' class='filter-tag' onClick="window.location.href='${window.location.href.split('?')[0]}?${params.toString()}'">
+			<svg role='presentation'><use xlink:href='#${tagType}' /></svg>
 			<p>${filterLabel}</p>
-			<svg role="presentation"><use xlink:href="#close" /></svg>
+			<svg role='presentation'><use xlink:href='#close' /></svg>
 		</button>`;
 	}
 
 	appliedFilterHtml += `
-			<div class="filter-clear-all">
-				<button class="reset-button">Clear all filters</button>
+			<div class='filter-clear-all'>
+				<button class='reset-button'>Clear all filters</button>
 			</div>
 		</div>
 	</div>`;
@@ -251,7 +251,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 			resource.topics.forEach(topicValue => {
 				let found = resourceTopics.find(topicObj => topicObj.value === topicValue);
 				resourcesHtml += `    <div class='card-tag'>
-					<svg role="presentation"><use xlink:href="#topic" /></svg>
+					<svg role='presentation'><use xlink:href='#topic' /></svg>
 					<p>${found.label}</p>
 				</div>`;
 			});
@@ -260,20 +260,21 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
 			resource.types.forEach(typeValue => {
 				let found = resourceTypes.find(typeObj => typeObj.value === typeValue);
 				resourcesHtml += `    <div class='card-tag'>
-					<svg role="presentation"><use xlink:href="#type" /></svg>	
+					<svg role='presentation'><use xlink:href='#type' /></svg>	
 					<p>${found.label}</p>
 				</div>`;
 			});
 		}
+		const altText = resource.thumbnailAltText ? replaceSingleQuote(resource.thumbnailAltText) : `Thumbnail image for ${replaceSingleQuote(resource.title)}`;
 		resourcesHtml += `
 				</div>
 				<div class='card-description'>
 					<p>${escapeSpecialCharactersForHTML(resource.description)}</p>
 				</div>
-				${resource.publishedYear ? `<div class='card-publishedYear'><p>Published in ${escapeSpecialCharactersForHTML(resource.publishedYear)}</p></div>` : ''}
-				<div class='card-link'><a rel='external' href='${escapeSpecialCharactersForHTML(resource.link)}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? '' : '<svg role="presentation"><use xlink:href="#external" /></svg>'}</a></div>
+				${resource.publishedYear ? `<div class="card-publishedYear"><p>Published in ${escapeSpecialCharactersForHTML(resource.publishedYear)}</p></div>` : ''}
+				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? '' : '<svg role=\'presentation\'><use xlink:href=\'#external\' /></svg>'}</a></div>
 				</div>
-				${resource.thumbnailImage ? `<div class='card-image'><img src="${escapeSpecialCharactersForHTML(resource.thumbnailImage)}" alt="${resource.thumbnailAltText ? `${escapeSpecialCharactersForHTML(resource.thumbnailAltText)}` : `Thumbnail image for ${escapeSpecialCharactersForHTML(resource.title)}`}"></div>` : ''}
+				${resource.thumbnailImage ? `<div class='card-image'><img src=${resource.thumbnailImage} alt='${replaceSingleQuote(altText)}'></div>` : ''}
 			</div>`;
 	});
 
@@ -394,4 +395,11 @@ function escapeSpecialCharactersForHTML(htmlStr) {
 		.replace(/"/g, '&quot;')
 		.replace(/'/g, '&#39;');
 	return htmlStr;
+}
+
+/*
+* Replace single quote character with its entity name
+*/
+function replaceSingleQuote(attributeValue) {
+	return attributeValue.replace(/'/g, '&#39;');
 }
