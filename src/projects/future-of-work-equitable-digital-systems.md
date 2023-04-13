@@ -1,28 +1,35 @@
 ---
-projectName: "Future of Work: Equitable Digital Systems"
-title: "Future of Work: Equitable Digital Systems"
+projectName: "Future of Work: Equitable Digital Systems (EDS)"
+title: "A Description of the Project: EDS"
 shortName: EDS
-description: >-
-  Equitable Digital Systems focuses on examining the accessibility of the
-  digital tools and systems we use for work. We will use our shared experiences
+description: Equitable Digital Systems focused on examining the accessibility of
+  the digital tools and systems we use for work. We used our shared experiences
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
-![Logo of the Equitable Digital Systems project.](/media/eds-colored-03.png)
+{% imagePositionWithText "/media/eds-colored-03.png", "Equitable Digital Systems logo", "center", "50%", "300", "undefined" %}
 
-The *Future of Work: Equitable Digital Systems* project is an initiative at the Inclusive Design Research Centre, OCAD U examining the accessibility of the digital tools and systems we rely upon for work. The focus of the project is on ensuring that current and emerging technology and digital systems and their associated practices are meeting the needs of and enabling work for persons with disabilities. The project looks specifically at systems used by organizations that are regulated by the Accessible Canada Act, Bill C-81.
+{% endimagePositionWithText %}
 
-One of the primary goals of the *Equitable Digital Systems* project is to create a catalog of the digital systems in use by organizations under Bill C-81. The purpose of cataloging these digital systems is to develop a comprehensive overview of the tools being used in workplaces, so  accessibility barriers can be better understood and addressed. The project also uses a comparative approach by using the international policy landscape to analyze local accessibility standards, regulations, and guidelines for digital systems. This analysis of international policies will help identify the current gaps in Canadian regulations and will inform local stakeholders about the areas where both policy and practice can improve. This analysis will also identify where Canadian policy can lead international policy. In the process, we seek to capitalize on opportunities for inclusive design as we analyze the best strategies for the ethical integration of digital systems in the workplace.
+The *Future of Work: Equitable Digital Systems* project was an initiative at the Inclusive Design Research Centre, OCAD University examining the accessibility of the digital tools and systems we rely upon for work. The focus of the project was to ensure that current and emerging technology and digital systems and their associated practices are meeting the needs of and enabling work for persons with disabilities. The project looked specifically at systems used by organizations that are regulated by the Accessible Canada Act, Bill C-81.
 
-To fill the regulatory gaps that we find in our research, we are hosting co-design sessions with our partner organizations and people with disabilities. The insights and recommendations we receive from our co-design sessions will help us prevent new accessibility barriers in emerging digital systems. Our participatory approach ensures that our research is community-driven and represents the voices of the people most impacted by these technologies.
+The voice and perspective of the disability community was a central focus of the project and along with ten disability research and advocacy organizations, 55 individuals with lived experience of disability contributed to the project over 12 co-design research sessions. Co-designs enhanced our understanding of barriers within digital systems by placing those systems and the experiences of people with disabilities who use or are impacted by them within the full context of people’s lives—their lived experiences and the intersections of technology, work, and life.
 
-We are developing an accessible, open online resource site where our research will be stored. This online resource will be designed to provide people with disabilities with up-to-date and accurate information about emerging technology as it relates to disability and employment. It will serve as a repository to help people with disabilities understand the specific risks and opportunities of these technologies.
+Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-Throughout the *Equitable Digital Systems* project, people with disabilities will lead the direction and outcomes of research, as we carve a path towards equitable and inclusive digital systems.
+## Final Report and Project Outcomes
+
+The final report and project outcomes can be downloaded.
+
+[English version of the Final Report](/media/equitable-digital-systems-research-report-final_english.docx)
+
+[French version of the Final Report](/media/equitable-digital-systems-research-report-final_french.docx)
 
 ## Partners
+
+![Logos for each of the partners listed below who contributed to the project.](/media/partners_eds.png)
 
 [L'Arche Canada](https://larche.ca)
 
@@ -36,11 +43,179 @@ Throughout the *Equitable Digital Systems* project, people with disabilities w
 
 [IRIS Institute](https://irisinstitute.ca)
 
-[READ Initiative and Canadian Accessibility Network – Carleton](https://carleton.ca/read/can/)
+[Accessibility Institute – Carleton](https://carleton.ca/accessibility-institute/)
 
 [Centre for Independent Living Toronto](https://cilt.ca)
 
 [Canadian Council of the Blind](https://ccbnational.net)
+
+## Contributors
+
+Bernard Akuoko
+
+Taryn Allen
+
+Claire Andrews
+
+Pedro Luis Aranguren Marquez
+
+Michael Bach
+
+Michael Baillargeon
+
+Joy Borgonia
+
+Rhonda Briggs
+
+Chris Butler
+
+Marco Chiaramonte
+
+Anthony Chiu
+
+Logan Churchill
+
+Awo Dirie
+
+Jessica Diskant
+
+Tracey Dowhaniuk
+
+Alexis Dowsett
+
+Jessica Dumelie
+
+Lynn Eyland
+
+Adrianne Fitch
+
+Deborah Floden
+
+W. Francis Fung
+
+Miron Gazda
+
+Krista Giguere
+
+Laura Goodchild
+
+Keith Gordon
+
+Robert Gray
+
+John Guido
+
+Mary-Rose Hackbart
+
+Kaitlyn Hundt-Lippett
+
+Rainbow Hunt
+
+Kelly Johnson
+
+Kate Kalcevich
+
+Roger Khouri
+
+Kim Kilpatrick
+
+Ka Li
+
+Lisa Liskovoi
+
+Amanda Ma
+
+Michael MacKenzie
+
+Jamie Mcdonald
+
+David Meyers
+
+Anthony Micallef
+
+Tara Mikiovic
+
+Sophia Mincheva
+
+Jess Mitchell
+
+Shelley Ann Morris
+
+Brandon Mowers
+
+Sloane Mulligan
+
+Novlette Murray
+
+Olav Naas
+
+Rytch Newmiller
+
+Miracle Okeuga
+
+Ryan Ollis
+
+Christine Paterson
+
+David H. Pereyra
+
+Irene Pollock
+
+Christopher Polson
+
+Jaclyn Pope
+
+Wendy Porch
+
+Doris Rajan
+
+Ron Reddam
+
+Vera Roberts
+
+Janet Rodriguez
+
+Skittles Roshan
+
+Mirvat Sanaallah
+
+Shalaine Sedres
+
+Bo Louie Siu
+
+Connor Stewart
+
+Mahadeo A. Sukhai
+
+Christopher Sutton
+
+Sandra Tavares
+
+Nicole Tilley
+
+Ana Tobar
+
+Jim Tokos
+
+Jutta Treviranus
+
+Gift Tshuma
+
+Abid Virani
+
+Boris Vukovic
+
+Bailey Wagner
+
+Ruth Warick
+
+Ian White
+
+Valerie Wolbert
+
+Patrick Wong
+
+Cheryl Zinyk
 
 ## Funders
 
