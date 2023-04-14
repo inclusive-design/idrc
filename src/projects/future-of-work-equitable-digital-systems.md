@@ -9,7 +9,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
-{% imagePositionWithText "/media/eds_sm.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
+{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -22,7 +22,9 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
 
 
+
 Coming soon: Search EDS resources on the We Count Library.
+
 
 
 {% endimagePositionWithText %}
@@ -41,7 +43,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 #### Storytelling
 
-{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "75%", "500", "undefined" %}
+{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "50%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
