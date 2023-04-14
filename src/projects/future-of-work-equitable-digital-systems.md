@@ -57,6 +57,10 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 [Les lettres in French](/media/les_lettres.docx)
 
+#### Experiences with Illustrations
+
+![](/media/idrc_jacobi.png)
+
 [Experiences with Technology in English](/media/experience.docx)
 
 [l'experience in French](/media/l-experience.docx)
