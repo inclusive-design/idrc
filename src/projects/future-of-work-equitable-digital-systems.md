@@ -9,7 +9,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
-{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
+{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "75%", "300", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -19,7 +19,9 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "100%", "500", "null" %}
+{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "75%", "300", "null" %}
+
+
 
 
 
@@ -37,6 +39,8 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 
 Coming soon: Search EDS resources on the We Count Library.
+
+
 
 
 
