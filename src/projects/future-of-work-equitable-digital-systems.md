@@ -9,7 +9,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
-{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "75%", "300", "undefined" %}
+{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "left", "75%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -20,6 +20,8 @@ The voice and perspective of the disability community was a central focus of the
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "75%", "300", "null" %}
+
+
 
 
 
@@ -57,6 +59,8 @@ Coming soon: Search EDS resources on the We Count Library.
 
 
 
+
+
 {% endimagePositionWithText %}
 
 ## Download Project Artifacts
@@ -69,7 +73,7 @@ The full final report and project outcomes can be downloaded in English and Fren
 
 ### Co-design
 
-We conducted 4 co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how our technologies could meet the needs of people with disabilities, and how people with disabilities are compelled to \*compromise\* expectations for an often inequitable experience.
+We conducted 4 co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how technologies could meet the needs of people with disabilities, and how people with disabilities are forced to \*compromise\* expectations for an often inequitable experience.
 
 #### Storytelling
 
@@ -77,7 +81,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 {% endimagePositionWithText %}
 
-One of the co-design sets brought contributors together where we all created "Stories from The Imaginary." The storytelling technique allowed us to describe our experiences in a fictionalized (but deeply informed) situation where people with disabilities interact with technologies in the context of work. The stories can be viewed:
+One of the co-design sets brought contributors together to create "Stories from The Imaginary." The storytelling technique allowed us to describe experiences in a fictionalized (but deeply informed) situation where people with disabilities interact with technologies in the context of work. The stories can be viewed:
 
 Jumper Gets a Job: <https://youtu.be/w_7nyT_EXlo>
 
@@ -99,7 +103,7 @@ Riley's Day at Work: <https://youtu.be/ok4GL9-n9_U>
 
 {% endimagePositionWithText %}
 
-For another co-design set, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function and redesign that through reimagining. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
+For another co-design set, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function complete with the highs and the lows experienced. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
 
 [Letters in English](/media/the-letters.docx)
 
@@ -110,6 +114,8 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 {% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
 
 {% endimagePositionWithText %}
+
+[](/media/experience.docx)One of the co-design sets captured small moments (vignettes) that illustrate some of the experiences people with disabilities have with technology *within* the context of work and the workplace -- both of which create the context where barriers are torn down or are created.
 
 [Experiences with Technology in English](/media/experience.docx)
 
