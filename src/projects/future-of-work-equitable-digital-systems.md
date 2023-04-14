@@ -19,7 +19,7 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-## Final Report and Project Outcomes
+## Download Project Reports
 
 The final report and project outcomes can be downloaded.
 
