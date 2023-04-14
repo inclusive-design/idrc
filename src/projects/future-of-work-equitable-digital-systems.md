@@ -9,7 +9,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
-{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "left", "75%", "500", "undefined" %}
+{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -19,7 +19,8 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "75%", "300", "null" %}
+{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "100%", "500", "null" %}
+
 
 
 
@@ -61,6 +62,7 @@ Coming soon: Search EDS resources on the We Count Library.
 
 
 
+
 {% endimagePositionWithText %}
 
 ## Download Project Artifacts
@@ -77,7 +79,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 #### Storytelling
 
-{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "25%", "100", "undefined" %}
+{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "25%", "300", "undefined" %}
 
 {% endimagePositionWithText %}
 
