@@ -7,7 +7,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
 order: 80
-thumbnailImage: /media/eds0.5x.png
+thumbnailImage: /media/project-EDS.png
 ---
 {% imagePositionWithText "/media/eds_sm.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
 
@@ -19,10 +19,12 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-
-
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
+
+
 Coming soon: Search EDS resources on the We Count Library.
+
+
 {% endimagePositionWithText %}
 
 ## Download Project Artifacts
@@ -39,7 +41,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 #### Storytelling
 
-{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "100%", "500", "undefined" %}
+{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "75%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -61,6 +63,10 @@ Riley's Day at Work: <https://youtu.be/ok4GL9-n9_U>
 
 #### Letters
 
+{% imagePositionWithText "/media/letter_glimpse.png", "A glimpse of a letter", "left", "100%", "300", "undefined" %}
+
+{% endimagePositionWithText %}
+
 For another co-design set, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function and redesign that through reimagining. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
 
 [Letters in English](/media/the-letters.docx)
@@ -69,7 +75,7 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 #### Experiences with Illustrations
 
-{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "50%", "auto", "undefined" %}
+{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "auto", "undefined" %}
 
 {% endimagePositionWithText %}
 
