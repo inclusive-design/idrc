@@ -26,7 +26,11 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 
 
+
+
 Coming soon: Search EDS resources on the We Count Library.
+
+
 
 
 
@@ -49,7 +53,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 #### Storytelling
 
-{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "25%", "500", "undefined" %}
+{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "25%", "100", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -83,7 +87,7 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 #### Experiences with Illustrations
 
-{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "auto", "undefined" %}
+{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
 
 {% endimagePositionWithText %}
 
