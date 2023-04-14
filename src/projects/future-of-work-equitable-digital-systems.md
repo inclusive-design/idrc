@@ -59,7 +59,9 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 #### Experiences with Illustrations
 
-![](/media/idrc_jacobi.png)
+{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "50%", "auto", "undefined" %}
+
+{% endimagePositionWithText %}
 
 [Experiences with Technology in English](/media/experience.docx)
 
