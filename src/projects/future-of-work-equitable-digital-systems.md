@@ -9,7 +9,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
 order: 80
 thumbnailImage: /media/project-EDS.png
 ---
-{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
+{% imagePositionWithText "/media/project-EDS.png", "Equitable Digital Systems logo", "center", "100%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
@@ -36,7 +36,9 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 
 
+
 Coming soon: Search EDS resources on the We Count Library.
+
 
 
 
