@@ -63,6 +63,10 @@ Riley's Day at Work: <https://youtu.be/ok4GL9-n9_U>
 
 #### Letters
 
+{% imagePositionWithText "/media/letter_glimpse.png", "A glimpse of a letter", "left", "100%", "300", "undefined" %}
+
+{% endimagePositionWithText %}
+
 For another co-design set, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function and redesign that through reimagining. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
 
 [Letters in English](/media/the-letters.docx)
@@ -71,7 +75,7 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 #### Experiences with Illustrations
 
-{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "50%", "auto", "undefined" %}
+{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "auto", "undefined" %}
 
 {% endimagePositionWithText %}
 
