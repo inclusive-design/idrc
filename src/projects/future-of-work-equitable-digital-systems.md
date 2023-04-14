@@ -7,7 +7,7 @@ description: Equitable Digital Systems focused on examining the accessibility of
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
 order: 80
-thumbnailImage: /media/eds0.5x.png
+thumbnailImage: /media/project-EDS.png
 ---
 {% imagePositionWithText "/media/eds_sm.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
 
@@ -19,10 +19,10 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-
-
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
+
 Coming soon: Search EDS resources on the We Count Library.
+
 {% endimagePositionWithText %}
 
 ## Download Project Artifacts
