@@ -19,7 +19,9 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
+{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "100%", "500", "null" %}
+
+
 
 
 
@@ -29,6 +31,8 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 
 Coming soon: Search EDS resources on the We Count Library.
+
+
 
 
 
