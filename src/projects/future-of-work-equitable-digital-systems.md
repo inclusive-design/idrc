@@ -52,15 +52,17 @@ Riley's Day at Work: <https://youtu.be/ok4GL9-n9_U>
 #### Letters
 
 
-For the third co-design, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function and redesign that by reimagining that. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
+For another co-design set, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function and redesign that through reimagining. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
 
 [Letters in English](/media/the-letters.docx)
 
-[Letters in French](/media/les_lettres.docx)
+[Les lettres in French](/media/les_lettres.docx)
 
 
 
+[Experiences with Technology in English](/media/experience.docx)
 
+[l'experience in French](/media/l-experience.docx)
 
 ## Partners
 
