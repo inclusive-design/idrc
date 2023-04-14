@@ -22,7 +22,9 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "auto", "null" %}
 
 
+
 Coming soon: Search EDS resources on the We Count Library.
+
 
 
 {% endimagePositionWithText %}
