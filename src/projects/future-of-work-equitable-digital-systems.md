@@ -19,13 +19,48 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-## Download Project Reports
+## Download Project Artifacts
 
-The final report and project outcomes can be downloaded.
+The full final report and project outcomes can be downloaded in English and French.
 
 [English version of the Final Report](/media/equitable-digital-systems-research-report-final_english.docx)
 
 [French version of the Final Report](/media/equitable-digital-systems-research-report-final_french.docx)
+
+### Co-design
+
+We conducted 4 co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how our technologies could meet the needs of people with disabilities, and how people with disabilities are compelled to \*compromise\* expectations for an often inequitable experience.
+
+#### Storytelling
+
+One of the co-design sets brought contributors together where we all created "Stories from The Imaginary." The storytelling technique allowed us to describe our experiences in a fictionalized (but deeply informed) situation where people with disabilities interact with technologies in the context of work. The stories can be viewed:
+
+Jumper Gets a Job: <https://youtu.be/w_7nyT_EXlo>
+
+Jessica looks for Job: <https://youtu.be/qFfzw3fGnKQ>
+
+Friendship Chronicle: <https://youtu.be/wFXHNHVnyQ4>
+
+Adventure is in the land of ID: <https://youtu.be/Ux2Agx919GY>
+
+A Typical Day: <https://youtu.be/1AGB6-l351c>
+
+Working with Accessibility Needs Normalized: <https://youtu.be/4vosjCltLqA>
+
+Riley's Day at Work: <https://youtu.be/ok4GL9-n9_U>
+
+#### Letters
+
+
+For the third co-design, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function and redesign that by reimagining that. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
+
+[Letters in English](/media/the-letters.docx)
+
+[Letters in French](/media/les_lettres.docx)
+
+
+
+
 
 ## Partners
 
