@@ -7,9 +7,9 @@ description: Equitable Digital Systems focused on examining the accessibility of
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
 order: 80
-thumbnailImage: ""
+thumbnailImage: /media/eds0.5x.png
 ---
-{% imagePositionWithText "/media/eds-colored-03.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
+{% imagePositionWithText "/media/eds_sm.png", "Equitable Digital Systems logo", "center", "50%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
