@@ -1,5 +1,5 @@
 ---
-projectName: "Future of Work: Equitable Digital Systems (EDS)"
+projectName: "Future of Work: Equitable Digital Systems"
 title: "A Description of the Project: EDS"
 shortName: EDS
 description: Equitable Digital Systems focused on examining the accessibility of
@@ -23,7 +23,9 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 
 
+
 Coming soon: Search EDS resources on the We Count Library.
+
 
 
 
@@ -43,7 +45,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 #### Storytelling
 
-{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "50%", "500", "undefined" %}
+{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "25%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
