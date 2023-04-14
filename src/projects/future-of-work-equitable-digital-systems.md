@@ -19,10 +19,12 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "auto", "null" %}
+{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "bottom" %}
+
 
 
 Coming soon: Search EDS resources on the We Count Library.
+
 
 
 {% endimagePositionWithText %}
@@ -40,6 +42,10 @@ The full final report and project outcomes can be downloaded in English and Fren
 We conducted 4 co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how our technologies could meet the needs of people with disabilities, and how people with disabilities are compelled to \*compromise\* expectations for an often inequitable experience.
 
 #### Storytelling
+
+{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "100%", "500", "undefined" %}
+
+{% endimagePositionWithText %}
 
 One of the co-design sets brought contributors together where we all created "Stories from The Imaginary." The storytelling technique allowed us to describe our experiences in a fictionalized (but deeply informed) situation where people with disabilities interact with technologies in the context of work. The stories can be viewed:
 
