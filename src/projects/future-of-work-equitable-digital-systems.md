@@ -19,11 +19,15 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 Coming soon: Search EDS resources on the We Count Library.
 
+
+
+
+
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
 
 {% endimagePositionWithText %}
 
-## Download Project Artifacts
+## Final Report
 
 The full final report and project outcomes can be downloaded in English and French.
 
@@ -31,9 +35,14 @@ The full final report and project outcomes can be downloaded in English and Fren
 
 [French version of the Final Report](/media/equitable-digital-systems-research-report-final_french.docx)
 
-### Co-design
+## Co-design Research
 
-We conducted 4 co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how technologies could meet the needs of people with disabilities, and how people with disabilities are forced to \*compromise\* expectations for an often inequitable experience.
+
+
+We conducted four co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how technologies could meet the needs of people with disabilities, and how people with disabilities are forced to \*compromise\* expectations for an often inequitable experience. 
+
+
+	
 
 #### Storytelling
 
@@ -41,23 +50,75 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 {% endimagePositionWithText %}
 
-One of the co-design sets brought contributors together to create "Stories from The Imaginary." The storytelling technique allowed us to describe experiences in a fictionalized (but deeply informed) situation where people with disabilities interact with technologies in the context of work. The stories can be viewed:
+### Co-design 1:  Digital System Experiences, Barriers, and Approaches
 
-Jumper Gets a Job: <https://youtu.be/w_7nyT_EXlo>
+Our first co-design captured moments (vignettes) that illustrate some of the experiences people with disabilities have with technology *within* the context of work and the workplace. The first co-design was intentionally broad to enable greater freedom to discover barriers to technology experienced by the co-design researchers.
 
-Jessica looks for Job: https://www.youtube.com/watch?v=EVuTl2PG0O8[](https://www.youtube.com/watch?v=EVuTl2PG0O8)
 
-Friendship Chronicle: <https://youtu.be/wFXHNHVnyQ4>
 
-Adventure is in the land of ID: <https://youtu.be/Ux2Agx919GY>
 
-A Typical Day: <https://youtu.be/1AGB6-l351c>
 
-Working with Accessibility Needs Normalized: <https://youtu.be/4vosjCltLqA>
+{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
 
-Riley's Day at Work: <https://youtu.be/ok4GL9-n9_U>
+{% endimagePositionWithText %}
 
-#### Letters
+#### [](/media/experience.docx)Download Samples from Co-design 1
+
+[Experiences with Technology in English](/media/experience.docx)
+
+[Expériences avec la technologie en français](/media/l-experience.docx)
+
+
+
+### Co-design 2 & 4:  The Imaginary (Ideal Worlds) and Book Club Co-analysis
+
+The second and fourth EDS co-designs brought contributors together to create "Stories from The Imaginary." The storytelling technique allowed us to describe experiences in a fictionalized (but deeply informed) situation where people with disabilities interact with technologies in the context of work. The stories were then analyzed in the fourth co-design for use in the recommendations report. The stories can be viewed on YouTube:
+
+#### Jumper Gets a Job
+
+<https://youtu.be/w_7nyT_EXlo>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EVuTl2PG0O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Jessica looks for Job
+
+https://www.youtube.com/watch?v=EVuTl2PG0O8[](https://www.youtube.com/watch?v=EVuTl2PG0O8)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_7nyT_EXlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Friendship Chronicle
+
+<https://youtu.be/wFXHNHVnyQ4>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wFXHNHVnyQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Adventure is in the land of ID
+
+<https://youtu.be/Ux2Agx919GY>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ux2Agx919GY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### A Typical Day
+
+<https://youtu.be/1AGB6-l351c>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1AGB6-l351c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+#### Working with Accessibility Needs Normalized
+
+<https://youtu.be/4vosjCltLqA>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4vosjCltLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Riley's Day at Work
+
+<https://youtu.be/ok4GL9-n9_U>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ok4GL9-n9_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Co-design 3: Letters to Technology
 
 {% imagePositionWithText "/media/letter_glimpse.png", "A glimpse of a letter", "left", "100%", "300", "undefined" %}
 
@@ -71,15 +132,7 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 #### Experiences with Illustrations
 
-{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
-
-{% endimagePositionWithText %}
-
-[](/media/experience.docx)One of the co-design sets captured small moments (vignettes) that illustrate some of the experiences people with disabilities have with technology *within* the context of work and the workplace -- both of which create the context where barriers are torn down or are created.
-
-[Experiences with Technology in English](/media/experience.docx)
-
-[l'experience in French](/media/l-experience.docx)
+[](/media/experience.docx)
 
 ## Partners
 
