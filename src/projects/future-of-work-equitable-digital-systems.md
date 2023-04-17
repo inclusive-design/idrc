@@ -27,9 +27,9 @@ The full final report and project outcomes can be downloaded in English and Fren
 
 ## Scan of Digital Accessibility Standards and Guidelines
 
-We undertook a jurisdictional scan of international standards and regulations related to disability and technology and have shared this Compendium as a viewable and [downloadable resource](https://airtable.com/shrXY0H5jiOFTS74B) that may also be searched on the [We Count website Resources page](https://wecount.inclusivedesign.ca/resources/) (still to come)
+We undertook a jurisdictional scan of international standards and regulations related to disability and technology and have shared this Compendium as a viewable and [downloadable resource](https://airtable.com/shrXY0H5jiOFTS74B) that may also be searched on the [We Count website Resources page](https://wecount.inclusivedesign.ca/resources/) (still to come). 
 
-
+ 
 
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
 
