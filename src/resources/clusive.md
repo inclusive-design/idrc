@@ -4,6 +4,7 @@ title: Clusive
 description: Clusive is a flexible, customizable learning environment that
   adapts to learners' needs.
 publishedYear: "2018"
+thumbnailImage: /media/resource-clusive.png
 topics:
   - education
 types:
