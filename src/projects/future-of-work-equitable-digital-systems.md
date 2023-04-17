@@ -19,8 +19,6 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 Coming soon: Search EDS resources on the We Count Library.
 
-
-
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
 
 {% endimagePositionWithText %}
