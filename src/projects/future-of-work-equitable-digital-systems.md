@@ -19,7 +19,7 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 Coming soon: Search EDS resources on the We Count Library.
 
-{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "auto", "null" %}
+{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
 
 {% endimagePositionWithText %}
 
@@ -45,7 +45,7 @@ One of the co-design sets brought contributors together to create "Stories from 
 
 Jumper Gets a Job: <https://youtu.be/w_7nyT_EXlo>
 
-Jessica looks for Job: <https://youtu.be/qFfzw3fGnKQ>
+Jessica looks for Job: https://www.youtube.com/watch?v=EVuTl2PG0O8[](https://www.youtube.com/watch?v=EVuTl2PG0O8)
 
 Friendship Chronicle: <https://youtu.be/wFXHNHVnyQ4>
 
