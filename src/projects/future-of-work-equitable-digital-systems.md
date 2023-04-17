@@ -1,6 +1,6 @@
 ---
 projectName: "Future of Work: Equitable Digital Systems"
-title: "A Description of the Project: EDS"
+title: _
 shortName: EDS
 description: Equitable Digital Systems focused on examining the accessibility of
   the digital tools and systems we use for work. We used our shared experiences
