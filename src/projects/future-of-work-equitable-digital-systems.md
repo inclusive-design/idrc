@@ -19,10 +19,6 @@ Throughout the *Equitable Digital Systems* project, people with disabilities l
 
 Coming soon: Search EDS resources on the We Count Library.
 
-
-
-
-
 {% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "center", "100%", "500", "null" %}
 
 {% endimagePositionWithText %}
@@ -37,12 +33,7 @@ The full final report and project outcomes can be downloaded in English and Fren
 
 ## Co-design Research
 
-
-
 We conducted four co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how technologies could meet the needs of people with disabilities, and how people with disabilities are forced to \*compromise\* expectations for an often inequitable experience. 
-
-
-	
 
 #### Storytelling
 
@@ -54,10 +45,6 @@ We conducted four co-design sets (each consisting of 3 sessions) where we explor
 
 Our first co-design captured moments (vignettes) that illustrate some of the experiences people with disabilities have with technology *within* the context of work and the workplace. The first co-design was intentionally broad to enable greater freedom to discover barriers to technology experienced by the co-design researchers.
 
-
-
-
-
 {% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
 
 {% endimagePositionWithText %}
@@ -67,8 +54,6 @@ Our first co-design captured moments (vignettes) that illustrate some of the exp
 [Experiences with Technology in English](/media/experience.docx)
 
 [Expériences avec la technologie en français](/media/l-experience.docx)
-
-
 
 ### Co-design 2 & 4:  The Imaginary (Ideal Worlds) and Book Club Co-analysis
 
@@ -104,8 +89,6 @@ https://www.youtube.com/watch?v=EVuTl2PG0O8[](https://www.youtube.com/watch?v=EV
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1AGB6-l351c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
-
 #### Working with Accessibility Needs Normalized
 
 <https://youtu.be/4vosjCltLqA>
@@ -126,11 +109,9 @@ https://www.youtube.com/watch?v=EVuTl2PG0O8[](https://www.youtube.com/watch?v=EV
 
 For another co-design set, teams of co-designers wrote letters to technology. The intention was to capture a day-to-day technology function complete with the highs and the lows experienced. Co-designers created three letters about technologies they regularly use or know well, which may be used in a workplace or as part of a job. The first letter is a love letter. The second letter is a break-up letter. The third letter is a 'compromise' letter.
 
-[Letters in English](/media/the-letters.docx)
+[Letters to Technology in English](/media/the-letters.docx)
 
-[Les lettres in French](/media/les_lettres.docx)
-
-#### Experiences with Illustrations
+[Lettres à la technologie en français](/media/les_lettres.docx)
 
 [](/media/experience.docx)
 
@@ -158,10 +139,86 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 ## Contributors
 
-Bernard Akuoko, Taryn Allen, Claire Andrews, Pedro Luis Aranguren Marquez, Michael Bach, Michael Baillargeon, Joy Borgonia, Rhonda Briggs, Chris Butler, Marco Chiaramonte, Anthony Chiu, Logan Churchill, Awo Dirie, Jessica Diskant, Tracey Dowhaniuk, Alexis Dowsett, Jessica Dumelie, Lynn Eyland, Adrianne Fitch, Deborah Floden, W. Francis Fung, Miron Gazda, Krista Giguere, Laura Goodchild, Keith Gordon, Robert Gray, John Guido, Mary-Rose Hackbart, Kaitlyn Hundt-Lippett, Rainbow Hunt, Kelly Johnson, Kate Kalcevich, Roger Khouri, Kim Kilpatrick, Ka Li, Lisa Liskovoi, Amanda Ma, Michael MacKenzie, Jamie Mcdonald, David Meyers, Anthony Micallef, Tara Mikiovic, Sophia Mincheva, Jess Mitchell, Shelley Ann Morris, Brandon Mowers, Sloane Mulligan, Novlette Murray, Olav Naas, Rytch Newmiller, Miracle Okeuga, Ryan Ollis, Christine Paterson, David H. Pereyra, Irene Pollock, Christopher Polson, Jaclyn Pope, Wendy Porch, Doris Rajan, Ron Reddam, Vera Roberts, Janet Rodriguez, Skittles Roshan, Mirvat Sanaallah, Shalaine Sedres, Bo Louie Siu, Connor Stewart, Mahadeo A. Sukhai, Christopher Sutton, Sandra Tavares, Nicole Tilley, Ana Tobar, Jim Tokos, Jutta Treviranus, Gift Tshuma, Abid Virani, Boris Vukovic, Bailey Wagner, Ruth Warick, Ian White, Valerie Wolbert, Patrick Wong, Cheryl Zinyk
+Bernard Akuoko — Taryn Allen\
+Claire Andrews — Pedro Luis Aranguren Marquez\
+Michael Bach — Michael Baillargeon\
+Joy Borgonia — Rhonda Briggs
+\
+Chris Butler — Marco Chiaramonte
+\
+Anthony Chiu — Logan Churchill
+\
+Awo Dirie — Jessica Diskant
+\
+Tracey Dowhaniuk — Alexis Dowsett
+\
+Jessica Dumelie — Lynn Eyland
+\
+Adrianne Fitch — Deborah Floden
+\
+W. Francis Fung — Miron Gazda
+\
+Krista Giguere — Laura Goodchild
+\
+Keith Gordon — Robert Gray
+\
+John Guido — Mary-Rose Hackbart
+\
+Kaitlyn Hundt-Lippett — Rainbow Hunt
+\
+Kelly Johnson — Kate Kalcevich
+\
+Roger Khouri — Kim Kilpatrick
+\
+Ka Li — Lisa Liskovoi
+\
+Amanda Ma — Michael MacKenzie
+\
+Jamie Mcdonald — David Meyers
+\
+Anthony Micallef — Tara Mikiovic
+\
+Sophia Mincheva — Jess Mitchell
+\
+Shelley Ann Morris — Brandon Mowers
+\
+Sloane Mulligan — Novlette Murray
+\
+Olav Naas — Rytch Newmiller
+\
+Miracle Okeuga — Ryan Ollis
+\
+Christine Paterson — David H. Pereyra
+\
+Irene Pollock — Christopher Polson
+\
+Jaclyn Pope — Wendy Porch
+\
+Doris Rajan — Ron Reddam
+\
+Vera Roberts — Janet Rodriguez
+\
+Skittles Roshan — Mirvat Sanaallah
+\
+Shalaine Sedres — Bo Louie Siu
+\
+Connor Stewart — Mahadeo A. Sukhai
+\
+Christopher Sutton — Sandra Tavares\
+Nicole Tilley — Ana Tobar
+\
+Jim Tokos — Jutta Treviranus
+\
+Gift Tshuma — Abid Virani
+\
+Boris Vukovic — Bailey Wagner
+\
+Ruth Warick — Ian White
+\
+Valerie Wolbert — Patrick Wong
+\
+Cheryl Zinyk
 
-## Funders
-
-Funded by Accessibility Standards Canada.
+## Funded by Accessibility Standards Canada
 
 ![The logo of the Government of Canada.](/media/canada.png)
