@@ -37,7 +37,7 @@ We conducted 4 co-design sets (each consisting of 3 sessions) where we explored,
 
 #### Storytelling
 
-{% imagePositionWithText "/media/picture1.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "25%", "300", "undefined" %}
+{% imagePositionWithText "/media/bank.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "50%", "500", "undefined" %}
 
 {% endimagePositionWithText %}
 
