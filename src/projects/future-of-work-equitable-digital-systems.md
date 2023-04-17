@@ -270,6 +270,8 @@ Valerie Wolbert — Patrick Wong
 \
 Cheryl Zinyk
 
-## Funded by Accessibility Standards Canada
+## Acknowledgement
+
+This project was funded by **Accessibility Standards Canada**
 
 ![The logo of the Government of Canada.](/media/canada.png)
