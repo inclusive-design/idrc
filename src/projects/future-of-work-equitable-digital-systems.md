@@ -35,12 +35,6 @@ The full final report and project outcomes can be downloaded in English and Fren
 
 We conducted four co-design sets (each consisting of 3 sessions) where we explored, using different approaches, how technologies present barriers, how technologies could meet the needs of people with disabilities, and how people with disabilities are forced to \*compromise\* expectations for an often inequitable experience. 
 
-#### Storytelling
-
-{% imagePositionWithText "/media/bank.jpg", "A picture of a bank of the future that is part machine, part person.", "left", "50%", "500", "undefined" %}
-
-{% endimagePositionWithText %}
-
 ### Co-design 1:  Digital System Experiences, Barriers, and Approaches
 
 Our first co-design captured moments (vignettes) that illustrate some of the experiences people with disabilities have with technology *within* the context of work and the workplace. The first co-design was intentionally broad to enable greater freedom to discover barriers to technology experienced by the co-design researchers.
@@ -107,30 +101,20 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 #### Love Letter
 
-
-
-
-
 > *Dear Zoom Live Transcription,*
->
 >
 > *I wanted to write this letter because thanks to you, I can now participate in online meetings with any number of people. For the first time in my life, my hearing loss does not present a significant barrier. The COVID pandemic has unfortunately caused so much illness, death, and loss over the past two years. However, the advent of so many people working and meeting remotely using your technology, which grew out of the pandemic, has been nothing short of revolutionary!*
 >
->
 > *When we first met, I highly doubted you could work properly. I thought Artificial Intelligence could never be as accurate as a real live person. I thought you would be too slow, make tons of mistakes and leave me more confused and isolated than ever. But when I saw how beautifully and accurately you caption pretty much everything people say, I was so thrilled and excited!*
 >
->
 > *Undoubtedly, you have changed my life. For the first time, I don’t have to sit through a 2-hour meeting without a single clue what people are talking about, or struggle to understand ASL interpreters when ASL is not my first language, or strain to hear ASL voicers who are translating for hearing people but certainly not for me, or have someone with no training (and in some cases, no desire) type for me on a laptop whatever THEY deem important enough for me to know. Thanks to you, none of those things need ever happen again. I can now fully take part in any online meeting, and I am so grateful!*
->
 >
 > *I fondly remember the first meeting I attended, a co-op meeting, where I could understand everything and actually participate for the first time. I didn’t have to sit through the entire meeting without contributing, not because I lack interest, intelligence, or creativity but because I do not hear well enough to follow the discussion. I didn’t have to worry about feeling humiliated because I just commented on something they finished talking about five minutes ago. At this meeting, I spoke up several times and was always acknowledged. I felt a wonderful sense of respect, belonging, self-confidence and excitement!
 > I love so many things about you. Not only can I see caption*
 >
 > *s at the bottom of my screen, but I can open a transcript and scroll up to read over what I missed. I can save that transcript, use it to compile highly accurate meeting minutes and refer to it anytime I wish. Even when I am not responsible for taking minutes, I can send that transcript to the minute taker, who invariably has no idea you exist and is so happy and grateful! This is a great example of how technology that people might assume is only for those with hearing loss can benefit everyone.*
 >
->
 > *You have made my life so much better because you have opened up new possibilities and opportunities for me on a professional, community and personal level. You have guided me through a successful job interview and made it possible for me attend and lead meetings while working remotely, which I absolutely love! Thanks to you, I have participated in several online community meetings and events, including my co-op’s monthly meeting, a panel discussion for an art exhibit to which I contributed, and the Future of Work: Equitable Digital Systems project. You even helped me lead a virtual Passover Seder when the pandemic prevented my family from gathering for our favourite Jewish holiday.*
->
 >
 > *I have many hopes for our future together. I want to reach higher in my professional life and find a position where I can fully utilize my talents, skills and experience, with fewer communication barriers than ever before. I want to participate more fully in my community. I want to show the world that deaf, hard of hearing and deaf-blind people are everywhere, we are competent and capable, and we deserve the same access and opportunities as everyone else. My hope is that you continually improve yourself so that you can help me and others with hearing loss connect with anyone, anywhere. Zoom Live Transcription, I adore you!*
 
@@ -140,24 +124,17 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 > *Dear Zoom Live Transcription,*
 >
->
 > *We’ve been together for about five months now and although we got along great in the beginning, the honeymoon phase is over. You have made my professional life a lot better by making online meetings accessible, but sometimes you screw things up and leave me feeling frustrated. I’ve had relationships with Microsoft Teams and Google Meet, and I wonder if maybe they would be a better match for me.*
->
 >
 > *Lately I have been losing trust in you because you sometimes lag. Even if it’s a short lag, like five to seconds, it keeps everyone at a meeting waiting and it really embarrasses me! For example, sometimes I put my hand up because I want to ask a question or contribute to the discussion, and the facilitator calls on me. While I am watching for my name to appear, the facilitator and everyone at the meeting wonders why I’m not saying anything.*
 >
->
 > *Can’t you offer something to click on so that facilitator can let me know immediately that it’s my turn to speak? You may not realize this but people with hearing impairment are very cautious about interrupting the conversation. Once, while taking a course, you were lagging for 20 seconds, which is completely unacceptable for a live meeting! It took a lot of work, time and patience until I figured out that the problem was with my laptop, not with you or my internet connection. Still, you’re not off the hook for that, why do you only work properly with certain equipment?*
->
 >
 > *Speaking of having problems and trying to figure things out, why is it completely impossible to contact you or anyone at Zoom? Why don’t you don’t have a help line I could call, or a customer service chat function, or even an email address for asking questions and reporting problems? At this point, my best bet is to look for online videos, offered by kind souls out there and hopefully captioned, to show me how to navigate you and do certain things. Come on, Zoom, where’s your customer service? And speaking of service, why are you only accessible to customers with paid accounts? You’re a vital, necessary part of Zoom technology, and limiting your availability only to those who are employed or who can afford paid accounts is nothing short of discrimination!*
 >
->
 > *One habit of yours that drives me nuts is when you let the Chat function block you. Once, in a Zoom meeting on my cell phone, a well-meaning person kept sending me chat messages whenever you got something wrong. Each time, you were completely blocked by the chat window, and I ended up missing a whole lot more than a few words here and there. I missed huge parts of the conversation and pretty much lost the thread of that meeting! And although I can usually figure things out based on the context, you do get things wrong sometimes. If someone has a strong accent or a speech impediment, your captions make absolutely no sense. Can’t you get better AI to improve your transcription abilities?*
 >
->
 > *Another time I was leading a meeting and had to leave for about ten minutes, so a colleague took over leading the meeting. When the meeting was almost over, my colleague ended the meeting for everyone before I had a chance to save the transcript, which was a disaster! Why can’t you be more like Microsoft Teams and offer a function where the transcript is saved automatically?*
->
 >
 > *It hasn’t been all bad but sometimes I worry that you are holding me back from my dreams of complete access and inclusion. There’s a lot you still offer me, but your shortcomings have been making me so unhappy lately, I don’t think I can trust you to get me through online meetings anymore. Sorry Zoom Live Transcription, but I’m afraid it’s over between us. I’m going back to Microsoft Teams.*
 >
@@ -167,18 +144,13 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 
 > *Dear Zoom, Live Transcription,*
 >
->
 > *After some soul searching, I have decided to take you back, though I cannot guarantee I won’t be seeing Microsoft Teams and Google Meet from time to time, depending on the situation. Even though you aren’t perfect, I realize that no technology is absolutely perfect every moment. Despite your flaws, you have enough good qualities to keep me returning to you more than any other technology out there.*
->
 >
 > *Please understand that I still have high expectations for you, and I expect you to continue to work on eliminating your lag, developing a “your turn to speak” feature, improving your customer service, coordinating better with the Chat function, keeping your captioning mistakes to a minimum, and saving transcripts automatically. Unless I see improvement in these things, I am gone for good!*
 >
->
 > *On the other hand, I still appreciate your good qualities and I recognize that you are the best technology for captioning live meetings. On my end, I am going to work on being extra alert to signals that it’s my turn to speak, speaking up during the meeting if someone’s chat is blocking the conversation, and saving a transcript at the very first sign that the meeting is winding down. I think I am being fair to both of us.*
 >
->
 > *I hope we can both grow together for a long time in the future. You have opened new opportunities for me in my personal and professional life and given me a degree of access I would never have thought possible. I would be very sorry to see our relationship come to an end. Let’s both continue to learn and improve ourselves!*
->
 >
 > *With love and gratitude,*
 
