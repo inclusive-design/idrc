@@ -44,7 +44,7 @@
             </div>
             <div class="card-description">
                 <p>
-                    {{ description | markdown | safe }}
+                    {{ description | safe }}
                 </p>
             </div>
             {% if publishedYear %}
@@ -52,12 +52,14 @@
                     <p>Published in {{ publishedYear | safe }}</p>
                 </div>
             {% endif %}
-            <div class="card-link">
-                <a rel="external">
-                    Visit {{ title }}
-                    <svg role="presentation"><use xlink:href="#external" /></svg>
-                </a>
-            </div>
+            {% if link %}
+                <div class="card-link">
+                    <a rel="external">
+                        Visit {{ title }}
+                        <svg role="presentation"><use xlink:href="#external" /></svg>
+                    </a>
+                </div>
+            {% endif %}
         </div>
         {% if thumbnailImage %}
         <div class="card-image">
