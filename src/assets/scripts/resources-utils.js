@@ -194,7 +194,7 @@ function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
 	let appliedFilterHtml = '<h2>Search results</h2><div class=\'resources-applied-filters\'>';
 
 	if (numberOfResources === 0) {
-		appliedFilterHtml += '<div class=\'resources-no-results\'><p>Sorry, no results were found based on your applied filters.</p></div>';
+		appliedFilterHtml += '<div class=\'resources-no-results\' role=\'alert\'><p>Sorry, no results were found based on your applied filters.</p></div>';
 	} else {
 		appliedFilterHtml += `<div class='resources-filtered-number' role='alert'><p>Showing ${numberOfResources} ${numberOfResources === 1 ? 'result' : 'results'}</p></div>`;
 	}
