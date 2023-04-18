@@ -450,10 +450,10 @@ collections:
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
-      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Resource Name", name: "title", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
-      - {label: "Published Year", name: "publishedYear", widget: "string", required: true}
-      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
+      - {label: "Published Year", name: "publishedYear", widget: "string", hint: "The year this resource was first publicly available.", required: true}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
       - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
       - label: "Resource Topics"
         name: "topics"
