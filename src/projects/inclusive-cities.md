@@ -6,6 +6,6 @@ description: >-
   Co-designing connected cities, neighbourhoods, and spaces that are more
   diverse and inclusive.
 link: https://cities.inclusivedesign.ca/
-order: 45
+order: 90
 thumbnailImage: /media/project-cities.png
 ---

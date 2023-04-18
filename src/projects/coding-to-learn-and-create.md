@@ -7,6 +7,6 @@ description: >-
   lessons, and projects that help kids learn, develop social and communication
   skills, and express themselves with code.
 link: https://www.codelearncreate.org/
-order: 120
+order: 70
 thumbnailImage: /media/project-c2lc.png
 ---

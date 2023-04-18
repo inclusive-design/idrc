@@ -10,6 +10,6 @@ description: >-
   was to understand and examine intersecting topics of AI, automation, standards
   and employment as they mainly relate to persons with disabilities.
 link: https://wecount.inclusivedesign.ca/views/fwd/
-order: 90
+order: 60
 thumbnailImage: /media/project-FWD.png
 ---

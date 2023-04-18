@@ -4,7 +4,7 @@ title: Intelligent User Interfaces for Virtual Healthcare
 description: Intelligent User Interfaces for Virtual Healthcare aims to reduce
   barriers to accessing healthcare through inclusive guidelines for (virtual or
   in-person) healthcare and an approach to personalization in these settings.
-order: 60
+order: 100
 thumbnailImage: ""
 ---
 Project objective: Reduce barriers to virtual healthcare.
