@@ -1,12 +1,12 @@
 ---
-projectName: "Future of Work: Equitable Digital Systems (EDS)"
+projectName: "Future of Work: Equitable Digital Systems"
 title: "A Description of the Project: EDS"
 shortName: EDS
 description: Equitable Digital Systems focused on examining the accessibility of
   the digital tools and systems we use for work. We used our shared experiences
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
-order: 80
+order: 55
 thumbnailImage: /media/project-EDS.png
 ---
 {% imagePositionWithText "/media/eds-colored-03.png", "Equitable Digital Systems logo", "center", "50%", "300", "undefined" %}

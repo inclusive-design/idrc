@@ -8,6 +8,7 @@ description: "This resource explores the importance of, and processes for,
   work that we do. It aims to make learning inclusive with connection, access,
   and meaning-making at its core."
 link: https://ecampusontario.pressbooks.pub/onhumanlearn/
+order: 35
 ---
 This resource explores what *humanizing* teaching and learning means: to acknowledge that our relationships are foundational to the work that we do. It means to make learning inclusive with connection, access, and meaning-making at its core.
 
