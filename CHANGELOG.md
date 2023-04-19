@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.5.0](https://github.com/inclusive-design/idrc/compare/v1.4.0...v1.5.0) (2023-04-19)
+
+
+### Features
+
+* redirect legacy 443-whatisinclusivedesign to /about/philosophy/ ([#424](https://github.com/inclusive-design/idrc/issues/424)) ([fa80d59](https://github.com/inclusive-design/idrc/commit/fa80d5906db6ef044bfa2fa4fecdfe5948f46c15))
+
+
+### Bug Fixes
+
+* add Infusion core CSS ([2b4e117](https://github.com/inclusive-design/idrc/commit/2b4e1171fb21b9fc3d2cef968d440b22ad9b5771))
+* fix distorted project thumbnails when resizing screen ([#506](https://github.com/inclusive-design/idrc/issues/506)) (resolved [#498](https://github.com/inclusive-design/idrc/issues/498)) ([2d29071](https://github.com/inclusive-design/idrc/commit/2d29071c872caa16144e9014a9b1a58670b4ec9f))
+* fix lighthouse CI failures ([#509](https://github.com/inclusive-design/idrc/issues/509)) ([91042a7](https://github.com/inclusive-design/idrc/commit/91042a70eefc47863c51d8569c6c767b54924029))
+* resolve critical error in CMS ([a30056a](https://github.com/inclusive-design/idrc/commit/a30056a4f2b0ebe847984081b21bca27b8e1a866))
+* Update projects listing to use project name (resolves [#539](https://github.com/inclusive-design/idrc/issues/539)) ([#541](https://github.com/inclusive-design/idrc/issues/541)) ([a15f851](https://github.com/inclusive-design/idrc/commit/a15f8519cf8b8ca2a92f7397b140b0ea542aeaf5))
+
 ## [1.4.0](https://github.com/inclusive-design/idrc/compare/v1.3.1...v1.4.0) (2022-10-26)
 
 
