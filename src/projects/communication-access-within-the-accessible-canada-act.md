@@ -29,6 +29,24 @@ Global and national scan of existing data and research related to incidence and 
 
 [Visit Fluid Project Wiki for more information about the project](https://wiki.fluidproject.org/display/fluid/Communication+Access+within+the+Accessible+Canada+Act)
 
+## Reports
+
+[Part One: Framing Communication Accessibility in the Canadian Context](src/media/commacc-part-1_framing-report_en.docx)
+
+[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](src/media/commacc-part-2_scoping-report_en.docx)
+
+[Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](src/media/commacc-part-3_recommendations_en.docx)
+
+### Les rapports sont également disponibles en français:
+
+[Partie un : Structurer l’accessibilité des communications dans le contexte canadien](src/media/commacc-part-1_framing-report_fr.docx)
+
+[Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral](src/media/commacc-part-2_scoping-report_fr.docx)
+
+[Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal](src/media/commacc-part-3_recommendations_fr.docx)
+
+
+
 ## Advisory Committee
 
 ### Anne Abbott
@@ -135,22 +153,6 @@ Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre.
 ### *Shalaine Sedres*, Research Assistant
 
 Shalaine Sedres is a graduate student pursuing a Master’s degree at the University of Toronto’s Rehabilitation Science Institute. She obtained her Bachelor’s degree in Community Rehabilitation and Disability Studies from the University of Calgary. As a research assistant, Shalaine has made valuable contributions to the Inclusive Design Research Centre’s Equitable Digital Systems project by facilitating co-design sessions and interpreting insights. Her current research focuses on leveraging accessible playgrounds by incorporating rehabilitation and educational programming. She is dedicated to promoting inclusivity and reducing barriers that hinder the full participation of children with disabilities.
-
-## Reports
-
-[Part One: Framing Communication Accessibility in the Canadian Context](src/media/commacc-part-1_framing-report_en.docx)
-
-[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](src/media/commacc-part-2_scoping-report_en.docx)
-
-[Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](src/media/commacc-part-3_recommendations_en.docx)
-
-### [](src/media/commacc-part-3_recommendations_en.docx)Les rapports sont également disponibles en français:
-
-[Partie un : Structurer l’accessibilité des communications dans le contexte canadien](src/media/commacc-part-1_framing-report_fr.docx)
-
-[Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral](src/media/commacc-part-2_scoping-report_fr.docx)
-
-[Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal](src/media/commacc-part-3_recommendations_fr.docx)
 
 [](src/media/commacc-part-3_recommendations_fr.docx)
 
