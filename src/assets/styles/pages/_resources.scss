@@ -26,33 +26,67 @@
     }
 
     .filter-expand-button {
+      border-radius: 2px;
       border-top: rem(3) solid var(--fl-fgColor, var(--indigo-500));
       column-gap: rem(8);
-      display: grid;
-      grid-template-columns: 1fr 20fr 1fr;
       margin-top: 0;
       padding: rem(8) 0;
 
-      .filter-title {
-        column-gap: rem(8);
-        display: flex;
+      .filter-content {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        padding-left: rem(3);
+        padding-right: rem(3);
 
-        p {
-          color: var(--fl-fgColor, var(--indigo-500));
-          margin-top: 0;
+        .filter-title {
+          column-gap: rem(8);
+          display: flex;
+          font-weight: 600;
+
+          p {
+            color: var(--fl-fgColor, var(--indigo-500));
+            margin-top: 0;
+          }
+        }
+
+        svg {
+          height: rem(16);
+          margin: auto;
+          stroke: var(--fl-fgColor, var(--indigo-500));
+          width: rem(16);
         }
       }
 
-      svg {
-        height: rem(16);
-        margin: auto;
-        stroke: var(--fl-fgColor, var(--indigo-500));
-        width: rem(16);
+      &:active {
+        background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        border-top: rem(3) solid var(--fl-bgColor, var(--indigo-800));
+
+        .filter-content {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        .filter-title {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        p {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          color: var(--fl-bgColor, var(--indigo-800)) !important;
+        }
+
+        svg {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          stroke: var(--fl-bgColor, var(--indigo-800));
+        }
       }
 
       &:hover {
         background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
         border-top: rem(3) solid var(--fl-bgColor, var(--indigo-800));
+
+        .filter-content {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
 
         .filter-title {
           background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
@@ -72,6 +106,7 @@
       &:focus {
         border-top: rem(3) solid transparent;
         outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+        z-index: 1;
       }
 
       &[aria-expanded='false'] {
@@ -97,7 +132,7 @@
 
     // Override the default style defined in _base.scss
     ul {
-      margin: rem(16) 0 rem(16) 0;
+      margin: rem(4) 0 rem(32) 0;
 
       li {
         margin-bottom: rem(8);
@@ -172,6 +207,11 @@
       outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
       outline-offset: rem(3);
     }
+
+    &:active {
+      background-color: var(--fl-fgColor, var(--indigo-200));
+      color: var(--fl-bgColor, var(--indigo-500));
+    }
   }
 
   .reset-button {
@@ -196,6 +236,11 @@
       outline: var(--fl-fgColor, var(--indigo-800)) solid rem(3);
       outline-offset: rem(3);
     }
+
+    &:active {
+      background-color: var(--fl-fgColor, var(--indigo-500));
+      color: var(--fl-bgColor, #fff);
+    }
   }
 
   .resources-no-results {
@@ -210,12 +255,12 @@
 
   .resources-applied-filters {
     margin: 0;
-    padding-bottom: rem(16);
+    padding-bottom: rem(24);
 
     h3 {
       border-top: 2px solid var(--grey-200);
       margin-top: 0;
-      padding-top: rem(16);
+      padding-top: rem(24);
     }
 
     .filter-tags {
@@ -277,6 +322,18 @@
             stroke: var(--fl-buttonFgColor, var(--indigo-800)) !important;
           }
         }
+
+        &:active {
+          background-color: var(--fl-fgColor, var(--indigo-500));
+
+          p {
+            color: var(--fl-bgColor, #fff);
+          }
+
+          svg {
+            stroke: var(--fl-bgColor, #fff);
+          }
+        }
       }
 
       .filter-clear-all {
@@ -288,11 +345,11 @@
   .resources-filtered-number {
     font-size: rem(16);
     font-weight: 400;
-    padding: rem(16) 0 rem(16) 0;
+    padding: rem(16) 0 rem(24) 0;
   }
 
   .card {
-    border-top: 2px solid var(--coral-500);
+    border-top: 3px solid var(--coral-500);
     margin-bottom: rem(48);
 
     .card-image {
@@ -301,7 +358,7 @@
     }
 
     .card-title {
-      margin-top: rem(8);
+      margin-top: rem(16);
     }
 
     .card-tags {
@@ -321,6 +378,7 @@
         white-space: nowrap;
 
         p {
+          font-weight: 500;
           margin-top: 0;
         }
 
@@ -334,6 +392,7 @@
     }
 
     .card-publishedYear {
+      font-size: rem(14);
       margin-top: rem(16);
     }
 
@@ -342,6 +401,7 @@
 
       a {
         display: grid;
+        font-weight: 500;
         gap: rem(4);
         grid-template-columns: max-content min-content;
         width: min-content;

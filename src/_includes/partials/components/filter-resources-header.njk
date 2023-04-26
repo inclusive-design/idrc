@@ -1,9 +1,11 @@
 <button type="button" class="filter-expand-button" id="filterHeader-{{ filterType }}" aria-expanded="true" aria-label="collapse the {{ filterType }} filter">
-    <svg role="presentation"><use xlink:href="{{ filterIconId }}" /></svg>
-    <div class="filter-title">
-        <p>{{ filterTitle }}</p>
-        <p class="filter-applied-number" id="{{ 'filter-' + filterType }}"></p>
+    <div class="filter-content">
+        <svg role="presentation"><use xlink:href="{{ filterIconId }}" /></svg>
+        <div class="filter-title">
+            <p>{{ filterTitle }}</p>
+            <p class="filter-applied-number" id="{{ 'filter-' + filterType }}"></p>
+        </div>
+        <svg class="icon-minus" role="presentation"><use xlink:href="#minus" /></svg>
+        <svg class="icon-plus" role="presentation"><use xlink:href="#plus" /></svg>
     </div>
-    <svg class="icon-minus" role="presentation"><use xlink:href="#minus" /></svg>
-    <svg class="icon-plus" role="presentation"><use xlink:href="#plus" /></svg>
 </button>
