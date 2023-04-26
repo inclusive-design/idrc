@@ -7,7 +7,7 @@ description: IDRC is working to address communication access for people who have
   disabilities due to life-long or acquired cognitive and/or neurological
   disabilities.
 order: 110
-shortName: Communication Access
+shortName: ""
 thumbnailImage: /media/project-communication_access.png
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
