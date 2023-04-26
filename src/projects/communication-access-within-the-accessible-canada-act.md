@@ -31,7 +31,7 @@ Global and national scan of existing data and research related to incidence and 
 
 ## Reports
 
-[Part One: Framing Communication Accessibility in the Canadian Context](src/media/commacc-part-1_framing-report_en.docx)
+[Part One: Framing Communication Accessibility in the Canadian Context](media/commacc-part-1_framing-report_en.docx)
 
 [Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](src/media/commacc-part-2_scoping-report_en.docx)
 
