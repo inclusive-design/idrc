@@ -136,7 +136,7 @@ Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre.
 
 Shalaine Sedres is a graduate student pursuing a Master’s degree at the University of Toronto’s Rehabilitation Science Institute. She obtained her Bachelor’s degree in Community Rehabilitation and Disability Studies from the University of Calgary. As a research assistant, Shalaine has made valuable contributions to the Inclusive Design Research Centre’s Equitable Digital Systems project by facilitating co-design sessions and interpreting insights. Her current research focuses on leveraging accessible playgrounds by incorporating rehabilitation and educational programming. She is dedicated to promoting inclusivity and reducing barriers that hinder the full participation of children with disabilities.
 
-## Planned Reports
+## Reports
 
 Part One: Framing Communication Accessibility in the Canadian Context
 
@@ -144,7 +144,7 @@ Part Two: Scope of Communication Access Approaches and Supports for in Federally
 
 Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts
 
-### Les trois rapports sont également disponibles en français:
+### Les rapports sont également disponibles en français:
 
 Partie un : Structurer l’accessibilité des communications dans le contexte canadien
 
