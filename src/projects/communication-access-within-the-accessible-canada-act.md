@@ -144,7 +144,7 @@ Shalaine Sedres is a graduate student pursuing a Master’s degree at the Univer
 
 [Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](src/media/commacc-part-3_recommendations_en.docx)
 
-### [](src/media/commacc-part-3_recommendations_en.docx)Les rapports sont également disponibles en français:
+### Les rapports sont également disponibles en français:
 
 [Partie un : Structurer l’accessibilité des communications dans le contexte canadien](src/media/commacc-part-1_framing-report_fr.docx)
 
