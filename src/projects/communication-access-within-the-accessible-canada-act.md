@@ -31,19 +31,19 @@ Global and national scan of existing data and research related to incidence and 
 
 ## Reports
 
-[Part One: Framing Communication Accessibility in the Canadian Context](src/media/commacc-part-1_framing-report_en.docx)
+[Part One: Framing Communication Accessibility in the Canadian Context](media/commacc-part-1_framing-report_en.docx)
 
-[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](src/media/commacc-part-2_scoping-report_en.docx)
+[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](media/commacc-part-2_scoping-report_en.docx)
 
-[Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](src/media/commacc-part-3_recommendations_en.docx)
+[Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](media/commacc-part-3_recommendations_en.docx)
 
 ### Les rapports sont également disponibles en français:
 
-[Partie un : Structurer l’accessibilité des communications dans le contexte canadien](src/media/commacc-part-1_framing-report_fr.docx)
+[Partie un : Structurer l’accessibilité des communications dans le contexte canadien](media/commacc-part-1_framing-report_fr.docx)
 
-[Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral](src/media/commacc-part-2_scoping-report_fr.docx)
+[Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral](media/commacc-part-2_scoping-report_fr.docx)
 
-[Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal](src/media/commacc-part-3_recommendations_fr.docx)
+[Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal](media/commacc-part-3_recommendations_fr.docx)
 
 ## Advisory Committee
 
