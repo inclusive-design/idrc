@@ -138,13 +138,23 @@ Shalaine Sedres is a graduate student pursuing a Master’s degree at the Univer
 
 ## Planned Reports
 
-1. Framing report: Define the disability populations and personal communication supports for Canadians requiring access to federal services 
-2. Scoping report: Define the scope of accessibility barriers, and accommodations that people with communication disabilities may require to access different federal services. 
-3. Research report: Project findings and our recommended guidelines and standards.
+Part One: Framing Communication Accessibility in the Canadian Context
 
-   ![communication access symbol](/media/commaccsymbol.png)
+Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts 
 
-   [Learn about the communication access symbol (c)](https://www.cdacanada.com/resources/accessible-businesses-and-services/communication-access-symbol/)
+Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts
+
+### Les trois rapports sont également disponibles en français:
+
+Partie un : Structurer l’accessibilité des communications dans le contexte canadien
+
+Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral
+
+Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal
+
+![communication access symbol](/media/commaccsymbol.png)
+
+[Learn about the communication access symbol (c)](https://www.cdacanada.com/resources/accessible-businesses-and-services/communication-access-symbol/)
 
 ## Acknowledgements
 
