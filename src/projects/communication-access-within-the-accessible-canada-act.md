@@ -45,8 +45,6 @@ Global and national scan of existing data and research related to incidence and 
 
 [Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal](src/media/commacc-part-3_recommendations_fr.docx)
 
-
-
 ## Advisory Committee
 
 ### Anne Abbott
