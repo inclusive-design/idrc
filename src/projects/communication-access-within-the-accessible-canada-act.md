@@ -146,6 +146,8 @@ Shalaine Sedres is a graduate student pursuing a Master’s degree at the Univer
 
 ### Les rapports sont également disponibles en français:
 
+
+
 [Partie un : Structurer l’accessibilité des communications dans le contexte canadien](src/media/commacc-part-1_framing-report_fr.docx)
 
 [Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral](src/media/commacc-part-2_scoping-report_fr.docx)
