@@ -178,6 +178,21 @@
         top: 0;
         width: rem(2);
       }
+
+      &:active + label::before {
+        background-color: var(--fl-fgColor, var(--indigo-200));
+      }
+
+      &:hover + label::before {
+        outline: rem(3) solid var(--fl-fgColor, var(--indigo-500));
+      }
+
+      &:focus + label::before {
+        border: rem(1) solid var(--fl-fgColor, var(--indigo-500));
+        box-shadow:
+          0 0 0 rem(2) var(--fl-bgColor, #fff),
+          0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
+      }
     }
 
     // End of custom checkboxes
