@@ -1,12 +1,13 @@
 ---
-projectName: Communication Access Within the Accessible Canada Act
-title: Communication Access Within the Accessible Canada Act
+projectName: Communication Access within the Accessible Canada Act
+title: Communication Access within the Accessible Canada Act
 description: IDRC is working to address communication access for people who have
   speech, language and communication disabilities. This project will focus on
   communication access for people who have speech, language and communication
   disabilities due to life-long or acquired cognitive and/or neurological
   disabilities.
-order: 110
+order: 65
+shortName: ""
 thumbnailImage: /media/project-communication_access.png
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
@@ -27,6 +28,22 @@ Global and national scan of existing data and research related to incidence and 
 <iframe class="airtable-embed" src="https://airtable.com/embed/shr0NHM9zvbug0nAh?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 [Visit Fluid Project Wiki for more information about the project](https://wiki.fluidproject.org/display/fluid/Communication+Access+within+the+Accessible+Canada+Act)
+
+## Reports
+
+[Part One: Framing Communication Accessibility in the Canadian Context](/media/commacc-part-1_framing-report_en.docx)
+
+[](/media/commacc-part-1_framing-report_en.docx)[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](/media/commacc-part-2_scoping-report_en.docx)
+
+[Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](/media/commacc-part-3_recommendations_en.docx)
+
+### Les rapports sont également disponibles en français:
+
+[Partie un : Structurer l’accessibilité des communications dans le contexte canadien](/media/commacc-part-1_framing-report_fr.docx)
+
+[Deuxième partie : Portée des approches et des soutiens en matière d’accès à la communication dans les contextes réglementés par le gouvernement fédéral](/media/commacc-part-2_scoping-report_fr.docx)
+
+[Troisième partie : Recommandations pour améliorer l’accès aux communications dans les contextes réglementés par le gouvernement federal](/media/commacc-part-3_recommendations_fr.docx)
 
 ## Advisory Committee
 
@@ -135,15 +152,11 @@ Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre.
 
 Shalaine Sedres is a graduate student pursuing a Master’s degree at the University of Toronto’s Rehabilitation Science Institute. She obtained her Bachelor’s degree in Community Rehabilitation and Disability Studies from the University of Calgary. As a research assistant, Shalaine has made valuable contributions to the Inclusive Design Research Centre’s Equitable Digital Systems project by facilitating co-design sessions and interpreting insights. Her current research focuses on leveraging accessible playgrounds by incorporating rehabilitation and educational programming. She is dedicated to promoting inclusivity and reducing barriers that hinder the full participation of children with disabilities.
 
-## Planned Reports
+[](src/media/commacc-part-3_recommendations_fr.docx)
 
-1. Framing report: Define the disability populations and personal communication supports for Canadians requiring access to federal services 
-2. Scoping report: Define the scope of accessibility barriers, and accommodations that people with communication disabilities may require to access different federal services. 
-3. Research report: Project findings and our recommended guidelines and standards.
+![communication access symbol](/media/commaccsymbol.png)
 
-   ![communication access symbol](/media/commaccsymbol.png)
-
-   [Learn about the communication access symbol (c)](https://www.cdacanada.com/resources/accessible-businesses-and-services/communication-access-symbol/)
+[Learn about the communication access symbol (c)](https://www.cdacanada.com/resources/accessible-businesses-and-services/communication-access-symbol/)
 
 ## Acknowledgements
 
