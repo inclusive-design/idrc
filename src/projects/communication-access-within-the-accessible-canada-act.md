@@ -6,7 +6,7 @@ description: IDRC is working to address communication access for people who have
   communication access for people who have speech, language and communication
   disabilities due to life-long or acquired cognitive and/or neurological
   disabilities.
-order: 110
+order: 65
 shortName: ""
 thumbnailImage: /media/project-communication_access.png
 ---
