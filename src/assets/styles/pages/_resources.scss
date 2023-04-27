@@ -457,8 +457,10 @@
 // Box focus when "enhance inputs" is enabled
 .fl-input-enhanced .filter-checkbox:focus + label::before,
 .fl-input-enhanced .filter-checkbox:hover + label::before {
-  border: rem(2.5) solid var(--fl-fgColor, var(--indigo-500));
-  outline: none;
+  border: rem(2) solid var(--fl-fgColor, var(--indigo-500));
+  box-shadow:
+    0 0 0 rem(2) var(--fl-bgColor, #fff),
+    0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
 }
 
 @include breakpoint-up(sm) {
