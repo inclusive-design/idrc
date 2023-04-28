@@ -433,8 +433,21 @@
 
 // Custom styles when "enhance inputs" is enabled
 // Custom checkbox
-.fl-input-enhanced .filter-checkbox + label::before {
-  outline: rem(3) double var(--fl-fgColor, var(--indigo-500));
+
+.fl-input-enhanced {
+  .filter {
+    .filter-checkbox + label::before {
+      border: rem(2) solid var(--fl-fgColor, var(--indigo-500));
+    }
+
+    .filter-checkbox:focus + label::before,
+    .filter-checkbox:hover + label::before {
+      border: rem(2) solid var(--fl-fgColor, var(--indigo-500));
+      box-shadow:
+        0 0 0 rem(2) var(--fl-bgColor, #fff),
+        0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
+    }
+  }
 }
 
 // Box checked
@@ -446,21 +459,6 @@
 .filter .filter-checkbox:active + label::before {
   background-color: var(--fl-bgColor, var(--indigo-500));
   border: rem(2.5) solid var(--fl-fgColor, var(--indigo-500));
-}
-
-// Box focus
-.filter .filter-checkbox:focus + label::before,
-.filter .filter-checkbox:hover + label::before {
-  outline: rem(3.5) double var(--fl-fgColor, var(--indigo-500));
-}
-
-// Box focus when "enhance inputs" is enabled
-.fl-input-enhanced .filter-checkbox:focus + label::before,
-.fl-input-enhanced .filter-checkbox:hover + label::before {
-  border: rem(2) solid var(--fl-fgColor, var(--indigo-500));
-  box-shadow:
-    0 0 0 rem(2) var(--fl-bgColor, #fff),
-    0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
 }
 
 @include breakpoint-up(sm) {
