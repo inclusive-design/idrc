@@ -95,7 +95,7 @@ function renderFilters(selectedTopics, selectedTypes) { // eslint-disable-line n
 		// make sure that filter sections are expanded/collapsed as it was before
 		const expandButton = document.querySelector(`#filterHeader-${section}`);
 		if (expandButton) {
-			expandButton.setAttribute('aria-expanded', localStorage.getItem(section));
+			expandButton.setAttribute('aria-expanded', localStorage.getItem(section) || true);
 		}
 		const filterBodySelector = `#filterBody-${section}`;
 		const filter = $(expandButton).siblings(filterBodySelector);
