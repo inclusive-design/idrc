@@ -76,7 +76,7 @@
     "backstopjs": "6.1.4",
     "cross-env": "7.0.3",
     "eleventy-plugin-error-overlay": "1.0.0",
-    "eslint": "8.35.0",
+    "eslint": "8.39.0",
     "eslint-plugin-react": "7.32.2",
     "estrella": "1.4.1",
     "html-minifier": "4.0.0",
