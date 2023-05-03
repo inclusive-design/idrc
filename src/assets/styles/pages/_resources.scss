@@ -6,7 +6,12 @@
 .page--resources {
   .content {
     flex: 0 0 90%;
+    padding-right: calc(var(--gutter) / 2);
     padding-top: rem(32);
+  }
+
+  article {
+    justify-content: unset;
   }
 
   .resources-container {
@@ -17,8 +22,8 @@
   .filter {
     display: flex;
     flex-direction: column;
-    padding-left: rem(8);
-    padding-right: rem(8);
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
     padding-top: rem(32);
 
     h2 {
@@ -41,7 +46,9 @@
         .filter-title {
           column-gap: rem(8);
           display: flex;
+          font-family: 'Work Sans';
           font-weight: 600;
+          margin-left: rem(8);
 
           p {
             color: var(--fl-fgColor, var(--indigo-500));
@@ -150,18 +157,19 @@
 
       & + label {
         cursor: pointer;
+        display: flex;
         padding: 0;
         position: relative;
       }
 
       // Box
       & + label::before {
+        border: rem(1) solid var(--fl-fgColor, var(--indigo-500));
         border-radius: rem(3);
         content: '';
         display: inline-block;
         height: rem(20);
-        margin: rem(4) rem(10) 0 0;
-        outline: rem(1) solid var(--fl-fgColor, var(--indigo-500));
+        margin: auto rem(10) auto 0;
         vertical-align: text-top;
         width: rem(20);
       }
@@ -171,11 +179,12 @@
         color: var(--fl-bgColor, $white);
         content: '\2713';
         display: inline-block;
+        font-family: system-ui;
         font-size: rem(18);
         height: rem(2);
-        left: rem(4);
+        left: rem(2);
         position: absolute;
-        top: 0;
+        top: rem(-2);
         width: rem(2);
       }
 
@@ -183,15 +192,15 @@
         background-color: var(--fl-fgColor, var(--indigo-200));
       }
 
-      &:hover + label::before {
-        outline: rem(3) solid var(--fl-fgColor, var(--indigo-500));
-      }
-
       &:focus + label::before {
         border: rem(1) solid var(--fl-fgColor, var(--indigo-500));
         box-shadow:
           0 0 0 rem(2) var(--fl-bgColor, #fff),
           0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
+      }
+
+      &:hover + label::before {
+        border: rem(3) solid var(--fl-fgColor, var(--indigo-500));
       }
     }
 
@@ -467,21 +476,12 @@
       grid-template-columns: 1fr 2fr;
     }
 
-    .resources-applied-filters {
-      padding-right: rem(64);
-    }
-
-    .resources-result {
-      padding-right: rem(64);
-    }
-
     .card {
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
 
     .filter {
-      padding-left: rem(64);
       padding-right: 0;
     }
   }

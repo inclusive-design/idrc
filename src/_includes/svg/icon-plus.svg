@@ -1,2 +1,1 @@
-<line y1="5" x2="10" y2="5" stroke-width="2"/>
-<line x1="5" y1="4.37114e-08" x2="5" y2="10" stroke-width="2"/>
+<path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" stroke-width="4"/>
