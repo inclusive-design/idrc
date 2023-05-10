@@ -19,17 +19,17 @@ headerTextColor: black
 
 The group promotes inclusion in a full complement of activities:
 
-- Growing inclusive design and development practices
-- Creating open source tools that others can use and contribute to
-- Teaching the theory and practice of inclusive design
-- Helping to develop policies, regulations, guidelines and standards that support inclusion
-- Providing services that support individuals in finding systems that match their needs
+* Growing inclusive design and development practices
+* Creating open source tools that others can use and contribute to
+* Teaching the theory and practice of inclusive design
+* Helping to develop policies, regulations, guidelines and standards that support inclusion
+* Providing services that support individuals in finding systems that match their needs
 
 ## Our Impact
 
 ### Developed international standards for accessibility
 
-Over our 27 year history, whenever a new technology emerges, we have raised awareness of the risks and helped to leverage the opportunities for greater inclusion. We find the gaps or difficult requirements that are not addressed, and co-design [building blocks](https://fluidproject.org) and other [resources](https://guide.inclusivedesign.ca/) to fill the gaps. We give these away freely so that there are no barriers to inclusive adoption and so others can take ownership and multiply the impact.
+Snce we began in 1994, whenever a new technology emerges, we have raised awareness of the risks and helped to leverage the opportunities for greater inclusion. We find the gaps or difficult requirements that are not addressed, and co-design [building blocks](https://fluidproject.org) and other [resources](https://guide.inclusivedesign.ca/) to fill the gaps. We give these away freely so that there are no barriers to inclusive adoption and so others can take ownership and multiply the impact.
 
 We began with the Web, helping to establish the Web Accessibility Initiative at the W3C, writing early Web accessibility guidelines, and working to make the first HTML editor accessible (HoTMeL with Softquad). Over the years our focus has included elearning tools, virtual and extended reality, mobile systems, cooperative platforms, social media, smart cities, internet of things technologies, coding practices, artificial intelligence, virtual health, financial systems and many other systems.
 
