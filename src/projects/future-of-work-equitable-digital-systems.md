@@ -17,13 +17,13 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-## Final Report
+## Final Research Report
 
-The full final report and project outcomes can be downloaded in English and French.
+The final research report and project outcomes can be downloaded in English and French.
 
-[English version of the Final Report](/media/equitable-digital-systems-research-report-final_english.docx)
+[English version of the Final Research Report](/media/equitable-digital-systems-research-report-final_english.docx)
 
-[French version of the Final Report](/media/equitable-digital-systems-research-report-final_french.docx)
+[French version of the Final Research Report](/media/equitable-digital-systems-research-report-final_french.docx)
 
 ## Scan of Digital Accessibility Standards and Guidelines
 
