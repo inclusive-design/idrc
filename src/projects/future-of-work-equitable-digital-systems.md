@@ -31,7 +31,7 @@ We undertook a jurisdictional scan of international standards and regulations re
 
 .
 
-{% imagePositionWithText "", "ICT Standards and Legislation tile with checkbox checked.", "left", "100%", "500", "null" %}
+{% imagePositionWithText "/media/ict-standards-and-legislation-tile.jpg", "ICT Standards and Legislation tile with checkbox checked.", "left", "100%", "500", "null" %}
 
 {% endimagePositionWithText %}
 
