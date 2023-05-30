@@ -2,11 +2,11 @@
 title: "Inclusive Design: The Bell Curve, the Starburst and the Virtuous Tornado"
 author: Jutta Treviranus
 date: 2019-04-21
-thumbnailImage: /media/exploding-star.png
+thumbnailImage: /media/exploding-star.jpg
 ---
 As the director of the [Inclusive Design Research Centre](https://idrc.ocadu.ca/), I have frequently been asked how inclusive design relates to data and evidence. The answer is complex and involves theorists from the 1800’s, how their theories have been applied to people, and phenomena that permeate many natural spheres. Let me explain…
 
-![An exploding star.](/media/exploding-star.png "An exploding star.")
+![An exploding star.](/media/exploding-star.jpg "An exploding star.")
 
 If you take any group of people and you plot their individual needs and characteristics on a 3D multi-variate scatter-plot you get a starburst (also known as a “[normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)”). Reduced and flattened to two dimensions it looks like a bell curve (you might recognize this from school grading days or any reference to groups that are “tails,” referring to the tapering ends of the bell curve). However, people are complex and diverse and best understood in three dimensions — thus a 3D scatter-plot.
 
@@ -34,7 +34,7 @@ This same pattern is found not just in the products but in the necessary trainin
 
 This divide is not limited to the digital. All our mass-produced goods and services are designed to roughly satisfy the 80%. This means they are a misfit or mismatch for the “difficult 20%”. If you are among those 20% you will be scrambling to find products and services that work for you. You will need to pay more for any you do find.
 
-![The disparity in design, markets, research, education, work and democracy between the 20% and the 80%.](/media/80-20-disparity.png "The disparity in design, markets, research, education, work and democracy between the 20% and the 80%.")
+![The disparity in design, markets, research, education, work and democracy between the 20% and the 80%.](/media/80-20-disparity.jpg "The disparity in design, markets, research, education, work and democracy between the 20% and the 80%.")
 
 Applications of Pareto and Quetelet’s principles have had the most damaging effect on our notions of evidence, and thereby: knowledge and truth. We have equated evidence and truth about human beings with statistical significance, meaning what roughly holds true for the more uniform or average 80%. In fact, we have designed the favored research methods in such a way that the methods cannot be used on the 20%, or the 80% of the research terrain they cover. The conditions of the sanctioned research methods are that the group that is studied be homogeneous, that the context be controlled, and the factors isolated. This works for the 80% that cluster around the average. The 20% are anything but homogeneous and their context is never predictable or controlled.
 

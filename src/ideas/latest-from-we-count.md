@@ -65,7 +65,7 @@ The Floe project is working with researchers and educators at Queen’s Universi
 
 ## Learning to Be Human Together is a favourite Pressbook of 2022
 
-![Cover of the book](/media/f5539c6c-a447-fb7d-ee5e-fce00dda70d7.png)
+![Cover of the book](/media/f5539c6c-a447-fb7d-ee5e-fce00dda70d7.jpg)
 
 We are proud to announce that Learning to Be Human Together was included in the [favourite Pressbooks of 2022 list](https://pressbooks.com/open-education/pressbooks-community-favorites-2022/)!\
 \

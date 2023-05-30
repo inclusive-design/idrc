@@ -39,7 +39,7 @@ One of the first lessons I learned is that no amount of background research and 
 
 One of the distressing phenomena I observed during my career was the degree to which excelling in the respected design methods often led to worse design for the individuals that most depended on a good design. The more the designers engaged in rigorous research, or observation behind one-way mirrors, or focus groups with token representatives of high incidence disability groups, the more the designers failed to ‘get’ these pioneers and what was needed in the design. It was almost like the research and rigor was a shield to really understanding, while at the same time bolstering professional stature and distance.
 
-![](/media/mean.png 'Overwhelmed by the mean')
+![](/media/mean.jpg 'Overwhelmed by the mean')
 
 The larger the data set and the greater the power of the statistics, the more likely the unique needs of these pioneers would be lost or overpowered. It often became a tug of war between a design that stretched to where the edge user needed it versus a design backed by the research data — which would lead you away from the edge and toward the mean. Even the more creative design practices that involved an empathy cycle accompanied by ideation or brainstorming often landed on a design that completely missed the mark. While the designers could step out of their own assumptions and preconceptions, it didn’t necessarily mean they could step into the perspective of the edge user.
 
