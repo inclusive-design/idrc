@@ -259,7 +259,7 @@ collections:
         default: []
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
-          - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image"]}
+          - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image", "file"]}
           - label: "Text Colour"
             name: "textColor"
             widget: "select"
