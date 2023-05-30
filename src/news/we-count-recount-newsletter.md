@@ -10,7 +10,6 @@ socialImage: /media/we_count_recount_new_banner.png
 ![](/media/we_count_recount_new_banner.png)
 
 Read all past issues of the We Count Recount, We Count's monthly newsletter.
-foo
 
 
 <style type="text/css">
