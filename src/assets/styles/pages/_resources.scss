@@ -377,7 +377,7 @@
     margin-bottom: rem(48);
 
     .card-image {
-      margin: rem(16);
+      margin: rem(16) 0;
       object-fit: contain;
     }
 
@@ -479,6 +479,10 @@
     .card {
       display: grid;
       grid-template-columns: 2fr 1fr;
+
+      .card-image {
+        margin: rem(16);
+      }
     }
 
     .filter {
