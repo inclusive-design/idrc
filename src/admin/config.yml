@@ -29,13 +29,13 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image"]}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image", "file"]}
           - label: "Sections"
             name: "sections"
             widget: "list"
             fields:
               - {label: "Title", name: "title", widget: "string", required: true}
-              - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image"]}
+              - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image", "file"]}
               - label: "Text Colour"
                 name: "textColor"
                 widget: "select"
@@ -147,7 +147,7 @@ collections:
           - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
           - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
           - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image"]}
+          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image", "file"]}
           - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "blue-200"}
           - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "blue-500"}
           - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
@@ -191,7 +191,7 @@ collections:
       - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
       - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
       - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image"]}
+      - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image", "file"]}
       - label: "Header Background Colour"
         name: "headerBgColor"
         widget: "select"
@@ -259,7 +259,7 @@ collections:
         default: []
         fields:
           - {label: "Title", name: "title", widget: "string", required: true}
-          - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image"]}
+          - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image", "file"]}
           - label: "Text Colour"
             name: "textColor"
             widget: "select"
@@ -438,7 +438,7 @@ collections:
       - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order. "}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
       - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."}
-      - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages."}
+      - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image", "file"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages."}
       - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages."}
       - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site."}
   - name: "resources"
@@ -451,7 +451,7 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
       - {label: "Resource Name", name: "title", widget: "string", required: true}
-      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image"]}
+      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image", "file"]}
       - {label: "Published Year", name: "publishedYear", widget: "string", hint: "The year this resource was first publicly available.", required: true}
       - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
       - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
