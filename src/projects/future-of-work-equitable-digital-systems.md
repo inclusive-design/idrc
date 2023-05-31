@@ -17,21 +17,21 @@ The voice and perspective of the disability community was a central focus of the
 
 Throughout the *Equitable Digital Systems* project, people with disabilities led the direction and outcomes of research: to carve a path towards equitable and inclusive digital systems.
 
-## Final Report
+## Final Research Report
 
-The full final report and project outcomes can be downloaded in English and French.
+The final research report and project outcomes can be downloaded in English and French.
 
-[English version of the Final Report](/media/equitable-digital-systems-research-report-final_english.docx)
+[English version of the Final Research Report](/media/equitable-digital-systems-research-report-final_english.docx)
 
-[French version of the Final Report](/media/equitable-digital-systems-research-report-final_french.docx)
+[French version of the Final Research Report](/media/equitable-digital-systems-research-report-final_french.docx)
 
 ## Scan of Digital Accessibility Standards and Guidelines
 
-We undertook a jurisdictional scan of international standards and regulations related to disability and technology and have shared this Compendium as a viewable and [downloadable resource](https://airtable.com/shrXY0H5jiOFTS74B) that may also be searched on the [We Count website Resources page](https://wecount.inclusivedesign.ca/resources/) (still to come). 
+We undertook a jurisdictional scan of international standards and regulations related to disability and technology and have shared this compendium as a viewable and [downloadable resource](https://airtable.com/shrXY0H5jiOFTS74B) that may also be searched on the [We Count website Resources page](https://wecount.inclusivedesign.ca/resources/). 
 
 .
 
-{% imagePositionWithText "/media/eds-resources-search-01.png", "Coming soon: Search EDS resources on the We Count Library", "left", "100%", "500", "null" %}
+{% imagePositionWithText "/media/ict-standards-and-legislation-tile.jpg", "ICT Standards and Legislation tile with checkbox checked.", "left", "100%", "500", "null" %}
 
 {% endimagePositionWithText %}
 

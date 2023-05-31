@@ -1,17 +1,17 @@
 ---
 layout: layouts/single--news.njk
 title: IDRC's Newsletter
-date: 2022-10-03T18:14:34.304Z
+date: 2023-05-10T19:46:35.891Z
 author: IDRC Team
-excerpt: Read all past issues of the IDRC monthly newsletter.
+excerpt: Get access to the current and all past issues of the We Count
+  Recount,  IDRC's monthly newsletter. Each issue is filled with IDRC news, the
+  latest in AI and accessibility and other news from the field of inclusion.
 permalink: /newsletter/
 socialImage: /media/we_count_recount_new_banner.jpg
 ---
 ![](/media/we_count_recount_new_banner.jpg)
 
-Read all past issues of the We Count Recount, We Count's monthly newsletter.
-
-
+Read all past issues of the We Count Recount, IDRC's monthly newsletter.
 
 <style type="text/css">
 <!--
