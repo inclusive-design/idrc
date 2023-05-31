@@ -1,14 +1,16 @@
 ---
 projectName: Communication Access within the Accessible Canada Act
+shortName: ""
+order: 65
 title: Communication Access within the Accessible Canada Act
+parentPageTitle: Communication Access within the Accessible Canada Act
+subPageOrder: ""
+thumbnailImage: /media/project-communication_access.png
 description: IDRC is working to address communication access for people who have
   speech, language and communication disabilities. This project will focus on
   communication access for people who have speech, language and communication
   disabilities due to life-long or acquired cognitive and/or neurological
   disabilities.
-order: 65
-shortName: ""
-thumbnailImage: /media/project-communication_access.png
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
 
