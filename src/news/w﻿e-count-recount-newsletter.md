@@ -7,9 +7,9 @@ excerpt: Get access to the current and all past issues of the We Count
   Recount,  IDRC's monthly newsletter. Each issue is filled with IDRC news, the
   latest in AI and accessibility and other news from the field of inclusion.
 permalink: /newsletter/
-socialImage: /media/we_count_recount_new_banner.jpg
+socialImage: /media/we_count_recount_new_banner.png
 ---
-![](/media/we_count_recount_new_banner.jpg)
+![](/media/we_count_recount_new_banner.png)
 
 Read all past issues of the We Count Recount, IDRC's monthly newsletter.
 
@@ -22,12 +22,12 @@ Read all past issues of the We Count Recount, IDRC's monthly newsletter.
 
 <script language="javascript" src="//ocadu.us6.list-manage.com/generate-js/?u=df09b45913649b12f2a2aef66&fid=22913&show=1000" type="text/javascript"></script>
 
-### A﻿dditional Past Issues
+### Additional Past Issues
 
-06/05/2021 - [T﻿he We Count Recount: June 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-june-2021_accessible.docx)
+06/05/2021 - [The We Count Recount: June 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-june-2021_accessible.docx)
 
-05/08/2021 - [T﻿he We Count Recount: May 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-may-2021_accessible.docx)
+05/08/2021 - [The We Count Recount: May 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-may-2021_accessible.docx)
 
-04/14/2021 - [T﻿he We Count Recount: April 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-april-2021_accessible.docx)
+04/14/2021 - [The We Count Recount: April 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-april-2021_accessible.docx)
 
-03/09/2021 - [T﻿he We Count Recount: March 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-march-2021_accessible.docx)
+03/09/2021 - [The We Count Recount: March 2021](https://wecount.inclusivedesign.ca/uploads/the-we-count-recount_-march-2021_accessible.docx)
