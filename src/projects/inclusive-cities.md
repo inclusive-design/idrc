@@ -7,5 +7,5 @@ description: >-
   diverse and inclusive.
 link: https://cities.inclusivedesign.ca/
 order: 90
-thumbnailImage: /media/project-cities.png
+thumbnailImage: /media/project-cities.jpg
 ---

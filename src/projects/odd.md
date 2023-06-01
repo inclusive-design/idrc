@@ -31,7 +31,7 @@ Edward Thomas – *Research Assistant*
 
 ## Project Architecture
 
-![Project Architecture described below in detail. External data sources are aggregated to from synthetic data sets that will be tested with LinkedIn Recruiter.](/media/odd-architectural-diagram-x2.jpg)
+![Project Architecture described below in detail. External data sources are aggregated to from synthetic data sets that will be tested with LinkedIn Recruiter.](/media/odd-architectural-diagram-x2.png)
 
 <!--StartFragment-->
 

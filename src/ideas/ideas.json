@@ -3,6 +3,6 @@
     "permalink": "/ideas/{{ title | slugify }}/",
     "headerBgColor": "white",
     "author": "IDRC Team",
-    "thumbnailImage": "/media/default.png"
+    "thumbnailImage": "/media/default.jpg"
 }
     
