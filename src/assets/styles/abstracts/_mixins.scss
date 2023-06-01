@@ -17,7 +17,7 @@
   $min: breakpoint-min($name, $breakpoints);
 
   @if $min {
-    @media (min-width: rem($min)) {
+    @media (width >= rem($min)) {
       @content;
     }
     /* stylelint-disable-next-line block-closing-brace-newline-after */
@@ -30,7 +30,7 @@
   $max: breakpoint-max($name, $breakpoints);
 
   @if $max {
-    @media (max-width: rem($max)) {
+    @media (width <= rem($max)) {
       @content;
     }
     /* stylelint-disable-next-line block-closing-brace-newline-after */
@@ -44,7 +44,7 @@
   $max: breakpoint-max($upper, $breakpoints);
 
   @if $min != null and $max != null {
-    @media (min-width: rem($min)) and (max-width: rem($max)) {
+    @media (width >= rem($min)) and (width <= rem($max)) {
       @content;
     }
     /* stylelint-disable-next-line block-closing-brace-newline-after */
@@ -65,7 +65,7 @@
   $max: breakpoint-max($name, $breakpoints);
 
   @if $min != null and $max != null {
-    @media (min-width: rem($min)) and (max-width: rem($max)) {
+    @media (width >= rem($min)) and (width <= rem($max)) {
       @content;
     }
     /* stylelint-disable-next-line block-closing-brace-newline-after */
