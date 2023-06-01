@@ -53,7 +53,7 @@ Global and national scan of existing data and research related to incidence and 
 
 ### Colin Philips
 
-![Head and shoulders photograph of Colin Philips](/media/colin-philips-headshot.png)
+![Head and shoulders photograph of Colin Philips](/media/colin-philips-headshot.jpg)
 
 Originally from London, Ontario, Colin Phillips was born with cerebral palsy. They use a wheelchair and communicate with a word board and communication assistant, or a voice output device. Dr. Phillips was an ad-hoc Policy Consultant for Communication Disabilities Access Canada. They hold appointments as a Contract Lecturer in the School of Social Work at X (Ryerson) University, and as a Sessional Lecturer in Social Development Studies and Social Work at Renison University College, University of Waterloo. Colin teaches courses in social and health policy, decolonising social work practice, direct practice skills, and qualitative research methods. Their research interests include Housing First and other ways of addressing homelessness, housing policy, and harm reduction. They hold an MSW from the University of Toronto and a PhD in Policy Studies from X (Ryerson) University. In 2018, Colin became the first person with a visible disability to be nominated for election to be the Moderator of the United Church of Canada. Colin is also active in the labour movement and LGBTQ2S community. When they are not working, you can usually find them at the gym or the opera. 
 
@@ -91,7 +91,7 @@ Krystine Donato lives in St. Catharines, Ontario. She has worked as an assistive
 
 ### Lois Turner
 
-![Head and shoulders photograph of Lois Turner](/media/lois-turner-headshot.png)
+![Head and shoulders photograph of Lois Turner](/media/lois-turner-headshot.jpg)
 
 Lois Turner, MS, RSLP, CCC-SLP, ATP, is a Speech Language Pathologist who has been working for over 35 years as a specialist in AAC and Assistive Technology, enjoying employment in preschool, school, adult, and community settings in Manitoba and British Columbia.
 
@@ -117,7 +117,7 @@ Sam has sat on a couple of standard development committees for the Accessibility
 
 ### Tara Levandier
 
-![Head and shoulders photograph of Tara Levandier](/media/tlevandierheadshot-2021.jpeg)
+![Head and shoulders photograph of Tara Levandier](/media/tlevandierheadshot-2021.jpg)
 
 Executive Director, Operations & Social Impact \
 Inclusion Canada 

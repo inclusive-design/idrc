@@ -15,7 +15,7 @@
     "clean": "rimraf dist",
     "debug": "DEBUG=Eleventy* eleventy",
     "lint:css": "stylelint src/assets/styles/**/*.scss",
-    "lint:js": "eslint '**/*.js'",
+    "lint:js": "eslint \"**/*.js\"",
     "lint": "run-s lint:*",
     "test:lint": "run-s lint",
     "test:backstop": "start-server-and-test start http://localhost:8080 backstop:test",

@@ -2,7 +2,7 @@
 title: "It’s Time to Drop “Darwinism” and Listen to Darwin and His Successors on Human Evolution"
 date: 2020-03-28
 author: Jutta Treviranus
-thumbnailImage: /media/trochilidae.png
+thumbnailImage: /media/trochilidae.jpg
 ---
 ![Image by Raphaël Dunant, CC-BY-SA-4.0](/media/covid-19.png "Image by Raphaël Dunant, CC-BY-SA-4.0")
 
@@ -12,7 +12,7 @@ The theory of evolution has evolved significantly since Darwin. Even if it had n
 
 ## The Fuel of Evolution
 
-![Ernst Haeckel – Kunstformen der Natur (1904), plate 99: Trochilidae](/media/trochilidae.png "Ernst Haeckel – Kunstformen der Natur (1904), plate 99: Trochilidae")
+![Ernst Haeckel – Kunstformen der Natur (1904), plate 99: Trochilidae](/media/trochilidae.jpg "Ernst Haeckel – Kunstformen der Natur (1904), plate 99: Trochilidae")
 
 The first is that the fuel of evolutionary advance and survival is diversification or “deviation from the norm,” not survival of the fittest. The more differences or variations among the species, the greater the directional choices available for evolutionary advances. Human evolutionary advances, [such as the development of language](https://uberty.org/wp-content/uploads/2016/02/Terrence_W._Deacon_The_Symbolic_Species.pdf), happened when there was a relaxation of natural selection. The more choices, the more likely there will be a choice more fitting for the changing context and challenges to survival. This is especially important when the challenges are unexpected or disruptive. This is when we need choices that are furthest from the average or typical, because life is far from the norm. Whether we are talking about the evolution of our actual collective genetic make-up, our markets, or our social practices, [the way forward is not the average, majority or currently popular](https://www.youtube.com/watch?v=OAXmCAqZqRk); it is at the edge or margins. Our survival is dependent on supporting and including difference and variation. Monocultures do not survive; they can be felled by a single threat.
 
