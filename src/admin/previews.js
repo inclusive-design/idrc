@@ -340,3 +340,33 @@ CMS.registerEditorComponent({
 		);
 	}
 });
+
+CMS.registerEditorComponent({
+	label: 'File',
+	id: 'file',
+	fromBlock: match =>
+		match && {
+			file: match[2],
+			text: match[1]
+		},
+	toBlock: ({ text, file }) =>
+		`[${text || ''}](${file || ''})`,
+	toPreview: (obj) => {
+		return <a href={obj.file || ''}>{obj.text}</a>;
+	},
+	pattern: /^\[(.*)\]\((.*?)\)$/,
+	fields: [
+		{
+			label: 'File',
+			name: 'file',
+			widget: 'file',
+			media_library: {
+				allow_multiple: false
+			}
+		},
+		{
+			label: 'Link Text',
+			name: 'text'
+		}
+	]
+});
