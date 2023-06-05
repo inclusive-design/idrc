@@ -28,7 +28,7 @@ module.exports = class {
 						'single--news.njk',
 						'single--idea.njk',
 						'project.njk',
-						'single--tool.njk',
+						'single--resource.njk',
 						'footer.njk',
 						'\\.svg$'
 					]

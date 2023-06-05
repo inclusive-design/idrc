@@ -162,10 +162,10 @@ collections:
               - {label: Description, name: description, widget: text}
               - {label: Major Milestone, name: major, widget: boolean}
           - {label: "Body", name: "body", widget: "markdown", required: false}
-      - name: "projects-and-tools"
-        label: "Projects and Tools"
+      - name: "projects"
+        label: "Projects"
         delete: false
-        file: "src/projects-and-tools.md"
+        file: "src/projects.md"
         slug: "{{slug}}"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/projects.njk"}
@@ -441,20 +441,80 @@ collections:
       - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image", "file"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages."}
       - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages."}
       - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site."}
-  - name: "tools"
-    label: "Tools"
-    label_singular: "Tool"
-    folder: "src/tools"
+  - name: "resources"
+    label: "Resources"
+    label_singular: "Resource"
+    folder: "src/resources"
     slug: "{{slug}}"
-    preview_path: "/tools/{{slug}}"
+    preview_path: "/resources/{{slug}}"
     create: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--tool.njk"}
-      - {label: "Title", name: "title", widget: "string", required: true}
-      - {label: "Short Name", name: "shortName", widget: "string", required: false}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
+      - {label: "Resource Name", name: "title", widget: "string", required: true}
       - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image", "file"]}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
-      - {label: "Link", name: "link", widget: "string", required: true}
+      - {label: "Published Year", name: "publishedYear", widget: "string", hint: "The year this resource was first publicly available.", required: true}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
+      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
+      - label: "Resource Topics"
+        name: "topics"
+        widget: "relation"
+        multiple: true
+        collection: resourceMetadata
+        file: resourceTopics
+        value_field: resourceTopics.*.value
+        display_fields: [resourceTopics.*.label]
+        search_fields: [resourceTopics.*.label]
+        required: true
+      - label: "Resource Types"
+        name: "types"
+        widget: "relation"
+        multiple: true
+        collection: resourceMetadata
+        file: resourceTypes
+        value_field: resourceTypes.*.value
+        display_fields: [resourceTypes.*.label]
+        search_fields: [resourceTypes.*.label]
+        required: true
+      - {label: "Resource URL", name: "link", widget: "string", required: true}
+  - name: resourceMetadata
+    label: Resource Metadata
+    files:
+      - label: Resource Topics
+        name: resourceTopics
+        file: "src/_data/resourceTopics.json"
+        editor:
+          preview: true
+        fields:
+          - label: "Resource Topics"
+            label_singular: "Resource Topic"
+            name: "resourceTopics"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+              - label: "Label"
+                name: "label"
+                widget: "string"
+      - label: Resource Types
+        name: resourceTypes
+        file: "src/_data/resourceTypes.json"
+        editor:
+          preview: true
+        fields:
+          - label: "Resource Types"
+            label_singular: "Resource Type"
+            name: "resourceTypes"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - label: "Value"
+                name: "value"
+                widget: "string"
+              - label: "Label"
+                name: "label"
+                widget: "string"
   - label: "Globals"
     name: "globals"
     files:

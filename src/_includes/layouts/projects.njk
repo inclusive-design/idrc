@@ -4,67 +4,31 @@
     {% extends 'layouts/base.njk' %}
 {% endif %}
 
-{% set pageType = 'page--projects-and-tools' %}
+{% set pageType = 'page--projects' %}
 
 {% block content %}
     <article>
         {% include 'partials/components/page-header.njk' %}
-        <section id="projects" class="section section--full">
-            <div class="wrapper">
-                <div class="section__content">
-                    <span class="hr"></span>
-                    <h2>Projects</h2>
-                    <div class="projects">
-                        {% for project in collections.projects %}
-                        <article class="project">
-                            {% if project.data.thumbnailImage %}
-                            <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="{{
-                                project.data.thumbnailAltText
-                                if project.data.thumbnailAltText
-                                else "Thumbnail image for " + project.data.projectName
-                            }}" />
-                            {% else %}
-                            <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
-                            {% endif %}
-                            <h3>{{ project.data.projectName }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
-                            {% if project.data.content %}
-                            {% set fullDescription = project.data.description + " [More about " + project.data.projectName + "](" + project.url + ")" %}
-                            {{ fullDescription | markdown | safe }}
-                            {% else %}
-                            {{ project.data.description | markdown | safe }}
-                            {% endif %}
-                            {% if project.data.link %}
-                            <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.projectName }} website</a></p>
-                            {% endif %}
-                        </article>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="tools" class="section section--full">
-            <div class="wrapper">
-                <div class="section__content">
-                    <span class="hr"></span>
-                    <h2>Tools</h2>
-                    <div class="tools">
-                        {% for tool in collections.tools %}
-                        <div class="tool">
-                            <h3>{{ tool.data.title }}{{ " (" + tool.data.shortName + ")" if tool.data.shortName }}</h3>
-                            {{ tool.data.description | markdown | safe }}
-                            {% if tool.data.tags.length > 0 %}
-                            <p class="tags">
-                                {% for tag in tool.data.tags %}
-                                <span class="tag">{{ tag | safe }}</span>
-                                {% endfor %}
-                            </p>
-                            {% endif %}
-                            <p class="tool__link"><a rel="external" href="{{ tool.data.link }}">Visit {{ tool.data.shortName if tool.data.shortName else tool.data.title }} website</a></p>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="projects">
+            {% for project in collections.projects %}
+            <article class="project">
+                {% if project.data.thumbnailImage %}
+                <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="" />
+                {% else %}
+                <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
+                {% endif %}
+                <h3>{{ project.data.projectName }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
+                {% if project.data.content %}
+                {% set fullDescription = project.data.description + " [More about " + project.data.projectName + "](" + project.url + ")" %}
+                {{ fullDescription | markdown | safe }}
+                {% else %}
+                {{ project.data.description | markdown | safe }}
+                {% endif %}
+                {% if project.data.link %}
+                <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.projectName }} website</a></p>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
     </article>
 {% endblock %}
