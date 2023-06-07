@@ -261,23 +261,18 @@ CMS.registerEditorComponent({
 		{
 			name: 'imagePosition',
 			label: 'Image Position',
-			hint: 'The "center" choice applies to the image only case when the content is not provided. If the "center" is selected when the content is provided, the image position will be reset to "left"',
+			hint: 'The "Center" choice only applies if the "Content" field below is empty.',
 			widget: 'select',
-			options: [{value:'left', label: 'Left'}, {value:'center', label: 'Center'}, {value:'right', label: 'Right'}]
+			options: [{value:'left', label: 'Left'}, {value:'center', label: 'Center'}, {value:'right', label: 'Right'}],
+			default: 'center'
 		},
 		{
 			name: 'scale',
-			label: 'Scale',
+			label: 'Scale Image Width',
+			hint: 'Scale Image Width 100% only applies if "Content" field below is empty.',
 			widget: 'select',
 			default: '100%',
-			options: [{value:'25%', label: '25%'}, {value:'50%', label: '50%'}, {value:'75%', label: '75%'}, {value:'100%', label: '100%'}]
-		},
-		{
-			name: 'maxHeight',
-			label: 'Max Height in Pixel',
-			widget: 'string',
-			default: 'auto',
-			hint: 'Enter a number. For example 100.'
+			options: [{value:'25', label: '25%'}, {value:'50', label: '50%'}, {value:'75', label: '75%'}, {value:'100', label: '100%'}]
 		},
 		{
 			name: 'content',
@@ -289,8 +284,8 @@ CMS.registerEditorComponent({
 		},
 		{
 			name: 'verticalAlignment',
-			label: 'Vertical Alignment of Content',
-			hint: 'Only select when the content is provided.',
+			label: 'Vertical Alignment of Content to Image',
+			hint: 'Vertical Alignment of Content only applies if "Content" field above is not empty.',
 			required: false,
 			widget: 'select',
 			options: [{value:'top', label: 'Top'}, {value:'center', label: 'Center'}, {value:'bottom', label: 'Bottom'}]

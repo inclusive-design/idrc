@@ -33,9 +33,40 @@
   }
 }
 
-// Styling for media and text block with media on the left
-.image-and-text--image-left {
-  grid-template-columns: 20% auto;
+// Styling for image 25% width
+.image-and-text__scale--25 {
+  width: 25%;
+}
+
+// Styling for image 50% width
+.image-and-text__scale--50 {
+  width: 50%;
+}
+
+// Styling for image 75% width
+.image-and-text__scale--75 {
+  width: 75%;
+}
+
+// Styling for image 100% width
+.image-and-text__scale--100 {
+  width: 100%;
+}
+
+// Styling for media and text block with media at 25% width on the left
+.image-and-text--image-left--25 {
+  grid-template-columns: 25% auto;
+}
+
+// Styling for media and text block with media at 50% width on the left
+
+.image-and-text--image-left--50 {
+  grid-template-columns: 50% auto;
+}
+
+// Styling for media and text block with media at 75% width on the left
+.image-and-text--image-left--75 {
+  grid-template-columns: 75% auto;
 }
 
 // Styling for media and text block with media on the right
