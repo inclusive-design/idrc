@@ -5,7 +5,7 @@ module.exports = (content, image, alt, imagePosition, scale, verticalAlignment) 
 	let output = '';
 
 	if (content === '') {
-		output += `<img src="${image}" alt="${alt}" class="image-position--${imagePosition} image-position--image-height  image-and-text__scale--${scale}" />`;
+		output += `<p><img src="${image}" alt="${alt}" class="image-position--${imagePosition} image-position--image-height  image-and-text__scale--${scale}" /></p>`;
 	} else {
 		scale = scale === '100' ? '75' : scale;
 		imagePosition = imagePosition.trim() === 'center' ? 'left' : imagePosition;

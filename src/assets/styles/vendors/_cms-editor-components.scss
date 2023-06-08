@@ -20,11 +20,12 @@
   display: grid;
 
   .image-and-text__content {
-    margin-left: rem(25);
+    margin-top: 1rem;
   }
 
   .image-and-text__media {
     align-self: center;
+    margin-top: 1rem;
   }
 
   img {
@@ -33,40 +34,19 @@
   }
 }
 
-// Styling for image 25% width
-.image-and-text__scale--25 {
-  width: 25%;
-}
-
-// Styling for image 50% width
-.image-and-text__scale--50 {
-  width: 50%;
-}
-
-// Styling for image 75% width
-.image-and-text__scale--75 {
-  width: 75%;
-}
-
-// Styling for image 100% width
+// Styling for image scaling. Default to 100% width for small screens
+.image-and-text__scale--25,
+.image-and-text__scale--50,
+.image-and-text__scale--75,
 .image-and-text__scale--100 {
   width: 100%;
 }
 
-// Styling for media and text block with media at 25% width on the left
-.image-and-text--image-left--25 {
-  grid-template-columns: 25% auto;
-}
-
-// Styling for media and text block with media at 50% width on the left
-
-.image-and-text--image-left--50 {
-  grid-template-columns: 50% auto;
-}
-
-// Styling for media and text block with media at 75% width on the left
+// Styling for media and text block. Default to single column layout for small screens
+.image-and-text--image-left--25,
+.image-and-text--image-left--50,
 .image-and-text--image-left--75 {
-  grid-template-columns: 75% auto;
+  grid-template-columns: auto;
 }
 
 // Styling for media and text block with media on the right
@@ -122,6 +102,47 @@ video {
   max-height: var(--image-position-max-height, auto);
 }
 
+@include breakpoint-up(sm) {
+  // Styling for image 25% width
+  .image-and-text__scale--25 {
+    width: 25%;
+  }
+
+  // Styling for image 50% width
+  .image-and-text__scale--50 {
+    width: 50%;
+  }
+
+  // Styling for image 75% width
+  .image-and-text__scale--75 {
+    width: 75%;
+  }
+
+  // Styling for image 100% width
+  .image-and-text__scale--100 {
+    width: 100%;
+  }
+
+  .image-and-text__content {
+    margin-left: rem(25);
+  }
+
+  // Styling for media and text block with media at 25% width on the left
+  .image-and-text--image-left--25 {
+    grid-template-columns: 25% auto;
+  }
+
+  // Styling for media and text block with media at 50% width on the left
+  .image-and-text--image-left--50 {
+    grid-template-columns: 50% auto;
+  }
+
+  // Styling for media and text block with media at 75% width on the left
+  .image-and-text--image-left--75 {
+    grid-template-columns: 75% auto;
+  }
+}
+
 @include breakpoint-up(md) {
   // Styling for media and text block with media on the left
   .image-and-text--image-left {
@@ -141,13 +162,6 @@ video {
       margin-left: 0;
       margin-right: rem(25);
     }
-  }
-
-  // Styling for Image Position block
-  .image-position--center,
-  .image-position--left,
-  .image-position--right {
-    width: var(--image-position-width, auto);
   }
 
   // Styling for YouTube video block
