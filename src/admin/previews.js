@@ -5,6 +5,7 @@ import formatDateFilter from 'eleventy-plugin-fluid/src/filters/format-date-filt
 import isoDateFilter from 'eleventy-plugin-fluid/src/filters/iso-date-filter.js';
 import limitFilter from 'eleventy-plugin-fluid/src/filters/limit-filter.js';
 import splitFilter from '../filters/split-filter.js';
+import getResourceMetadataLabelFilter from '../filters/getResourceMetadataLabel.js';
 import site from '../_data/site.json';
 import slugifyFilter from '@sindresorhus/slugify';
 import markdownFilter from '../filters/markdown';
@@ -19,6 +20,7 @@ env.addFilter('limit', limitFilter);
 env.addFilter('markdown', markdownFilter);
 env.addFilter('slugify', slugifyFilter);
 env.addFilter('split', splitFilter);
+env.addFilter('getResourceMetadataLabel', getResourceMetadataLabelFilter);
 
 const Preview = ({entry, path, context}) => {
 	const data = context(entry.get('data').toJS());
@@ -75,28 +77,6 @@ const History = ({entry}) => (
 );
 
 History.propTypes = {
-	entry: PropTypes.object.isRequired
-};
-
-const ProjectsAndTools = ({entry}) => (
-	<Preview
-		entry={entry}
-		path="layouts/projects.njk"
-		context={({site, title, intro, projects, tools, headerBgColor, headerTextColor, headerBorderColor}) => ({
-			previewMode: true,
-			site,
-			title,
-			intro,
-			projects,
-			tools,
-			headerBgColor,
-			headerTextColor,
-			headerBorderColor
-		})}
-	/>
-);
-
-ProjectsAndTools.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
@@ -186,22 +166,25 @@ Project.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
-const Tool = ({entry}) => (
+const Resource = ({entry}) => (
 	<Preview
 		entry={entry}
-		path="layouts/single--tool.njk"
-		context={({title, shortName, description, tags, link}) => ({
+		path="layouts/single--resource.njk"
+		context={({title, description, publishedYear, topics, types, thumbnailImage, thumbnailAltText, link }) => ({
 			previewMode: true,
 			title,
-			shortName,
 			description,
-			tags,
-			link
+			publishedYear,
+			thumbnailImage,
+			thumbnailAltText,
+			link,
+			topics,
+			types
 		})}
 	/>
 );
 
-Tool.propTypes = {
+Resource.propTypes = {
 	entry: PropTypes.object.isRequired
 };
 
@@ -232,13 +215,12 @@ SiteData.propTypes = {
 
 CMS.registerPreviewTemplate('home', Page);
 CMS.registerPreviewTemplate('history', History);
-CMS.registerPreviewTemplate('projects-and-tools', ProjectsAndTools);
 CMS.registerPreviewTemplate('pages', Page);
 CMS.registerPreviewTemplate('news', News);
 CMS.registerPreviewTemplate('ideas', Idea);
 CMS.registerPreviewTemplate('people', Person);
 CMS.registerPreviewTemplate('projects', Project);
-CMS.registerPreviewTemplate('tools', Tool);
+CMS.registerPreviewTemplate('resources', Resource);
 CMS.registerPreviewTemplate('site_data', SiteData);
 
 // Custom widgets

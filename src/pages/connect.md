@@ -19,7 +19,7 @@ sections:
 
        Connect with a specific team member at the IDRC.
 
-      ### [With a specific project team](/projects-and-tools/)
+      ### [With a specific project team](/projects/)
 
        Connect with us about a specific project.
 

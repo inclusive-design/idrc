@@ -1,14 +1,9 @@
-.page--projects-and-tools {
-  .hr {
-    border-bottom-color: var(--fl-fgColor, var(--indigo-500));
+.page--projects {
+  .projects {
+    margin: rem(64) 0 rem(64) 0;
   }
 
-  .tool {
-    margin-top: rem(48);
-  }
-
-  .project__link,
-  .tool__link {
+  .project__link {
     margin-top: rem(16);
   }
 
@@ -28,9 +23,8 @@
 }
 
 @include breakpoint-up(sm) {
-  .page--projects-and-tools {
-    .projects,
-    .tools {
+  .page--projects {
+    .projects {
       display: grid;
       grid-gap: var(--gutter);
       grid-template-columns: repeat(2, 1fr);
@@ -46,14 +40,12 @@
 }
 
 @include breakpoint-up(md) {
-  .page--projects-and-tools {
-    .projects,
-    .tools {
+  .page--projects {
+    .projects {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .project,
-    .tool {
+    .project {
       padding: 0 calc(var(--gutter) / 2);
     }
   }

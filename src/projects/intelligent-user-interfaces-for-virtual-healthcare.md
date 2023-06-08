@@ -1,14 +1,12 @@
 ---
 projectName: Intelligent User Interfaces for Virtual Healthcare
-title: Intelligent User Interfaces for Virtual Healthcare
+title: Reducing barriers to virtual healthcare
 description: Intelligent User Interfaces for Virtual Healthcare aims to reduce
   barriers to accessing healthcare through inclusive guidelines for (virtual or
   in-person) healthcare and an approach to personalization in these settings.
 order: 100
 thumbnailImage: ""
 ---
-Project objective: Reduce barriers to virtual healthcare.
-
 During the pandemic response and recovery, many health units are moving to virtual care. With this transition there is a risk that vulnerable individuals and communities will be excluded which harms and poses risks for the excluded individuals. Inclusive Design Research Centre (IDRC) and the National Research Council (NRC) under the [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program) collaborated to:
 
 1. create guidelines for virtual healthcare systems that are inclusive and address the diversity of human needs, including cognitive, age-related and cultural barriers.  
@@ -95,10 +93,12 @@ Example functional specifications:
 In addition to the ideas and concepts presented in the Guide and Software Approach, the following resources can be used to broaden inclusion and accessibility of virtual healthcare systems and services:
 
 ### How to design inclusively
+
 * [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
 * [Community Co-design Kit](https://co-design.inclusivedesign.ca/)
 
 ### Accessibility
+
 * [Accessibility Canada](https://accessibilitycanada.ca/resources/)
 * [Web Content Accessibility Guidelines (WCAG) 2.0 and 2.1](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [WebAIM](https://webaim.org/)
@@ -106,10 +106,12 @@ In addition to the ideas and concepts presented in the Guide and Software Approa
 * [CNIB Clear Print Accessibility Guidelines](https://cnib.ca/sites/default/files/2018-07/CNIB%20Clear%20Print%20Guide.pdf)
 
 ### Policy
+
 * [Provincial Accessibility Policies and Regulations](https://airtable.com/shr57RHr5jcKO8Kzr)
 * [Accessible Canada Act](https://accessible.canada.ca/)
 
 ### Use of AI and analytics
+
 * [We Count](https://wecount.inclusivedesign.ca/) – Removing bias and exclusion in the data economy, including resources.
 
 ## Funders
