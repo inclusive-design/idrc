@@ -245,7 +245,7 @@ CMS.registerEditorComponent({
 			label: 'Image Position',
 			hint: 'The "Center" choice only applies if the "Content" field below is empty.',
 			widget: 'select',
-			options: [{value:'left', label: 'Left'}, {value:'center', label: 'Center'}, {value:'right', label: 'Right'}],
+			options: [{value:'left', label: 'Left'}, {value:'center', label: 'Center (default)'}, {value:'right', label: 'Right'}],
 			default: 'center'
 		},
 		{
@@ -253,8 +253,16 @@ CMS.registerEditorComponent({
 			label: 'Scale Image Width',
 			hint: 'Scale Image Width 100% only applies if "Content" field below is empty.',
 			widget: 'select',
-			default: '100%',
-			options: [{value:'25', label: '25%'}, {value:'50', label: '50%'}, {value:'75', label: '75%'}, {value:'100', label: '100%'}]
+			default: '100',
+			options: [{value:'25', label: '25%'}, {value:'50', label: '50%'}, {value:'75', label: '75%'}, {value:'100', label: '100% (default)'}]
+		},
+		{
+			name: 'maxHeight',
+			label: 'Max Height of Image',
+			hint: 'Useful for restricting height of tall images that may take too much vertical space.',
+			widget: 'select',
+			default: 'Auto',
+			options: [{value:'auto', label: 'Auto (default)'},{value:'200px', label: '200px'}, {value:'400px', label: '400px'}, {value:'600px', label: '600px'},{value:'800px', label: '800px'} ]
 		},
 		{
 			name: 'content',
@@ -270,7 +278,7 @@ CMS.registerEditorComponent({
 			hint: 'Vertical Alignment of Content only applies if "Content" field above is not empty.',
 			required: false,
 			widget: 'select',
-			options: [{value:'top', label: 'Top'}, {value:'center', label: 'Center'}, {value:'bottom', label: 'Bottom'}]
+			options: [{value:'top', label: 'Top (default)'}, {value:'center', label: 'Center'}, {value:'bottom', label: 'Bottom'}]
 		}
 	],
 	pattern: /^{% imagePositionWithText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimagePositionWithText %}/,
