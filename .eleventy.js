@@ -1,6 +1,6 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const eleventyRssPlugin = require('@11ty/eleventy-plugin-rss');
-const i18n = require("eleventy-plugin-i18n-gettext");
+const i18n = require('eleventy-plugin-i18n-gettext');
 const errorOverlay = require('eleventy-plugin-error-overlay');
 const eleventyPWA = require('eleventy-plugin-pwa');
 const eleventySharp = require('eleventy-plugin-sharp');
@@ -22,7 +22,7 @@ const workboxOptions = {
 };
 
 // Import data files
-const siteConfig = require("./src/_data/config.json");
+const siteConfig = require('./src/_data/config.json');
 
 module.exports = eleventyConfig => {
 	const now = new Date();
@@ -51,23 +51,23 @@ module.exports = eleventyConfig => {
 		eleventyConfig.addCollection(`projects_${lang}`, collection => {
 			let projects = [...collection.getFilteredByGlob(`src/projects/${lang}/*.md`).sort((a, b) => b.data.order - a.data.order)].reverse(),
 				uniqueProjects = [];
-	
+
 			// Skip project subpages.
 			projects.forEach(project => {
 				if (!project.data.parentPageTitle || project.data.parentPageTitle === '') {
 					uniqueProjects.push(project);
 				}
 			});
-	
+
 			return uniqueProjects;
 		});
-		
+
 		eleventyConfig.addCollection(`projectPages_${lang}`, collection => {
 			let projectPages = collection.getFilteredByGlob(`src/projects/${lang}/*.md`),
 				parentPageTitles = [],
 				childrenPages = [];
 
-	
+
 			// Create two arrays. One has titles of all parent pages. The other contains all pages that
 			// have a parent page.
 			projectPages.forEach(project => {
@@ -83,7 +83,7 @@ module.exports = eleventyConfig => {
 					}
 				}
 			});
-	
+
 			// Add children pages to pages that have subpages.
 			projectPages.forEach(topPage => {
 				if (parentPageTitles.includes(topPage.data.title)) {
@@ -96,7 +96,7 @@ module.exports = eleventyConfig => {
 					});
 				}
 			});
-	
+
 			// Sort children pages first by the subpage order then by alphabetic
 			projectPages.forEach(topPage => {
 				if (topPage.children) {
@@ -108,7 +108,7 @@ module.exports = eleventyConfig => {
 					});
 				}
 			});
-	
+
 			// When a top page is a child page, add parent page url its `data` path
 			projectPages.forEach(topPage => {
 				if (topPage.data.parentPageTitle && topPage.data.parentPageTitle !== '') {
@@ -120,10 +120,10 @@ module.exports = eleventyConfig => {
 					}
 				}
 			});
-			
+
 			return projectPages;
 		});
-    });
+	});
 
 	eleventyConfig.addCollection('news', collection => {
 		return [
@@ -160,8 +160,8 @@ module.exports = eleventyConfig => {
 		outputDir: 'dist/media/'
 	}));
 	eleventyConfig.addPlugin(i18n, {
-        localesDirectory: "src/locales"
-    });
+		localesDirectory: 'src/locales'
+	});
 
 	// Transforms.
 	eleventyConfig.addTransform('htmlmin', htmlMinTransform);
@@ -197,12 +197,12 @@ module.exports = eleventyConfig => {
 		}
 	});
 
-	eleventyConfig.on("beforeBuild", () => {
-        if (!siteConfig.languages[siteConfig.defaultLanguage]) {
-            process.exitCode = 1;
-            throw new Error(`The default language, ${siteConfig.defaultLanguage}, configured in src/_data/config.json is not one of your site's supported languages.`);
-        }
-    });
+	eleventyConfig.on('beforeBuild', () => {
+		if (!siteConfig.languages[siteConfig.defaultLanguage]) {
+			process.exitCode = 1;
+			throw new Error(`The default language, ${siteConfig.defaultLanguage}, configured in src/_data/config.json is not one of your site's supported languages.`);
+		}
+	});
 
 	return {
 		dir: {
