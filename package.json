@@ -59,6 +59,7 @@
     "concurrently": "7.6.0",
     "d3-selection": "3.0.0",
     "eleventy-plugin-fluid": "1.0.0",
+    "eleventy-plugin-i18n-gettext": "^1.5.1",
     "eleventy-plugin-pwa": "1.0.8",
     "eleventy-plugin-sharp": "0.1.1",
     "eslint-config-fluid": "2.1.1",
