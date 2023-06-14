@@ -13,8 +13,9 @@
         {% include 'partials/components/page-header.njk' %}
 
         <div class="back-to-parent">
-        {%- for projectPage in collections.projectPages %}
-            {%- if projectPage.data.title === articleTitle and projectPage.data.parentPageTitle %}
+
+        {%- for projectPage in collections['projectPages_' + locale] %}
+            {%- if projectPage.data.parentPageTitle === articleTitle %}
             <a href="{{ projectPage.data.parentPageUrl }}">{% include "svg/previous.svg" %} Back to {{ projectPage.data.parentPageTitle | safe }}</a>
             {% endif %}
         {%- endfor %}

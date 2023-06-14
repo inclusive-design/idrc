@@ -10,7 +10,7 @@
     <article>
         {% include 'partials/components/page-header.njk' %}
         <div class="projects">
-            {% for project in collections.projects %}
+            {% for project in collections['projects_en-CA'] %}
             <article class="project">
                 {% if project.data.thumbnailImage %}
                 <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="" />
