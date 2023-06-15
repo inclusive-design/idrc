@@ -54,7 +54,7 @@
   }
 }
 
-@include breakpoint-down(md) {
+@include breakpoint-down(sm) {
   .banner.banner--menu-visible,
   .page--home .banner.banner--menu-visible {
     --parent-bg: var(--indigo-800);
@@ -64,7 +64,7 @@
   }
 }
 
-@include breakpoint-up(md) {
+@include breakpoint-up(sm) {
   .banner .wrapper {
     padding: 0;
   }

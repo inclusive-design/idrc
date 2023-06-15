@@ -1,0 +1,492 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for resources page.
+// There are some usages of !important, which are used to override UIO rules.
+// -----------------------------------------------------------------------------
+
+.page--resources {
+  .content {
+    flex: 0 0 90%;
+    padding-right: calc(var(--gutter) / 2);
+    padding-top: rem(32);
+  }
+
+  article {
+    justify-content: unset;
+  }
+
+  .resources-container {
+    column-gap: rem(32);
+    display: grid;
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
+    padding-top: rem(32);
+
+    h2 {
+      margin-bottom: rem(8);
+    }
+
+    .filter-expand-button {
+      border-radius: 2px;
+      border-top: rem(3) solid var(--fl-fgColor, var(--indigo-500));
+      column-gap: rem(8);
+      margin-top: 0;
+      padding: rem(8) 0;
+
+      .filter-content {
+        display: grid;
+        grid-template-columns: 1fr 20fr 1fr;
+        padding-left: rem(3);
+        padding-right: rem(3);
+
+        .filter-title {
+          column-gap: rem(8);
+          display: flex;
+          font-family: 'Work Sans', sans-serif;
+          font-weight: 600;
+          margin-left: rem(8);
+
+          p {
+            color: var(--fl-fgColor, var(--indigo-500));
+            margin-top: 0;
+          }
+        }
+
+        svg {
+          height: rem(16);
+          margin: auto;
+          stroke: var(--fl-fgColor, var(--indigo-500));
+          width: rem(16);
+        }
+      }
+
+      &:active {
+        background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        border-top: rem(3) solid var(--fl-bgColor, var(--indigo-800));
+
+        .filter-content {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        .filter-title {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        p {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          color: var(--fl-bgColor, var(--indigo-800)) !important;
+        }
+
+        svg {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          stroke: var(--fl-bgColor, var(--indigo-800));
+        }
+      }
+
+      &:hover {
+        background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        border-top: rem(3) solid var(--fl-bgColor, var(--indigo-800));
+
+        .filter-content {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        .filter-title {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+        }
+
+        p {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          color: var(--fl-bgColor, var(--indigo-800)) !important;
+        }
+
+        svg {
+          background-color: var(--fl-fgColor, var(--fl-bgColor)) !important;
+          stroke: var(--fl-bgColor, var(--indigo-800));
+        }
+      }
+
+      &:focus {
+        border-top: rem(3) solid transparent;
+        outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+        z-index: 1;
+      }
+
+      &[aria-expanded='false'] {
+        .icon-plus {
+          display: block;
+        }
+
+        .icon-minus {
+          display: none;
+        }
+      }
+
+      &[aria-expanded='true'] {
+        .icon-plus {
+          display: none;
+        }
+
+        .icon-minus {
+          display: block;
+        }
+      }
+    }
+
+    // Override the default style defined in _base.scss
+    ul {
+      margin: rem(4) 0 rem(32) 0;
+
+      li {
+        margin-bottom: rem(8);
+
+        &::before {
+          content: none;
+        }
+      }
+    }
+
+    // Custom checkboxes. Reference: https://codepen.io/spacemonkey/pen/vmZROv
+    .filter-checkbox {
+      opacity: 0; // hide it
+      position: absolute; // take it out of document flow
+
+      & + label {
+        cursor: pointer;
+        display: flex;
+        padding: 0;
+        position: relative;
+      }
+
+      // Box
+      & + label::before {
+        border: rem(1) solid var(--fl-fgColor, var(--indigo-500));
+        border-radius: rem(3);
+        content: '';
+        display: inline-block;
+        height: rem(20);
+        margin: auto rem(10) auto 0;
+        vertical-align: text-top;
+        width: rem(20);
+      }
+
+      // Checkmark
+      &:checked + label::after {
+        color: var(--fl-bgColor, $white);
+        content: '\2713';
+        display: inline-block;
+        font-family: system-ui;
+        font-size: rem(18);
+        height: rem(2);
+        left: rem(2);
+        position: absolute;
+        top: rem(-2);
+        width: rem(2);
+      }
+
+      &:active + label::before {
+        background-color: var(--fl-fgColor, var(--indigo-200));
+      }
+
+      &:focus + label::before {
+        border: rem(1) solid var(--fl-fgColor, var(--indigo-500));
+        box-shadow:
+          0 0 0 rem(2) var(--fl-bgColor, #fff),
+          0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
+      }
+
+      &:hover + label::before {
+        border: rem(3) solid var(--fl-fgColor, var(--indigo-500));
+      }
+    }
+
+    // End of custom checkboxes
+  }
+
+  .apply-button {
+    background-color: var(--fl-fgColor, var(--indigo-500));
+    border: 2px solid var(--fl-fgColor, var(--indigo-500));
+    border-radius: rem(5);
+    color: var(--fl-bgColor, $white);
+    font-size: rem(16);
+    font-weight: var(--fw-medium);
+    line-height: rem(24);
+    margin-top: rem(16);
+    padding: rem(10) rem(14);
+
+    &:hover {
+      background-color: var(--fl-fgColor, var(--indigo-800)) !important;
+      border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
+      color: var(--fl-bgColor, #fff) !important;
+    }
+
+    &:focus {
+      background-color: var(--fl-fgColor, var(--indigo-800));
+      border: 2px solid var(--fl-fgColor, var(--indigo-800));
+      color: var(--fl-bgColor, #fff);
+      outline: var(--fl-fgColor, var(--indigo-500)) solid rem(3);
+      outline-offset: rem(3);
+    }
+
+    &:active {
+      background-color: var(--fl-fgColor, var(--indigo-200));
+      color: var(--fl-bgColor, var(--indigo-500));
+    }
+  }
+
+  .reset-button {
+    background-color: var(--fl-fgColor, var(--grey-100));
+    border: 2px solid var(--fl-fgColor, var(--indigo-500));
+    border-radius: rem(5);
+    color: var(--fl-bgColor, var(--indigo-500));
+    font-size: rem(16);
+    font-weight: var(--fw-medium);
+    padding: rem(10) rem(14);
+
+    &:hover {
+      background-color: var(--fl-fgColor, var(--grey-100)) !important;
+      border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
+      color: var(--fl-bgColor, --indigo-800) !important;
+    }
+
+    &:focus {
+      background-color: var(--fl-fgColor, var(--grey-100));
+      border: 2px solid var(--fl-fgColor, var(--indigo-800));
+      color: var(--fl-bgColor, --indigo-800);
+      outline: var(--fl-fgColor, var(--indigo-800)) solid rem(3);
+      outline-offset: rem(3);
+    }
+
+    &:active {
+      background-color: var(--fl-fgColor, var(--indigo-500));
+      color: var(--fl-bgColor, #fff);
+    }
+  }
+
+  .resources-no-results {
+    background-color: var(--grey-100);
+    font-size: rem(20);
+    font-weight: 600;
+    margin-bottom: rem(24);
+    margin-top: rem(16);
+    padding: rem(16);
+    padding-left: rem(20);
+  }
+
+  .resources-applied-filters {
+    margin: 0;
+    padding-bottom: rem(24);
+
+    h3 {
+      border-top: 2px solid var(--grey-200);
+      margin-top: 0;
+      padding-top: rem(24);
+    }
+
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(16);
+
+      .filter-tag {
+        background-color: #f2f2f2;
+        border: 2px solid var(--fl-fgColor, var(--indigo-500));
+        border-radius: rem(48);
+        column-gap: rem(4);
+        display: flex;
+        justify-content: center;
+        padding: rem(8);
+        white-space: nowrap;
+
+        p {
+          color: var(--fl-fgColor, var(--indigo-500));
+          margin: auto;
+        }
+
+        svg {
+          height: rem(16);
+          margin: auto;
+          stroke: var(--fl-buttonFgColor, var(--indigo-500));
+          width: rem(16);
+        }
+
+        &:hover {
+          background-color: var(--fl-fgColor, var(--grey-100)) !important;
+          border: 2px solid var(--fl-fgColor, var(--indigo-800)) !important;
+
+          p:not(:focus) {
+            background-color: var(--fl-fgColor, var(--grey-100)) !important;
+            color: var(--fl-bgColor, var(--indigo-800)) !important;
+          }
+
+          svg:not(:focus) {
+            background-color: var(--fl-fgColor, var(--grey-100)) !important;
+            stroke: var(--fl-bgColor, var(--indigo-800)) !important;
+          }
+        }
+
+        &:focus {
+          background-color: var(--fl-fgColor, var(--grey-100));
+          border: 2px solid var(--fl-fgColor, var(--indigo-800));
+          color: var(--fl-bgColor, var(--indigo-800));
+          outline: var(--fl-fgColor, var(--indigo-800)) solid rem(3);
+          outline-offset: rem(3);
+
+          p {
+            background-color: var(--fl-buttonBgColor, var(--grey-100)) !important;
+            color: var(--fl-buttonFgColor, var(--indigo-800)) !important;
+          }
+
+          svg {
+            background-color: var(--fl-buttonBgColor, var(--grey-100)) !important;
+            stroke: var(--fl-buttonFgColor, var(--indigo-800)) !important;
+          }
+        }
+
+        &:active {
+          background-color: var(--fl-fgColor, var(--indigo-500));
+
+          p {
+            color: var(--fl-bgColor, #fff);
+          }
+
+          svg {
+            stroke: var(--fl-bgColor, #fff);
+          }
+        }
+      }
+
+      .filter-clear-all {
+        margin: auto 0;
+      }
+    }
+  }
+
+  .resources-filtered-number {
+    font-size: rem(16);
+    font-weight: 400;
+    padding: rem(16) 0 rem(24) 0;
+  }
+
+  .card {
+    border-top: 3px solid var(--coral-500);
+    margin-bottom: rem(48);
+
+    .card-image {
+      margin: rem(16) 0;
+      object-fit: contain;
+    }
+
+    .card-title {
+      margin-top: rem(16);
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: rem(16);
+      margin-bottom: rem(8);
+      margin-top: rem(8);
+
+      .card-tag {
+        background-color: #f2f2f2;
+        border-radius: rem(48);
+        column-gap: rem(4);
+        display: flex;
+        justify-content: center;
+        padding: rem(8);
+        white-space: nowrap;
+
+        p {
+          font-weight: 500;
+          margin-top: 0;
+        }
+
+        svg {
+          height: rem(16);
+          margin: auto;
+          stroke: var(--fl-fgColor, var(--black));
+          width: rem(16);
+        }
+      }
+    }
+
+    .card-publishedYear {
+      font-size: rem(14);
+      margin-top: rem(16);
+    }
+
+    .card-link {
+      margin-top: rem(16);
+
+      a {
+        display: grid;
+        font-weight: 500;
+        gap: rem(4);
+        grid-template-columns: max-content min-content;
+        width: min-content;
+      }
+
+      svg {
+        height: rem(16);
+        margin: auto;
+        width: rem(16);
+      }
+    }
+  }
+}
+
+// Custom styles when "enhance inputs" is enabled
+// Custom checkbox
+
+.fl-input-enhanced {
+  .filter {
+    .filter-checkbox + label::before {
+      border: rem(2) solid var(--fl-fgColor, var(--indigo-500));
+    }
+
+    .filter-checkbox:focus + label::before,
+    .filter-checkbox:hover + label::before {
+      border: rem(2) solid var(--fl-fgColor, var(--indigo-500));
+      box-shadow:
+        0 0 0 rem(2) var(--fl-bgColor, #fff),
+        0 0 0 rem(4) var(--fl-fgColor, var(--indigo-500));
+    }
+  }
+}
+
+// Box checked
+.filter .filter-checkbox:checked + label::before {
+  background: var(--fl-fgColor, var(--indigo-500));
+}
+
+// Box active
+.filter .filter-checkbox:active + label::before {
+  background-color: var(--fl-bgColor, var(--indigo-500));
+  border: rem(2.5) solid var(--fl-fgColor, var(--indigo-500));
+}
+
+@include breakpoint-up(sm) {
+  .page--resources {
+    .resources-container {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .card {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+
+      .card-image {
+        margin: rem(16);
+      }
+    }
+
+    .filter {
+      padding-right: 0;
+    }
+  }
+}

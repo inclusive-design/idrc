@@ -1,0 +1,60 @@
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageType = 'page--resources' %}
+
+{% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="previous" viewBox="0 0 26 26" fill="none">
+        {% include 'svg/previous.svg' %}
+        </symbol>
+        <symbol id="next" viewBox="0 0 26 26" fill="none">
+        {% include 'svg/next.svg' %}
+        </symbol>
+        <symbol id="topic" viewBox="0 0 14 20" fill="none">
+        {% include 'svg/icon-topics.svg' %}
+        </symbol>
+        <symbol id="type" viewBox="0 0 16 18" fill="none">
+        {% include 'svg/icon-resource-type.svg' %}
+        </symbol>
+        <symbol id="plus" viewBox="0 0 24 24" fill="none">
+        {% include 'svg/icon-plus.svg' %}
+        </symbol>
+        <symbol id="minus" viewBox="0 0 24 24" fill="none">
+        {% include 'svg/icon-minus.svg' %}
+        </symbol>
+        <symbol id="external" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        {% include 'svg/external.svg' %}
+        </symbol>
+        <symbol id="close" viewBox="0 0 24 24" fill="none">
+        {% include 'svg/icon-x.svg' %}
+        </symbol>
+    </svg>
+    
+    <article>
+        {% include 'partials/components/page-header.njk' %}
+        <div class="resources-container">
+            <form method="get" action="/resources/">
+                {% include 'partials/components/filter-resources.njk' %}
+            </form>
+
+            <div class="content">
+                {# This container lists either all resources or resources filtered based on user's filtering selections. #}
+                {# It's dynamically rendered at the page load by resources-dynamic-handler.js #}
+            </div>
+        </div>
+
+        <nav class="pagination" aria-label="pagination">
+            {# This container lists pagination to show set amount of resources at a time. #}
+            {# It's dynamically rendered at the page load by resources-dynamic-handler.js #}
+        </nav>
+    </article>
+{% endblock %}
+
+{% block footerScripts %}
+<script src="/assets/scripts/resources-utils.js"></script>
+<script src="/assets/scripts/resources-dynamic-handler.js" defer></script>
+{% endblock %}

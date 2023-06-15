@@ -117,12 +117,6 @@ module.exports = eleventyConfig => {
 		return projectPages;
 	});
 
-	eleventyConfig.addCollection('tools', collection => {
-		return [
-			...collection.getFilteredByGlob('src/tools/*.md').sort((a, b) => b.data.order - a.data.order)
-		].reverse();
-	});
-
 	eleventyConfig.addCollection('news', collection => {
 		return [
 			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))
@@ -139,6 +133,10 @@ module.exports = eleventyConfig => {
 		return [...collection.getFilteredByGlob(['./src/news/*.md', './src/ideas/*.md']).filter(post => livePosts(post))]
 			.reverse()
 			.slice(0, 10);
+	});
+
+	eleventyConfig.addCollection('resources', collection => {
+		return collection.getFilteredByGlob('src/resources/*.md');
 	});
 
 	eleventyConfig.setUseGitIgnore(false);
@@ -165,6 +163,8 @@ module.exports = eleventyConfig => {
 	// Passthrough file copy.
 	eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});
 	eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
+	eleventyConfig.addPassthroughCopy({'src/assets/scripts/resources-utils.js': 'assets/scripts/resources-utils.js'});
+	eleventyConfig.addPassthroughCopy({'src/assets/scripts/resources-dynamic-handler.js': 'assets/scripts/resources-dynamic-handler.js'});
 	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');

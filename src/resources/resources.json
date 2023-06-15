@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/single--resource.njk",
+	"permalink": "/resources/{{ page.fileSlug | slugify }}/",
+	"headerBgColor": "white"
+}

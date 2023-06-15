@@ -1,0 +1,24 @@
+{
+  "resourceTypes": [
+    {
+      "value": "code",
+      "label": "Code"
+    },
+    {
+      "value": "onlineCourse",
+      "label": "Online Course"
+    },
+    {
+      "value": "plugin",
+      "label": "Plugin"
+    },
+    {
+      "value": "toolkit",
+      "label": "Toolkit"
+    },
+    {
+      "value": "webApp",
+      "label": "Web App"
+    }
+  ]
+}
