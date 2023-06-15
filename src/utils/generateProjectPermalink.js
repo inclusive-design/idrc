@@ -11,12 +11,8 @@ module.exports = (data) => {
 
 	const locale = data.locale;
 	const localeSlug = config.languages[locale].slug || locale;
-	const slug = data.page.permalink || slugFilter(data.page.fileSlug);
+	const slug = data.permalink || slugFilter(data.page.fileSlug);
 	const root = (locale === config.defaultLanguage) ? '/projects/' : `/projects/${localeSlug}/`;
-
-	if (data.parentPageUrl) {
-		return data.parentPageUrl;
-	}
 
 	return `${root}/${slug}/`;
 };

@@ -13,6 +13,10 @@ publish_mode: editorial_workflow
 site_url: "https://idrc.ocadu.ca"
 media_folder: "src/media"
 public_folder: "/media"
+i18n:
+  structure: multiple_folders
+  locales: ['en-CA', 'fr']
+  default_locale: 'en-CA'
 collections:
   - name: "special_pages"
     label: "Special Pages"
@@ -23,6 +27,7 @@ collections:
         delete: false
         file: "src/index.md"
         slug: "{{slug}}"
+        i18n: false
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
           - {label: "Title", name: "title", widget: "string"}
@@ -140,6 +145,7 @@ collections:
         delete: false
         file: src/history.md
         slug: "{{slug}}"
+        i18n: false
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
           - {label: "Title", name: "title", widget: "string"}
@@ -167,6 +173,7 @@ collections:
         delete: false
         file: "src/projects.md"
         slug: "{{slug}}"
+        i18n: false
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/projects.njk"}
           - {label: "Title", name: "title", widget: "string"}
@@ -184,6 +191,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     create: true
+    i18n: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
       - {label: "Title", name: "title", widget: "string"}
@@ -366,6 +374,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "/about/news/{{slug}}"
     create: true
+    i18n: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--news.njk"}
       - {label: "Title", name: "title", widget: "string"}
@@ -385,6 +394,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "/ideas/{{slug}}"
     create: true
+    i18n: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--idea.njk"}
       - {label: "Title", name: "title", widget: "string"}
@@ -405,6 +415,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "/about/team/{{slug}}"
     create: true
+    i18n: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--person.njk"}
       - {label: "Full Name", name: "title", widget: "string"}
@@ -428,19 +439,20 @@ collections:
     slug: "{{slug}}"
     preview_path: "/projects/{{slug}}"
     create: true
+    i18n: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk"}
-      - {label: "Project Name", name: "projectName", widget: "string", required: true, hint: "Suggestion: If this is a sub-page of a project, enter the name of the project here."}
-      - {label: "Override Default Project URL ", name: "permalink", widget: "string", required: false, hint: "Default URL is '/projects/[project-name]/'. To override enter a string including '/' (slash) at start and end (i.e. '/example/url/'). This must be unique."}
-      - {label: "Body Title", name: "title", widget: "string", required: true, hint: "The title that appears after the Project Name and before the Body content. Suggestion: use a descriptive title which includes keywords from the project."}
-      - {label: "Project Short Name", name: "shortName", widget: "string", required: false, hint: "Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project."}
-      - {label: "Parent Page", name: "parentPageTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "This is required for sub-pages of a project to define the sub-page hierarchy."}
-      - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order. "}
-      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
-      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."}
-      - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image", "file"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages."}
-      - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages."}
-      - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site."}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk", i18n: duplicate}
+      - {label: "Project Name", name: "projectName", widget: "string", required: true, hint: "Suggestion: If this is a sub-page of a project, enter the name of the project here.", i18n: true}
+      - {label: "Override Default Project URL ", name: "permalink", widget: "string", required: false, hint: "Default URL is '/projects/[project-name]/'. To override enter a string including '/' (slash) at start and end (i.e. '/example/url/'). This must be unique.", i18n: true}
+      - {label: "Body Title", name: "title", widget: "string", required: true, hint: "The title that appears after the Project Name and before the Body content. Suggestion: use a descriptive title which includes keywords from the project.", i18n: true}
+      - {label: "Project Short Name", name: "shortName", widget: "string", required: false, hint: "Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project.", i18n: true}
+      - {label: "Parent Page", name: "parentTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "This is required for sub-pages of a project to define the sub-page hierarchy.", i18n: true}
+      - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order.", i18n: duplicate}
+      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched.", i18n: duplicate}
+      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default.", i18n: true}
+      - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image", "file"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages.", i18n: true}
+      - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages.", i18n: duplicate}
+      - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site.", i18n: true}
   - name: "resources"
     label: "Resources"
     label_singular: "Resource"
@@ -448,6 +460,7 @@ collections:
     slug: "{{slug}}"
     preview_path: "/resources/{{slug}}"
     create: true
+    i18n: false
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
       - {label: "Resource Name", name: "title", widget: "string", required: true}
@@ -478,6 +491,7 @@ collections:
       - {label: "Resource URL", name: "link", widget: "string", required: true}
   - name: resourceMetadata
     label: Resource Metadata
+    i18n: false
     files:
       - label: Resource Topics
         name: resourceTopics
@@ -517,6 +531,7 @@ collections:
                 widget: "string"
   - label: "Globals"
     name: "globals"
+    i18n: false
     files:
       - label: "Site Data"
         name: "site_data"

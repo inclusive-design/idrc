@@ -1,6 +1,32 @@
 const nunjucks = require('nunjucks');
 const path = require('path');
 
+const IExtension = function () {
+	this.tags = ['_i'];
+
+	this.parse = function (parser, nodes) {
+	  // Get the tag token
+	  const token = parser.nextToken();
+
+	  // Get the arguments passed to the tag
+	  const args = parser.parseSignature(null, true);
+
+	  // Parse the body of the tag
+	  parser.advanceAfterBlockEnd(token.value);
+
+	  // Return the custom node
+	  return new nodes.CallExtension(this, 'run', args);
+	};
+
+	this.run = function (context, locale, message, data) {
+	  // Replace '${locale}' with the locale value from the data object
+	  const replacedMessage = message.replace('${locale}', data[locale]);
+
+	  // Return the modified message
+	  return replacedMessage;
+	};
+};
+
 module.exports = class {
 	async data() {
 		return {
@@ -10,10 +36,18 @@ module.exports = class {
 	}
 
 	async precompile() {
+
 		return new Promise((resolve, reject) => {
+			const env = new nunjucks.Environment();
+
+			env.addExtension('_i', new IExtension());
+			env.addFilter('eleventyNavigation', () => []);
+			env.addFilter('eleventyNavigationBreadcrumb', () => []);
+
 			const templates = nunjucks.precompile(
 				path.join(__dirname, '../_includes/'),
 				{
+					env,
 					include: [
 						'preview.njk',
 						'page.njk',

@@ -3,3 +3,6 @@
 _' + tag + ')
 _' + type + ')
 _')[0] + ')
+_i("Read in ${locale}")
+_i('fr')
+_('Language')

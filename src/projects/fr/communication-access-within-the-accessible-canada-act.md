@@ -1,8 +1,8 @@
 ---
-projectName: Communication Access within the Accessible Canada Act
+projectName: Accès aux communications dans le cadre de la Loi canadienne sur l'accessibilité
 shortName: ""
 order: 65
-title: Communication Access within the Accessible Canada Act
+title: Accès aux communications dans le cadre de la Loi canadienne sur l'accessibilité
 parentTitle: ""
 subPageOrder: 0
 thumbnailImage: /media/project-communication_access.png
