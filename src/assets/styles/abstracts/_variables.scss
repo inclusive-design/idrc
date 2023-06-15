@@ -75,7 +75,7 @@ $breakpoints: (
   --max-width: calc((1200 / 16 * 1rem) - var(--gutter));
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (width >= 1024px) {
   :root {
     --step-1: calc(22 / 16 * 1rem);
     --step-2: calc(28 / 16 * 1rem);
