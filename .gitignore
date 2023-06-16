@@ -120,3 +120,9 @@ backstop_data/*
 
 # Nova configuration
 .nova
+
+# VS Code configuration
+.vscode
+
+# Mac OSX
+.DS_Store

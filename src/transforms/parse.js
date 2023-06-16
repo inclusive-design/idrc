@@ -1,4 +1,3 @@
-const getSize = require('image-size');
 const {parseHTML} = require('linkedom');
 
 module.exports = (value, outputPath) => {
@@ -17,15 +16,6 @@ module.exports = (value, outputPath) => {
 		if (images.length > 0) {
 			for (const image of images) {
 				image.setAttribute('loading', 'lazy');
-
-				const file = image.getAttribute('src');
-
-				if (!file.includes('http')) {
-					const dimensions = getSize('dist' + file);
-
-					image.setAttribute('width', dimensions.width);
-					image.setAttribute('height', dimensions.height);
-				}
 
 				// If an image has a title it means that the user added a caption
 				// so replace the image with a figure containing that image and a caption

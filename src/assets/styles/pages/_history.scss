@@ -1,10 +1,12 @@
+@use 'sass:color';
+
 .timeline {
   margin-top: rem(64);
   position: relative;
 }
 
 .line {
-  color: var(--fl-fgColor, transparentize($indigo-500, 0.5));
+  color: var(--fl-fgColor, color.adjust($indigo-500, $alpha: -0.5));
   left: 0;
   position: absolute;
   top: rem(16);
@@ -23,7 +25,7 @@
 .milestones dt::before {
   background: var(--fl-fgColor, var(--indigo-500));
   border-radius: 50%;
-  content: "";
+  content: '';
   display: block;
   height: rem(10);
   left: rem(-40);

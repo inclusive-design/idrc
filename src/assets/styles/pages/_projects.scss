@@ -1,0 +1,52 @@
+.page--projects {
+  .projects {
+    margin: rem(64) 0 rem(64) 0;
+  }
+
+  .project__link {
+    margin-top: rem(16);
+  }
+
+  .project {
+    margin-top: rem(48);
+
+    .thumbnail {
+      height: rem(177);
+      object-fit: contain;
+      width: rem(266);
+    }
+
+    a[href^='/projects/'] {
+      font-weight: 500;
+    }
+  }
+}
+
+@include breakpoint-up(sm) {
+  .page--projects {
+    .projects {
+      display: grid;
+      grid-gap: var(--gutter);
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+      .thumbnail {
+        height: rem(247);
+        width: rem(370);
+      }
+    }
+  }
+}
+
+@include breakpoint-up(md) {
+  .page--projects {
+    .projects {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project {
+      padding: 0 calc(var(--gutter) / 2);
+    }
+  }
+}

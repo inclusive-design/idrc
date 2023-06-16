@@ -56,7 +56,7 @@ sections:
     desktopWidth: full
     fullBleed: true
     subsectionLevel: "0"
-  - image2x: /media/projects-and-tools@2x.jpg
+  - image2x: /media/projects@2x.jpg
     imageOrderDesktop: swap
     desktopWidth: full
     fullBleed: false
@@ -64,11 +64,11 @@ sections:
     backgroundColor: null
     textColor: null
     borderColor: indigo-500
-    title: Featured projects and tools
-    content: "[See featured projects and available open tools](/projects-and-tools/)"
+    title: Projects
+    content: "[See featured projects](/projects/)"
     imageAltText: Two people trying the inclusive coding learning environment the
       IDRC has created, which involves robots, tactile boards, and cards.
-    image: /media/projects-and-tools.jpg
+    image: /media/projects.jpg
     imageShadow: coral-500
     subsectionLevel: "0"
   - title: Our resources

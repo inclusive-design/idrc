@@ -1,18 +1,19 @@
 ---
+pronouns: I opt out of choosing pronouns — ask me why?
+twitter: "@jesshmitchell"
+interests: Open Education, Open Pedagogy, Open Dialogue
+socialImage: /media/jess_bowie.jpg
+medium: https://medium.com/@jesshmitchell
 title: Jess Mitchell
 job: Senior Manager, Research + Design
-pronouns: I opt out of choosing pronouns — ask me why?
 email: jmitchell@ocadu.ca
 website: https://jesshmitchell.com
-twitter: "@jesshmitchell"
 linkedin: https://www.linkedin.com/in/jesshmitchell/
 projects:
   - Flexible Learning for Open Education
   - Consulting
   - Equitable Digital Systems
   - Humanizing Education
-interests: Open Education, Open Pedagogy, Open Dialogue
-medium: https://medium.com/@jesshmitchell
 ---
 Jess Mitchell’s work focuses on fostering innovation within diverse communities while achieving outcomes that benefit everyone. She applies this inclusive and broad perspective along with extensive experience to managing large-scale international projects, focused organizational initiatives, and everything in between.
 

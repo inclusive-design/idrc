@@ -1,0 +1,40 @@
+{
+    "extends": ["eslint-config-fluid", "plugin:react/recommended"],
+    "globals": {
+        "fluid": true
+    },
+    "env": {
+        "browser": true,
+        "amd": true,
+        "node": true,
+        "es6": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", "tab"],
+        "strict": "off",
+        "quotes": ["error", "single"]
+    },
+    "settings": {
+        "react": {
+            "version": "16"
+        }
+    },
+    "overrides": [
+        {
+            "files": "src/assets/scripts/app.js",
+            "parserOptions": {
+                "sourceType": "module"
+            }
+        },
+        {
+            "files": "src/admin/previews.js",
+            "parserOptions": {
+                "sourceType": "module"
+            }
+        }
+    ]
+}

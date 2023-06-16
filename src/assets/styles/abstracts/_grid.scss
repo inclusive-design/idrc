@@ -1,11 +1,20 @@
+@use 'sass:color';
+
 :root {
   --offset: calc(30 / 16 * 1rem);
   --columns: 4;
-  --color: #{transparentize(silver, 0.9)};
+  --color: #{color.adjust(silver, $alpha: -0.9)};
   --repeating-width: calc(100% / var(--columns));
   --column-width: calc((100% / var(--columns)) - var(--gutter));
   --background-width: calc(100% + var(--gutter));
-  --background-columns: repeating-linear-gradient(to right, var(--color), var(--color) var(--column-width), transparent var(--column-width), transparent var(--repeating-width));
+  --background-columns:
+    repeating-linear-gradient(
+      to right,
+      var(--color),
+      var(--color) var(--column-width),
+      transparent var(--column-width),
+      transparent var(--repeating-width)
+    );
 }
 
 @include breakpoint-up(sm) {
@@ -25,7 +34,7 @@ html.grid::before {
   background-image: var(--background-columns);
   background-size: var(--background-width) 100%;
   bottom: 0;
-  content: "";
+  content: '';
   left: 0;
   margin-left: auto;
   margin-right: auto;

@@ -34,7 +34,9 @@
   'pages/generic',
   'pages/home',
   'pages/history',
-  'pages/projects-tools',
+  'pages/projects',
+  'pages/project',
+  'pages/resources',
   'pages/news-ideas',
   'pages/single',
   'pages/team',
@@ -42,7 +44,8 @@
 
 // 6. Vendors
 @import
-  'vendors/uio';
+  'vendors/uio',
+  'vendors/cms-editor-components';
 
 // 7. Themes
 @import

@@ -1,7 +1,7 @@
 {% set navItems = collections.all | eleventyNavigation(secondaryNavigation.key) %}
-<nav class="nav--secondary" aria-labelledby="{{ secondaryNavigation.label | slug }}">
+<nav class="nav--secondary" aria-labelledby="{{ secondaryNavigation.label | slugify }}">
     <div class="wrapper">
-        <h2 class="h3" id="{{ secondaryNavigation.label | slug }}">{{ secondaryNavigation.label }}</h2>
+        <h2 class="h3" id="{{ secondaryNavigation.label | slugify }}">{{ secondaryNavigation.label }}</h2>
 
         <div class="menu--secondary">
             <ul>
@@ -32,7 +32,7 @@
                 {% if parentPage %}
                     {% set parentAttribute = ' data-parent="true"' %}
                 {% endif %}
-            <li{{ liClass | safe }}>
+            <li>
                 <a{{ relAttribute | safe }}{{ parentAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
             </li>
             {%- endfor %}

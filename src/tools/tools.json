@@ -1,5 +1,0 @@
-{
-	"layout": "layouts/base.njk",
-	"permalink": "/tools/{{ title | slug }}/",
-	"headerBgColor": "white"
-}

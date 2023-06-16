@@ -1,10 +1,10 @@
 ---
-title: "The Three Dimensions of Inclusive Design, Part One"
+title: The Three Dimensions of Inclusive Design, Part One
 date: 2018-03-29
 author: Jutta Treviranus
 thumbnailImage: /media/handprints.jpg
 tags:
-	- featured
+  - featured
 ---
 ![](/media/handprints.jpg 'Handprints')
 
@@ -20,7 +20,7 @@ The three dimensions of the framework are:
 2. **Use inclusive, open & transparent processes, and co-design with people who have a diversity of perspectives, including people that can’t use or have difficulty using the current designs.**
 3. **Realize that you are designing in a complex adaptive system.**
 
-![](/media/3-dimensions.png 'The three dimensions of inclusive design.')
+![](/media/3-dimensions.jpg 'The three dimensions of inclusive design.')
 
 I will discuss each dimension in turn in this three-part blog. [Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/), and [Part Three can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-three/).
 
@@ -90,4 +90,3 @@ Diversity is our most valuable asset. Inclusion is our biggest challenge. Taking
 ***
 
 [Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/), and [Part Three can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-three/).
-

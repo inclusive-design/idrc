@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 .nav {
   height: rem(38);
   margin-left: auto;
@@ -16,13 +18,16 @@
   z-index: 20;
 
   &:hover {
-    background: var(--fl-buttonFgColor, rgba(255, 255, 255, 0.5));
+    background: var(--fl-buttonFgColor, rgb(255 255 255 / 50%));
     color: var(--fl-buttonBgColor);
   }
 
   &:focus {
     background: var(--fl-buttonFgColor, var(--header-bg, transparent));
-    box-shadow: 0 0 0 rem(2) var(--fl-buttonFgColor, var(--parent-bg)), 0 0 0 rem(4) var(--fl-buttonFgColor, var(--blue-900)), 0 0 0 rem(2) var(--fl-buttonFgColor, var(--blue-900)) inset;
+    box-shadow:
+      0 0 0 rem(2) var(--fl-buttonFgColor, var(--parent-bg)),
+      0 0 0 rem(4) var(--fl-buttonFgColor, var(--blue-900)),
+      0 0 0 rem(2) var(--fl-buttonFgColor, var(--blue-900)) inset;
     color: var(--fl-buttonBgColor);
   }
 
@@ -31,17 +36,20 @@
     color: var(--fl-buttonFgColor, var(--white));
   }
 
-  &[aria-expanded="true"] {
+  &[aria-expanded='true'] {
     color: var(--fl-buttonFgColor, var(--header-fg));
 
     &:hover {
-      background: var(--fl-buttonFgColor, rgba(255, 255, 255, 0.3));
+      background: var(--fl-buttonFgColor, rgb(255 255 255 / 30%));
       color: var(--fl-buttonBgColor, var(--header-fg));
     }
 
     &:focus {
       background: var(--fl-buttonFgColor);
-      box-shadow: 0 0 0 rem(2) var(--fl-buttonFgColor, var(--parent-bg)), 0 0 0 rem(4) var(--fl-buttonFgColor, var(--header-fg)), 0 0 0 rem(2) var(--fl-buttonFgColor, var(--header-fg)) inset;
+      box-shadow:
+        0 0 0 rem(2) var(--fl-buttonFgColor, var(--parent-bg)),
+        0 0 0 rem(4) var(--fl-buttonFgColor, var(--header-fg)),
+        0 0 0 rem(2) var(--fl-buttonFgColor, var(--header-fg)) inset;
       color: var(--fl-buttonBgColor, var(--white));
     }
 
@@ -59,7 +67,9 @@
 
 .nav .menu {
   background: var(--fl-bgColor, var(--indigo-800));
-  box-shadow: 0 rem(20) rem(25) rem(-5) var(--fl-fgColor, rgba(0, 0, 0, 0.1)), 0 rem(10) rem(10) rem(-5) var(--fl-fgColor, rgba(0, 0, 0, 0.04));
+  box-shadow:
+    0 rem(20) rem(25) rem(-5) var(--fl-fgColor, rgb(0 0 0 / 10%)),
+    0 rem(10) rem(10) rem(-5) var(--fl-fgColor, rgb(0 0 0 / 4%));
   color: var(--fl-fgColor, var(--white));
   display: none;
   left: calc(-1 / 2 * var(--gutter));
@@ -69,7 +79,7 @@
   z-index: 10;
 }
 
-.nav [aria-expanded="true"] + * {
+.nav [aria-expanded='true'] + * {
   display: block;
 }
 
@@ -90,7 +100,7 @@
   &.submenu-parent--submenu-visible {
     border-bottom: rem(1) solid var(--fl-fgColor, black);
 
-    button[data-parent="true"] {
+    button[data-parent='true'] {
       text-decoration: none;
     }
   }
@@ -141,14 +151,8 @@
   color: var(--fl-linkColor, var(--fl-fgColor, var(--white)));
 }
 
-.menu button,
-.menu button:active {
-  background-color: var(--fl-buttonBgColor, var(--fl-fgColor, var(--white)));
-  color: var(--fl-buttonFgColor, var(--fl-fgColor, var(--white)));
-}
-
-.menu [aria-current="page"],
-.menu [data-parent="true"] {
+.menu [aria-current='page'],
+.menu [data-parent='true'] {
   text-decoration: underline;
   text-decoration-color: var(--fl-linkColor, var(--yellow-200));
   text-decoration-thickness: rem(2);
@@ -176,10 +180,10 @@
   }
 }
 
-.menu li ul a[rel~="external"]::after,
-.menu li ul a[href^="mailto:"]::after {
-  background: currentColor;
-  content: "";
+.menu li ul a[rel~='external']::after,
+.menu li ul a[href^='mailto:']::after {
+  background: currentcolor;
+  content: '';
   display: inline-block;
   height: 1.5em;
   margin-bottom: 0.125em;
@@ -196,12 +200,15 @@
     color: var(--fl-fgColor, var(--header-fg));
 
     &:hover {
-      background: var(--fl-fgColor, rgba(255, 255, 255, 0.3));
+      background: var(--fl-fgColor, rgb(255 255 255 / 30%));
       color: var(--fl-bgColor, var(--header-fg));
     }
 
     &:focus {
-      box-shadow: 0 0 0 rem(2) var(--fl-fgColor, var(--parent-bg)), 0 0 0 rem(4) var(--fl-fgColor, var(--header-fg)), 0 0 0 rem(2) var(--fl-fgColor, var(--header-fg)) inset;
+      box-shadow:
+        0 0 0 rem(2) var(--fl-fgColor, var(--parent-bg)),
+        0 0 0 rem(4) var(--fl-fgColor, var(--header-fg)),
+        0 0 0 rem(2) var(--fl-fgColor, var(--header-fg)) inset;
       color: var(--fl-bgColor, var(--white));
     }
 
@@ -222,9 +229,9 @@
       background: var(--fl-bgColor, var(--indigo-800));
     }
 
-    &[aria-expanded="true"] {
+    &[aria-expanded='true'] {
       &:hover {
-        background: var(--fl-fgColor, rgba(255, 255, 255, 0.3));
+        background: var(--fl-fgColor, rgb(255 255 255 / 30%));
       }
 
       &:active {
@@ -257,7 +264,7 @@
   }
 
   .nav .menu-label {
-    @include visually-hidden();
+    @include visually-hidden;
   }
 
   .nav li ul {
@@ -274,7 +281,7 @@
     }
 
     &:active {
-      background: var(--fl-bgColor, transparentize(black, 0.3));
+      background: var(--fl-bgColor, color.adjust(black, $alpha: -0.3));
       color: var(--fl-linkColor, var(--white));
     }
   }
@@ -290,14 +297,14 @@
     }
 
     &:active {
-      background: var(--fl-buttonBgColor, transparentize(black, 0.3));
+      background: var(--fl-buttonBgColor, color.adjust(black, $alpha: -0.3));
       color: var(--fl-buttonFgColor, var(--white));
     }
   }
 
   .menu a::after {
-    background: currentColor;
-    content: "";
+    background: currentcolor;
+    content: '';
     display: inline-block;
     height: 1.5em;
     margin-left: 0.125em;
@@ -306,25 +313,25 @@
     mask-size: 1.5em;
   }
 
-  .menu a:not([rel="external"])::after {
+  .menu a:not([rel='external'])::after {
     margin-bottom: 0;
     mask-image: url('../images/internal.svg');
     width: 1em;
   }
 
-  .menu a[rel~="external"]::after,
-  .menu a[href^="mailto:"]::after {
+  .menu a[rel~='external']::after,
+  .menu a[href^='mailto:']::after {
     margin-bottom: 0.125em;
     mask-image: url('../images/external.svg');
     width: 1.5em;
   }
 
-  .menu [data-parent="true"] {
+  .menu [data-parent='true'] {
     text-decoration: none;
   }
 
-  .menu [aria-current="page"],
-  .menu li ul [data-parent="true"] {
+  .menu [aria-current='page'],
+  .menu li ul [data-parent='true'] {
     text-decoration: underline;
     text-decoration-color: var(--fl-fgColor, var(--indigo-500));
     text-decoration-thickness: rem(2);
@@ -340,11 +347,11 @@
     color: var(--fl-linkColor, var(--black));
   }
 
-  .menu a[href="#"] {
+  .menu a[href='#'] {
     display: none;
   }
 
-  .menu a[href="#"] + ul a {
+  .menu a[href='#'] + ul a {
     font-weight: var(--fw-semibold);
   }
 
@@ -395,14 +402,14 @@
       }
 
       &:active {
-        background: var(--fl-bgColor, transparentize($blue-500, 0.5));
+        background: var(--fl-bgColor, color.adjust($blue-500, $alpha: -0.5));
         color: var(--fl-linkColor, var(--black));
       }
     }
 
     .menu button {
       &:active {
-        background: var(--fl-buttonBgColor, transparentize($blue-500, 0.5));
+        background: var(--fl-buttonBgColor, color.adjust($blue-500, $alpha: -0.5));
         color: var(--fl-buttonFgColor, var(--black));
       }
 
@@ -444,7 +451,7 @@
   }
 
   .menu .menu-label {
-    @include visually-hidden();
+    @include visually-hidden;
   }
 
   .menu ul {
@@ -462,7 +469,7 @@
   .menu li ul {
     background: var(--fl-bgColor, var(--white));
     border: rem(5) solid var(--fl-buttonFgColor, transparent);
-    box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 rem(10) rgb(0 0 0 / 25%);
     left: 0;
     margin-top: 0;
     position: absolute;
@@ -483,7 +490,7 @@
     color: var(--fl-linkColor, var(--blue-900));
 
     &:active {
-      background: var(--fl-bgColor, transparentize(black, 0.3));
+      background: var(--fl-bgColor, color.adjust(black, $alpha: -0.3));
       color: var(--fl-linkColor, var(--white));
     }
 
@@ -499,7 +506,7 @@
     color: var(--fl-buttonFgColor, var(--blue-900));
 
     &:active {
-      background: var(--fl-buttonBgColor, transparentize(black, 0.3));
+      background: var(--fl-buttonBgColor, color.adjust(black, $alpha: -0.3));
       color: var(--fl-buttongFgColor, var(--white));
     }
 
@@ -510,13 +517,13 @@
     }
   }
 
-  .menu [aria-expanded="true"] {
+  .menu [aria-expanded='true'] {
     background: var(--fl-bgColor, var(--black));
     color: var(--fl-fgColor, var(--white));
   }
 
-  .menu [aria-current="page"],
-  .menu [data-parent="true"] {
+  .menu [aria-current='page'],
+  .menu [data-parent='true'] {
     text-decoration: underline;
     text-decoration-color: var(currentColor, var(--black));
     text-decoration-thickness: rem(2);
@@ -543,11 +550,11 @@
     }
 
     &:active {
-      background: var(--fl-linkColor, transparentize($yellow-500, 0.5));
+      background: var(--fl-linkColor, color.adjust($yellow-500, $alpha: -0.5));
       color: var(--fl-bgColor);
     }
 
-    &[aria-current="page"] {
+    &[aria-current='page'] {
       &:hover,
       &:focus {
         text-decoration-color: var(--fl-bgColor, var(--black));
@@ -560,7 +567,7 @@
       color: var(--fl-linkColor, var(--white));
 
       &:active {
-        background: var(--fl-bgColor, transparentize(black, 0.3));
+        background: var(--fl-bgColor, color.adjust(black, $alpha: -0.3));
       }
 
       &:hover,
@@ -575,7 +582,7 @@
       color: var(--fl-buttonFgColor, var(--white));
 
       &:active {
-        background: var(--fl-buttonBgColor, transparentize(black, 0.3));
+        background: var(--fl-buttonBgColor, color.adjust(black, $alpha: -0.3));
       }
 
       &:hover,
@@ -596,7 +603,7 @@
       }
 
       &:active {
-        background: var(--fl-bgColor, transparentize($yellow-500, 0.5));
+        background: var(--fl-bgColor, color.adjust($yellow-500, $alpha: -0.5));
       }
     }
   }
@@ -604,7 +611,7 @@
   .page--home {
     .menu a {
       &:active {
-        background: var(--fl-bgColor, transparentize($blue-500, 0.5));
+        background: var(--fl-bgColor, color.adjust($blue-500, $alpha: -0.5));
         color: var(--fl-linkColor, var(--black));
       }
 
@@ -617,7 +624,7 @@
 
     .menu button {
       &:active {
-        background: var(--fl-buttonBgColor, transparentize($blue-500, 0.5));
+        background: var(--fl-buttonBgColor, color.adjust($blue-500, $alpha: -0.5));
         color: var(--fl-buttonFgColor, var(--black));
       }
 
@@ -628,7 +635,7 @@
       }
     }
 
-    .menu [aria-expanded="true"] {
+    .menu [aria-expanded='true'] {
       background: var(--fl-bgColor, var(--blue-500));
       color: var(--fl-fgColor, var(--black));
     }
@@ -641,7 +648,7 @@
       }
 
       &:active {
-        background: var(--fl-bgColor, transparentize($yellow-500, 0.5));
+        background: var(--fl-bgColor, color.adjust($yellow-500, $alpha: -0.5));
       }
     }
   }
@@ -698,16 +705,16 @@
       }
     }
 
-    .menu a:not([rel="external"])::after {
+    .menu a:not([rel='external'])::after {
       margin-bottom: -0.4375em;
     }
 
-    .menu a[rel~="external"]::after,
-    .menu a[href^="mailto:"]::after {
+    .menu a[rel~='external']::after,
+    .menu a[href^='mailto:']::after {
       margin-bottom: -0.375em;
     }
 
-    .menu [aria-current="page"] {
+    .menu [aria-current='page'] {
       text-decoration: underline;
       text-decoration-color: var(--fl-fgColor, var(--indigo-500));
       text-decoration-thickness: rem(3);
@@ -730,20 +737,20 @@
       padding: 0;
     }
 
-    .menu a[href="#"] + ul a {
+    .menu a[href='#'] + ul a {
       font-size: var(--step-2);
       font-weight: var(--fw-medium);
     }
 
-    .menu a[href="#"] + ul li + li {
+    .menu a[href='#'] + ul li + li {
       padding-top: rem(12);
     }
 
-    .menu a:not([href="#"]) + ul li {
+    .menu a:not([href='#']) + ul li {
       margin-top: rem(8);
     }
 
-    .menu a:not([href="#"]) + ul li + li {
+    .menu a:not([href='#']) + ul li + li {
       margin-top: rem(8);
     }
 
@@ -763,4 +770,20 @@
   }
 }
 
-@import 'nav--secondary';
+@include breakpoint-up(md) {
+  .nav--secondary {
+    flex: 0 0 calc(1 / 3 * 100%);
+    margin-bottom: rem(96);
+    margin-top: rem(96);
+
+    &::after {
+      display: none;
+    }
+
+    .wrapper {
+      box-shadow: rem(9) rem(9) 0 0 var(--fl-fgColor, var(--indigo-500));
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
