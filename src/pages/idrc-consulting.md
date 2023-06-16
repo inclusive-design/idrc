@@ -21,73 +21,63 @@ sections:
       - indigo-500
     title: What we offer
     content: >-
-      The Inclusive Design Research Centre offers several ways that
-      organizations can learn, collaborate, and gain experience with Inclusive
-      Design through four core areas: 
+      ## Consulting
 
 
-      * Inclusive design consulting
-
-      * T﻿raining
-
-      * D﻿igital accessibility reviews
-
-      * Inclusive employee experience consulting
+      We strongly believe in **one-size-fits-one** solutions, and this extends to our services. We work closely with our clients to meet you where you are and co-create customized approaches that can include a combination of training, accessibility evaluation, and flexible consulting support. There is no fixed, linear path through this work; organizations that feel behind can make great leaps through sustainable initiatives. Our consulting ethos is that everyone can (and should) learn to fold the perspective shift that Inclusive Design gives us into everything we do professionally: product-related, team-related, procurement, HR, management, hiring, external outreach… everything.
 
 
-      ## W﻿ays to begin
+      ### ***We want to help you achieve your inclusion and accessibility goals.***
 
 
-      There will never be just one way to do the work of inclusion or inclusive design. Rather than a framework or an ideology, inclusive design is a perspective shift that requires unlearning, questioning, and reimagining. Inclusive Design is the horizontal thread that stretches throughout  the vertical functions/pillars of organizations. This work stretches from very tactical, technical know-how to having a mature emotional intelligence to discern the context, the stakeholders, the needs, and the complex relational aspects of everything. Our mix of services can help you meet your inclusion goals.
+      ## Training
 
 
-      ## C﻿onsulting
+      Inclusion and accessibility are a team effort combining skills from ideation to practical skills (the tactical) and to culture. We offer a wide range of training approaches and workshops to take your team to the next level, whether you’re looking to change minds, learn practical skills, or inspire teams.
 
 
-      We work closely with clients across organizational levels  to meet them where they are and help them define and achieve sustainable inclusion goals. Together we create customized approaches that are specific to an organization’s context, challenges and goals. We also provide flexible, as needed, consulting support. Consulting services can help you in: 
+      Along with training workshops, we can provide experiential and hands-on learning activities such as inclusive design sprints and inclusive design challenges. When creating or customizing content, IDRC can co-create with the client (to their desired level of engagement) what those trainings will be. You can build custom training from our list of topics or start with a prepared workshop that bundles related topics.
 
 
-      * Creating a more inclusive culture
-
-      * Understanding and defining “measures” of inclusion
-
-      * Developing and/or providing executive leadership training
-
-      * Improving external collaboration and communication on inclusion
-
-      * Building capacity in inclusive design within processes, policies, practices, and products
+      Training may include but is not limited to the following topics:
 
 
-      ## T﻿raining
+      **Inclusive Design Thinking (Introduction and Applied)**
 
 
-      We offer a wide range of customizable training and workshops for all your teams, whether you’re looking to change minds, learn practical skills, or inspire hearts. Topics include:
+      * What is accessibility? What is inclusion? How are they related to innovation?
+
+      * Definitions of equity, inclusion, and diversity (DEI, EDI, BEDI, etc.) demystified.
+
+      * Developing an inclusive culture; building capacity.
+
+      * Innovation, change and the perspective shift that is inclusive thinking.
 
 
-      * Accessible content creation
-
-      * Accessible UI and web design
-
-      * Accessible graphic design
-
-      * Accessible & Inclusive communications
-
-      * Physical space design
+      **Accessibility: How To**
 
 
-      ## D﻿igital accessibility and compliance
+      * Understanding the Web Content Accessibility Guidelines (WCAG
+
+      * Accessible design patterns and annotation
+
+      * Approaches to UI/Web accessibility evaluation
+
+      * Accessible Graphic Design
+
+      * Physical Space Accessibility
 
 
-      We offer accessibility reviews, audits, and consulting at every stage of the design process. Grounded in our expertise in inclusion and the Web Content Accessibility Guidelines (WCAG), we review designs, websites, mobile apps, and other digital interactions and provide you with the guidance you need to create accessible experiences. You don’t need wait until you've built something to review it. Whether you have napkin sketches, wireframes, functional prototypes, design systems, or anything in between, we can help you identify potential accessibility barriers early and provide specific guidance on how to implement designs and interactions in the most accessible way possible.
+      ### ***Build custom training from our list of topics or start with a prepared workshop that bundles related topics.***
 
 
-      * WCAG audits
+      ## Digital Accessibility reviews
 
-      * Design reviews (wireframes, prototypes, design systems, style guides, surveys, etc.)
 
-      * Accessibility annotation
+      We offer accessibility reviews and audits at every stage of the design process. Grounded in our expertise in accessibility and the Web Content Accessibility Guidelines (WCAG), we test websites, mobile apps, and other digital interactions and provide you with the guidance you need to create accessible experiences. We will review designs, existing websites, apps, VPATs or other accessibility communication.
 
-      * Accessibility plans
+
+      ### ***We will do accessibility reviews and audits at every stage of the design process.***
     imageShadow:
       - indigo-500
     subsectionLevel:
@@ -99,9 +89,9 @@ sections:
     fullBleed: true
     desktopAlignment: center
     content: >-
-      Consultations, website evaluations, and accessibility training are
-      completed by the IDRC's own experts, all of whom possess years of
-      experience in web and office document accessibility.
+      Consulting, Training, Digital Accessibility Reviews are all conducted by
+      the IDRC's own experts, all of whom possess years of experience in
+      accessibility.
 
 
       To enquire about any of our services or to receive a free quote, please contact us.
