@@ -1,5 +1,5 @@
 ---
-title: Consulting, Training and Services
+title: Consulting Services
 permalink: /consulting/
 intro: ""
 headerBgColor: blue-200
