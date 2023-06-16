@@ -8,15 +8,15 @@ jobs:
     if: github.repository_owner == 'inclusive-design' && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Wait for Netlify deploy preview
-      uses: jakepartusch/wait-for-netlify-action@v1.2
+      uses: jakepartusch/wait-for-netlify-action@v1.4
       id: netlify
       with:
         site_name: 'idrc'
         max_timeout: 300
     - name: Run Lighthouse CI audits
-      uses: treosh/lighthouse-ci-action@v3
+      uses: treosh/lighthouse-ci-action@v9
       with:
         runs: 3
         urls: |
@@ -29,14 +29,14 @@ jobs:
     if: github.repository_owner == 'inclusive-design' && github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Wait for Netlify deploy preview
-      uses: jakepartusch/wait-for-netlify-action@v1
+      uses: jakepartusch/wait-for-netlify-action@v1.4
       id: netlify
       with:
         site_name: 'idrc'
     - name: Run Lighthouse CI audits
-      uses: treosh/lighthouse-ci-action@v3
+      uses: treosh/lighthouse-ci-action@v9
       with:
         runs: 3
         urls: |

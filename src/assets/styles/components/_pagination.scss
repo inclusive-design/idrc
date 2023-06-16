@@ -1,4 +1,4 @@
-@use "sass:math";
+@use 'sass:math';
 
 .pagination {
   padding-bottom: rem(40);
@@ -48,7 +48,7 @@
   }
 }
 
-.pagination a[aria-current="page"] {
+.pagination a[aria-current='page'] {
   background: var(--fl-bgColor, var(--indigo-800));
   color: var(--fl-linkColor, var(--white));
 

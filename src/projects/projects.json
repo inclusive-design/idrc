@@ -1,5 +1,7 @@
 {
-	"layout": "layouts/base.njk",
-	"permalink": "/projects/{{ title | slug }}/",
-	"headerBgColor": "white"
+	"layout": "layouts/project.njk",
+	"permalink": "/projects/{{ page.fileSlug | slugify }}/",
+	"headerBgColor": "coral-500",
+	"headerBorderColor": "coral-800",
+	"headerTextColor": "black"
 }

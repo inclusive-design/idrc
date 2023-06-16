@@ -25,7 +25,7 @@ main > article {
       background: inherit;
       border-bottom: rem(10) solid var(--fl-fgColor, var(--header-border));
       bottom: rem(-10);
-      content: "";
+      content: '';
       display: block;
       height: calc(100% + #{rem(10)});
       margin-left: 50%;
@@ -99,20 +99,20 @@ main > article {
   padding-top: rem(100);
 }
 
-.section:not([class*="section--bg"]) {
+.section:not([class*='section--bg']) {
   padding-top: rem(100);
 }
 
-.section + .section:not([class*="section--bg"]) {
+.section + .section:not([class*='section--bg']) {
   padding-bottom: rem(100);
   padding-top: 0;
 }
 
-.section--image:not([class*="section--bg"]) {
+.section--image:not([class*='section--bg']) {
   padding-bottom: rem(124);
 }
 
-.section[class*="section--bg"] + .section:not([class*="section--bg"]) {
+.section[class*='section--bg'] + .section:not([class*='section--bg']) {
   padding-top: rem(50);
 }
 
@@ -123,13 +123,13 @@ main > article {
   flex: 0 0 100%;
 }
 
-.section--full[data-subsection-level="3"] .subsection + .subsection,
-.section--two-thirds[data-subsection-level="3"] .subsection + .subsection {
+.section--full[data-subsection-level='3'] .subsection + .subsection,
+.section--two-thirds[data-subsection-level='3'] .subsection + .subsection {
   margin-top: rem(50);
 }
 
-.section--full[data-subsection-level="4"] .subsection + .subsection,
-.section--two-thirds[data-subsection-level="4"] .subsection + .subsection {
+.section--full[data-subsection-level='4'] .subsection + .subsection,
+.section--two-thirds[data-subsection-level='4'] .subsection + .subsection {
   margin-top: rem(20);
 }
 
@@ -138,7 +138,7 @@ main > article {
 
   &::after {
     background: inherit;
-    content: "";
+    content: '';
     display: block;
     height: 100%;
     margin-left: 50%;
@@ -190,7 +190,7 @@ main > article {
     margin-right: auto;
   }
 
-  .section[class*="section--bg"] + .section:not([class*="section--bg"]) {
+  .section[class*='section--bg'] + .section:not([class*='section--bg']) {
     padding-top: rem(100);
   }
 
@@ -269,8 +269,8 @@ main > article {
     order: 2;
   }
 
-  .section--full[data-subsection-level="3"] .subsection + .subsection,
-  .section--two-thirds[data-subsection-level="3"] .subsection + .subsection {
+  .section--full[data-subsection-level='3'] .subsection + .subsection,
+  .section--two-thirds[data-subsection-level='3'] .subsection + .subsection {
     margin-top: rem(40);
   }
 }

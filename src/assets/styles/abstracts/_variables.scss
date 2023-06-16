@@ -6,9 +6,10 @@ $black: #000;
 $white: #fff;
 $grey-100: #f2f2f2;
 $grey-200: #c4c4c4;
+$grey-light: #e9e9e9;
 $indigo-100: #f8fbff;
 $indigo-200: #e2edfc;
-$indigo-500: #5a67d8;
+$indigo-500: #3544d0;
 $indigo-800: #3c366b;
 $indigo-900: #251f50;
 $blue-200: #e4f9ff;
@@ -18,7 +19,6 @@ $coral-500: #f66a6a;
 $coral-800: #e53e3e;
 $yellow-200: #faf089;
 $yellow-500: #f6e05e;
-
 $colors: (
   'black': $black,
   'white': $white,
@@ -37,7 +37,6 @@ $colors: (
   'yellow-200': $yellow-200,
   'yellow-500': $yellow-500
 );
-
 $breakpoints: (
   xs: 0,
   sm: 600,

@@ -1,4 +1,3 @@
-/* global document, window */
 import * as d3 from 'd3-selection';
 
 const banner = document.querySelector('.banner');
@@ -18,7 +17,7 @@ const collapseMenu = () => {
 
 /**
  * Collapse the submenu corresponding to the toggle button `btn`.
- * @param {HTMLElement} btn The toggle button whose submenu should be collapsed.
+ * @param {HTMLElement} btn - The toggle button whose submenu should be collapsed.
  */
 const collapseSubmenu = btn => {
 	btn.setAttribute('aria-expanded', false);

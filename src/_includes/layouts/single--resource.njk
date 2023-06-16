@@ -1,0 +1,79 @@
+{% if previewMode %}
+    {% extends 'layouts/preview.njk' %}
+{% else %}
+    {% extends 'layouts/base.njk' %}
+{% endif %}
+
+{% set pageType = 'single page--resources' %}
+
+{% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="topic" viewBox="0 0 14 20" fill="none">
+        {% include 'svg/icon-topics.svg' %}
+        </symbol>
+        <symbol id="type" viewBox="0 0 16 18" fill="none">
+        {% include 'svg/icon-resource-type.svg' %}
+        </symbol>
+        <symbol id="external" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        {% include 'svg/external.svg' %}
+        </symbol>
+    </svg>
+
+    <div class="card">
+        <div class="card-detail">
+            <h3 class="card-title">
+                {{ title | safe }}
+            </h3>
+            <div class="card-tags">
+                {% if topics.length > 0 %}
+                    {% for topic in topics %}
+                        <div class="card-tag">
+                            <svg role="presentation"><use xlink:href="#topic" /></svg>
+                            <p>{{ topic | getResourceMetadataLabel('topics') | safe }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                {% if types.length > 0 %}
+                    {% for type in types %}
+                        <div class="card-tag">
+                            <svg role="presentation"><use xlink:href="#type" /></svg>
+                            <p>{{ type | getResourceMetadataLabel('types') | safe }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class="card-description">
+                <p>
+                    {{ description | safe }}
+                </p>
+            </div>
+            {% if publishedYear %}
+                <div class="card-publishedYear">
+                    <p>Published in {{ publishedYear | safe }}</p>
+                </div>
+            {% endif %}
+            {% if link %}
+                <div class="card-link">
+                    <a rel="external">
+                        Visit {{ title }}
+                        <svg role="presentation"><use xlink:href="#external" /></svg>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+        {% if thumbnailImage %}
+        <div class="card-image">
+           <div class='card-image'>
+            <img src="{{ thumbnailImage | safe }}" 
+                {% if thumbnailAltText %}
+                    alt="{{ thumbnailAltText | safe }}"
+                {% else %}
+                    alt = "Thumbnail image for {{ title | safe }}"
+                {% endif %}
+            />
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{{ content | safe }}

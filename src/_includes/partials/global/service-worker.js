@@ -1,5 +1,5 @@
-/* global caches, fetch, self, VERSION */
-/* eslint-disable max-nested-callbacks */
+/* global VERSION */
+/* eslint-disable max-nested-callbacks, no-console */
 
 const CACHE_KEYS = {
 	PRE_CACHE: `precache-${VERSION}`,
@@ -32,11 +32,11 @@ const PRE_CACHE_URLS = [
 const IGNORED_HOSTS = new Set(['localhost', 'unpkg.com']);
 
 /**
-   * Takes an array of strings and puts them in a named cache store
-   *
-   * @param {String} cacheName
-   * @param {Array} items=[]
-   */
+ * Takes an array of strings and puts them in a named cache store
+ *
+ * @param {String} cacheName - The name of the cache
+ * @param {Array} items - The array of items
+ */
 const addItemsToCache = function (cacheName, items = []) {
 	caches.open(cacheName).then(cache => cache.addAll(items));
 };

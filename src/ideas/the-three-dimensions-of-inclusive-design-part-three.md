@@ -2,7 +2,7 @@
 title: "The Three Dimensions of Inclusive Design, Part Three"
 date: 2018-04-18
 author: Jutta Treviranus
-thumbnailImage: /media/murmuration.png
+thumbnailImage: /media/murmuration.jpg
 ---
 _This is the third part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and increasingly connected world. [Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and [Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/). The three dimensions of the framework are:_
 
@@ -55,7 +55,7 @@ However vicious cycles can be broken by strategic interventions. For example, if
 	<li>The power to transcend paradigms.</li>
 </ol>
 
-![](/media/digital-inclusion.png 'Virtuous Cycle of Digital Inclusion')
+![](/media/digital-inclusion.jpg 'Virtuous Cycle of Digital Inclusion')
 
 Inclusive design itself can be seen as a new paradigm that requires a shift in mindset. The respect for and integration of diversity inherent in inclusive design also requires a relinquishing of a single paradigm. Within inclusive design we employ a “yes, and” response to difference.
 
@@ -81,7 +81,7 @@ As mentioned in Part One, inclusive design is itself an antidote to polarization
 
 Some [anthropologists, who take a long view of change](https://en.wikipedia.org/wiki/Sex_at_Dawn), have encouraged optimism regarding the fate of rigid social structures that exclude: “Much of recent history can be seen as waves of tolerance and acceptance breaking against the rocky headlands of rigid social structures. Though it can seem to take almost forever, the waves always win in the end, reducing immobile rock to shifting sand. The twentieth century saw headlands beginning to crumble under surges of anti-slavery movements, women’s rights, racial equality, and more recently, the steadily growing acceptance of the rights of gay, lesbian, transgender, and bisexual people.”
 
-![](/media/waves.png 'Waves Crashing on Rocks')
+![](/media/waves.jpg 'Waves Crashing on Rocks')
 
 Including difference is how we evolve as a human society. Inclusive design is about far more than addressing disability. But disability has been called our last frontier. It is the human difference that our social structures have not yet integrated. This is paradoxical because disability is a potential state we can all find ourselves in. If we reject and exclude individuals who experience disabilities, we reject and exclude our future selves and our loved ones.
 
@@ -93,7 +93,7 @@ People at the margins are most vulnerable to the negative consequences of an unh
 
 [Mihaly Csikszentmihalyi, the author of Flow](https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi), asserts that the self grows by becoming more complex, which is the result of two processes: differentiation and integration. Applying this notion to society as an entity, this implies combining the movement toward optimizing individual uniqueness while maintaining social cohesion and collaborative integration of skills. A cooperative system of humans with a well-coordinated set of diverse areas of expertise will likely achieve something more complexly challenging than a single generalist or a team of people with similar specializations. The key to this collective state of flow is collaboration and integration. Given the complexity and shifting nature of our world this collaboration needs to be dynamic and responsive.
 
-![](/media/murmuration.png "Starlings over Gretna (Walter Baxter, http://www.geograph.org.uk/photo/1069349)")
+![](/media/murmuration.jpg "Starlings over Gretna (Walter Baxter, http://www.geograph.org.uk/photo/1069349)")
 
 Our understanding and social skills in collaboration are poorly developed, especially when addressing complex, unpredictable challenges. Our education systems, business practices, and politics favor competition over collaboration. We have come to equate cooperative societies with communism and equality with sameness. Neither fosters difference. When we think of coordination we often think of rigid, hierarchical structures with conscripted roles, confined responsibilities and blinkered domains of interest. These are most often hostile to people that are different.
 

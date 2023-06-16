@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-@use "sass:math";
+@use 'sass:math';
 
 body {
   background: var(--fl-bgColor, var(--indigo-100));
@@ -43,11 +43,10 @@ main h1,
 main h2,
 main h3,
 main h4,
-.project__link,
-.tool__link {
-  a:not([rel="external"])::after {
-    background: currentColor;
-    content: "";
+.project__link {
+  a:not([rel='external'])::after {
+    background: currentcolor;
+    content: '';
     margin-bottom: rem(-4);
     margin-left: 0;
     mask-image: url('../images/internal.svg');
@@ -57,10 +56,10 @@ main h4,
     padding-left: 1em;
   }
 
-  a[rel~="external"]::after,
-  a[href^="mailto:"]::after {
-    background-color: currentColor;
-    content: "";
+  a[rel~='external']::after,
+  a[href^='mailto:']::after {
+    background-color: currentcolor;
+    content: '';
     margin-bottom: rem(-4);
     margin-left: rem(4);
     mask-image: url('../images/external.svg');
@@ -101,7 +100,7 @@ blockquote {
   ul li::before {
     background-color: var(--fl-bgColor, var(--grey-200));
     border-radius: 50%;
-    content: "";
+    content: '';
     display: inline-block;
     height: rem(6);
     margin: rem(3) rem(8) rem(3) 0;
