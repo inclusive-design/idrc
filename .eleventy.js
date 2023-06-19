@@ -24,7 +24,7 @@ module.exports = eleventyConfig => {
 	const now = new Date();
 
 	// Collections.
-	const livePosts = post => post.date <= now && !post.data.draft;
+	const livePosts = post => post.date <= now && !post.data.draft && !post.data.archived;
 
 	eleventyConfig.addCollection('people', collection => {
 		return collection.getFilteredByGlob('src/people/*.md').sort((a, b) => {
