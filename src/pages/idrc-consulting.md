@@ -1,5 +1,5 @@
 ---
-title: Consulting Services
+title: Consulting
 permalink: /consulting/
 intro: ""
 headerBgColor: blue-200
@@ -19,7 +19,7 @@ sections:
       - black
     borderColor:
       - indigo-500
-    title: What we offer
+    title: We'd like to help you achieve your goals!
     content: >-
       ## Consulting
 
@@ -98,6 +98,8 @@ sections:
 
 
       **[Contact us about consulting and training](mailto:vroberts@ocadu.ca)**
+
+
 
       **[Contact us about accessibility assessments](mailto:lliskovoi@ocadu.ca)**
     subsectionLevel: "0"
