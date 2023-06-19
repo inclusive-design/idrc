@@ -1,5 +1,5 @@
 ---
-pronouns: I opt out of choosing pronouns — ask me why?
+pronouns: I opt out of choosing pronouns — ask me why!
 twitter: "@jesshmitchell"
 interests: Open Education, Open Pedagogy, Open Dialogue
 socialImage: /media/jess_bowie.jpg
