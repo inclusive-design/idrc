@@ -46,7 +46,7 @@ data-subsection-level="{{ subsectionLevel }}">
                     <p>No news items found.</p>
                 {% endif %}
             {% else %}
-                {{ sectionContent | markdown | safe }}
+                {{ sectionContent | markdownFilter | safe }}
             {% endif %}
         </div>
         {% if section.image and section.imageOrder == 'end' %}
