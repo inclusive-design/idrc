@@ -1,4 +1,8 @@
-<header role="banner" class="banner">
+{% if locale !== 'en-CA' %}
+  {% set language = ' lang="en-CA"' %}
+  {% set direction = ' dir="' + config.languages[locale].dir + '"' %}
+{% endif %}
+<header {{ language | safe }} {{ direction | safe }} role="banner" class="banner">
     {% include "partials/components/brand.njk" %}
     {% include "partials/components/navigation.njk" %}
 </header>

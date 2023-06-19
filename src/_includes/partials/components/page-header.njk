@@ -1,4 +1,8 @@
-<header>
+{% if locale !== 'en-CA' %}
+    {% set language = ' lang="en-CA"' %}
+    {% set direction = ' dir="' + config.languages[locale].dir + '"' %}
+{% endif %}
+<header {{ language | safe }} {{ direction | safe }}>
     <div class="wrapper">
         {% set breadcrumbs = [] %}
         {% if eleventyNavigation.key and 'projects' not in page.url %}

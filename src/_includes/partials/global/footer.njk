@@ -1,4 +1,8 @@
-<footer role="contentinfo" class="footer">
+{% if locale !== 'en-CA' %}
+  {% set language = ' lang="en-CA"' %}
+  {% set direction = ' dir="' + config.languages[locale].dir + '"' %}
+{% endif %}
+<footer {{ language | safe }} {{ direction | safe }} role="contentinfo" class="footer">
     <div class="logo">
         <a rel="home" href="/">
             {% include "svg/logo-wordmark.svg" %}

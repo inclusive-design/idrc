@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ locale or 'en-ca' }}" class="no-js">
+<html lang="{{ locale or 'en-CA' }}" dir="{{ config.languages[locale].dir }}" class="no-js">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -55,30 +55,8 @@
         </main>
         {% include "partials/global/footer.njk" %}
         {% block footerScripts %}{% endblock %}
-        <script>
-            fluid.uiOptions(".flc-prefsEditor-separatedPanel", {
-                preferences: [
-                    "fluid.prefs.lineSpace",
-                    "fluid.prefs.textFont",
-                    "fluid.prefs.contrast",
-                    "fluid.prefs.enhanceInputs",
-                    "fluid.prefs.syllabification"
-                ],
-                auxiliarySchema: {
-                    terms: {
-                        templatePrefix: "/lib/infusion/src/framework/preferences/html",
-                        messagePrefix: "/lib/infusion/src/framework/preferences/messages"
-                    },
-                    "fluid.prefs.syllabification": {
-                        enactor: {
-                            terms: {
-                                patternPrefix: "/lib/infusion/src/lib/hypher/patterns"
-                            }
-                        }
-                    }
-                }
-            });
-        </script>
+
+        {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
     </body>
 </html>
