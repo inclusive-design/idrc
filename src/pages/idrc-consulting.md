@@ -19,7 +19,7 @@ sections:
       - black
     borderColor:
       - indigo-500
-    title: What we offer
+    title: We'd like to help you achieve your goals!
     content: >-
       ## Consulting
 
