@@ -1,5 +1,5 @@
 ---
-title: Consulting Services
+title: Consulting
 permalink: /consulting/
 intro: ""
 headerBgColor: blue-200
