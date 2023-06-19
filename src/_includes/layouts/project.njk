@@ -32,7 +32,7 @@
                             {% endif %}
                         {% endfor %}
                         {% if matchedProject %}
-                            <a lang="{{ language }}" dir="{{ config.languages[locale].dir }}" href="{{ matchedProject.url }}">{% _i language, "Read in ${locale}", {locale: languageData.name} %}</a>
+                            <a lang="{{ language }}" dir="{{ config.languages[locale].dir if locale else 'ltr' }}" href="{{ matchedProject.url }}">{% _i language, "Read in ${locale}", {locale: languageData.name} %}</a>
                         {% endif %}
                     {% endif %}
                 {% endfor %}
