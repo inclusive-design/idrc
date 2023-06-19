@@ -6,6 +6,7 @@ description: A course that covers what accessibility means on the web, how to
   accessible design. You'll also learn to design more inclusively from the
   start, and communicate your accessible designs across teams.
 publishedYear: "2020"
+thumbnailImage: /media/a11ycourse.png
 topics:
   - design
 types:
