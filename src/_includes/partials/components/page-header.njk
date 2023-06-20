@@ -32,7 +32,7 @@
                 {% endfor %}
         {% endif %}
         {% if intro %}
-        <div class="intro">{{ intro | markdown | safe }}</div>
+        <div class="intro">{{ intro | markdownFilter | safe }}</div>
         {% endif %}
     </div>
 </header>

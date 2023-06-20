@@ -13,7 +13,9 @@
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:cms": "node ./build-cms.js",
     "clean": "rimraf dist",
+    "cms": "netlify-cms-proxy-server",
     "debug": "DEBUG=Eleventy* eleventy",
+    "dev": "cross-env NODE_ENV=development eleventy --serve",
     "lint:css": "stylelint src/assets/styles/**/*.scss",
     "lint:js": "eslint '**/*.js'",
     "lint": "run-s lint:*",
@@ -22,7 +24,7 @@
     "test": "run-s test:*",
     "start": "npm-run-all -l clean -p start:*",
     "start:webpack": "mix watch",
-    "start:eleventy": "concurrently \"cross-env ELEVENTY_ENV=development eleventy --serve\" \"node ./build-cms.js -w\" \"netlify-cms-proxy-server\"",
+    "start:eleventy": "run-p dev cms",
     "serve": "npx serve dist"
   },
   "repository": {
@@ -56,7 +58,6 @@
     "@11ty/eleventy": "2.0.1",
     "@11ty/eleventy-navigation": "0.3.5",
     "@11ty/eleventy-plugin-rss": "1.2.0",
-    "concurrently": "8.2.0",
     "d3-selection": "3.0.0",
     "eleventy-plugin-fluid": "1.0.1",
     "eleventy-plugin-i18n-gettext": "^1.5.1",

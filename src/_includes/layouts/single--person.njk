@@ -6,22 +6,24 @@
 
 {% set pageType = 'single single--person' %}
 {% set postType = 'Team' %}
-{% set postTypeUrl = '/team/' %}
+{% set postTypeUrl = '/about/team/' %}
 
 {% block content %}
     <article class="container">
         {% include 'partials/components/person-header.njk' %}
         <div class="content">
             <div class="wrapper">
+                {% if projects.length %}
                 <h2 class="h3">Projects</h2>
                 <p>
                 {% for project in projects %}
                     {{ project }}{% if not loop.last %}<br />{% endif %}
                 {% endfor %}
                 </p>
+                {% endif %}
                 {% if interests %}
                 <h2 class="h3">Interests</h2>
-                {{ interests | markdown | safe }}
+                {{ interests | markdownFilter | safe }}
                 {% endif %}
                 {% if content %}
                 <h2 class="h3">Bio</h2>
@@ -64,5 +66,3 @@
         </div>
     </article>
 {% endblock %}
-
-{{ content | safe }}
