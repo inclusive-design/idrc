@@ -16,7 +16,7 @@
         </p>
         {% endif %}
         <h1>{{ title }}</h1>
-        {% if 'projects' in page.url %}
+        {% if projectName %}
         {% for language, languageData in config.languages %}
                     {% if locale and locale !== language %}
                         {% set matchedProject = false %}
