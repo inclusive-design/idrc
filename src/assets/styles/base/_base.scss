@@ -35,18 +35,21 @@ a:focus {
   outline: none;
 }
 
+a[hreflang],
+a[download],
+a[rel="external"] {
+  svg {
+    display: inline-block;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    width: 1em;
+  }
+}
+
 a[hreflang] {
-  align-items: center;
-  display: inline-flex;
   font-size: var(--step-1);
   font-weight: var(--fw-semibold);
   margin-top: var(--step-2);
-
-  svg {
-    display: block;
-    margin-right: 0.5em;
-    width: var(--step-1);
-  }
 }
 
 .content a:visited {
