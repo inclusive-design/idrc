@@ -1,4 +1,4 @@
-<footer role="contentinfo" class="footer">
+<footer {% if locale !== 'en-CA' %} lang="en-CA" dir="ltr" {% endif %} role="contentinfo" class="footer">
     <div class="logo">
         <a rel="home" href="/">
             {% include "svg/logo-wordmark.svg" %}
