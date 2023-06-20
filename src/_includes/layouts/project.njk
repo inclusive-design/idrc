@@ -12,14 +12,15 @@
         {% set title = projectName %}
         {% include 'partials/components/page-header.njk' %}
 
-        <div class="back-to-parent">
-        {%- for projectPage in collections.projectPages %}
-            {%- if projectPage.data.title === articleTitle and projectPage.data.parentPageTitle %}
-            <a href="{{ projectPage.data.parentPageUrl }}">{% include "svg/previous.svg" %} Back to {{ projectPage.data.parentPageTitle | safe }}</a>
-            {% endif %}
-        {%- endfor %}
-        </div>
+        {% set parentPages = collections.all | eleventyNavigationBreadcrumb(articleTitle) %}
 
+        <div class="back-to-parent">
+        {% if parentPages.length > 1 %}
+        {% set parent = parentPages[parentPages.length - 1] %}
+            <a href="{{ parent.url }}">{% include "svg/previous.svg" %} Back to {{ parent.title | safe }}</a>
+        {% endif %}
+        </div>
+        
         <div class="content">
             <div class="wrapper">
                 <h2>{{ articleTitle | safe }}</h2>
@@ -27,24 +28,24 @@
             </div>
         </div>
 
-        <nav class="nav--secondary" aria-labelledby="child-pages-heading">
-        {%- for projectPage in collections.projectPages %}
-            {%- if projectPage.data.title === articleTitle and projectPage.children %}
-            <div class="wrapper">
-                <h2 class="h3" id="child-pages-heading">Child Pages</h2>
+        {% set navPages = collections.all | eleventyNavigation(articleTitle) %}
 
-                <div class="menu--secondary">
-                    <ul>
-                        {% for child in projectPage.children %}
-                    <li>
-                        <a href="{{ child.url }}">{{ child.title | safe }}</a>
-                    </li>
-                        {% endfor%}
-                    </ul>
-                </div>
+        <nav class="nav--secondary" aria-labelledby="child-pages-heading">
+        {%- if navPages.length %}
+        <div class="wrapper">
+            <h2 class="h3" id="child-pages-heading">Child Pages</h2>
+
+            <div class="menu--secondary">
+                <ul>
+                    {% for child in navPages %}
+                <li>
+                    <a href="{{ child.url }}">{{ child.title | safe }}</a>
+                </li>
+                    {% endfor%}
+                </ul>
             </div>
-            {% endif %}
-        {%- endfor %}
+        </div>
+        {% endif %}
         </nav>
     </article>
 {% endblock %}
