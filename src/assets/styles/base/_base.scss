@@ -72,19 +72,6 @@ main h4,
     mask-size: 1.5em;
     padding-left: 1em;
   }
-
-  // a[rel~='external']::after,
-  // a[href^='mailto:']::after {
-  //   background-color: currentcolor;
-  //   content: '';
-  //   margin-bottom: rem(-4);
-  //   margin-left: rem(4);
-  //   mask-image: url('../images/external.svg');
-  //   mask-position: center;
-  //   mask-repeat: no-repeat;
-  //   mask-size: 1.5em;
-  //   padding-left: 1em;
-  // }
 }
 
 blockquote {
