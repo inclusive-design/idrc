@@ -23,20 +23,6 @@
         
         <div class="content">
             <div class="wrapper">
-                {% for language, languageData in config.languages %}
-                    {% if locale and locale !== language %}
-                        {% set matchedProject = false %}
-                        {% for project in collections['projects_' + language] %}
-                            {% if project.fileSlug === translationKey %}
-                                 {% set matchedProject = project %}
-                            {% endif %}
-                        {% endfor %}
-                        {% if matchedProject %}
-                            <a lang="{{ language }}" dir="{{ config.languages[locale].dir if locale else 'ltr' }}" href="{{ matchedProject.url }}">{% _i language, "Read in ${locale}", {locale: languageData.name} %}</a>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
-
                 <h2>{{ articleTitle | safe }}</h2>
                 {{ content | safe }}
             </div>

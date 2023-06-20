@@ -35,6 +35,20 @@ a:focus {
   outline: none;
 }
 
+a[hreflang] {
+  align-items: center;
+  display: inline-flex;
+  font-size: var(--step-1);
+  font-weight: var(--fw-semibold);
+  margin-top: var(--step-2);
+
+  svg {
+    display: block;
+    margin-right: 0.5em;
+    width: var(--step-1);
+  }
+}
+
 .content a:visited {
   text-decoration-color: var(--fl-linkColor, var(--yellow-500));
 }
