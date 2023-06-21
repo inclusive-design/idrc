@@ -10,7 +10,7 @@
     <article>
         {% include 'partials/components/page-header.njk' %}
         <div class="projects">
-            {% for project in collections.projects %}
+            {% for project in collections['projects_en-CA'] %}
             <article class="project">
                 {% if project.data.thumbnailImage %}
                 <img class="thumbnail" src="{{ project.data.thumbnailImage }}" role="presentation" alt="" />
@@ -20,9 +20,9 @@
                 <h3>{{ project.data.projectName }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
                 {% if project.data.content %}
                 {% set fullDescription = project.data.description + " [More about " + project.data.projectName + "](" + project.url + ")" %}
-                {{ fullDescription | markdown | safe }}
+                {{ fullDescription | markdownFilter | safe }}
                 {% else %}
-                {{ project.data.description | markdown | safe }}
+                {{ project.data.description | markdownFilter | safe }}
                 {% endif %}
                 {% if project.data.link %}
                 <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.projectName }} website</a></p>

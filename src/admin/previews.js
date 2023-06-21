@@ -20,6 +20,8 @@ env.addFilter('limit', limitFilter);
 env.addFilter('markdown', markdownFilter);
 env.addFilter('slugify', slugifyFilter);
 env.addFilter('split', splitFilter);
+env.addFilter('eleventyNavigation', () => []);
+env.addFilter('eleventyNavigationBreadcrumb', () => []);
 env.addFilter('getResourceMetadataLabel', getResourceMetadataLabelFilter);
 
 const Preview = ({entry, path, context}) => {
