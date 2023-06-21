@@ -65,9 +65,15 @@ a[download],
 a[rel='external'] {
   svg {
     display: inline-block;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
     width: 1em;
+  }
+  
+  svg:first-child {
+    margin-right: 0.25em;
+  }
+
+  svg:last-child {
+    margin-left: 0.25em;
   }
 }
 
