@@ -33,7 +33,7 @@ footer {
   a {
     border-radius: 5px;
   }
-  
+
   a:hover,
   a:focus,
   a:active {
@@ -42,8 +42,8 @@ footer {
   }
 
   a:hover {
-    color: var(--fl-bgColor, currentColor);
     background: var(--fl-linkColor, var(--accent, var(--yellow-500))) !important;
+    color: var(--fl-bgColor, currentColor);
     outline-color: var(--fl-linkColor, var(--accent, var(--yellow-500)));
   }
 
@@ -54,12 +54,11 @@ footer {
   }
 
   a:active {
-    color: var(--fl-bgColor, var(--white));
     background: var(--fl-linkColor, var(--indigo-800));
+    color: var(--fl-bgColor, var(--white));
     outline-color: var(--fl-linkColor, var(--indigo-800));
   }
 }
-
 
 a[hreflang],
 a[download],
