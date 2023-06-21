@@ -59,16 +59,15 @@ The second and fourth EDS co-designs brought contributors together to create "St
 
 #### Jumper Gets a Job
 
-<https://www.youtube.com/watch?v=EVuTl2PG0O8>
+<https://youtu.be/w_7nyT_EXlo>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EVuTl2PG0O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_7nyT_EXlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Jessica looks for Job
 
-<https://youtu.be/w_7nyT_EXlo>
+<https://www.youtube.com/watch?v=EVuTl2PG0O8>
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w_7nyT_EXlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EVuTl2PG0O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Friendship Chronicle
 
