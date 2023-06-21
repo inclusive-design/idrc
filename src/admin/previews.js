@@ -251,7 +251,6 @@ CMS.registerEditorComponent({
 		{
 			name: 'scale',
 			label: 'Scale Image Width',
-			hint: 'Scale Image Width 100% only applies if "Content" field below is empty.',
 			widget: 'select',
 			default: '100',
 			options: [{value:'25', label: '25%'}, {value:'50', label: '50%'}, {value:'75', label: '75%'}, {value:'100', label: '100% (default)'}]
