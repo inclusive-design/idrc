@@ -47,7 +47,7 @@ Our first co-design captured moments (vignettes) that illustrate some of the exp
 
 {% endimagePositionWithText %}
 
-#### [](/media/experience.docx)Download Samples from Co-design 1
+#### Download Samples from Co-design 1
 
 [Experiences with Technology in English](/media/experience.docx)
 
@@ -59,13 +59,14 @@ The second and fourth EDS co-designs brought contributors together to create "St
 
 #### Jumper Gets a Job
 
-<https://youtu.be/w_7nyT_EXlo>
+<https://www.youtube.com/watch?v=EVuTl2PG0O8>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EVuTl2PG0O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 #### Jessica looks for Job
 
-https://www.youtube.com/watch?v=EVuTl2PG0O8[](https://www.youtube.com/watch?v=EVuTl2PG0O8)
+<https://youtu.be/w_7nyT_EXlo>
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w_7nyT_EXlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -122,9 +123,7 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 >
 > *I have many hopes for our future together. I want to reach higher in my professional life and find a position where I can fully utilize my talents, skills and experience, with fewer communication barriers than ever before. I want to participate more fully in my community. I want to show the world that deaf, hard of hearing and deaf-blind people are everywhere, we are competent and capable, and we deserve the same access and opportunities as everyone else. My hope is that you continually improve yourself so that you can help me and others with hearing loss connect with anyone, anywhere. Zoom Live Transcription, I adore you!*
 
-[](/media/the-letters.docx)
-
-#### [](/media/the-letters.docx)Break-up Letter
+#### Break-up Letter
 
 > *Dear Zoom Live Transcription,*
 >
@@ -144,7 +143,7 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 >
 > *Regretfully,*
 
-#### [](/media/the-letters.docx)Compromise Letter
+#### Compromise Letter
 
 > *Dear Zoom, Live Transcription,*
 >
@@ -158,13 +157,11 @@ For another co-design set, teams of co-designers wrote letters to technology. Th
 >
 > *With love and gratitude,*
 
-### [](/media/the-letters.docx)Download all of the Letters
+### Download all of the Letters
 
 [Letters to Technology in English](/media/the-letters.docx)
 
 [Lettres à la technologie en français](/media/les_lettres.docx)
-
-[](/media/experience.docx)
 
 ## Partners
 
