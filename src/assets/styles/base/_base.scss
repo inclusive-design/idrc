@@ -42,7 +42,7 @@ footer {
   }
 
   a:hover {
-    background: var(--fl-linkColor, var(--accent, var(--yellow-500))) !important;
+    background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
     color: var(--fl-bgColor, currentColor);
     outline-color: var(--fl-linkColor, var(--accent, var(--yellow-500)));
   }
