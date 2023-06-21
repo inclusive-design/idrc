@@ -9,6 +9,7 @@
     "backstop:test:ci": "backstop test --config=backstop.config.js",
     "backstop:approve": "backstop approve --config=backstop.config.js",
     "build": "npm-run-all -l clean build:*",
+    "build-cms": "node ./build-cms.js -w",
     "build:webpack": "mix --production",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:cms": "node ./build-cms.js",
@@ -24,7 +25,7 @@
     "test": "run-s test:*",
     "start": "npm-run-all -l clean -p start:*",
     "start:webpack": "mix watch",
-    "start:eleventy": "run-p dev cms",
+    "start:eleventy": "run-p dev build-cms cms",
     "serve": "npx serve dist"
   },
   "repository": {
