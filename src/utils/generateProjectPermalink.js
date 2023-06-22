@@ -10,7 +10,7 @@ module.exports = (data) => {
 	}
 
 	const locale = data.locale;
-	const localeSlug = config.languages[locale].slug || locale;
+	const localeSlug = config.languages[locale]?.slug || locale;
 	const slug = data.permalink || slugFilter(data.page.fileSlug);
 	const root = (locale === config.defaultLanguage) ? '/projects/' : `/projects/${localeSlug}/`;
 
