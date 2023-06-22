@@ -10,7 +10,7 @@ parentTitle: Communication Access within the Accessible Canada Act
 
 [Part One: Framing Communication Accessibility in the Canadian Context](/media/commacc-part-1_framing-report_en.docx)
 
-[](/media/commacc-part-1_framing-report_en.docx)[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](/media/commacc-part-2_scoping-report_en.docx)
+[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](/media/commacc-part-2_scoping-report_en.docx)
 
 [Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](/media/commacc-part-3_recommendations_en.docx)
 

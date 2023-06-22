@@ -28,25 +28,59 @@ a {
   text-decoration: underline;
 }
 
-a:hover,
-a:focus {
-  background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
-  color: var(--fl-bgColor, currentColor);
-  outline: none;
+main,
+footer {
+  a {
+    border-radius: 5px;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    outline-style: solid;
+    outline-width: 4px;
+  }
+
+  a:hover {
+    background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+    color: var(--fl-bgColor, currentColor);
+    outline-color: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+  }
+
+  a:focus {
+    outline-color: var(--fl-linkColor, var(--indigo-800));
+    outline-offset: 2px;
+    outline-width: 2px;
+  }
+
+  a:active {
+    background: var(--fl-linkColor, var(--indigo-800));
+    color: var(--fl-bgColor, var(--white));
+    outline-color: var(--fl-linkColor, var(--indigo-800));
+  }
+}
+
+a[hreflang],
+a[download],
+a[rel='external'] {
+  svg {
+    display: inline-block;
+    width: 1em;
+  }
+
+  svg:first-child {
+    margin-right: 0.25em;
+  }
+
+  svg:last-child {
+    margin-left: 0.25em;
+  }
 }
 
 a[hreflang] {
-  align-items: center;
-  display: inline-flex;
   font-size: var(--step-1);
   font-weight: var(--fw-semibold);
   margin-top: var(--step-2);
-
-  svg {
-    display: block;
-    margin-right: 0.5em;
-    width: var(--step-1);
-  }
 }
 
 .content a:visited {
@@ -64,19 +98,6 @@ main h4,
     margin-bottom: rem(-4);
     margin-left: 0;
     mask-image: url('../images/internal.svg');
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 1.5em;
-    padding-left: 1em;
-  }
-
-  a[rel~='external']::after,
-  a[href^='mailto:']::after {
-    background-color: currentcolor;
-    content: '';
-    margin-bottom: rem(-4);
-    margin-left: rem(4);
-    mask-image: url('../images/external.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 1.5em;
