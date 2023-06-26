@@ -77,6 +77,19 @@ a[rel='external'] {
   }
 }
 
+a[rel='home'] {
+  border: 2px solid;
+  border-radius: 5px;
+  outline: none;
+  &:not(:focus):not(:hover) {
+    // override UIO styles on default state
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+  }
+}
+
 a[hreflang] {
   font-size: var(--step-1);
   font-weight: var(--fw-semibold);

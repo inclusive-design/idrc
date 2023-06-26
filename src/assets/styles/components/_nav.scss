@@ -114,14 +114,25 @@
 .menu a,
 .menu button {
   align-items: center;
+  border: 2px solid;
+  border-radius: 5px;
   display: flex;
   font-family: var(--fl-font-family, var(--ff-display));
   font-weight: var(--fw-semibold);
   height: rem(50);
+  outline: none;
   padding: 0 var(--gutter);
   text-align: left;
   text-decoration: none;
   width: 100%;
+
+  &:not(:focus):not(:hover) {
+     // override UIO styles on default state
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-top-color: transparent !important;
+  }
 
   &:hover,
   &:focus {

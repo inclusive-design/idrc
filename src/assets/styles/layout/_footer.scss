@@ -32,6 +32,16 @@
   padding: 0 calc(var(--gutter) / 2);
 }
 
+.footer .logo {
+  display: flex;
+  a {
+    padding: rem(18);
+    &[rel='home'] {
+      border: none;
+    }
+  }
+}
+
 .footer .logo svg {
   fill: currentcolor;
   width: rem(192);
@@ -41,11 +51,6 @@
 .footer a:focus {
   background: var(--fl-linkColor, var(--indigo-500));
   color: var(--fl-bgColor);
-
-  svg {
-    background-color: var(--fl-linkColor);
-    outline: rem(5) solid var(--fl-linkColor, var(--indigo-500));
-  }
 }
 
 .footer a:visited {
