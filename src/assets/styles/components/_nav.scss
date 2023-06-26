@@ -126,12 +126,9 @@
   text-decoration: none;
   width: 100%;
 
-  &:not(:focus):not(:hover) {
-     // override UIO styles on default state
-    border-bottom-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
-    border-top-color: transparent !important;
+  &:not(:focus, :hover) {
+    // override UIO styles on default state
+    border-color: transparent !important;
   }
 
   &:hover,

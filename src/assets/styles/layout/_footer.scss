@@ -34,8 +34,10 @@
 
 .footer .logo {
   display: flex;
+
   a {
     padding: rem(18);
+
     &[rel='home'] {
       border: none;
     }
