@@ -16,15 +16,17 @@
   align-self: end;
 }
 
+// General styles for image with text block.
 .image-and-text {
   display: grid;
 
   .image-and-text__content {
-    margin-left: rem(25);
+    margin-top: 1rem;
   }
 
   .image-and-text__media {
     align-self: center;
+    margin-top: 1rem;
   }
 
   img {
@@ -33,23 +35,43 @@
   }
 }
 
-// Styling for media and text block with media on the left
-.image-and-text--image-left {
-  grid-template-columns: 20% auto;
+// Styling for image scaling. Default to 100% width for small screens
+.image__scale--25,
+.image__scale--50,
+.image__scale--75,
+.image__scale--100 {
+  max-width: 100%;
 }
 
-// Styling for media and text block with media on the right
+// Styling for media with text block. Default to single column layout for small screens
+.image-and-text--image-left,
 .image-and-text--image-right {
-  .image-and-text__media {
-    grid-column: 2;
-    grid-row: 1;
-  }
+  grid-template-columns: auto;
+}
 
-  .image-and-text__content {
-    grid-column: 1;
-    grid-row: 1;
-    margin-left: 0;
-  }
+// Styling for image max height 200px.
+.image__max-height--200px {
+  max-height: 200px;
+}
+
+// Styling for image max height 400px.
+.image__max-height--400px {
+  max-height: 400px;
+}
+
+// Styling for image max height 600px.
+.image__max-height--600px {
+  max-height: 600px;
+}
+
+// Styling for image max height 800px.
+.image__max-height--800px {
+  max-height: 800px;
+}
+
+// Styling for image max height auto.
+.image__max-height--auto {
+  max-height: auto;
 }
 
 // Styling for YouTube video block
@@ -68,7 +90,7 @@ video {
   width: 100%;
 }
 
-// Styling for Image Position block
+// Styling for Image Position block with no text block
 .image-position--center {
   display: block;
   margin-left: auto;
@@ -87,8 +109,151 @@ video {
   margin-right: 0;
 }
 
-.image-position--image-height {
-  max-height: var(--image-position-max-height, auto);
+@include breakpoint-up(sm) {
+  // Styling for just image 25% width
+  .image__scale--25 {
+    max-width: 25%;
+  }
+
+  // Styling for just image 50% width
+  .image__scale--50 {
+    max-width: 50%;
+  }
+
+  // Styling for just image 75% width
+  .image__scale--75 {
+    max-width: 75%;
+  }
+
+  // Styling for just image 100% width
+  .image__scale--100 {
+    max-width: 100%;
+  }
+
+  // Styling for image aligned left with text block
+  .image-and-text--image-left {
+    .image-and-text__content {
+      margin-left: 1rem;
+    }
+
+    // Styling for media and text block with media at 25% width on the left
+    &.image-and-text--image-25 {
+      grid-template-columns: 25% auto;
+    }
+
+    // Styling for media and text block with media at 50% width on the left
+    &.image-and-text--image-50 {
+      grid-template-columns: 50% auto;
+    }
+
+    // Styling for media and text block with media at 75% width on the left
+    &.image-and-text--image-75 {
+      grid-template-columns: 75% auto;
+    }
+
+    // Styling for media and text block with media at 100% width on the left
+    &.image-and-text--image-100 {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+
+      .image-and-text__media {
+        grid-column: 1;
+        grid-row: 1;
+      }
+
+      // Put text on second row.
+      .image-and-text__content {
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 0;
+      }
+    }
+  }
+
+  // Styling for image aligned right with text block
+  .image-and-text--image-right {
+    // Position image in right column.
+    .image-and-text__media {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+    // Position text in left column
+    .image-and-text__content {
+      grid-column: 1;
+      grid-row: 1;
+      margin-right: 1rem;
+    }
+
+    // Styling for media and text block with media at 25% width on the right
+    &.image-and-text--image-25 {
+      grid-template-columns: auto 25%;
+    }
+
+    // Styling for media and text block with media at 50% width on the right
+    &.image-and-text--image-50 {
+      grid-template-columns: auto 50%;
+    }
+
+    // Styling for media and text block with media at 75% width on the right
+    &.image-and-text--image-75 {
+      grid-template-columns: auto 75%;
+    }
+
+    // Styling for media and text block with media at 100% width on the right
+    &.image-and-text--image-100 {
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto;
+
+      // Put image 100% on second row.
+      .image-and-text__media {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .image-and-text__content {
+        grid-column: 1;
+        grid-row: 1;
+        margin-right: 0;
+      }
+    }
+  }
+
+  // Styling for image aligned center with text block.
+  .image-and-text--image-center {
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    // Styling for media and text block with media at 100% width centered
+    &.image-and-text--image-100 {
+      img {
+        width: 100%;
+      }
+    }
+
+    // Styling for media and text block with media at 75% width centered
+    &.image-and-text--image-75 {
+      img {
+        width: 75%;
+      }
+    }
+
+    // Styling for media and text block with media at 50% width centered
+    &.image-and-text--image-50 {
+      img {
+        width: 50%;
+      }
+    }
+
+    // Styling for media and text block with media at 25% width centered
+    &.image-and-text--image-25 {
+      img {
+        width: 25%;
+      }
+    }
+  }
 }
 
 @include breakpoint-up(md) {
@@ -98,25 +263,26 @@ video {
       margin-left: rem(25);
     }
 
-    img {
-      height: 100%;
-      width: 100%;
+    // at 100% image width text content is on a different line - remove left margin.
+    &.image-and-text--image-100 {
+      .image-and-text__content {
+        margin-left: 0;
+      }
     }
   }
 
   // Styling for media and text block with media on the right
   .image-and-text--image-right {
     .image-and-text__content {
-      margin-left: 0;
       margin-right: rem(25);
     }
-  }
 
-  // Styling for Image Position block
-  .image-position--center,
-  .image-position--left,
-  .image-position--right {
-    width: var(--image-position-width, auto);
+    // remove margin if content is 100% width.
+    &.image-and-text--image-100 {
+      .image-and-text__content {
+        margin-right: 0;
+      }
+    }
   }
 
   // Styling for YouTube video block
