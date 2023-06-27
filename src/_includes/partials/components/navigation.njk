@@ -26,12 +26,12 @@
             {% set parentAttribute = ' data-parent="true"' %}
           {% endif %}
 
-          {% if entry.children.length > 0 %}
+          {% if entry.children.length > 0 and entry.title != 'Projects' %}
           {% set liClass = ' class="submenu-parent"' %}
           {% endif %}
         <li{{ liClass | safe }}>
             <a{{ relAttribute | safe }}{{ parentAttribute | safe }}{{ currentAttribute | safe }} href="{{ entry.url | url }}">{{ entry.title }}</a>
-            {%- if entry.children.length > 0 %}
+            {%- if entry.children.length > 0 and entry.title != 'Projects' %}
             <ul>
             {%- for child in entry.children %}
               {% set currentAttribute, relAttribute, parentAttribute = '' %}
@@ -48,7 +48,7 @@
               </li>
             {%- endfor %}
             </ul>
-            {%- endif %}
+            {% endif %}
         </li>
         {%- endfor %}
         </ul>

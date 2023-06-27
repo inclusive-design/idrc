@@ -3,7 +3,7 @@ projectName: Communication Access within the Accessible Canada Act
 shortName: ""
 order: 65
 title: Communication Access within the Accessible Canada Act
-parentPageTitle: ""
+parentTitle: ""
 subPageOrder: 0
 thumbnailImage: /media/project-communication_access.png
 description: IDRC is working to address communication access for people who have
@@ -35,7 +35,7 @@ Global and national scan of existing data and research related to incidence and 
 
 [Part One: Framing Communication Accessibility in the Canadian Context](/media/commacc-part-1_framing-report_en.docx)
 
-[](/media/commacc-part-1_framing-report_en.docx)[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](/media/commacc-part-2_scoping-report_en.docx)
+[Part Two: Scope of Communication Access Approaches and Supports for in Federally Regulated Contexts](/media/commacc-part-2_scoping-report_en.docx)
 
 [Part Three: Recommendations for Improving Communication Access in Federally Regulated Contexts](/media/commacc-part-3_recommendations_en.docx)
 
@@ -153,8 +153,6 @@ Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre.
 ### *Shalaine Sedres*, Research Assistant
 
 Shalaine Sedres is a graduate student pursuing a Master’s degree at the University of Toronto’s Rehabilitation Science Institute. She obtained her Bachelor’s degree in Community Rehabilitation and Disability Studies from the University of Calgary. As a research assistant, Shalaine has made valuable contributions to the Inclusive Design Research Centre’s Equitable Digital Systems project by facilitating co-design sessions and interpreting insights. Her current research focuses on leveraging accessible playgrounds by incorporating rehabilitation and educational programming. She is dedicated to promoting inclusivity and reducing barriers that hinder the full participation of children with disabilities.
-
-[](src/media/commacc-part-3_recommendations_fr.docx)
 
 ![communication access symbol](/media/commaccsymbol.png)
 

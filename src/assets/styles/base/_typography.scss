@@ -79,6 +79,11 @@ h4 + *,
   margin-top: rem(30);
 }
 
+* + h5,
+* + .h5 {
+  margin-top: var(--step-2);
+}
+
 @include breakpoint-up(md) {
   :root {
     --step-1: calc(22 / 16 * 1rem);
