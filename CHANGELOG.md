@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.5.0](https://github.com/inclusive-design/idrc/compare/v1.4.0...v1.5.0) (2023-06-22)
+
+
+### Features
+
+* add external and download icons to links automatically ([#639](https://github.com/inclusive-design/idrc/issues/639)) ([f87ffc5](https://github.com/inclusive-design/idrc/commit/f87ffc55f9d5069e7927e4f837226bd8ad2fd2fc))
+* add multilingual support to projects content type (resolves [#627](https://github.com/inclusive-design/idrc/issues/627), [#628](https://github.com/inclusive-design/idrc/issues/628), [#629](https://github.com/inclusive-design/idrc/issues/629)) ([#630](https://github.com/inclusive-design/idrc/issues/630)) ([de3a1fb](https://github.com/inclusive-design/idrc/commit/de3a1fb3993760eca85b793632900ad5205a0288))
+* add toggle to allow news and ideas to be archived ([#635](https://github.com/inclusive-design/idrc/issues/635)) (resolves [#170](https://github.com/inclusive-design/idrc/issues/170)) ([7b79c75](https://github.com/inclusive-design/idrc/commit/7b79c755f51d67c2161e32116652ea35a1cbc8a4))
+* redirect legacy 443-whatisinclusivedesign to /about/philosophy/ ([#424](https://github.com/inclusive-design/idrc/issues/424)) ([fa80d59](https://github.com/inclusive-design/idrc/commit/fa80d5906db6ef044bfa2fa4fecdfe5948f46c15))
+
+
+### Bug Fixes
+
+* add Infusion core CSS ([2b4e117](https://github.com/inclusive-design/idrc/commit/2b4e1171fb21b9fc3d2cef968d440b22ad9b5771))
+* Add svg tags around the logo svg ([#621](https://github.com/inclusive-design/idrc/issues/621)) ([ca7fadb](https://github.com/inclusive-design/idrc/commit/ca7fadb7636b5fdbfb6c7d600efec6f83a8382d0))
+* eleventy start command ([#640](https://github.com/inclusive-design/idrc/issues/640)) ([84db9bf](https://github.com/inclusive-design/idrc/commit/84db9bf3133425040f0e04f8ad4e47127bf27284))
+* fix distorted project thumbnails when resizing screen ([#506](https://github.com/inclusive-design/idrc/issues/506)) (resolved [#498](https://github.com/inclusive-design/idrc/issues/498)) ([2d29071](https://github.com/inclusive-design/idrc/commit/2d29071c872caa16144e9014a9b1a58670b4ec9f))
+* fix lighthouse CI failures ([#509](https://github.com/inclusive-design/idrc/issues/509)) ([91042a7](https://github.com/inclusive-design/idrc/commit/91042a70eefc47863c51d8569c6c767b54924029))
+* fix the display order of project "Communication Access within the Accessible Canada Act" ([d0176b1](https://github.com/inclusive-design/idrc/commit/d0176b1e909a6620f48c816630ff592d5e08bb4b))
+* reduce breakpoint to small for nav bar banner ([#622](https://github.com/inclusive-design/idrc/issues/622)) ([d09d4e1](https://github.com/inclusive-design/idrc/commit/d09d4e159c0e840234177fb6b90d58fecba73363))
+* resolve critical error in CMS ([a30056a](https://github.com/inclusive-design/idrc/commit/a30056a4f2b0ebe847984081b21bca27b8e1a866))
+* resolve header styling on home page ([#641](https://github.com/inclusive-design/idrc/issues/641)) ([71857ff](https://github.com/inclusive-design/idrc/commit/71857ff694d37e2266376cca2f322795dd1537b7))
+* Update collections' permalink to use file name ([#620](https://github.com/inclusive-design/idrc/issues/620)) (resolves [#514](https://github.com/inclusive-design/idrc/issues/514)) ([567ad22](https://github.com/inclusive-design/idrc/commit/567ad224dfd699bebb9f41c7479ff9092f5950e1))
+* Update projects listing to use project name (resolves [#539](https://github.com/inclusive-design/idrc/issues/539)) ([#541](https://github.com/inclusive-design/idrc/issues/541)) ([a15f851](https://github.com/inclusive-design/idrc/commit/a15f8519cf8b8ca2a92f7397b140b0ea542aeaf5))
+* use project-specific Markdown filter (resolves [#634](https://github.com/inclusive-design/idrc/issues/634)) ([#636](https://github.com/inclusive-design/idrc/issues/636)) ([9ebe519](https://github.com/inclusive-design/idrc/commit/9ebe519d34c4ccfb938407c65d75202a8b76965f))
+
 ## [1.4.0](https://github.com/inclusive-design/idrc/compare/v1.3.1...v1.4.0) (2022-10-26)
 
 
