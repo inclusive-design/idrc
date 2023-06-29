@@ -113,7 +113,6 @@
 
 .menu a,
 .menu button {
-  display: inline-block;
   align-items: center;
   border-radius: 5px;
   display: flex;
@@ -130,9 +129,7 @@
   &:focus {
     background: var(--fl-fgColor, var(--indigo-100));
     color: var(--fl-bgColor, var(--indigo-800));
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: var(--fl-fgColor, transparent);
+    outline: var(--fl-fgColor, transparent) solid 2px;
     z-index: 1;
   }
 }

@@ -35,9 +35,7 @@
   &:focus {
     background: var(--fl-fgColor, var(--black));
     color: var(--fl-bgColor, var(--white));
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: var(--fl-linkColor, transparent);
+    outline: var(--fl-fgColor, transparent) solid 2px;
   }
 }
 
