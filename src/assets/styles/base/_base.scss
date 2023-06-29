@@ -38,7 +38,7 @@ footer {
   a:focus,
   a:active {
     outline-style: solid;
-    outline-width: 4px;
+    outline-width: 2px;
   }
 
   a:hover {
@@ -78,14 +78,7 @@ a[rel='external'] {
 }
 
 a[rel='home'] {
-  border: 2px solid;
   border-radius: 5px;
-  outline: none;
-
-  &:not(:focus, :hover) {
-    // override UIO styles on default state
-    border-color: transparent !important;
-  }
 }
 
 a[hreflang] {

@@ -37,10 +37,6 @@
 
   a {
     padding: rem(18);
-
-    &[rel='home'] {
-      border: none;
-    }
   }
 }
 
@@ -49,10 +45,17 @@
   width: rem(192);
 }
 
-.footer a:hover,
-.footer a:focus {
-  background: var(--fl-linkColor, var(--indigo-500));
-  color: var(--fl-bgColor);
+.footer a {
+  &:focus {
+    outline-color: var(--fl-linkColor, var(--yellow-500));
+    outline-offset: 2px;
+    outline-width: 2px;
+  }
+  &:hover {
+    background: var(--fl-linkColor, var(--indigo-500));
+    color: var(--fl-bgColor);
+    outline-color: var(--fl-linkColor, var(--indigo-500));
+  }
 }
 
 .footer a:visited {

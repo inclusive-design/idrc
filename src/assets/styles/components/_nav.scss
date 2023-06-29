@@ -2,8 +2,7 @@
 
 .nav {
   height: rem(38);
-  margin-left: auto;
-  margin-top: 0;
+  z-index: 20;
 }
 
 .nav .menu-toggle {
@@ -90,6 +89,7 @@
 .menu ul {
   display: flex;
   flex-direction: column;
+  gap: 2px;
   list-style: none;
   padding: 0;
 }
@@ -113,28 +113,27 @@
 
 .menu a,
 .menu button {
+  display: inline-block;
   align-items: center;
-  border: 2px solid;
   border-radius: 5px;
   display: flex;
   font-family: var(--fl-font-family, var(--ff-display));
   font-weight: var(--fw-semibold);
   height: rem(50);
-  outline: none;
   padding: 0 var(--gutter);
+  position: relative;
   text-align: left;
   text-decoration: none;
   width: 100%;
-
-  &:not(:focus, :hover) {
-    // override UIO styles on default state
-    border-color: transparent !important;
-  }
 
   &:hover,
   &:focus {
     background: var(--fl-fgColor, var(--indigo-100));
     color: var(--fl-bgColor, var(--indigo-800));
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: var(--fl-fgColor, transparent);
+    z-index: 1;
   }
 }
 
