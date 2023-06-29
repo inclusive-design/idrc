@@ -3,8 +3,8 @@
 {% set pageType = 'page--404' %}
 
 {% block content %}
+    {% include 'partials/components/page-header.njk' %}
     <article>
-        {% include 'partials/components/page-header.njk' %}
         <div class="content">
             <div class="wrapper">
             {{ content | safe }}

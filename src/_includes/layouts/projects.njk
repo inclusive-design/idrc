@@ -7,8 +7,8 @@
 {% set pageType = 'page--projects' %}
 
 {% block content %}
+    {% include 'partials/components/page-header.njk' %}
     <article>
-        {% include 'partials/components/page-header.njk' %}
         <div class="projects">
             {% for project in collections['projects_en-CA'] %}
             <article class="project">
