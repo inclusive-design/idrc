@@ -31,14 +31,14 @@ a {
 main,
 footer {
   a {
-    border-radius: 5px;
+    border-radius: rem(5);
   }
 
   a:hover,
   a:focus,
   a:active {
     outline-style: solid;
-    outline-width: 4px;
+    outline-width: rem(3);
   }
 
   a:hover {
@@ -49,8 +49,8 @@ footer {
 
   a:focus {
     outline-color: var(--fl-linkColor, var(--indigo-800));
-    outline-offset: 2px;
-    outline-width: 2px;
+    outline-offset: rem(3);
+    outline-width: rem(3);
   }
 
   a:active {
@@ -75,6 +75,10 @@ a[rel='external'] {
   svg:last-child {
     margin-left: 0.25em;
   }
+}
+
+a[rel='home'] {
+  border-radius: rem(5);
 }
 
 a[hreflang] {

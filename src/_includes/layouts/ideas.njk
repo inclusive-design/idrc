@@ -7,8 +7,8 @@
 {% set pageType = 'page--ideas' %}
 
 {% block content %}
+    {% include 'partials/components/page-header.njk' %}
     <article>
-        {% include 'partials/components/page-header.njk' %}
         <div class="content">
             <div class="wrapper">
             {% if pagination.pageNumber == 0 %}

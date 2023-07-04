@@ -2,8 +2,7 @@
 
 .nav {
   height: rem(38);
-  margin-left: auto;
-  margin-top: 0;
+  z-index: 20;
 }
 
 .nav .menu-toggle {
@@ -90,6 +89,7 @@
 .menu ul {
   display: flex;
   flex-direction: column;
+  gap: rem(2);
   list-style: none;
   padding: 0;
 }
@@ -119,6 +119,7 @@
   font-weight: var(--fw-semibold);
   height: rem(50);
   padding: 0 var(--gutter);
+  position: relative;
   text-align: left;
   text-decoration: none;
   width: 100%;
@@ -127,6 +128,8 @@
   &:focus {
     background: var(--fl-fgColor, var(--indigo-100));
     color: var(--fl-bgColor, var(--indigo-800));
+    outline: var(--fl-fgColor, transparent) solid rem(3);
+    z-index: 1;
   }
 }
 

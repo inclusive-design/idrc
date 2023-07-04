@@ -32,19 +32,30 @@
   padding: 0 calc(var(--gutter) / 2);
 }
 
+.footer .logo {
+  display: flex;
+
+  a {
+    padding: rem(18);
+  }
+}
+
 .footer .logo svg {
   fill: currentcolor;
   width: rem(192);
 }
 
-.footer a:hover,
-.footer a:focus {
-  background: var(--fl-linkColor, var(--indigo-500));
-  color: var(--fl-bgColor);
+.footer a {
+  &:focus {
+    outline-color: var(--fl-linkColor, var(--yellow-500));
+    outline-offset: rem(3);
+    outline-width: rem(3);
+  }
 
-  svg {
-    background-color: var(--fl-linkColor);
-    outline: rem(5) solid var(--fl-linkColor, var(--indigo-500));
+  &:hover {
+    background: var(--fl-linkColor, var(--indigo-500));
+    color: var(--fl-bgColor);
+    outline-color: var(--fl-linkColor, var(--indigo-500));
   }
 }
 

@@ -7,8 +7,8 @@
 {% set pageType = 'page--generic' %}
 
 {% block content %}
+    {% include 'partials/components/page-header.njk' %}
     <article>
-        {% include 'partials/components/page-header.njk' %}
         {%- if sections and sections.length > 0 %}
             {%- for section in sections %}
             {% include 'partials/components/section.njk' %}

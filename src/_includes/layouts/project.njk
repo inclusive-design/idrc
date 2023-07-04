@@ -7,10 +7,10 @@
 {% set pageType = 'page--project' %}
 
 {% block content %}
+    {% include 'partials/components/page-header.njk' %}
     <article>
         {% set articleTitle = title %}
         {% set title = projectName %}
-        {% include 'partials/components/page-header.njk' %}
 
         {% set parentPages = collections.all | eleventyNavigationBreadcrumb(articleTitle) %}
 
