@@ -12,7 +12,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: calc(var(--max-width) + var(--gutter));
-  padding-top: 4px;
+  padding-top: rem(4);
   position: relative;
   width: calc(100vw - var(--gutter));
 
@@ -35,7 +35,7 @@
   &:focus {
     background: var(--fl-fgColor, var(--black));
     color: var(--fl-bgColor, var(--white));
-    outline: var(--fl-fgColor, transparent) solid 2px;
+    outline: var(--fl-fgColor, transparent) solid rem(3);
   }
 }
 

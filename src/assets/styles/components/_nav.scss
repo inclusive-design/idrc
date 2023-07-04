@@ -89,7 +89,7 @@
 .menu ul {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: rem(2);
   list-style: none;
   padding: 0;
 }
@@ -128,7 +128,7 @@
   &:focus {
     background: var(--fl-fgColor, var(--indigo-100));
     color: var(--fl-bgColor, var(--indigo-800));
-    outline: var(--fl-fgColor, transparent) solid 2px;
+    outline: var(--fl-fgColor, transparent) solid rem(3);
     z-index: 1;
   }
 }
