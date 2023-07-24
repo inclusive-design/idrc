@@ -1,6 +1,6 @@
 // The main process that dynamically renders the Resources page.
 
-/* global createPagination, processResourcesDisplayResults, filterResources, renderFilters, renderNumberOfAppliedFilters, renderSearchResults, renderResources, renderPagination, bindEventListeners, restoreFocus */
+import { createPagination, processResourcesDisplayResults, filterResources, renderFilters, renderNumberOfAppliedFilters, renderSearchResults, renderResources, renderPagination, bindEventListeners, restoreFocus } from './_resources-utils.js';
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);

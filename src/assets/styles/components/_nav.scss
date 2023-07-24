@@ -528,7 +528,6 @@
   .menu [aria-current='page'],
   .menu [data-parent='true'] {
     text-decoration: underline;
-    text-decoration-color: var(currentColor, var(--black));
     text-decoration-thickness: rem(2);
     text-underline-offset: rem(5);
 
