@@ -39,12 +39,6 @@
     "url": "https://github.com/inclusive-design/idrc/issues"
   },
   "homepage": "https://github.com/inclusive-design/idrc#readme",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "lint-staged": {
     "src/assets/styles/**/*.scss": [
       "stylelint --fix"
