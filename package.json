@@ -78,7 +78,6 @@
     "eslint": "8.44.0",
     "eslint-plugin-react": "7.32.2",
     "estrella": "1.4.1",
-    "html-minifier": "4.0.0",
     "husky": "8.0.3",
     "linkedom": "0.14.26",
     "lint-staged": "13.2.2",
