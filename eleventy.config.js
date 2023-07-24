@@ -8,7 +8,6 @@ const eleventySharp = require('eleventy-plugin-sharp');
 const fluidPlugin = require('eleventy-plugin-fluid');
 const fs = require('fs');
 
-const htmlMinTransform = require('./src/transforms/html-min.js');
 const parseTransform = require('./src/transforms/parse.js');
 const youtubeShortcode = require('./src/shortcodes/youtube.js');
 const imagePositionWithTextShortcode = require('./src/shortcodes/image-position-with-text.js');
@@ -110,7 +109,6 @@ module.exports = eleventyConfig => {
 	});
 
 	// Transforms.
-	eleventyConfig.addTransform('htmlmin', htmlMinTransform);
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Filters.
