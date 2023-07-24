@@ -17,7 +17,7 @@
  *
  * @return A subset of the input `dataSet` that satisfy the matching criteria outlined above
  */
-function filterResources(resources, filterSettings) { // eslint-disable-line no-unused-vars
+export function filterResources(resources, filterSettings) { // eslint-disable-line no-unused-vars
 	let results = resources;
 
 	if (filterSettings.selectedTopics.length > 0) {
@@ -37,7 +37,7 @@ function filterResources(resources, filterSettings) { // eslint-disable-line no-
  * @param {Number} chunkSize - The size of smaller arrays to chunk to.
  * @return An array of smaller arrays with the given chunk size at its most.
  */
-function chunkArray(inputArray, chunkSize) {
+export function chunkArray(inputArray, chunkSize) {
 	return Array(Math.ceil(inputArray.length / chunkSize)).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
 }
 
@@ -49,7 +49,7 @@ function chunkArray(inputArray, chunkSize) {
  * @param {String} hrefTemplate - The href to redirect to when a page number is clicked.
  * @return Generate a pagination object in this data structure: https://www.11ty.dev/docs/pagination/#paging-an-array.
  */
-function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) { // eslint-disable-line no-unused-vars
+export function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) { // eslint-disable-line no-unused-vars
 	const dataInChunk = chunkArray(dataArray, pageSize);
 	pageInQuery = pageInQuery ? (parseInt(pageInQuery) > 1 ? parseInt(pageInQuery) : 1) : 1;
 	let hrefs = [];
@@ -88,7 +88,7 @@ function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) { // e
  * @param {Array} selectedTopics - An array of the suffix of the topic checkbox name that are checked
  * @param {Array} selectedTypes - An array of the suffix of the type checkbox name that are checked
 */
-function renderFilters(selectedTopics, selectedTypes) { // eslint-disable-line no-unused-vars
+export function renderFilters(selectedTopics, selectedTypes) { // eslint-disable-line no-unused-vars
 	const sections = ['topics', 'types'];
 	for (const section of sections) {
 		// When the page is not initially rendered like page is refreshed or search is done
@@ -118,7 +118,7 @@ function renderFilters(selectedTopics, selectedTypes) { // eslint-disable-line n
  * @param {String} checkboxPrefix - The prefix of the checkbox name
  * @param {Array} checkedValue - An array of the suffix of the checkbox name that are checked
  */
-function renderCheckboxStats(container, checkboxPrefix, checkedValue) { // eslint-disable-line no-unused-vars
+export function renderCheckboxStats(container, checkboxPrefix, checkedValue) { // eslint-disable-line no-unused-vars
 	checkedValue.forEach(value => {
 		container.querySelector('input[type="checkbox"][name="' + checkboxPrefix + value + '"]').checked = true;
 	});
@@ -130,7 +130,7 @@ function renderCheckboxStats(container, checkboxPrefix, checkedValue) { // eslin
  *  @param {Object} container - The container within a filter header, where the number should be rendered
  *  @param {String} checkboxPrefix - The prefix of the checkbox name
  */
-function renderNumberOfAppliedFilters(container, checkboxPrefix) { // eslint-disable-line no-unused-vars
+export function renderNumberOfAppliedFilters(container, checkboxPrefix) { // eslint-disable-line no-unused-vars
 	const appliedFilter = document.querySelectorAll('.filter-checkbox[name^="' + checkboxPrefix + '"]:checked');
 	container.innerHTML = appliedFilter.length > 0 ? '(' + appliedFilter.length + ')' : '';
 }
@@ -141,7 +141,7 @@ function renderNumberOfAppliedFilters(container, checkboxPrefix) { // eslint-dis
  * @return The string with html tags removed.
  */
 // eslint-disable-next-line
-function stripHtmlTags(inputString) {
+export function stripHtmlTags(inputString) {
 	return inputString.replace(/<\/?[^>]+(>|$)/g, '');
 }
 
@@ -150,7 +150,7 @@ function stripHtmlTags(inputString) {
  * @param {String} input - The string to extract text from.
  * @return The extracted text.
  */
-function htmlDecode(input) {
+export function htmlDecode(input) {
 	let el = document.createElement('div');
 	el.innerHTML = input;
 	return el.innerText;
@@ -162,7 +162,7 @@ function htmlDecode(input) {
  * @param {Array<Object>} resources - An array of resources to be processed.
  * @return sorted resources with fields converted.
  */
-function processResourcesDisplayResults(resources) { // eslint-disable-line no-unused-vars
+export function processResourcesDisplayResults(resources) { // eslint-disable-line no-unused-vars
 	const sortedArray = [];
 	const resultsWithPublishedYear = resources.filter(result => result.publishedYear);
 	const resultsWithoutPublishedYear = resources.filter(result => !result.publishedYear);
@@ -189,7 +189,7 @@ function processResourcesDisplayResults(resources) { // eslint-disable-line no-u
  * @param {Integer} numberOfResources - number of resources to be rendered.
  * @return directly add the applied filter html to the content selector.
  */
-function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
+export function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
 	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
 	let appliedFilterHtml = '<h2>Search results</h2><div class=\'resources-applied-filters\'>';
 
@@ -235,7 +235,7 @@ function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
  * @param {Array} resources - An array of resources to be rendered.
  * @return directly add the resources html to the content selector.
  */
-function renderResources(resources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
+export function renderResources(resources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
 	const hostURL = window.location.host;
 	let resourcesHtml = '<div class="resources-result">';
 
@@ -288,7 +288,7 @@ function renderResources(resources, resourceTopics, resourceTypes) { // eslint-d
  * @param {Object} pagination - A pagination object to be rendered.
 * @return directly add the pagiination html to the pagination selector.
   */
-function renderPagination(pagination) { // eslint-disable-line no-unused-vars
+export function renderPagination(pagination) { // eslint-disable-line no-unused-vars
 	let paginationHtml = `
 	<h2 id='pagination' class='visually-hidden'>resources page navigation</h2>
 		<ul class='container'>`;
@@ -317,7 +317,7 @@ function renderPagination(pagination) { // eslint-disable-line no-unused-vars
 /*
 * Set bind event listeners to the filter components
 */
-function bindEventListeners() { // eslint-disable-line no-unused-vars
+export function bindEventListeners() { // eslint-disable-line no-unused-vars
 	// Clicking the expand button on the filter header opens/closes the filter
 	const expandButtons = document.querySelectorAll('.filter-expand-button');
 
@@ -375,7 +375,7 @@ function bindEventListeners() { // eslint-disable-line no-unused-vars
 /*
  * Set focus back on items before the refresh by filter changes
 */
-function restoreFocus() { // eslint-disable-line no-unused-vars
+export function restoreFocus() { // eslint-disable-line no-unused-vars
 	if (localStorage.getItem('setFocusOn')) {
 		const focusElement = document.querySelector(localStorage.getItem('setFocusOn'));
 		if (focusElement && focusElement.focus) {
@@ -388,7 +388,7 @@ function restoreFocus() { // eslint-disable-line no-unused-vars
 /*
  * Replace special characters with their entity name
 */
-function escapeSpecialCharactersForHTML(htmlStr) {
+export function escapeSpecialCharactersForHTML(htmlStr) {
 	htmlStr.replace(/&/g, '&amp;')
 		.replace(/</g, '&lt;')
 		.replace(/>/g, '&gt;')
