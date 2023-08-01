@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
-    "@commitlint/config-conventional": "17.6.5",
+    "@commitlint/config-conventional": "17.6.7",
     "@sindresorhus/slugify": "2.2.1",
     "backstopjs": "6.2.2",
     "cross-env": "7.0.3",
