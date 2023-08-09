@@ -7,10 +7,11 @@ import limitFilter from "eleventy-plugin-fluid/src/filters/limit-filter.js";
 import splitFilter from "eleventy-plugin-fluid/src/filters/split-filter.js";
 import getResourceMetadataLabelFilter from "../_filters/getResourceMetadataLabel.js";
 import site from "../_data/site.json";
-import markdown from "../_filters/markdown";
 import imagePositionWithTextShortcode from "../_shortcodes/image-position-with-text.js";
 import getId from "../_utils/extract-youtube-id.js";
+
 const env = nunjucks.configure();
+const markdown = require("../../node_modules/eleventy-plugin-fluid/src/filters/markdown-filter.js");
 
 env.addFilter("formatDate", formatDateFilter);
 env.addFilter("isoDate", isoDateFilter);

@@ -1,7 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
 const eleventyPWA = require("eleventy-plugin-pwa");
-const markdown = require("./src/_filters/markdown.js");
 const eleventySharp = require("eleventy-plugin-sharp");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const parseTransform = require("./src/_transforms/parse.js");
@@ -115,9 +114,6 @@ module.exports = eleventyConfig => {
 
     // Transforms.
     eleventyConfig.addTransform("parse", parseTransform);
-
-    // Filters.
-    eleventyConfig.addFilter("markdown", markdown);
 
     // Add shortcodes.
     eleventyConfig.addPairedShortcode("imagePositionWithText", imagePositionWithTextShortcode);

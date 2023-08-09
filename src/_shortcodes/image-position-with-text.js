@@ -1,4 +1,4 @@
-const markdown = require("../_filters/markdown.js");
+const markdown = require("../../node_modules/eleventy-plugin-fluid/src/filters/markdown-filter.js");
 
 module.exports = (content, image, alt, imagePosition, scale, maxHeight, verticalAlignment) => {
     content = content.trim();
