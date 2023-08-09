@@ -15,7 +15,7 @@ media_folder: "src/media"
 public_folder: "/media"
 i18n:
   structure: multiple_folders
-  locales: ['en-CA', 'fr']
+  locales: ['en-CA', 'fr-CA']
   default_locale: 'en-CA'
 collections:
   - name: "special_pages"
