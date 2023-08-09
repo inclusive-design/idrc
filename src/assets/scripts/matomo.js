@@ -10,20 +10,20 @@ You may obtain a copy of the New BSD License at
 https://github.com/inclusive-design/idrc/raw/main/LICENSE.md.
 */
 
-'use strict';
+
 
 const _paq = window._paq || [];
-_paq.push(['trackPageView'], ['enableLinkTracking']);
+_paq.push(["trackPageView"], ["enableLinkTracking"]);
 (function () {
-	const siteId = '3'; // Set this to the ID of your site in Matomo. Value must be quoted.
-	const u = 'https://analytics.inclusivedesign.ca/';
-	_paq.push(['setTrackerUrl', u + 'matomo.php'], ['setSiteId', siteId]);
-	const d = document;
-	const g = d.createElement('script');
-	const s = d.querySelectorAll('script')[0];
-	g.type = 'text/javascript';
-	g.async = true;
-	g.defer = true;
-	g.src = u + 'matomo.js';
-	s.parentNode.insertBefore(g, s);
+    const siteId = "3"; // Set this to the ID of your site in Matomo. Value must be quoted.
+    const u = "https://analytics.inclusivedesign.ca/";
+    _paq.push(["setTrackerUrl", u + "matomo.php"], ["setSiteId", siteId]);
+    const d = document;
+    const g = d.createElement("script");
+    const s = d.querySelectorAll("script")[0];
+    g.type = "text/javascript";
+    g.async = true;
+    g.defer = true;
+    g.src = u + "matomo.js";
+    s.parentNode.insertBefore(g, s);
 })();

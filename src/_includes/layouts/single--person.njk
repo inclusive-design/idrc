@@ -23,7 +23,7 @@
                 {% endif %}
                 {% if interests %}
                 <h2 class="h3">Interests</h2>
-                {{ interests | markdownFilter | safe }}
+                {{ interests | markdown | safe }}
                 {% endif %}
                 {% if content %}
                 <h2 class="h3">Bio</h2>

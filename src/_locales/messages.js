@@ -2,3 +2,4 @@
 // It exists only to allow PO editors to get translation keys from source code.
 _i("Read in ${language}")
 _('projects')
+_("projects")

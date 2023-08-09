@@ -1,94 +1,94 @@
 // -----------------------------------------------------------------------------
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
-@use 'sass:math';
+@use "sass:math";
 
 body {
-  background: var(--fl-bgColor, var(--indigo-100));
-  color: var(--fl-fgColor, var(--black));
-  display: flex;
-  flex-direction: column;
-  font-family: var(--fl-font-family, var(--ff-sans));
-  font-size: var(--step-0);
-  font-weight: var(--fw-normal);
-  justify-content: flex-start;
-  line-height: calc(1.5 * var(--fl-lineSpace-factor, 1));
-  min-height: 100vh;
+    background: var(--fl-bgColor, var(--indigo-100));
+    color: var(--fl-fgColor, var(--black));
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fl-font-family, var(--ff-sans));
+    font-size: var(--step-0);
+    font-weight: var(--fw-normal);
+    justify-content: flex-start;
+    line-height: calc(1.5 * var(--fl-lineSpace-factor, 1));
+    min-block-size: 100vh;
 }
 
 small,
 .small {
-  font-size: var(--step--1);
-  line-height: calc(1.6 * var(--fl-lineSpace-factor, 1));
+    font-size: var(--step--1);
+    line-height: calc(1.6 * var(--fl-lineSpace-factor, 1));
 }
 
 a {
-  color: var(--fl-linkColor);
-  font-family: var(--fl-font-family, var(--ff-display));
-  text-decoration: underline;
+    color: var(--fl-linkColor);
+    font-family: var(--fl-font-family, var(--ff-display));
+    text-decoration: underline;
 }
 
 main,
 footer {
-  a {
-    border-radius: rem(5);
-  }
+    a {
+        border-radius: rem(5);
+    }
 
-  a:hover,
-  a:focus,
-  a:active {
-    outline-style: solid;
-    outline-width: rem(3);
-  }
+    a:hover,
+    a:focus,
+    a:active {
+        outline-style: solid;
+        outline-width: rem(3);
+    }
 
-  a:hover {
-    background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
-    color: var(--fl-bgColor, currentColor);
-    outline-color: var(--fl-linkColor, var(--accent, var(--yellow-500)));
-  }
+    a:hover {
+        background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+        color: var(--fl-bgColor, currentColor);
+        outline-color: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+    }
 
-  a:focus {
-    outline-color: var(--fl-linkColor, var(--indigo-800));
-    outline-offset: rem(3);
-    outline-width: rem(3);
-  }
+    a:focus {
+        outline-color: var(--fl-linkColor, var(--indigo-800));
+        outline-offset: rem(3);
+        outline-width: rem(3);
+    }
 
-  a:active {
-    background: var(--fl-linkColor, var(--indigo-800));
-    color: var(--fl-bgColor, var(--white));
-    outline-color: var(--fl-linkColor, var(--indigo-800));
-  }
+    a:active {
+        background: var(--fl-linkColor, var(--indigo-800));
+        color: var(--fl-bgColor, var(--white));
+        outline-color: var(--fl-linkColor, var(--indigo-800));
+    }
 }
 
 a[hreflang],
 a[download],
-a[rel='external'] {
-  svg {
-    display: inline-block;
-    width: 1em;
-  }
+a[rel="external"] {
+    svg {
+        display: inline-block;
+        inline-size: 1em;
+    }
 
-  svg:first-child {
-    margin-right: 0.25em;
-  }
+    svg:first-child {
+        margin-inline-end: 0.25em;
+    }
 
-  svg:last-child {
-    margin-left: 0.25em;
-  }
+    svg:last-child {
+        margin-inline-start: 0.25em;
+    }
 }
 
-a[rel='home'] {
-  border-radius: rem(5);
+a[rel="home"] {
+    border-radius: rem(5);
 }
 
 a[hreflang] {
-  font-size: var(--step-1);
-  font-weight: var(--fw-semibold);
-  margin-top: var(--step-2);
+    font-size: var(--step-1);
+    font-weight: var(--fw-semibold);
+    margin-block-start: var(--step-2);
 }
 
 .content a:visited {
-  text-decoration-color: var(--fl-linkColor, var(--yellow-500));
+    text-decoration-color: var(--fl-linkColor, var(--yellow-500));
 }
 
 main h1,
@@ -96,81 +96,82 @@ main h2,
 main h3,
 main h4,
 .project__link {
-  a:not([rel='external'])::after {
-    background: currentcolor;
-    content: '';
-    margin-bottom: rem(-4);
-    margin-left: 0;
-    mask-image: url('../images/internal.svg');
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 1.5em;
-    padding-left: 1em;
-  }
+    a:not([rel="external"])::after {
+        background: currentcolor;
+        content: "";
+        margin-block-end: rem(-4);
+        margin-inline-start: 0;
+        mask-image: url("../images/internal.svg");
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 1.5em;
+        padding-inline-start: 1em;
+    }
 }
 
 blockquote {
-  padding-left: rem(32);
+    padding-inline-start: rem(32);
 }
 
 * + blockquote {
-  margin-top: rem(18);
+    margin-block-start: rem(18);
 }
 
 .content,
 .section {
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
+    ul {
+        list-style: none;
+        padding-inline-start: 0;
+    }
 
-  ol {
-    list-style-type: decimal;
-  }
+    ol {
+        list-style-type: decimal;
+    }
 
-  li {
-    line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1));
-  }
+    li {
+        line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1));
+    }
 
-  li + li {
-    margin-top: rem(20);
-  }
+    li + li {
+        margin-block-start: rem(20);
+    }
 
-  ul li::before {
-    background-color: var(--fl-bgColor, var(--grey-200));
-    border-radius: 50%;
-    content: '';
-    display: inline-block;
-    height: rem(6);
-    margin: rem(3) rem(8) rem(3) 0;
-    width: rem(6);
-  }
+    ul li::before {
+        background-color: var(--fl-bgColor, var(--grey-200));
+        block-size: rem(6);
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        inline-size: rem(6);
+        margin-block: rem(3);
+        margin-inline: 0 rem(8);
+    }
 }
 
 * + p,
 * + ul,
 * + ol {
-  margin-top: rem(20);
+    margin-block-start: rem(20);
 }
 
 @each $name, $color in $colors {
-  .section.section--bg-#{$name} {
-    background: var(--fl-bgColor, $color);
-  }
+    .section.section--bg-#{$name} {
+        background: var(--fl-bgColor, $color);
+    }
 }
 
 .section.section--bg-indigo-800 {
-  --accent: var(--indigo-500);
+    --accent: var(--indigo-500);
 }
 
 .section.section--bg-blue-500,
 .section.section--bg-coral-500,
 .section.section--bg-yellow-500 {
-  --accent: var(--white);
+    --accent: var(--white);
 }
 
 @each $name, $color in $colors {
-  .section.section--fg-#{$name} {
-    color: var(--fl-fgColor, $color);
-  }
+    .section.section--fg-#{$name} {
+        color: var(--fl-fgColor, $color);
+    }
 }

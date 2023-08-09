@@ -2,53 +2,53 @@
 
 // 1. Configuration and helpers
 @import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/grid';
+    "abstracts/variables",
+    "abstracts/functions",
+    "abstracts/mixins",
+    "abstracts/grid";
 
 // 2. Base stuff
 @import
-  'base/reset',
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+    "base/reset",
+    "base/base",
+    "base/fonts",
+    "base/typography",
+    "base/helpers";
 
 // 3. Layout-related sections
 @import
-  'layout/header',
-  'layout/footer';
+    "layout/header",
+    "layout/footer";
 
 // 4. Components
 @import
-  'components/brand',
-  'components/button',
-  'components/image',
-  'components/nav',
-  'components/nav--secondary',
-  'components/page-header',
-  'components/pagination',
-  'components/metadata';
+    "components/brand",
+    "components/button",
+    "components/image",
+    "components/nav",
+    "components/nav--secondary",
+    "components/page-header",
+    "components/pagination",
+    "components/metadata";
 
 // 5. Page-specific styles
 @import
-  'pages/generic',
-  'pages/home',
-  'pages/history',
-  'pages/projects',
-  'pages/project',
-  'pages/resources',
-  'pages/news-ideas',
-  'pages/single',
-  'pages/team',
-  'pages/404';
+    "pages/generic",
+    "pages/home",
+    "pages/history",
+    "pages/projects",
+    "pages/project",
+    "pages/resources",
+    "pages/news-ideas",
+    "pages/single",
+    "pages/team",
+    "pages/404";
 
 // 6. Vendors
 @import
-  'vendors/uio',
-  'vendors/cms-editor-components';
+    "vendors/uio",
+    "vendors/cms-editor-components";
 
 // 7. Themes
 @import
-  'themes/default';
+    "themes/default";

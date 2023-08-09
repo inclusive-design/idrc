@@ -1,4 +1,0 @@
-backstop_data/**
-_site/**
-!.eleventy.js
-src/locales/messages.js

@@ -1,5 +1,5 @@
-import resourceTopics from '../_data/resourceTopics.json';
-import resourceTypes from '../_data/resourceTypes.json';
+import resourceTopics from "../_data/resourceTopics.json";
+import resourceTypes from "../_data/resourceTypes.json";
 
 /**
  * Gets the resource metadata label for a given tag value
@@ -10,26 +10,26 @@ import resourceTypes from '../_data/resourceTypes.json';
  */
 
 module.exports = (metadataValue, metadataType) => {
-	let metadataLabel = '';
-	let metadata = [];
+    let metadataLabel = "";
+    let metadata = [];
 
-	switch (metadataType) {
-	  case ('topics'): metadata = resourceTopics.resourceTopics;
+    switch (metadataType) {
+	  case ("topics"): metadata = resourceTopics.resourceTopics;
 	    break;
-	  case ('types'): metadata = resourceTypes.resourceTypes;
-		break;
+	  case ("types"): metadata = resourceTypes.resourceTypes;
+        break;
 	  default:
-		break;
-	}
+        break;
+    }
 
-	metadata.forEach(data => {
-		const found = metadata.find(() => data.value === metadataValue);
+    metadata.forEach(data => {
+        const found = metadata.find(() => data.value === metadataValue);
 
-		if (found) {
-			metadataLabel = data.label;
-			return;
-		}
-	});
+        if (found) {
+            metadataLabel = data.label;
+            return;
+        }
+    });
 
-	return metadataLabel;
+    return metadataLabel;
 };

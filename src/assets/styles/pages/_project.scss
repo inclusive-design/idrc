@@ -1,29 +1,28 @@
 // -----------------------------------------------------------------------------
 // This file contains project page styles.
 // -----------------------------------------------------------------------------
-
 .page--project {
-  .back-to-parent {
-    flex: 0 0 100%;
-    padding-left: calc(var(--gutter) / 2);
-    padding-top: 4rem;
+    .back-to-parent {
+        flex: 0 0 100%;
+        padding-block-start: 4rem;
+        padding-inline-start: calc(var(--gutter) / 2);
 
-    a {
-      display: inline-flex;
-      padding-right: rem(8);
+        a {
+            display: inline-flex;
+            padding-inline-end: rem(8);
 
-      svg {
-        height: rem(24);
-        width: rem(24);
-      }
+            svg {
+                block-size: rem(24);
+                inline-size: rem(24);
+            }
+        }
     }
-  }
 
-  .content {
-    padding-top: 2rem;
-  }
+    .content {
+        padding-block-start: 2rem;
+    }
 
-  nav {
-    margin-top: 2rem;
-  }
+    nav {
+        margin-block-start: 2rem;
+    }
 }
