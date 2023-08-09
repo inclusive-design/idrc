@@ -29,7 +29,7 @@ module.exports = eleventyConfig => {
 	const livePosts = post => post.date <= now && !post.data.draft && !post.data.archived;
 
 	eleventyConfig.addCollection('people', collection => {
-		return collection.getFilteredByGlob('src/people/*.md').sort((a, b) => {
+		return collection.getFilteredByGlob('src/collections/people/*.md').sort((a, b) => {
 			const nameA = a.data.title;
 			const nameB = b.data.title;
 
@@ -47,7 +47,7 @@ module.exports = eleventyConfig => {
 
 	Object.keys(siteConfig.locales).forEach(lang => {
 		eleventyConfig.addCollection(`projects_${lang}`, collection => {
-			let projects = [...collection.getFilteredByGlob(`src/projects/${lang}/*.md`).sort((a, b) => b.data.order - a.data.order)].reverse(),
+			let projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`).sort((a, b) => b.data.order - a.data.order)].reverse(),
 				uniqueProjects = [];
 
 			// Skip project subpages.
@@ -63,24 +63,24 @@ module.exports = eleventyConfig => {
 
 	eleventyConfig.addCollection('news', collection => {
 		return [
-			...collection.getFilteredByGlob('./src/news/*.md').filter(post => livePosts(post))
+			...collection.getFilteredByGlob('./src/collections/news/*.md').filter(post => livePosts(post))
 		].reverse();
 	});
 
 	eleventyConfig.addCollection('ideas', collection => {
 		return [
-			...collection.getFilteredByGlob('./src/ideas/*.md').filter(post => livePosts(post))
+			...collection.getFilteredByGlob('./src/collections/ideas/*.md').filter(post => livePosts(post))
 		].reverse();
 	});
 
 	eleventyConfig.addCollection('postFeed', collection => {
-		return [...collection.getFilteredByGlob(['./src/news/*.md', './src/ideas/*.md']).filter(post => livePosts(post))]
+		return [...collection.getFilteredByGlob(['./src/collections/news/*.md', './src/ideas/*.md']).filter(post => livePosts(post))]
 			.reverse()
 			.slice(0, 10);
 	});
 
 	eleventyConfig.addCollection('resources', collection => {
-		return collection.getFilteredByGlob('src/resources/*.md');
+		return collection.getFilteredByGlob('src/collections/resources/*.md');
 	});
 
 	eleventyConfig.setUseGitIgnore(false);

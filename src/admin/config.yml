@@ -187,7 +187,7 @@ collections:
   - name: "pages"
     label: "Pages"
     label_singular: "Page"
-    folder: "src/pages"
+    folder: "src/collections/pages"
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     create: true
@@ -370,7 +370,7 @@ collections:
   - name: "news"
     label: "News"
     label_singular: "News Item"
-    folder: "src/news"
+    folder: "src/collections/news"
     slug: "{{slug}}"
     preview_path: "/about/news/{{slug}}"
     create: true
@@ -391,7 +391,7 @@ collections:
   - name: "ideas"
     label: "Ideas"
     label_singular: "Idea"
-    folder: "src/ideas"
+    folder: "src/collections/ideas"
     slug: "{{slug}}"
     preview_path: "/ideas/{{slug}}"
     create: true
@@ -413,7 +413,7 @@ collections:
   - name: "people"
     label: "People"
     label_singular: "Person"
-    folder: "src/people"
+    folder: "src/collections/people"
     slug: "{{slug}}"
     preview_path: "/about/team/{{slug}}"
     create: true
@@ -437,7 +437,7 @@ collections:
   - name: "projects"
     label: "Projects"
     label_singular: "Project"
-    folder: "src/projects"
+    folder: "src/collections/projects"
     slug: "{{slug}}"
     preview_path: "/projects/{{slug}}"
     create: true
@@ -458,7 +458,7 @@ collections:
   - name: "resources"
     label: "Resources"
     label_singular: "Resource"
-    folder: "src/resources"
+    folder: "src/collections/resources"
     slug: "{{slug}}"
     preview_path: "/resources/{{slug}}"
     create: true
