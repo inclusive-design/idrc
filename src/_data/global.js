@@ -8,5 +8,5 @@ module.exports = {
     },
     baseUrl: process.env.CONTEXT === "production" ? "https://idrc.ocadu.ca" : process.env.DEPLOY_PRIME_URL || "http://localhost:3000",
     context: process.env.CONTEXT === "production" ? "production" : "development",
-    environment: process.env.ELEVENTY_ENV
+    environment: process.env.NODE_ENV
 };
