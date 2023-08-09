@@ -11,7 +11,7 @@
     "build": "npm-run-all -l clean build:eleventy",
     "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
     "build:cms": "node ./build-cms.js",
-    "clean": "rimraf dist",
+    "clean": "rimraf _site",
     "cms": "node ./build-cms.js -w",
     "debug": "DEBUG=Eleventy* eleventy",
     "dev": "cross-env NODE_ENV=development eleventy --serve",
@@ -24,7 +24,7 @@
     "test": "run-s test:*",
     "start": "npm-run-all -l clean -p start:eleventy",
     "start:eleventy": "run-p dev cms proxy",
-    "serve": "npx serve dist"
+    "serve": "npx serve _site"
   },
   "repository": {
     "type": "git",
