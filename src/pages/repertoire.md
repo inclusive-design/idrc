@@ -4,6 +4,7 @@ editable: false
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
+eleventyExcludeFromCollections: true
 ---
 ## Typography
 

@@ -4,13 +4,13 @@
 import formatDateFilter from 'eleventy-plugin-fluid/src/filters/format-date-filter.js';
 import isoDateFilter from 'eleventy-plugin-fluid/src/filters/iso-date-filter.js';
 import limitFilter from 'eleventy-plugin-fluid/src/filters/limit-filter.js';
-import splitFilter from '../filters/split-filter.js';
-import getResourceMetadataLabelFilter from '../filters/getResourceMetadataLabel.js';
+import splitFilter from 'eleventy-plugin-fluid/src/filters/split-filter.js';
+import getResourceMetadataLabelFilter from '../_filters/getResourceMetadataLabel.js';
 import site from '../_data/site.json';
 import slugifyFilter from '@sindresorhus/slugify';
-import markdownFilter from '../filters/markdown';
-import imagePositionWithTextShortcode from '../shortcodes/image-position-with-text.js';
-import getId from '../utils/extract-youtube-id.js';
+import markdownFilter from '../_filters/markdown';
+import imagePositionWithTextShortcode from '../_shortcodes/image-position-with-text.js';
+import getId from '../_utils/extract-youtube-id.js';
 
 const env = nunjucks.configure();
 

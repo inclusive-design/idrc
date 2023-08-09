@@ -1,4 +1,5 @@
 {
     "layout": "layouts/page.njk",
-    "permalink": "/{{ title | slugify }}/"
+    "permalink": "/{{ title | slugify }}/",
+    "locale": "en-CA"
 }

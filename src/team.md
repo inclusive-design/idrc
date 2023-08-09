@@ -12,4 +12,5 @@ secondaryNavigation:
   key: About
   label: More about us
 permalink: /about/team/
+locale: en-CA
 ---

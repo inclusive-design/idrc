@@ -52,8 +52,8 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 
 		// the 'filter' call is to ignore empty query strings
 		let filterQuery = [
-			selectedTopics.map(tag => 'to_' + tag + '=on').join('&'),
-			selectedTypes.map(type => 'ty_' + type + '=on').join('&')
+			selectedTopics.map(tag => `to_${tag}=on`).join('&'),
+			selectedTypes.map(type => `ty_${type}=on`).join('&')
 		].filter(query => query).join('&');
 
 		// Paginate search results
@@ -83,7 +83,7 @@ fetch(window.location.origin + '/resourceData.json').then(function (response) {
 // doesn't rely on the fetch of resources data to complete.
 for (const checkbox of document.querySelectorAll('.filter-checkbox')) {
 	checkbox.addEventListener('change', () => {
-		const checkboxPrefix = checkbox.name.split('_')[0] + '_';
+		const checkboxPrefix = `${checkbox.name.split('_')[0]}_`;
 		if (checkboxPrefix && checkbox.dataset.filter) {
 			renderNumberOfAppliedFilters(document.querySelector('#filter-' + checkbox.dataset.filter), checkboxPrefix);
 		}

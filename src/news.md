@@ -11,9 +11,10 @@ headerTextColor: black
 secondaryNavigation:
   key: About
   label: More about us
-permalink: "/about/news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+permalink: "/about/news/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
   data: collections.news
   size: 6
   alias: posts
+locale: en-CA
 ---

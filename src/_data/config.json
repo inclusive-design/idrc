@@ -1,17 +1,7 @@
 {
-    "defaultLanguage": "en-CA",
-    "languages": {
-        "en-CA": {
-            "slug": "en",
-            "uioSlug": "en_CA",
-            "dir": "ltr",
-            "name": "English"
-        },
-        "fr": {
-            "slug": "fr",
-            "uioSlug": "fr",
-            "dir": "ltr",
-            "name": "Français"
-        }
-    }
+    "maxPostsInFeed": 10,
+    "locales": [
+        "en-CA",
+        "fr"
+    ]
 }

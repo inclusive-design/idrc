@@ -9,5 +9,6 @@ intro: A collection of resources created by the IDRC for learning about Inclusiv
 headerBgColor: yellow-500
 headerBorderColor: yellow-200
 headerTextColor: black
+locale: en-CA
 ---
 ***

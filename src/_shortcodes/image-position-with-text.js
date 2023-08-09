@@ -1,4 +1,4 @@
-const markdownFilter = require('../filters/markdown.js');
+const markdownFilter = require('../_filters/markdown.js');
 
 module.exports = (content, image, alt, imagePosition, scale, maxHeight, verticalAlignment) => {
 	content = content.trim();

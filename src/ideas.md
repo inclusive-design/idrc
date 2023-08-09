@@ -8,9 +8,10 @@ eleventyNavigation:
 headerBgColor: yellow-500
 headerBorderColor: yellow-200
 headerTextColor: black
-permalink: "ideas/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber | plus: 1 }}/{% endif %}"
+permalink: "ideas/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 pagination:
   data: collections.ideas
   size: 6
   alias: posts
+locale: en-CA
 ---

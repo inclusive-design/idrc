@@ -1,4 +1,4 @@
-const getId = require('../utils/extract-youtube-id.js');
+const getId = require('../_utils/extract-youtube-id.js');
 
 module.exports = (url) => {
 	const id = getId(url);

@@ -1,6 +1,7 @@
 'use strict';
 
-const generateProjectPermalink = require('../utils/generateProjectPermalink.js');
+const i18n = require('eleventy-plugin-i18n-gettext');
+const { generatePermalink } = require('eleventy-plugin-fluid');
 
 module.exports = {
 	layout: 'layouts/project.njk',
@@ -8,8 +9,7 @@ module.exports = {
 	headerBorderColor: 'coral-800',
 	headerTextColor: 'black',
 	eleventyComputed: {
-		/* Set the translationKey, used for populating the language switcher, to the file slug. */
-		translationKey: data => data.page.fileSlug,
+		langDir: data => data.supportedLanguages[data.locale].dir,
 		/* Configure navigation */
 		eleventyNavigation: {
 			key: data => data.title,
@@ -17,6 +17,9 @@ module.exports = {
 			order: data => data.subPageOrder
 		},
 		/* Build a permalink using the title and language key if a custom permalink was not supplied. */
-		permalink: generateProjectPermalink
+		permalink: data => {
+			const locale = data.locale;
+			return generatePermalink(data, 'projects', i18n._(locale, 'projects'));
+		}
 	}
 };
