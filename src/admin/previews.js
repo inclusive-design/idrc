@@ -1,4 +1,4 @@
-/* eslint-disable react/display-name */
+/* eslint-disable react/display-name, no-unused-vars */
 /* global CMS, nunjucks, PropTypes, React */
 
 import formatDateFilter from "eleventy-plugin-fluid/src/filters/format-date-filter.js";
