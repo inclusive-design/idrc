@@ -2,58 +2,60 @@
 // This file contains styles that are specific to the 404 page.
 // -----------------------------------------------------------------------------
 .page--404 {
-  background: var(--fl-bgColor, var(--indigo-800));
-  color: var(--fl-fgColor, var(--white));
+    background: var(--fl-bgColor, var(--indigo-800));
+    color: var(--fl-fgColor, var(--white));
 
-  main > article {
-    margin: 0 auto;
-    padding-top: rem(80);
-  }
-
-  main > article header {
-    text-align: center;
-  }
-
-  main > article header .wrapper {
-    width: 100%;
-  }
-
-  main > article .content {
-    padding-top: rem(16);
-    text-align: center;
-  }
-
-  h1 {
-    padding: 0 rem(24);
-  }
-
-  a {
-    text-decoration-color: var(--fl-linkColor, var(--indigo-500));
-
-    &:hover,
-    &:focus {
-      background: var(--fl-fgColor, var(--indigo-500));
-      color: var(--fl-bgColor);
+    main > article {
+        margin-block: 0;
+        margin-inline: auto;
+        padding-block-start: rem(80);
     }
-  }
+
+    main > article header {
+        text-align: center;
+    }
+
+    main > article header .wrapper {
+        inline-size: 100%;
+    }
+
+    main > article .content {
+        padding-block-start: rem(16);
+        text-align: center;
+    }
+
+    h1 {
+        padding-block: 0;
+        padding-inline: rem(24);
+    }
+
+    a {
+        text-decoration-color: var(--fl-linkColor, var(--indigo-500));
+
+        &:hover,
+        &:focus {
+            background: var(--fl-fgColor, var(--indigo-500));
+            color: var(--fl-bgColor);
+        }
+    }
 }
 
 @include breakpoint-up(sm) {
-  .page--404 {
-    main > article .content {
-      flex: 0 0 100%;
+    .page--404 {
+        main > article .content {
+            flex: 0 0 100%;
+        }
     }
-  }
 }
 
 @include breakpoint-up(md) {
-  .page--404 {
-    main > article {
-      padding-top: rem(256);
-    }
+    .page--404 {
+        main > article {
+            padding-block-start: rem(256);
+        }
 
-    main > article .content {
-      flex: 0 0 100%;
+        main > article .content {
+            flex: 0 0 100%;
+        }
     }
-  }
 }

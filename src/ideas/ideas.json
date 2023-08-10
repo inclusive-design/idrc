@@ -1,8 +1,0 @@
-{
-    "layout": "layouts/single--idea.njk",
-    "permalink": "/ideas/{{ page.fileSlug | slugify }}/",
-    "headerBgColor": "white",
-    "author": "IDRC Team",
-    "thumbnailImage": "/media/default.jpg"
-}
-    

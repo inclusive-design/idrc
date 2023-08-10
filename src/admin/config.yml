@@ -11,468 +11,468 @@ backend:
 local_backend: true
 publish_mode: editorial_workflow
 site_url: "https://idrc.ocadu.ca"
-media_folder: "src/media"
-public_folder: "/media"
+media_folder: src/media
+public_folder: /media
 i18n:
   structure: multiple_folders
-  locales: ['en-CA', 'fr']
-  default_locale: 'en-CA'
+  locales: [en-CA, fr-CA]
+  default_locale: en-CA
 collections:
-  - name: "special_pages"
-    label: "Special Pages"
-    label_singular: "Special Page"
+  - name: special_pages
+    label: Special Pages
+    label_singular: Special Page
     files:
-      - name: "home"
-        label: "Homepage"
+      - name: home
+        label: Homepage
         delete: false
-        file: "src/index.md"
+        file: src/index.md
         slug: "{{slug}}"
         i18n: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image", "file"]}
-          - label: "Sections"
-            name: "sections"
-            widget: "list"
+          - {label: Layout, name: layout, widget: hidden, default: layouts/page.njk}
+          - {label: Title, name: title, widget: string}
+          - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+          - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+          - {label: Social Image, name: socialImage, widget: image, required: false}
+          - {label: Intro, name: intro, widget: markdown, required: false, editor_components: [image, file]}
+          - label: Sections
+            name: sections
+            widget: list
             fields:
-              - {label: "Title", name: "title", widget: "string", required: true}
-              - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image", "file"]}
-              - label: "Text Colour"
-                name: "textColor"
-                widget: "select"
+              - {label: Title, name: title, widget: string, required: true}
+              - {label: Content, name: content, widget: markdown, required: true, editor_components: [image, file]}
+              - label: Text Colour
+                name: textColor
+                widget: select
                 options:
-                  - {label: "White", value: "white"}
-                  - {label: "Black (Default)", value: "black"}
-                  - {label: "Indigo 100", value: "indigo-100"}
-                  - {label: "Indigo 200", value: "indigo-200"}
-                  - {label: "Indigo 500", value: "indigo-500"}
-                  - {label: "Indigo 800", value: "indigo-800"}
-                  - {label: "Blue 500", value: "blue-500"}
-                  - {label: "Coral 500", value: "coral-500"}
-                  - {label: "Coral 800", value: "coral-800"}
-                  - {label: "Yellow 200", value: "yellow-200"}
-                  - {label: "Yellow 500", value: "yellow-500"}
-                default: "black"
+                  - {label: White, value: white}
+                  - {label: Black (Default), value: black}
+                  - {label: Indigo 100, value: indigo-100}
+                  - {label: Indigo 200, value: indigo-200}
+                  - {label: Indigo 500, value: indigo-500}
+                  - {label: Indigo 800, value: indigo-800}
+                  - {label: Blue 500, value: blue-500}
+                  - {label: Coral 500, value: coral-500}
+                  - {label: Coral 800, value: coral-800}
+                  - {label: Yellow 200, value: yellow-200}
+                  - {label: Yellow 500, value: yellow-500}
+                default: black
                 required: false
-              - label: "Background Colour"
-                name: "backgroundColor"
-                widget: "select"
+              - label: Background Colour
+                name: backgroundColor
+                widget: select
                 options:
-                  - {label: "White", value: "white"}
-                  - {label: "Black", value: "black"}
-                  - {label: "Indigo 100 (Default)", value: "indigo-100"}
-                  - {label: "Indigo 200", value: "indigo-200"}
-                  - {label: "Indigo 500", value: "indigo-500"}
-                  - {label: "Indigo 800", value: "indigo-800"}
-                  - {label: "Blue 500", value: "blue-500"}
-                  - {label: "Coral 500", value: "coral-500"}
-                  - {label: "Coral 800", value: "coral-800"}
-                  - {label: "Yellow 200", value: "yellow-200"}
-                  - {label: "Yellow 500", value: "yellow-500"}
-                default: "indigo-100"
+                  - {label: White, value: white}
+                  - {label: Black, value: black}
+                  - {label: Indigo 100 (Default), value: indigo-100}
+                  - {label: Indigo 200, value: indigo-200}
+                  - {label: Indigo 500, value: indigo-500}
+                  - {label: Indigo 800, value: indigo-800}
+                  - {label: Blue 500, value: blue-500}
+                  - {label: Coral 500, value: coral-500}
+                  - {label: Coral 800, value: coral-800}
+                  - {label: Yellow 200, value: yellow-200}
+                  - {label: Yellow 500, value: yellow-500}
+                default: indigo-100
                 required: false
-              - {label: "Full Bleed Background", name: "fullBleed", widget: "boolean", default: false}
-              - label: "Border Colour"
-                name: "borderColor"
-                widget: "select"
+              - {label: Full Bleed Background, name: fullBleed, widget: boolean, default: false}
+              - label: Border Colour
+                name: borderColor
+                widget: select
                 options:
-                  - {label: "White", value: "white"}
-                  - {label: "Black", value: "black"}
-                  - {label: "Indigo 100", value: "indigo-100"}
-                  - {label: "Indigo 200", value: "indigo-200"}
-                  - {label: "Indigo 500 (Default)", value: "indigo-500"}
-                  - {label: "Indigo 800", value: "indigo-800"}
-                  - {label: "Blue 500", value: "blue-500"}
-                  - {label: "Coral 500", value: "coral-500"}
-                  - {label: "Coral 800", value: "coral-800"}
-                  - {label: "Yellow 200", value: "yellow-200"}
-                  - {label: "Yellow 500", value: "yellow-500"}
-                default: "indigo-500"
+                  - {label: White, value: white}
+                  - {label: Black, value: black}
+                  - {label: Indigo 100, value: indigo-100}
+                  - {label: Indigo 200, value: indigo-200}
+                  - {label: Indigo 500 (Default), value: indigo-500}
+                  - {label: Indigo 800, value: indigo-800}
+                  - {label: Blue 500, value: blue-500}
+                  - {label: Coral 500, value: coral-500}
+                  - {label: Coral 800, value: coral-800}
+                  - {label: Yellow 200, value: yellow-200}
+                  - {label: Yellow 500, value: yellow-500}
+                default: indigo-500
                 required: false
-              - {label: "Image", name: "image", widget: "image", required: false}
-              - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
-              - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
-              - label: "Image Order"
-                name: "imageOrder"
-                widget: "select"
+              - {label: Image, name: image, widget: image, required: false}
+              - {label: Image (2x), name: image2x, widget: image, required: false}
+              - {label: Image Alternative Text, name: imageAltText, widget: string, required: false}
+              - label: Image Order
+                name: imageOrder
+                widget: select
                 options:
-                  - {label: "Start", value: "start"}
-                  - {label: "End", value: "end"}
-                default: "start"
+                  - {label: Start, value: start}
+                  - {label: End, value: end}
+                default: start
                 required: false
-              - label: "Image Order (Desktop)"
-                name: "imageOrderDesktop"
-                widget: "select"
+              - label: Image Order (Desktop)
+                name: imageOrderDesktop
+                widget: select
                 options:
-                  - {label: "Auto", value: "auto"}
-                  - {label: "Swap", value: "swap"}
-                default: "auto"
+                  - {label: Auto, value: auto}
+                  - {label: Swap, value: swap}
+                default: auto
                 required: false
-              - label: "Image Shadow"
-                name: "imageShadow"
-                widget: "select"
+              - label: Image Shadow
+                name: imageShadow
+                widget: select
                 options:
-                  - {label: "Indigo 500", value: "indigo-500"}
-                  - {label: "Coral 500", value: "coral-500"}
-                  - {label: "Yellow 500", value: "yellow-500"}
-                default: "indigo-500"
+                  - {label: Indigo 500, value: indigo-500}
+                  - {label: Coral 500, value: coral-500}
+                  - {label: Yellow 500, value: yellow-500}
+                default: indigo-500
                 required: false
-              - label: "Desktop Width"
-                name: "desktopWidth"
-                widget: "select"
+              - label: Desktop Width
+                name: desktopWidth
+                widget: select
                 options:
-                  - {label: "Third", value: "third"}
-                  - {label: "Half", value: "half"}
-                  - {label: "Two Thirds", value: "two-thirds"}
-                  - {label: "Full", value: "full"}
-                default: "full"
+                  - {label: Third, value: third}
+                  - {label: Half, value: half}
+                  - {label: Two Thirds, value: two-thirds}
+                  - {label: Full, value: full}
+                default: full
                 required: true
-              - label: "Subsection Header Level"
-                name: "subsectionLevel"
-                widget: "select"
+              - label: Subsection Header Level
+                name: subsectionLevel
+                widget: select
                 options:
-                  - {label: "None", value: "0"}
-                  - {label: "3", value: "H3"}
-                  - {label: "4", value: "H4"}
+                  - {label: None, value: "0"}
+                  - {label: "3", value: H3}
+                  - {label: "4", value: H4}
                 default: "0"
                 required: true
       - name: history
-        label: "History"
+        label: History
         delete: false
         file: src/history.md
         slug: "{{slug}}"
         i18n: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image", "file"]}
-          - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "blue-200"}
-          - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "blue-500"}
-          - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
+          - {label: Layout, name: layout, widget: hidden, default: layouts/page.njk}
+          - {label: Title, name: title, widget: string}
+          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: permalink, widget: string, required: false}
+          - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+          - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+          - {label: Social Image, name: socialImage, widget: image, required: false}
+          - {label: Intro, name: intro, widget: markdown, required: false, editor_components: [image, file]}
+          - {label: Header Background Colour, name: headerBgColor, widget: hidden, default: blue-200}
+          - {label: Header Border Color, name: headerBorderColor, widget: hidden, default: blue-500}
+          - {label: Header Text Color, name: headerTextColor, widget: hidden, default: black}
           - label: Milestones
             label_singular: milestone
             name: milestones
             widget: list
             summary: "{{fields.year}} {{fields.title}}"
             fields:
-              - {label: Year, name: year, widget: number, value_type: "int", min: 1993}
+              - {label: Year, name: year, widget: number, value_type: int, min: 1993}
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: text}
               - {label: Major Milestone, name: major, widget: boolean}
-          - {label: "Body", name: "body", widget: "markdown", required: false}
-      - name: "projects"
-        label: "Projects"
+          - {label: Body, name: body, widget: markdown, required: false}
+      - name: projects
+        label: Projects
         delete: false
-        file: "src/projects.md"
+        file: src/projects.md
         slug: "{{slug}}"
         i18n: false
         fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/projects.njk"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
-          - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-          - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-          - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-          - {label: "Header Background Colour", name: "headerBgColor", widget: "hidden", default: "coral-500"}
-          - {label: "Header Border Color", name: "headerBorderColor", widget: "hidden", default: "coral-800"}
-          - {label: "Header Text Color", name: "headerTextColor", widget: "hidden", default: "black"}
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page"
-    folder: "src/pages"
+          - {label: Layout, name: layout, widget: hidden, default: layouts/projects.njk}
+          - {label: Title, name: title, widget: string}
+          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: permalink, widget: string, required: false}
+          - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+          - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+          - {label: Social Image, name: socialImage, widget: image, required: false}
+          - {label: Header Background Colour, name: headerBgColor, widget: hidden, default: coral-500}
+          - {label: Header Border Color, name: headerBorderColor, widget: hidden, default: coral-800}
+          - {label: Header Text Color, name: headerTextColor, widget: hidden, default: black}
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: src/collections/pages
     slug: "{{slug}}"
     preview_path: "{{slug}}"
     create: true
     i18n: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: "permalink", widget: "string", required: false}
-      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Intro", name: "intro", widget: "markdown", required: false, editor_components: ["image", "file"]}
-      - label: "Header Background Colour"
-        name: "headerBgColor"
-        widget: "select"
+      - {label: Layout, name: layout, widget: hidden, default: layouts/page.njk}
+      - {label: Title, name: title, widget: string}
+      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: permalink, widget: string, required: false}
+      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+      - {label: Social Image, name: socialImage, widget: image, required: false}
+      - {label: Intro, name: intro, widget: markdown, required: false, editor_components: [image, file]}
+      - label: Header Background Colour
+        name: headerBgColor
+        widget: select
         options:
-          - {label: "White", value: "white"}
-          - {label: "Black", value: "black"}
-          - {label: "Indigo 100 (Default)", value: "indigo-100"}
-          - {label: "Indigo 200", value: "indigo-200"}
-          - {label: "Indigo 500", value: "indigo-500"}
-          - {label: "Indigo 800", value: "indigo-800"}
-          - {label: "Blue 500", value: "blue-500"}
-          - {label: "Coral 500", value: "coral-500"}
-          - {label: "Coral 800", value: "coral-800"}
-          - {label: "Yellow 200", value: "yellow-200"}
-          - {label: "Yellow 500", value: "yellow-500"}
-        default: "indigo-100"
+          - {label: White, value: white}
+          - {label: Black, value: black}
+          - {label: Indigo 100 (Default), value: indigo-100}
+          - {label: Indigo 200, value: indigo-200}
+          - {label: Indigo 500, value: indigo-500}
+          - {label: Indigo 800, value: indigo-800}
+          - {label: Blue 500, value: blue-500}
+          - {label: Coral 500, value: coral-500}
+          - {label: Coral 800, value: coral-800}
+          - {label: Yellow 200, value: yellow-200}
+          - {label: Yellow 500, value: yellow-500}
+        default: indigo-100
         required: true
-      - label: "Header Border Colour"
-        name: "headerBorderColor"
-        widget: "select"
+      - label: Header Border Colour
+        name: headerBorderColor
+        widget: select
         options:
-          - {label: "White", value: "white"}
-          - {label: "Black", value: "black"}
-          - {label: "Indigo 100 (Default)", value: "indigo-100"}
-          - {label: "Indigo 200", value: "indigo-200"}
-          - {label: "Indigo 500", value: "indigo-500"}
-          - {label: "Indigo 800", value: "indigo-800"}
-          - {label: "Blue 500", value: "blue-500"}
-          - {label: "Coral 500", value: "coral-500"}
-          - {label: "Coral 800", value: "coral-800"}
-          - {label: "Yellow 200", value: "yellow-200"}
-          - {label: "Yellow 500", value: "yellow-500"}
-        default: "indigo-100"
+          - {label: White, value: white}
+          - {label: Black, value: black}
+          - {label: Indigo 100 (Default), value: indigo-100}
+          - {label: Indigo 200, value: indigo-200}
+          - {label: Indigo 500, value: indigo-500}
+          - {label: Indigo 800, value: indigo-800}
+          - {label: Blue 500, value: blue-500}
+          - {label: Coral 500, value: coral-500}
+          - {label: Coral 800, value: coral-800}
+          - {label: Yellow 200, value: yellow-200}
+          - {label: Yellow 500, value: yellow-500}
+        default: indigo-100
         required: true
-      - label: "Header Text Colour"
-        name: "headerTextColor"
-        widget: "select"
+      - label: Header Text Colour
+        name: headerTextColor
+        widget: select
         options:
-          - {label: "White", value: "white"}
-          - {label: "Black (Default)", value: "black"}
-          - {label: "Indigo 100", value: "indigo-100"}
-          - {label: "Indigo 200", value: "indigo-200"}
-          - {label: "Indigo 500", value: "indigo-500"}
-          - {label: "Indigo 800", value: "indigo-800"}
-          - {label: "Blue 500", value: "blue-500"}
-          - {label: "Coral 500", value: "coral-500"}
-          - {label: "Coral 800", value: "coral-800"}
-          - {label: "Yellow 200", value: "yellow-200"}
-          - {label: "Yellow 500", value: "yellow-500"}
-        default: "black"
+          - {label: White, value: white}
+          - {label: Black (Default), value: black}
+          - {label: Indigo 100, value: indigo-100}
+          - {label: Indigo 200, value: indigo-200}
+          - {label: Indigo 500, value: indigo-500}
+          - {label: Indigo 800, value: indigo-800}
+          - {label: Blue 500, value: blue-500}
+          - {label: Coral 500, value: coral-500}
+          - {label: Coral 800, value: coral-800}
+          - {label: Yellow 200, value: yellow-200}
+          - {label: Yellow 500, value: yellow-500}
+        default: black
         required: true
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+      - label: Body
+        name: body
+        widget: markdown
         required: false
         hint: |-
           To show the "body" content, remove all Sections content in the "Sections" area below. Once Sections content is provided, the body content will be overwritten.
-      - label: "Sections"
-        name: "sections"
-        widget: "list"
+      - label: Sections
+        name: sections
+        widget: list
         required: false
         min: 0
         hint: |-
           Once Sections content is provided, the body content in the "body" area above will be overwritten.
         default: []
         fields:
-          - {label: "Title", name: "title", widget: "string", required: true}
-          - {label: "Content", name: "content", widget: "markdown", required: true, editor_components: ["image", "file"]}
-          - label: "Text Colour"
-            name: "textColor"
-            widget: "select"
+          - {label: Title, name: title, widget: string, required: true}
+          - {label: Content, name: content, widget: markdown, required: true, editor_components: [image, file]}
+          - label: Text Colour
+            name: textColor
+            widget: select
             options:
-              - {label: "White", value: "white"}
-              - {label: "Black (Default)", value: "black"}
-              - {label: "Indigo 100", value: "indigo-100"}
-              - {label: "Indigo 200", value: "indigo-200"}
-              - {label: "Indigo 500", value: "indigo-500"}
-              - {label: "Indigo 800", value: "indigo-800"}
-              - {label: "Blue 500", value: "blue-500"}
-              - {label: "Coral 500", value: "coral-500"}
-              - {label: "Coral 800", value: "coral-800"}
-              - {label: "Yellow 200", value: "yellow-200"}
-              - {label: "Yellow 500", value: "yellow-500"}
-            default: "black"
+              - {label: White, value: white}
+              - {label: Black (Default), value: black}
+              - {label: Indigo 100, value: indigo-100}
+              - {label: Indigo 200, value: indigo-200}
+              - {label: Indigo 500, value: indigo-500}
+              - {label: Indigo 800, value: indigo-800}
+              - {label: Blue 500, value: blue-500}
+              - {label: Coral 500, value: coral-500}
+              - {label: Coral 800, value: coral-800}
+              - {label: Yellow 200, value: yellow-200}
+              - {label: Yellow 500, value: yellow-500}
+            default: black
             required: false
-          - label: "Background Colour"
-            name: "backgroundColor"
-            widget: "select"
+          - label: Background Colour
+            name: backgroundColor
+            widget: select
             options:
-              - {label: "White", value: "white"}
-              - {label: "Black", value: "black"}
-              - {label: "Indigo 100 (Default)", value: "indigo-100"}
-              - {label: "Indigo 200", value: "indigo-200"}
-              - {label: "Indigo 500", value: "indigo-500"}
-              - {label: "Indigo 800", value: "indigo-800"}
-              - {label: "Blue 500", value: "blue-500"}
-              - {label: "Coral 500", value: "coral-500"}
-              - {label: "Coral 800", value: "coral-800"}
-              - {label: "Yellow 200", value: "yellow-200"}
-              - {label: "Yellow 500", value: "yellow-500"}
-            default: "indigo-100"
+              - {label: White, value: white}
+              - {label: Black, value: black}
+              - {label: Indigo 100 (Default), value: indigo-100}
+              - {label: Indigo 200, value: indigo-200}
+              - {label: Indigo 500, value: indigo-500}
+              - {label: Indigo 800, value: indigo-800}
+              - {label: Blue 500, value: blue-500}
+              - {label: Coral 500, value: coral-500}
+              - {label: Coral 800, value: coral-800}
+              - {label: Yellow 200, value: yellow-200}
+              - {label: Yellow 500, value: yellow-500}
+            default: indigo-100
             required: false
-          - {label: "Full Bleed Background", name: "fullBleed", widget: "boolean", default: false}
-          - label: "Border Colour"
-            name: "borderColor"
-            widget: "select"
+          - {label: Full Bleed Background, name: fullBleed, widget: boolean, default: false}
+          - label: Border Colour
+            name: borderColor
+            widget: select
             options:
-              - {label: "White", value: "white"}
-              - {label: "Black", value: "black"}
-              - {label: "Indigo 100", value: "indigo-100"}
-              - {label: "Indigo 200", value: "indigo-200"}
-              - {label: "Indigo 500 (Default)", value: "indigo-500"}
-              - {label: "Indigo 800", value: "indigo-800"}
-              - {label: "Blue 500", value: "blue-500"}
-              - {label: "Coral 500", value: "coral-500"}
-              - {label: "Coral 800", value: "coral-800"}
-              - {label: "Yellow 200", value: "yellow-200"}
-              - {label: "Yellow 500", value: "yellow-500"}
-            default: "indigo-500"
+              - {label: White, value: white}
+              - {label: Black, value: black}
+              - {label: Indigo 100, value: indigo-100}
+              - {label: Indigo 200, value: indigo-200}
+              - {label: Indigo 500 (Default), value: indigo-500}
+              - {label: Indigo 800, value: indigo-800}
+              - {label: Blue 500, value: blue-500}
+              - {label: Coral 500, value: coral-500}
+              - {label: Coral 800, value: coral-800}
+              - {label: Yellow 200, value: yellow-200}
+              - {label: Yellow 500, value: yellow-500}
+            default: indigo-500
             required: false
-          - {label: "Image", name: "image", widget: "image", required: false}
-          - {label: "Image (2x)", name: "image2x", widget: "image", required: false}
-          - {label: "Image Alternative Text", name: "imageAltText", widget: "string", required: false}
-          - label: "Image Order"
-            name: "imageOrder"
-            widget: "select"
+          - {label: Image, name: image, widget: image, required: false}
+          - {label: Image (2x), name: image2x, widget: image, required: false}
+          - {label: Image Alternative Text, name: imageAltText, widget: string, required: false}
+          - label: Image Order
+            name: imageOrder
+            widget: select
             options:
-              - {label: "Start", value: "start"}
-              - {label: "End", value: "end"}
-            default: "start"
+              - {label: Start, value: start}
+              - {label: End, value: end}
+            default: start
             required: false
-          - label: "Image Order (Desktop)"
-            name: "imageOrderDesktop"
-            widget: "select"
+          - label: Image Order (Desktop)
+            name: imageOrderDesktop
+            widget: select
             options:
-              - {label: "Auto", value: "auto"}
-              - {label: "Swap", value: "swap"}
-            default: "auto"
+              - {label: Auto, value: auto}
+              - {label: Swap, value: swap}
+            default: auto
             required: false
-          - label: "Image Shadow"
-            name: "imageShadow"
-            widget: "select"
+          - label: Image Shadow
+            name: imageShadow
+            widget: select
             options:
-              - {label: "Indigo 500", value: "indigo-500"}
-              - {label: "Coral 500", value: "coral-500"}
-              - {label: "Yellow 500", value: "yellow-500"}
-            default: "indigo-500"
+              - {label: Indigo 500, value: indigo-500}
+              - {label: Coral 500, value: coral-500}
+              - {label: Yellow 500, value: yellow-500}
+            default: indigo-500
             required: false
-          - label: "Desktop Width"
-            name: "desktopWidth"
-            widget: "select"
+          - label: Desktop Width
+            name: desktopWidth
+            widget: select
             options:
-              - {label: "Third", value: "third"}
-              - {label: "Half", value: "half"}
-              - {label: "Two Thirds", value: "two-thirds"}
-              - {label: "Full", value: "full"}
-            default: "full"
+              - {label: Third, value: third}
+              - {label: Half, value: half}
+              - {label: Two Thirds, value: two-thirds}
+              - {label: Full, value: full}
+            default: full
             required: false
-          - label: "Subsection Header Level"
-            name: "subsectionLevel"
-            widget: "select"
+          - label: Subsection Header Level
+            name: subsectionLevel
+            widget: select
             options:
-              - {label: "None", value: "0"}
-              - {label: "3", value: "H3"}
-              - {label: "4", value: "H4"}
+              - {label: None, value: "0"}
+              - {label: "3", value: H3}
+              - {label: "4", value: H4}
             default: "0"
             required: true
-  - name: "news"
-    label: "News"
-    label_singular: "News Item"
-    folder: "src/news"
+  - name: news
+    label: News
+    label_singular: News Item
+    folder: src/collections/news
     slug: "{{slug}}"
     preview_path: "/about/news/{{slug}}"
     create: true
     i18n: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--news.njk"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", time_format: false}
-      - {label: "Archived", name: "archived", widget: "boolean", default: false}
-      - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
-      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
-      - {label: "Permalink Override (Pattern: '/news/your-news-item/index.html')", name: "permalink", widget: "string", required: false}
-      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "ideas"
-    label: "Ideas"
-    label_singular: "Idea"
-    folder: "src/ideas"
+      - {label: Layout, name: layout, widget: hidden, default: layouts/single--news.njk}
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime, time_format: false}
+      - {label: Archived, name: archived, widget: boolean, default: false}
+      - {label: Author, name: author, widget: string, required: false, default: IDRC Team}
+      - {label: Excerpt, name: excerpt, widget: text, required: false}
+      - {label: "Permalink Override (Pattern: '/news/your-news-item/index.html')", name: permalink, widget: string, required: false}
+      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+      - {label: Social Image, name: socialImage, widget: image, required: false}
+      - {label: Tags, name: tags, widget: list, allow_add: true}
+      - {label: Body, name: body, widget: markdown}
+  - name: ideas
+    label: Ideas
+    label_singular: Idea
+    folder: src/collections/ideas
     slug: "{{slug}}"
     preview_path: "/ideas/{{slug}}"
     create: true
     i18n: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--idea.njk"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime", time_format: false}
-      - {label: "Archived", name: "archived", widget: "boolean", default: false}
-      - {label: "Author", name: "author", widget: "string", required: false, default: "IDRC Team"}
-      - {label: "Excerpt", name: "excerpt", widget: "text", required: false}
-      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false}
-      - {label: "Permalink Override (Pattern: '/ideas/your-idea/index.html')", name: "permalink", widget: "string", required: false}
-      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-      - {label: "Tags", name: "tags", widget: "list", allow_add: true}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "people"
-    label: "People"
-    label_singular: "Person"
-    folder: "src/people"
+      - {label: Layout, name: layout, widget: hidden, default: layouts/single--idea.njk}
+      - {label: Title, name: title, widget: string}
+      - {label: Date, name: date, widget: datetime, time_format: false}
+      - {label: Archived, name: archived, widget: boolean, default: false}
+      - {label: Author, name: author, widget: string, required: false, default: IDRC Team}
+      - {label: Excerpt, name: excerpt, widget: text, required: false}
+      - {label: Thumbnail Image, name: thumbnailImage, widget: image, required: false}
+      - {label: "Permalink Override (Pattern: '/ideas/your-idea/index.html')", name: permalink, widget: string, required: false}
+      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+      - {label: Social Image, name: socialImage, widget: image, required: false}
+      - {label: Tags, name: tags, widget: list, allow_add: true}
+      - {label: Body, name: body, widget: markdown}
+  - name: people
+    label: People
+    label_singular: Person
+    folder: src/collections/people
     slug: "{{slug}}"
     preview_path: "/about/team/{{slug}}"
     create: true
     i18n: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--person.njk"}
-      - {label: "Full Name", name: "title", widget: "string"}
-      - {label: "Job Title", name: "job", widget: "string"}
-      - {label: "Pronouns", name: "pronouns", widget: "string"}
-      - {label: "Email Address", name: "email", widget: "string"}
-      - {label: "Personal Website", name: "website", widget: "string", required: false, hint: "A link to this person's personal website."}
-      - {label: "Twitter Username", name: "twitter", widget: "string", required: false, hint: "This person's twitter username, e.g. '@username'."}
-      - {label: "Github Profile", name: "github", widget: "string", required: false, hint: "A link to this person's profile on GitHub."}
-      - {label: "LinkedIn Profile", name: "linkedin", widget: "string", required: false, hint: "A link to this person's profile on LinkedIn."}
-      - {label: "Projects", name: "projects", widget: "list", allow_add: true, hint: "A comma-separated list of projects on which this person has worked."}
-      - {label: "Interests", name: "interests", widget: "text", required: false}
-      - {label: "Bio", name: "body", widget: "markdown"}
-      - {label: "SEO Meta Title", name: "metaTitle", widget: "string", required: false}
-      - {label: "SEO Meta Description", name: "metaDesc", widget: "string", required: false}
-      - {label: "Social Image", name: "socialImage", widget: "image", required: false}
-  - name: "projects"
-    label: "Projects"
-    label_singular: "Project"
-    folder: "src/projects"
+      - {label: Layout, name: layout, widget: hidden, default: layouts/single--person.njk}
+      - {label: Full Name, name: title, widget: string}
+      - {label: Job Title, name: job, widget: string}
+      - {label: Pronouns, name: pronouns, widget: string}
+      - {label: Email Address, name: email, widget: string}
+      - {label: Personal Website, name: website, widget: string, required: false, hint: "A link to this person's personal website."}
+      - {label: Twitter Username, name: twitter, widget: string, required: false, hint: "This person's twitter username, e.g. '@username'."}
+      - {label: Github Profile, name: github, widget: string, required: false, hint: "A link to this person's profile on GitHub."}
+      - {label: LinkedIn Profile, name: linkedin, widget: string, required: false, hint: "A link to this person's profile on LinkedIn."}
+      - {label: Projects, name: projects, widget: list, allow_add: true, hint: A comma-separated list of projects on which this person has worked.}
+      - {label: Interests, name: interests, widget: text, required: false}
+      - {label: Bio, name: body, widget: markdown}
+      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
+      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
+      - {label: Social Image, name: socialImage, widget: image, required: false}
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: src/collections/projects
     slug: "{{slug}}"
     preview_path: "/projects/{{slug}}"
     create: true
     i18n: true
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/project.njk", i18n: duplicate}
-      - {label: "Project Name", name: "projectName", widget: "string", required: true, hint: "Suggestion: If this is a sub-page of a project, enter the name of the project here.", i18n: true}
-      - {label: "Override Default Project URL ", name: "permalink", widget: "string", required: false, hint: "Default URL is '/projects/[project-name]/'. To override enter a string including '/' (slash) at start and end (i.e. '/example/url/'). This must be unique.", i18n: true}
-      - {label: "Body Title", name: "title", widget: "string", required: true, hint: "The title that appears after the Project Name and before the Body content. Suggestion: use a descriptive title which includes keywords from the project.", i18n: true}
-      - {label: "Project Short Name", name: "shortName", widget: "string", required: false, hint: "Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project.", i18n: true}
-      - {label: "Parent Page", name: "parentTitle", widget: "relation", collection: "projects", value_field: "title", search_fields: [title], required: false, hint: "This is required for sub-pages of a project to define the sub-page hierarchy.", i18n: true}
-      - {label: "Subpage Order", name: "subPageOrder", widget: "number", required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order.", i18n: duplicate}
-      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched.", i18n: duplicate}
-      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default.", i18n: true}
-      - {label: "Project Listing Description", name: "description", widget: "markdown", required: false, editor_components: ["image", "file"], hint: "This is text that appears for a project in the projects listing. This description is not required for sub-pages.", i18n: true}
-      - {label: "External Project Website", name: "link", widget: "string", required: false, hint: "This is not required for sub-pages.", i18n: duplicate}
-      - {label: "Body", name: "body", required: false, widget: "markdown", hint: "This is the content that appears for a project page hosted on the IDRC site.", i18n: true}
-  - name: "resources"
-    label: "Resources"
-    label_singular: "Resource"
-    folder: "src/resources"
+      - {label: Layout, name: layout, widget: hidden, default: layouts/project.njk, i18n: duplicate}
+      - {label: Project Name, name: projectName, widget: string, required: true, hint: "Suggestion: If this is a sub-page of a project, enter the name of the project here.", i18n: true}
+      - {label: "Override Default Project URL ", name: permalink, widget: string, required: false, hint: "Default URL is '/projects/[project-name]/'. To override enter a string including '/' (slash) at start and end (i.e. '/example/url/'). This must be unique.", i18n: true}
+      - {label: Body Title, name: title, widget: string, required: true, hint: "The title that appears after the Project Name and before the Body content. Suggestion: use a descriptive title which includes keywords from the project.", i18n: true}
+      - {label: Project Short Name, name: shortName, widget: string, required: false, hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project., i18n: true}
+      - {label: Parent Page, name: parentTitle, widget: relation, collection: projects, value_field: title, search_fields: [title], required: false, hint: This is required for sub-pages of a project to define the sub-page hierarchy., i18n: true}
+      - {label: Subpage Order, name: subPageOrder, widget: number, required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order.", i18n: duplicate}
+      - {label: Thumbnail Image, name: thumbnailImage, widget: image, required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched.", i18n: duplicate}
+      - {label: Thumbnail Image Alt Text, name: thumbnailAltText, widget: string, required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default.", i18n: true}
+      - {label: Project Listing Description, name: description, widget: markdown, required: false, editor_components: [image, file], hint: This is text that appears for a project in the projects listing. This description is not required for sub-pages., i18n: true}
+      - {label: External Project Website, name: link, widget: string, required: false, hint: This is not required for sub-pages., i18n: duplicate}
+      - {label: Body, name: body, required: false, widget: markdown, hint: This is the content that appears for a project page hosted on the IDRC site., i18n: true}
+  - name: resources
+    label: Resources
+    label_singular: Resource
+    folder: src/collections/resources
     slug: "{{slug}}"
     preview_path: "/resources/{{slug}}"
     create: true
     i18n: false
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/single--resource.njk"}
-      - {label: "Resource Name", name: "title", widget: "string", required: true}
-      - {label: "Description", name: "description", widget: "markdown", required: true, editor_components: ["image", "file"]}
-      - {label: "Published Year", name: "publishedYear", widget: "string", hint: "The year this resource was first publicly available.", required: true}
-      - {label: "Thumbnail Image", name: "thumbnailImage", widget: "image", required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
-      - {label: "Thumbnail Image Alt Text", name: "thumbnailAltText", widget: "string", required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
-      - label: "Resource Topics"
-        name: "topics"
-        widget: "relation"
+      - {label: Layout, name: layout, widget: hidden, default: layouts/single--resource.njk}
+      - {label: Resource Name, name: title, widget: string, required: true}
+      - {label: Description, name: description, widget: markdown, required: true, editor_components: [image, file]}
+      - {label: Published Year, name: publishedYear, widget: string, hint: The year this resource was first publicly available., required: true}
+      - {label: Thumbnail Image, name: thumbnailImage, widget: image, required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
+      - {label: Thumbnail Image Alt Text, name: thumbnailAltText, widget: string, required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
+      - label: Resource Topics
+        name: topics
+        widget: relation
         multiple: true
         collection: resourceMetadata
         file: resourceTopics
@@ -480,9 +480,9 @@ collections:
         display_fields: [resourceTopics.*.label]
         search_fields: [resourceTopics.*.label]
         required: true
-      - label: "Resource Types"
-        name: "types"
-        widget: "relation"
+      - label: Resource Types
+        name: types
+        widget: relation
         multiple: true
         collection: resourceMetadata
         file: resourceTypes
@@ -490,62 +490,62 @@ collections:
         display_fields: [resourceTypes.*.label]
         search_fields: [resourceTypes.*.label]
         required: true
-      - {label: "Resource URL", name: "link", widget: "string", required: true}
+      - {label: Resource URL, name: link, widget: string, required: true}
   - name: resourceMetadata
     label: Resource Metadata
     i18n: false
     files:
       - label: Resource Topics
         name: resourceTopics
-        file: "src/_data/resourceTopics.json"
+        file: src/_data/resourceTopics.json
         editor:
           preview: true
         fields:
-          - label: "Resource Topics"
-            label_singular: "Resource Topic"
-            name: "resourceTopics"
-            widget: "list"
+          - label: Resource Topics
+            label_singular: Resource Topic
+            name: resourceTopics
+            widget: list
             summary: "{{fields.label}}"
             fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
-              - label: "Label"
-                name: "label"
-                widget: "string"
+              - label: Value
+                name: value
+                widget: string
+              - label: Label
+                name: label
+                widget: string
       - label: Resource Types
         name: resourceTypes
-        file: "src/_data/resourceTypes.json"
+        file: src/_data/resourceTypes.json
         editor:
           preview: true
         fields:
-          - label: "Resource Types"
-            label_singular: "Resource Type"
-            name: "resourceTypes"
-            widget: "list"
+          - label: Resource Types
+            label_singular: Resource Type
+            name: resourceTypes
+            widget: list
             summary: "{{fields.label}}"
             fields:
-              - label: "Value"
-                name: "value"
-                widget: "string"
-              - label: "Label"
-                name: "label"
-                widget: "string"
-  - label: "Globals"
-    name: "globals"
+              - label: Value
+                name: value
+                widget: string
+              - label: Label
+                name: label
+                widget: string
+  - label: Globals
+    name: globals
     i18n: false
     files:
-      - label: "Site Data"
-        name: "site_data"
+      - label: Site Data
+        name: site_data
         delete: false
-        file: "src/_data/site.json"
+        file: src/_data/site.json
         fields:
-          - {label: "Site Title", name: "title", widget: "string"}
-          - {label: "Site Url", name: "url", widget: "string"}
-          - {label: "Contact Email", name: "email", widget: "string"}
-          - {label: "Contact Phone", name: "phone", widget: "string"}
-          - {label: "Contact Fax", name: "fax", widget: "string"}
-          - {label: "Physical Address", name: "address", widget: "text"}
-          - {label: "Twitter Username", name: "twitter", widget: "string"}
-          - {label: "Medium Username", name: "medium", widget: "string"}
-          - {label: "YouTube Link", name: "youtube", widget: "string"}
+          - {label: Site Title, name: title, widget: string}
+          - {label: Site Url, name: url, widget: string}
+          - {label: Contact Email, name: email, widget: string}
+          - {label: Contact Phone, name: phone, widget: string}
+          - {label: Contact Fax, name: fax, widget: string}
+          - {label: Physical Address, name: address, widget: text}
+          - {label: Twitter Username, name: twitter, widget: string}
+          - {label: Medium Username, name: medium, widget: string}
+          - {label: YouTube Link, name: youtube, widget: string}

@@ -8,5 +8,6 @@ title: Projects
 headerBgColor: coral-500
 headerBorderColor: coral-800
 headerTextColor: black
+locale: en-CA
 ---
 ***

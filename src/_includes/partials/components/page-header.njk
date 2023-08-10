@@ -17,22 +17,13 @@
         {% endif %}
         <h1>{{ title }}</h1>
         {% if projectName %}
-        {% for language, languageData in config.languages %}
-                    {% if locale and locale !== language %}
-                        {% set matchedProject = false %}
-                        {% for project in collections['projects_' + language] %}
-                            {% if project.fileSlug === translationKey %}
-                                 {% set matchedProject = project %}
-                            {% endif %}
-                        {% endfor %}
-                        {% if matchedProject %}
-                            <a hreflang="{{ language }}" lang="{{ language }}" dir="{{ config.languages[locale].dir if locale else 'ltr' }}" href="{{ matchedProject.url }}">{% include 'svg/icon-translation.svg' %}{% _i language, "Read in ${locale}", {locale: languageData.name} %}</a>
-                        {% endif %}
-                    {% endif %}
-                {% endfor %}
+        {% set links = page.url | locale_links %}
+        {%- for link in links %}
+        <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{%- include 'svg/icon-translation.svg' -%}{%- _i locale, "Read in ${language}", {language: supportedLanguages[link.lang].name } -%}</a>
+        {%- endfor -%}
         {% endif %}
         {% if intro %}
-        <div class="intro">{{ intro | markdownFilter | safe }}</div>
+        <div class="intro">{{ intro | markdown | safe }}</div>
         {% endif %}
     </div>
 </header>

@@ -2,80 +2,81 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .banner {
-  --parent-bg: var(--header-bg, var(--indigo-100));
+    --parent-bg: var(--header-bg, var(--indigo-100));
 
-  align-items: center;
-  background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
-  color: var(--fl-fgColor, var(--header-fg, $black));
-  display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(var(--max-width) + var(--gutter));
-  padding-top: rem(4);
-  position: relative;
-  width: calc(100vw - var(--gutter));
+    align-items: center;
+    background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
+    color: var(--fl-fgColor, var(--header-fg, $black));
+    display: flex;
+    inline-size: calc(100vw - var(--gutter));
+    justify-content: space-between;
+    margin-inline: auto;
+    max-inline-size: calc(var(--max-width) + var(--gutter));
+    padding-block-start: rem(4);
+    position: relative;
 
-  &::after {
-    background: inherit;
-    bottom: -1px;
-    content: '';
-    display: block;
-    height: calc(1px + 100%);
-    margin-left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 100vw;
-    z-index: -1;
-  }
+    &::after {
+        background: inherit;
+        block-size: calc(1px + 100%);
+        bottom: -1px;
+        content: "";
+        display: block;
+        inline-size: 100vw;
+        margin-inline-start: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
 }
 
 .banner a {
-  &:hover,
-  &:focus {
-    background: var(--fl-fgColor, var(--black));
-    color: var(--fl-bgColor, var(--white));
-    outline: var(--fl-fgColor, transparent) solid rem(3);
-  }
+    &:hover,
+    &:focus {
+        background: var(--fl-fgColor, var(--black));
+        color: var(--fl-bgColor, var(--white));
+        outline: var(--fl-fgColor, transparent) solid rem(3);
+    }
 }
 
 .page--home .banner {
-  --header-bg: var(--white);
+    --header-bg: var(--white);
 
-  z-index: 1;
+    z-index: 1;
 
-  &::after {
-    box-shadow: 0 rem(3) rem(10) var(--fl-fgColor, rgb(0 0 0 / 5%));
-  }
+    &::after {
+        box-shadow: 0 rem(3) rem(10) var(--fl-fgColor, rgb(0 0 0 / 5%));
+    }
 }
 
 .banner .wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  padding: 0 var(--gutter);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-block: 0;
+    margin-inline: auto;
+    padding-block: 0;
+    padding-inline: var(--gutter);
 }
 
 .no-js {
-  .banner > .wrapper {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+    .banner > .wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
 
 @include breakpoint-down(sm) {
-  .banner.banner--menu-visible,
-  .page--home .banner.banner--menu-visible {
-    --parent-bg: var(--indigo-800);
-    --header-bg: var(--indigo-800);
-    --header-fg: var(--white);
-    --header-accent: var(--indigo-500);
-  }
+    .banner.banner--menu-visible,
+    .page--home .banner.banner--menu-visible {
+        --parent-bg: var(--indigo-800);
+        --header-bg: var(--indigo-800);
+        --header-fg: var(--white);
+        --header-accent: var(--indigo-500);
+    }
 }
 
 @include breakpoint-up(sm) {
-  .banner .wrapper {
-    padding: 0;
-  }
+    .banner .wrapper {
+        padding: 0;
+    }
 }

@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD041 -->
+
 * [ ] This pull request has been tested by running `npm run test` without errors
 * [ ] This pull request has been built by running `npm run build` without errors
 * [ ] This isn't a duplicate of an existing pull request

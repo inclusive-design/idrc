@@ -20,66 +20,66 @@ $coral-800: #e53e3e;
 $yellow-200: #faf089;
 $yellow-500: #f6e05e;
 $colors: (
-  'black': $black,
-  'white': $white,
-  'grey-100': $grey-100,
-  'grey-200': $grey-200,
-  'indigo-100': $indigo-100,
-  'indigo-200': $indigo-200,
-  'indigo-500': $indigo-500,
-  'indigo-800': $indigo-800,
-  'indigo-900': $indigo-900,
-  'blue-200': $blue-200,
-  'blue-500': $blue-500,
-  'blue-900': $blue-900,
-  'coral-500': $coral-500,
-  'coral-800': $coral-800,
-  'yellow-200': $yellow-200,
-  'yellow-500': $yellow-500
+    "black": $black,
+    "white": $white,
+    "grey-100": $grey-100,
+    "grey-200": $grey-200,
+    "indigo-100": $indigo-100,
+    "indigo-200": $indigo-200,
+    "indigo-500": $indigo-500,
+    "indigo-800": $indigo-800,
+    "indigo-900": $indigo-900,
+    "blue-200": $blue-200,
+    "blue-500": $blue-500,
+    "blue-900": $blue-900,
+    "coral-500": $coral-500,
+    "coral-800": $coral-800,
+    "yellow-200": $yellow-200,
+    "yellow-500": $yellow-500
 );
 $breakpoints: (
-  xs: 0,
-  sm: 600,
-  md: 1024,
-  lg: 1440,
-  xl: 1920
+    xs: 0,
+    sm: 600,
+    md: 1024,
+    lg: 1440,
+    xl: 1920
 );
 
 :root {
-  @each $name, $color in $colors {
-    --#{$name}: #{$color};
-  }
+    @each $name, $color in $colors {
+        --#{$name}: #{$color};
+    }
 
-  // Fonts
-  --ff-sans: 'Open Sans', sans-serif;
-  --ff-display: 'Work Sans', sans-serif;
-  --ff-serif: 'Merriweather', serif;
+    // Fonts
+    --ff-sans: "Open Sans", sans-serif;
+    --ff-display: "Work Sans", sans-serif;
+    --ff-serif: "Merriweather", serif;
 
-  // Font Weights
-  --fw-normal: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
-  --fw-black: 900;
+    // Font Weights
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
 
-  // Type Scale
-  --step--1: calc(14 / 16 * 1rem);
-  --step-0: 1rem;
-  --step-1: calc(18 / 16 * 1rem);
-  --step-2: calc(24 / 16 * 1rem);
-  --step-3: calc(32 / 16 * 1rem);
-  --step-4: calc(42 / 16 * 1rem);
+    // Type Scale
+    --step--1: calc(14 / 16 * 1rem);
+    --step-0: 1rem;
+    --step-1: calc(18 / 16 * 1rem);
+    --step-2: calc(24 / 16 * 1rem);
+    --step-3: calc(32 / 16 * 1rem);
+    --step-4: calc(42 / 16 * 1rem);
 
-  // Grid System
-  --gutter: calc(30 / 16 * 1rem);
-  --max-width: calc((1200 / 16 * 1rem) - var(--gutter));
+    // Grid System
+    --gutter: calc(30 / 16 * 1rem);
+    --max-width: calc((1200 / 16 * 1rem) - var(--gutter));
 }
 
 @media screen and (width >= 1024px) {
-  :root {
-    --step-1: calc(22 / 16 * 1rem);
-    --step-2: calc(28 / 16 * 1rem);
-    --step-3: calc(44 / 16 * 1rem);
-    --step-4: calc(62 / 16 * 1rem);
-  }
+    :root {
+        --step-1: calc(22 / 16 * 1rem);
+        --step-2: calc(28 / 16 * 1rem);
+        --step-3: calc(44 / 16 * 1rem);
+        --step-4: calc(62 / 16 * 1rem);
+    }
 }

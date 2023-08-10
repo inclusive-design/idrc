@@ -1,6 +1,7 @@
 ---
 layout: layouts/home.njk
 title: Inclusive Design Research Centre
+locale: en-CA
 intro: >
   An international community of open source developers, designers, researchers,
   educators and co-designers who work together to **proactively ensure that

@@ -1,60 +1,60 @@
 .page--team {
-  .person {
-    border-top: rem(4) solid var(--fl-fgColor, var(--indigo-500));
-    margin: 0;
-    padding-top: rem(24);
+    .person {
+        border-block-start: rem(4) solid var(--fl-fgColor, var(--indigo-500));
+        margin: 0;
+        padding-block-start: rem(24);
 
-    h2 + .metadata {
-      margin-top: rem(4);
+        h2 + .metadata {
+            margin-block-start: rem(4);
+        }
+
+        .metadata p + p {
+            margin-block-start: rem(4);
+        }
+
+        .metadata + p {
+            margin-block-start: rem(12);
+        }
+
+        .link--email {
+            align-items: center;
+            display: inline-flex;
+            flex-direction: row;
+            font-size: var(--step--1);
+            font-weight: var(--fw-semibold);
+            text-decoration: none;
+        }
+
+        .link--email svg {
+            display: inline-block;
+            margin-inline-end: rem(4);
+
+            path {
+                fill: currentcolor;
+            }
+        }
     }
 
-    .metadata p + p {
-      margin-top: rem(4);
+    .person + .person {
+        margin-block-start: rem(48);
     }
-
-    .metadata + p {
-      margin-top: rem(12);
-    }
-
-    .link--email {
-      align-items: center;
-      display: inline-flex;
-      flex-direction: row;
-      font-size: var(--step--1);
-      font-weight: var(--fw-semibold);
-      text-decoration: none;
-    }
-
-    .link--email svg {
-      display: inline-block;
-      margin-right: rem(4);
-
-      path {
-        fill: currentcolor;
-      }
-    }
-  }
-
-  .person + .person {
-    margin-top: rem(48);
-  }
 }
 
 @include breakpoint-up(sm) {
-  .page--team {
-    .person + .person {
-      margin-top: 0;
+    .page--team {
+        .person + .person {
+            margin-block-start: 0;
+        }
     }
-  }
 }
 
 @include breakpoint-up(md) {
-  .page--team {
-    .people {
-      column-gap: var(--gutter);
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: rem(48);
+    .page--team {
+        .people {
+            column-gap: var(--gutter);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: rem(48);
+        }
     }
-  }
 }

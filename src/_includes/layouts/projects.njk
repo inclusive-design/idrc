@@ -20,9 +20,9 @@
                 <h3>{{ project.data.projectName }}{{ " (" + project.data.shortName + ")" if project.data.shortName }}</h3>
                 {% if project.data.content %}
                 {% set fullDescription = project.data.description + " [More about " + project.data.projectName + "](" + project.url + ")" %}
-                {{ fullDescription | markdownFilter | safe }}
+                {{ fullDescription | markdown | safe }}
                 {% else %}
-                {{ project.data.description | markdownFilter | safe }}
+                {{ project.data.description | markdown | safe }}
                 {% endif %}
                 {% if project.data.link %}
                 <p class="project__link"><a rel="external" href="{{ project.data.link }}">Go to: {{ project.data.shortName if project.data.shortName else project.data.projectName }} website</a></p>

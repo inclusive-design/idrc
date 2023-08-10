@@ -1,85 +1,85 @@
-[class*='fl-theme-']:not(.fl-theme-prefsEditor-default) {
-  .content a:visited,
-  .footer a:visited {
-    text-decoration-color: currentcolor;
-  }
-
-  img {
-    filter: grayscale(100%);
-  }
-
-  &.fl-theme-by img,
-  &.fl-theme-bbr img {
-    mix-blend-mode: multiply;
-  }
-
-  // Use an SVG filter for yellow-on-black because we want it to blend with yellow, not the black background
-  &.fl-theme-yb img {
-    // Due to https://bugs.webkit.org/show_bug.cgi?id=127102 we need to access the SVG filter from an embedded SVG
-    // instead of an external one.
-    filter: grayscale(100%) url('#yellow');
-  }
-
-  .section--image figure,
-  .section--image figure.shadow-indigo-500,
-  .section--image figure.shadow-coral-500,
-  .section--image figure.shadow-yellow-500 {
-    box-shadow: rem(24) rem(24) currentcolor;
-  }
-
-  @include breakpoint-up(md) {
-    .menu li ul {
-      box-shadow: none;
+[class*="fl-theme-"]:not(.fl-theme-prefsEditor-default) {
+    .content a:visited,
+    .footer a:visited {
+        text-decoration-color: currentcolor;
     }
 
-    .nav--secondary .wrapper {
-      border: 1px solid currentcolor;
-      box-shadow: rem(8) rem(8) 0 0 currentcolor;
+    img {
+        filter: grayscale(100%);
     }
-  }
+
+    &.fl-theme-by img,
+    &.fl-theme-bbr img {
+        mix-blend-mode: multiply;
+    }
+
+    // Use an SVG filter for yellow-on-black because we want it to blend with yellow, not the black background
+    &.fl-theme-yb img {
+        // Due to https://bugs.webkit.org/show_bug.cgi?id=127102 we need to access the SVG filter from an embedded SVG
+        // instead of an external one.
+        filter: grayscale(100%) url("#yellow");
+    }
+
+    .section--image figure,
+    .section--image figure.shadow-indigo-500,
+    .section--image figure.shadow-coral-500,
+    .section--image figure.shadow-yellow-500 {
+        box-shadow: rem(24) rem(24) currentcolor;
+    }
+
+    @include breakpoint-up(md) {
+        .menu li ul {
+            box-shadow: none;
+        }
+
+        .nav--secondary .wrapper {
+            border: 1px solid currentcolor;
+            box-shadow: rem(8) rem(8) 0 0 currentcolor;
+        }
+    }
 }
 
 .fl-prefsEditor-buttons button:focus,
 .fl-prefsEditor-buttons button:hover {
-  outline: 2px solid var(--fl-fgColor, currentColor);
+    outline: 2px solid var(--fl-fgColor, currentColor);
 }
 
 .fl-input-enhanced {
-  a,
-  button,
-  input,
-  select,
-  textarea,
-  .fl-input-enhance {
-    font-size: var(--fl-enhance-font-size);
-  }
+    a,
+    button,
+    input,
+    select,
+    textarea,
+    .fl-input-enhance {
+        font-size: var(--fl-enhance-font-size);
+    }
 }
 
 // UI Enhancer 'enhanced links' styling
 .fl-input-enhanced a {
-  font-weight: var(--fl-enhance-font-weight);
-  text-decoration: var(--fl-enhance-text-decoration);
+    font-weight: var(--fl-enhance-font-weight);
+    text-decoration: var(--fl-enhance-text-decoration);
 }
 
 // hide the colour filters used for theming images
 .color-filters {
-  height: 0;
-  left: -9999em;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 0;
+    block-size: 0;
+    inline-size: 0;
+    left: -9999em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
 }
 
 // Prefs Editor style overrides
 
-[class^='page'] .fl-prefsEditor-separatedPanel {
-  background: var(--fl-bgColor, var(--header-bg));
-  border-bottom: none !important;
-  position: relative;
-  z-index: 2;
+[class^="page"] .fl-prefsEditor-separatedPanel {
+    background: var(--fl-bgColor, var(--header-bg));
+    border-block-end: none !important;
+    position: relative;
+    z-index: 2;
 }
 
 .page--home .fl-prefsEditor-separatedPanel {
-  background: var(--fl-bgColor, var(--white));
+    background: var(--fl-bgColor, var(--white));
 }
