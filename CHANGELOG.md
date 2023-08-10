@@ -1,5 +1,23 @@
 # Changelog
 
+## [2.0.0](https://github.com/inclusive-design/idrc/compare/v1.5.0...v2.0.0) (2023-08-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* update site architecture with new Trivet features ([#665](https://github.com/inclusive-design/idrc/issues/665))
+
+### Features
+
+* update site architecture with new Trivet features ([#665](https://github.com/inclusive-design/idrc/issues/665)) ([a79ba18](https://github.com/inclusive-design/idrc/commit/a79ba18542438fb4bcfcc9306ac6a9fb6d5652a6))
+* update to eleventy-plugin-fluid asset processing ([#651](https://github.com/inclusive-design/idrc/issues/651)) ([ae2ebb8](https://github.com/inclusive-design/idrc/commit/ae2ebb8c5a3d36e186adb02e0c111ac77e6bf2fa))
+
+
+### Bug Fixes
+
+* interaction styles for navigation bar and footer links ([#642](https://github.com/inclusive-design/idrc/issues/642)) ([28a4aca](https://github.com/inclusive-design/idrc/commit/28a4acaf70f3e13be60c31d19c94654f78181852))
+* resolve page layout regression ([#654](https://github.com/inclusive-design/idrc/issues/654)) ([be0c377](https://github.com/inclusive-design/idrc/commit/be0c377f88fa44785e6d2c9acffb041569d25ca8))
+
 ## [1.5.0](https://github.com/inclusive-design/idrc/compare/v1.4.0...v1.5.0) (2023-06-22)
 
 
