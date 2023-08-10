@@ -42,7 +42,7 @@ module.exports = eleventyConfig => {
 		  });
     });
 
-    Object.keys(siteConfig.locales).forEach(lang => {
+    siteConfig.locales.forEach(lang => {
         eleventyConfig.addCollection(`projects_${lang}`, collection => {
             let projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`).sort((a, b) => b.data.order - a.data.order)].reverse(),
                 uniqueProjects = [];
