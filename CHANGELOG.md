@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.2](https://github.com/inclusive-design/idrc/compare/v2.0.1...v2.0.2) (2023-08-11)
+
+
+### Bug Fixes
+
+* add EDS redirect ([e70b34e](https://github.com/inclusive-design/idrc/commit/e70b34e442a319011ba3416e3254858c18ef56b9))
+* redirect EDS page ([#672](https://github.com/inclusive-design/idrc/issues/672)) ([c6141ac](https://github.com/inclusive-design/idrc/commit/c6141ac1d7864db07460102f2e9585db044cd1db))
+
 ## [2.0.1](https://github.com/inclusive-design/idrc/compare/v2.0.0...v2.0.1) (2023-08-11)
 
 
