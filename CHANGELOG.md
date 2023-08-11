@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.0.1](https://github.com/inclusive-design/idrc/compare/v2.0.0...v2.0.1) (2023-08-11)
+
+
+### Bug Fixes
+
+* adjust YouTube embed styles ([#668](https://github.com/inclusive-design/idrc/issues/668)) ([13843c4](https://github.com/inclusive-design/idrc/commit/13843c4de754dac145002c15168b1c2a03f10d8f))
+* console error in previews.js ([#669](https://github.com/inclusive-design/idrc/issues/669)) ([f656e80](https://github.com/inclusive-design/idrc/commit/f656e8097fafd53bccce946d658d6982aae7de0e))
+* remove test translation ([5447727](https://github.com/inclusive-design/idrc/commit/5447727a95ca61606ba881987a0ed18d949dfcc9))
+* update PWA plugin to Eleventy 2.0-compatible version ([#670](https://github.com/inclusive-design/idrc/issues/670)) ([f5e2bd8](https://github.com/inclusive-design/idrc/commit/f5e2bd810bb553566b49c95edf9260295852d427))
+
 ## [2.0.0](https://github.com/inclusive-design/idrc/compare/v1.5.0...v2.0.0) (2023-08-10)
 
 
