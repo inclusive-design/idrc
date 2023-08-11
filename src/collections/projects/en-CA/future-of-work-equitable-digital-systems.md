@@ -61,43 +61,43 @@ The second and fourth EDS co-designs brought contributors together to create "St
 
 <https://youtu.be/w_7nyT_EXlo>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w_7nyT_EXlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://youtu.be/w_7nyT_EXlo" %}
 
 #### Jessica looks for Job
 
 <https://www.youtube.com/watch?v=EVuTl2PG0O8>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EVuTl2PG0O8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://www.youtube.com/watch?v=EVuTl2PG0O8" %}
 
 #### Friendship Chronicle
 
 <https://youtu.be/wFXHNHVnyQ4>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wFXHNHVnyQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://youtu.be/wFXHNHVnyQ4" %}
 
 #### Adventure is in the land of ID
 
 <https://youtu.be/Ux2Agx919GY>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ux2Agx919GY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://youtu.be/Ux2Agx919GY" %}
 
 #### A Typical Day
 
 <https://youtu.be/1AGB6-l351c>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1AGB6-l351c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://youtu.be/1AGB6-l351c" %}
 
 #### Working with Accessibility Needs Normalized
 
 <https://youtu.be/4vosjCltLqA>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4vosjCltLqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://youtu.be/4vosjCltLqA" %}
 
 #### Riley's Day at Work
 
 <https://youtu.be/ok4GL9-n9_U>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ok4GL9-n9_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{% youtube "https://youtu.be/ok4GL9-n9_U" %}
 
 ### Co-design 3: Letters to Technology
 
