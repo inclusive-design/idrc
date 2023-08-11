@@ -4,6 +4,7 @@
 import formatDateFilter from "eleventy-plugin-fluid/src/filters/format-date-filter.js";
 import isoDateFilter from "eleventy-plugin-fluid/src/filters/iso-date-filter.js";
 import limitFilter from "eleventy-plugin-fluid/src/filters/limit-filter.js";
+import markdownFilter from "eleventy-plugin-fluid/src/filters/markdown-filter.js";
 import splitFilter from "eleventy-plugin-fluid/src/filters/split-filter.js";
 import getResourceMetadataLabelFilter from "../_filters/getResourceMetadataLabel.js";
 import site from "../_data/site.json";
@@ -11,7 +12,16 @@ import imagePositionWithTextShortcode from "../_shortcodes/image-position-with-t
 import getId from "../_utils/extract-youtube-id.js";
 
 const env = nunjucks.configure();
-const markdown = require("../../node_modules/eleventy-plugin-fluid/src/filters/markdown-filter.js");
+
+const markdown = function (value) {
+    const options = {
+        html: true,
+        linkify: true,
+        typographer: true
+    };
+    const plugins = [];
+    return markdownFilter(value, options, plugins);
+};
 
 env.addFilter("formatDate", formatDateFilter);
 env.addFilter("isoDate", isoDateFilter);
