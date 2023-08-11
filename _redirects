@@ -33,7 +33,7 @@ https://websavvy.idrc.ocad.ca/*                                                 
 /index.php/resources/idrc-online/*                                                      https://legacy.idrc.ocadu.ca/index.php/resources/idrc-online/:splat     302 # Temporary redirect "IDRC Online" page to legacy site.
 /odd  /projects/odd/   301
 /intelligent-user-interfaces-for-virtual-healthcare  /projects/intelligent-user-interfaces-for-virtual-healthcare/   301
-/eds  /projects/future-of-work-equitable-digital-systems/   301
 /commacc  /projects/communication-access-within-the-accessible-canada-act/   301
 /projects-and-tools  /projects/   301
-/eds /projects/eds/   301
+/eds  /projects/eds/   301
+/projects/future-of-work-equitable-digital-systems /projects/eds/   301
