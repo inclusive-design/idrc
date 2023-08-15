@@ -14,15 +14,15 @@ jobs:
     name: Lint JavaScript and SCSS
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Cache node modules
-      uses: actions/cache@v3
-      with:
-        path: node_modules
-        key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-    - name: Install dependencies and lint JavaScript and SCSS files
-      run: |
-        npm i
-        npm run lint
-      env:
-        CI: true
+      - uses: actions/checkout@v3
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies and lint JavaScript and SCSS files
+        run: |
+          npm i
+          npm run lint
+        env:
+          CI: true
