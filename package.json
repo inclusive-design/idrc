@@ -57,7 +57,7 @@
     "react": "16.14.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.6.6",
+    "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.6.5",
     "backstopjs": "6.2.2",
     "cross-env": "7.0.3",
