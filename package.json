@@ -19,7 +19,7 @@
     "lint:css": "stylelint \"**/*.scss\"",
     "lint:js": "eslint \"**/*.js\"",
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
-    "lint:yml": "eslint --no-error-on-unmatched-pattern \".github/**/*.yml\" \"**/*.yml\"",
+    "lint:yml": "eslint \"**/*.yml\"",
     "test": "start-server-and-test start http://localhost:8080 backstop:test",
     "start": "npm-run-all -l clean -p start:*",
     "start:cms": "node ./build-cms.js -w",
