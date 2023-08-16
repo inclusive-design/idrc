@@ -17,7 +17,7 @@
     "dev": "cross-env NODE_ENV=development eleventy --serve",
     "lint": "run-s -l lint:*",
     "lint:css": "stylelint \"**/*.scss\"",
-    "lint:js": "eslint \"**/*.js\"",
+    "lint:js": "eslint \"**/*.{js,md}\"",
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
     "lint:yml": "eslint \"**/*.yml\"",
     "test": "start-server-and-test start http://localhost:8080 backstop:test",
@@ -64,6 +64,7 @@
     "eslint": "8.47.0",
     "eslint-config-fluid": "2.1.1",
     "eslint-plugin-jsdoc": "46.4.6",
+    "eslint-plugin-markdown": "3.0.1",
     "eslint-plugin-react": "7.33.1",
     "eslint-plugin-yml": "1.8.0",
     "estrella": "1.4.1",
@@ -84,6 +85,9 @@
   "lint-staged": {
     "*.css": "stylelint --fix",
     "*.{js,yml}": "eslint --fix",
-    "*.md": "markdownlint-cli2 --fix"
+    "*.md": [
+        "markdownlint-cli2 --fix",
+        "eslint --fix"
+    ]
   }
 }
