@@ -7,10 +7,12 @@ updates:
     allow:
       - dependency-type: direct
     ignore:
+      - dependency-name: react
+        versions: [">16"]
       - dependency-name: stylelint
-        versions: [^15]
+        versions: [">14"]
       - dependency-name: stylelint-config-standard-scss
-        versions: [^8]
+        versions: [">6"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
