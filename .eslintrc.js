@@ -4,7 +4,8 @@ module.exports = {
     extends: [
         "fluid",
         "plugin:yml/standard",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:markdown/recommended"
     ],
     ignorePatterns: ["_site/", "src/_locales/messages.js", "!.*.cjs", "!.*.js", "!.github/"],
     env: {
@@ -17,6 +18,12 @@ module.exports = {
         ecmaVersion: 2020,
         sourceType: "module"
     },
+    overrides: [
+        {
+            files: ["**/*.md"],
+            processor: "markdown/markdown"
+        }
+    ],
     settings: {
         react: {
             version: "16"
