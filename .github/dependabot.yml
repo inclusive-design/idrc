@@ -12,7 +12,7 @@ updates:
       - dependency-name: stylelint
         versions: [">14"]
       - dependency-name: stylelint-config-standard-scss
-        versions: [">6"]
+        versions: [">7"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
