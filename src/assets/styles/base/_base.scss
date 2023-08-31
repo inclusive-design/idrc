@@ -138,12 +138,12 @@ blockquote {
 
     ul li::before {
         background-color: var(--fl-bgColor, var(--grey-200));
-        block-size: rem(6);
+        block-size: 0.4em;
         border-radius: 50%;
         content: "";
         display: inline-block;
-        inline-size: rem(6);
-        margin-block: rem(3);
+        inline-size: 0.4em;
+        margin-block: 0.15em;
         margin-inline: 0 rem(8);
     }
 }
