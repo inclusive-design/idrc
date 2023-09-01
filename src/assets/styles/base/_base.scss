@@ -121,7 +121,7 @@ blockquote {
 .section {
     ul {
         list-style: none;
-        padding-inline-start: 0;
+        padding-inline-start: rem(20);
     }
 
     ol {
@@ -129,29 +129,36 @@ blockquote {
     }
 
     li {
-        line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1));
-    }
-
-    li + li {
-        margin-block-start: rem(20);
+        line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1.5));
     }
 
     ul li::before {
-        background-color: var(--fl-bgColor, var(--grey-200));
-        block-size: 0.4em;
+        background-color: var(--fl-fgColor, var(--grey-200));
+        block-size: 0.3em;
         border-radius: 50%;
         content: "";
         display: inline-block;
-        inline-size: 0.4em;
-        margin-block: 0.15em;
+        inline-size: 0.3em;
+        margin-block: 0.2em;
         margin-inline: 0 rem(8);
+        outline: solid var(--fl-fgColor, var(--gery-200));
+    }
+
+    ul > li > ul li::before {
+        background-color: transparent;
+        outline: solid;
+    }
+
+    ul > li > ul > li > ul li::before {
+        background-color: var(--fl-fgColor, var(--grey-200));
+        border-radius: unset;
     }
 }
 
 * + p,
 * + ul,
 * + ol {
-    margin-block-start: rem(20);
+    margin-block: rem(15);
 }
 
 @each $name, $color in $colors {
