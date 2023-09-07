@@ -164,18 +164,31 @@ export function htmlDecode(input) {
  */
 export function processResourcesDisplayResults(resources) { // eslint-disable-line no-unused-vars
     const sortedArray = [];
-    const resultsWithPublishedYear = resources.filter(result => result.publishedYear);
-    const resultsWithoutPublishedYear = resources.filter(result => !result.publishedYear);
-    resultsWithPublishedYear.sort((a, b) => {
-        let compare = b.publishedYear.localeCompare(a.publishedYear);
-        if (compare === 0) {
-            compare = a.title.localeCompare(b.title);
-        }
-        return compare;
-    });
-    resultsWithoutPublishedYear.sort((a, b) => (a.title.localeCompare(b.title)));
+    const sortCategory = localStorage.getItem("sortCategory");
+    const isReverse = JSON.parse(localStorage.getItem("reverseSort"));
 
-    sortedArray.push(...resultsWithPublishedYear, ...resultsWithoutPublishedYear);
+    switch (sortCategory) {
+    case "publishedYear":
+        sortedArray.push(...resources.sort((a, b) => (isReverse ? b.publishedYear.localeCompare(a.publishedYear) : a.publishedYear.localeCompare(b.publishedYear))));
+        break;
+    case "title":
+        sortedArray.push(...resources.sort((a, b) => (isReverse ? b.title.localeCompare(a.title) : a.title.localeCompare(b.title))));
+        break;
+    default:
+        const resultsWithPublishedYear = resources.filter(result => result.publishedYear);
+        const resultsWithoutPublishedYear = resources.filter(result => !result.publishedYear);
+        resultsWithPublishedYear.sort((a, b) => {
+            let compare = b.publishedYear.localeCompare(a.publishedYear);
+            if (compare === 0) {
+                compare = a.title.localeCompare(b.title);
+            }
+            return compare;
+        });
+        resultsWithoutPublishedYear.sort((a, b) => (a.title.localeCompare(b.title)));
+
+        sortedArray.push(...resultsWithPublishedYear, ...resultsWithoutPublishedYear);
+        break;
+    }
 
     return sortedArray.map((oneRecord) => {
         oneRecord.title = htmlDecode(oneRecord.title);
