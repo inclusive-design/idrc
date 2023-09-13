@@ -1,6 +1,6 @@
 ---
 layout: layouts/project.njk
-projectName: Accessible Canada - Accessible World
+projectName: Accessible Canada - Un Monde Accessible
 permalink: /ACAW
 title: Faire progresser l'agenda mondial de l'accessibilité.
 shortName: ACAW

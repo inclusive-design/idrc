@@ -25,7 +25,6 @@ Monday, May 27, 2024 & Tuesday, May 28, 2024.
 
 ## Location
 
-
 Concordia University, Montreal, 
 1450 Rue Guy, 9th floor
 
@@ -40,7 +39,7 @@ All in person and remote sessions will be in English or French with translation 
 Online only (Zoom) $25 CAD
 Montreal, in-person $175 CAD
 
-## Learn More & Register 
+## Learn More & Register
 
 Coming soon!
 
