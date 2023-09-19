@@ -165,29 +165,45 @@ export function htmlDecode(input) {
 export function processResourcesDisplayResults(resources) { // eslint-disable-line no-unused-vars
     const sortedArray = [];
     const sortCategory = localStorage.getItem("sortCategory");
-    const isReverse = JSON.parse(localStorage.getItem("reverseSort"));
 
-    switch (sortCategory) {
-    case "publishedYear":
-        sortedArray.push(...resources.sort((a, b) => (isReverse ? b.publishedYear.localeCompare(a.publishedYear) : a.publishedYear.localeCompare(b.publishedYear))));
-        break;
-    case "title":
-        sortedArray.push(...resources.sort((a, b) => (isReverse ? b.title.localeCompare(a.title) : a.title.localeCompare(b.title))));
-        break;
-    default:
-        const resultsWithPublishedYear = resources.filter(result => result.publishedYear);
-        const resultsWithoutPublishedYear = resources.filter(result => !result.publishedYear);
-        resultsWithPublishedYear.sort((a, b) => {
-            let compare = b.publishedYear.localeCompare(a.publishedYear);
-            if (compare === 0) {
-                compare = a.title.localeCompare(b.title);
-            }
-            return compare;
-        });
-        resultsWithoutPublishedYear.sort((a, b) => (a.title.localeCompare(b.title)));
+    const pinnedResources = resources.filter(result => result.pinned);
+    const unpinnedResources = resources.filter(result => !result.pinned);
 
-        sortedArray.push(...resultsWithPublishedYear, ...resultsWithoutPublishedYear);
-        break;
+    if (pinnedResources) {
+        switch (sortCategory) {
+        case "ascTitle":
+            sortedArray.push(...pinnedResources.sort((a, b) => (a.title.localeCompare(b.title))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (a.title.localeCompare(b.title))));
+            break;
+        case "decTitle":
+            sortedArray.push(...pinnedResources.sort((a, b) => (b.title.localeCompare(a.title))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (b.title.localeCompare(a.title))));
+            break;
+        case "ascPublishedYear":
+            sortedArray.push(...pinnedResources.sort((a, b) => (a.publishedYear.localeCompare(b.publishedYear))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (a.publishedYear.localeCompare(b.publishedYear))));
+            break;
+        case "decPublishedYear":
+            sortedArray.push(...pinnedResources.sort((a, b) => (b.publishedYear.localeCompare(a.publishedYear))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (b.publishedYear.localeCompare(a.publishedYear))));
+            break;
+        default:
+            sortedArray.push(...pinnedResources.sort((a, b) => {
+                let compare = b.publishedYear.localeCompare(a.publishedYear);
+                if (compare === 0) {
+                    compare = a.title.localeCompare(b.title);
+                }
+                return compare;
+            }));
+            sortedArray.push(...unpinnedResources.sort((a, b) => {
+                let compare = b.publishedYear.localeCompare(a.publishedYear);
+                if (compare === 0) {
+                    compare = a.title.localeCompare(b.title);
+                }
+                return compare;
+            }));
+            break;
+        }
     }
 
     return sortedArray.map((oneRecord) => {
@@ -243,6 +259,30 @@ export function renderSearchResults(numberOfResources, resourceTopics, resourceT
     document.querySelector(".content").innerHTML = appliedFilterHtml;
 }
 
+export function renderSortUI() {
+    let sortUIHtml =
+        `<div class='resources-sort'>
+            <p>
+                Sort by:
+            </p>
+            <select id='resourcesSortSelector'>
+                <option value='ascTitle'>
+                    Title: A-Z
+                </option>
+                <option value='decTitle'>
+                    Title: Z-A
+                </option>
+                <option value='ascPublishedYear'>
+                    Published Year: Earliest to Latest
+                </option>
+                <option value='decPublishedYear'>
+                    Published Year: Latest to Earliest
+                </option>
+            </select>
+        </div>`;
+    document.querySelector(".content").innerHTML += sortUIHtml;
+}
+
 /*
  * Render the resources result
  * @param {Array} resources - An array of resources to be rendered.
@@ -257,7 +297,12 @@ export function renderResources(resources, resourceTopics, resourceTypes) { // e
         resourceLink.href = resource.link;
         resourcesHtml += `    	<div class='card'>
 			<div class='card-detail'>
-			<h3 class='card-title'>${escapeSpecialCharactersForHTML(resource.title)}</h3>
+            <div class='card-title'>
+                <h3>
+                    ${escapeSpecialCharactersForHTML(resource.title)}
+                </h3>
+                ${resource.pinned ? "<svg role='presentation'><use xlink:href='#pinned' /></svg>" : ""}
+            </div>
 			<div class='card-tags'>
 		`;
         if (resource.topics) {
@@ -370,6 +415,11 @@ export function bindEventListeners() { // eslint-disable-line no-unused-vars
     // Clicking 'apply filter' button redirects the page with applied filter options
 	 document.querySelector(".apply-button").addEventListener("click", () => {
         localStorage.setItem("setFocusOn", ".apply-button");
+    });
+
+    document.querySelector("#resourcesSortSelector").addEventListener("change", (e) => {
+        localStorage.setItem("sortCategory", e.target.value);
+        window.location = "/resources";
     });
 
     // Save element to focus after a filer option is removed by clicking on applied filter options

@@ -376,6 +376,18 @@
         padding-inline: 0;
     }
 
+    .resources-sort {
+        display: flex;
+        gap: rem(4);
+        justify-content: flex-end;
+        margin-block-end: rem(4);
+        
+        select {
+            border: rem(1) solid var(--fl-fgColor, var(--black));
+            border-radius: rem(3);
+        }
+    }
+
     .card {
         border-block-start: 3px solid var(--coral-500);
         margin-block-end: rem(48);
@@ -387,7 +399,16 @@
         }
 
         .card-title {
+            display: flex;
+            gap: rem(8);
             margin-block-start: rem(16);
+
+            svg {
+                block-size: rem(24);
+                inline-size: rem(24);
+                margin-block: auto;
+                stroke: var(--fl-fgColor, var(--black));
+            }
         }
 
         .card-tags {

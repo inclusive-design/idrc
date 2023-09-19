@@ -6,6 +6,7 @@ locale: en-CA
   "resources": [
   {%- for item in collections.resources %}
     {
+      "pinned": {% if item.data.pinned %} {{ item.data.pinned | dump | safe }} {% else %} false {% endif %},
       "title": {{ item.data.title | dump | safe }},
       "description": {{ item.data.description | dump | safe }},
       "publishedYear": {% if item.data.publishedYear %} {{ item.data.publishedYear | dump | safe }} {% else %} "" {% endif %},
