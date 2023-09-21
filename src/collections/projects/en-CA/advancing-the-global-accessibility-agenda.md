@@ -4,6 +4,7 @@ projectName: Accessible Canada - Accessible World
 permalink: /ACAW
 title: Advancing the global accessibility agenda
 shortName: ACAW
+thumbnailImage: /media/acaw_logo_white_07.png
 description: >-
   ACAW is a conference that aims to advance accessibility and inclusive design
   in various domains.
