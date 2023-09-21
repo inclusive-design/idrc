@@ -38,8 +38,8 @@ All in person and remote sessions will be in English or French with translation 
 
 ## Fees
 
-Online only (Zoom) $25 CAD\
-Montreal, in-person $175 CAD
+* Online only (Zoom) $25 CAD
+* Montreal, in-person $175 CAD
 
 ## Learn More & Register
 
