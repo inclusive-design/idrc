@@ -5,7 +5,8 @@ permalink: /ACAW
 title: Faire progresser l'agenda mondial de l'accessibilité.
 shortName: ACAW
 thumbnailImage: /media/acaw_logo_white_07.png
-thumbnailAltText: An outline of half a white mapleleaf lays across a multi-coloured sphere.
+thumbnailAltText: Le contour d’une demi-feuille d’érable blanche s’étend sur une
+  sphère multicolore.
 description: >-
   Une conférence visant à promouvoir l'accessibilité et la conception inclusive
   dans divers contextes. Cette conférence est l'occasion de co-créer des
@@ -20,7 +21,7 @@ description: >-
 
   Université Concordia, Montréal
 ---
-Bienvenue à Un Canada Accessible - Un Monde Accessible, une conférence visant à promouvoir l'accessibilité et la conception inclusive dans divers contextes. Nous vivons dans un monde où les obstacles à l'accessibilité sont divers et complexes, et où de nouveaux obstacles apparaissent à un rythme exponentiel. Comment soutenir la prise de décision inclusive ? Comment s'assurer que les contenus et les plateformes médiatiques sont accessibles aux personnes ayant des capacités et des préférences différentes ? Comment promouvoir l'inclusion des personnes handicapées dans la production, la représentation et la consommation des médias ? Comment pouvons-nous élaborer des normes d'accessibilité qui soient réactives, inclusives et efficaces ? Pour répondre à ces questions, nous devons créer une communauté de pratique qui englobe l'ensemble des expériences des personnes handicapées et d'autres domaines d'expertise nécessaires pour atteindre les objectifs en matière d'accessibilité. Cette conférence est l'occasion de co-créer des ressources et de partager les connaissances et les enseignements tirés de l'avancement de l'accessibilité et de l'inclusion. Nous vous invitons à vous joindre à nous dans cet effort de collaboration et à veiller à ce que l'agenda mondial de l'accessibilité soit guidé par les personnes handicapées. Ensemble, nous pouvons rendre le Canada et le monde plus accessibles et plus inclusifs pour tous.
+Bienvenue à Un Canada accessible– Un Monde Accessible, une conférence visant à promouvoir l'accessibilité et la conception inclusive dans divers contextes. Nous vivons dans un monde où les obstacles à l'accessibilité sont divers et complexes, et où de nouveaux obstacles apparaissent à un rythme exponentiel. Comment soutenir la prise de décision inclusive ? Comment s'assurer que les contenus et les plateformes médiatiques sont accessibles aux personnes ayant des capacités et des préférences différentes ? Comment promouvoir l'inclusion des personnes en situation d’handicape handicapées dans la production, la représentation et la consommation des médias ? Comment pouvons-nous élaborer des normes d'accessibilité qui soient réactives, inclusives et efficaces ? Pour répondre à ces questions? Nous devons créer une communauté de pratique qui englobe l'ensemble des expériences des personnes en situation d’handicape et d'autres domaines d'expertise nécessaires pour atteindre les objectifs en matière d'accessibilité. Cette conférence est l'occasion de cocréer des ressources et de partager les connaissances et les enseignements tirés de l'avancement de l'accessibilité et de l'inclusion. Nous vous invitons à vous joindre à nous dans cet effort de collaboration et à veiller à ce que l'agenda mondial de l'accessibilité soit guidé par les personnes en situation d’handicapées. Ensemble, nous pouvons rendre le Canada et le monde plus accessibles et plus inclusifs pour tous.
 
 ## Dates de la conférence
 
@@ -48,4 +49,4 @@ Montréal, en personne 175 $ CAD
 
 ## Contact
 
-Pour les possibilités de parrainage, le bénévolat ou d'autres questions, veuillez contacter [Lisa Liskovoi.](mailto:lliskovoi@ocadu.ca)
+Pour les possibilités de parrainage, ou pour faire du bénévolat ou d'autres questions, veuillez contacter Lisa Liskovoi [Lisa Liskovoi.](mailto:lliskovoi@ocadu.ca)
