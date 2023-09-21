@@ -2,7 +2,7 @@
 layout: layouts/project.njk
 projectName: Accessible Canada - Accessible World
 permalink: /ACAW/
-title: Accessible Canada - Accessible World
+title: Advancing the Global Accessibility Agenda
 shortName: ACAW
 thumbnailImage: /media/acaw_logo_white_07.png
 thumbnailAltText: An outline of half a white mapleleaf lays across a multi-coloured sphere.
