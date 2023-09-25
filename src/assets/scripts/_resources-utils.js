@@ -266,16 +266,16 @@ export function renderSortUI() {
                 Sort by:
             </p>
             <select id='resourcesSortSelector'>
-                <option value='ascTitle'>
+                <option value='ascTitle' ${localStorage.getItem("sortCategory") === "ascTitle" ? "selected=true" : ""}>
                     Title: A-Z
                 </option>
-                <option value='decTitle'>
+                <option value='decTitle' ${localStorage.getItem("sortCategory") === "decTitle" ? "selected=true" : ""}>
                     Title: Z-A
                 </option>
-                <option value='ascPublishedYear'>
+                <option value='ascPublishedYear' ${localStorage.getItem("sortCategory") === "ascPublishedYear" ? "selected=true" : ""}>
                     Published Year: Earliest to Latest
                 </option>
-                <option value='decPublishedYear'>
+                <option value='decPublishedYear' ${localStorage.getItem("sortCategory") === "decPublishedYear" ? "selected=true" : ""}>
                     Published Year: Latest to Earliest
                 </option>
             </select>
