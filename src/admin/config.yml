@@ -438,14 +438,14 @@ collections:
     label: Projects
     label_singular: Project
     folder: src/collections/projects
-    slug: "{{slug}}"
-    preview_path: "/projects/{{slug}}"
+    slug: "{{fields.slug}}"
+    preview_path: "/projects/{{fields.slug}}"
     create: true
     i18n: true
     fields:
       - {label: Layout, name: layout, widget: hidden, default: layouts/project.njk, i18n: duplicate}
       - {label: Project Name, name: projectName, widget: string, required: true, hint: "Suggestion: If this is a sub-page of a project, enter the name of the project here.", i18n: true}
-      - {label: "Override Default Project URL ", name: permalink, widget: string, required: false, hint: "Default URL is '/projects/[project-name]/'. To override enter a string including '/' (slash) at start and end (i.e. '/example/url/'). This must be unique.", i18n: true}
+      - {label: Project Name for URL, name: slug, widget: string, required: false, hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique.", i18n: true}
       - {label: Body Title, name: title, widget: string, required: true, hint: "The title that appears after the Project Name and before the Body content. Suggestion: use a descriptive title which includes keywords from the project.", i18n: true}
       - {label: Project Short Name, name: shortName, widget: string, required: false, hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project., i18n: true}
       - {label: Parent Page, name: parentTitle, widget: relation, collection: projects, value_field: title, search_fields: [title], required: false, hint: This is required for sub-pages of a project to define the sub-page hierarchy., i18n: true}
