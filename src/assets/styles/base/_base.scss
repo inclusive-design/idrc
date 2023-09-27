@@ -63,17 +63,13 @@ footer {
 a[hreflang],
 a[download],
 a[rel="external"] {
+    align-items: center;
+    display: inline-flex;
+    gap: 0.25em;
+
     svg {
         display: inline-block;
         inline-size: 1em;
-    }
-
-    svg:first-child {
-        margin-inline-end: 0.25em;
-    }
-
-    svg:last-child {
-        margin-inline-start: 0.25em;
     }
 }
 
@@ -121,37 +117,37 @@ blockquote {
 .section {
     ul {
         list-style: none;
-        padding-inline-start: 0;
+        padding-inline-start: rem(20);
     }
 
     ol {
+        list-style-position: inside;
         list-style-type: decimal;
+        padding-inline-start: rem(20);
     }
 
     li {
-        line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1));
-    }
-
-    li + li {
-        margin-block-start: rem(20);
+        line-height: calc(math.div(24, 16) * var(--fl-lineSpace-factor, 1.5));
     }
 
     ul li::before {
-        background-color: var(--fl-bgColor, var(--grey-200));
-        block-size: rem(6);
+        background-color: var(--fl-fgColor, var(--grey-200));
+        block-size: 0.4em;
         border-radius: 50%;
+        bottom: 0.2em;
         content: "";
         display: inline-block;
-        inline-size: rem(6);
-        margin-block: rem(3);
+        inline-size: 0.4em;
         margin-inline: 0 rem(8);
+        outline: solid var(--fl-fgColor, var(--grey-200));
+        position: relative;
     }
 }
 
 * + p,
 * + ul,
 * + ol {
-    margin-block-start: rem(20);
+    margin-block: rem(15);
 }
 
 @each $name, $color in $colors {
