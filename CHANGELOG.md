@@ -1,5 +1,24 @@
 # Changelog
 
+## [2.1.0](https://github.com/inclusive-design/idrc/compare/v2.0.2...v2.1.0) (2023-09-27)
+
+
+### Features
+
+* disallow indexing of /lib ([#696](https://github.com/inclusive-design/idrc/issues/696)) ([0e0c634](https://github.com/inclusive-design/idrc/commit/0e0c634eff4b493d3b1d7a81cba1e6c03f0a6376))
+* lint JS in Markdown ([#688](https://github.com/inclusive-design/idrc/issues/688)) ([10bd83b](https://github.com/inclusive-design/idrc/commit/10bd83b5e68c40b1baca33bdb4b0e942862b7e9c))
+* replace Netlify CMS with Decap CMS ([#699](https://github.com/inclusive-design/idrc/issues/699)) ([e3beeee](https://github.com/inclusive-design/idrc/commit/e3beeee6da4108800bcb690e85e0308327d0cc62))
+* replace project permalink field with slug field, restore missing order field, fix localization ([#724](https://github.com/inclusive-design/idrc/issues/724)) ([022e57c](https://github.com/inclusive-design/idrc/commit/022e57ce39177ba49c68399e832461da0c1db2f8))
+
+
+### Bug Fixes
+
+* adjust bullet size based on current heading ([#700](https://github.com/inclusive-design/idrc/issues/700)) ([6dcc1cb](https://github.com/inclusive-design/idrc/commit/6dcc1cb6ba1345f882f0b2f90a3269ebdb3a32b6))
+* exclude CMS from sitemap ([#689](https://github.com/inclusive-design/idrc/issues/689)) ([c745e63](https://github.com/inclusive-design/idrc/commit/c745e63b7ea0110b84f91db1814cac8812e419ad))
+* simpler YAML lint pattern ([#686](https://github.com/inclusive-design/idrc/issues/686)) ([6d23f13](https://github.com/inclusive-design/idrc/commit/6d23f13736b6a849b2f7e05051015ea6ecdddf42))
+* update dead links ([#701](https://github.com/inclusive-design/idrc/issues/701)) ([5504e9a](https://github.com/inclusive-design/idrc/commit/5504e9af5014e056b98aab8f41bcb01fd2224c34))
+* use correct Dependabot ignore syntax ([#690](https://github.com/inclusive-design/idrc/issues/690)) ([08ddc93](https://github.com/inclusive-design/idrc/commit/08ddc93b6e00aadb6a3e273860560494134fcae8))
+
 ## [2.0.2](https://github.com/inclusive-design/idrc/compare/v2.0.1...v2.0.2) (2023-08-11)
 
 
