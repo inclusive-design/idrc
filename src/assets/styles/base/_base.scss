@@ -64,7 +64,7 @@ a[hreflang],
 a[download],
 a[rel="external"] {
     align-items: center;
-    display: flex;
+    display: inline-flex;
     gap: 0.25em;
 
     svg {

@@ -19,7 +19,7 @@
         {% if projectName %}
         {% set links = page.url | locale_links %}
         {%- for link in links %}
-        
+    
         <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
             {%- include 'svg/icon-translation.svg' -%}<span>{{ 'Read in English' if link.lang === 'en-CA' else 'Lire en français' }}</span>
         </a>
