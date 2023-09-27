@@ -44,7 +44,7 @@ module.exports = eleventyConfig => {
 
     siteConfig.locales.forEach(lang => {
         eleventyConfig.addCollection(`projects_${lang}`, collection => {
-            let projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`).sort((a, b) => b.data.order - a.data.order)].reverse(),
+            let projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`)],
                 uniqueProjects = [];
 
             // Skip project subpages.
@@ -54,7 +54,7 @@ module.exports = eleventyConfig => {
                 }
             });
 
-            return uniqueProjects;
+            return uniqueProjects.sort((a, b) => parseInt(b.data.order) - parseInt(a.data.order)).reverse();
         });
     });
 
