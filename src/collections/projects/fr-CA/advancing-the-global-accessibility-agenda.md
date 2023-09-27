@@ -4,6 +4,7 @@ projectName: Un Canada accessible - Un monde accessible
 slug: acaw
 title: Un Canada accessible - Un monde accessible
 shortName: ACAW
+order: 1
 thumbnailImage: /media/acaw_logo_white_07.png
 thumbnailAltText: Le contour d’une demi-feuille d’érable blanche s’étend sur une
   sphère multicolore.
