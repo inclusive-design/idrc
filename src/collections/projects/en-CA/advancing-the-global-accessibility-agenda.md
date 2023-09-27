@@ -5,7 +5,7 @@ permalink: /ACAW/
 title: Accessible Canada - Accessible World
 shortName: ACAW
 thumbnailImage: /media/acaw_logo_white_07.png
-thumbnailAltText: An outline of half a white mapleleaf lays across a multi-coloured sphere.
+thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: >-
   ACAW is a conference that aims to advance accessibility and inclusive design
   in various domains.
