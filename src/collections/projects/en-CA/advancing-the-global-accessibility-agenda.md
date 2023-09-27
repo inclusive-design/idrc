@@ -4,7 +4,7 @@ projectName: Accessible Canada - Accessible World
 slug: acaw
 title: Accessible Canada - Accessible World
 shortName: ACAW
-order: 0
+order: 10
 thumbnailImage: /media/acaw_logo_white_07.png
 thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: >-
