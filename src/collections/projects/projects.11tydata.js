@@ -1,6 +1,5 @@
 
 
-const i18n = require("eleventy-plugin-i18n-gettext");
 const { generatePermalink } = require("eleventy-plugin-fluid");
 
 module.exports = {
@@ -19,7 +18,7 @@ module.exports = {
         /* Build a permalink using the title and language key if a custom permalink was not supplied. */
         permalink: data => {
             const locale = data.locale;
-            return generatePermalink(data, "projects", i18n._(locale, "projects"));
+            return generatePermalink(data, "projects", locale === "fr-CA" ? "projets" : "projects");
         }
     }
 };

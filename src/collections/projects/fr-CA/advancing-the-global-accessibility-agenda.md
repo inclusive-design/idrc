@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
 projectName: Un Canada accessible - Un monde accessible
-permalink: /ACAW/
+slug: acaw
 title: Un Canada accessible - Un monde accessible
 shortName: ACAW
 thumbnailImage: /media/acaw_logo_white_07.png
