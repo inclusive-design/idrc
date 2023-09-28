@@ -25,8 +25,6 @@ Welcome to Accessible Canada – Accessible World, a conference that aims to adv
 
 Monday, May 27, 2024 & Tuesday, May 28, 2024.
 
-[Add ACAW to your calendar](/media/acaw.ics)
-
 ## Location
 
 Concordia University, Montreal, 
