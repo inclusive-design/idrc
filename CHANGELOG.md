@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.2](https://github.com/inclusive-design/idrc/compare/v2.1.1...v2.1.2) (2023-09-28)
+
+
+### Bug Fixes
+
+* more sensible project title setup (resolves [#719](https://github.com/inclusive-design/idrc/issues/719)) ([#733](https://github.com/inclusive-design/idrc/issues/733)) ([ea33d60](https://github.com/inclusive-design/idrc/commit/ea33d601018f4e71052575f2473c14c2db91e5a7))
+
 ## [2.1.1](https://github.com/inclusive-design/idrc/compare/v2.1.0...v2.1.1) (2023-09-27)
 
 
