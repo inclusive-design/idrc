@@ -445,7 +445,7 @@ collections:
     sortable_fields: [title, order]
     fields:
       - {label: Layout, name: layout, widget: hidden, default: layouts/project.njk, i18n: duplicate}
-      - {label: Title, name: title, widget: string, required: true, hint: "The title of the project page or subpage. If this is a sub-page, the project title will be set by the Parent Project field below.", i18n: true}
+      - {label: Title, name: title, widget: string, required: true, hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below.", i18n: true}
       - {label: Title for URL, name: slug, widget: string, required: false, hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique.", i18n: true}
       - {label: Short Name, name: shortName, widget: string, required: false, hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project., i18n: true}
       - {label: Parent Project, name: parentTitle, widget: relation, collection: projects, value_field: title, search_fields: [title], required: false, hint: This is required for sub-pages of a project to indicate which project is the parent., i18n: true}
