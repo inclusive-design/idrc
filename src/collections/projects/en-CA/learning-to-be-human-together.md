@@ -1,5 +1,4 @@
 ---
-projectName: Learning to Be Human Together
 title: Learning to Be Human Together
 shortName: Humanizing Learning
 description: "This resource explores the importance of, and processes for,

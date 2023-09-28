@@ -1,5 +1,4 @@
 ---
-projectName: Future of Work and Disability
 title: Future of Work and Disability
 shortName: FWD
 description: >-
