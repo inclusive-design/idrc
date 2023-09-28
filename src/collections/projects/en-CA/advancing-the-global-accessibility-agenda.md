@@ -3,16 +3,13 @@ layout: layouts/project.njk
 projectName: Accessible Canada - Accessible World
 slug: acaw
 title: Accessible Canada - Accessible World
-shortName: ACAW
+shortName: ACAW/CAMA
 order: 10
 thumbnailImage: /media/acaw_logo_white_07.png
 thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: >-
-  ACAW is a conference that aims to advance accessibility and inclusive design
-  in various domains.
-
-
-  This conference is an opportunity to co-create resources and to share knowledge and lessons learned in advancing accessibility and inclusion. We invite you to join us in this collaborative effort, and to ensure that the global accessibility agenda is guided by people with disabilities. 
+  The ACAW conference is an opportunity to co-create resources and to share
+  knowledge and lessons learned in advancing accessibility and inclusion. 
 
 
   Monday, May 27, 2024 & Tuesday, May 28, 2024

@@ -9,12 +9,9 @@ thumbnailImage: /media/acaw_logo_white_07.png
 thumbnailAltText: Le contour d’une demi-feuille d’érable blanche s’étend sur une
   sphère multicolore.
 description: >-
-  Une conférence visant à promouvoir l'accessibilité et la conception inclusive
-  dans divers contextes. Cette conférence est l'occasion de co-créer des
-  ressources et de partager les connaissances et les enseignements tirés de
-  l'avancement de l'accessibilité et de l'inclusion. Nous vous invitons à vous
-  joindre à nous dans cet effort de collaboration et à veiller à ce que l'agenda
-  mondial de l'accessibilité soit guidé par les personnes handicapées.
+  CAMA conférence est l'occasion de co-créer des ressources et de partager les
+  connaissances et les enseignements tirés de l'avancement de l'accessibilité et
+  de l'inclusion. 
 
 
   Lundi 27 mai 2024 et mardi 28 mai 2024
