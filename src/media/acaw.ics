@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+LAST-MODIFIED:20230407T050750Z
+TZURL:https://www.tzurl.org/zoneinfo-outlook/America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZNAME:EDT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZNAME:EST
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20230928T170804Z
+UID:1695843452010-86166@ical.marudot.com
+DTSTART;VALUE=DATE:20240527
+DTEND;VALUE=DATE:20240529
+SUMMARY:Accessible Canada - Accessible World Conference
+URL:https://idrc.ocadu.ca/projects/accessible-canada-accessible-world/
+DESCRIPTION:Inclusive Design Research Centre is excited to announce the upcoming Accessible Canada — Accessible World Conference\, an international event dedicated to advancing accessibility and inclusive design across various domains such as standards\, policy and journalism. Join in person or online!
+LOCATION:Concordia University\, Montreal\, 1450 Rue Guy\, 9th floor
+END:VEVENT
+END:VCALENDAR
