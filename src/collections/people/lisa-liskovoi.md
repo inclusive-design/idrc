@@ -1,5 +1,7 @@
 ---
 title: Lisa Liskovoi
-job: Inclusive Designer, Consultant
+job: Senior Inclusive Designer, Digital Accessibility Consultant
+pronouns: she/her
 email: lliskovoi@ocadu.ca
 ---
+.
