@@ -1,6 +1,5 @@
 ---
 layout: layouts/project.njk
-projectName: Communication Access within the Accessible Canada Act
 title: Communication Access Reports
 parentTitle: Communication Access within the Accessible Canada Act
 ---

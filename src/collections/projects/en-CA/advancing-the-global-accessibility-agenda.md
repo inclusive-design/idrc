@@ -1,6 +1,5 @@
 ---
 layout: layouts/project.njk
-projectName: Accessible Canada - Accessible World
 slug: acaw
 title: Accessible Canada - Accessible World
 shortName: ACAW

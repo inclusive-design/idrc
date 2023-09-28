@@ -1,7 +1,5 @@
 ---
-projectName: Platform Co-op Development Kit
 title: Platform Co-op Development Kit
-permalink: /projects/platform-coop-development-kit/
 shortName: false
 description: >-
   Providing the tools and resources to start, grow and convert to platform

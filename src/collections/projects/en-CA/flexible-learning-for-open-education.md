@@ -1,5 +1,4 @@
 ---
-projectName: Flexible Learning for Open Education
 title: Flexible Learning for Open Education
 shortName: FLOE
 description: |-

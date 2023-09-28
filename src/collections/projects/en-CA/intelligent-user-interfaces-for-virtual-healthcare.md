@@ -1,12 +1,13 @@
 ---
-projectName: Intelligent User Interfaces for Virtual Healthcare
-title: Reducing barriers to virtual healthcare
+title: Intelligent User Interfaces for Virtual Healthcare
 description: Intelligent User Interfaces for Virtual Healthcare aims to reduce
   barriers to accessing healthcare through inclusive guidelines for (virtual or
   in-person) healthcare and an approach to personalization in these settings.
 order: 100
 thumbnailImage: ""
 ---
+## Reducing barriers to virtual healthcare
+
 During the pandemic response and recovery, many health units are moving to virtual care. With this transition there is a risk that vulnerable individuals and communities will be excluded which harms and poses risks for the excluded individuals. Inclusive Design Research Centre (IDRC) and the National Research Council (NRC) under the [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program) collaborated to:
 
 1. create guidelines for virtual healthcare systems that are inclusive and address the diversity of human needs, including cognitive, age-related and cultural barriers.  

@@ -164,9 +164,9 @@ const Project = ({entry}) => (
     <Preview
         entry={entry}
         path="layouts/project.njk"
-        context={({projectName, title, body}) => ({
+        context={({parentTitle, projectName, title, body}) => ({
             previewMode: true,
-            projectName,
+            parentTitle,
             title,
             headerBgColor: "coral-500",
             headerBorderColor: "coral-800",
