@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
 projectName: Un Canada accessible - Un monde accessible
-slug: acaw
+slug: cama
 title: Un Canada accessible - Un monde accessible
 shortName: ACAW/CAMA
 order: 10
