@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/inclusive-design/idrc/compare/v2.1.0...v2.1.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* try to address the order issue ([665f1df](https://github.com/inclusive-design/idrc/commit/665f1df7962aaa42c535844d9c93f131597a02de))
+
 ## [2.1.0](https://github.com/inclusive-design/idrc/compare/v2.0.2...v2.1.0) (2023-09-27)
 
 

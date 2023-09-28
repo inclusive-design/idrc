@@ -1,6 +1,5 @@
 ---
-projectName: "Future of Work: Equitable Digital Systems"
-title: EDS
+title: "Future of Work: Equitable Digital Systems"
 shortName: EDS
 slug: eds
 description: Equitable Digital Systems focused on examining the accessibility of

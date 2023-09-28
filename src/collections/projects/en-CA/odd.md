@@ -1,6 +1,5 @@
 ---
 layout: layouts/project.njk
-projectName: Optimizing Diversity with Disability
 title: Optimizing Diversity with Disability
 description: The goal of ODD is to investigate bias in hiring algorithms using
   non-disability specific and synthesized disability specific employment data.

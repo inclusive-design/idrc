@@ -1,5 +1,4 @@
 ---
-projectName: The Accessibility Exchange
 title: The Accessibility Exchange
 shortName: TAE
 description: Connecting the disability and Deaf communities and their supporters
