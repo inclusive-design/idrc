@@ -3,3 +3,4 @@
 _i("Read in ${language}")
 _('projects')
 _("projects")
+_('YouTube video player')
