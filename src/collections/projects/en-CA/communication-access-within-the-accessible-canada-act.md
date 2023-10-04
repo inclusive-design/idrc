@@ -26,7 +26,7 @@ IDRC is working to address communication access for people who have speech, lang
 
 Global and national scan of existing data and research related to incidence and prevalence of communication disability. Explore results below or [link to the table through a browser](https://airtable.com/shr0NHM9zvbug0nAh).
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shr0NHM9zvbug0nAh?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+<iframe title="Airtable - Communication Access Resources" class="airtable-embed" src="https://airtable.com/embed/shr0NHM9zvbug0nAh?backgroundColor=orange&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 [Visit Fluid Project Wiki for more information about the project](https://wiki.fluidproject.org/display/fluid/Communication+Access+within+the+Accessible+Canada+Act)
 

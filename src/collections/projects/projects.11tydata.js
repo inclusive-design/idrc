@@ -15,7 +15,7 @@ module.exports = {
             parent: data => data.parentTitle || "Projects",
             order: data => data.subPageOrder
         },
-        /* Build a permalink using the title and language key if a custom permalink was not supplied. */
+        /* Build a permalink using the title or slug and language key. */
         permalink: data => {
             const locale = data.locale;
             return generatePermalink(data, "projects", locale === "fr-CA" ? "projets" : "projects");

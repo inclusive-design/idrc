@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.2.0](https://github.com/inclusive-design/idrc/compare/v2.1.2...v2.2.0) (2023-10-04)
+
+
+### Features
+
+* handle slugs explicitly, update eleventy-plugin-fluid ([#743](https://github.com/inclusive-design/idrc/issues/743)) ([7ba8c58](https://github.com/inclusive-design/idrc/commit/7ba8c5814874fe9c5d328666d6bbe064338d6d2c))
+
+
+### Bug Fixes
+
+* accessiblity issues ([#741](https://github.com/inclusive-design/idrc/issues/741)) ([01b3668](https://github.com/inclusive-design/idrc/commit/01b36689c3f3e8243e47756f1a9b437c97a0f113))
+
 ## [2.1.2](https://github.com/inclusive-design/idrc/compare/v2.1.1...v2.1.2) (2023-09-28)
 
 
