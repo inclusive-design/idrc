@@ -269,11 +269,11 @@ export function renderSortUI() {
                 <option value='ascTitle' ${localStorage.getItem("sortCategory") === "ascTitle" ? "selected=true" : ""}>
                     Title
                 </option>
-                <option value='ascPublishedYear' ${localStorage.getItem("sortCategory") === "ascPublishedYear" ? "selected=true" : ""}>
-                    Oldest published
-                </option>
                 <option value='decPublishedYear' ${localStorage.getItem("sortCategory") === "decPublishedYear" ? "selected=true" : ""}>
                     Newest published
+                </option>
+                <option value='ascPublishedYear' ${localStorage.getItem("sortCategory") === "ascPublishedYear" ? "selected=true" : ""}>
+                    Oldest published
                 </option>
             </select>
         </div>`;
