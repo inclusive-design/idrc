@@ -1,5 +1,50 @@
 # Changelog
 
+## [2.2.0](https://github.com/inclusive-design/idrc/compare/v2.1.2...v2.2.0) (2023-10-04)
+
+
+### Features
+
+* handle slugs explicitly, update eleventy-plugin-fluid ([#743](https://github.com/inclusive-design/idrc/issues/743)) ([7ba8c58](https://github.com/inclusive-design/idrc/commit/7ba8c5814874fe9c5d328666d6bbe064338d6d2c))
+
+
+### Bug Fixes
+
+* accessiblity issues ([#741](https://github.com/inclusive-design/idrc/issues/741)) ([01b3668](https://github.com/inclusive-design/idrc/commit/01b36689c3f3e8243e47756f1a9b437c97a0f113))
+
+## [2.1.2](https://github.com/inclusive-design/idrc/compare/v2.1.1...v2.1.2) (2023-09-28)
+
+
+### Bug Fixes
+
+* more sensible project title setup (resolves [#719](https://github.com/inclusive-design/idrc/issues/719)) ([#733](https://github.com/inclusive-design/idrc/issues/733)) ([ea33d60](https://github.com/inclusive-design/idrc/commit/ea33d601018f4e71052575f2473c14c2db91e5a7))
+
+## [2.1.1](https://github.com/inclusive-design/idrc/compare/v2.1.0...v2.1.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* try to address the order issue ([665f1df](https://github.com/inclusive-design/idrc/commit/665f1df7962aaa42c535844d9c93f131597a02de))
+
+## [2.1.0](https://github.com/inclusive-design/idrc/compare/v2.0.2...v2.1.0) (2023-09-27)
+
+
+### Features
+
+* disallow indexing of /lib ([#696](https://github.com/inclusive-design/idrc/issues/696)) ([0e0c634](https://github.com/inclusive-design/idrc/commit/0e0c634eff4b493d3b1d7a81cba1e6c03f0a6376))
+* lint JS in Markdown ([#688](https://github.com/inclusive-design/idrc/issues/688)) ([10bd83b](https://github.com/inclusive-design/idrc/commit/10bd83b5e68c40b1baca33bdb4b0e942862b7e9c))
+* replace Netlify CMS with Decap CMS ([#699](https://github.com/inclusive-design/idrc/issues/699)) ([e3beeee](https://github.com/inclusive-design/idrc/commit/e3beeee6da4108800bcb690e85e0308327d0cc62))
+* replace project permalink field with slug field, restore missing order field, fix localization ([#724](https://github.com/inclusive-design/idrc/issues/724)) ([022e57c](https://github.com/inclusive-design/idrc/commit/022e57ce39177ba49c68399e832461da0c1db2f8))
+
+
+### Bug Fixes
+
+* adjust bullet size based on current heading ([#700](https://github.com/inclusive-design/idrc/issues/700)) ([6dcc1cb](https://github.com/inclusive-design/idrc/commit/6dcc1cb6ba1345f882f0b2f90a3269ebdb3a32b6))
+* exclude CMS from sitemap ([#689](https://github.com/inclusive-design/idrc/issues/689)) ([c745e63](https://github.com/inclusive-design/idrc/commit/c745e63b7ea0110b84f91db1814cac8812e419ad))
+* simpler YAML lint pattern ([#686](https://github.com/inclusive-design/idrc/issues/686)) ([6d23f13](https://github.com/inclusive-design/idrc/commit/6d23f13736b6a849b2f7e05051015ea6ecdddf42))
+* update dead links ([#701](https://github.com/inclusive-design/idrc/issues/701)) ([5504e9a](https://github.com/inclusive-design/idrc/commit/5504e9af5014e056b98aab8f41bcb01fd2224c34))
+* use correct Dependabot ignore syntax ([#690](https://github.com/inclusive-design/idrc/issues/690)) ([08ddc93](https://github.com/inclusive-design/idrc/commit/08ddc93b6e00aadb6a3e273860560494134fcae8))
+
 ## [2.0.2](https://github.com/inclusive-design/idrc/compare/v2.0.1...v2.0.2) (2023-08-11)
 
 

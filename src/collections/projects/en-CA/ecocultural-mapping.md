@@ -1,5 +1,4 @@
 ---
-projectName: Ecocultural Mapping Project
 title: Ecocultural Mapping Project
 permalink: /projects/ecocultural-mapping-project/
 shortName: false
