@@ -438,8 +438,8 @@ collections:
     label: Projects
     label_singular: Project
     folder: src/collections/projects
-    slug: "{{fields.slug}}"
-    preview_path: "/projects/{{fields.slug}}"
+    slug: "{{slug}}"
+    preview_path: "/projects/{{slug}}"
     create: true
     i18n: true
     sortable_fields: [title, order]
