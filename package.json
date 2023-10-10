@@ -46,7 +46,7 @@
     "d3-selection": "3.0.0",
     "decap-cms": "3.0.7",
     "eleventy-plugin-fluid": "2.7.0",
-    "eleventy-plugin-pwa-v2": "1.0.0",
+    "eleventy-plugin-pwa-v2": "1.0.1",
     "eleventy-plugin-sharp": "0.1.1",
     "eslint-config-fluid": "2.1.1",
     "infusion": "4.6.0",
