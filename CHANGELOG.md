@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/inclusive-design/idrc/compare/v2.2.0...v2.2.1) (2023-10-10)
+
+
+### Bug Fixes
+
+* resolve slug error ([#746](https://github.com/inclusive-design/idrc/issues/746)) ([bd08c6d](https://github.com/inclusive-design/idrc/commit/bd08c6d7b2b446ce846b0a1497ba2a9685cef265))
+
 ## [2.2.0](https://github.com/inclusive-design/idrc/compare/v2.1.2...v2.2.0) (2023-10-04)
 
 
