@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
 title: Regulating the Digital Domain
-slug: rtdd
+slug: /rtdd/
 order: 2
 subPageOrder: -4
 thumbnailImage: /media/rtdd-logo-small.png
@@ -14,11 +14,9 @@ The project Regulating the Digital Domain (RtDD) is looking at the challenges pe
 
 During the project the RtDD team will:
 
-\* work to uncover what causes barriers, 
-
-\* focus on whole systems (not just a localized issue), 
-
-\* identify ways to stop barriers or prevent barriers from becoming worse 
+* work to uncover what causes barriers, 
+* focus on whole systems (not just a localized issue), 
+* identify ways to stop barriers or prevent barriers from becoming worse 
 
 The RtDD goal is to improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities).
 
