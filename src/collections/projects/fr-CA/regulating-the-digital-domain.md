@@ -1,6 +1,6 @@
 ---
 layout: layouts/project.njk
-order: 2
-subPageOrder: -4
+order: 0
+subPageOrder: 0
 thumbnailImage: /media/rtdd-logo-small.png
 ---
