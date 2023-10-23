@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
 title: Financial Inclusion
-order: 20
+order: 11
 thumbnailImage: /media/financial-inclusion.jpg
 thumbnailAltText: Canadian coins, a smart phone, and a credit card lying on top
   of a computer keyboard.
