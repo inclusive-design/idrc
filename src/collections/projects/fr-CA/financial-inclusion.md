@@ -1,5 +1,5 @@
 ---
 layout: layouts/project.njk
-order: 20
+order: 11
 thumbnailImage: /media/financial-inclusion.jpg
 ---
