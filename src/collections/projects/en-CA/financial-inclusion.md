@@ -2,9 +2,8 @@
 layout: layouts/project.njk
 title: Financial Inclusion
 order: 11
-thumbnailImage: /media/financial-inclusion.jpg
-thumbnailAltText: Canadian coins, a smart phone, and a credit card lying on top
-  of a computer keyboard.
+thumbnailImage: /media/money.png
+thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy
   by addressing barriers to financial inclusion.
 ---
