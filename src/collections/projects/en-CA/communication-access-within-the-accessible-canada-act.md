@@ -1,8 +1,8 @@
 ---
-shortName: ""
-order: 65
 title: Communication Access within the Accessible Canada Act
+shortName: ""
 parentTitle: ""
+order: 65
 subPageOrder: 0
 thumbnailImage: /media/project-communication_access.png
 description: IDRC is working to address communication access for people who have
@@ -155,10 +155,10 @@ Shalaine Sedres is a graduate student pursuing a Master’s degree at the Univer
 
 ![communication access symbol](/media/commaccsymbol.png)
 
-[Learn about the communication access symbol (c)](https://www.cdacanada.com/resources/accessible-businesses-and-services/communication-access-symbol/)
-
 ## Acknowledgements
 
-This project is funded by a grant from Accessibility Standards Canada
+Funded by Accessibility Standards Canada/the Government of Canada.
 
-![Canada logo](/media/canada.png)
+![Canadian Federal Government logo](/media/asc-signature-en-fr-black.png)
+
+![Canadian Federal Government logo](/media/canadawordmark-black-bil.png)
