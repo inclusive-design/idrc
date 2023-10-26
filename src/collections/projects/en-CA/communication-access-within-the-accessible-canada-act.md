@@ -161,6 +161,10 @@ Shalaine Sedres is a graduate student pursuing a Master’s degree at the Univer
 
 Funded by Accessibility Standards Canada/the Government of Canada.
 
+{% imagePositionWithText "/media/canadawordmark-black-bil.png", "", "center", "50", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
+
 ![Accessibility Standards Canada logo](/media/asc-signature-en-fr-black.png)
 
 ![Canadian Federal Government logo](/media/canadawordmark-black-bil.png)
