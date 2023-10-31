@@ -8,6 +8,8 @@ thumbnailImage: /media/rtdd-logo-small.png
 thumbnailAltText: RtDD logo
 description: ""
 ---
+![](/media/rtdd-logo-small.png)
+
 ## A﻿bout the project
 
 Regulating the Digital Domain (RtDD) is looking at the challenges people with disabilities face when interacting with ICT (information and communication technologies) and digital tools. 
