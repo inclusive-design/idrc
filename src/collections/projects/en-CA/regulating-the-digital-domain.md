@@ -8,7 +8,7 @@ thumbnailImage: /media/rtdd-logo-small.png
 thumbnailAltText: RtDD logo
 description: ""
 ---
-![](/media/rtdd-logo-small.png)
+![]()
 
 ## A﻿bout the project
 
