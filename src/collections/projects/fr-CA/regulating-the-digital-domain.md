@@ -1,5 +1,6 @@
 ---
 layout: layouts/project.njk
+parentTitle: Regulating the Digital Domain
 order: 15
 subPageOrder: 0
 thumbnailImage: /media/rtdd-logo-small.png
