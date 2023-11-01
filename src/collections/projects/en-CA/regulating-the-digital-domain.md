@@ -8,7 +8,7 @@ thumbnailImage: /media/rtdd-logo-small.png
 thumbnailAltText: RtDD logo
 description: ""
 ---
-![Regulating the Digital Domain logo](/media/rtdd-logo-small.png)
+![](/media/rtdd-logo-small.png)
 
 ## A﻿bout the project
 
@@ -34,9 +34,17 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the
 
 
 
+
+
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
+
+
 
 
 
