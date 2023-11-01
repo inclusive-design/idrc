@@ -6,7 +6,8 @@ order: 15
 subPageOrder: 0
 thumbnailImage: /media/rtdd-logo-small.png
 thumbnailAltText: RtDD logo
-description: ""
+description: Regulating the Digital Domain (RtDD) is focused on supporting
+  development of accessibility standards for existing and new technologies.
 ---
 ![Regulating the Digital Domain logo](/media/rtdd-logo-small.png)
 
