@@ -27,6 +27,12 @@ The RtDD goal is to improve digital inclusion and ICT accessibility for the full
 
 ## Acknowledgement
 
+Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the Government of Canada.
 
+{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "undefined" %}
 
-![Accessibility Standards Canada](/media/asc-signature-en-fr-black.png)
+{% endimagePositionWithText %}
+
+{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
