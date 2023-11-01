@@ -34,9 +34,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
