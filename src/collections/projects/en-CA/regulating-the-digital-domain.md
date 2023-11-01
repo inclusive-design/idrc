@@ -12,18 +12,15 @@ description: ""
 
 ## A﻿bout the project
 
-Regulating the Digital Domain (RtDD) is looking at the challenges people with disabilities face when interacting with ICT\* (information and communication technologies) and digital tools\**. 
+Regulating the Digital Domain (RtDD) is focused on supporting development of accessibility standards for existing and new technologies. Standards Council of Canada describes a standard as “a document that provides a set of agreed-upon rules, guidelines or characteristics for activities or their results.” In the project, we will co-research with people with disabilities ways to address challenges they face when using information and communication technologies (ICT) and digital tools like websites and applications. 
 
-During the project the RtDD team will:
+During the project the RtDD collaborators will:
 
-* work to uncover what causes barriers, 
-* focus on whole systems (not just a localized issue), 
-* identify ways to stop barriers or prevent barriers from becoming worse 
+* work to uncover what causes barriers, 
+* focus on whole systems (not just a localized issue), 
+* identify ways to address barriers or prevent new barriers from occurring. 
 
-The RtDD goal is to improve digital inclusion and ICT accessibility for the full range of PWD (people with disabilities). To make improvements the project will address the design of a regulatory system focused on regulating the digital domain. The project findings will inform Accessibility Standards Canada on greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
-
-\* ICT enables users to access, store, transmit, understand, and manipulate information. \
-\*\* Digital tools include online platforms and software applications.
+The RtDD goal is to improve digital inclusion and ICT accessibility for people with disabilities and diverse needs. To make improvements the project will develop recommendations for the design of guidelines for accessibility of digital technologies. The project findings will be shared with Accessibility Standards Canada to help them create standards that support greater accessibility to digital tools, content, transactions and/or computer-mediated processes.
 
 ## Acknowledgements
 
@@ -35,9 +32,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
