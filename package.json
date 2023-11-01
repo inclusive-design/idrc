@@ -70,7 +70,7 @@
     "eslint-plugin-yml": "1.10.0",
     "estrella": "1.4.1",
     "husky": "8.0.3",
-    "linkedom": "0.15.6",
+    "linkedom": "0.16.1",
     "lint-staged": "14.0.1",
     "markdownlint-cli2": "0.10.0",
     "markdownlint-config-fluid": "0.1.5",
