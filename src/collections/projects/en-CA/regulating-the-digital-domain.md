@@ -2,7 +2,7 @@
 layout: layouts/project.njk
 title: Regulating the Digital Domain
 slug: /rtdd/
-order: 1
+order: 15
 subPageOrder: 0
 thumbnailImage: /media/rtdd-logo-small.png
 thumbnailAltText: RtDD logo
