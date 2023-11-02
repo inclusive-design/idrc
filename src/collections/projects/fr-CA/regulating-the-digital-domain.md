@@ -17,6 +17,6 @@ Au cours du projet, les collaborateurs de RtDD :
 * se concentrer sur l’ensemble des systèmes (et pas seulement sur un problème localisé), 
 * trouver des moyens d’éliminer les obstacles ou d’empêcher l’apparition de nouveaux obstacles. 
 
-L’objectif de RtDD est d’améliorer l’inclusion numérique et l’accessibilité aux TIC pour les personnes handicapées et ayant des besoins divers. Afin d’apporter des améliorations, le projet élaborera des recommandations pour l’élaboration de lignes directrices pour l’accessibilité des technologies numériques. Les résultats du projet seront communiqués à Normes d’accessibilité Canada afin de l’aider à créer des normes qui favorisent une plus grande accessibilité aux outils, au contenu, aux transactions et aux processus informatisés numériques.
+L’objectif de RtDD est d’améliorer l’inclusion numérique et l’accessibilité aux TIC pour les personnes handicapées et ayant des besoins divers. Afin d’apporter des améliorations, le projet élaborera des recommandations pour l’élaboration de lignes directrices pour l’accessibilité des technologies numériques. Les résultats du projet seront communiqués à Normes d’accessibilité Canada afin de l’aider à créer des normes qui favorisent une plus grande accessibilité aux outils, au contenu, aux transactions et aux processus médiatisés par ordinateur.
 
 ## Remerciements
