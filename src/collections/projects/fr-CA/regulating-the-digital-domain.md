@@ -1,5 +1,7 @@
 ---
 layout: layouts/project.njk
+title: Réglementation du domaine numérique
+slug: rddn
 parentTitle: ""
 order: 15
 subPageOrder: 0
