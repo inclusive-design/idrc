@@ -26,8 +26,10 @@ Monday, May 27, 2024 & Tuesday, May 28, 2024.
 
 ## Location
 
-Concordia University, Montreal, 
-1450 Rue Guy, 9th floor
+Concordia University
+
+1450 Rue Guy, 9th floor\
+Montreal, Quebec, Canada
 
 [Event location map](https://www.google.com/maps/place/1450+Guy+St,+Montreal,+QC+H3H+1J5/@45.4952779,-73.5790443,17z/data=!3m1!4b1!4m6!3m5!1s0x4cc91a6a52492981:0xc3b56f119b9fe0fb!8m2!3d45.4952779!4d-73.5790443!16s%2Fg%2F11csmgmpcd?entry=ttu)
 
