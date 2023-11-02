@@ -4,6 +4,9 @@ title: Review of the Review
 slug: rotr
 order: 16
 thumbnailImage: /media/markus-winkler-fraiqhkcc0-unsplash_crop.png
+description: Review of the Review (RotR) is assisting Accessibility Standards
+  Canada in developing standards development processes and activities that are
+  accessible and inclusively designed.
 ---
 ## About the project
 
