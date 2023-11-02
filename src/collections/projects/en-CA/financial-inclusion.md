@@ -13,6 +13,12 @@ The Financial Inclusion Project is working with Canadians with disabilities to b
 
 ## Acknowledgement
 
-This project was funded by **Accessibility Standards Canada**
+Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / Government of Canada.
 
-![The logo of the Government of Canada.](/media/canada.png)
+{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "100", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
+
+{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
