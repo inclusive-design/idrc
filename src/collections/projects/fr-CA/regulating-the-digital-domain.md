@@ -22,3 +22,13 @@ Au cours du projet, les collaborateurs de RtDD :
 L’objectif de RtDD est d’améliorer l’inclusion numérique et l’accessibilité aux TIC pour les personnes handicapées et ayant des besoins divers. Afin d’apporter des améliorations, le projet élaborera des recommandations pour l’élaboration de lignes directrices pour l’accessibilité des technologies numériques. Les résultats du projet seront communiqués à Normes d’accessibilité Canada afin de l’aider à créer des normes qui favorisent une plus grande accessibilité aux outils, au contenu, aux transactions et aux processus médiatisés par ordinateur.
 
 ## Remerciements
+
+Financé par [Normes d’accessibilité Canada](https://accessibilite.canada.ca/) / le gouvernement du Canada.
+
+{% imagePositionWithText "/media/asc-signature-fr-black.png", "Logo du Normes d'accessibilité Canada", "left", "50", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
+
+{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Logo du gouvernement fédéral du Canada", "left", "25", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
