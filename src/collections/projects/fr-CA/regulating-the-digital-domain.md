@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
-title: Réglementation du domaine numérique
-slug: rddn
+title: Regulating the Digital Domain
+slug: rtdd
 parentTitle: ""
 order: 15
 subPageOrder: 0
@@ -11,7 +11,7 @@ thumbnailImage: /media/rtdd-logo-small.png
 
 ## Sur le projet
 
-La réglementation du domaine numérique (RtDD) vise à soutenir l’élaboration de normes d’accessibilité pour les technologies existantes et nouvelles. Le Conseil canadien des normes décrit une norme comme « un document qui fournit un ensemble de règles, de lignes directrices ou de caractéristiques convenues pour les activités ou leurs résultats ». Dans le cadre de ce projet, nous rechercherons conjointement avec des personnes handicapées des moyens de relever les défis auxquels elles sont confrontées lorsqu’elles utilisent les technologies de l’information et de la communication (TIC) et les outils numériques tels que les sites Web et les applications. 
+Regulating the Digital Domain (RtDD) vise à soutenir l’élaboration de normes d’accessibilité pour les technologies existantes et nouvelles. Le Conseil canadien des normes décrit une norme comme « un document qui fournit un ensemble de règles, de lignes directrices ou de caractéristiques convenues pour les activités ou leurs résultats ». Dans le cadre de ce projet, nous rechercherons conjointement avec des personnes handicapées des moyens de relever les défis auxquels elles sont confrontées lorsqu’elles utilisent les technologies de l’information et de la communication (TIC) et les outils numériques tels que les sites Web et les applications. 
 
 Au cours du projet, les collaborateurs de RtDD :
 
