@@ -20,10 +20,6 @@ description: >-
 
 Welcome to Accessible Canada – Accessible World, a conference that aims to advance accessibility and inclusive design in various domains. 
 
-{% imagePositionWithText "undefined", "", "center", "100", "Auto", "undefined" %}
-
-{% endimagePositionWithText %}
-
 We live in a world where accessibility barriers are diverse and complex, and new ones are emerging at an exponential rate. How do we support inclusive decision-making? How can we develop accessibility standards that are responsive, inclusive, and effective? How can we promote the inclusion of people with disabilities in media production, representation, and consumption? To answer these questions, we need to build an expansive community of practice that encompasses the full range of experiences of disability and other areas of expertise needed to realize accessibility goals. This conference is an opportunity to co-create resources and to share knowledge and lessons learned in advancing accessibility and inclusion. We invite you to join us in this collaborative effort, and to ensure that the global accessibility agenda is guided by people with disabilities. Together, we can make Canada and the world more accessible and inclusive for everyone.
 
 ## Dates
@@ -62,8 +58,12 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 {% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 {% endimagePositionWithText %}
