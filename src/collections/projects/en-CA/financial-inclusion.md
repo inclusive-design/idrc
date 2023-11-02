@@ -11,7 +11,7 @@ Many Canadians with disabilities face barriers when trying to engage in financia
 
 The Financial Inclusion Project is working with Canadians with disabilities to better understand the barriers and vulnerabilities Canadians face when dealing with their finances, and together create approaches that address their unique needs.
 
-## Acknowledgement
+## Acknowledgements
 
 Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / Government of Canada.
 
@@ -19,9 +19,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / Gove
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
