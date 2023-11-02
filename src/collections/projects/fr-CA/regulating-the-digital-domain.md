@@ -1,5 +1,6 @@
 ---
 layout: layouts/project.njk
+title: ""
 parentTitle: ""
 order: 15
 subPageOrder: 0
