@@ -4,7 +4,7 @@ title: Un Canada accessible - Un monde accessible
 slug: cama
 shortName: ACAW/CAMA
 order: 10
-thumbnailImage: /media/acaw_logo_white_07.png
+thumbnailImage: /media/acaw-logo-no-words.png
 thumbnailAltText: Le contour d’une demi-feuille d’érable blanche s’étend sur une
   sphère multicolore.
 description: >-

@@ -4,7 +4,7 @@ title: Accessible Canada — Accessible World
 slug: acaw
 shortName: ACAW/CAMA
 order: 10
-thumbnailImage: /media/acaw_logo_white_07.png
+thumbnailImage: /media/acaw-logo-no-words.png
 thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: >-
   The ACAW conference is an opportunity to co-create resources and to share
