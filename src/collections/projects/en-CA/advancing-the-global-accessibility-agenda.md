@@ -16,7 +16,9 @@ description: >-
 
   Concordia University, Montreal
 ---
-{% imagePositionWithText "/media/acaw-logo-no-words.png", "ACAW logo no words: Silhouette of a half maple leaf on a multicoloured sphere", "center", "50", "Auto", "undefined" %}
+{% imagePositionWithText "/media/acaw-logo-no-words.png", "ACAW logo no words: Silhouette of a half maple leaf on a multicoloured sphere", "left", "50", "Auto", "undefined" %}
+
+
 
 
 
@@ -76,9 +78,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
