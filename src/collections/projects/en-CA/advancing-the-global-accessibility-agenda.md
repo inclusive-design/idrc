@@ -16,7 +16,11 @@ description: >-
 
   Concordia University, Montreal
 ---
-![ACAW logo no words: A white silhouette of a half maple leaf laying on a multicoloured sphere. ](/media/acaw-logo-no-words.png)
+{% imagePositionWithText "/media/acaw-logo-no-words.png", "ACAW logo no words: Silhouette of a half maple leaf on a multicoloured sphere", "center", "50", "Auto", "undefined" %}
+
+
+
+{% endimagePositionWithText %}
 
 Welcome to Accessible Canada – Accessible World, a conference that aims to advance accessibility and inclusive design in various domains. 
 
@@ -64,9 +68,17 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
+
+
 
 
 
