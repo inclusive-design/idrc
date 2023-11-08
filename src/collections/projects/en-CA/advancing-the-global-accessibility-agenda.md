@@ -4,7 +4,7 @@ title: Accessible Canada — Accessible World
 slug: acaw
 shortName: ACAW/CAMA
 order: 10
-thumbnailImage: /media/acaw_logo_white_07.png
+thumbnailImage: /media/acaw-logo-no-words.png
 thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: >-
   The ACAW conference is an opportunity to co-create resources and to share
@@ -16,7 +16,7 @@ description: >-
 
   Concordia University, Montreal
 ---
-![logo: A white silhouette of a half maple leaf laying on a multicoloured sphere. ](/media/acaw_small_colour_transparent-01.png)
+![ACAW logo no words: A white silhouette of a half maple leaf laying on a multicoloured sphere. ](/media/acaw-logo-no-words.png)
 
 Welcome to Accessible Canada – Accessible World, a conference that aims to advance accessibility and inclusive design in various domains. 
 
@@ -60,9 +60,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
