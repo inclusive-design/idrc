@@ -24,7 +24,7 @@ We live in a world where accessibility barriers are diverse and complex, and new
 
 ## Dates
 
-Monday, May 27, 2024 & Tuesday, May 28, 2024.
+Monday, May 27 & Tuesday, May 28, 2024
 
 ## Location
 
@@ -62,9 +62,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
