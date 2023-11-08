@@ -20,6 +20,8 @@ description: >-
 
 
 
+
+
 {% endimagePositionWithText %}
 
 Welcome to Accessible Canada – Accessible World, a conference that aims to advance accessibility and inclusive design in various domains. 
@@ -72,9 +74,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
