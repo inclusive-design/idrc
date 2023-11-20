@@ -17,9 +17,11 @@ Are you interested in financial inclusion? Did you come across an interesting ar
 
 ## Acknowledgements
 
-Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / Government of Canada.
+Funded by [Employment and Social Development Canada](https://www.canada.ca/en/employment-social-development.html) / Government of Canada.
 
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
+{% imagePositionWithText "/media/esdc-edsc.jpg", "Employment and Social Development Canada Logo", "left", "75", "Auto", "undefined" %}
+
+
 
 
 
@@ -30,6 +32,8 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / Gove
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
