@@ -28,7 +28,7 @@ jobs:
           site_name: idrc
           max_timeout: 300
       - name: Set environment variables
-        uses: allenevans/set-env@v2.2.0
+        uses: allenevans/set-env@v3.0.0
         with:
           BASE_URL: ${{ steps.netlify.outputs.url }}
       - name: Install dependencies, generate reference images, run visual regression tests
