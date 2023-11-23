@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/inclusive-design/idrc/compare/v2.2.1...v2.3.0) (2023-11-23)
+
+
+### Features
+
+* remove analytics (resolves [#813](https://github.com/inclusive-design/idrc/issues/813)) ([#814](https://github.com/inclusive-design/idrc/issues/814)) ([f532e22](https://github.com/inclusive-design/idrc/commit/f532e22ebddbf4692d6346ff835b685266cc3a9d))
+
 ## [2.2.1](https://github.com/inclusive-design/idrc/compare/v2.2.0...v2.2.1) (2023-10-10)
 
 
