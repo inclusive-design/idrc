@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "17.7.2",
-    "@commitlint/config-conventional": "17.7.0",
+    "@commitlint/config-conventional": "18.1.0",
     "backstopjs": "6.2.2",
     "cross-env": "7.0.3",
     "decap-server": "3.0.1",
