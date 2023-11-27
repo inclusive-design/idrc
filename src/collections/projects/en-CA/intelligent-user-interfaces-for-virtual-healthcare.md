@@ -13,7 +13,7 @@ During the pandemic response and recovery, many health units are moving to virtu
 1. create guidelines for virtual healthcare systems that are inclusive and address the diversity of human needs, including cognitive, age-related and cultural barriers.  
 2. develop an architecture plan for an openly licensed software platform that enables interaction and interface personalization to meet currently unmet needs faced by individuals when engaging in virtual healthcare.
 
-### Project Links
+### Relevant Links
 
 * Guide for Reducing Barriers to Virtual Healthcare:
   * [English PDF](/media/guide-for-reducing-barriers-to-virtual-healthcare.pdf)
