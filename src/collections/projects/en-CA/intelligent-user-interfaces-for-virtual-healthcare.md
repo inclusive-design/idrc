@@ -1,10 +1,10 @@
 ---
 title: Intelligent User Interfaces for Virtual Healthcare
+order: 100
+thumbnailImage: ""
 description: Intelligent User Interfaces for Virtual Healthcare aims to reduce
   barriers to accessing healthcare through inclusive guidelines for (virtual or
   in-person) healthcare and an approach to personalization in these settings.
-order: 100
-thumbnailImage: ""
 ---
 ## Reducing barriers to virtual healthcare
 
@@ -16,6 +16,12 @@ During the pandemic response and recovery, many health units are moving to virtu
 ### Project Links
 
 * Guide for Reducing Barriers to Virtual Healthcare: [Latest web version](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare), [PDF version July 5 2021](https://wiki.fluidproject.org/download/attachments/237470030/Guide-for-Reducing-Barriers-to-Virtual-Healthcare.pdf)
+
+  * [](https://wiki.fluidproject.org/download/attachments/237470030/Guide-for-Reducing-Barriers-to-Virtual-Healthcare.pdf)
+
+    [English PDF](/media/guide-for-reducing-barriers-to-virtual-healthcare.pdf)
+  *   [French PDF](/media/md-3734_guide-for-reducing-barriers-to-virtual-healthcare_f.pdf)
+  * [Web version](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare)
 * [Software Approaches for Expressing Personal Preferences for Healthcare](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Software+Approaches+for+Expressing+Personal+Preferences+for+Healthcare)
 * [Project Wiki](https://wiki.fluidproject.org/display/IUIGFVP/Intelligent+User+Interfaces+and+Guidelines+for+Vulnerable+Populations) - detailed information including methodology, feedback, and future direction
 
