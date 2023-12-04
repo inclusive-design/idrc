@@ -44,7 +44,7 @@ Each section consists of guidelines covering many scenarios that can help identi
 
 The *Software Approach for Expressing Personal Preferences for Healthcare* outlines a method for reducing barriers using a system that gathers, stores, and applies personal preferences. Implementing this approach can address issues identified by the Guide.
 
-The *Approach* does not prescribe a particular technology, rather it leaves those choices open so system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
+The *Approach* does not prescribe a particular technology, rather it leaves those choices open to system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
 
 ## Using the Guide and the Approach
 
