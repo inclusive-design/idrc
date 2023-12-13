@@ -40,7 +40,7 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 * January 15, 2024 - The project is hosting an information session on January 15, 2024 1 to 2pm Eastern Time.
 * January 19 to 23, 2024 - Participate in a paid survey about financial inclusion.
 
-See [How to get involved](#get_involved) below for more information and how to sign up.
+See "How to get involved" below for more information and how to sign up.
 
 ## Project goal
 
@@ -68,7 +68,6 @@ The mission of this project is to:
 
 With this project, we want to involve people who are most excluded from financial systems. This includes people with disabilities, Deaf people, and people who experience other barriers when interacting with financial systems. Participants will use their lived experience to define what financial inclusion means, and help make decisions about important topics to be included for future phases of this project.
 
-<a name="get_involved" />
 ## How to get involved
 
 ### Project info session
