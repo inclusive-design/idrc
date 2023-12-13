@@ -89,7 +89,7 @@ We will be doing a survey to learn about your experiences with financial systems
 
 ### Share an interesting article
 
-Help the project by sharing an article (research paper, news article, etc.) related to our goals on this project (above)  using the [article submission web form](https://forms.office.com/r/FRJcS7yBH3) or by completing the [article submission Word document](https://idrc.ocadu.ca/media/financial-inclusion-article-submission-form.docx) and emailing it back to Jonathan and jhung@ocadu.ca.
+Help the project by sharing an article (research paper, news article, etc.) related to our goals on this project (above)  using the [article submission web form](https://forms.office.com/r/FRJcS7yBH3) or by completing the [article submission Word document](/media/financial-inclusion-article-submission-form.docx) and emailing it back to Jonathan and jhung@ocadu.ca.
 
 ## Research ethics clearance
 
