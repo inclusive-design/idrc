@@ -8,17 +8,21 @@ description: Enabling Canadians with disabilities to engage fully in the economy
   by addressing barriers to financial inclusion.
 ---
 ## About the Financial Inclusion Project
+
 The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD) and Deaf people in Canada. 
 
 ### What do we mean when we say "financial systems"?
+
 Financial systems include any systems related to money and finances. 
 
 They include institutions like:
+
 * Banks and credit unions
 * Insurance companies
 * Canada Revenue Agency
 
 Financial systems affect your everyday interactions with money, like:
+
 * Making payments and transferring money
 * Managing your finances and planning for the future
 * Managing your credit score
@@ -28,6 +32,7 @@ Financial systems affect your everyday interactions with money, like:
 * Proving you are who you say you are when you make a transaction
 
 ### What do we mean when we say "disability"?
+
 A disability is not a medical issue or an impairment to be fixed. A disability comes up when the way something works creates a barrier for someone because of their physical, mental health, developmental, or sensory traits. These barriers prevent a person’s full and equal participation in society.
 
 ## Upcoming project events
@@ -35,9 +40,10 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 * January 15, 2024 - The project is hosting an information session on January 15, 2024 1 to 2pm Eastern Time.
 * January 19 to 23, 2024 - Participate in a paid survey about financial inclusion.
 
-See [How to get involved](#How to get involved) for more information and how to sign up.
+See [How to get involved](#get_involved) below for more information and how to sign up.
 
 ## Project goal
+
 * Understand the barriers for people with disabilities and Deaf people in interacting with financial systems 
 * Understand the risks for people with disabilities and Deaf people in financial systems, and the ways they may be vulnerable to fraud and financial abuse
 * Learn about things that have been done in the past that make the financial systems more inclusive
@@ -45,6 +51,7 @@ See [How to get involved](#How to get involved) for more information and how to 
 * Share any knowledge we gain with the broader disability and Deaf communities, through both online and in-person networks.
 
 ### Outcomes
+
 At the end of October 2024, this project expects to:
 Publish a report about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
 Outline a plan for sustaining ongoing community engagement, advocacy, and education on issues related to financial inclusion.
@@ -57,11 +64,11 @@ The mission of this project is to:
 * Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
 * Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
 
-
 ## Who we want to involve
 
 With this project, we want to involve people who are most excluded from financial systems. This includes people with disabilities, Deaf people, and people who experience other barriers when interacting with financial systems. Participants will use their lived experience to define what financial inclusion means, and help make decisions about important topics to be included for future phases of this project.
 
+<a name="get_involved">
 ## How to get involved
 
 ### Project info session
@@ -75,6 +82,7 @@ Sign up using the [info session sign up web form](https://forms.office.com/r/8Gr
 If you cannot join the info session but are interested in participating, you can email our team at jhung@ocadu.ca with your questions or to set up a one-on-one call.
 
 ### Financial inclusion survey
+
 We will be doing a survey to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
 
 Sign up by January 19 using the [survey sign up web form](https://forms.office.com/r/2863jfbG2E)
@@ -82,6 +90,7 @@ Sign up by January 19 using the [survey sign up web form](https://forms.office.c
 Please note that the survey has limited capacity, and not everyone who signs up will be selected to participate. 
 
 ### Share an interesting article
+
 Help the project by sharing an article (research paper, news article, etc.) related to our goals on this project (above)  using the [article submission web form](https://forms.office.com/r/FRJcS7yBH3) or by completing the [article submission Word document](https://idrc.ocadu.ca/media/financial-inclusion-article-submission-form.docx) and emailing it back to Jonathan and jhung@ocadu.ca.
 
 ## Research Ethics
@@ -89,6 +98,7 @@ Help the project by sharing an article (research paper, news article, etc.) rela
 If you have any questions about these co-design activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
 
 ## Project Partners
+
 * Alliance for Equity of Blind Canadians
 * ARCH Disability Law Centre
 * L’arche Canada 
@@ -121,9 +131,13 @@ Funded by [Employment and Social Development Canada](https://www.canada.ca/en/em
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
