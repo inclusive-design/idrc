@@ -74,10 +74,9 @@ With this project, we want to involve people who are most excluded from financia
 
 Join us at this session if you want to learn more about our project before signing up to participate. 
 
-When: January 15, from 1-2pm Eastern or 10-11am Pacific
-
-Where: [Financial inclusion info session Zoom web meeting](https://ocadu.zoom.us/j/85305227791?pwd=VkZxVWxpSGw0c3hscGdmdENpYk1sQT09)
-Sign up using the [info session sign up web form](https://forms.office.com/r/8Grha1C0Ze)
+* When: January 15, from 1-2pm Eastern or 10-11am Pacific
+* Where: [Financial inclusion info session Zoom web meeting](https://ocadu.zoom.us/j/85305227791?pwd=VkZxVWxpSGw0c3hscGdmdENpYk1sQT09)
+* Sign up using the [info session sign up web form](https://forms.office.com/r/8Grha1C0Ze)
 
 If you cannot join the info session but are interested in participating, you can email our team at jhung@ocadu.ca with your questions or to set up a one-on-one call.
 
@@ -85,15 +84,14 @@ If you cannot join the info session but are interested in participating, you can
 
 We will be doing a survey to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
 
-Sign up by January 19 using the [survey sign up web form](https://forms.office.com/r/2863jfbG2E)
-
-Please note that the survey has limited capacity, and not everyone who signs up will be selected to participate. 
+* Sign up by January 19 using the [survey sign up web form](https://forms.office.com/r/2863jfbG2E)
+* Please note that the survey has limited capacity, and not everyone who signs up will be selected to participate. 
 
 ### Share an interesting article
 
 Help the project by sharing an article (research paper, news article, etc.) related to our goals on this project (above)  using the [article submission web form](https://forms.office.com/r/FRJcS7yBH3) or by completing the [article submission Word document](https://idrc.ocadu.ca/media/financial-inclusion-article-submission-form.docx) and emailing it back to Jonathan and jhung@ocadu.ca.
 
-## Research Ethics
+## Research ethics clearance
 
 If you have any questions about these co-design activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
 
