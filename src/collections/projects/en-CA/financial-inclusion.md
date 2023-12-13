@@ -68,9 +68,9 @@ The mission of this project is to:
 
 With this project, we want to involve people who are most excluded from financial systems. This includes people with disabilities, Deaf people, and people who experience other barriers when interacting with financial systems. Participants will use their lived experience to define what financial inclusion means, and help make decisions about important topics to be included for future phases of this project.
 
-<a name="get_involved" />
+<a name="get_involved">
 ## How to get involved
-
+</a>
 ### Project info session
 
 Join us at this session if you want to learn more about our project before signing up to participate. 
