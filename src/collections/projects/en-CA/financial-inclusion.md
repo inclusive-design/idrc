@@ -82,9 +82,9 @@ If you cannot join the info session but are interested in participating, you can
 
 ### Financial inclusion survey
 
-We will be doing a survey to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
+We will be doing a survey from January 14 to 24 to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
 
-* Sign up by January 19 using the [survey sign up web form](https://forms.office.com/r/2863jfbG2E)
+* Sign up by January 13 using the [survey sign up web form](https://forms.office.com/r/2863jfbG2E)
 * Please note that the survey has limited capacity, and not everyone who signs up will be selected to participate. 
 
 ### Share an interesting article
