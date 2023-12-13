@@ -37,8 +37,9 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 
 ## Upcoming project events
 
+* January 14 to 24, 2024 - Participate in a paid survey about financial inclusion.
 * January 15, 2024 - The project is hosting an information session on January 15, 2024 1 to 2pm Eastern Time.
-* January 19 to 23, 2024 - Participate in a paid survey about financial inclusion.
+
 
 See "How to get involved" below for more information and how to sign up.
 
