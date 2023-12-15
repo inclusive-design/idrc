@@ -37,7 +37,7 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 
 ## Upcoming project events
 
-* January 14 to 24, 2024 - Participate in a paid survey about financial inclusion.
+* January 14 to 24, 2024 - Participate in a paid questionnaire about financial inclusion.
 * January 15, 2024 - The project is hosting an information session on January 15, 2024 1 to 2pm Eastern Time.
 
 
@@ -81,12 +81,12 @@ Join us at this session if you want to learn more about our project before signi
 
 If you cannot join the info session but are interested in participating, you can email our team at jhung@ocadu.ca with your questions or to set up a one-on-one call.
 
-### Financial inclusion survey
+### Financial inclusion questionnaire
 
-We will be doing a survey from January 14 to 24 to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
+We will be doing a questionnaire from January 14 to 24 to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
 
-* Sign up by January 13 using the [survey sign up web form](https://forms.office.com/r/2863jfbG2E)
-* Please note that the survey has limited capacity, and not everyone who signs up will be selected to participate. 
+* Sign up by January 13 using the [questionnaire sign up web form](https://forms.office.com/r/2863jfbG2E)
+* Please note that the questionnaire has limited capacity, and not everyone who signs up will be selected to participate. 
 
 ### Share an interesting article
 
@@ -94,7 +94,7 @@ Help the project by sharing an article (research paper, news article, etc.) rela
 
 ## Research ethics clearance
 
-If you have any questions about these co-design activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
+If you have any questions about the research activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
 
 ## Project Partners
 
