@@ -85,7 +85,7 @@ If you cannot join the info session but are interested in participating, you can
 
 We will be doing a questionnaire from January 14 to 24 to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
 
-* Sign up by January 13 using the [questionnaire sign up web form](https://forms.office.com/r/2863jfbG2E)
+* Sign up form is coming soon.
 * Please note that the questionnaire has limited capacity, and not everyone who signs up will be selected to participate. 
 
 ### Share an interesting article
