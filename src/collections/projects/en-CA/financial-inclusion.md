@@ -37,9 +37,8 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 
 ## Upcoming project events
 
-* January 14 to 24, 2024 - Participate in a paid questionnaire about financial inclusion.
-* January 15, 2024 - The project is hosting an information session on January 15, 2024 1 to 2pm Eastern Time.
-
+* January 15 to 31, 2024 - Participate in a paid opportunity to share how financial systems and services can be more accessible.
+* January 22, 2024 - The project is hosting an information session on January 22, 2024 1 to 2pm Eastern Time.
 
 See "How to get involved" below for more information and how to sign up.
 
@@ -75,18 +74,18 @@ With this project, we want to involve people who are most excluded from financia
 
 Join us at this session if you want to learn more about our project before signing up to participate. 
 
-* When: January 15, from 1-2pm Eastern or 10-11am Pacific
+* When: January 22, 2-3pm Atlantic / 1-2pm Eastern / 10-11am Pacific
 * Where: [Financial inclusion info session Zoom web meeting](https://ocadu.zoom.us/j/85305227791?pwd=VkZxVWxpSGw0c3hscGdmdENpYk1sQT09)
-* Sign up using the [info session sign up web form](https://forms.office.com/r/8Grha1C0Ze)
+* [Sign up with this web form](https://forms.office.com/r/2863jfbG2E)
 
 If you cannot join the info session but are interested in participating, you can email our team at jhung@ocadu.ca with your questions or to set up a one-on-one call.
 
-### Financial inclusion questionnaire
+### Community input
 
-We will be doing a questionnaire from January 14 to 24 to learn about your experiences with financial systems. Participants will be paid an honorarium of $65 Canadian Dollars.
+From January 15 to 31, share how financial systems and services can be more accessible by completing an online form, or by having a conversation with one of our team members. Participants will be paid an honorarium of $65 Canadian Dollars.
 
-* Sign up form is coming soon.
-* Please note that the questionnaire has limited capacity, and not everyone who signs up will be selected to participate. 
+* [Sign up with this web form](https://forms.office.com/r/2863jfbG2E)
+* Due to limited capacity, and not everyone who signs up will be selected to participate. 
 
 ### Share an interesting article
 
