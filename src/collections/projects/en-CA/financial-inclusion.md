@@ -75,7 +75,7 @@ With this project, we want to involve people who are most excluded from financia
 Join us at this session if you want to learn more about our project before signing up to participate. 
 
 * When: January 22, 2-3pm Atlantic / 1-2pm Eastern / 10-11am Pacific
-* Where: [Financial inclusion info session Zoom web meeting](https://ocadu.zoom.us/j/85305227791?pwd=VkZxVWxpSGw0c3hscGdmdENpYk1sQT09)
+* Where: Online Zoom web meeting
 * [Sign up with this web form](https://forms.office.com/r/2863jfbG2E)
 
 If you cannot join the info session but are interested in participating, you can email our team at jhung@ocadu.ca with your questions or to set up a one-on-one call.
