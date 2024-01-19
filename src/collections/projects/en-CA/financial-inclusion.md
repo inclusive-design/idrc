@@ -1,6 +1,8 @@
 ---
 layout: layouts/project.njk
-title: Financial Inclusion
+title: Partnerships for Financial Inclusion
+slug: financial-inclusion
+shortName: Financial Inclusion
 order: 11
 thumbnailImage: /media/money.png
 thumbnailAltText: a stack of coins with a credit card on top.
