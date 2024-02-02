@@ -37,8 +37,7 @@ Toutes les sessions en personne et à distance se dérouleront en anglais ou en 
 
 ## Tarifs
 
-* En ligne seulement (Zoom) 50 $ CAD
-* Montréal, en personne 125 $ CAD
+Détails à venir!
 
 ## Pour en savoir plus et s'inscrire
 
