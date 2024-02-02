@@ -37,12 +37,12 @@ Toutes les sessions en personne et à distance se dérouleront en anglais ou en 
 
 ## Tarifs
 
-* En ligne seulement (Zoom) 25 $ CAD
-* Montréal, en personne 175 $ CAD
+* En ligne seulement (Zoom) 50 $ CAD
+* Montréal, en personne 125 $ CAD
 
 ## Pour en savoir plus et s'inscrire
 
- à venir!
+[Inscrivez-vous ici](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world/register)
 
 ## Contact
 

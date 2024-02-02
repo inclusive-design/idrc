@@ -24,6 +24,8 @@ description: >-
 
 
 
+
+
 {% endimagePositionWithText %}
 
 Welcome to Accessible Canada – Accessible World, a conference that aims to advance accessibility and inclusive design in various domains. 
@@ -49,12 +51,12 @@ All in person and remote sessions will be in English or French with translation 
 
 ## Fees
 
-* Online only (Zoom) $25 CAD
-* Montreal, in-person $175 CAD
+* Online only (Zoom) $50 CAD
+* Montreal, in-person $125 CAD
 
 ## Learn More & Register
 
-Coming soon!
+[Register here](https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world/register)
 
 ## Contact
 
@@ -80,9 +82,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
