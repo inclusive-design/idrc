@@ -24,8 +24,11 @@ description: >-
 
 
   Université Concordia, Montréal
+link: https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world
 ---
 {% imagePositionWithText "/media/acaw-logo-no-words.png", "ACAW logo no words: Silhouette of a half maple leaf on a multicoloured sphere", "left", "50", "Auto", "undefined" %}
+
+
 
 
 
@@ -60,9 +63,7 @@ Montreal, Quebec, Canada
 
 All in person and remote sessions will be in English or French with translation provided. Real-time captions as well as ASL and LSQ will be provided. 
 
-## Fees
 
-Details coming soon!
 
 ## Learn More & Register
 
@@ -96,9 +97,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+
 
 
 
