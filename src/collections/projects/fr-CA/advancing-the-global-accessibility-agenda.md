@@ -17,6 +17,7 @@ description: >-
 
 
   Université Concordia, Montréal
+link: https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world
 ---
 Bienvenue à Un Canada accessible– Un Monde Accessible, une conférence visant à promouvoir l'accessibilité et la conception inclusive dans divers contextes. Nous vivons dans un monde où les obstacles à l'accessibilité sont divers et complexes, et où de nouveaux obstacles apparaissent à un rythme exponentiel. Comment soutenir la prise de décision inclusive ?  Comment pouvons-nous élaborer des normes d'accessibilité qui soient réactives, inclusives et efficaces ? Comment promouvoir l'inclusion des personnes en situation d’handicape handicapées dans la production, la représentation et la consommation des médias ? Pour répondre à ces questions? Nous devons créer une communauté de pratique qui englobe l'ensemble des expériences des personnes en situation d’handicape et d'autres domaines d'expertise nécessaires pour atteindre les objectifs en matière d'accessibilité. Cette conférence est l'occasion de cocréer des ressources et de partager les connaissances et les enseignements tirés de l'avancement de l'accessibilité et de l'inclusion. Nous vous invitons à vous joindre à nous dans cet effort de collaboration et à veiller à ce que l'agenda mondial de l'accessibilité soit guidé par les personnes en situation d’handicapées. Ensemble, nous pouvons rendre le Canada et le monde plus accessibles et plus inclusifs pour tous.
 
@@ -35,9 +36,7 @@ Université Concordia, Montréal,
 
 Toutes les sessions en personne et à distance se dérouleront en anglais ou en français et seront traduites. Des sous-titres en temps réel ainsi que l'ASL et la LSQ seront fournis. 
 
-## Tarifs
 
-Détails à venir!
 
 ## Pour en savoir plus et s'inscrire
 
