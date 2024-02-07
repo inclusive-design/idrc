@@ -1,5 +1,3 @@
-
-
 const { generatePermalink } = require("eleventy-plugin-fluid");
 
 module.exports = {
@@ -8,17 +6,25 @@ module.exports = {
     headerBorderColor: "coral-800",
     headerTextColor: "black",
     eleventyComputed: {
-        langDir: data => data.supportedLanguages[data.locale].dir,
+        langDir: (data) => data.supportedLanguages[data.locale].dir,
         /* Configure navigation */
         eleventyNavigation: {
-            key: data => data.title,
-            parent: data => data.parentTitle || "Projects",
-            order: data => data.subPageOrder
+            key: (data) => data.title,
+            parent: (data) => data.parentTitle || "Projects",
+            order: (data) => data.subPageOrder
         },
         /* Build a permalink using the title or slug and language key. */
-        permalink: data => {
+        permalink: (data) => {
+            if (data.link) {
+                return false;
+            }
+
             const locale = data.locale;
-            return generatePermalink(data, "projects", locale === "fr-CA" ? "projets" : "projects");
+            return generatePermalink(
+                data,
+                "projects",
+                locale === "fr-CA" ? "projets" : "projects"
+            );
         }
     }
 };
