@@ -16,7 +16,7 @@ module.exports = {
         /* Build a permalink using the title or slug and language key. */
         permalink: (data) => {
             if (data.link) {
-                return false;
+                return null;
             }
 
             const locale = data.locale;

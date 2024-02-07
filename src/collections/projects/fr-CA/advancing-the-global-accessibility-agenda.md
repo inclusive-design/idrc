@@ -1,7 +1,6 @@
 ---
 layout: layouts/project.njk
 title: Un Canada accessible - Un monde accessible
-slug: cama
 shortName: ACAW/CAMA
 order: 10
 thumbnailImage: /media/acaw-logo-no-words.png

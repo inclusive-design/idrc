@@ -1,7 +1,6 @@
 ---
 layout: layouts/project.njk
 title: Accessible Canada — Accessible World
-slug: acaw
 shortName: ACAW/CAMA
 order: 10
 thumbnailImage: /media/acaw-logo-no-words.png
