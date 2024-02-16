@@ -1,19 +1,85 @@
 ---
 layout: layouts/project.njk
-title: Financial Inclusion
+title: Partnerships for Financial Inclusion
+slug: financial-inclusion
+shortName: Financial Inclusion
 order: 11
 thumbnailImage: /media/money.png
 thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy
   by addressing barriers to financial inclusion.
 ---
-Many Canadians with disabilities face barriers when trying to engage in financial transactions whether its paying for goods at a store, securing a loan, or dealing with a customer service agent. Many of the same Canadians may also be vulnerable to increased financial hardships due to lack of knowledge, or because their circumstances.
+## About the Financial Inclusion Project
 
-The Financial Inclusion Project is working with Canadians with disabilities to better understand the barriers and vulnerabilities Canadians face when dealing with their finances, and together create approaches that address their unique needs.
+The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD) and Deaf people in Canada. 
 
-## Help contribute to this project
+### What do we mean when we say "financial systems"?
 
-Are you interested in financial inclusion? Did you come across an interesting article you would like to share with us? [Complete this form](https://forms.office.com/Pages/ResponsePage.aspx?id=0WnkBiotj0aum33wlo62146I-qVkjjBLuR-BFX21la1UREFGTVpYVDdMTUdORFlJTTMyODdENFVCTC4u) and help us make interactions with the financial sector in Canada more inclusive.
+Financial systems include any systems related to money and finances. 
+
+They include institutions like:
+
+* Banks and credit unions
+* Insurance companies
+* Canada Revenue Agency
+
+Financial systems affect your everyday interactions with money, like:
+
+* Making payments and transferring money
+* Managing your finances and planning for the future
+* Managing your credit score
+* Getting a loan or paying off debt
+* Dealing with a tax audit
+* Trying to qualify for an assistance program
+* Proving you are who you say you are when you make a transaction
+
+### What do we mean when we say "disability"?
+
+A disability is not a medical issue or an impairment to be fixed. A disability comes up when the way something works creates a barrier for someone because of their physical, mental health, developmental, or sensory traits. These barriers prevent a person’s full and equal participation in society.
+
+## Project goal
+
+* Understand the barriers for people with disabilities and Deaf people in interacting with financial systems 
+* Understand the risks for people with disabilities and Deaf people in financial systems, and the ways they may be vulnerable to fraud and financial abuse
+* Learn about things that have been done in the past that make the financial systems more inclusive
+* Explore promising ways to make up-and-coming financial systems more inclusive
+* Share any knowledge we gain with the broader disability and Deaf communities, through both online and in-person networks.
+
+### Outcomes
+
+At the end of October 2024, this project expects to:
+Publish a report about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
+Outline a plan for sustaining ongoing community engagement, advocacy, and education on issues related to financial inclusion.
+
+### Mission
+
+The mission of this project is to:
+
+* Help the disability and Deaf communities take action to remove barriers and advocate for more inclusive financial systems
+* Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
+* Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
+
+## Research ethics clearance
+
+If you have any questions about the research activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
+
+## Project Partners
+
+* Alliance for Equity of Blind Canadians
+* ARCH Disability Law Centre
+* L’arche Canada 
+* Bank of Canada 
+* Black Deaf Canada 
+* Canadian Council of the Blind
+* Carleton Accessibility Institute
+* Council of Canadians with Disabilities
+* Disability without Poverty 
+* Independent Living Canada
+* IRIS Institute
+* March of Dimes Canada
+* Neil Squire Society
+* Planned Lifetime Advocacy Network 
+* Toronto Metropolitan University 
 
 ## Acknowledgements
 
@@ -21,24 +87,8 @@ Funded by [Employment and Social Development Canada](https://www.canada.ca/en/em
 
 {% imagePositionWithText "/media/esdc-edsc.jpg", "Employment and Social Development Canada Logo", "left", "75", "Auto", "undefined" %}
 
-
-
-
-
-
-
-
-
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
-
-
-
-
-
-
-
-
 
 {% endimagePositionWithText %}
