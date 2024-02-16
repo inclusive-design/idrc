@@ -87,32 +87,8 @@ Funded by [Employment and Social Development Canada](https://www.canada.ca/en/em
 
 {% imagePositionWithText "/media/esdc-edsc.jpg", "Employment and Social Development Canada Logo", "left", "75", "Auto", "undefined" %}
 
-
-
-
-
-
-
-
-
-
-
-
-
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
-
-
-
-
-
-
-
-
-
-
-
-
 
 {% endimagePositionWithText %}
