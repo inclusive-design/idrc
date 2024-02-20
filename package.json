@@ -72,7 +72,7 @@
     "husky": "8.0.3",
     "linkedom": "0.16.8",
     "lint-staged": "14.0.1",
-    "markdownlint-cli2": "0.10.0",
+    "markdownlint-cli2": "0.12.1",
     "markdownlint-config-fluid": "0.1.5",
     "postcss-scss": "4.0.9",
     "rimraf": "5.0.5",
