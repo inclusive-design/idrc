@@ -71,7 +71,7 @@
     "estrella": "1.4.1",
     "husky": "8.0.3",
     "linkedom": "0.16.8",
-    "lint-staged": "14.0.1",
+    "lint-staged": "15.2.2",
     "markdownlint-cli2": "0.12.1",
     "markdownlint-config-fluid": "0.1.5",
     "postcss-scss": "4.0.9",
