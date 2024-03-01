@@ -16,7 +16,7 @@ jobs:
           site_name: idrc
           max_timeout: 300
       - name: Run Lighthouse CI audits
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@v11
         with:
           runs: 3
           urls: |
@@ -36,7 +36,7 @@ jobs:
         with:
           site_name: idrc
       - name: Run Lighthouse CI audits
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@v11
         with:
           runs: 3
           urls: |
