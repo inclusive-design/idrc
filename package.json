@@ -23,8 +23,7 @@
     "test": "start-server-and-test start http://localhost:8080 backstop:test",
     "start": "npm-run-all -l clean -p start:*",
     "start:cms": "node ./build-cms.js -w",
-    "start:eleventy": "run-p dev cms",
-    "prepare": "husky install"
+    "start:eleventy": "run-p dev cms"
   },
   "repository": {
     "type": "git",
