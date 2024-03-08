@@ -26,6 +26,7 @@ a {
     color: var(--fl-linkColor);
     font-family: var(--fl-font-family, var(--ff-display));
     text-decoration: underline;
+    text-underline-offset: 0.3em;
 }
 
 main,
@@ -44,7 +45,8 @@ footer {
     a:hover {
         background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
         color: var(--fl-bgColor, currentColor);
-        outline-color: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+        text-decoration: none;
+        text-underline-offset: unset;
     }
 
     a:focus {
@@ -81,10 +83,6 @@ a[hreflang] {
     font-size: var(--step-1);
     font-weight: var(--fw-semibold);
     margin-block-start: var(--step-2);
-}
-
-.content a:visited {
-    text-decoration-color: var(--fl-linkColor, var(--yellow-500));
 }
 
 main h1,
