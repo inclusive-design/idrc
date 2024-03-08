@@ -17,11 +17,9 @@
     header > svg {
         block-size: auto;
         inline-size: 3rem;
-    }
 
-    header > svg {
         .cls-1 {
-            fill: var(--fl-bgColor, url(#linear-gradient));
+            fill: var(--fl-bgColor, url("#linear-gradient"));
         }
 
         .cls-1,
@@ -49,11 +47,11 @@
         }
 
         .cls-4 {
-            fill: var(--fl-bgColor, url(#linear-gradient-2));
+            fill: var(--fl-bgColor, url("#linear-gradient-2"));
         }
 
         .cls-5 {
-            fill: var(--fl-bgColor, url(#linear-gradient-3));
+            fill: var(--fl-bgColor, url("#linear-gradient-3"));
         }
 
         .cls-8 {
