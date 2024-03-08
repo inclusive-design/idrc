@@ -19,6 +19,52 @@
         inline-size: 3rem;
     }
 
+    header > svg {
+        .cls-1 {
+            fill: var(--fl-bgColor, url(#linear-gradient));
+        }
+
+        .cls-1,
+        .cls-2,
+        .cls-3,
+        .cls-4,
+        .cls-5 {
+            stroke-width: 0;
+        }
+
+        .cls-2 {
+            fill: var(--fl-fgColor, #231f20);
+        }
+
+        .cls-6 {
+            fill: var(--fl-bgColor, #e94e2a);
+        }
+
+        .cls-3 {
+            fill: none;
+        }
+
+        .cls-7 {
+            fill: var(--fl-bgColor, #eb3c59);
+        }
+
+        .cls-4 {
+            fill: var(--fl-bgColor, url(#linear-gradient-2));
+        }
+
+        .cls-5 {
+            fill: var(--fl-bgColor, url(#linear-gradient-3));
+        }
+
+        .cls-8 {
+            fill: var(--fl-bgColor, #e3864c);
+        }
+
+        .cls-9 {
+            fill: var(--fl-bgColor, #e7616a);
+        }
+    }
+
     h2,
     .subhead {
         font-family: "Montserrat Alternates", sans-serif;
