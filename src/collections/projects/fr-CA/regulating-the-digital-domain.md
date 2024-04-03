@@ -6,6 +6,7 @@ parentTitle: ""
 order: 15
 subPageOrder: 0
 thumbnailImage: /media/rtdd-logo-small.png
+link: https://wecount.inclusivedesign.ca/rtdd/
 ---
 ![Regulating the Digital Domain logo](/media/rtdd-logo-small.png)
 
