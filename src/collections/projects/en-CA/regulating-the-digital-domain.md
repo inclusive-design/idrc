@@ -1,6 +1,6 @@
 ---
 layout: layouts/project.njk
-title: Regulating the Digital Domain
+title: Regulating the Digital Domain / Réglementation le domaine numérique
 slug: rtdd
 order: 15
 subPageOrder: 0
