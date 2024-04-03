@@ -5,7 +5,7 @@ slug: rtdd
 parentTitle: ""
 order: 15
 subPageOrder: 0
-thumbnailImage: /media/rtdd-logo-small.png
+thumbnailImage: /media/rtdd_colour_no-type.svg
 link: https://wecount.inclusivedesign.ca/rtdd/
 ---
 ![Regulating the Digital Domain logo]()
