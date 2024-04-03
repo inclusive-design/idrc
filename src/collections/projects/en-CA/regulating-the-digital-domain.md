@@ -1,6 +1,6 @@
 ---
 layout: layouts/project.njk
-title: Regulating the Digital Domain / Réglementation le domaine numérique
+title: Regulating the Digital Domain / Réguler le domaine numérique
 slug: rtdd
 order: 15
 subPageOrder: 0
@@ -11,6 +11,6 @@ description: >-
   accessibility standards for existing and new technologies.
 
 
-  La réglementation le domaine numérique (Rldn) est axée sur le soutien à l'élaboration de normes d'accessibilité pour les technologies existantes et nouvelles.
+  Réguler le domaine numérique (Rldn) est axée sur le soutien à l'élaboration de normes d'accessibilité pour les technologies existantes et nouvelles.
 link: https://wecount.inclusivedesign.ca/rtdd/
 ---
