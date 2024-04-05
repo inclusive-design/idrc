@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.4.0](https://github.com/inclusive-design/idrc/compare/v2.3.0...v2.4.0) (2024-04-05)
+
+
+### Features
+
+* set up event promo section ([#879](https://github.com/inclusive-design/idrc/issues/879)) ([2ee3fbb](https://github.com/inclusive-design/idrc/commit/2ee3fbbe894a381b6ae40519cc5a968922dfe584))
+
+
+### Bug Fixes
+
+* redirect to external ACAW/CAMA page ([#865](https://github.com/inclusive-design/idrc/issues/865)) ([588eeff](https://github.com/inclusive-design/idrc/commit/588eefff3c588e18102824a22bcce133e05092f1))
+* redirect typo URL to ACAW event page ([#868](https://github.com/inclusive-design/idrc/issues/868)) ([19ad840](https://github.com/inclusive-design/idrc/commit/19ad84010c3bfa266f8561bdc7699643d8dd8f54))
+* resolve position and size issues with external link icons ([#911](https://github.com/inclusive-design/idrc/issues/911)) ([a19a191](https://github.com/inclusive-design/idrc/commit/a19a19190d862304763566a377e75eed95d37b69))
+* update link styles throughout the site ([#776](https://github.com/inclusive-design/idrc/issues/776)) ([79a7db8](https://github.com/inclusive-design/idrc/commit/79a7db8657b0f54de7f2e434e42d755625ef8c52))
+* use null for permalink ([#867](https://github.com/inclusive-design/idrc/issues/867)) ([70fa674](https://github.com/inclusive-design/idrc/commit/70fa6740ebbeffaf4b52e73b73f9ace35bdb0c32))
+
 ## [2.3.0](https://github.com/inclusive-design/idrc/compare/v2.2.1...v2.3.0) (2023-11-23)
 
 
