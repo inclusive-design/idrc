@@ -38,6 +38,7 @@ module.exports = (value, outputPath) => {
         if (links.length > 0) {
             for (const link of links) {
                 if (
+                    link.href &&
                     !link.href.startsWith("/") &&
 					(!["localhost:3000", "localhost:8080", "idrc.ocadu.ca"].includes(link.host) || !link.host.endsWith("idrc.netlify.app"))
                 ) {
