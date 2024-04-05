@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: "16"
       - name: Cache node modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
@@ -28,7 +28,7 @@ jobs:
           site_name: idrc
           max_timeout: 300
       - name: Set environment variables
-        uses: allenevans/set-env@v2.2.0
+        uses: allenevans/set-env@v3.0.0
         with:
           BASE_URL: ${{ steps.netlify.outputs.url }}
       - name: Install dependencies, generate reference images, run visual regression tests
@@ -38,7 +38,7 @@ jobs:
         env:
           CI: true
       - name: Upload report as downloadable artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: backstop-report
@@ -67,14 +67,14 @@ jobs:
           body="${body//$'\r'/'%0D'}"
           echo ::set-output name=body::$body
       - name: Find existing comment
-        uses: peter-evans/find-comment@v2
+        uses: peter-evans/find-comment@v3
         if: always()
         id: fc
         with:
           issue-number: ${{ github.event.number }}
           body-includes: Visual Regression Test Results
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v3
+        uses: peter-evans/create-or-update-comment@v4
         if: always()
         with:
           issue-number: ${{ github.event.number }}
