@@ -64,12 +64,12 @@ footer {
 
 a[hreflang],
 a[download],
-a[rel="external"] {    
+a[rel="external"] {
     svg {
         display: inline-block;
         inline-size: 1em;
-        margin-inline: 0.25em 0.5ch;
         margin-block-end: 0.25em;
+        margin-inline: 0.25em 0.5ch;
     }
 }
 
