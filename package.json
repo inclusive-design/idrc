@@ -17,21 +17,20 @@
     "dev": "cross-env NODE_ENV=development eleventy --serve",
     "lint": "run-s -l lint:*",
     "lint:styles": "stylelint \"**/*.scss\"",
-    "lint:scripts": "eslint \"**/*.{js,md}\"",
+    "lint:scripts": "eslint \"**/*.{js,mjs,md}\"",
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
     "lint:yml": "eslint \"**/*.yml\"",
     "test": "start-server-and-test start http://localhost:8080 backstop:test",
     "start": "npm-run-all -l clean -p start:*",
     "start:cms": "node ./build-cms.js -w",
-    "start:eleventy": "run-p dev cms"
+    "start:eleventy": "run-p dev cms",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/inclusive-design/idrc.git"
   },
-  "keywords": [
-    "inclusive-design"
-  ],
+  "keywords": ["inclusive-design"],
   "author": "OCAD University <idrc@ocadu.ca>",
   "license": "BSD-3-Clause",
   "bugs": {
@@ -83,10 +82,7 @@
   },
   "lint-staged": {
     "*.css": "stylelint --fix",
-    "*.{js,yml}": "eslint --fix",
-    "*.md": [
-      "markdownlint-cli2 --fix",
-      "eslint --fix"
-    ]
+    "*.{js,mjs,yml}": "eslint --fix",
+    "*.md": ["markdownlint-cli2 --fix", "eslint --fix"]
   }
 }
