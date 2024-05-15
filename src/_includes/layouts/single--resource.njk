@@ -29,7 +29,7 @@
                     {% for topic in topics %}
                         <div class="card-tag">
                             <svg role="presentation"><use xlink:href="#topic" /></svg>
-                            <p>{{ topic | getResourceMetadataLabel('topics') | safe }}</p>
+                            <p>{{ topic | safe }}</p>
                         </div>
                     {% endfor %}
                 {% endif %}
@@ -37,7 +37,7 @@
                     {% for type in types %}
                         <div class="card-tag">
                             <svg role="presentation"><use xlink:href="#type" /></svg>
-                            <p>{{ type | getResourceMetadataLabel('types') | safe }}</p>
+                            <p>{{ type | safe }}</p>
                         </div>
                     {% endfor %}
                 {% endif %}
