@@ -6,7 +6,7 @@ description: A resource about fostering direct interactions with children with
   that are significant to them.
 publishedYear: "2024"
 thumbnailImage: /media/custombackgrounds.jpeg
-thumbnailAltText: co-design session with children
+thumbnailAltText: Co-design session with children
 topics:
   - education
 types:
