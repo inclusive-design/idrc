@@ -1,5 +1,4 @@
 ---
-layout: layouts/single--resource.njk
 title: Co-designing With Children
 description: A resource about fostering direct interactions with children with
   disabilities and empowering them to share their creativity and ideas in ways
