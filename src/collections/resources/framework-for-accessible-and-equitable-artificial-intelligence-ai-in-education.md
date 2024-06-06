@@ -27,6 +27,5 @@ topics:
   - education
 types:
   - onlineCourse
-link: https://idrc.ocadu.ca/media/framework-for-ai-in-education-frca-final.docx,
-  https://idrc.ocadu.ca/media/framework-for-ai-in-education-frca-final.docx
+link: https://idrc.ocadu.ca/projects/framework-for-accessible-and-equitable-artificial-intelligence-ai-in-education/
 ---
