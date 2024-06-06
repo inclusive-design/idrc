@@ -18,16 +18,23 @@ The goal of the project was to review the approach to standards development from
 
 Download the final outcomes here:
 
-Final Report (.docx)\
-Inclusion Self-Assessment Instrument (.docx)\
-Report alt-text (.docx)\
-Review Process Deck (.pptx)
+[Final Report (.docx)](/media/a-review-of-the-standards-development-process-final.docx)
+
+[Inclusion Self-Assessment Instrument (.docx)](/media/inclusion-self-assessment-instrument.docx)
+
+
+
+[Report alt-text (.docx)](/media/report-alt-text.docx)
+
+[Review Process Deck (.pptx)](/media/reviewprocessdeck.pptx)
 
 ## Acknowledgements
 
 Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.
 
 {% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
+
+
 
 
 
