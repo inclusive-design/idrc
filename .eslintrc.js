@@ -5,7 +5,7 @@ module.exports = {
         "fluid",
         "plugin:yml/standard",
         "plugin:react/recommended",
-        "plugin:markdown/recommended-legacy"
+        "plugin:markdown/recommended"
     ],
     ignorePatterns: ["_site/", "src/_locales/messages.js", "!.*.cjs", "!.*.js", "!.github/"],
     env: {
