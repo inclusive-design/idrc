@@ -16,12 +16,10 @@ description: >-
   people who do not fit a “norm.”
 
 
+  [Framework for AI in Education (.docx) English](https://idrc.ocadu.ca/media/framework-for-ai-in-education.docx)
 
 
-  [Framework for AI in Education (.docx) English](/media/framework-for-ai-in-education.docx)
-
-
-  [Framework for AI in Education (.docx) French](/media/framework-for-ai-in-education-frca-final.docx)
+  [Framework for AI in Education (.docx) French](https://idrc.ocadu.ca/media/framework-for-ai-in-education-frca-final.docx)
 publishedYear: "2024"
 thumbnailImage: https://upload.wikimedia.org/wikipedia/commons/5/51/Artificial_Intelligence%2C_AI.jpg
 thumbnailAltText: Artificial Intelligence
