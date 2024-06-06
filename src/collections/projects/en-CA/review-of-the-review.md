@@ -26,6 +26,8 @@ Download the final outcomes here:
 
 [Report alt-text (.docx)](/media/report-alt-text.docx)
 
+
+
 [Review Process Deck (.pptx)](/media/reviewprocessdeck.pptx)
 
 ## Acknowledgements
@@ -33,6 +35,8 @@ Download the final outcomes here:
 Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.
 
 {% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
+
+
 
 
 
