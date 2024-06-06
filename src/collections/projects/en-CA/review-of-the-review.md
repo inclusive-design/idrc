@@ -8,8 +8,6 @@ description: Review of the Review (RotR) is assisting Accessibility Standards
   Canada in developing standards development processes and activities that are
   accessible and inclusively designed.
 ---
-[Final Report (.docx)](/media/a-review-of-the-standards-development-process-final.docx)
-
 ## About the project
 
 Review of the Review (RotR) is assisting Accessibility Standards Canada in developing standards development processes and activities that are accessible and inclusively designed. 
@@ -35,16 +33,6 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the 
 
 
 
-{% endimagePositionWithText %}
-
-{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
-
-
-
 
 
 {% endimagePositionWithText %}
-
-[]()
-
-[]()
