@@ -16,6 +16,8 @@ description: >-
   people who do not fit a “norm.”
 
 
+
+
   [Framework for AI in Education (.docx) English](/media/framework-for-ai-in-education.docx)
 
 
@@ -27,5 +29,6 @@ topics:
   - education
 types:
   - onlineCourse
-link: https://idrc.ocadu.ca/media/framework-for-ai-in-education-frca-final.docx
+link: https://idrc.ocadu.ca/media/framework-for-ai-in-education-frca-final.docx,
+  https://idrc.ocadu.ca/media/framework-for-ai-in-education-frca-final.docx
 ---
