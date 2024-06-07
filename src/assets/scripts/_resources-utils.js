@@ -2,6 +2,8 @@
 
 /* exported filterResources, createPagination */
 
+import markdownFilter from "eleventy-plugin-fluid/src/filters/markdown-filter.js";
+
 /*
  * Filter the data set for records that satisfy one or more of the following criteria,
  * - at least one topic in the selected topics
@@ -269,7 +271,12 @@ export function renderResources(resources, resourceTopics, resourceTypes) { // e
         resourcesHtml += `
 				</div>
 				<div class='card-description'>
-					<p>${escapeSpecialCharactersForHTML(resource.description)}</p>
+					<p>${markdownFilter(
+        escapeSpecialCharactersForHTML(resource.description), {
+            html: true,
+            linkify: true,
+            typographer: true
+        }, [])}</p>
 				</div>
 				${resource.publishedYear ? `<div class="card-publishedYear"><p>Published in ${escapeSpecialCharactersForHTML(resource.publishedYear)}</p></div>` : ""}
 				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? "" : "<svg role='presentation'><use xlink:href='#external' /></svg>"}</a></div>
