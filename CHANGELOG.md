@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.4.1](https://github.com/inclusive-design/idrc/compare/v2.4.0...v2.4.1) (2024-06-07)
+
+
+### Bug Fixes
+
+* don't generate pages for resources (resolves [#921](https://github.com/inclusive-design/idrc/issues/921)) ([#922](https://github.com/inclusive-design/idrc/issues/922)) ([61ff894](https://github.com/inclusive-design/idrc/commit/61ff8948b560969ded1ad6c58f7cc8865cc23bca))
+* resource description markdown ([#929](https://github.com/inclusive-design/idrc/issues/929)) ([53cdba6](https://github.com/inclusive-design/idrc/commit/53cdba69344e5df1f98629451650f0abb0c4bd29))
+* resource metadata filter ([#920](https://github.com/inclusive-design/idrc/issues/920)) ([860cf91](https://github.com/inclusive-design/idrc/commit/860cf918ece57ea733a3b6bbc3df778c1caaa3dc))
+* update commitlint and husky config ([#917](https://github.com/inclusive-design/idrc/issues/917)) ([232d061](https://github.com/inclusive-design/idrc/commit/232d0614b20d2f5e2e802583b133f129925d6f9c))
+
 ## [2.4.0](https://github.com/inclusive-design/idrc/compare/v2.3.0...v2.4.0) (2024-04-05)
 
 

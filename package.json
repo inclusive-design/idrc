@@ -1,6 +1,6 @@
 {
   "name": "@inclusive-design/idrc",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "Website for the Inclusive Design Research Centre.",
   "main": "eleventy.config.js",
   "scripts": {
@@ -30,7 +30,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/inclusive-design/idrc.git"
   },
-  "keywords": ["inclusive-design"],
+  "keywords": [
+    "inclusive-design"
+  ],
   "author": "OCAD University <idrc@ocadu.ca>",
   "license": "BSD-3-Clause",
   "bugs": {
@@ -83,6 +85,9 @@
   "lint-staged": {
     "*.css": "stylelint --fix",
     "*.{js,mjs,yml}": "eslint --fix",
-    "*.md": ["markdownlint-cli2 --fix", "eslint --fix"]
+    "*.md": [
+      "markdownlint-cli2 --fix",
+      "eslint --fix"
+    ]
   }
 }
