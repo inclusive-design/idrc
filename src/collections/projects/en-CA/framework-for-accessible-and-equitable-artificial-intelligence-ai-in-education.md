@@ -15,3 +15,11 @@ Download the framework below to engage with some of the uses and risks of using 
 [Framework for Accessible and Equitable AI in Education (.docx) EN](/media/framework-for-ai-in-education.docx)
 
 [Cadre pour une intelligence artificielle (IA) accessible et équitable en éducation (.docx) FR](/media/framework-for-ai-in-education-frca-final.docx)
+
+Follow some of our other work in AI:
+
+[Remarkable Insights Season 3 Episode 2 -- Dr. Jutta Treviranus](https://www.youtube.com/watch?v=p0H_PBRTRGk) highlights.
+
+[Full Episode](https://www.remarkable.org/blog-posts/jutta-treviranus-removing-bias-from-ai?utm_source=LinkedInO&utm_medium=Insights&utm_campaign=S3E2)
+
+[Accessible and Equitable Artificial Intelligence: M-Enabling Summit 2023](https://www.youtube.com/watch?v=e3pUMxA6AIg)
