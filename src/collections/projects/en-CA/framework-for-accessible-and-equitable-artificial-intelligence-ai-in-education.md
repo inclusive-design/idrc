@@ -2,6 +2,7 @@
 layout: layouts/project.njk
 title: Framework for Accessible and Equitable Artificial Intelligence (AI) in
   Education
+slug: ai in education
 thumbnailImage: https://upload.wikimedia.org/wikipedia/commons/5/51/Artificial_Intelligence%2C_AI.jpg
 thumbnailAltText: Artificial Intelligence image
 description: AI research and use is moving at a blistering pace. It's hard to
