@@ -10,5 +10,5 @@ topics:
   - education
 types:
   - webApp
-link: "  https://clusive.cast.org/"
+link: https://clusive.cast.org/
 ---

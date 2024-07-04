@@ -1,5 +1,4 @@
 ---
-layout: layouts/resources.njk
 title: Morphic
 description: A centralized tool bar that allows users to easily access and
   customize the accessibility preferences on their computer, and export it to
@@ -10,5 +9,5 @@ topics:
   - design
 types:
   - plugin
-link: "  https://morphic.org"
+link: https://morphic.org
 ---

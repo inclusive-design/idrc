@@ -1,13 +1,13 @@
 ---
 title: "Future of Work: Equitable Digital Systems"
-shortName: EDS
 slug: eds
+shortName: EDS
+order: 55
+thumbnailImage: /media/project-EDS.png
 description: Equitable Digital Systems focused on examining the accessibility of
   the digital tools and systems we use for work. We used our shared experiences
   to make recommendations for Accessibility Standards Canada on how to prevent
   accessibility barriers at work from information and communication systems.
-order: 55
-thumbnailImage: /media/project-EDS.png
 ---
 ![Equitable Digital Systems logo](/media/project-EDS.png)
 
@@ -33,6 +33,8 @@ We undertook a jurisdictional scan of international standards and regulations re
 
 {% imagePositionWithText "/media/ict-standards-and-legislation-tile.jpg", "ICT Standards and Legislation tile with checkbox checked.", "left", "100%", "500", "null" %}
 
+
+
 {% endimagePositionWithText %}
 
 ## Co-design Research
@@ -44,6 +46,8 @@ We conducted four co-design sets (each consisting of 3 sessions) where we explor
 Our first co-design captured moments (vignettes) that illustrate some of the experiences people with disabilities have with technology *within* the context of work and the workplace. The first co-design was intentionally broad to enable greater freedom to discover barriers to technology experienced by the co-design researchers.
 
 {% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
+
+
 
 {% endimagePositionWithText %}
 
@@ -266,8 +270,14 @@ Valerie Wolbert — Patrick Wong
 \
 Cheryl Zinyk
 
-## Acknowledgement
+## Acknowledgements
 
-This project was funded by **Accessibility Standards Canada**
+Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.
 
-![The logo of the Government of Canada.](/media/canada.png)
+{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}
+
+{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
+
+{% endimagePositionWithText %}

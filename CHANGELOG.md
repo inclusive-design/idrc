@@ -1,5 +1,45 @@
 # Changelog
 
+## [2.4.1](https://github.com/inclusive-design/idrc/compare/v2.4.0...v2.4.1) (2024-06-07)
+
+
+### Bug Fixes
+
+* don't generate pages for resources (resolves [#921](https://github.com/inclusive-design/idrc/issues/921)) ([#922](https://github.com/inclusive-design/idrc/issues/922)) ([61ff894](https://github.com/inclusive-design/idrc/commit/61ff8948b560969ded1ad6c58f7cc8865cc23bca))
+* resource description markdown ([#929](https://github.com/inclusive-design/idrc/issues/929)) ([53cdba6](https://github.com/inclusive-design/idrc/commit/53cdba69344e5df1f98629451650f0abb0c4bd29))
+* resource metadata filter ([#920](https://github.com/inclusive-design/idrc/issues/920)) ([860cf91](https://github.com/inclusive-design/idrc/commit/860cf918ece57ea733a3b6bbc3df778c1caaa3dc))
+* update commitlint and husky config ([#917](https://github.com/inclusive-design/idrc/issues/917)) ([232d061](https://github.com/inclusive-design/idrc/commit/232d0614b20d2f5e2e802583b133f129925d6f9c))
+
+## [2.4.0](https://github.com/inclusive-design/idrc/compare/v2.3.0...v2.4.0) (2024-04-05)
+
+
+### Features
+
+* set up event promo section ([#879](https://github.com/inclusive-design/idrc/issues/879)) ([2ee3fbb](https://github.com/inclusive-design/idrc/commit/2ee3fbbe894a381b6ae40519cc5a968922dfe584))
+
+
+### Bug Fixes
+
+* redirect to external ACAW/CAMA page ([#865](https://github.com/inclusive-design/idrc/issues/865)) ([588eeff](https://github.com/inclusive-design/idrc/commit/588eefff3c588e18102824a22bcce133e05092f1))
+* redirect typo URL to ACAW event page ([#868](https://github.com/inclusive-design/idrc/issues/868)) ([19ad840](https://github.com/inclusive-design/idrc/commit/19ad84010c3bfa266f8561bdc7699643d8dd8f54))
+* resolve position and size issues with external link icons ([#911](https://github.com/inclusive-design/idrc/issues/911)) ([a19a191](https://github.com/inclusive-design/idrc/commit/a19a19190d862304763566a377e75eed95d37b69))
+* update link styles throughout the site ([#776](https://github.com/inclusive-design/idrc/issues/776)) ([79a7db8](https://github.com/inclusive-design/idrc/commit/79a7db8657b0f54de7f2e434e42d755625ef8c52))
+* use null for permalink ([#867](https://github.com/inclusive-design/idrc/issues/867)) ([70fa674](https://github.com/inclusive-design/idrc/commit/70fa6740ebbeffaf4b52e73b73f9ace35bdb0c32))
+
+## [2.3.0](https://github.com/inclusive-design/idrc/compare/v2.2.1...v2.3.0) (2023-11-23)
+
+
+### Features
+
+* remove analytics (resolves [#813](https://github.com/inclusive-design/idrc/issues/813)) ([#814](https://github.com/inclusive-design/idrc/issues/814)) ([f532e22](https://github.com/inclusive-design/idrc/commit/f532e22ebddbf4692d6346ff835b685266cc3a9d))
+
+## [2.2.1](https://github.com/inclusive-design/idrc/compare/v2.2.0...v2.2.1) (2023-10-10)
+
+
+### Bug Fixes
+
+* resolve slug error ([#746](https://github.com/inclusive-design/idrc/issues/746)) ([bd08c6d](https://github.com/inclusive-design/idrc/commit/bd08c6d7b2b446ce846b0a1497ba2a9685cef265))
+
 ## [2.2.0](https://github.com/inclusive-design/idrc/compare/v2.1.2...v2.2.0) (2023-10-04)
 
 

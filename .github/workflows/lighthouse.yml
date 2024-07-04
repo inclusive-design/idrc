@@ -10,13 +10,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Netlify deploy preview
-        uses: jakepartusch/wait-for-netlify-action@v1.4
+        uses: kukiron/wait-for-netlify-deploy@v1.2
         id: netlify
         with:
           site_name: idrc
           max_timeout: 300
       - name: Run Lighthouse CI audits
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@v12
         with:
           runs: 3
           urls: |
@@ -31,12 +31,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Netlify deploy preview
-        uses: jakepartusch/wait-for-netlify-action@v1.4
+        uses: kukiron/wait-for-netlify-deploy@v1.2
         id: netlify
         with:
           site_name: idrc
       - name: Run Lighthouse CI audits
-        uses: treosh/lighthouse-ci-action@v10
+        uses: treosh/lighthouse-ci-action@v12
         with:
           runs: 3
           urls: |

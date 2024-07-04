@@ -1,10 +1,10 @@
 ---
 title: Intelligent User Interfaces for Virtual Healthcare
+order: 100
+thumbnailImage: ""
 description: Intelligent User Interfaces for Virtual Healthcare aims to reduce
   barriers to accessing healthcare through inclusive guidelines for (virtual or
   in-person) healthcare and an approach to personalization in these settings.
-order: 100
-thumbnailImage: ""
 ---
 ## Reducing barriers to virtual healthcare
 
@@ -13,9 +13,12 @@ During the pandemic response and recovery, many health units are moving to virtu
 1. create guidelines for virtual healthcare systems that are inclusive and address the diversity of human needs, including cognitive, age-related and cultural barriers.  
 2. develop an architecture plan for an openly licensed software platform that enables interaction and interface personalization to meet currently unmet needs faced by individuals when engaging in virtual healthcare.
 
-### Project Links
+### Relevant Links
 
-* Guide for Reducing Barriers to Virtual Healthcare: [Latest web version](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare), [PDF version July 5 2021](https://wiki.fluidproject.org/download/attachments/237470030/Guide-for-Reducing-Barriers-to-Virtual-Healthcare.pdf)
+* Guide for Reducing Barriers to Virtual Healthcare:
+  * [English PDF](/media/guide-for-reducing-barriers-to-virtual-healthcare.pdf)
+  * [French PDF](/media/md-3734_guide-for-reducing-barriers-to-virtual-healthcare_f.pdf)
+  * [Web version](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Guide+for+Reducing+Barriers+to+Virtual+Healthcare)
 * [Software Approaches for Expressing Personal Preferences for Healthcare](https://wiki.fluidproject.org/display/IUIGFVP/Section+-+Software+Approaches+for+Expressing+Personal+Preferences+for+Healthcare)
 * [Project Wiki](https://wiki.fluidproject.org/display/IUIGFVP/Intelligent+User+Interfaces+and+Guidelines+for+Vulnerable+Populations) - detailed information including methodology, feedback, and future direction
 
@@ -41,7 +44,7 @@ Each section consists of guidelines covering many scenarios that can help identi
 
 The *Software Approach for Expressing Personal Preferences for Healthcare* outlines a method for reducing barriers using a system that gathers, stores, and applies personal preferences. Implementing this approach can address issues identified by the Guide.
 
-The *Approach* does not prescribe a particular technology, rather it leaves those choices open so system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
+The *Approach* does not prescribe a particular technology, rather it leaves those choices open to system builders. Service providers can customize and configure based on the needs of their infrastructure (i.e. security and privacy needs) and the needs of the stakeholders like patients, caregivers, and practitioners.
 
 ## Using the Guide and the Approach
 
