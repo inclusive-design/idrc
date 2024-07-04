@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Netlify deploy preview
-        uses: jakepartusch/wait-for-netlify-action@v1.4
+        uses: kukiron/wait-for-netlify-deploy@v1.2
         id: netlify
         with:
           site_name: idrc
@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Netlify deploy preview
-        uses: jakepartusch/wait-for-netlify-action@v1.4
+        uses: kukiron/wait-for-netlify-deploy@v1.2
         id: netlify
         with:
           site_name: idrc
