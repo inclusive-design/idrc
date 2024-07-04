@@ -1,5 +1,4 @@
 ---
-layout: layouts/resources.njk
 pinned: true
 title: Clusive
 description: Clusive is a flexible, customizable learning environment that
