@@ -1,6 +1,6 @@
 {
   "name": "@inclusive-design/idrc",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "Website for the Inclusive Design Research Centre.",
   "main": "eleventy.config.js",
   "scripts": {
