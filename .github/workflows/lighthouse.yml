@@ -21,7 +21,7 @@ jobs:
           runs: 3
           urls: |
             ${{ steps.netlify.outputs.url }}
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.js
   lhci-desktop:
@@ -41,7 +41,7 @@ jobs:
           runs: 3
           urls: |
             ${{ steps.netlify.outputs.url }}
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.js
         env:
