@@ -465,7 +465,6 @@ collections:
     create: true
     i18n: false
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: layouts/single--resource.njk}
       - {label: Important, name: pinned, widget: boolean, default: false}
       - {label: Resource Name, name: title, widget: string, required: true}
       - {label: Description, name: description, widget: markdown, required: true, editor_components: [image, file]}

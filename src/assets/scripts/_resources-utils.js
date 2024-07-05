@@ -264,9 +264,9 @@ export function renderSearchResults(numberOfResources, resourceTopics, resourceT
 export function renderSortUI() {
     let sortUIHtml =
         `<div class='resources-sort'>
-            <p>
+            <label for="resourcesSortSelector">
                 Sort by:
-            </p>
+            </label>
             <select id='resourcesSortSelector'>
                 <option value='ascTitle' ${localStorage.getItem("sortCategory") === "ascTitle" ? "selected=true" : ""}>
                     Title
