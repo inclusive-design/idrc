@@ -438,7 +438,7 @@ export function bindEventListeners() { // eslint-disable-line no-unused-vars
         });
     }
 
-    document.getElementById("resources-sort-result").setAttribute("role", "alert");
+    document.getElementById("resources-sort-result")?.setAttribute("role", "alert");
 }
 
 /*
