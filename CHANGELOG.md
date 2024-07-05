@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.5.0](https://github.com/inclusive-design/idrc/compare/v2.4.1...v2.5.0) (2024-07-05)
+
+
+### Features
+
+* add sorting logic for resources ([#709](https://github.com/inclusive-design/idrc/issues/709)) ([1e89fc5](https://github.com/inclusive-design/idrc/commit/1e89fc5e9c03d8af06500a0bab31f392a4963b58))
+
+
+### Bug Fixes
+
+* **deps:** replace dependency npm-run-all with npm-run-all2 5.0.0 ([#953](https://github.com/inclusive-design/idrc/issues/953)) ([418afda](https://github.com/inclusive-design/idrc/commit/418afdac99b042ae89e05b711da0bdd96b8db7d8))
+* **deps:** update dependency npm-run-all2 to v6 ([#969](https://github.com/inclusive-design/idrc/issues/969)) ([bdfaa52](https://github.com/inclusive-design/idrc/commit/bdfaa5200ac299a9014c4d4dcef1aefb2e3defb0))
+
 ## [2.4.1](https://github.com/inclusive-design/idrc/compare/v2.4.0...v2.4.1) (2024-06-07)
 
 
