@@ -1,6 +1,6 @@
 // The main process that dynamically renders the Resources page.
 
-import { createPagination, processResourcesDisplayResults, filterResources, renderFilters, renderNumberOfAppliedFilters, renderSearchResults, renderResources, renderPagination, bindEventListeners, restoreFocus } from "./_resources-utils.js";
+import { createPagination, processResourcesDisplayResults, filterResources, renderFilters, renderNumberOfAppliedFilters, renderSearchResults, renderSortUI, renderResources, renderPagination, bindEventListeners, restoreFocus } from "./_resources-utils.js";
 
 const pageSize = 10;
 const params = new URLSearchParams(window.location.search);
@@ -68,6 +68,7 @@ fetch(window.location.origin + "/resourceData.json").then(function (response) {
         if (filterQuery) {
             renderSearchResults(resultsToDisplay.length, resourcesData.resourceTopics, resourcesData.resourceTypes);
         }
+        renderSortUI();
         renderResources(resultsToDisplay, resourcesData.resourceTopics, resourcesData.resourceTypes);
         if (pagination) {
             renderPagination(pagination);

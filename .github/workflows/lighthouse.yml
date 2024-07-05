@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Netlify deploy preview
-        uses: kukiron/wait-for-netlify-deploy@v1.2
+        uses: kukiron/wait-for-netlify-deploy@v1.2.2
         id: netlify
         with:
           site_name: idrc
@@ -21,7 +21,7 @@ jobs:
           runs: 3
           urls: |
             ${{ steps.netlify.outputs.url }}
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.js
   lhci-desktop:
@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Wait for Netlify deploy preview
-        uses: kukiron/wait-for-netlify-deploy@v1.2
+        uses: kukiron/wait-for-netlify-deploy@v1.2.2
         id: netlify
         with:
           site_name: idrc
@@ -41,7 +41,7 @@ jobs:
           runs: 3
           urls: |
             ${{ steps.netlify.outputs.url }}
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.js
         env:
