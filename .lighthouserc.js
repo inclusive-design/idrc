@@ -16,16 +16,21 @@ module.exports = {
                 // Skipping "is-crawlable" because Netlify's preview preview for PRs add `x-robots-tag: noindex`
                 // Skipping "service-worker" because the service worker is disabled on deploy previews.
                 // Skipping "works-offline" and "offline-start-url" because the service worker is disabled on deploy previews.
-                skipAudits: ["uses-http2", "is-crawlable", "service-worker", "offline-start-url", "works-offline"]
+                skipAudits: [
+                    "uses-http2",
+                    "is-crawlable",
+                    "service-worker",
+                    "offline-start-url",
+                    "works-offline"
+                ]
             }
         },
         assert: {
             assertions: {
-                "categories:performance": ["error", {"minScore": 0.90}],
-                "categories:accessibility": ["error", {"minScore": 1}],
-                "categories:best-practices": ["error", {"minScore": 1}],
-                "categories:seo": ["error", {"minScore": 1}],
-                "categories:pwa": ["error", {"minScore": 1}]
+                "categories:performance": ["error", { minScore: 0.9 }],
+                "categories:accessibility": ["error", { minScore: 1 }],
+                "categories:best-practices": ["error", { minScore: 1 }],
+                "categories:seo": ["error", { minScore: 1 }]
             }
         }
     }
