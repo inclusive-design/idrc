@@ -465,6 +465,7 @@ collections:
     create: true
     i18n: false
     fields:
+      - {label: Important, name: pinned, widget: boolean, default: false}
       - {label: Resource Name, name: title, widget: string, required: true}
       - {label: Description, name: description, widget: markdown, required: true, editor_components: [image, file]}
       - {label: Published Year, name: publishedYear, widget: string, hint: The year this resource was first publicly available., required: true}

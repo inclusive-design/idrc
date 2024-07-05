@@ -166,18 +166,47 @@ export function htmlDecode(input) {
  */
 export function processResourcesDisplayResults(resources) { // eslint-disable-line no-unused-vars
     const sortedArray = [];
-    const resultsWithPublishedYear = resources.filter(result => result.publishedYear);
-    const resultsWithoutPublishedYear = resources.filter(result => !result.publishedYear);
-    resultsWithPublishedYear.sort((a, b) => {
-        let compare = b.publishedYear.localeCompare(a.publishedYear);
-        if (compare === 0) {
-            compare = a.title.localeCompare(b.title);
-        }
-        return compare;
-    });
-    resultsWithoutPublishedYear.sort((a, b) => (a.title.localeCompare(b.title)));
+    const sortCategory = localStorage.getItem("sortCategory");
 
-    sortedArray.push(...resultsWithPublishedYear, ...resultsWithoutPublishedYear);
+    const pinnedResources = resources.filter(result => result.pinned);
+    const unpinnedResources = resources.filter(result => !result.pinned);
+
+    if (pinnedResources) {
+        switch (sortCategory) {
+        case "ascTitle":
+            sortedArray.push(...pinnedResources.sort((a, b) => (a.title.localeCompare(b.title))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (a.title.localeCompare(b.title))));
+            break;
+        case "decTitle":
+            sortedArray.push(...pinnedResources.sort((a, b) => (b.title.localeCompare(a.title))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (b.title.localeCompare(a.title))));
+            break;
+        case "ascPublishedYear":
+            sortedArray.push(...pinnedResources.sort((a, b) => (a.publishedYear.localeCompare(b.publishedYear))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (a.publishedYear.localeCompare(b.publishedYear))));
+            break;
+        case "decPublishedYear":
+            sortedArray.push(...pinnedResources.sort((a, b) => (b.publishedYear.localeCompare(a.publishedYear))));
+            sortedArray.push(...unpinnedResources.sort((a, b) => (b.publishedYear.localeCompare(a.publishedYear))));
+            break;
+        default:
+            sortedArray.push(...pinnedResources.sort((a, b) => {
+                let compare = b.publishedYear.localeCompare(a.publishedYear);
+                if (compare === 0) {
+                    compare = a.title.localeCompare(b.title);
+                }
+                return compare;
+            }));
+            sortedArray.push(...unpinnedResources.sort((a, b) => {
+                let compare = b.publishedYear.localeCompare(a.publishedYear);
+                if (compare === 0) {
+                    compare = a.title.localeCompare(b.title);
+                }
+                return compare;
+            }));
+            break;
+        }
+    }
 
     return sortedArray.map((oneRecord) => {
         oneRecord.title = htmlDecode(oneRecord.title);
@@ -232,6 +261,27 @@ export function renderSearchResults(numberOfResources, resourceTopics, resourceT
     document.querySelector(".content").innerHTML = appliedFilterHtml;
 }
 
+export function renderSortUI() {
+    let sortUIHtml =
+        `<div class='resources-sort'>
+            <label for="resourcesSortSelector">
+                Sort by:
+            </label>
+            <select id='resourcesSortSelector'>
+                <option value='ascTitle' ${localStorage.getItem("sortCategory") === "ascTitle" ? "selected=true" : ""}>
+                    Title
+                </option>
+                <option value='decPublishedYear' ${localStorage.getItem("sortCategory") === "decPublishedYear" ? "selected=true" : ""}>
+                    Newest published
+                </option>
+                <option value='ascPublishedYear' ${localStorage.getItem("sortCategory") === "ascPublishedYear" ? "selected=true" : ""}>
+                    Oldest published
+                </option>
+            </select>
+        </div>`;
+    document.querySelector(".content").innerHTML += sortUIHtml;
+}
+
 /*
  * Render the resources result
  * @param {Array} resources - An array of resources to be rendered.
@@ -246,7 +296,12 @@ export function renderResources(resources, resourceTopics, resourceTypes) { // e
         resourceLink.href = resource.link;
         resourcesHtml += `    	<div class='card'>
 			<div class='card-detail'>
-			<h3 class='card-title'>${escapeSpecialCharactersForHTML(resource.title)}</h3>
+            <div class='card-title'>
+                <h3>
+                    ${escapeSpecialCharactersForHTML(resource.title)}
+                </h3>
+                ${resource.pinned ? "<svg role='presentation'><use xlink:href='#pinned' /></svg>" : ""}
+            </div>
 			<div class='card-tags'>
 		`;
         if (resource.topics) {
@@ -364,6 +419,11 @@ export function bindEventListeners() { // eslint-disable-line no-unused-vars
     // Clicking 'apply filter' button redirects the page with applied filter options
 	 document.querySelector(".apply-button").addEventListener("click", () => {
         localStorage.setItem("setFocusOn", ".apply-button");
+    });
+
+    document.querySelector("#resourcesSortSelector").addEventListener("change", (e) => {
+        localStorage.setItem("sortCategory", e.target.value);
+        window.location = "/resources";
     });
 
     // Save element to focus after a filer option is removed by clicking on applied filter options
