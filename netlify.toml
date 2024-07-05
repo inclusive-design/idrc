@@ -1,18 +1,18 @@
 [build]
-  command = "npm run build"
-  publish = "_site"
-  ignore = "git log -1 --pretty=%B | grep dependabot"
+command = "npm run build"
+publish = "_site"
+ignore = "git log -1 --pretty=%B | grep renovate"
 
 [dev]
-  command = "npm run start"
-  targetPort = 8080
-  publish = "_site"
-  autoLaunch = true
-  framework = "#custom"
+command = "npm run start"
+targetPort = 8080
+publish = "_site"
+autoLaunch = true
+framework = "#custom"
 
 [[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = "1; mode=block"
+for = "/*"
+[headers.values]
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "SAMEORIGIN"
+X-XSS-Protection = "1; mode=block"
