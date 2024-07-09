@@ -10,6 +10,7 @@ import getResourceMetadataLabelFilter from "../_filters/getResourceMetadataLabel
 import site from "../_data/site.json";
 import imagePositionWithTextShortcode from "../_shortcodes/image-position-with-text.js";
 import getId from "../_utils/extract-youtube-id.js";
+const slugify = require("@sindresorhus/slugify");
 
 const env = nunjucks.configure();
 
@@ -27,7 +28,7 @@ env.addFilter("formatDate", formatDateFilter);
 env.addFilter("isoDate", isoDateFilter);
 env.addFilter("limit", limitFilter);
 env.addFilter("markdown", markdown);
-env.addFilter("slugify", require("../../node_modules/@11ty/eleventy/node_modules/@sindresorhus/slugify"));
+env.addFilter("slugify", slugify);
 env.addFilter("split", splitFilter);
 env.addFilter("locale_links", function (value) {
     return [];
@@ -36,10 +37,10 @@ env.addFilter("eleventyNavigation", () => []);
 env.addFilter("eleventyNavigationBreadcrumb", () => []);
 env.addFilter("getResourceMetadataLabel", getResourceMetadataLabelFilter);
 
-const Preview = ({entry, path, context}) => {
+const Preview = ({ entry, path, context }) => {
     const data = context(entry.get("data").toJS());
-    const html = env.render(path, {...data, site});
-    return <div dangerouslySetInnerHTML={{__html: html}}/>;
+    const html = env.render(path, { ...data, site });
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
 };
 
 Preview.propTypes = {
@@ -50,11 +51,20 @@ Preview.propTypes = {
 
 CMS.registerPreviewStyle("/assets/styles/app.css");
 
-const Page = ({entry}) => (
+const Page = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/page.njk"
-        context={({site, title, intro, body, sections, headerBgColor, headerTextColor, headerBorderColor}) => ({
+        context={({
+            site,
+            title,
+            intro,
+            body,
+            sections,
+            headerBgColor,
+            headerTextColor,
+            headerBorderColor
+        }) => ({
             previewMode: true,
             site,
             title,
@@ -72,11 +82,20 @@ Page.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const History = ({entry}) => (
+const History = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/history.njk"
-        context={({site, title, intro, milestones, body, headerBgColor, headerTextColor, headerBorderColor}) => ({
+        context={({
+            site,
+            title,
+            intro,
+            milestones,
+            body,
+            headerBgColor,
+            headerTextColor,
+            headerBorderColor
+        }) => ({
             previewMode: true,
             site,
             title,
@@ -94,11 +113,24 @@ History.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const Person = ({entry}) => (
+const Person = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/single--person.njk"
-        context={({title, intro, pronouns, job, projects, interests, body, email, website, twitter, linkedin, github}) => ({
+        context={({
+            title,
+            intro,
+            pronouns,
+            job,
+            projects,
+            interests,
+            body,
+            email,
+            website,
+            twitter,
+            linkedin,
+            github
+        }) => ({
             previewMode: true,
             title,
             intro,
@@ -120,11 +152,11 @@ Person.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const News = ({entry}) => (
+const News = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/single--news.njk"
-        context={({site, title, date, author, body}) => ({
+        context={({ site, title, date, author, body }) => ({
             previewMode: true,
             site,
             title,
@@ -140,11 +172,11 @@ News.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const Idea = ({entry}) => (
+const Idea = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/single--idea.njk"
-        context={({site, title, date, author, body}) => ({
+        context={({ site, title, date, author, body }) => ({
             previewMode: true,
             site,
             title,
@@ -160,11 +192,11 @@ Idea.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const Project = ({entry}) => (
+const Project = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/project.njk"
-        context={({parentTitle, projectName, title, body}) => ({
+        context={({ parentTitle, projectName, title, body }) => ({
             previewMode: true,
             parentTitle,
             title,
@@ -180,11 +212,20 @@ Project.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const Resource = ({entry}) => (
+const Resource = ({ entry }) => (
     <Preview
         entry={entry}
         path="layouts/single--resource.njk"
-        context={({title, description, publishedYear, topics, types, thumbnailImage, thumbnailAltText, link }) => ({
+        context={({
+            title,
+            description,
+            publishedYear,
+            topics,
+            types,
+            thumbnailImage,
+            thumbnailAltText,
+            link
+        }) => ({
             previewMode: true,
             title,
             description,
@@ -202,11 +243,22 @@ Resource.propTypes = {
     entry: PropTypes.object.isRequired
 };
 
-const SiteData = ({entry}) => (
+const SiteData = ({ entry }) => (
     <Preview
         entry={entry}
         path="partials/global/footer.njk"
-        context={({name, description, url, email, phone, fax, address, twitter, medium, youtube}) => ({
+        context={({
+            name,
+            description,
+            url,
+            email,
+            phone,
+            fax,
+            address,
+            twitter,
+            medium,
+            youtube
+        }) => ({
             site: {
                 name,
                 description,
@@ -259,7 +311,11 @@ CMS.registerEditorComponent({
             label: "Image Position",
             hint: "The \"Center\" choice only applies if the \"Content\" field below is empty.",
             widget: "select",
-            options: [{value:"left", label: "Left"}, {value:"center", label: "Center (default)"}, {value:"right", label: "Right"}],
+            options: [
+                { value: "left", label: "Left" },
+                { value: "center", label: "Center (default)" },
+                { value: "right", label: "Right" }
+            ],
             default: "center"
         },
         {
@@ -267,7 +323,12 @@ CMS.registerEditorComponent({
             label: "Scale Image Width",
             widget: "select",
             default: "100",
-            options: [{value:"25", label: "25%"}, {value:"50", label: "50%"}, {value:"75", label: "75%"}, {value:"100", label: "100% (default)"}]
+            options: [
+                { value: "25", label: "25%" },
+                { value: "50", label: "50%" },
+                { value: "75", label: "75%" },
+                { value: "100", label: "100% (default)" }
+            ]
         },
         {
             name: "maxHeight",
@@ -275,7 +336,13 @@ CMS.registerEditorComponent({
             hint: "Useful for restricting height of tall images that may take too much vertical space.",
             widget: "select",
             default: "Auto",
-            options: [{value:"auto", label: "Auto (default)"},{value:"200px", label: "200px"}, {value:"400px", label: "400px"}, {value:"600px", label: "600px"},{value:"800px", label: "800px"} ]
+            options: [
+                { value: "auto", label: "Auto (default)" },
+                { value: "200px", label: "200px" },
+                { value: "400px", label: "400px" },
+                { value: "600px", label: "600px" },
+                { value: "800px", label: "800px" }
+            ]
         },
         {
             name: "content",
@@ -291,10 +358,15 @@ CMS.registerEditorComponent({
             hint: "Vertical Alignment of Content only applies if \"Content\" field above is not empty.",
             required: false,
             widget: "select",
-            options: [{value:"top", label: "Top (default)"}, {value:"center", label: "Center"}, {value:"bottom", label: "Bottom"}]
+            options: [
+                { value: "top", label: "Top (default)" },
+                { value: "center", label: "Center" },
+                { value: "bottom", label: "Bottom" }
+            ]
         }
     ],
-    pattern: /^{% imagePositionWithText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimagePositionWithText %}/,
+    pattern:
+    /^{% imagePositionWithText "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)", "([\s\S]*?)" %}([\s\S]*?){% endimagePositionWithText %}/,
     fromBlock: function (match) {
         return {
             image: match[1],
@@ -310,19 +382,33 @@ CMS.registerEditorComponent({
         return `{% imagePositionWithText "${obj.image}", "${obj.alt}", "${obj.imagePosition}", "${obj.scale}", "${obj.maxHeight}", "${obj.verticalAlignment}" %}\n${obj.content}\n{% endimagePositionWithText %}`;
     },
     toPreview: function (obj, getAsset, fields) {
-        const {content, image, alt, imagePosition, scale, maxHeight, verticalAlignment} = obj;
-        const imageField = fields.find(f => f.get("widget") === "image");
+        const {
+            content,
+            image,
+            alt,
+            imagePosition,
+            scale,
+            maxHeight,
+            verticalAlignment
+        } = obj;
+        const imageField = fields.find((f) => f.get("widget") === "image");
         const src = getAsset(image, imageField);
-        return imagePositionWithTextShortcode(content, src, alt, imagePosition, scale, maxHeight, verticalAlignment);
+        return imagePositionWithTextShortcode(
+            content,
+            src,
+            alt,
+            imagePosition,
+            scale,
+            maxHeight,
+            verticalAlignment
+        );
     }
 });
 
 CMS.registerEditorComponent({
     id: "youtube",
     label: "YouTube Embed",
-    fields: [
-        {name: "url", label: "YouTube Video URL", widget: "string"}
-    ],
+    fields: [{ name: "url", label: "YouTube Video URL", widget: "string" }],
     pattern: /^{% youtube "(\S+)" %}$/,
     fromBlock: function (match) {
         return {
@@ -333,22 +419,19 @@ CMS.registerEditorComponent({
         return `{% youtube "${obj.url}" %}`;
     },
     toPreview: function (obj) {
-        return (
-            `<figure class="embed--youtube"><iframe class="video" src="https://youtube.com/embed/${getId(obj.url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`
-        );
+        return `<figure class="embed--youtube"><iframe class="video" src="https://youtube.com/embed/${getId(obj.url)}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></figure>`;
     }
 });
 
 CMS.registerEditorComponent({
     label: "File",
     id: "file",
-    fromBlock: match =>
+    fromBlock: (match) =>
         match && {
             file: match[2],
             text: match[1]
         },
-    toBlock: ({ text, file }) =>
-        `[${text || ""}](${file || ""})`,
+    toBlock: ({ text, file }) => `[${text || ""}](${file || ""})`,
     toPreview: (obj) => {
         return <a href={obj.file || ""}>{obj.text}</a>;
     },
