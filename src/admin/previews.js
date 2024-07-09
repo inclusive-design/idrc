@@ -10,7 +10,7 @@ import getResourceMetadataLabelFilter from "../_filters/getResourceMetadataLabel
 import site from "../_data/site.json";
 import imagePositionWithTextShortcode from "../_shortcodes/image-position-with-text.js";
 import getId from "../_utils/extract-youtube-id.js";
-import slugify from "@sindresorhus/slugify";
+const slugify = require("@sindresorhus/slugify");
 
 const env = nunjucks.configure();
 
