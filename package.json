@@ -75,7 +75,7 @@
     "markdownlint-cli2": "0.13.0",
     "markdownlint-config-fluid": "0.1.5",
     "postcss-scss": "4.0.9",
-    "rimraf": "5.0.9",
+    "rimraf": "6.0.0",
     "start-server-and-test": "2.0.4",
     "stylelint": "14.16.1",
     "stylelint-config-fluid": "1.0.0",
