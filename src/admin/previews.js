@@ -10,6 +10,7 @@ import getResourceMetadataLabelFilter from "../_filters/getResourceMetadataLabel
 import site from "../_data/site.json";
 import imagePositionWithTextShortcode from "../_shortcodes/image-position-with-text.js";
 import getId from "../_utils/extract-youtube-id.js";
+import slugify from "@sindresorhus/slugify";
 
 const env = nunjucks.configure();
 
@@ -27,7 +28,7 @@ env.addFilter("formatDate", formatDateFilter);
 env.addFilter("isoDate", isoDateFilter);
 env.addFilter("limit", limitFilter);
 env.addFilter("markdown", markdown);
-env.addFilter("slugify", require("@sindresorhus/slugify"));
+env.addFilter("slugify", slugify);
 env.addFilter("split", splitFilter);
 env.addFilter("locale_links", function (value) {
     return [];
