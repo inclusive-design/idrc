@@ -11,7 +11,7 @@
             {% for topic in resourceTopics.resourceTopics %}
                 <li>
                     <input class="filter-checkbox" type="checkbox" data-filter="topics" id="{{ topic.value }}" name="{{ 'to_' + topic.value }}">
-                    <label for="{{ topic.value }}">{{ topic.label }}</label>
+                    <label aria-label="Topics filter, {{ topic.label }}" for="{{ topic.value }}">{{ topic.label }}</label>
                 </li>
             {% endfor %}
         </ul>
@@ -28,7 +28,7 @@
             {% for type in resourceTypes.resourceTypes %}
                 <li>
                     <input class="filter-checkbox" type="checkbox" data-filter="types" id="{{ type.value }}" name="{{ 'ty_' + type.value }}">
-                    <label for="{{ type.value }}">{{ type.label }}</label>
+                    <label aria-label="Types filter, {{ type.label }}" for="{{ type.value }}">{{ type.label }}</label>
                 </li>
             {% endfor %}
         </ul>
