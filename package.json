@@ -69,7 +69,7 @@
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-yml": "1.14.0",
     "estrella": "1.4.1",
-    "husky": "9.1.1",
+    "husky": "9.1.2",
     "linkedom": "0.18.4",
     "lint-staged": "15.2.7",
     "markdownlint-cli2": "0.13.0",
