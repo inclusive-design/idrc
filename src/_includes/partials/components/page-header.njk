@@ -1,7 +1,7 @@
 <header class="page-header" {% if locale !== 'en-CA' %} lang="en-CA" dir="ltr" {% endif %}>
     <div class="wrapper">
         {% set breadcrumbs = [] %}
-        {% if eleventyNavigation.key and 'projects' not in page.url %}
+        {% if eleventyNavigation.key and 'projects' not in page.url and 'projets' not in page.url %}
         {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
         {% endif %}
         {% if breadcrumbs.length > 0 %}
