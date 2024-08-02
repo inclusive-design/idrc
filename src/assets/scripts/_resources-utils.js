@@ -225,9 +225,9 @@ export function renderSearchResults(numberOfResources, resourceTopics, resourceT
     let appliedFilterHtml = "<h2>Search results</h2><div class='resources-applied-filters'>";
 
     if (numberOfResources === 0) {
-        appliedFilterHtml += "<div class='resources-no-results' role='alert'><p>Sorry, no results were found based on your applied filters.</p></div>";
+        appliedFilterHtml += "<div class='resources-no-results' id='resources-result'><p>Sorry, no results were found based on your applied filters.</p></div>";
     } else {
-        appliedFilterHtml += `<div class='resources-filtered-number' role='alert'><p>Showing ${numberOfResources} ${numberOfResources === 1 ? "result" : "results"}</p></div>`;
+        appliedFilterHtml += `<div class='resources-filtered-number' id='resources-result'><p>Showing ${numberOfResources} ${numberOfResources === 1 ? "result" : "results"}</p></div>`;
     }
 
     appliedFilterHtml += "<h3>Applied filters</h3><div class='filter-tags'>";
@@ -437,6 +437,8 @@ export function bindEventListeners() { // eslint-disable-line no-unused-vars
             }
         });
     }
+
+    document.getElementById("resources-result")?.setAttribute("role", "alert");
 }
 
 /*
