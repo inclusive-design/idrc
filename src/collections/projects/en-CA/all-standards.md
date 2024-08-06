@@ -6,7 +6,7 @@ description: Making the process of creating standards more accessible to people 
 ---
 ## About this project
 
-The goal of this project is to make the process of creating standards more accessible to people with disabilities and Deaf people. The idea is that if more people with disabilities and Deaf people get involved in this process, more of the goods and services we use in our daily lives will be accessible. We’re focusing on how this is done within Standards Development Organizations (SDO’s). Our vision is for people with disabilities to be able to participate in mainstream standards development processes with no accessibility barriers.
+The goal of this project is to make the process of creating standards more accessible to people with disabilities and Deaf people. The idea is that if more people with disabilities and Deaf people get involved in this process, more of the goods and services we use in our daily lives will be more accessible. We’re focusing on how this is done within Standards Development Organizations (SDO’s). Our vision is for people with disabilities to be able to participate in mainstream standards development processes with no accessibility barriers.
 
 ### What are standards?
 

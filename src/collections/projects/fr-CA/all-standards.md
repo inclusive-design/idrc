@@ -6,7 +6,7 @@ description: Rendre le processus d'élaboration des normes plus accessible aux p
 ---
 ## À propos de ce projet
 
-L'objectif de ce projet est de rendre le processus de création de normes plus accessibles aux personnes handicapées et aux personnes Sourdes. Nous nous concentrons sur la manière dont cela se déroule au sein des organisations de normalisation. Notre vision est que les personnes handicapées puissent participer aux processus d'élaboration des normes sans aucune barrière d'accessibilité.
+L'objectif de ce projet est de rendre le processus de création de normes plus accessibles aux personnes handicapées et aux personnes Sourdes. L'idée est que si plus de personnes handicapées et de personnes Sourdes participent à ce processus, un plus grand nombre de biens et de services que nous utilisons dans nos vies quotidiennes seront plus accessibles. Nous nous concentrons sur la manière dont cela se déroule au sein des organisations de normalisation. Notre vision est que les personnes handicapées puissent participer aux processus d'élaboration des normes sans aucune barrière d'accessibilité.
 
 ### Quelles sont les normes ?
 
