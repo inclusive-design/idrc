@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.5.1](https://github.com/inclusive-design/idrc/compare/v2.5.0...v2.5.1) (2024-08-07)
+
+
+### Bug Fixes
+
+* add role alert to the search results dynamically ([#973](https://github.com/inclusive-design/idrc/issues/973)) ([29bee1f](https://github.com/inclusive-design/idrc/commit/29bee1f1d6a54215372dffe701763de81afc0352))
+* **deps:** update dependency decap-cms to v3.2.1 ([#1009](https://github.com/inclusive-design/idrc/issues/1009)) ([dc27198](https://github.com/inclusive-design/idrc/commit/dc27198a4c45fcbc680290fa9fe90e28f8769120))
+* **deps:** update dependency eleventy-plugin-pwa-v2 to v1.0.2 ([#1004](https://github.com/inclusive-design/idrc/issues/1004)) ([f0bdee2](https://github.com/inclusive-design/idrc/commit/f0bdee2ef46961442247d7b6f0171f63be1f346a))
+* **deps:** update dependency infusion to v4.7.1 ([#999](https://github.com/inclusive-design/idrc/issues/999)) ([3b187a7](https://github.com/inclusive-design/idrc/commit/3b187a70ebc02c4cc26e24a7e18639c70043df51))
+* import slugify properly ([#978](https://github.com/inclusive-design/idrc/issues/978)) ([724cfba](https://github.com/inclusive-design/idrc/commit/724cfbaf8ca72d1b4de210453cd02f6c206a51f7))
+* update page header to check for French version of projects in url ([#1002](https://github.com/inclusive-design/idrc/issues/1002)) ([75dd946](https://github.com/inclusive-design/idrc/commit/75dd9469ae97c8d689e4fffa9990ece98d3b4dd5))
+
 ## [2.5.0](https://github.com/inclusive-design/idrc/compare/v2.4.1...v2.5.0) (2024-07-05)
 
 
