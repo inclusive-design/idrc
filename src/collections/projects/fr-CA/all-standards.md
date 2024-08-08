@@ -10,7 +10,7 @@ L'objectif de ce projet est de rendre le processus de création de normes plus a
 
 ### Quelles sont les normes ?
 
-Nous utilisons de nombreux biens et services dans notre vie quotidienne, mais comment nous nous assurons qu'ils fonctionnent le mieux possible ? Les normes sont des exigences ou des lignes directrices qui permettent non seulement de s'en assurer, mais aussi de rendre les choses compatibles avec d'autres biens ou services existants. Par exemple, **à cause des normes** **c’est obligatoire** que les fabricants de téléviseurs incluent des fonctionnalités telles que des entrées électriques et une résolution d'une certaine qualité.
+Les normes affectent les biens et les services que nous utilisons dans nos vies quotidiennes. Elles garantissent que ces biens et services sont de bonne qualité, cohérents, fiables, efficaces, et sûrs. Par exemple, **à cause des normes** **c’est obligatoire** que les fabricants de téléviseurs incluent des fonctionnalités telles que des entrées électriques et une résolution d'une certaine qualité.
 
 En bref, les normes permettent aux biens et aux services de fonctionner sans problème et aux gens de croire que les choses sont bien faites.
 
@@ -57,6 +57,6 @@ Organisation canadienne d'élaboration de normes d'accessibilité (Normes d'acce
 
 ## Références
 
-Organisation internationale de normalisation (2024). Normes.  Extrait de <https://www.iso.org/standards.html>.
+Organisation internationale de normalisation (2024). Normes. Extrait de <https://www.iso.org/standards.html>.
 
 Université du Massachusetts (2024). Normes. Extrait de <https://guides.library.umass.edu/c.php?g=719645&p=5126968>.
