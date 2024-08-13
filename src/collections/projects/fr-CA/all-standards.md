@@ -2,6 +2,7 @@
 layout: layouts/project.njk
 title: All Standards With Us
 slug: all-standards
+order: 1
 description: Intégrer l'accessibilité et l'inclusion des personnes handicapées
   dans toutes les normes.
 ---

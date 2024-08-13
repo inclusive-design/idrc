@@ -2,6 +2,7 @@
 layout: layouts/project.njk
 title: All Standards With Us
 slug: all-standards
+order: 1
 description: Integrating Accessibility and Disability Inclusion in All Standards.
 ---
 ## About this project
