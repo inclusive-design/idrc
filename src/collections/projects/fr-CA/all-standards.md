@@ -1,7 +1,7 @@
 ---
 layout: layouts/project.njk
-title: All Standards With Us
-slug: all-standards
+title: Toutes les normes avec nous
+slug: toutes-les-normes-avec-nous
 order: 1
 description: Intégrer l'accessibilité et l'inclusion des personnes handicapées
   dans toutes les normes.
