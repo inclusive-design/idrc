@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.6.0](https://github.com/inclusive-design/idrc/compare/v2.5.1...v2.6.0) (2024-09-03)
+
+
+### Features
+
+* add LinkedIn icon and link (resolves [#1029](https://github.com/inclusive-design/idrc/issues/1029)) ([#1034](https://github.com/inclusive-design/idrc/issues/1034)) ([e1767e3](https://github.com/inclusive-design/idrc/commit/e1767e323c217900e3e6b5042a3b211403be5f55))
+
+
+### Bug Fixes
+
+* **deps:** update dependency decap-cms to v3.3.0 ([#1014](https://github.com/inclusive-design/idrc/issues/1014)) ([d9243cd](https://github.com/inclusive-design/idrc/commit/d9243cd0bc9b021bd6c2b7bb7e3402bca5f70c7e))
+* **deps:** update dependency decap-cms to v3.3.2 ([#1018](https://github.com/inclusive-design/idrc/issues/1018)) ([d394f9a](https://github.com/inclusive-design/idrc/commit/d394f9a310fec58c27e06fe852c7a7bd6985f96b))
+* **deps:** update dependency decap-cms to v3.3.3 ([#1030](https://github.com/inclusive-design/idrc/issues/1030)) ([2332137](https://github.com/inclusive-design/idrc/commit/23321372cc3066f1cacd6e857b27a27059810dd7))
+* **deps:** update dependency eleventy-plugin-fluid to v2.7.3 ([#1023](https://github.com/inclusive-design/idrc/issues/1023)) ([e705afa](https://github.com/inclusive-design/idrc/commit/e705afa23af4b4b464faa574a7b6c27c43a204d0))
+
 ## [2.5.1](https://github.com/inclusive-design/idrc/compare/v2.5.0...v2.5.1) (2024-08-07)
 
 
