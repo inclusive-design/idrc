@@ -548,5 +548,6 @@ collections:
           - {label: Contact Fax, name: fax, widget: string}
           - {label: Physical Address, name: address, widget: text}
           - {label: Twitter Username, name: twitter, widget: string}
+          - {label: LinkedIn Link, name: linkedin, widget: string}
           - {label: Medium Username, name: medium, widget: string}
           - {label: YouTube Link, name: youtube, widget: string}
