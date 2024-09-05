@@ -417,7 +417,7 @@ export function bindEventListeners() { // eslint-disable-line no-unused-vars
     }
 
     // Clicking 'apply filter' button redirects the page with applied filter options
-	 document.querySelector(".apply-button").addEventListener("click", () => {
+    document.querySelector(".apply-button").addEventListener("click", () => {
         localStorage.setItem("setFocusOn", ".apply-button");
     });
 
