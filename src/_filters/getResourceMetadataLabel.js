@@ -14,11 +14,11 @@ module.exports = (metadataValue, metadataType) => {
     let metadata = [];
 
     switch (metadataType) {
-	  case ("topics"): metadata = resourceTopics.resourceTopics;
-	    break;
-	  case ("types"): metadata = resourceTypes.resourceTypes;
+    case ("topics"): metadata = resourceTopics.resourceTopics;
         break;
-	  default:
+    case ("types"): metadata = resourceTypes.resourceTypes;
+        break;
+    default:
         break;
     }
 

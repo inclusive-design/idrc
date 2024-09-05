@@ -5,25 +5,25 @@ const IExtension = function () {
     this.tags = ["_i"];
 
     this.parse = function (parser, nodes) {
-	  // Get the tag token
-	  const token = parser.nextToken();
+        // Get the tag token
+        const token = parser.nextToken();
 
-	  // Get the arguments passed to the tag
-	  const args = parser.parseSignature(null, true);
+        // Get the arguments passed to the tag
+        const args = parser.parseSignature(null, true);
 
-	  // Parse the body of the tag
-	  parser.advanceAfterBlockEnd(token.value);
+        // Parse the body of the tag
+        parser.advanceAfterBlockEnd(token.value);
 
-	  // Return the custom node
-	  return new nodes.CallExtension(this, "run", args);
+        // Return the custom node
+        return new nodes.CallExtension(this, "run", args);
     };
 
     this.run = function (context, locale, message, data) {
-	  // Replace '${locale}' with the locale value from the data object
-	  const replacedMessage = message.replace("${locale}", data[locale]);
+        // Replace '${locale}' with the locale value from the data object
+        const replacedMessage = message.replace("${locale}", data[locale]);
 
-	  // Return the modified message
-	  return replacedMessage;
+        // Return the modified message
+        return replacedMessage;
     };
 };
 

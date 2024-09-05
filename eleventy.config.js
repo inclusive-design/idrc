@@ -39,7 +39,7 @@ module.exports = eleventyConfig => {
             }
 
             return 0;
-		  });
+        });
     });
 
     siteConfig.locales.forEach(lang => {
