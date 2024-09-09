@@ -7,6 +7,10 @@
     {
       "value": "education",
       "label": "Education"
+    },
+    {
+      "value": "practice",
+      "label": "Practice"
     }
   ]
 }
