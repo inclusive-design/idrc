@@ -2,7 +2,7 @@
 layout: layouts/single--idea.njk
 title: "We Count Recount: IDRC's Newsletter"
 date: 2024-09-09T00:00:00.000Z
-archived: true
+archived: false
 author: IDRC Team
 thumbnailImage: /media/we-count-logo_colour_no-background.png
 ---
