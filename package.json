@@ -62,7 +62,7 @@
     "backstopjs": "6.3.25",
     "cross-env": "7.0.3",
     "decap-server": "3.1.2",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-fluid": "2.1.3",
     "eslint-plugin-jsdoc": "50.2.3",
     "eslint-plugin-markdown": "5.1.0",
