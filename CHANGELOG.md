@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.6.1](https://github.com/inclusive-design/idrc/compare/v2.6.0...v2.6.1) (2024-10-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency npm-run-all2 to v6.2.3 ([#1060](https://github.com/inclusive-design/idrc/issues/1060)) ([ab06ff2](https://github.com/inclusive-design/idrc/commit/ab06ff2b903730f64f9c021573d9aad831842d58))
+* **deps:** update dependency npm-run-all2 to v6.2.4 ([#1084](https://github.com/inclusive-design/idrc/issues/1084)) ([dc2f33f](https://github.com/inclusive-design/idrc/commit/dc2f33fd279a968ed7239ce9a4f3b77fe9265dac))
+
 ## [2.6.0](https://github.com/inclusive-design/idrc/compare/v2.5.1...v2.6.0) (2024-09-03)
 
 
