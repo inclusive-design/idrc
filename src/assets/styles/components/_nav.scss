@@ -403,25 +403,25 @@
         .menu a {
             &:hover,
             &:focus {
-                background: var(--fl-linkColor, var(--blue-500));
+                background: var(--fl-linkColor, var(--idrc-blue));
                 color: var(--fl-bgColor, var(--black));
             }
 
             &:active {
-                background: var(--fl-bgColor, color.adjust($blue-500, $alpha: -0.5));
+                background: var(--fl-bgColor, color.adjust($idrc-blue, $alpha: -0.5));
                 color: var(--fl-linkColor, var(--black));
             }
         }
 
         .menu button {
             &:active {
-                background: var(--fl-buttonBgColor, color.adjust($blue-500, $alpha: -0.5));
+                background: var(--fl-buttonBgColor, color.adjust($idrc-blue, $alpha: -0.5));
                 color: var(--fl-buttonFgColor, var(--black));
             }
 
             &:hover,
             &:focus {
-                background: var(--fl-buttonFgColor, var(--blue-500));
+                background: var(--fl-buttonFgColor, var(--idrc-blue));
                 color: var(--fl-buttonBgColor, var(--black));
             }
         }
@@ -617,32 +617,32 @@
     .page--home {
         .menu a {
             &:active {
-                background: var(--fl-bgColor, color.adjust($blue-500, $alpha: -0.5));
+                background: var(--fl-bgColor, color.adjust($idrc-blue, $alpha: -0.5));
                 color: var(--fl-linkColor, var(--black));
             }
 
             &:hover,
             &:focus {
-                background: var(--fl-linkColor, var(--blue-500));
+                background: var(--fl-linkColor, var(--idrc-blue));
                 color: var(--fl-bgColor, var(--black));
             }
         }
 
         .menu button {
             &:active {
-                background: var(--fl-buttonBgColor, color.adjust($blue-500, $alpha: -0.5));
+                background: var(--fl-buttonBgColor, color.adjust($idrc-blue, $alpha: -0.5));
                 color: var(--fl-buttonFgColor, var(--black));
             }
 
             &:hover,
             &:focus {
-                background: var(--fl-buttonFgColor, var(--blue-500));
+                background: var(--fl-buttonFgColor, var(--idrc-blue));
                 color: var(--fl-buttonBgColor, var(--black));
             }
         }
 
         .menu [aria-expanded="true"] {
-            background: var(--fl-bgColor, var(--blue-500));
+            background: var(--fl-bgColor, var(--idrc-blue));
             color: var(--fl-fgColor, var(--black));
         }
 

@@ -38,17 +38,17 @@
 
 .page--home {
     .brand {
-        color: var(--fl-linkColor, var(--blue-500));
+        color: var(--fl-linkColor, var(--idrc-blue));
         inline-size: rem(72);
 
         &:hover,
         &:focus {
-            background: var(--fl-linkColor, var(--blue-500));
+            background: var(--fl-linkColor, var(--idrc-blue));
             color: var(--fl-bgColor, var(--white));
         }
 
         &:active {
-            background: var(--fl-linkColor, color.adjust($blue-500, $alpha: -0.3));
+            background: var(--fl-linkColor, color.adjust($idrc-blue, $alpha: -0.3));
             color: var(--fl-bgColor);
         }
     }
