@@ -12,22 +12,16 @@
     &:focus {
         background: var(--fl-linkColor, var(--black));
         color: var(--fl-bgColor, var(--white));
-        svg {
-            fill: var(--fl-bgColor, var(--white));
-        }
     }
 
     &:active {
         background: var(--fl-linkColor, color.adjust(black, $alpha: -0.3));
         color: var(--fl-bgColor);
-        svg {
-            fill: var(--fl-bgColor);
-        }
     }
 }
 
 .brand svg {
-    fill: var(--fl-linkColor, var(--idrc-blue));
+    fill: currentcolor;
     inline-size: rem(40);
     margin-inline-start: rem(18);
 }
