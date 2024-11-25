@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.6.1](https://github.com/inclusive-design/idrc/compare/v2.6.0...v2.6.1) (2024-11-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency decap-cms to v3.4.0 ([#1098](https://github.com/inclusive-design/idrc/issues/1098)) ([357d565](https://github.com/inclusive-design/idrc/commit/357d56508bf7c4ff52fe2e73030ec37b321dbee4))
+* **deps:** update dependency npm-run-all2 to v6.2.3 ([#1060](https://github.com/inclusive-design/idrc/issues/1060)) ([ab06ff2](https://github.com/inclusive-design/idrc/commit/ab06ff2b903730f64f9c021573d9aad831842d58))
+* **deps:** update dependency npm-run-all2 to v6.2.4 ([#1084](https://github.com/inclusive-design/idrc/issues/1084)) ([dc2f33f](https://github.com/inclusive-design/idrc/commit/dc2f33fd279a968ed7239ce9a4f3b77fe9265dac))
+* **deps:** update dependency npm-run-all2 to v6.2.6 ([#1086](https://github.com/inclusive-design/idrc/issues/1086)) ([fc7c056](https://github.com/inclusive-design/idrc/commit/fc7c056a405c58d2bc64a13532bab55a4583d153))
+* **deps:** update dependency npm-run-all2 to v7 ([#1087](https://github.com/inclusive-design/idrc/issues/1087)) ([be36fc5](https://github.com/inclusive-design/idrc/commit/be36fc5f2964803d5fc26493f2bc225daab3e832))
+* update logo svg to have higher contrast ratio ([#1102](https://github.com/inclusive-design/idrc/issues/1102)) ([11dc1df](https://github.com/inclusive-design/idrc/commit/11dc1df43169172c407b07957a6c87c869d41e09))
+
 ## [2.6.0](https://github.com/inclusive-design/idrc/compare/v2.5.1...v2.6.0) (2024-09-03)
 
 
