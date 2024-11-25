@@ -1,8 +1,10 @@
 ---
 layout: layouts/project.njk
-title: All Standards
-slug: all-standards
-description: Rendre le processus d'élaboration des normes plus accessible aux personnes handicapées et aux personnes Sourdes.
+title: Toutes les normes avec nous
+slug: toutes-les-normes-avec-nous
+order: 1
+description: Intégrer l'accessibilité et l'inclusion des personnes handicapées
+  dans toutes les normes.
 ---
 ## À propos de ce projet
 

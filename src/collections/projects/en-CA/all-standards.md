@@ -1,8 +1,9 @@
 ---
 layout: layouts/project.njk
-title: All Standards
-slug: all-standards
-description: Making the process of creating standards more accessible to people with disabilities and Deaf people.
+title: All Standards With Us
+slug: all-standards-with-us
+order: 1
+description: Integrating Accessibility and Disability Inclusion in All Standards.
 ---
 ## About this project
 
