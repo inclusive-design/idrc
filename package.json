@@ -54,7 +54,7 @@
     "npm-run-all2": "7.0.1",
     "nunjucks": "3.2.4",
     "prop-types": "15.8.1",
-    "react": "16.14.0"
+    "react": "19.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "19.6.0",
