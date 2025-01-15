@@ -49,7 +49,7 @@
     "eleventy-plugin-pwa-v2": "1.0.2",
     "eleventy-plugin-sharp": "0.1.1",
     "eslint-config-fluid": "2.1.3",
-    "infusion": "4.7.1",
+    "infusion": "4.8.0",
     "markdown-it": "14.1.0",
     "npm-run-all2": "7.0.2",
     "nunjucks": "3.2.4",
