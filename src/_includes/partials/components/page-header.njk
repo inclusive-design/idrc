@@ -17,12 +17,14 @@
         {% endif %}
         <h1>{{ parentTitle if parentTitle else title }}</h1>
         {% set links = page.url | locale_links %}
+        {% if links.length > 0 %}
         {%- for link in links %}
     
         <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
             {%- include 'svg/icon-translation.svg' -%}<span>{{ 'Read in English' if link.lang === 'en-CA' else 'Lire en français' }}</span>
         </a>
         {%- endfor -%}
+        {% endif %}
         {% if intro %}
         <div class="intro">{{ intro | markdown | safe }}</div>
         {% endif %}
