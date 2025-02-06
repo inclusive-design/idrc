@@ -5,15 +5,20 @@ parentTitle: ""
 order: 65
 subPageOrder: 0
 thumbnailImage: /media/project-communication_access.png
-description: IDRC is working to address communication access for people who have
-  speech, language and communication disabilities. This project will focus on
+description: >-
+  This IDRC research will address communication access for people who have
+  speech, language and communication disabilities. In this work, we focus on
   communication access for people who have speech, language and communication
   disabilities due to life-long or acquired cognitive and/or neurological
-  disabilities.
+  disabilities. 
+
+  Our research builds on research carried out by Communication Disabilities Access Canada (CDAC) and extends and supports recommendations previously tabled by CDAC. This research will inform development of an Equitable Communication Standard.
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
 
 IDRC is working to address communication access for people who have speech, language, and communication disabilities. With advice from an advisory panel and Communication Disabilities Access Canada, this project will focus on communication access for people who have speech, language and communication disabilities due to life-long or acquired cognitive and/or neurological disabilities, such as cerebral palsy, autism spectrum disorder, Down Syndrome, learning disability, intellectual disability, fetal alcohol spectrum disorder, traumatic brain injury, aphasia after a stroke, dementia, amyotrophic lateral sclerosis, Parkinson’s disease, or multiple sclerosis. 
+
+Our research builds on research carried out by Communication Disabilities Access Canada (CDAC) and extends and supports recommendations previously tabled by CDAC. This research will inform development of an Equitable Communication Standard. 
 
 ## About Communication
 
@@ -167,9 +172,13 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the
 
 
 
+
+
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "center" %}
+
+
 
 
 
