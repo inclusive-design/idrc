@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.7.0](https://github.com/inclusive-design/idrc/compare/v2.6.1...v2.7.0) (2025-02-06)
+
+
+### Features
+
+* add bluesky link ([#1151](https://github.com/inclusive-design/idrc/issues/1151)) ([31793b8](https://github.com/inclusive-design/idrc/commit/31793b8e5443b887452345bcc2d37cf01a5478fd))
+* add Rachel to the team ([#1152](https://github.com/inclusive-design/idrc/issues/1152)) ([1babdd6](https://github.com/inclusive-design/idrc/commit/1babdd64dcf06eec9e0f2b469557ef9668da7032))
+
+
+### Bug Fixes
+
+* **deps:** update dependency decap-cms to v3.5.0 ([#1130](https://github.com/inclusive-design/idrc/issues/1130)) ([593a340](https://github.com/inclusive-design/idrc/commit/593a3401ac7675e3d79ec5afe11a68a56b21d03b))
+* **deps:** update dependency decap-cms to v3.6.0 ([#1144](https://github.com/inclusive-design/idrc/issues/1144)) ([bec6fdf](https://github.com/inclusive-design/idrc/commit/bec6fdf066989ccbcb804b980f73d93a7a10a227))
+* **deps:** update dependency decap-cms to v3.6.1 ([#1146](https://github.com/inclusive-design/idrc/issues/1146)) ([2842fb5](https://github.com/inclusive-design/idrc/commit/2842fb5046fba346803107758e1725aab47e963e))
+* **deps:** update dependency infusion to v4.8.0 ([#1131](https://github.com/inclusive-design/idrc/issues/1131)) ([a0a6890](https://github.com/inclusive-design/idrc/commit/a0a6890649e4e9b6057075a8541dd8b2013267bb))
+* **deps:** update dependency npm-run-all2 to v7.0.2 ([#1119](https://github.com/inclusive-design/idrc/issues/1119)) ([13a60de](https://github.com/inclusive-design/idrc/commit/13a60de306caa2b53737fd870581c7fe0909ca63))
+
 ## [2.6.1](https://github.com/inclusive-design/idrc/compare/v2.6.0...v2.6.1) (2024-11-25)
 
 
