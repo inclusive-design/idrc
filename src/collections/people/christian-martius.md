@@ -1,5 +1,5 @@
 ---
-title: Gloria Bernal Gomez
+title: Christian Martius
 job: Assistant IDRC & Vision Technology Service
-email: gbernalgomez@ocadu.ca
+email: cmartius@ocadu.ca
 ---
