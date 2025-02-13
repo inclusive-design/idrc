@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.2](https://github.com/inclusive-design/idrc/compare/v2.7.1...v2.7.2) (2025-02-13)
+
+
+### Bug Fixes
+
+* use links for social media values (fixes [#1153](https://github.com/inclusive-design/idrc/issues/1153)) ([#1160](https://github.com/inclusive-design/idrc/issues/1160)) ([1e13d66](https://github.com/inclusive-design/idrc/commit/1e13d66b09562d869b6ed0b1782bae151387c435))
+
 ## [2.7.1](https://github.com/inclusive-design/idrc/compare/v2.7.0...v2.7.1) (2025-02-13)
 
 
