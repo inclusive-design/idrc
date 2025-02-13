@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.1](https://github.com/inclusive-design/idrc/compare/v2.7.0...v2.7.1) (2025-02-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency decap-cms to v3.6.2 ([#1156](https://github.com/inclusive-design/idrc/issues/1156)) ([e8a2c11](https://github.com/inclusive-design/idrc/commit/e8a2c1164e64f0ee36c9292821125c8173611316))
+* remove ACAW content from the homepage ([#1155](https://github.com/inclusive-design/idrc/issues/1155)) ([2db44c8](https://github.com/inclusive-design/idrc/commit/2db44c891631df8e0e9d4b863e74c7119b17c9ff))
+
 ## [2.7.0](https://github.com/inclusive-design/idrc/compare/v2.6.1...v2.7.0) (2025-02-06)
 
 
