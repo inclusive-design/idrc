@@ -29,18 +29,44 @@ collections:
         slug: "{{slug}}"
         i18n: false
         fields:
-          - {label: Layout, name: layout, widget: hidden, default: layouts/page.njk}
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: layouts/page.njk
+
           - {label: Title, name: title, widget: string}
-          - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-          - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-          - {label: Social Image, name: socialImage, widget: image, required: false}
-          - {label: Intro, name: intro, widget: markdown, required: false, editor_components: [image, file]}
+          - label: SEO Meta Title
+            name: metaTitle
+            widget: string
+            required: false
+
+          - label: SEO Meta Description
+            name: metaDesc
+            widget: string
+            required: false
+
+          - label: Social Image
+            name: socialImage
+            widget: image
+            required: false
+
+          - label: Intro
+            name: intro
+            widget: markdown
+            required: false
+            editor_components: [image, file]
+
           - label: Sections
             name: sections
             widget: list
             fields:
               - {label: Title, name: title, widget: string, required: true}
-              - {label: Content, name: content, widget: markdown, required: true, editor_components: [image, file]}
+              - label: Content
+                name: content
+                widget: markdown
+                required: true
+                editor_components: [image, file]
+
               - label: Text Colour
                 name: textColor
                 widget: select
@@ -75,7 +101,11 @@ collections:
                   - {label: Yellow 500, value: yellow-500}
                 default: indigo-100
                 required: false
-              - {label: Full Bleed Background, name: fullBleed, widget: boolean, default: false}
+              - label: Full Bleed Background
+                name: fullBleed
+                widget: boolean
+                default: false
+
               - label: Border Colour
                 name: borderColor
                 widget: select
@@ -94,8 +124,16 @@ collections:
                 default: indigo-500
                 required: false
               - {label: Image, name: image, widget: image, required: false}
-              - {label: Image (2x), name: image2x, widget: image, required: false}
-              - {label: Image Alternative Text, name: imageAltText, widget: string, required: false}
+              - label: Image (2x)
+                name: image2x
+                widget: image
+                required: false
+
+              - label: Image Alternative Text
+                name: imageAltText
+                widget: string
+                required: false
+
               - label: Image Order
                 name: imageOrder
                 widget: select
@@ -147,23 +185,65 @@ collections:
         slug: "{{slug}}"
         i18n: false
         fields:
-          - {label: Layout, name: layout, widget: hidden, default: layouts/page.njk}
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: layouts/page.njk
+
           - {label: Title, name: title, widget: string}
-          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: permalink, widget: string, required: false}
-          - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-          - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-          - {label: Social Image, name: socialImage, widget: image, required: false}
-          - {label: Intro, name: intro, widget: markdown, required: false, editor_components: [image, file]}
-          - {label: Header Background Colour, name: headerBgColor, widget: hidden, default: blue-200}
-          - {label: Header Border Color, name: headerBorderColor, widget: hidden, default: blue-500}
-          - {label: Header Text Color, name: headerTextColor, widget: hidden, default: black}
+          - label: "Permalink Override (Pattern: '/your-slug/index.html')"
+            name: permalink
+            widget: string
+            required: false
+
+          - label: SEO Meta Title
+            name: metaTitle
+            widget: string
+            required: false
+
+          - label: SEO Meta Description
+            name: metaDesc
+            widget: string
+            required: false
+
+          - label: Social Image
+            name: socialImage
+            widget: image
+            required: false
+
+          - label: Intro
+            name: intro
+            widget: markdown
+            required: false
+            editor_components: [image, file]
+
+          - label: Header Background Colour
+            name: headerBgColor
+            widget: hidden
+            default: blue-200
+
+          - label: Header Border Color
+            name: headerBorderColor
+            widget: hidden
+            default: blue-500
+
+          - label: Header Text Color
+            name: headerTextColor
+            widget: hidden
+            default: black
+
           - label: Milestones
             label_singular: milestone
             name: milestones
             widget: list
             summary: "{{fields.year}} {{fields.title}}"
             fields:
-              - {label: Year, name: year, widget: number, value_type: int, min: 1993}
+              - label: Year
+                name: year
+                widget: number
+                value_type: int
+                min: 1993
+
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: text}
               - {label: Major Milestone, name: major, widget: boolean}
@@ -175,15 +255,47 @@ collections:
         slug: "{{slug}}"
         i18n: false
         fields:
-          - {label: Layout, name: layout, widget: hidden, default: layouts/projects.njk}
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: layouts/projects.njk
+
           - {label: Title, name: title, widget: string}
-          - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: permalink, widget: string, required: false}
-          - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-          - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-          - {label: Social Image, name: socialImage, widget: image, required: false}
-          - {label: Header Background Colour, name: headerBgColor, widget: hidden, default: coral-500}
-          - {label: Header Border Color, name: headerBorderColor, widget: hidden, default: coral-800}
-          - {label: Header Text Color, name: headerTextColor, widget: hidden, default: black}
+          - label: "Permalink Override (Pattern: '/your-slug/index.html')"
+            name: permalink
+            widget: string
+            required: false
+
+          - label: SEO Meta Title
+            name: metaTitle
+            widget: string
+            required: false
+
+          - label: SEO Meta Description
+            name: metaDesc
+            widget: string
+            required: false
+
+          - label: Social Image
+            name: socialImage
+            widget: image
+            required: false
+
+          - label: Header Background Colour
+            name: headerBgColor
+            widget: hidden
+            default: coral-500
+
+          - label: Header Border Color
+            name: headerBorderColor
+            widget: hidden
+            default: coral-800
+
+          - label: Header Text Color
+            name: headerTextColor
+            widget: hidden
+            default: black
+
   - name: pages
     label: Pages
     label_singular: Page
@@ -193,13 +305,38 @@ collections:
     create: true
     i18n: false
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: layouts/page.njk}
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/page.njk
+
       - {label: Title, name: title, widget: string}
-      - {label: "Permalink Override (Pattern: '/your-slug/index.html')", name: permalink, widget: string, required: false}
-      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-      - {label: Social Image, name: socialImage, widget: image, required: false}
-      - {label: Intro, name: intro, widget: markdown, required: false, editor_components: [image, file]}
+      - label: "Permalink Override (Pattern: '/your-slug/index.html')"
+        name: permalink
+        widget: string
+        required: false
+
+      - label: SEO Meta Title
+        name: metaTitle
+        widget: string
+        required: false
+
+      - label: SEO Meta Description
+        name: metaDesc
+        widget: string
+        required: false
+
+      - label: Social Image
+        name: socialImage
+        widget: image
+        required: false
+
+      - label: Intro
+        name: intro
+        widget: markdown
+        required: false
+        editor_components: [image, file]
+
       - label: Header Background Colour
         name: headerBgColor
         widget: select
@@ -267,7 +404,12 @@ collections:
         default: []
         fields:
           - {label: Title, name: title, widget: string, required: true}
-          - {label: Content, name: content, widget: markdown, required: true, editor_components: [image, file]}
+          - label: Content
+            name: content
+            widget: markdown
+            required: true
+            editor_components: [image, file]
+
           - label: Text Colour
             name: textColor
             widget: select
@@ -302,7 +444,11 @@ collections:
               - {label: Yellow 500, value: yellow-500}
             default: indigo-100
             required: false
-          - {label: Full Bleed Background, name: fullBleed, widget: boolean, default: false}
+          - label: Full Bleed Background
+            name: fullBleed
+            widget: boolean
+            default: false
+
           - label: Border Colour
             name: borderColor
             widget: select
@@ -322,7 +468,11 @@ collections:
             required: false
           - {label: Image, name: image, widget: image, required: false}
           - {label: Image (2x), name: image2x, widget: image, required: false}
-          - {label: Image Alternative Text, name: imageAltText, widget: string, required: false}
+          - label: Image Alternative Text
+            name: imageAltText
+            widget: string
+            required: false
+
           - label: Image Order
             name: imageOrder
             widget: select
@@ -376,16 +526,41 @@ collections:
     create: true
     i18n: false
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: layouts/single--news.njk}
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/single--news.njk
+
       - {label: Title, name: title, widget: string}
       - {label: Date, name: date, widget: datetime, time_format: false}
       - {label: Archived, name: archived, widget: boolean, default: false}
-      - {label: Author, name: author, widget: string, required: false, default: IDRC Team}
+      - label: Author
+        name: author
+        widget: string
+        required: false
+        default: IDRC Team
+
       - {label: Excerpt, name: excerpt, widget: text, required: false}
-      - {label: "Permalink Override (Pattern: '/news/your-news-item/index.html')", name: permalink, widget: string, required: false}
-      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-      - {label: Social Image, name: socialImage, widget: image, required: false}
+      - label: "Permalink Override (Pattern: '/news/your-news-item/index.html')"
+        name: permalink
+        widget: string
+        required: false
+
+      - label: SEO Meta Title
+        name: metaTitle
+        widget: string
+        required: false
+
+      - label: SEO Meta Description
+        name: metaDesc
+        widget: string
+        required: false
+
+      - label: Social Image
+        name: socialImage
+        widget: image
+        required: false
+
       - {label: Tags, name: tags, widget: list, allow_add: true}
       - {label: Body, name: body, widget: markdown}
   - name: ideas
@@ -397,17 +572,46 @@ collections:
     create: true
     i18n: false
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: layouts/single--idea.njk}
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/single--idea.njk
+
       - {label: Title, name: title, widget: string}
       - {label: Date, name: date, widget: datetime, time_format: false}
       - {label: Archived, name: archived, widget: boolean, default: false}
-      - {label: Author, name: author, widget: string, required: false, default: IDRC Team}
+      - label: Author
+        name: author
+        widget: string
+        required: false
+        default: IDRC Team
+
       - {label: Excerpt, name: excerpt, widget: text, required: false}
-      - {label: Thumbnail Image, name: thumbnailImage, widget: image, required: false}
-      - {label: "Permalink Override (Pattern: '/ideas/your-idea/index.html')", name: permalink, widget: string, required: false}
-      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-      - {label: Social Image, name: socialImage, widget: image, required: false}
+      - label: Thumbnail Image
+        name: thumbnailImage
+        widget: image
+        required: false
+
+      - label: "Permalink Override (Pattern: '/ideas/your-idea/index.html')"
+        name: permalink
+        widget: string
+        required: false
+
+      - label: SEO Meta Title
+        name: metaTitle
+        widget: string
+        required: false
+
+      - label: SEO Meta Description
+        name: metaDesc
+        widget: string
+        required: false
+
+      - label: Social Image
+        name: socialImage
+        widget: image
+        required: false
+
       - {label: Tags, name: tags, widget: list, allow_add: true}
       - {label: Body, name: body, widget: markdown}
   - name: people
@@ -419,21 +623,62 @@ collections:
     create: true
     i18n: false
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: layouts/single--person.njk}
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/single--person.njk
+
       - {label: Full Name, name: title, widget: string}
       - {label: Job Title, name: job, widget: string}
       - {label: Pronouns, name: pronouns, widget: string}
       - {label: Email Address, name: email, widget: string}
-      - {label: Personal Website, name: website, widget: string, required: false, hint: "A link to this person's personal website."}
-      - {label: Twitter Username, name: twitter, widget: string, required: false, hint: "This person's twitter username, e.g. '@username'."}
-      - {label: Github Profile, name: github, widget: string, required: false, hint: "A link to this person's profile on GitHub."}
-      - {label: LinkedIn Profile, name: linkedin, widget: string, required: false, hint: "A link to this person's profile on LinkedIn."}
-      - {label: Projects, name: projects, widget: list, allow_add: true, hint: A comma-separated list of projects on which this person has worked.}
+      - label: Personal Website
+        name: website
+        widget: string
+        required: false
+        hint: "A link to this person's personal website."
+
+      - label: Twitter Username
+        name: twitter
+        widget: string
+        required: false
+        hint: "This person's twitter username, e.g. '@username'."
+
+      - label: Github Profile
+        name: github
+        widget: string
+        required: false
+        hint: "A link to this person's profile on GitHub."
+
+      - label: LinkedIn Profile
+        name: linkedin
+        widget: string
+        required: false
+        hint: "A link to this person's profile on LinkedIn."
+
+      - label: Projects
+        name: projects
+        widget: list
+        allow_add: true
+        hint: A comma-separated list of projects on which this person has worked.
+
       - {label: Interests, name: interests, widget: text, required: false}
       - {label: Bio, name: body, widget: markdown}
-      - {label: SEO Meta Title, name: metaTitle, widget: string, required: false}
-      - {label: SEO Meta Description, name: metaDesc, widget: string, required: false}
-      - {label: Social Image, name: socialImage, widget: image, required: false}
+      - label: SEO Meta Title
+        name: metaTitle
+        widget: string
+        required: false
+
+      - label: SEO Meta Description
+        name: metaDesc
+        widget: string
+        required: false
+
+      - label: Social Image
+        name: socialImage
+        widget: image
+        required: false
+
   - name: projects
     label: Projects
     label_singular: Project
@@ -444,18 +689,93 @@ collections:
     i18n: true
     sortable_fields: [title, order]
     fields:
-      - {label: Layout, name: layout, widget: hidden, default: layouts/project.njk, i18n: duplicate}
-      - {label: Title, name: title, widget: string, required: true, hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below.", i18n: true}
-      - {label: Title for URL, name: slug, widget: string, required: false, hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique.", i18n: true}
-      - {label: Short Name, name: shortName, widget: string, required: false, hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project., i18n: true}
-      - {label: Parent Project, name: parentTitle, widget: relation, collection: projects, value_field: title, search_fields: [title], required: false, hint: This is required for sub-pages of a project to indicate which project is the parent., i18n: true}
-      - {label: Order, name: order, widget: number, required: false, hint: Order in which the project should appear., i18n: duplicate}
-      - {label: Subpage Order, name: subPageOrder, widget: number, required: false, hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order.", i18n: duplicate}
-      - {label: Thumbnail Image, name: thumbnailImage, widget: image, required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched.", i18n: duplicate}
-      - {label: Thumbnail Image Alt Text, name: thumbnailAltText, widget: string, required: false, hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default.", i18n: true}
-      - {label: Project Listing Description, name: description, widget: markdown, required: false, editor_components: [image, file], hint: This is text that appears for a project in the projects listing. This description is not required for sub-pages., i18n: true}
-      - {label: External Project Website, name: link, widget: string, required: false, hint: This is not required for sub-pages., i18n: duplicate}
-      - {label: Body, name: body, required: false, widget: markdown, hint: This is the content that appears for a project page hosted on the IDRC site., i18n: true}
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: layouts/project.njk
+        i18n: duplicate
+
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below."
+        i18n: true
+
+      - label: Title for URL
+        name: slug
+        widget: string
+        required: false
+        hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique."
+        i18n: true
+
+      - label: Short Name
+        name: shortName
+        widget: string
+        required: false
+        hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project.
+        i18n: true
+
+      - label: Parent Project
+        name: parentTitle
+        widget: relation
+        collection: projects
+        value_field: title
+        search_fields: [title]
+        required: false
+        hint: This is required for sub-pages of a project to indicate which project is the parent.
+        i18n: true
+
+      - label: Order
+        name: order
+        widget: number
+        required: false
+        hint: Order in which the project should appear.
+        i18n: duplicate
+
+      - label: Subpage Order
+        name: subPageOrder
+        widget: number
+        required: false
+        hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order."
+        i18n: duplicate
+
+      - label: Thumbnail Image
+        name: thumbnailImage
+        widget: image
+        required: false
+        hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."
+        i18n: duplicate
+
+      - label: Thumbnail Image Alt Text
+        name: thumbnailAltText
+        widget: string
+        required: false
+        hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."
+        i18n: true
+
+      - label: Project Listing Description
+        name: description
+        widget: markdown
+        required: false
+        editor_components: [image, file]
+        hint: This is text that appears for a project in the projects listing. This description is not required for sub-pages.
+        i18n: true
+
+      - label: External Project Website
+        name: link
+        widget: string
+        required: false
+        hint: This is not required for sub-pages.
+        i18n: duplicate
+
+      - label: Body
+        name: body
+        required: false
+        widget: markdown
+        hint: This is the content that appears for a project page hosted on the IDRC site.
+        i18n: true
+
   - name: resources
     label: Resources
     label_singular: Resource
@@ -467,10 +787,30 @@ collections:
     fields:
       - {label: Important, name: pinned, widget: boolean, default: false}
       - {label: Resource Name, name: title, widget: string, required: true}
-      - {label: Description, name: description, widget: markdown, required: true, editor_components: [image, file]}
-      - {label: Published Year, name: publishedYear, widget: string, hint: The year this resource was first publicly available., required: true}
-      - {label: Thumbnail Image, name: thumbnailImage, widget: image, required: false, hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."}
-      - {label: Thumbnail Image Alt Text, name: thumbnailAltText, widget: string, required: false, hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."}
+      - label: Description
+        name: description
+        widget: markdown
+        required: true
+        editor_components: [image, file]
+
+      - label: Published Year
+        name: publishedYear
+        widget: string
+        hint: The year this resource was first publicly available.
+        required: true
+
+      - label: Thumbnail Image
+        name: thumbnailImage
+        widget: image
+        required: false
+        hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."
+
+      - label: Thumbnail Image Alt Text
+        name: thumbnailAltText
+        widget: string
+        required: false
+        hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."
+
       - label: Resource Topics
         name: topics
         widget: relation
@@ -547,7 +887,8 @@ collections:
           - {label: Contact Phone, name: phone, widget: string}
           - {label: Contact Fax, name: fax, widget: string}
           - {label: Physical Address, name: address, widget: text}
-          - {label: Twitter Username, name: twitter, widget: string}
+          - {label: Bluesky Link, name: bluesky, widget: string}
           - {label: LinkedIn Link, name: linkedin, widget: string}
-          - {label: Medium Username, name: medium, widget: string}
+          - {label: Medium Link, name: medium, widget: string}
+          - {label: X Link, name: twitter, widget: string}
           - {label: YouTube Link, name: youtube, widget: string}

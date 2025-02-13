@@ -8,10 +8,10 @@
     <div class="social">
         <p class="h3">Social media</p>
         <ul>
-            <li><a rel="external" href="https://twitter.com/{{ site.twitter | replace('@', '') }}/">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
-            <li><a rel="external" href="https://bsky.app/profile/{{ site.bluesky | replace('@', '') }}/">{% include 'svg/bluesky.svg' %} <span class="underline">Bluesky</span></a></li>
+            <li><a rel="external" href="{{ site.bluesky }}">{% include 'svg/bluesky.svg' %} <span class="underline">Bluesky</span></a></li>
+            <li><a rel="external" href="{{ site.twitter }}">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
             <li><a rel="external" href="{{ site.linkedin }}">{% include 'svg/linkedin.svg' %} <span class="underline">LinkedIn</span></a></li>
-            <li><a rel="external" href="https://medium.com/{{ site.medium }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
+            <li><a rel="external" href="{{ site.medium }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
             <li><a rel="external" href="{{ site.youtube }}">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
         </ul>
     </div>
