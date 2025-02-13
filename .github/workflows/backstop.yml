@@ -1,10 +1,8 @@
 name: Run visual regression tests with BackstopJS
 
 on:
-  push:
-    branches:
-      - dev
-      - main
+  pull_request:
+    branches: [dev]
 
 jobs:
   backstop:
@@ -15,14 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "16"
-      - name: Cache node modules
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          cache: npm
       - name: Wait for Netlify deploy preview
-        uses: jakepartusch/wait-for-netlify-action@v1.4
+        uses: kukiron/wait-for-netlify-deploy@v1.2.2
         id: netlify
         with:
           site_name: idrc
@@ -33,7 +26,7 @@ jobs:
           BASE_URL: ${{ steps.netlify.outputs.url }}
       - name: Install dependencies, generate reference images, run visual regression tests
         run: |
-          npm i
+          npm ci
           npm run backstop:test:ci
         env:
           CI: true
