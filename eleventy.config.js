@@ -1,6 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
-const eleventyPWA = require("eleventy-plugin-pwa-v2");
+const eleventyPWA = require("@pkvach/eleventy-plugin-pwa");
 const eleventySharp = require("eleventy-plugin-sharp");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const parseTransform = require("./src/_transforms/parse.js");
