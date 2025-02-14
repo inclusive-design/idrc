@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.3](https://github.com/inclusive-design/idrc/compare/v2.7.2...v2.7.3) (2025-02-14)
+
+
+### Bug Fixes
+
+* **deps:** replace deprecated PWA plugin ([#1162](https://github.com/inclusive-design/idrc/issues/1162)) ([0403d94](https://github.com/inclusive-design/idrc/commit/0403d9408453110b41a6d1d87bc43e38cb51aa9a))
+
 ## [2.7.2](https://github.com/inclusive-design/idrc/compare/v2.7.1...v2.7.2) (2025-02-13)
 
 
