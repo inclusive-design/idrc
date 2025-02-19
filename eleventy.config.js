@@ -42,21 +42,21 @@ module.exports = eleventyConfig => {
         });
     });
 
-    siteConfig.locales.forEach(lang => {
+    for (const lang of siteConfig.locales) {
         eleventyConfig.addCollection(`projects_${lang}`, collection => {
-            let projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`)],
-                uniqueProjects = [];
+            const projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`)];
+            const uniqueProjects = [];
 
             // Skip project subpages.
-            projects.forEach(project => {
+            for (const project of projects) {
                 if (!project.data.parentTitle || project.data.parentTitle === "") {
                     uniqueProjects.push(project);
                 }
-            });
+            };
 
-            return uniqueProjects.sort((a, b) => parseInt(b.data.order) - parseInt(a.data.order)).reverse();
+            return uniqueProjects.sort((a, b) => Number.parseInt(b.data.order) - Number.parseInt(a.data.order)).reverse();
         });
-    });
+    };
 
     eleventyConfig.addCollection("news", collection => {
         return [

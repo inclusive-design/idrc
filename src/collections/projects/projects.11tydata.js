@@ -1,10 +1,6 @@
 const { generatePermalink } = require("eleventy-plugin-fluid");
 
 module.exports = {
-    layout: "layouts/project.njk",
-    headerBgColor: "coral-500",
-    headerBorderColor: "coral-800",
-    headerTextColor: "black",
     eleventyComputed: {
         langDir: (data) => data.supportedLanguages[data.locale].dir,
         /* Configure navigation */

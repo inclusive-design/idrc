@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/project.njk",
+  "headerBgColor": "coral-500",
+  "headerBorderColor": "coral-800",
+  "headerTextColor": "black"
+}

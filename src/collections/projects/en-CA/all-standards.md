@@ -1,5 +1,4 @@
 ---
-layout: layouts/project.njk
 title: All Standards With Us
 slug: all-standards-with-us
 order: 1

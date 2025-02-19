@@ -1,8 +1,4 @@
-{% if previewMode %}
-    {% extends 'layouts/preview.njk' %}
-{% else %}
-    {% extends 'layouts/base.njk' %}
-{% endif %}
+{% extends 'layouts/base.njk' %}
 
 {% set pageType = 'single page--resources' %}
 
@@ -64,7 +60,7 @@
         {% if thumbnailImage %}
         <div class="card-image">
            <div class='card-image'>
-            <img src="{{ thumbnailImage | safe }}" 
+            <img src="{{ thumbnailImage | safe }}"
                 {% if thumbnailAltText %}
                     alt="{{ thumbnailAltText | safe }}"
                 {% else %}

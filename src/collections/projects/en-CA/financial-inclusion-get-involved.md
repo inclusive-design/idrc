@@ -1,11 +1,16 @@
 ---
-layout: layouts/project.njk
 title: Get involved in Financial Inclusion
+slug: ''
+shortName: ''
 parentTitle: Partnerships for Financial Inclusion
-order: ""
+order: null
 subPageOrder: 1
+thumbnailAltText: ''
+description: ''
+linkType:
+  type: external
+  link: https://google.com
 ---
-
 ### Who we want to involve
 
 With this project, we want to involve people who are most excluded from financial systems. This includes people with disabilities, Deaf people, and people who experience other barriers when interacting with financial systems. Participants will use their lived experience to define what financial inclusion means, and help make decisions about important topics to be included for future phases of this project.
@@ -18,4 +23,4 @@ Help the project by sharing an article (research paper, news article, etc.) rela
 
 ### Research ethics clearance
 
-If you have any questions about the research activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
+If you have any questions about the research activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca

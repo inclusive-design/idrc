@@ -8,19 +8,8 @@ eleventyExcludeFromCollections: true
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager | {{ site.name }}</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 </head>
 <body>
-  <!-- Include the script that builds the page and powers Decap CMS -->
-  <script src="/lib/cms/decap-cms.js"></script>
-  {% if env.context === "dev" %}
-  <script src="/lib/cms/react.development.js"></script>
-  {% else %}
-  <script src="/lib/cms/react.production.min.js"></script>
-  {% endif %}
-  <script src="/lib/cms/prop-types.min.js"></script>
-  <script src="/lib/cms/nunjucks-slim.min.js"></script>
-  <script src="/admin/templates.js"></script>
-  <script src="/admin/previews.js"></script>
 </body>
 </html>

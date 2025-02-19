@@ -1,5 +1,4 @@
 ---
-layout: layouts/project.njk
 title: Framework for Accessible and Equitable Artificial Intelligence (AI) in
   Education
 slug: ai-in-education

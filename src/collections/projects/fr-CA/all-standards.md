@@ -1,10 +1,13 @@
 ---
-layout: layouts/project.njk
+uuid: 09e31834-cb1d-4f07-84db-00239fa901ed
 title: Toutes les normes avec nous
 slug: toutes-les-normes-avec-nous
+shortName: ''
 order: 1
-description: Intégrer l'accessibilité et l'inclusion des personnes handicapées
-  dans toutes les normes.
+link: ''
+subPageOrder: null
+thumbnailAltText: ''
+description: Intégrer l'accessibilité et l'inclusion des personnes handicapées dans toutes les normes.
 ---
 ## À propos de ce projet
 
@@ -42,9 +45,9 @@ Les normes définissent la manière dont les objets de la vie quotidienne sont f
 
 Les objectifs de notre projet sont les suivants :
 
-* **Identifier les obstacles** à la participation des personnes handicapées et des organisations de personnes handicapées aux processus de normalisation par la co-élaboration et de la recherche secondaire (analyse documentaire, analyse juridictionnelle).
-* **Créer de direction** sur la manière de rendre le processus d'élaboration des normes plus inclusives pour les personnes handicapées et les personnes Sourdes et de tester ces directions avec des organisations de normalisation dominantes.
-* **Créer des ressources de renforcement des capacités** pour permettre aux organisations de personnes handicapées et aux personnes handicapées de participer au processus d'élaboration des normes.
+- **Identifier les obstacles** à la participation des personnes handicapées et des organisations de personnes handicapées aux processus de normalisation par la co-élaboration et de la recherche secondaire (analyse documentaire, analyse juridictionnelle).
+- **Créer de direction** sur la manière de rendre le processus d'élaboration des normes plus inclusives pour les personnes handicapées et les personnes Sourdes et de tester ces directions avec des organisations de normalisation dominantes.
+- **Créer des ressources de renforcement des capacités** pour permettre aux organisations de personnes handicapées et aux personnes handicapées de participer au processus d'élaboration des normes.
 
 ## Partenaires du projet
 

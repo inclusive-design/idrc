@@ -1,5 +1,4 @@
 ---
-layout: layouts/project.njk
 title: Partnerships for Financial Inclusion
 slug: financial-inclusion
 shortName: Financial Inclusion
@@ -11,11 +10,11 @@ description: Enabling Canadians with disabilities to engage fully in the economy
 ---
 ## About the Financial Inclusion Project
 
-The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD) and Deaf people in Canada. 
+The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD) and Deaf people in Canada.
 
 ### What do we mean when we say "financial systems"?
 
-Financial systems include any systems related to money and finances. 
+Financial systems include any systems related to money and finances.
 
 They include institutions like:
 
@@ -39,7 +38,7 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 
 ## Project goal
 
-* Understand the barriers for people with disabilities and Deaf people in interacting with financial systems 
+* Understand the barriers for people with disabilities and Deaf people in interacting with financial systems
 * Understand the risks for people with disabilities and Deaf people in financial systems, and the ways they may be vulnerable to fraud and financial abuse
 * Learn about things that have been done in the past that make the financial systems more inclusive
 * Explore promising ways to make up-and-coming financial systems more inclusive
@@ -61,25 +60,25 @@ The mission of this project is to:
 
 ## Research ethics clearance
 
-If you have any questions about the research activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca 
+If you have any questions about the research activities or require further information, please contact Jutta Treviranus or Jonathan Hung at jhung@ocadu.ca. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca
 
 ## Project Partners
 
 * Alliance for Equity of Blind Canadians
 * ARCH Disability Law Centre
-* L’arche Canada 
-* Bank of Canada 
-* Black Deaf Canada 
+* L’arche Canada
+* Bank of Canada
+* Black Deaf Canada
 * Canadian Council of the Blind
 * Carleton Accessibility Institute
 * Council of Canadians with Disabilities
-* Disability without Poverty 
+* Disability without Poverty
 * Independent Living Canada
 * IRIS Institute
 * March of Dimes Canada
 * Neil Squire Society
-* Planned Lifetime Advocacy Network 
-* Toronto Metropolitan University 
+* Planned Lifetime Advocacy Network
+* Toronto Metropolitan University
 
 ## Acknowledgements
 
