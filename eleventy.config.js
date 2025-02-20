@@ -4,7 +4,6 @@ const eleventyPWA = require("@pkvach/eleventy-plugin-pwa");
 const eleventySharp = require("eleventy-plugin-sharp");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const parseTransform = require("./src/_transforms/parse.js");
-const imagePositionWithTextShortcode = require("./src/_shortcodes/image-position-with-text.js");
 
 const workboxOptions = {
     cacheId: "idrc",
@@ -117,10 +116,6 @@ module.exports = eleventyConfig => {
 
     // Transforms.
     eleventyConfig.addTransform("parse", parseTransform);
-
-    // Add shortcodes.
-    eleventyConfig.addPairedShortcode("imagePositionWithText", imagePositionWithTextShortcode);
-
 
     // Passthrough file copy.
     eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});

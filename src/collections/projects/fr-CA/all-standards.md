@@ -9,8 +9,14 @@ shortTitle: ''
 order: 1
 thumbnailAltText: ''
 description: Intégrer l'accessibilité et l'inclusion des personnes handicapées dans toutes les normes.
-slug: toutes-les-normes-avec-nous
-link: ''
+funderLogos:
+  - content: ''
+    image: /media/asc-signature-en-fr-black.png
+    alt: Accessibility Standards Canada Logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ## À propos de ce projet
 
@@ -56,15 +62,12 @@ Les objectifs de notre projet sont les suivants :
 
 Cette liste sera mise à jour au fur et à mesure de l'avancement du projet.
 
-## Bailleurs de fonds
-
-Organisation canadienne d'élaboration de normes d'accessibilité (Normes d'accessibilité Canada)
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "center" %}
-{% endimagePositionWithText %}
-
 ## Références
 
 Organisation internationale de normalisation (2024). Normes. Extrait de <https://www.iso.org/standards.html>.
 
 Université du Massachusetts (2024). Normes. Extrait de <https://guides.library.umass.edu/c.php?g=719645&p=5126968>.
+
+## Bailleurs de fonds
+
+Organisation canadienne d'élaboration de normes d'accessibilité (Normes d'accessibilité Canada)

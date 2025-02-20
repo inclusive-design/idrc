@@ -12,6 +12,21 @@ thumbnailAltText: ''
 description: |-
   This IDRC research will address communication access for people who have speech, language and communication disabilities. In this work, we focus on communication access for people who have speech, language and communication disabilities due to life-long or acquired cognitive and/or neurological disabilities.
   Our research builds on research carried out by Communication Disabilities Access Canada (CDAC) and extends and supports recommendations previously tabled by CDAC. This research will inform development of an Equitable Communication Standard.
+funderLogos:
+  - content: ''
+    image: /media/asc-signature-en-fr-black.png
+    alt: Accessibility Standards Canada Logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: center
+  - content: ''
+    image: /media/canadawordmark-black-bil.png
+    alt: Federal Government of Canada Logo
+    imagePosition: left
+    scale: 25
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
 
@@ -163,12 +178,4 @@ Shalaine Sedres is a graduate student pursuing a Master’s degree at the Univer
 
 ## Acknowledgements
 
-Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the Government of Canada.
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "center" %}
-
-{% endimagePositionWithText %}
-
-{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "center" %}
-
-{% endimagePositionWithText %}
+Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.

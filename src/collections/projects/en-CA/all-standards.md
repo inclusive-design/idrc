@@ -11,11 +11,11 @@ thumbnailAltText: ''
 description: Integrating Accessibility and Disability Inclusion in All Standards.
 funderLogos:
   - content: ''
-    image: /media/asc-signature-en-black.png
+    image: /media/asc-signature-en-fr-black.png
     alt: Accessibility Standards Canada Logo
     imagePosition: left
     scale: 50
-    maxHeight: null
+    maxHeight: auto
     verticalAlignment: center
 ---
 ## About this project
@@ -62,15 +62,12 @@ Our project goals are to:
 
 This list will be updated as the project progresses.
 
-## Funder
-
-Canadian Accessibility Standards Development Organization (Accessibility Standards Canada)
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "center" %}
-{% endimagePositionWithText %}
-
 ## References
 
 International Organization for Standardization (2024). Standards. Retrieved from <https://www.iso.org/standards.html>.
 
 University of Massachusetts (2024). Standards. Retrieved from <https://guides.library.umass.edu/c.php?g=719645&p=5126968>.
+
+## Funder
+
+Canadian Accessibility Standards Development Organization (Accessibility Standards Canada)

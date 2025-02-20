@@ -10,6 +10,21 @@ order: 11
 thumbnailImage: /media/money.png
 thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
+funderLogos:
+  - content: ''
+    image: /media/esdc-edsc.jpg
+    alt: Employment and Social Development Canada Logo
+    imagePosition: left
+    scale: 75
+    maxHeight: auto
+    verticalAlignment: center
+  - content: ''
+    image: /media/canadawordmark-black-bil.png
+    alt: Government of Canada logo
+    imagePosition: left
+    scale: 25
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ## About the Financial Inclusion Project
 
@@ -86,11 +101,3 @@ If you have any questions about the research activities or require further infor
 ## Acknowledgements
 
 Funded by [Employment and Social Development Canada](https://www.canada.ca/en/employment-social-development.html) / Government of Canada.
-
-{% imagePositionWithText "/media/esdc-edsc.jpg", "Employment and Social Development Canada Logo", "left", "75", "Auto", "undefined" %}
-
-{% endimagePositionWithText %}
-
-{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
-
-{% endimagePositionWithText %}

@@ -738,18 +738,21 @@ collections:
             i18n: copy
           - label: Funder Logo Scale
             name: scale
-            widget: number
-            min: 25
-            max: 100
-            default: 100
+            widget: select
+            options: [25, 50, 75, 100]
             required: true
             i18n: copy
           - label: Funder Logo Maximum Height
-            widget: number
+            widget: select
+            options:
+              - {label: Auto, value: auto}
+              - {label: 200px, value: 200px}
+              - {label: 400px, value: 400px}
+              - {label: 600px, value: 600px}
+              - {label: 800px, value: 800px}
             i18n: copy
-            required: false
             name: maxHeight
-            hint: For automatic height, leave blank.
+            default: auto
           - label: Vertical Alignment
             name: verticalAlignment
             widget: select

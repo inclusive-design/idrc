@@ -10,6 +10,14 @@ order: 16
 thumbnailImage: /media/markus-winkler-fraiqhkcc0-unsplash_crop.png
 thumbnailAltText: ''
 description: Review of the Review (RotR) is assisting Accessibility Standards Canada in developing standards development processes and activities that are accessible and inclusively designed.
+funderLogos:
+  - content: ''
+    image: /media/asc-signature-en-fr-black.png
+    alt: Accessibility Standards Canada Logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ## About the project
 
@@ -32,7 +40,3 @@ Download the final outcomes here:
 ## Acknowledgements
 
 Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
-
-{% endimagePositionWithText %}

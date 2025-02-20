@@ -10,6 +10,21 @@ order: 55
 thumbnailImage: /media/project-EDS.png
 thumbnailAltText: ''
 description: Equitable Digital Systems focused on examining the accessibility of the digital tools and systems we use for work. We used our shared experiences to make recommendations for Accessibility Standards Canada on how to prevent accessibility barriers at work from information and communication systems.
+funderLogos:
+  - content: ''
+    image: /media/asc-signature-en-fr-black.png
+    alt: Accessibility Standards Canada Logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: center
+  - content: ''
+    image: /media/canadawordmark-black-bil.png
+    alt: Federal Government of Canada Logo
+    imagePosition: left
+    scale: 25
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ![Equitable Digital Systems logo](/media/project-EDS.png)
 
@@ -31,11 +46,7 @@ The final research report and project outcomes can be downloaded in English and 
 
 We undertook a jurisdictional scan of international standards and regulations related to disability and technology and have shared this compendium as a viewable and [downloadable resource](https://airtable.com/shrXY0H5jiOFTS74B) that may also be searched on the [We Count website Resources page](https://wecount.inclusivedesign.ca/resources/).
 
-.
-
-{% imagePositionWithText "/media/ict-standards-and-legislation-tile.jpg", "ICT Standards and Legislation tile with checkbox checked.", "left", "100%", "500", "null" %}
-
-{% endimagePositionWithText %}
+![ICT Standards and Legislation tile with checkbox checked.](/media/ict-standards-and-legislation-tile.jpg)
 
 ## Co-design Research
 
@@ -45,9 +56,7 @@ We conducted four co-design sets (each consisting of 3 sessions) where we explor
 
 Our first co-design captured moments (vignettes) that illustrate some of the experiences people with disabilities have with technology _within_ the context of work and the workplace. The first co-design was intentionally broad to enable greater freedom to discover barriers to technology experienced by the co-design researchers.
 
-{% imagePositionWithText "/media/idrc_jacobi.png", "Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.", "left", "75%", "300", "undefined" %}
-
-{% endimagePositionWithText %}
+![Jacobi sits with their devices in one corner while a consultant and another team member discuss their needs in another corner.](/media/idrc_jacobi.png)
 
 #### Download Samples from Co-design 1
 
@@ -257,11 +266,3 @@ Cheryl Zinyk
 ## Acknowledgements
 
 Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
-
-{% endimagePositionWithText %}
-
-{% imagePositionWithText "/media/canadawordmark-black-bil.png", "Government of Canada logo", "left", "25", "Auto", "undefined" %}
-
-{% endimagePositionWithText %}

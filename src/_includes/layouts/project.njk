@@ -8,6 +8,22 @@
         <div class="content">
             <div class="wrapper">
                 {{ content | safe }}
+                {% if funderLogos.length %}
+                    {% for logo in funderLogos %}
+                        {% if output %}
+                        <div class="image-and-text image-and-text--image-{{ logo.imagePosition }} image-and-text--image-{{ logo.scale }} image-and-text--vertical-{{ logo.verticalAlignment }}">
+                            <figure class="image-and-text__media">
+                                <img src="{{ logo.image }}" alt="{{ logo.alt }}" class="image__max-height--{{ logo.maxHeight }}" />
+                            </figure>
+                            <div class="image-and-text__content">{{ logo.content | markdown | safe }}</div>
+                        </div>
+                        {% else %}
+                        <p>
+                        <img src="{{ logo.image }}" alt="{{ logo.alt }}" class="image-position--{{ logo.imagePosition }} image__max-height--{{ logo.maxHeight }} image__scale--{{ logo.scale }}" />
+                        </p>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
 
