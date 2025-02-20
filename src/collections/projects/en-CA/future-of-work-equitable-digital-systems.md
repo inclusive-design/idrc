@@ -63,43 +63,29 @@ The second and fourth EDS co-designs brought contributors together to create "St
 
 <https://youtu.be/w_7nyT_EXlo>
 
-{% youtube "https://youtu.be/w_7nyT_EXlo" %}
-
 #### Jessica looks for Job
 
 <https://www.youtube.com/watch?v=EVuTl2PG0O8>
-
-{% youtube "https://www.youtube.com/watch?v=EVuTl2PG0O8" %}
 
 #### Friendship Chronicle
 
 <https://youtu.be/wFXHNHVnyQ4>
 
-{% youtube "https://youtu.be/wFXHNHVnyQ4" %}
-
 #### Adventure is in the land of ID
 
 <https://youtu.be/Ux2Agx919GY>
-
-{% youtube "https://youtu.be/Ux2Agx919GY" %}
 
 #### A Typical Day
 
 <https://youtu.be/1AGB6-l351c>
 
-{% youtube "https://youtu.be/1AGB6-l351c" %}
-
 #### Working with Accessibility Needs Normalized
 
 <https://youtu.be/4vosjCltLqA>
 
-{% youtube "https://youtu.be/4vosjCltLqA" %}
-
 #### Riley's Day at Work
 
 <https://youtu.be/ok4GL9-n9_U>
-
-{% youtube "https://youtu.be/ok4GL9-n9_U" %}
 
 ### Co-design 3: Letters to Technology
 

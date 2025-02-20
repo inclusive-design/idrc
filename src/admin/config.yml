@@ -769,7 +769,7 @@ collections:
   - name: projectSubpages
     label: Project Subpages
     label_singular: Project Subpage
-    icon: inventory
+    icon: menu_open
     folder: src/collections/project-subpages
     slug: "{{slug}}"
     create: true

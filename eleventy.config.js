@@ -4,7 +4,6 @@ const eleventyPWA = require("@pkvach/eleventy-plugin-pwa");
 const eleventySharp = require("eleventy-plugin-sharp");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const parseTransform = require("./src/_transforms/parse.js");
-const youtubeShortcode = require("./src/_shortcodes/youtube.js");
 const imagePositionWithTextShortcode = require("./src/_shortcodes/image-position-with-text.js");
 
 const workboxOptions = {
@@ -121,7 +120,6 @@ module.exports = eleventyConfig => {
 
     // Add shortcodes.
     eleventyConfig.addPairedShortcode("imagePositionWithText", imagePositionWithTextShortcode);
-    eleventyConfig.addShortcode("youtube", youtubeShortcode);
 
 
     // Passthrough file copy.
