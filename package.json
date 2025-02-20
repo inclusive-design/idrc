@@ -8,7 +8,7 @@
     "backstop:test": "backstop test --docker --config=backstop.config.js",
     "backstop:test:ci": "backstop test --config=backstop.config.js",
     "backstop:approve": "backstop approve --config=backstop.config.js",
-    "build": "npm-run-all -l clean build",
+    "build": "npm-run-all -l clean build:eleventy",
     "build:eleventy": "cross-env NODE_ENV=production eleventy",
     "clean": "rimraf _site",
     "debug": "cross-env DEBUG=Eleventy* eleventy",

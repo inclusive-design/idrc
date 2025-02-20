@@ -11,18 +11,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Wait for Netlify deploy preview
-        uses: kukiron/wait-for-netlify-deploy@v1.2.2
-        id: netlify
+      - name: cloudflare-preview-url
+        uses: zentered/cloudflare-preview-url@v1.4.2
+        id: cloudflare_preview_url
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_EMAIL: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         with:
-          site_name: idrc
-          max_timeout: 300
+          cloudflare_project_id: idrc-ocadu-ca
+          wait_until_ready: true
       - name: Run Lighthouse CI audits
         uses: treosh/lighthouse-ci-action@v12
         with:
           runs: 3
           urls: |
-            ${{ steps.netlify.outputs.url }}
+            ${{ steps.cloudflare_preview_url.outputs.preview_url }}
           uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.js
