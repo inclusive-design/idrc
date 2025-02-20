@@ -1,15 +1,11 @@
 ---
+uuid: adfccdca-b68d-445b-9167-c9db71c3325d
+locale: en-CA
 title: Get involved in Financial Inclusion
-slug: ''
-shortName: ''
-parentTitle: Partnerships for Financial Inclusion
-order: null
-subPageOrder: 1
+slug: get-involved
+parent: financial-inclusion
+order: 1
 thumbnailAltText: ''
-description: ''
-linkType:
-  type: external
-  link: https://google.com
 ---
 ### Who we want to involve
 

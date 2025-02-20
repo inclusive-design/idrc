@@ -45,16 +45,14 @@ module.exports = eleventyConfig => {
     for (const lang of siteConfig.locales) {
         eleventyConfig.addCollection(`projects_${lang}`, collection => {
             const projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`)];
-            const uniqueProjects = [];
 
-            // Skip project subpages.
-            for (const project of projects) {
-                if (!project.data.parentTitle || project.data.parentTitle === "") {
-                    uniqueProjects.push(project);
-                }
-            };
+            return projects.sort((a, b) => Number.parseInt(b.data.order) - Number.parseInt(a.data.order)).reverse();
+        });
 
-            return uniqueProjects.sort((a, b) => Number.parseInt(b.data.order) - Number.parseInt(a.data.order)).reverse();
+        eleventyConfig.addCollection(`projectSubpages_${lang}`, collection => {
+            const projectSubpages = [...collection.getFilteredByGlob(`src/collections/project-subpages/${lang}/*.md`)];
+
+            return projectSubpages.sort((a, b) => Number.parseInt(b.data.order) - Number.parseInt(a.data.order)).reverse();
         });
     };
 
@@ -78,6 +76,12 @@ module.exports = eleventyConfig => {
 
     eleventyConfig.addCollection("resources", collection => {
         return collection.getFilteredByGlob("src/collections/resources/*.md");
+    });
+
+    eleventyConfig.addFilter("findByKey", (navItems, value) => {
+        return navItems.filter(item => {
+            return item.key === value;
+        });
     });
 
     eleventyConfig.setUseGitIgnore(false);

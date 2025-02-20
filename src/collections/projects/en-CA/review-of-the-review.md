@@ -1,11 +1,15 @@
 ---
+uuid: c52bf5ed-cb08-4cf8-b0c8-d907b71e0725
+locale: en-CA
 title: Review of the Review
-slug: rotr
+linking:
+  type: page
+  slug: rotr
+shortTitle: ''
 order: 16
 thumbnailImage: /media/markus-winkler-fraiqhkcc0-unsplash_crop.png
-description: Review of the Review (RotR) is assisting Accessibility Standards
-  Canada in developing standards development processes and activities that are
-  accessible and inclusively designed.
+thumbnailAltText: ''
+description: Review of the Review (RotR) is assisting Accessibility Standards Canada in developing standards development processes and activities that are accessible and inclusively designed.
 ---
 ## About the project
 
@@ -21,11 +25,7 @@ Download the final outcomes here:
 
 [Inclusion Self-Assessment Instrument (.docx)](/media/inclusion-self-assessment-instrument.docx)
 
-
-
 [Report alt-text (.docx)](/media/report-alt-text.docx)
-
-
 
 [Review Process Deck (.pptx)](/media/reviewprocessdeck.pptx)
 
@@ -34,15 +34,5 @@ Download the final outcomes here:
 Funded by [Accessibility Standards Canada](https://accessible.canada.ca/) / the Government of Canada.
 
 {% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "75", "Auto", "undefined" %}
-
-
-
-
-
-
-
-
-
-
 
 {% endimagePositionWithText %}

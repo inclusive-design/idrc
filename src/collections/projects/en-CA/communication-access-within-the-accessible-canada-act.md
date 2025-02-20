@@ -1,29 +1,28 @@
 ---
+uuid: 0931c57e-bf13-4921-9fe7-55fc236c0254
+locale: en-CA
 title: Communication Access within the Accessible Canada Act
-shortName: ""
-parentTitle: ""
+linking:
+  type: page
+  slug: communication-access-within-the-accessible-canada-act
+shortTitle: ''
 order: 65
-subPageOrder: 0
 thumbnailImage: /media/project-communication_access.png
-description: >-
-  This IDRC research will address communication access for people who have
-  speech, language and communication disabilities. In this work, we focus on
-  communication access for people who have speech, language and communication
-  disabilities due to life-long or acquired cognitive and/or neurological
-  disabilities. 
-
+thumbnailAltText: ''
+description: |-
+  This IDRC research will address communication access for people who have speech, language and communication disabilities. In this work, we focus on communication access for people who have speech, language and communication disabilities due to life-long or acquired cognitive and/or neurological disabilities.
   Our research builds on research carried out by Communication Disabilities Access Canada (CDAC) and extends and supports recommendations previously tabled by CDAC. This research will inform development of an Equitable Communication Standard.
 ---
 ![Communication Access within the Accessible Canada Act logo](/media/commacc2.png)
 
-IDRC is working to address communication access for people who have speech, language, and communication disabilities. With advice from an advisory panel and Communication Disabilities Access Canada, this project will focus on communication access for people who have speech, language and communication disabilities due to life-long or acquired cognitive and/or neurological disabilities, such as cerebral palsy, autism spectrum disorder, Down Syndrome, learning disability, intellectual disability, fetal alcohol spectrum disorder, traumatic brain injury, aphasia after a stroke, dementia, amyotrophic lateral sclerosis, Parkinson’s disease, or multiple sclerosis. 
+IDRC is working to address communication access for people who have speech, language, and communication disabilities. With advice from an advisory panel and Communication Disabilities Access Canada, this project will focus on communication access for people who have speech, language and communication disabilities due to life-long or acquired cognitive and/or neurological disabilities, such as cerebral palsy, autism spectrum disorder, Down Syndrome, learning disability, intellectual disability, fetal alcohol spectrum disorder, traumatic brain injury, aphasia after a stroke, dementia, amyotrophic lateral sclerosis, Parkinson’s disease, or multiple sclerosis.
 
-Our research builds on research carried out by Communication Disabilities Access Canada (CDAC) and extends and supports recommendations previously tabled by CDAC. This research will inform development of an Equitable Communication Standard. 
+Our research builds on research carried out by Communication Disabilities Access Canada (CDAC) and extends and supports recommendations previously tabled by CDAC. This research will inform development of an Equitable Communication Standard.
 
 ## About Communication
 
-* Communication is an interactive, two-way process that includes both understanding and being understood. It involves a range of communication methods in face-to-face interactions, over the telephone and remote communications, online and via reading and writing.
-* Communication methods include speech, gestures, body language, writing, drawing, pictures, symbol and letter boards, speech-generating devices, as well as human services such as sign language interpreting, captioning in real time, informal and formal communication assistance. 
+- Communication is an interactive, two-way process that includes both understanding and being understood. It involves a range of communication methods in face-to-face interactions, over the telephone and remote communications, online and via reading and writing.
+- Communication methods include speech, gestures, body language, writing, drawing, pictures, symbol and letter boards, speech-generating devices, as well as human services such as sign language interpreting, captioning in real time, informal and formal communication assistance.
 
 (Communication Disabilities Access Canada. Retrieved April 18, 2022, from <https://www.cdacanada.com/>)
 
@@ -134,27 +133,27 @@ Tara holds a Master's degree in Philanthropy and Nonprofit Leadership from the S
 
 ## Project Team
 
-### *Dr. Vera Roberts,* Project Manager
+### _Dr. Vera Roberts,_ Project Manager
 
 Dr. Vera Roberts is Senior Manager Consulting, Training and Research at the Inclusive Design Research Centre (IDRC) of OCAD University. She holds a Ph.D. in Applied Cognitive Science from the Ontario Institute for Studies in Education at the University of Toronto. Roberts’ primary research area is generating a culture of inclusion through outreach activities, training and implementation of inclusive technology and digital sharing platforms. As a researcher at the IDRC for over 20 years, Roberts has participated in numerous multi-partner inclusion projects. Recent projects include We Count, Equitable Digital Systems, Future of Work and Disability, BIG IDeA and Our Doors are Open. Roberts coordinates, develops and provides consulting and training on inclusion and diversity to the public and private sector. She is a sessional instructor in Inclusive Research Methods in the Master of Inclusive Design program and in Innovation Research Methods in the Strategic Foresight & Innovation graduate programs at OCAD U. 
 
-### ***Barbara Collier, Reg. CASLPO, F. ISAAC,* Project Consultant**
+### _**Barbara Collier, Reg. CASLPO, F. ISAAC,_ Project Consultant**
 
 Barbara Collier is executive director and co-founder of Communication Disabilities Access Canada and Augmentative Communication Community Partnerships Canada. Since 2001, she has developed and managed CDAC's projects relating to human rights, social justice and accessibility for people who have disabilities that affect communication. Barbara’s background is in Speech-Language Pathology, Augmentative Communication, human rights and accessibility legislation. She has published extensively in peer-reviewed journals and has authored numerous books, DVDs, and online courses. She is the primary author of all CDAC's reports, online resources and courses.   Through her work with CDAC, Barbara established Canada’s first communication intermediary program and has provided trainings for over 500 Speech-Language Pathologists to work as intermediaries to support victims, witnesses and accused persons communicating in police, legal and justice services. She has participated on Ontario’s customer service and healthcare accessibility standards committees and provided input to draft standards on provincial and federal levels. In 2018, Barbara was responsible for having Bill C81 amended to include communication as a priority area of focus in the Accessible Canada Act. In 2010, Barbara was recognized as a Fellow of the International Society for Augmentative and Alternative Communication (ISAAC).  She is co-recipient of the ISAAC President’s Award and in 2016, on behalf of CDAC, she accepted the David C. Onley Award for Leadership in Accessibility. In 2019, the Ontario Association of Speech Language Pathologists and Audiologists awarded Barbara with the lifetime honours of the association for her outstanding contribution to Speech-Language Pathology in Ontario.
 
-### *Caren Watkins,* Project Coordinator
+### _Caren Watkins,_ Project Coordinator
 
 Caren Watkins is the coordinator of [SNOW: Inclusive Learning and Education](https://snow.idrc.ocadu.ca/) and an Inclusive Designer at the at the Inclusive Design Research Centre (IDRC) of OCAD University. She has extensive experience in communication and information design, and neurodivergence and education. Caren has contributed to the research and design of various projects at the IDRC including PhET, UIO interface development, and federal and provincial government accessibility consulting projects. Caren has over a decade of teaching and curriculum development experience as a partial load professor at York/Sheridan and OCAD U, as well as over 20 years of award-winning communication design and publishing experience. Caren holds a Masters of Inclusive Design focused on inclusion in the public-school classroom. Caren encourages open resources and community involvement to foster a collaborative approach toward an inclusive model of education for all.
 
-### *Dr. David H. Pereyra,* Project Coordinator
+### _Dr. David H. Pereyra,_ Project Coordinator
 
 Dr. David H. Pereyra is Project & Outreach Coordinator at the Inclusive Design Research Center (IDRC) of OCAD University. He is an architect from Buenos Aires and holds a Ph.D. in Philosophy of Theology from the University of Toronto. His Post-doc work focused on community engagement with the disability community and outreach related to inclusive design. Dr. Pereyra's research centres on interdisciplinary aspects of our multicultural society. He is particularly interested in how creative experiences of transmitting information and communication can reach users and vice-versa. At the Inclusive Design Research Centre, David is responsible for outreach, collaboration and community engagement. He has coordinated several outreach projects (e.g.: We Count, EDS, BIG IDeA, Our Doors are Open, CanHack150 and aha!). David developed and maintains a community of expert advisors from the disability community who collaborate in design workshops, accessibility challenge events and sensitivity training activities. These activities are as diverse as setting/learning policies, designing built environments, developing services, creating accessible workflows, and workshops. His Latin American, European and North American multicultural background greatly enrich his knowledge of the world and his scholarly work. 
 
-### *Ali Kazimi,* Research Assistant
+### _Ali Kazimi,_ Research Assistant
 
 Ali Kazmi is a research assistant for OCAD’s Inclusive Design Research Centre. Ali’s previous research focuses have been on the development of accessible and robust online education platforms, with an emphasis on micro-credentialing, industry alignment, and formal accreditation. This has included developing online learning badges for the Inclusive Design Research Centre’s We Count Project, which enables learners to showcase their proficiency in the growing fields of AI, data systems and inclusive data practices as well as other skills. As a former staff member and user of the University of Toronto’s Accessibility Services, Ali strives to keep his research and professional contributions committed to EDI (Equity, Diversity, Inclusion) principles and advocacy to better serve persons with disabilities and other communities on the margins.
 
-### *Shalaine Sedres*, Research Assistant
+### _Shalaine Sedres_, Research Assistant
 
 Shalaine Sedres is a graduate student pursuing a Master’s degree at the University of Toronto’s Rehabilitation Science Institute. She obtained her Bachelor’s degree in Community Rehabilitation and Disability Studies from the University of Calgary. As a research assistant, Shalaine has made valuable contributions to the Inclusive Design Research Centre’s Equitable Digital Systems project by facilitating co-design sessions and interpreting insights. Her current research focuses on leveraging accessible playgrounds by incorporating rehabilitation and educational programming. She is dedicated to promoting inclusivity and reducing barriers that hinder the full participation of children with disabilities.
 
@@ -168,24 +167,8 @@ Funded by [Accessibility Standards Canada](https://accessible.canada.ca/)  / the
 
 {% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "center" %}
 
-
-
-
-
-
-
 {% endimagePositionWithText %}
 
 {% imagePositionWithText "/media/canadawordmark-black-bil.png", "Federal Government of Canada logo", "left", "25", "Auto", "center" %}
-
-
-
-
-
-
-
-
-
-
 
 {% endimagePositionWithText %}

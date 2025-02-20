@@ -1,13 +1,16 @@
 ---
 uuid: 09e31834-cb1d-4f07-84db-00239fa901ed
+locale: fr-CA
 title: Toutes les normes avec nous
-slug: toutes-les-normes-avec-nous
-shortName: ''
+linking:
+  type: page
+  slug: tous-les-normes-avec-nous
+shortTitle: ''
 order: 1
-link: ''
-subPageOrder: null
 thumbnailAltText: ''
 description: Intégrer l'accessibilité et l'inclusion des personnes handicapées dans toutes les normes.
+slug: toutes-les-normes-avec-nous
+link: ''
 ---
 ## À propos de ce projet
 

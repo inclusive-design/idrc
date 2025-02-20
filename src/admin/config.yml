@@ -639,43 +639,54 @@ collections:
     i18n: true
     sortable_fields: [title, order]
     fields:
+      - label: UUID
+        name: uuid
+        widget: hidden
+        default: "{{uuid}}"
+        i18n: copy
+      - label: Locale
+        name: locale
+        widget: hidden
+        default: "{{locale}}"
       - label: Title
         name: title
         widget: string
         required: true
-        hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below."
+        hint: The title of the project.
         i18n: true
-      - label: Title for URL
-        name: slug
+      - label: Linking Options
+        name: linking
+        widget: object
+        i18n: true
+        types:
+          - label: Project Page
+            name: page
+            fields:
+              - label: Title for URL
+                name: slug
+                widget: string
+                i18n: true
+                hint: Enter a short form of the project title to be used in the URL. Only lowercase letters, numbers and hyphens should be used, e.g. 'sample-project'. This must be unique.
+          - label: External Link
+            name: link
+            fields:
+              - label: External Project Website
+                name: link
+                widget: string
+                type: url
+                i18n: copy
+                hint: If you want the project to link to an external site instead of display a page on this website, enter a URL here.
+      - label: Short Title
+        name: shortTitle
         widget: string
         required: false
-        hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique."
-      - label: Short Name
-        name: shortName
-        widget: string
-        required: false
-        hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project.
-        i18n: true
-      - label: Parent Project
-        name: parentTitle
-        widget: relation
-        collection: projects
-        value_field: title
-        search_fields: [title]
-        required: false
-        hint: This is required for sub-pages of a project to indicate which project is the parent.
+        hint: Short title for the project used to generate text labels for project website links.
         i18n: true
       - label: Order
         name: order
         widget: number
         required: false
         hint: Order in which the project should appear.
-        i18n: duplicate
-      - label: Subpage Order
-        name: subPageOrder
-        widget: number
-        required: false
-        hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order."
         i18n: duplicate
       - label: Thumbnail Image
         name: thumbnailImage
@@ -694,14 +705,124 @@ collections:
         widget: markdown
         required: false
         editor_components: [image, file]
-        hint: This is text that appears for a project in the projects listing. This description is not required for sub-pages.
+        hint: This is text that appears for a project in the projects listing.
         i18n: true
-      - label: External Project Website
-        name: link
+      - label: Funder Logos
+        name: funderLogos
+        widget: list
+        i18n: true
+        required: false
+        fields:
+          - label: Caption
+            name: content
+            widget: text
+            i18n: true
+            required: false
+          - label: Funder Logo
+            name: image
+            widget: image
+            i18n: copy
+          - label: Funder Logo Alternative Text
+            name: alt
+            widget: string
+            i18n: true
+            required: true
+          - label: Funder Logo Position
+            name: imagePosition
+            widget: select
+            options:
+              - {label: Left, value: left}
+              - {label: Right, value: right}
+            default: left
+            required: true
+            i18n: copy
+          - label: Funder Logo Scale
+            name: scale
+            widget: number
+            min: 25
+            max: 100
+            default: 100
+            required: true
+            i18n: copy
+          - label: Funder Logo Maximum Height
+            widget: number
+            i18n: copy
+            required: false
+            name: maxHeight
+            hint: For automatic height, leave blank.
+          - label: Vertical Alignment
+            name: verticalAlignment
+            widget: select
+            options:
+              - {label: Top, value: top}
+              - {label: Center, value: center}
+              - {label: Bottom, value: bottom}
+            default: center
+            required: true
+            i18n: copy
+      - label: Body
+        name: body
+        required: false
+        widget: markdown
+        hint: This is the content that appears for a project page hosted on the IDRC site.
+        i18n: true
+  - name: projectSubpages
+    label: Project Subpages
+    label_singular: Project Subpage
+    icon: inventory
+    folder: src/collections/project-subpages
+    slug: "{{slug}}"
+    create: true
+    i18n: true
+    sortable_fields: [title, order]
+    fields:
+      - label: UUID
+        name: uuid
+        widget: hidden
+        default: "{{uuid}}"
+      - label: Locale
+        name: locale
+        widget: hidden
+        default: "{{locale}}"
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below."
+        i18n: true
+      - label: Title for URL
+        name: slug
+        widget: string
+        required: true
+        hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique."
+      - label: Parent Project
+        name: parent
+        widget: relation
+        collection: projects
+        value_field: slug
+        search_fields: [title]
+        display_fields: [title]
+        required: false
+        hint: This is required for sub-pages of a project to indicate which project is the parent.
+        i18n: true
+      - label: Order
+        name: order
+        widget: number
+        required: false
+        hint: Order in which the project should appear.
+        i18n: duplicate
+      - label: Thumbnail Image
+        name: thumbnailImage
+        widget: image
+        required: false
+        hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."
+        i18n: duplicate
+      - label: Thumbnail Image Alt Text
+        name: thumbnailAltText
         widget: string
         required: false
-        hint: This is not required for sub-pages.
-        i18n: copy
+        hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."
+        i18n: true
       - label: Body
         name: body
         required: false

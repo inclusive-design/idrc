@@ -1,12 +1,15 @@
 ---
+uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
+locale: en-CA
 title: Partnerships for Financial Inclusion
-slug: financial-inclusion
-shortName: Financial Inclusion
+linking:
+  type: page
+  slug: financial-inclusion
+shortTitle: Financial Inclusion
 order: 11
 thumbnailImage: /media/money.png
 thumbnailAltText: a stack of coins with a credit card on top.
-description: Enabling Canadians with disabilities to engage fully in the economy
-  by addressing barriers to financial inclusion.
+description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
 ---
 ## About the Financial Inclusion Project
 
@@ -18,19 +21,19 @@ Financial systems include any systems related to money and finances.
 
 They include institutions like:
 
-* Banks and credit unions
-* Insurance companies
-* Canada Revenue Agency
+- Banks and credit unions
+- Insurance companies
+- Canada Revenue Agency
 
 Financial systems affect your everyday interactions with money, like:
 
-* Making payments and transferring money
-* Managing your finances and planning for the future
-* Managing your credit score
-* Getting a loan or paying off debt
-* Dealing with a tax audit
-* Trying to qualify for an assistance program
-* Proving you are who you say you are when you make a transaction
+- Making payments and transferring money
+- Managing your finances and planning for the future
+- Managing your credit score
+- Getting a loan or paying off debt
+- Dealing with a tax audit
+- Trying to qualify for an assistance program
+- Proving you are who you say you are when you make a transaction
 
 ### What do we mean when we say "disability"?
 
@@ -38,11 +41,11 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 
 ## Project goal
 
-* Understand the barriers for people with disabilities and Deaf people in interacting with financial systems
-* Understand the risks for people with disabilities and Deaf people in financial systems, and the ways they may be vulnerable to fraud and financial abuse
-* Learn about things that have been done in the past that make the financial systems more inclusive
-* Explore promising ways to make up-and-coming financial systems more inclusive
-* Share any knowledge we gain with the broader disability and Deaf communities, through both online and in-person networks.
+- Understand the barriers for people with disabilities and Deaf people in interacting with financial systems
+- Understand the risks for people with disabilities and Deaf people in financial systems, and the ways they may be vulnerable to fraud and financial abuse
+- Learn about things that have been done in the past that make the financial systems more inclusive
+- Explore promising ways to make up-and-coming financial systems more inclusive
+- Share any knowledge we gain with the broader disability and Deaf communities, through both online and in-person networks.
 
 ### Outcomes
 
@@ -54,9 +57,9 @@ Outline a plan for sustaining ongoing community engagement, advocacy, and educat
 
 The mission of this project is to:
 
-* Help the disability and Deaf communities take action to remove barriers and advocate for more inclusive financial systems
-* Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
-* Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
+- Help the disability and Deaf communities take action to remove barriers and advocate for more inclusive financial systems
+- Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
+- Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
 
 ## Research ethics clearance
 
@@ -64,21 +67,21 @@ If you have any questions about the research activities or require further infor
 
 ## Project Partners
 
-* Alliance for Equity of Blind Canadians
-* ARCH Disability Law Centre
-* L’arche Canada
-* Bank of Canada
-* Black Deaf Canada
-* Canadian Council of the Blind
-* Carleton Accessibility Institute
-* Council of Canadians with Disabilities
-* Disability without Poverty
-* Independent Living Canada
-* IRIS Institute
-* March of Dimes Canada
-* Neil Squire Society
-* Planned Lifetime Advocacy Network
-* Toronto Metropolitan University
+- Alliance for Equity of Blind Canadians
+- ARCH Disability Law Centre
+- L’arche Canada
+- Bank of Canada
+- Black Deaf Canada
+- Canadian Council of the Blind
+- Carleton Accessibility Institute
+- Council of Canadians with Disabilities
+- Disability without Poverty
+- Independent Living Canada
+- IRIS Institute
+- March of Dimes Canada
+- Neil Squire Society
+- Planned Lifetime Advocacy Network
+- Toronto Metropolitan University
 
 ## Acknowledgements
 

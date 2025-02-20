@@ -5,29 +5,13 @@
 {% block content %}
     {% include 'partials/components/page-header.njk' %}
     <article>
-        {% if parentTitle %}
-
-        {% set parentPages = collections.all | eleventyNavigationBreadcrumb(title) %}
-
-        <div class="back-to-parent">
-        {% if parentPages.length > 1 %}
-        {% set parent = parentPages[parentPages.length - 1] %}
-            <a href="{{ parent.url }}">{% include "svg/previous.svg" %} Back to {{ parent.title | safe }}</a>
-        {% endif %}
-        </div>
-
-        {% endif %}
-
         <div class="content">
             <div class="wrapper">
-                {% if parentTitle %}
-                <h2>{{ title | safe }}</h2>
-                {% endif %}
                 {{ content | safe }}
             </div>
         </div>
 
-        {% set navPages = collections.all | eleventyNavigation(title) %}
+        {% set navPages = collections['projectSubpages_' + locale] | eleventyNavigation(slug) %}
 
         <nav class="nav--secondary" aria-labelledby="child-pages-heading">
         {%- if navPages.length %}
