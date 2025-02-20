@@ -19,7 +19,8 @@
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
     "lint:yml": "eslint \"**/*.yml\"",
     "test": "start-server-and-test start http://localhost:8080 backstop:test",
-    "start": "npm-run-all -l clean dev"
+    "start": "npm-run-all -l clean dev",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
