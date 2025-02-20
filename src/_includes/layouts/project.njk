@@ -15,7 +15,7 @@
                             <figure class="image-and-text__media">
                                 <img src="{{ logo.image }}" alt="{{ logo.alt }}" class="image__max-height--{{ logo.maxHeight }}" />
                             </figure>
-                            <div class="image-and-text__content">{{ logo.content | markdown | safe }}</div>
+                            <div class="image-and-text__content">{% renderString logo.content, "md" %}</div>
                         </div>
                         {% else %}
                         <p>

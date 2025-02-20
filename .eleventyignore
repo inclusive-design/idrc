@@ -1,6 +1,0 @@
-.github/**/*.md
-backstop_data
-node_modules
-src/**/README.md
-LICENSE.md
-README.md

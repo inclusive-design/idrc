@@ -82,8 +82,6 @@ module.exports = eleventyConfig => {
         });
     });
 
-    eleventyConfig.setUseGitIgnore(false);
-
     // Plugins.
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(eleventyPWA, workboxOptions);
