@@ -1,23 +1,17 @@
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const eleventyRssPlugin = require("@11ty/eleventy-plugin-rss");
-const eleventyPWA = require("@pkvach/eleventy-plugin-pwa");
-const eleventySharp = require("eleventy-plugin-sharp");
-const fluidPlugin = require("eleventy-plugin-fluid");
-const parseTransform = require("./src/_transforms/parse.js");
+import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+import fluidSassPlugin from "eleventy-plugin-fluid-sass";
+import { EleventyRenderPlugin } from "@11ty/eleventy";
+import MarkdownIt from "markdown-it";
 
-const workboxOptions = {
-    cacheId: "idrc",
-    swDest: "./_site/sw.js",
-    globPatterns: ["assets/fonts/*.{woff,woff2}", "assets/images/*.{png,svg}"],
-    globIgnores: ["admin/**/*", "node_modules/**/*"],
-    clientsClaim: true,
-    skipWaiting: true
-};
+// const eleventySharp = require("eleventy-plugin-sharp");
+import fluidPlugin from "eleventy-plugin-fluid";
+import parseTransform from "./src/_transforms/parse.js";
+import siteConfig from "./src/_data/config.json" with { type: "json" };
+import siteData from "./src/_data/site.json" with { type: "json" };
 
-// Import data files
-const siteConfig = require("./src/_data/config.json");
+export default eleventyConfig => {
 
-module.exports = eleventyConfig => {
     const now = new Date();
 
     // Collections.
@@ -76,6 +70,16 @@ module.exports = eleventyConfig => {
         return collection.getFilteredByGlob("src/collections/resources/*.md");
     });
 
+    /** TODO: Swap this for renderContent("md") once https://github.com/11ty/eleventy/issues/3665 is addressed */
+    eleventyConfig.addFilter("markdownFilter", (value) => {
+        const md = new MarkdownIt({
+            html: true,
+            linkify: true
+        });
+
+        return md.render(value);
+    });
+
     eleventyConfig.addFilter("findByKey", (navItems, value) => {
         return navItems.filter(item => {
             return item.key === value;
@@ -84,14 +88,28 @@ module.exports = eleventyConfig => {
 
     // Plugins.
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    eleventyConfig.addPlugin(eleventyPWA, workboxOptions);
-    eleventyConfig.addPlugin(eleventyRssPlugin);
+    eleventyConfig.addPlugin(EleventyRenderPlugin);
+    eleventyConfig.addPlugin(feedPlugin, {
+        type:"atom",
+        outputPath: "/feed.xml",
+        collection: {
+            name: "postFeed",
+            limit: 10
+        },
+        metadata: {
+            language: "en-CA",
+            title: siteData.title,
+            base: `${ siteData.url }/`,
+            author: {
+                name: siteData.name,
+                email: siteData.email
+            }
+        }
+    });
+    eleventyConfig.addPlugin(fluidSassPlugin);
     eleventyConfig.addPlugin(fluidPlugin, {
         css: {
             enabled: false
-        },
-        sass: {
-            enabled: true
         },
         defaultLanguage: "en-CA",
         supportedLanguages: {
@@ -107,10 +125,10 @@ module.exports = eleventyConfig => {
             }
         }
     });
-    eleventyConfig.addPlugin(eleventySharp({
-        urlPath: "/media",
-        outputDir: "_site/media/"
-    }));
+    // eleventyConfig.addPlugin(eleventySharp({
+    //     urlPath: "/media",
+    //     outputDir: "_site/media/"
+    // }));
 
     // Transforms.
     eleventyConfig.addTransform("parse", parseTransform);
@@ -120,15 +138,6 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
     eleventyConfig.addPassthroughCopy({"src/media": "media"});
     eleventyConfig.addPassthroughCopy("src/admin/config.yml");
-    eleventyConfig.addPassthroughCopy({
-        "node_modules/decap-cms/dist/decap-cms.js": "lib/cms/decap-cms.js",
-        "node_modules/decap-cms/dist/decap-cms.js.map": "lib/cms/decap-cms.js.map",
-        "node_modules/nunjucks/browser/nunjucks-slim.min.js": "lib/cms/nunjucks-slim.min.js",
-        "node_modules/prop-types/prop-types.min.js": "lib/cms/prop-types.min.js",
-        "node_modules/react/umd/react.development.js": "lib/cms/react.development.js",
-        "node_modules/react/umd/react.production.min.js": "lib/cms/react.production.min.js"
-    });
-    eleventyConfig.addPassthroughCopy("_redirects");
 
     return {
         dir: {

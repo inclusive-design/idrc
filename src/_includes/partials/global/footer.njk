@@ -21,7 +21,7 @@
             <p class="h4">Email</p>
             <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             <p class="h4">Address</p>
-            {% renderString site.address, "md" %}
+            {{ site.address | renderContent("md") | safe }}
         </div>
         <div>
             <p class="h4">Phone</p>
@@ -31,6 +31,6 @@
         </div>
     </div>
     <div class="license-credit">
-        <p>This work is licensed under a <a rel="external license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>. Hosting provided by <a rel="external" href="https://netlify.com">Netlify</a>.</p>
+        <p>This work is licensed under a <a rel="external license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.</p>
     </div>
 </footer>

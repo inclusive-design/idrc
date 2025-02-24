@@ -37,7 +37,7 @@ jobs:
             ${{ needs.setup.outputs.site_url }}
           uploadArtifacts: false
           temporaryPublicStorage: true
-          configPath: ./.lighthouserc.js
+          configPath: ./.lighthouserc.cjs
   lhci-desktop:
     name: Run desktop Lighthouse CI audits
     runs-on: ubuntu-latest
@@ -52,6 +52,6 @@ jobs:
             ${{ needs.setup.outputs.site_url }}
           uploadArtifacts: false
           temporaryPublicStorage: true
-          configPath: ./.lighthouserc.js
+          configPath: ./.lighthouserc.cjs
         env:
           EMULATE_DEVICE: desktop

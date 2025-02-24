@@ -2,7 +2,7 @@
 
 /* exported filterResources, createPagination */
 
-import markdownFilter from "eleventy-plugin-fluid/src/filters/markdown-filter.js";
+import markdownit from "markdown-it";
 
 /*
  * Filter the data set for records that satisfy one or more of the following criteria,
@@ -288,6 +288,11 @@ export function renderSortUI() {
  * @return directly add the resources html to the content selector.
  */
 export function renderResources(resources, resourceTopics, resourceTypes) { // eslint-disable-line no-unused-vars
+    const md = markdownit({
+        html: true,
+        linkify: true,
+        typographer: true
+    });
     const hostURL = window.location.host;
     let resourcesHtml = "<div class=\"resources-result\">";
 
@@ -317,7 +322,7 @@ export function renderResources(resources, resourceTopics, resourceTypes) { // e
             resource.types.forEach(typeValue => {
                 let found = resourceTypes.find(typeObj => typeObj.value === typeValue);
                 resourcesHtml += `    <div class='card-tag'>
-					<svg role='presentation'><use xlink:href='#type' /></svg>	
+					<svg role='presentation'><use xlink:href='#type' /></svg>
 					<p>${found.label}</p>
 				</div>`;
             });
@@ -326,12 +331,7 @@ export function renderResources(resources, resourceTopics, resourceTypes) { // e
         resourcesHtml += `
 				</div>
 				<div class='card-description'>
-					<p>${markdownFilter(
-        escapeSpecialCharactersForHTML(resource.description), {
-            html: true,
-            linkify: true,
-            typographer: true
-        }, [])}</p>
+					<p>${md.render(escapeSpecialCharactersForHTML(resource.description))}</p>
 				</div>
 				${resource.publishedYear ? `<div class="card-publishedYear"><p>Published in ${escapeSpecialCharactersForHTML(resource.publishedYear)}</p></div>` : ""}
 				<div class='card-link'><a rel='external' href='${resource.link}'>Visit ${escapeSpecialCharactersForHTML(resource.title)}${resourceLink.host === hostURL ? "" : "<svg role='presentation'><use xlink:href='#external' /></svg>"}</a></div>

@@ -1,7 +1,7 @@
-const {parseHTML} = require("linkedom");
-const getId = require("../_utils/extract-youtube-id.js");
+import {parseHTML} from "linkedom";
+import getId from "../_utils/extract-youtube-id.js";
 
-module.exports = (value, outputPath) => {
+export default (value, outputPath) => {
     if (outputPath && outputPath.includes(".html")) {
         const {document} = parseHTML(value);
         const images = [
@@ -115,7 +115,7 @@ module.exports = (value, outputPath) => {
             }
         }
 
-        return "<!DOCTYPE html>\r\n" + document.documentElement.outerHTML;
+        return `<!DOCTYPE html>\r\n${document.documentElement.outerHTML}`;
     }
 
     return value;
