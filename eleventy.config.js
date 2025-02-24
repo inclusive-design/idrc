@@ -1,7 +1,7 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import fluidSassPlugin from "eleventy-plugin-fluid-sass";
-import { EleventyRenderPlugin } from "@11ty/eleventy";
 import MarkdownIt from "markdown-it";
 
 // const eleventySharp = require("eleventy-plugin-sharp");
@@ -87,8 +87,19 @@ export default eleventyConfig => {
     });
 
     // Plugins.
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+        formats: ["avif", "webp", "jpeg"],
+        htmlOptions: {
+            imgAttributes: {
+                loading: "lazy",
+                decoding: "async"
+            }
+        },
+        transform: (sharp) => {
+            sharp.resize(570, 382, {fit: "cover"});
+        }
+    });
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-    eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(feedPlugin, {
         type:"atom",
         outputPath: "/feed.xml",
@@ -106,7 +117,6 @@ export default eleventyConfig => {
             }
         }
     });
-    eleventyConfig.addPlugin(fluidSassPlugin);
     eleventyConfig.addPlugin(fluidPlugin, {
         css: {
             enabled: false
@@ -125,10 +135,7 @@ export default eleventyConfig => {
             }
         }
     });
-    // eleventyConfig.addPlugin(eleventySharp({
-    //     urlPath: "/media",
-    //     outputDir: "_site/media/"
-    // }));
+    eleventyConfig.addPlugin(fluidSassPlugin);
 
     // Transforms.
     eleventyConfig.addTransform("parse", parseTransform);

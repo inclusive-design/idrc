@@ -34,12 +34,6 @@
         {% include "partials/global/stylesheets.njk" %}
         <script>document.documentElement.classList.remove('no-js');</script>
         {% include "partials/global/scripts.njk" %}
-        {% if global.context == 'production' %}
-        <script>
-        if ("serviceWorker" in navigator)
-            navigator.serviceWorker.register("/sw.js");
-        </script>
-        {% endif %}
         {% block head %}
         {% endblock %}
     </head>
