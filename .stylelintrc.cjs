@@ -1,10 +1,9 @@
 
 
 module.exports = {
-    extends: ["stylelint-config-fluid", "stylelint-config-standard-scss"],
-    customSyntax: "postcss-scss",
+    extends: ["stylelint-config-fluid"],
     plugins: ["stylelint-use-logical-spec"],
-    ignoreFiles: ["_site/**/*.{css,scss}"],
+    ignoreFiles: ["_site/**/*.css"],
     rules: {
         "no-descending-specificity": null,
         "custom-property-pattern": null,

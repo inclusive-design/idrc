@@ -15,7 +15,7 @@
     "debug": "cross-env DEBUG=Eleventy* eleventy",
     "dev": "cross-env NODE_ENV=development eleventy --serve",
     "lint": "run-s -l lint:*",
-    "lint:styles": "stylelint \"**/*.scss\"",
+    "lint:styles": "stylelint \"**/*.css\"",
     "lint:scripts": "eslint \"**/*.{js,cjs,md}\"",
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
     "lint:yml": "eslint \"**/*.yml\"",
@@ -66,12 +66,10 @@
     "lint-staged": "15.4.3",
     "markdownlint-cli2": "0.17.2",
     "markdownlint-config-fluid": "0.1.8",
-    "postcss-scss": "4.0.9",
     "rimraf": "6.0.1",
     "start-server-and-test": "2.0.10",
     "stylelint": "14.16.1",
     "stylelint-config-fluid": "1.0.0",
-    "stylelint-config-standard-scss": "7.0.1",
     "stylelint-use-logical-spec": "5.0.1"
   },
   "lint-staged": {
