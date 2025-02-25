@@ -1,7 +1,6 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
-import fluidSassPlugin from "eleventy-plugin-fluid-sass";
 import MarkdownIt from "markdown-it";
 
 // const eleventySharp = require("eleventy-plugin-sharp");
@@ -118,9 +117,6 @@ export default eleventyConfig => {
         }
     });
     eleventyConfig.addPlugin(fluidPlugin, {
-        css: {
-            enabled: false
-        },
         defaultLanguage: "en-CA",
         supportedLanguages: {
             "en-CA": {
@@ -135,7 +131,6 @@ export default eleventyConfig => {
             }
         }
     });
-    eleventyConfig.addPlugin(fluidSassPlugin);
 
     // Transforms.
     eleventyConfig.addTransform("parse", parseTransform);

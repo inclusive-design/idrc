@@ -1,0 +1,132 @@
+/* This file contains all styles related to the footer of the site/application. */
+.footer {
+    background: var(--fl-bgColor, var(--indigo-800));
+    color: var(--fl-fgColor, var(--white));
+    display: flex;
+    flex-wrap: wrap;
+    inline-size: calc(100vw - var(--gutter));
+    margin-block: auto 0;
+    margin-inline: auto;
+    max-inline-size: calc(var(--max-width) + var(--gutter));
+    padding-block: calc(80 / 16 * 1rem);
+    position: relative;
+
+    &::after {
+        background: inherit;
+        block-size: 100%;
+        bottom: 0;
+        content: "";
+        display: block;
+        inline-size: 100vw;
+        margin-inline-start: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.footer > * {
+    flex: 0 0 100%;
+    padding-block: 0;
+    padding-inline: calc(var(--gutter) / 2);
+}
+
+.footer .logo {
+    display: flex;
+
+    a {
+        padding: calc(18 / 16 * 1rem);
+    }
+}
+
+.footer .logo svg {
+    fill: currentcolor;
+    inline-size: calc(192 / 16 * 1rem);
+}
+
+.footer a {
+    &:focus {
+        outline-color: var(--fl-linkColor, var(--yellow-500));
+        outline-offset: calc(3 / 16 * 1rem);
+        outline-width: calc(3 / 16 * 1rem);
+    }
+
+    &:hover {
+        background: var(--fl-linkColor, var(--indigo-500));
+        color: var(--fl-bgColor);
+        outline-color: var(--fl-linkColor, var(--indigo-500));
+    }
+}
+
+.footer a:visited {
+    text-decoration-color: var(--fl-linkColor, var(--indigo-500));
+}
+
+.footer .social,
+.footer .contact {
+    margin-block-start: calc(48 / 16 * 1rem);
+
+    &::before {
+        border-block-end: calc(2 / 16 * 1rem) solid currentcolor;
+        content: "";
+        display: block;
+        inline-size: 100%;
+        margin-block-end: calc(8 / 16 * 1rem);
+    }
+}
+
+.footer ul {
+    list-style: none;
+    margin-block-start: calc(24 / 16 * 1rem);
+}
+
+.footer li {
+    margin-block-end: calc(8 / 16 * 1rem);
+}
+
+.footer .social a,
+.footer .contact a {
+    text-decoration: none;
+}
+
+.footer .social svg {
+    display: inline;
+    fill: currentcolor;
+    inline-size: calc(16 / 16 * 1rem);
+    margin-block-start: calc(-4 / 16 * 1rem);
+}
+
+.footer .license-credit {
+    font-size: var(--step--1);
+    margin-block-start: calc(48 / 16 * 1rem);
+}
+
+@media (width >= 1024px) {
+    .footer .logo {
+        flex: 0 0 100%;
+    }
+
+    .footer .social {
+        flex: 0 0 calc(100% / 3);
+    }
+
+    .footer .contact {
+        display: flex;
+        flex: 0 0 calc(100% * 2 / 3);
+        flex-flow: row wrap;
+
+        .h3 {
+            inline-size: 100%;
+            margin-block-end: calc(24 / 16 * 1rem);
+        }
+
+        div {
+            inline-size: 50%;
+            margin-block-start: 0;
+        }
+    }
+
+    .footer .license-credit {
+        flex: 0 0 100%;
+    }
+}

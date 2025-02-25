@@ -1,0 +1,47 @@
+.single {
+    main > article header .wrapper {
+        margin-inline: auto;
+    }
+
+    main > article .content {
+        flex: 0 0 100%;
+        padding-block: calc(40 / 16 * 1rem);
+    }
+}
+
+@media (width >= 600px) {
+    .single {
+        main > article header .wrapper {
+            inline-size: 75%;
+        }
+
+        main > article .content {
+            flex: 0 0 75%;
+        }
+
+        &.single--idea {
+            main > article header .wrapper {
+                margin-inline-start: 0;
+            }
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .single {
+        main > article header .wrapper {
+            inline-size: 50%;
+        }
+
+        main > article .content {
+            flex: 0 0 50%;
+            padding-block: calc(80 / 16 * 1rem);
+        }
+
+        &.single--idea {
+            main > article header .wrapper {
+                inline-size: 75%;
+            }
+        }
+    }
+}

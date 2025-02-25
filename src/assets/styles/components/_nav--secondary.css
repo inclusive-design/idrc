@@ -1,0 +1,119 @@
+.nav--secondary {
+    flex: 0 0 100%;
+    padding-inline: calc(var(--gutter) / 2);
+    position: relative;
+
+    .wrapper {
+        background: var(--fl-bgColor, var(--indigo-200));
+        inline-size: calc(100% + (2 * var(--gutter)));
+        margin-inline-start: calc(-1 * var(--gutter));
+        padding-block: calc(40 / 16 * 1rem);
+        padding-inline: var(--gutter);
+    }
+}
+
+.menu--secondary a {
+    align-items: center;
+    block-size: calc(50 / 16 * 1rem);
+    border-block-end: calc(1 / 16 * 1rem) solid var(--fl-linkColor, var(--black));
+    border-radius: 0;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background: var(--fl-linkColor, var(--indigo-800));
+        border-block-end-color: transparent;
+        box-shadow:
+            calc(-1 * var(--gutter)) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+            var(--fl-linkColor, var(--indigo-800)),
+            var(--gutter) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+            var(--fl-linkColor, var(--indigo-800));
+        color: var(--fl-bgColor, var(--white));
+        outline: transparent;
+    }
+
+    &:active {
+        background: var(--fl-linkColor, var(--indigo-500));
+        box-shadow:
+            calc(-1 * var(--gutter)) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+            var(--fl-linkColor, var(--indigo-500)),
+            var(--gutter) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+            var(--fl-linkColor, var(--indigo-500));
+        color: var(--fl-bgColor, var(--white));
+        outline: transparent;
+    }
+
+    &::after {
+        background: currentcolor;
+        block-size: 1.5em;
+        content: "";
+        display: inline-block;
+        margin-inline-start: 0.125em;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 1.5em;
+    }
+
+    &:not([rel="external"])::after {
+        inline-size: 1em;
+        margin-block-end: 0;
+        mask-image: url("../images/internal.svg");
+    }
+
+    &[rel~="external"]::after,
+    &[href^="mailto:"]::after {
+        inline-size: 1.5em;
+        margin-block-end: 0.125em;
+        mask-image: url("../images/external.svg");
+    }
+
+    &[aria-current="page"],
+    &[data-parent="true"] {
+        border-block-end-color: var(--fl-linkColor, var(--indigo-500));
+        box-shadow: inset 0 0 0 var(--fl-bgColor, var(--indigo-500));
+        font-weight: var(--fw-bold);
+
+        &:hover,
+        &:focus {
+            border-block-end-color: transparent;
+            box-shadow:
+                calc(-1 * var(--gutter)) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+                var(--fl-linkColor, var(--indigo-800)),
+                var(--gutter) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+                var(--fl-linkColor, var(--indigo-800));
+        }
+
+        &:active {
+            border-block-end-color: transparent;
+            box-shadow:
+                calc(-1 * var(--gutter)) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+                var(--fl-linkColor, var(--indigo-500)),
+                var(--gutter) calc(-1 / 16 * 1rem) 0 calc(1 / 16 * 1rem)
+                var(--fl-linkColor, var(--indigo-500));
+            color: var(--fl-bgColor);
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .nav--secondary {
+        flex: 0 0 calc(1 / 3 * 100%);
+        margin-block: calc(96 / 16 * 1rem);
+
+        &::after {
+            display: none;
+        }
+
+        .wrapper {
+            box-shadow:
+                calc(9 / 16 * 1rem) calc(9 / 16 * 1rem) 0 0
+                var(--fl-fgColor, var(--indigo-500));
+            inline-size: 100%;
+            margin-inline-start: 0;
+        }
+    }
+}

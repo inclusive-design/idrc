@@ -1,0 +1,295 @@
+/* This file contains very basic styles. */
+body {
+    background: var(--fl-bgColor, var(--indigo-100));
+    color: var(--fl-fgColor, var(--black));
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fl-font-family, var(--ff-sans));
+    font-size: var(--step-0);
+    font-weight: var(--fw-normal);
+    justify-content: flex-start;
+    line-height: calc(1.5 * var(--fl-lineSpace-factor, 1));
+    min-block-size: 100vh;
+}
+
+small,
+.small {
+    font-size: var(--step--1);
+    line-height: calc(1.6 * var(--fl-lineSpace-factor, 1));
+}
+
+a {
+    color: var(--fl-linkColor);
+    font-family: var(--fl-font-family, var(--ff-display));
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+}
+
+main,
+footer {
+    a {
+        border-radius: calc(5 / 16 * 1rem);
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+        outline-style: solid;
+        outline-width: calc(3 / 16 * 1rem);
+    }
+
+    a:hover {
+        background: var(--fl-linkColor, var(--accent, var(--yellow-500)));
+        color: var(--fl-bgColor, currentColor);
+        text-decoration: none;
+        text-underline-offset: unset;
+    }
+
+    a:focus {
+        outline-color: var(--fl-linkColor, var(--indigo-800));
+        outline-offset: calc(3 / 16 * 1rem);
+        outline-width: calc(3 / 16 * 1rem);
+    }
+
+    a:active {
+        background: var(--fl-linkColor, var(--indigo-800));
+        color: var(--fl-bgColor, var(--white));
+        outline-color: var(--fl-linkColor, var(--indigo-800));
+    }
+}
+
+a[hreflang],
+a[download],
+a[rel="external"] {
+    svg {
+        display: inline-block;
+        inline-size: 1em;
+        margin-block-end: 0.25em;
+        margin-inline: 0.25em 0.5ch;
+    }
+}
+
+a[rel="home"] {
+    border-radius: calc(5 / 16 * 1rem);
+}
+
+a[hreflang] {
+    font-size: var(--step-1);
+    font-weight: var(--fw-semibold);
+    margin-block-start: var(--step-2);
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+.project__link {
+    a:not([rel="external"])::after {
+        background: currentcolor;
+        content: "";
+        margin-block-end: calc(-4 / 16 * 1rem);
+        margin-inline-start: 0;
+        mask-image: url("../images/internal.svg");
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: 1.5em;
+        padding-inline-start: 1em;
+    }
+}
+
+blockquote {
+    padding-inline-start: calc(32 / 16 * 1rem);
+}
+
+* + blockquote {
+    margin-block-start: calc(18 / 16 * 1rem);
+}
+
+.content,
+.section {
+    ul {
+        list-style: none;
+        padding-inline-start: calc(20 / 16 * 1rem);
+    }
+
+    ol {
+        list-style-position: inside;
+        list-style-type: decimal;
+        padding-inline-start: calc(20 / 16 * 1rem);
+    }
+
+    li {
+        line-height: calc(24 / 16 * var(--fl-lineSpace-factor, 1.5));
+    }
+
+    ul li::before {
+        background-color: var(--fl-fgColor, var(--grey-200));
+        block-size: 0.4em;
+        border-radius: 50%;
+        bottom: 0.2em;
+        content: "";
+        display: inline-block;
+        inline-size: 0.4em;
+        margin-inline: 0 calc(8 / 16 * 1rem);
+        outline: solid var(--fl-fgColor, var(--grey-200));
+        position: relative;
+    }
+}
+
+* + p,
+* + ul,
+* + ol {
+    margin-block: calc(15 / 16 * 1rem);
+}
+
+.section.section--bg-black {
+    background: var(--fl-bgColor, #000);
+}
+
+.section.section--bg-white {
+    background: var(--fl-bgColor, #fff);
+}
+
+.section.section--bg-grey-100 {
+    background: var(--fl-bgColor, #f2f2f2);
+}
+
+.section.section--bg-grey-200 {
+    background: var(--fl-bgColor, #c4c4c4);
+}
+
+.section.section--bg-indigo-100 {
+    background: var(--fl-bgColor, #f8fbff);
+}
+
+.section.section--bg-indigo-200 {
+    background: var(--fl-bgColor, #e2edfc);
+}
+
+.section.section--bg-indigo-500 {
+    background: var(--fl-bgColor, #3544d0);
+}
+
+.section.section--bg-indigo-800 {
+    --accent: var(--indigo-500);
+
+    background: var(--fl-bgColor, #3c366b);
+}
+
+.section.section--bg-indigo-900 {
+    background: var(--fl-bgColor, #251f50);
+}
+
+.section.section--bg-idrc-blue {
+    background: var(--fl-bgColor, #00a0cc);
+}
+
+.section.section--bg-blue-200 {
+    background: var(--fl-bgColor, #e4f9ff);
+}
+
+.section.section--bg-blue-500 {
+    background: var(--fl-bgColor, #42cdfa);
+}
+
+.section.section--bg-blue-900 {
+    background: var(--fl-bgColor, #00303f);
+}
+
+.section.section--bg-coral-500 {
+    background: var(--fl-bgColor, #f66a6a);
+}
+
+.section.section--bg-coral-800 {
+    background: var(--fl-bgColor, #e53e3e);
+}
+
+.section.section--bg-teal-500 {
+    background: var(--fl-bgColor, #77d6b3);
+}
+
+.section.section--bg-yellow-200 {
+    background: var(--fl-bgColor, #faf089);
+}
+
+.section.section--bg-yellow-500 {
+    background: var(--fl-bgColor, #f6e05e);
+}
+
+.section.section--bg-blue-500,
+.section.section--bg-coral-500,
+.section.section--bg-yellow-500 {
+    --accent: var(--white);
+}
+
+.section.section--fg-black {
+    color: var(--fl-fgColor, #000);
+}
+
+.section.section--fg-white {
+    color: var(--fl-fgColor, #fff);
+}
+
+.section.section--fg-grey-100 {
+    color: var(--fl-fgColor, #f2f2f2);
+}
+
+.section.section--fg-grey-200 {
+    color: var(--fl-fgColor, #c4c4c4);
+}
+
+.section.section--fg-indigo-100 {
+    color: var(--fl-fgColor, #f8fbff);
+}
+
+.section.section--fg-indigo-200 {
+    color: var(--fl-fgColor, #e2edfc);
+}
+
+.section.section--fg-indigo-500 {
+    color: var(--fl-fgColor, #3544d0);
+}
+
+.section.section--fg-indigo-800 {
+    color: var(--fl-fgColor, #3c366b);
+}
+
+.section.section--fg-indigo-900 {
+    color: var(--fl-fgColor, #251f50);
+}
+
+.section.section--fg-idrc-blue {
+    color: var(--fl-fgColor, #00a0cc);
+}
+
+.section.section--fg-blue-200 {
+    color: var(--fl-fgColor, #e4f9ff);
+}
+
+.section.section--fg-blue-500 {
+    color: var(--fl-fgColor, #42cdfa);
+}
+
+.section.section--fg-blue-900 {
+    color: var(--fl-fgColor, #00303f);
+}
+
+.section.section--fg-coral-500 {
+    color: var(--fl-fgColor, #f66a6a);
+}
+
+.section.section--fg-coral-800 {
+    color: var(--fl-fgColor, #e53e3e);
+}
+
+.section.section--fg-teal-500 {
+    color: var(--fl-fgColor, #77d6b3);
+}
+
+.section.section--fg-yellow-200 {
+    color: var(--fl-fgColor, #faf089);
+}
+
+.section.section--fg-yellow-500 {
+    color: var(--fl-fgColor, #f6e05e);
+}

@@ -1,0 +1,53 @@
+.timeline {
+    margin-block-start: calc(64 / 16 * 1rem);
+    position: relative;
+}
+
+.line {
+    color: var(--fl-fgColor, rgb(0 160 204 / 50%));
+    left: 0;
+    position: absolute;
+    top: calc(16 / 16 * 1rem);
+}
+
+.milestones {
+    padding-inline-start: calc(36 / 16 * 1rem);
+}
+
+.milestones dt {
+    font-family: var(--fl-font-family, var(--ff-display));
+    font-size: var(--step-2);
+    position: relative;
+}
+
+.milestones dt::before {
+    background: var(--fl-fgColor, var(--indigo-500));
+    block-size: calc(10 / 16 * 1rem);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    inline-size: calc(10 / 16 * 1rem);
+    left: calc(-40 / 16 * 1rem);
+    position: absolute;
+    top: calc(12 / 16 * 1rem);
+}
+
+.milestones dt.major::before {
+    background: var(--fl-fgColor, var(--indigo-800));
+    block-size: calc(20 / 16 * 1rem);
+    inline-size: calc(20 / 16 * 1rem);
+    left: calc(-45 / 16 * 1rem);
+    top: calc(8 / 16 * 1rem);
+}
+
+.milestones dd + dt {
+    margin-block-start: var(--step-5);
+}
+
+.milestones dd {
+    margin-block-start: calc(8 / 16 * 1rem);
+}
+
+.milestones dd .description {
+    margin-block-start: calc(8 / 16 * 1rem);
+}

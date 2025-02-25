@@ -1,0 +1,25 @@
+.single article header {
+    background: var(--fl-bgColor, var(--white));
+    color: var(--fl-fgColor, var(--blue-900));
+}
+
+.single article .metadata {
+    font-size: var(--step--1);
+    margin-block-start: calc(24 / 16 * 1rem);
+}
+
+.separator {
+    block-size: calc(4 / 16 * 1rem);
+    color: transparent;
+    display: block;
+    padding-block: 0;
+    padding-inline: 0.5em;
+}
+
+@media (width >= 600px) {
+    .separator {
+        block-size: auto;
+        color: inherit;
+        display: inline;
+    }
+}

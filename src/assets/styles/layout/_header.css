@@ -1,0 +1,80 @@
+/* This file contains all styles related to the header of the site/application. */
+.banner {
+    --parent-bg: var(--header-bg, var(--indigo-100));
+
+    align-items: center;
+    background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
+    color: var(--fl-fgColor, var(--header-fg, black));
+    display: flex;
+    inline-size: calc(100vw - var(--gutter));
+    justify-content: space-between;
+    margin-inline: auto;
+    max-inline-size: calc(var(--max-width) + var(--gutter));
+    padding-block-start: calc(4 / 16 * 1rem);
+    position: relative;
+
+    &::after {
+        background: inherit;
+        block-size: calc(1px + 100%);
+        bottom: -1px;
+        content: "";
+        display: block;
+        inline-size: 100vw;
+        margin-inline-start: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+.banner a {
+    &:hover,
+    &:focus {
+        background: var(--fl-fgColor, var(--black));
+        color: var(--fl-bgColor, var(--white));
+        outline: var(--fl-fgColor, transparent) solid calc(3 / 16 * 1rem);
+    }
+}
+
+.page--home .banner {
+    --header-bg: var(--white);
+
+    z-index: 1;
+
+    &::after {
+        box-shadow: 0 calc(3 / 16 * 1rem) calc(10 / 16 * 1rem) var(--fl-fgColor, rgb(0 0 0 / 5%));
+    }
+}
+
+.banner .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-block: 0;
+    margin-inline: auto;
+    padding-block: 0;
+    padding-inline: var(--gutter);
+}
+
+.no-js {
+    .banner > .wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (width < 1024px) {
+    .banner.banner--menu-visible,
+    .page--home .banner.banner--menu-visible {
+        --parent-bg: var(--indigo-800);
+        --header-bg: var(--indigo-800);
+        --header-fg: var(--white);
+        --header-accent: var(--indigo-500);
+    }
+}
+
+@media (width >= 600px) {
+    .banner .wrapper {
+        padding: 0;
+    }
+}
