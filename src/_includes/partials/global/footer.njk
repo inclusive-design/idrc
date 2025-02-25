@@ -21,7 +21,7 @@
             <p class="h4">Email</p>
             <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             <p class="h4">Address</p>
-            {{ site.address | markdown | safe }}
+            {% renderString site.address, "md" %}
         </div>
         <div>
             <p class="h4">Phone</p>

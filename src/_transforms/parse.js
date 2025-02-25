@@ -1,4 +1,5 @@
 const {parseHTML} = require("linkedom");
+const getId = require("../_utils/extract-youtube-id.js");
 
 module.exports = (value, outputPath) => {
     if (outputPath && outputPath.includes(".html")) {
@@ -8,6 +9,9 @@ module.exports = (value, outputPath) => {
         ];
         const links = [
             ...document.querySelectorAll("main a")
+        ];
+        const youtubeLinks = [
+            ...document.querySelectorAll("main a[href*='youtube'], main a[href*='youtu.be']")
         ];
         const subheads = [
             ...document.querySelectorAll("[data-subsection-level=\"3\"] h3, [data-subsection-level=\"4\"] h4")
@@ -53,6 +57,21 @@ module.exports = (value, outputPath) => {
                 ) {
                     link.setAttribute("download", "");
                     link.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" role="presentation" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M1 11.5v1.75A1.75 1.75 0 0 0 2.75 15h10.5A1.75 1.75 0 0 0 15 13.25V11.5M11.5 8 8 11.5m0 0L4.5 8M8 11.5V1"/></svg><span>${link.innerHTML}</span>`;
+                }
+            }
+        }
+
+        if (youtubeLinks.length > 0) {
+            for (const link of links) {
+                if (link.href === link.textContent) {
+                    const id = getId(link.href);
+
+                    if (id) {
+                        const figure = document.createElement("figure");
+                        figure.className = "embed--youtube";
+                        figure.innerHTML = `<iframe title="YouTube video player" class="video" src="https://www.youtube.com/embed/${id}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+                        link.replaceWith(figure);
+                    }
                 }
             }
         }

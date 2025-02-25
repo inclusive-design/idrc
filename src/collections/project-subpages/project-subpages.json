@@ -1,0 +1,6 @@
+{
+  "headerBgColor": "coral-500",
+  "headerBorderColor": "coral-800",
+  "headerTextColor": "black",
+  "layout": "layouts/project-subpage.njk"
+}

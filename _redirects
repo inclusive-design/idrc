@@ -1,50 +1,37 @@
-https://idrc.ocad.ca/*                                                                  https://idrc.ocadu.ca/:splat                                            301!
-https://www.idrc.ocad.ca/*                                                              https://idrc.ocadu.ca/:splat                                            301!
-https://www.idrc.ocadu.ca/*                                                             https://idrc.ocadu.ca/:splat                                            301!
-https://unpopular.ca/*                                                                  https://idrc.ocadu.ca/:splat                                            301!
-https://in-kind.ca/*                                                                    https://idrc.ocadu.ca/:splat                                            301!
-https://includenet.ca/*                                                                 https://idrc.ocadu.ca/:splat                                            301!
-https://achecker.ca/*                                                                   https://idrc.ocadu.ca/:splat                                            301!
-https://timetrack.idrc.ocadu.ca/*                                                       https://tracktime.inclusivedesign.ca/:splat                             301!
-https://websavvy.idrc.ocadu.ca/*                                                        /consulting                                                             301!
-https://websavvy.idrc.ocad.ca/*                                                         /consulting                                                             301!
-/about-the-idrc                                                                         /about                                                                  301
-/news                                                                                   /about/news/                                                            301
-/about-the-idrc/idrc-news                                                               /about/news/                                                            301
-/news/continuing-our-work-during-covid-19                                               /about/news/continuing-our-work-during-covid-19/                        301
-/about-the-idrc/idrc-news/534-continuing-our-work-during-covid-19                       /about/news/continuing-our-work-during-covid-19/                        301
-/news/we-count-removing-bias-and-exclusion-in-the-data-economy                          /about/news/we-count-removing-bias-and-exclusion-in-the-data-economy/   301
-/about-the-idrc/idrc-news/533-we-count-removing-bias-and-exclusion-in-the-data-economy  /about/news/we-count-removing-bias-and-exclusion-in-the-data-economy/   301
-/about-the-idrc/idrc-news/*                                                             https://legacy.idrc.ocadu.ca/about-the-idrc/idrc-news/:splat            302 # Temporarily redirect all legacy news items to legacy site.
-/about-the-idrc/contact-us                                                              /#contact-us                                                            302
-/about-the-idrc/employment-opportunities                                                /#job-postings                                                          302
-/about-the-idrc/getinvolved                                                             /connect/                                                      			301
-/about-the-idrc/*                                                                       https://legacy.idrc.ocadu.ca/about-the-idrc/:splat                      302 # Temporarily redirect all subpages of "About the IDRC" to the legacy site.
-/research-and-development                                                               /projects/                                                    301
-/research-and-development/*                                                             https://legacy.idrc.ocadu.ca/research-and-development/:splat            302
-/resources                                                                              /#our-resources                                                         302
-/workshops-aamp-trainings                                                               https://legacy.idrc.ocadu.ca/workshops-aamp-trainings                   302 # Temporarily redirect "Education" page to legacy site.
-/policy                                                                                 https://legacy.idrc.ocadu.ca/policy                                     302 # Temporarily redirect "Policy" page to legacy site.
-/policy/*                                                                               https://legacy.idrc.ocadu.ca/policy/:splat                              302 # Temporarily redirect all subpages of "Policy" to the legacy site.
-/services                                                                               /#services-we-offer                                                     302
-/services/33-services/57-vision-technology-service                                      /vision-technology-service/                                             301
-/services/34-services/consultation/58-employment-accommodation-services                 /vision-technology-service/                                             301
-/websavvy/                                                                              /consulting/                                                            301
-/index.php/resources/idrc-online/library-of-papers/443-whatisinclusivedesign            /about/philosophy/                                                      301
-/index.php/resources/idrc-online/*                                                      https://legacy.idrc.ocadu.ca/index.php/resources/idrc-online/:splat     302 # Temporary redirect "IDRC Online" page to legacy site.
-/odd  /projects/odd/   301
-/intelligent-user-interfaces-for-virtual-healthcare  /projects/intelligent-user-interfaces-for-virtual-healthcare/   301
-/commacc  /projects/communication-access-within-the-accessible-canada-act/   301
-/projects-and-tools  /projects/   301
-/eds  /projects/eds/   301
+/about-the-idrc  /about  301
+/news  /about/news/  301
+/about-the-idrc/idrc-news  /about/news/  301
+/news/continuing-our-work-during-covid-19  /about/news/continuing-our-work-during-covid-19/  301
+/about-the-idrc/idrc-news/534-continuing-our-work-during-covid-19  /about/news/continuing-our-work-during-covid-19/  301
+/news/we-count-removing-bias-and-exclusion-in-the-data-economy  /about/news/we-count-removing-bias-and-exclusion-in-the-data-economy/  301
+/about-the-idrc/idrc-news/533-we-count-removing-bias-and-exclusion-in-the-data-economy  /about/news/we-count-removing-bias-and-exclusion-in-the-data-economy/  301
+/about-the-idrc/contact-us  /#contact-us  302
+/about-the-idrc/employment-opportunities  /#job-postings  302
+/about-the-idrc/getinvolved  /connect/  			301
+/research-and-development  /projects/  301
+/workshops-aamp-trainings  https://legacy.idrc.ocadu.ca/workshops-aamp-trainings  302
+/policy  https://legacy.idrc.ocadu.ca/policy  302
+/services  /#services-we-offer  302
+/services/33-services/57-vision-technology-service  /vision-technology-service/  301
+/services/34-services/consultation/58-employment-accommodation-services  /vision-technology-service/  301
+/websavvy/  /consulting/  301
+/index.php/resources/idrc-online/library-of-papers/443-whatisinclusivedesign  /about/philosophy/  301
+/odd  /projects/odd/  301
+/intelligent-user-interfaces-for-virtual-healthcare  /projects/intelligent-user-interfaces-for-virtual-healthcare/  301
+/commacc  /projects/communication-access-within-the-accessible-canada-act/  301
+/projects-and-tools  /projects/  301
+/eds  /projects/eds/  301
 /projects/future-of-work-equitable-digital-systems /projects/eds/ 301
-/fr/projects/un-canada-accessible-un-monde-accessible /fr/projets/acaw/ 301
 /projects/framework-for-accessible-and-equitable-artificial-intelligence-ai-in-education /projects/ai-in-education/ 301
-
 /projects/accessible-canada-accessible-world https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world 301
 /projects/acaw https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world 301
-/projects/acaw/* https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world 301
 /fr/projects/un-canada-accessible-un-monde-accessible https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world 301
 /fr/projects/acaw https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world 301
 /fr/projets/acaw https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world 301
 /fr/projets/cama https://sites.events.concordia.ca/sites/accessconf/fr/accessible-canada-accessible-world 301
+/about-the-idrc/idrc-news/*  https://legacy.idrc.ocadu.ca/about-the-idrc/idrc-news/:splat  302
+/about-the-idrc/*  https://legacy.idrc.ocadu.ca/about-the-idrc/:splat  302
+/research-and-development/*  https://legacy.idrc.ocadu.ca/research-and-development/:splat  302
+/policy/*  https://legacy.idrc.ocadu.ca/policy/:splat  302
+/index.php/resources/idrc-online/*  https://legacy.idrc.ocadu.ca/index.php/resources/idrc-online/:splat  302
+/projects/acaw/* https://sites.events.concordia.ca/sites/accessconf/en/accessible-canada-accessible-world 301

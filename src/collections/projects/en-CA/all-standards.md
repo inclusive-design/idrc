@@ -1,9 +1,22 @@
 ---
-layout: layouts/project.njk
+uuid: e11c9245-fb29-45f8-8b75-e34fc04d0afa
+locale: en-CA
 title: All Standards With Us
-slug: all-standards-with-us
+linking:
+  type: page
+  slug: all-standards-with-us
+shortTitle: ''
 order: 1
+thumbnailAltText: ''
 description: Integrating Accessibility and Disability Inclusion in All Standards.
+funderLogos:
+  - content: ''
+    image: /media/asc-signature-en-fr-black.png
+    alt: Accessibility Standards Canada Logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ## About this project
 
@@ -41,23 +54,20 @@ Standards define how everyday things are made. By considering accessibility when
 
 Our project goals are to:
 
-* **Identify barriers** for people with disabilities and disability organizations to take part in the standards processes through co-design and secondary research (literature review, jurisdictional scan)
-* **Create guidance** on how to make the standards development process more inclusive to people with disabilities and Deaf people, and pilot them with mainstream SDOs.
-* **Create capacity building resources** to equip disability organizations and people with disabilities to take part in the standards development process.
+- **Identify barriers** for people with disabilities and disability organizations to take part in the standards processes through co-design and secondary research (literature review, jurisdictional scan)
+- **Create guidance** on how to make the standards development process more inclusive to people with disabilities and Deaf people, and pilot them with mainstream SDOs.
+- **Create capacity building resources** to equip disability organizations and people with disabilities to take part in the standards development process.
 
 ## Project partners
 
 This list will be updated as the project progresses.
-
-## Funder
-
-Canadian Accessibility Standards Development Organization (Accessibility Standards Canada)
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "center" %}
-{% endimagePositionWithText %}
 
 ## References
 
 International Organization for Standardization (2024). Standards. Retrieved from <https://www.iso.org/standards.html>.
 
 University of Massachusetts (2024). Standards. Retrieved from <https://guides.library.umass.edu/c.php?g=719645&p=5126968>.
+
+## Funder
+
+Canadian Accessibility Standards Development Organization (Accessibility Standards Canada)

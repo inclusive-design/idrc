@@ -1,26 +1,29 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
   squash_merges: true
+  repo: inclusive-design/idrc
+  base_url: https://auth.incd.ca
   commit_messages:
     create: 'chore(cms): create "{{path}}"'
     update: 'chore(cms): update "{{path}}"'
     delete: 'chore(cms): delete "{{path}}"'
     uploadMedia: 'chore(cms): upload "{{path}}"'
     deleteMedia: 'chore(cms): delete "{{path}}"'
-local_backend: true
-publish_mode: editorial_workflow
-site_url: "https://idrc.ocadu.ca"
 media_folder: src/media
 public_folder: /media
 i18n:
   structure: multiple_folders
   locales: [en-CA, fr-CA]
   default_locale: en-CA
+  save_all_locales: false
+output:
+  omit_empty_optional_fields: false
 collections:
   - name: special_pages
     label: Special Pages
     label_singular: Special Page
+    icon: news
     files:
       - name: home
         label: Homepage
@@ -33,29 +36,24 @@ collections:
             name: layout
             widget: hidden
             default: layouts/page.njk
-
           - {label: Title, name: title, widget: string}
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-
           - label: SEO Meta Description
             name: metaDesc
             widget: string
             required: false
-
           - label: Social Image
             name: socialImage
             widget: image
             required: false
-
           - label: Intro
             name: intro
             widget: markdown
             required: false
             editor_components: [image, file]
-
           - label: Sections
             name: sections
             widget: list
@@ -66,7 +64,6 @@ collections:
                 widget: markdown
                 required: true
                 editor_components: [image, file]
-
               - label: Text Colour
                 name: textColor
                 widget: select
@@ -105,7 +102,6 @@ collections:
                 name: fullBleed
                 widget: boolean
                 default: false
-
               - label: Border Colour
                 name: borderColor
                 widget: select
@@ -128,12 +124,10 @@ collections:
                 name: image2x
                 widget: image
                 required: false
-
               - label: Image Alternative Text
                 name: imageAltText
                 widget: string
                 required: false
-
               - label: Image Order
                 name: imageOrder
                 widget: select
@@ -189,49 +183,40 @@ collections:
             name: layout
             widget: hidden
             default: layouts/page.njk
-
           - {label: Title, name: title, widget: string}
           - label: "Permalink Override (Pattern: '/your-slug/index.html')"
             name: permalink
             widget: string
             required: false
-
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-
           - label: SEO Meta Description
             name: metaDesc
             widget: string
             required: false
-
           - label: Social Image
             name: socialImage
             widget: image
             required: false
-
           - label: Intro
             name: intro
             widget: markdown
             required: false
             editor_components: [image, file]
-
           - label: Header Background Colour
             name: headerBgColor
             widget: hidden
             default: blue-200
-
           - label: Header Border Color
             name: headerBorderColor
             widget: hidden
             default: blue-500
-
           - label: Header Text Color
             name: headerTextColor
             widget: hidden
             default: black
-
           - label: Milestones
             label_singular: milestone
             name: milestones
@@ -243,7 +228,6 @@ collections:
                 widget: number
                 value_type: int
                 min: 1993
-
               - {label: Title, name: title, widget: string}
               - {label: Description, name: description, widget: text}
               - {label: Major Milestone, name: major, widget: boolean}
@@ -259,46 +243,39 @@ collections:
             name: layout
             widget: hidden
             default: layouts/projects.njk
-
           - {label: Title, name: title, widget: string}
           - label: "Permalink Override (Pattern: '/your-slug/index.html')"
             name: permalink
             widget: string
             required: false
-
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-
           - label: SEO Meta Description
             name: metaDesc
             widget: string
             required: false
-
           - label: Social Image
             name: socialImage
             widget: image
             required: false
-
           - label: Header Background Colour
             name: headerBgColor
             widget: hidden
             default: coral-500
-
           - label: Header Border Color
             name: headerBorderColor
             widget: hidden
             default: coral-800
-
           - label: Header Text Color
             name: headerTextColor
             widget: hidden
             default: black
-
   - name: pages
     label: Pages
     label_singular: Page
+    icon: article
     folder: src/collections/pages
     slug: "{{slug}}"
     preview_path: "{{slug}}"
@@ -309,34 +286,28 @@ collections:
         name: layout
         widget: hidden
         default: layouts/page.njk
-
       - {label: Title, name: title, widget: string}
       - label: "Permalink Override (Pattern: '/your-slug/index.html')"
         name: permalink
         widget: string
         required: false
-
       - label: SEO Meta Title
         name: metaTitle
         widget: string
         required: false
-
       - label: SEO Meta Description
         name: metaDesc
         widget: string
         required: false
-
       - label: Social Image
         name: socialImage
         widget: image
         required: false
-
       - label: Intro
         name: intro
         widget: markdown
         required: false
         editor_components: [image, file]
-
       - label: Header Background Colour
         name: headerBgColor
         widget: select
@@ -409,7 +380,6 @@ collections:
             widget: markdown
             required: true
             editor_components: [image, file]
-
           - label: Text Colour
             name: textColor
             widget: select
@@ -448,7 +418,6 @@ collections:
             name: fullBleed
             widget: boolean
             default: false
-
           - label: Border Colour
             name: borderColor
             widget: select
@@ -472,7 +441,6 @@ collections:
             name: imageAltText
             widget: string
             required: false
-
           - label: Image Order
             name: imageOrder
             widget: select
@@ -520,6 +488,7 @@ collections:
   - name: news
     label: News
     label_singular: News Item
+    icon: newspaper
     folder: src/collections/news
     slug: "{{slug}}"
     preview_path: "/about/news/{{slug}}"
@@ -530,7 +499,6 @@ collections:
         name: layout
         widget: hidden
         default: layouts/single--news.njk
-
       - {label: Title, name: title, widget: string}
       - {label: Date, name: date, widget: datetime, time_format: false}
       - {label: Archived, name: archived, widget: boolean, default: false}
@@ -539,33 +507,29 @@ collections:
         widget: string
         required: false
         default: IDRC Team
-
       - {label: Excerpt, name: excerpt, widget: text, required: false}
       - label: "Permalink Override (Pattern: '/news/your-news-item/index.html')"
         name: permalink
         widget: string
         required: false
-
       - label: SEO Meta Title
         name: metaTitle
         widget: string
         required: false
-
       - label: SEO Meta Description
         name: metaDesc
         widget: string
         required: false
-
       - label: Social Image
         name: socialImage
         widget: image
         required: false
-
       - {label: Tags, name: tags, widget: list, allow_add: true}
       - {label: Body, name: body, widget: markdown}
   - name: ideas
     label: Ideas
     label_singular: Idea
+    icon: lightbulb
     folder: src/collections/ideas
     slug: "{{slug}}"
     preview_path: "/ideas/{{slug}}"
@@ -576,7 +540,6 @@ collections:
         name: layout
         widget: hidden
         default: layouts/single--idea.njk
-
       - {label: Title, name: title, widget: string}
       - {label: Date, name: date, widget: datetime, time_format: false}
       - {label: Archived, name: archived, widget: boolean, default: false}
@@ -585,38 +548,33 @@ collections:
         widget: string
         required: false
         default: IDRC Team
-
       - {label: Excerpt, name: excerpt, widget: text, required: false}
       - label: Thumbnail Image
         name: thumbnailImage
         widget: image
         required: false
-
       - label: "Permalink Override (Pattern: '/ideas/your-idea/index.html')"
         name: permalink
         widget: string
         required: false
-
       - label: SEO Meta Title
         name: metaTitle
         widget: string
         required: false
-
       - label: SEO Meta Description
         name: metaDesc
         widget: string
         required: false
-
       - label: Social Image
         name: socialImage
         widget: image
         required: false
-
       - {label: Tags, name: tags, widget: list, allow_add: true}
       - {label: Body, name: body, widget: markdown}
   - name: people
     label: People
     label_singular: Person
+    icon: badge
     folder: src/collections/people
     slug: "{{slug}}"
     preview_path: "/about/team/{{slug}}"
@@ -627,7 +585,6 @@ collections:
         name: layout
         widget: hidden
         default: layouts/single--person.njk
-
       - {label: Full Name, name: title, widget: string}
       - {label: Job Title, name: job, widget: string}
       - {label: Pronouns, name: pronouns, widget: string}
@@ -637,51 +594,44 @@ collections:
         widget: string
         required: false
         hint: "A link to this person's personal website."
-
       - label: Twitter Username
         name: twitter
         widget: string
         required: false
         hint: "This person's twitter username, e.g. '@username'."
-
       - label: Github Profile
         name: github
         widget: string
         required: false
         hint: "A link to this person's profile on GitHub."
-
       - label: LinkedIn Profile
         name: linkedin
         widget: string
         required: false
         hint: "A link to this person's profile on LinkedIn."
-
       - label: Projects
         name: projects
         widget: list
         allow_add: true
         hint: A comma-separated list of projects on which this person has worked.
-
       - {label: Interests, name: interests, widget: text, required: false}
       - {label: Bio, name: body, widget: markdown}
       - label: SEO Meta Title
         name: metaTitle
         widget: string
         required: false
-
       - label: SEO Meta Description
         name: metaDesc
         widget: string
         required: false
-
       - label: Social Image
         name: socialImage
         widget: image
         required: false
-
   - name: projects
     label: Projects
     label_singular: Project
+    icon: inventory
     folder: src/collections/projects
     slug: "{{slug}}"
     preview_path: "/projects/{{slug}}"
@@ -689,96 +639,203 @@ collections:
     i18n: true
     sortable_fields: [title, order]
     fields:
-      - label: Layout
-        name: layout
+      - label: UUID
+        name: uuid
         widget: hidden
-        default: layouts/project.njk
-        i18n: duplicate
-
+        default: "{{uuid}}"
+        i18n: copy
+      - label: Locale
+        name: locale
+        widget: hidden
+        default: "{{locale}}"
       - label: Title
         name: title
         widget: string
         required: true
-        hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below."
+        hint: The title of the project.
         i18n: true
-
-      - label: Title for URL
-        name: slug
+      - label: Linking Options
+        name: linking
+        widget: object
+        i18n: true
+        types:
+          - label: Project Page
+            name: page
+            fields:
+              - label: Title for URL
+                name: slug
+                widget: string
+                i18n: true
+                hint: Enter a short form of the project title to be used in the URL. Only lowercase letters, numbers and hyphens should be used, e.g. 'sample-project'. This must be unique.
+          - label: External Link
+            name: link
+            fields:
+              - label: External Project Website
+                name: link
+                widget: string
+                type: url
+                i18n: copy
+                hint: If you want the project to link to an external site instead of display a page on this website, enter a URL here.
+      - label: Short Title
+        name: shortTitle
         widget: string
         required: false
-        hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique."
+        hint: Short title for the project used to generate text labels for project website links.
         i18n: true
-
-      - label: Short Name
-        name: shortName
-        widget: string
-        required: false
-        hint: Short name for the project used to generate text labels for project website links. This is not required for sub-pages of a project.
-        i18n: true
-
-      - label: Parent Project
-        name: parentTitle
-        widget: relation
-        collection: projects
-        value_field: title
-        search_fields: [title]
-        required: false
-        hint: This is required for sub-pages of a project to indicate which project is the parent.
-        i18n: true
-
       - label: Order
         name: order
         widget: number
         required: false
         hint: Order in which the project should appear.
         i18n: duplicate
-
-      - label: Subpage Order
-        name: subPageOrder
-        widget: number
-        required: false
-        hint: "Hint: if using this, all sub-pages at the same level should have an order number specified. Leave blank to have sub-pages appear in alphabetical order."
-        i18n: duplicate
-
       - label: Thumbnail Image
         name: thumbnailImage
         widget: image
         required: false
         hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."
         i18n: duplicate
-
       - label: Thumbnail Image Alt Text
         name: thumbnailAltText
         widget: string
         required: false
         hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."
         i18n: true
-
       - label: Project Listing Description
         name: description
         widget: markdown
         required: false
         editor_components: [image, file]
-        hint: This is text that appears for a project in the projects listing. This description is not required for sub-pages.
+        hint: This is text that appears for a project in the projects listing.
         i18n: true
-
-      - label: External Project Website
-        name: link
-        widget: string
+      - label: Funder Logos
+        name: funderLogos
+        widget: list
+        i18n: true
         required: false
-        hint: This is not required for sub-pages.
-        i18n: duplicate
-
+        fields:
+          - label: Caption
+            name: content
+            widget: text
+            i18n: true
+            required: false
+          - label: Funder Logo
+            name: image
+            widget: image
+            i18n: copy
+          - label: Funder Logo Alternative Text
+            name: alt
+            widget: string
+            i18n: true
+            required: true
+          - label: Funder Logo Position
+            name: imagePosition
+            widget: select
+            options:
+              - {label: Left, value: left}
+              - {label: Right, value: right}
+            default: left
+            required: true
+            i18n: copy
+          - label: Funder Logo Scale
+            name: scale
+            widget: select
+            options: [25, 50, 75, 100]
+            required: true
+            i18n: copy
+          - label: Funder Logo Maximum Height
+            widget: select
+            options:
+              - {label: Auto, value: auto}
+              - {label: 200px, value: 200px}
+              - {label: 400px, value: 400px}
+              - {label: 600px, value: 600px}
+              - {label: 800px, value: 800px}
+            i18n: copy
+            name: maxHeight
+            default: auto
+          - label: Vertical Alignment
+            name: verticalAlignment
+            widget: select
+            options:
+              - {label: Top, value: top}
+              - {label: Center, value: center}
+              - {label: Bottom, value: bottom}
+            default: center
+            required: true
+            i18n: copy
       - label: Body
         name: body
         required: false
         widget: markdown
         hint: This is the content that appears for a project page hosted on the IDRC site.
         i18n: true
-
+  - name: projectSubpages
+    label: Project Subpages
+    label_singular: Project Subpage
+    icon: menu_open
+    folder: src/collections/project-subpages
+    slug: "{{slug}}"
+    create: true
+    i18n: true
+    sortable_fields: [title, order]
+    fields:
+      - label: UUID
+        name: uuid
+        widget: hidden
+        default: "{{uuid}}"
+      - label: Locale
+        name: locale
+        widget: hidden
+        default: "{{locale}}"
+      - label: Title
+        name: title
+        widget: string
+        required: true
+        hint: "The title of the project page or subpage. If this is a sub-page, the project title in the banner will be set by the Parent Project field below."
+        i18n: true
+      - label: Title for URL
+        name: slug
+        widget: string
+        required: true
+        hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique."
+      - label: Parent Project
+        name: parent
+        widget: relation
+        collection: projects
+        value_field: slug
+        search_fields: [title]
+        display_fields: [title]
+        required: false
+        hint: This is required for sub-pages of a project to indicate which project is the parent.
+        i18n: true
+      - label: Order
+        name: order
+        widget: number
+        required: false
+        hint: Order in which the project should appear.
+        i18n: duplicate
+      - label: Thumbnail Image
+        name: thumbnailImage
+        widget: image
+        required: false
+        hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."
+        i18n: duplicate
+      - label: Thumbnail Image Alt Text
+        name: thumbnailAltText
+        widget: string
+        required: false
+        hint: "If alt text is left blank, 'Thumbnail image for [Project Name]' will be used by default."
+        i18n: true
+      - label: Body
+        name: body
+        required: false
+        widget: markdown
+        hint: This is the content that appears for a project page hosted on the IDRC site.
+        i18n: true
   - name: resources
     label: Resources
     label_singular: Resource
+    icon: inventory_2
     folder: src/collections/resources
     slug: "{{slug}}"
     preview_path: "/resources/{{slug}}"
@@ -792,25 +849,21 @@ collections:
         widget: markdown
         required: true
         editor_components: [image, file]
-
       - label: Published Year
         name: publishedYear
         widget: string
         hint: The year this resource was first publicly available.
         required: true
-
       - label: Thumbnail Image
         name: thumbnailImage
         widget: image
         required: false
         hint: "Suggested size: 680x494px. Images not fitting this aspect ratio will appear stretched."
-
       - label: Thumbnail Image Alt Text
         name: thumbnailAltText
         widget: string
         required: false
         hint: "If alt text is left blank, 'Thumbnail image for [Resource Name]' will be used by default."
-
       - label: Resource Topics
         name: topics
         widget: relation
@@ -834,6 +887,7 @@ collections:
       - {label: Resource URL, name: link, widget: string, required: true}
   - name: resourceMetadata
     label: Resource Metadata
+    icon: label
     i18n: false
     files:
       - label: Resource Topics

@@ -1,4 +1,6 @@
 .page--projects {
+    background: var(--fl-bgColor, var(--white));
+
     .projects {
         margin-block: rem(64);
         margin-inline: 0;

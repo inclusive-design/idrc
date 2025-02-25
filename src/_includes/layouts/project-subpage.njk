@@ -1,0 +1,28 @@
+{% extends 'layouts/base.njk' %}
+
+{% set pageType = 'page--project' %}
+
+{% block content %}
+    {% set projectNav = collections.all | eleventyNavigation("Projects") %}
+    {% set parentProject = projectNav | findByKey(parent) | first %}
+    {% set parentTitle = parentProject.title %}
+    {% include 'partials/components/page-header.njk' %}
+    <article>
+
+
+
+        <div class="back-to-parent">
+            <a href="{{ parentProject.url }}">{% include "svg/previous.svg" %} Back to {{ parentProject.title | safe }}</a>
+        </div>
+
+
+        <div class="content">
+            <div class="wrapper">
+                <h2>{{ title | safe }}</h2>
+                {{ content | safe }}
+            </div>
+        </div>
+
+        <nav class="nav--secondary"></nav>
+    </article>
+{% endblock %}

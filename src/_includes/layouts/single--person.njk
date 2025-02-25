@@ -1,8 +1,4 @@
-{% if previewMode %}
-    {% extends 'layouts/preview.njk' %}
-{% else %}
-    {% extends 'layouts/base.njk' %}
-{% endif %}
+{% extends 'layouts/base.njk' %}
 
 {% set pageType = 'single single--person' %}
 {% set postType = 'Team' %}
@@ -23,7 +19,7 @@
                 {% endif %}
                 {% if interests %}
                 <h2 class="h3">Interests</h2>
-                {{ interests | markdown | safe }}
+                {% renderString interests, "md" %}
                 {% endif %}
                 {% if content %}
                 <h2 class="h3">Bio</h2>

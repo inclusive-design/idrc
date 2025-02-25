@@ -2,6 +2,8 @@
 // This file contains project page styles.
 // -----------------------------------------------------------------------------
 .page--project {
+    background: var(--fl-bgColor, var(--white));
+
     .back-to-parent {
         flex: 0 0 100%;
         padding-block-start: 4rem;

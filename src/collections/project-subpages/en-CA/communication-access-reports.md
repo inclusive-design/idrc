@@ -1,7 +1,11 @@
 ---
-layout: layouts/project.njk
+uuid: 55977662-e3c7-4ec1-ae94-e39b01dd46a0
+locale: en-CA
 title: Communication Access Reports
-parentTitle: Communication Access within the Accessible Canada Act
+slug: reports
+parent: communication-access-within-the-accessible-canada-act
+order: 1
+thumbnailAltText: ''
 ---
 ### **_﻿\_\_\_\_\_\_\_\__**
 
@@ -40,9 +44,9 @@ You can read the details in our [Recommendations Report](https://idrc.ocadu.ca/m
 
 We published two other reports over the year-long project. These reports look at the landscape of communication access from the perspective of:  
 
-* quantitative data,  
-* defining communication and communication access,  
-* available services and funding.  
+- quantitative data,  
+- defining communication and communication access,  
+- available services and funding.  
 
 ##### **O﻿ne person facing a barrier is one too many**
 

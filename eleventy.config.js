@@ -4,8 +4,6 @@ const eleventyPWA = require("@pkvach/eleventy-plugin-pwa");
 const eleventySharp = require("eleventy-plugin-sharp");
 const fluidPlugin = require("eleventy-plugin-fluid");
 const parseTransform = require("./src/_transforms/parse.js");
-const youtubeShortcode = require("./src/_shortcodes/youtube.js");
-const imagePositionWithTextShortcode = require("./src/_shortcodes/image-position-with-text.js");
 
 const workboxOptions = {
     cacheId: "idrc",
@@ -42,21 +40,19 @@ module.exports = eleventyConfig => {
         });
     });
 
-    siteConfig.locales.forEach(lang => {
+    for (const lang of siteConfig.locales) {
         eleventyConfig.addCollection(`projects_${lang}`, collection => {
-            let projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`)],
-                uniqueProjects = [];
+            const projects = [...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`)];
 
-            // Skip project subpages.
-            projects.forEach(project => {
-                if (!project.data.parentTitle || project.data.parentTitle === "") {
-                    uniqueProjects.push(project);
-                }
-            });
-
-            return uniqueProjects.sort((a, b) => parseInt(b.data.order) - parseInt(a.data.order)).reverse();
+            return projects.sort((a, b) => Number.parseInt(b.data.order) - Number.parseInt(a.data.order)).reverse();
         });
-    });
+
+        eleventyConfig.addCollection(`projectSubpages_${lang}`, collection => {
+            const projectSubpages = [...collection.getFilteredByGlob(`src/collections/project-subpages/${lang}/*.md`)];
+
+            return projectSubpages.sort((a, b) => Number.parseInt(b.data.order) - Number.parseInt(a.data.order)).reverse();
+        });
+    };
 
     eleventyConfig.addCollection("news", collection => {
         return [
@@ -80,7 +76,11 @@ module.exports = eleventyConfig => {
         return collection.getFilteredByGlob("src/collections/resources/*.md");
     });
 
-    eleventyConfig.setUseGitIgnore(false);
+    eleventyConfig.addFilter("findByKey", (navItems, value) => {
+        return navItems.filter(item => {
+            return item.key === value;
+        });
+    });
 
     // Plugins.
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
@@ -114,11 +114,6 @@ module.exports = eleventyConfig => {
 
     // Transforms.
     eleventyConfig.addTransform("parse", parseTransform);
-
-    // Add shortcodes.
-    eleventyConfig.addPairedShortcode("imagePositionWithText", imagePositionWithTextShortcode);
-    eleventyConfig.addShortcode("youtube", youtubeShortcode);
-
 
     // Passthrough file copy.
     eleventyConfig.addPassthroughCopy({"src/assets/fonts": "assets/fonts"});

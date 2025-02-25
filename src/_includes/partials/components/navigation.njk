@@ -11,13 +11,13 @@
           {% if eleventyNavigation.parent %}
             {% set parentPage = entry.title === eleventyNavigation.parent %}
           {% else %}
-            {% set parentPage = entry.url in page.url %}
+            {% set parentPage = page.url != false and entry.url in page.url %}
           {% endif %}
 
 	        {% if entry.rel %}
 	          {% set relAttribute = ' rel="' + entry.rel + '"' %}
 	        {% endif %}
-	
+
 	        {% if currentPage %}
 	          {% set currentAttribute = ' aria-current="page"' %}
 	        {% endif %}
@@ -39,7 +39,7 @@
               {% if child.rel %}
                 {% set relAttribute = ' rel="' + child.rel + '"' %}
               {% endif %}
-      
+
               {% if currentPage %}
                 {% set currentAttribute = ' aria-current="page"' %}
               {% endif %}

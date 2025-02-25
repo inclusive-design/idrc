@@ -1,10 +1,22 @@
 ---
-layout: layouts/project.njk
+uuid: 09e31834-cb1d-4f07-84db-00239fa901ed
+locale: fr-CA
 title: Toutes les normes avec nous
-slug: toutes-les-normes-avec-nous
+linking:
+  type: page
+  slug: tous-les-normes-avec-nous
+shortTitle: ''
 order: 1
-description: Intégrer l'accessibilité et l'inclusion des personnes handicapées
-  dans toutes les normes.
+thumbnailAltText: ''
+description: Intégrer l'accessibilité et l'inclusion des personnes handicapées dans toutes les normes.
+funderLogos:
+  - content: ''
+    image: /media/asc-signature-en-fr-black.png
+    alt: Accessibility Standards Canada Logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ## À propos de ce projet
 
@@ -42,23 +54,20 @@ Les normes définissent la manière dont les objets de la vie quotidienne sont f
 
 Les objectifs de notre projet sont les suivants :
 
-* **Identifier les obstacles** à la participation des personnes handicapées et des organisations de personnes handicapées aux processus de normalisation par la co-élaboration et de la recherche secondaire (analyse documentaire, analyse juridictionnelle).
-* **Créer de direction** sur la manière de rendre le processus d'élaboration des normes plus inclusives pour les personnes handicapées et les personnes Sourdes et de tester ces directions avec des organisations de normalisation dominantes.
-* **Créer des ressources de renforcement des capacités** pour permettre aux organisations de personnes handicapées et aux personnes handicapées de participer au processus d'élaboration des normes.
+- **Identifier les obstacles** à la participation des personnes handicapées et des organisations de personnes handicapées aux processus de normalisation par la co-élaboration et de la recherche secondaire (analyse documentaire, analyse juridictionnelle).
+- **Créer de direction** sur la manière de rendre le processus d'élaboration des normes plus inclusives pour les personnes handicapées et les personnes Sourdes et de tester ces directions avec des organisations de normalisation dominantes.
+- **Créer des ressources de renforcement des capacités** pour permettre aux organisations de personnes handicapées et aux personnes handicapées de participer au processus d'élaboration des normes.
 
 ## Partenaires du projet
 
 Cette liste sera mise à jour au fur et à mesure de l'avancement du projet.
-
-## Bailleurs de fonds
-
-Organisation canadienne d'élaboration de normes d'accessibilité (Normes d'accessibilité Canada)
-
-{% imagePositionWithText "/media/asc-signature-en-fr-black.png", "Accessibility Standards Canada logo", "left", "50", "Auto", "center" %}
-{% endimagePositionWithText %}
 
 ## Références
 
 Organisation internationale de normalisation (2024). Normes. Extrait de <https://www.iso.org/standards.html>.
 
 Université du Massachusetts (2024). Normes. Extrait de <https://guides.library.umass.edu/c.php?g=719645&p=5126968>.
+
+## Bailleurs de fonds
+
+Organisation canadienne d'élaboration de normes d'accessibilité (Normes d'accessibilité Canada)

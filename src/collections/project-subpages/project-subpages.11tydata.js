@@ -5,19 +5,15 @@ module.exports = {
         langDir: (data) => data.supportedLanguages[data.locale].dir,
         /* Configure navigation */
         eleventyNavigation: {
-            key: (data) => data.linking.slug || data.uuid,
+            key: (data) => data.uuid,
             title: (data) => data.title,
-            parent: "Projects",
+            parent: (data) => data.parent,
             order: (data) => data.order
         },
-        /* Build a permalink using the title or slug and language key. */
         permalink: (data) => {
-            if (data.linking.type === "link") {
-                return false;
-            }
-
             const locale = data.locale;
-            data.slug = data.linking.slug;
+            const slug = `${data.parent}/${data.slug}`;
+            data.slug = slug;
 
             return generatePermalink(
                 data,

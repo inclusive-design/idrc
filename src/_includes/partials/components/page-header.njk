@@ -1,7 +1,8 @@
+
 <header class="page-header" {% if locale !== 'en-CA' %} lang="en-CA" dir="ltr" {% endif %}>
     <div class="wrapper">
         {% set breadcrumbs = [] %}
-        {% if eleventyNavigation.key and 'projects' not in page.url and 'projets' not in page.url %}
+        {% if eleventyNavigation.key and page.url != false and 'projects' not in page.url and 'projets' not in page.url %}
         {% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
         {% endif %}
         {% if breadcrumbs.length > 0 %}
@@ -18,13 +19,13 @@
         <h1>{{ parentTitle if parentTitle else title }}</h1>
         {% set links = page.url | locale_links %}
         {%- for link in links %}
-    
+
         <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
             {%- include 'svg/icon-translation.svg' -%}<span>{{ 'Read in English' if link.lang === 'en-CA' else 'Lire en français' }}</span>
         </a>
         {%- endfor -%}
         {% if intro %}
-        <div class="intro">{{ intro | markdown | safe }}</div>
+        <div class="intro">{% renderString intro, "md" %}</div>
         {% endif %}
     </div>
 </header>

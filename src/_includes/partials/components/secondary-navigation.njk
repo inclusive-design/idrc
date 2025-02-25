@@ -18,7 +18,7 @@
                 {% if eleventyNavigation.parent %}
                     {% set parentPage = entry.title === eleventyNavigation.parent %}
                 {% else %}
-                    {% set parentPage = entry.url in page.url %}
+                    {% set parentPage = page.url != false and entry.url in page.url %}
                 {% endif %}
 
                     {% if entry.rel %}

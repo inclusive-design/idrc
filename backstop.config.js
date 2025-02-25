@@ -28,7 +28,7 @@ module.exports = {
         {
             label: "Repertoire",
             url: `${baseUrl}/repertoire/`,
-            referenceUrl: "https://dev--idrc.netlify.app/repertoire/"
+            referenceUrl: "https://dev.idrc-ocadu-ca.pages.dev/repertoire/"
         }
     ],
     paths: {
