@@ -1,7 +1,7 @@
 ---
 uuid: 4d605c60-305f-4914-a81d-878672abdc86
 locale: fr-CA
-title: A propos de CAMA
+title: A propos
 slug: ''
 parent: ''
 order: null
