@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.0.0](https://github.com/inclusive-design/idrc/compare/v2.7.3...v3.0.0) (2025-02-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Eleventy v3 and friends ([#1169](https://github.com/inclusive-design/idrc/issues/1169))
+* hierarchical project URLs, Sveltia CMS ([#1167](https://github.com/inclusive-design/idrc/issues/1167))
+
+### Features
+
+* hierarchical project URLs, Sveltia CMS ([#1167](https://github.com/inclusive-design/idrc/issues/1167)) ([d4a9b0f](https://github.com/inclusive-design/idrc/commit/d4a9b0fa7d25e6c7e781bed352554a98bda1069c))
+* upgrade to Eleventy v3 and friends ([#1169](https://github.com/inclusive-design/idrc/issues/1169)) ([b489d10](https://github.com/inclusive-design/idrc/commit/b489d10f13e496907370ec37149d3081dfa6e000))
+
 ## [2.7.3](https://github.com/inclusive-design/idrc/compare/v2.7.2...v2.7.3) (2025-02-14)
 
 
