@@ -10,19 +10,16 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     outputs:
-      site_url: ${{ steps.cloudflare_preview_url.outputs.preview_url }}
+      url: ${{ steps.cloudflare_preview_url.outputs.url }}
     steps:
       - uses: actions/checkout@v4
       - name: cloudflare-preview-url
-        uses: zentered/cloudflare-preview-url@v1.4.2
+        uses: walshydev/cf-pages-await@v1
         id: cloudflare_preview_url
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_EMAIL: ${{ secrets.CLOUDFLARE_ACCOUNT_EMAIL }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         with:
-          cloudflare_project_id: idrc-ocadu-ca
-          wait_until_ready: true
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          project: idrc-ocadu-ca
   lhci-mobile:
     name: Run mobile Lighthouse CI audits
     runs-on: ubuntu-latest
@@ -34,7 +31,7 @@ jobs:
         with:
           runs: 3
           urls: |
-            ${{ needs.setup.outputs.site_url }}
+            ${{ needs.setup.outputs.url }}
           uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.cjs
@@ -49,7 +46,7 @@ jobs:
         with:
           runs: 3
           urls: |
-            ${{ needs.setup.outputs.site_url }}
+            ${{ needs.setup.outputs.url }}
           uploadArtifacts: false
           temporaryPublicStorage: true
           configPath: ./.lighthouserc.cjs
