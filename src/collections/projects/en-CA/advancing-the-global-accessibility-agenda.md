@@ -26,7 +26,7 @@ funderLogos:
     image: /media/asc-signature-en-fr-black.png
     alt: test
     imagePosition: left
-    scale: '25'
+    scale: '100'
     maxHeight: auto
     verticalAlignment: center
 ---
