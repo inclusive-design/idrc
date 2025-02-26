@@ -637,7 +637,11 @@ collections:
     preview_path: "/projects/{{slug}}"
     create: true
     i18n: true
-    sortable_fields: [title, order]
+    sortable_fields:
+      fields: [title, order]
+      default:
+        field: order
+        direction: ascending
     fields:
       - label: UUID
         name: uuid
