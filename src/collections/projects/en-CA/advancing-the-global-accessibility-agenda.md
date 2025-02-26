@@ -21,6 +21,14 @@ description: |-
   Lundi 27 mai 2024 et mardi 28 mai 2024
 
   Université Concordia, Montréal
+funderLogos:
+  - content: test
+    image: /media/asc-signature-en-fr-black.png
+    alt: test
+    imagePosition: left
+    scale: '25'
+    maxHeight: auto
+    verticalAlignment: center
 ---
 ![Un Canada accessible Un monde accessible / Accessible Canada Accessible World logo](/media/acaw-cama%20logo.jpeg)
 
