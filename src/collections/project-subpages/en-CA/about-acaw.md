@@ -1,7 +1,7 @@
 ---
 uuid: bac92016-5fb0-4a49-87b5-e98f7d3a4ee6
 locale: en-CA
-title: About ACAW
+title: About
 slug: acaw-cama
 parent: advancing-the-global-accessibility-agenda
 order: null
