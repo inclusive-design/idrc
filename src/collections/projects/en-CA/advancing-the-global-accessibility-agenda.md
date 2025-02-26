@@ -22,9 +22,9 @@ description: |-
 
   Université Concordia, Montréal
 funderLogos:
-  - content: test
+  - content: Funded by Accessibility Standards Canada / the Government of Canada.
     image: /media/asc-signature-en-fr-black.png
-    alt: test
+    alt: Accessibility Standards Canada / Normes d'accessibilité Canada
     imagePosition: left
     scale: '100'
     maxHeight: auto
