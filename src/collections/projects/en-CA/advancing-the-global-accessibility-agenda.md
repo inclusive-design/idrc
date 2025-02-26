@@ -24,6 +24,8 @@ description: |-
 ---
 ![Un Canada accessible Un monde accessible / Accessible Canada Accessible World logo](/media/acaw-cama%20logo.jpeg)
 
+## **About**
+
 **Embrace our unique flipped conference model and [review the diverse array of presentations](https://acaw-cama.idrc.ocadu.ca/en/) before the event. This pre-conference exploration allows us to dedicate our time together to tackle 24 critical challenges across four pivotal themes.**
 
 May 27 - 28, 2024
