@@ -46,7 +46,7 @@ export default (eleventyConfig) => {
             return projects
                 .sort(
                     (a, b) =>
-                        Number.parseInt(b.data.order) - Number.parseInt(a.data.order)
+                        b.data.order - a.data.order
                 )
                 .reverse();
         });
