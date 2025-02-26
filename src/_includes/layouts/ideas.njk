@@ -13,7 +13,7 @@
                 <div class="entries entries--featured">
                 {% for post in collections.featured | limit(2) %}
                     <article class="entry">
-                        <img class="thumbnail" src="{{ post.data.thumbnailImage }}" alt="" />
+                        {% ideaImage post.data.thumbnailImage, "" %}
                         <div class="entry-content">
                         <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
                         <p class="metadata">
@@ -35,7 +35,7 @@
                 <div class="entries">
                 {% for post in posts %}
                     <article class="entry">
-                        <img eleventy:widths="570,1140" class="thumbnail" src="{{ post.data.thumbnailImage }}" alt="" />
+                        {% ideaImage post.data.thumbnailImage, "" %}
                         <div class="entry-content">
                         <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
                         <p class="metadata">

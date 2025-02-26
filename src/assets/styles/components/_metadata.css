@@ -1,5 +1,5 @@
 .single article header {
-    background: var(--fl-bgColor, var(--white));
+    background: var(--fl-bgColor, var(--indigo-100));
     color: var(--fl-fgColor, var(--blue-900));
 }
 
