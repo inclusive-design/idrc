@@ -3,7 +3,6 @@ import eleventyImage, { eleventyImageTransformPlugin } from "@11ty/eleventy-img"
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import MarkdownIt from "markdown-it";
 
-// const eleventySharp = require("eleventy-plugin-sharp");
 import fluidPlugin from "eleventy-plugin-fluid";
 import parseTransform from "./src/_transforms/parse.js";
 import siteConfig from "./src/_data/config.json" with { type: "json" };
