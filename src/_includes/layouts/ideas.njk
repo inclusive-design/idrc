@@ -13,10 +13,7 @@
                 <div class="entries entries--featured">
                 {% for post in collections.featured | limit(2) %}
                     <article class="entry">
-                        {% set thumbnail = 'src' + post.data.thumbnailImage %}
-                        {% set thumbnail1x = thumbnail | resize({width: 570, height: 382, fit: 'cover'}) | png %}
-                        {% set thumbnail2x = thumbnail | resize({width: 1140, height: 764, fit: 'cover'}) | png %}
-                        <img class="thumbnail" src="{% getUrl thumbnail1x %}" srcset="{% getUrl thumbnail1x %} 1x, {% getUrl thumbnail2x %} 2x" width="570" height="382" alt="" />
+                        {% ideaImage post.data.thumbnailImage, "" %}
                         <div class="entry-content">
                         <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
                         <p class="metadata">
@@ -38,10 +35,7 @@
                 <div class="entries">
                 {% for post in posts %}
                     <article class="entry">
-                        {% set thumbnail = 'src' + post.data.thumbnailImage %}
-                        {% set thumbnail1x = thumbnail | resize({width: 570, height: 382, fit: 'cover'}) | png %}
-                        {% set thumbnail2x = thumbnail | resize({width: 1140, height: 764, fit: 'cover'}) | png %}
-                        <img class="thumbnail" src="{% getUrl thumbnail1x %}" srcset="{% getUrl thumbnail1x %} 1x, {% getUrl thumbnail2x %} 2x" width="570" height="382" alt="" />
+                        {% ideaImage post.data.thumbnailImage, "" %}
                         <div class="entry-content">
                         <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
                         <p class="metadata">

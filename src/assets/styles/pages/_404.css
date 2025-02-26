@@ -1,0 +1,59 @@
+/* This file contains styles that are specific to the 404 page. */
+.page--404 {
+    background: var(--fl-bgColor, var(--indigo-800));
+    color: var(--fl-fgColor, var(--white));
+
+    main > article {
+        margin-block: 0;
+        margin-inline: auto;
+        padding-block-start: calc(80 / 16 * 1rem);
+    }
+
+    main > article header {
+        text-align: center;
+    }
+
+    main > article header .wrapper {
+        inline-size: 100%;
+    }
+
+    main > article .content {
+        padding-block-start: calc(16 / 16 * 1rem);
+        text-align: center;
+    }
+
+    h1 {
+        padding-block: 0;
+        padding-inline: calc(24 / 16 * 1rem);
+    }
+
+    a {
+        text-decoration-color: var(--fl-linkColor, var(--indigo-500));
+
+        &:hover,
+        &:focus {
+            background: var(--fl-fgColor, var(--indigo-500));
+            color: var(--fl-bgColor);
+        }
+    }
+}
+
+@media (width >= 600px) {
+    .page--404 {
+        main > article .content {
+            flex: 0 0 100%;
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .page--404 {
+        main > article {
+            padding-block-start: calc(256 / 16 * 1rem);
+        }
+
+        main > article .content {
+            flex: 0 0 100%;
+        }
+    }
+}

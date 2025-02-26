@@ -1,0 +1,28 @@
+/* This file contains project page styles. */
+.page--project {
+    background: var(--fl-bgColor, var(--white));
+
+    .back-to-parent {
+        flex: 0 0 100%;
+        padding-block-start: 4rem;
+        padding-inline-start: calc(var(--gutter) / 2);
+
+        a {
+            display: inline-flex;
+            padding-inline-end: calc(8 / 16 * 1rem);
+
+            svg {
+                block-size: calc(24 / 16 * 1rem);
+                inline-size: calc(24 / 16 * 1rem);
+            }
+        }
+    }
+
+    .content {
+        padding-block-start: 2rem;
+    }
+
+    nav {
+        margin-block-start: 2rem;
+    }
+}

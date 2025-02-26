@@ -17,15 +17,17 @@
         </p>
         {% endif %}
         <h1>{{ parentTitle if parentTitle else title }}</h1>
-        {% set links = page.url | locale_links %}
-        {%- for link in links %}
+        {% if locale %}
+        {% set localeLinks = page.url | locale_links %}
+        {%- for link in localeLinks %}
 
         <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
             {%- include 'svg/icon-translation.svg' -%}<span>{{ 'Read in English' if link.lang === 'en-CA' else 'Lire en français' }}</span>
         </a>
         {%- endfor -%}
+        {% endif %}
         {% if intro %}
-        <div class="intro">{% renderString intro, "md" %}</div>
+        <div class="intro">{{ intro | renderContent("md") | safe }}</div>
         {% endif %}
     </div>
 </header>

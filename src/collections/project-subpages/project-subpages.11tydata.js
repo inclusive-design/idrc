@@ -1,6 +1,6 @@
-const { generatePermalink } = require("eleventy-plugin-fluid");
+import { generatePermalink } from "eleventy-plugin-fluid";
 
-module.exports = {
+export default {
     eleventyComputed: {
         langDir: (data) => data.supportedLanguages[data.locale].dir,
         /* Configure navigation */

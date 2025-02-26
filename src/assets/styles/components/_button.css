@@ -1,0 +1,13 @@
+/* This file contains all styles related to the button component. */
+button {
+    appearance: none;
+    background-color: var(--fl-buttonBgColor);
+    color: var(--fl-buttonFgColor);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--fl-buttonFgColor);
+    color: var(--fl-buttonBgColor);
+    outline: none;
+}

@@ -1,7 +1,7 @@
 ---
 layout: layouts/ideas.njk
 title: Ideas
-intro: Thoughts, ideas, and reflections based on our work in the field. 
+intro: Thoughts, ideas, and reflections based on our work in the field.
 eleventyNavigation:
   key: Ideas
   order: 6
@@ -13,5 +13,4 @@ pagination:
   data: collections.ideas
   size: 6
   alias: posts
-locale: en-CA
 ---

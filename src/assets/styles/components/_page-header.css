@@ -1,0 +1,42 @@
+.page-header {
+    background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
+    border-block-end: calc(10 / 16 * 1rem) solid var(--fl-fgColor, var(--header-border));
+    color: var(--fl-fgColor, var(--header-fg, black));
+    flex: 0 0 100%;
+    padding-block: calc(80 / 16 * 1rem);
+    position: relative;
+
+    .wrapper {
+        inline-size: calc(100vw - var(--gutter));
+        margin: 0;
+        margin-inline-start: 50%;
+        transform: translateX(-50%);
+    }
+
+    .breadcrumbs {
+        font-family: var(--fl-font-family, var(--ff-display));
+        font-size: var(--step-2);
+        font-weight: var(--fw-semibold);
+    }
+
+    .intro {
+        font-size: var(--step--1);
+        margin-block-start: calc(20 / 16 * 1rem);
+    }
+}
+
+@media (width >= 600px) {
+    .page-header {
+        h1 {
+            inline-size: 66%;
+        }
+
+        .breadcrumbs {
+            inline-size: 100%;
+        }
+
+        .intro {
+            inline-size: 66%;
+        }
+    }
+}

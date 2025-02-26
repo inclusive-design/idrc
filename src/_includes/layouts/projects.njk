@@ -14,13 +14,13 @@
                 <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
                 {% endif %}
                 <h3>{{ project.data.title }}{{ " (" + project.data.shortTitle + ")" if project.data.shortTitle }}</h3>
-                {% if project.data.content %}
+                {% if project.data.linking.type === 'page' %}
                 {% set fullDescription = project.data.description + " [More about " + project.data.title + "](" + project.url + ")" %}
-                {% renderString fullDescription, "md" %}
+                {{ fullDescription | renderContent("md") | safe }}
                 {% else %}
-                {% renderString project.data.description, "md" %}
+                {{ project.data.description | renderContent("md") | safe }}
                 {% endif %}
-                    {% if project.data.linking.type === 'link' %}
+                {% if project.data.linking.type === 'link' %}
                 <p class="project__link"><a rel="external" href="{{ project.data.linking.link }}">Go to: {{ project.data.shortTitle if project.data.shortTitle else project.data.title }} website</a></p>
                 {% endif %}
             </article>

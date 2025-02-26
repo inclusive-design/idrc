@@ -1,4 +1,4 @@
-module.exports = url => {
+export default url => {
     let matches = url.match(/(\?|&)v=([^&#]+)/);
 
     if (matches) {
