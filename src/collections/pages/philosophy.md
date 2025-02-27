@@ -1,6 +1,12 @@
 ---
 title: Philosophy
 permalink: /about/philosophy/
+metaTitle: ''
+metaDesc: ''
+intro: ''
+headerBgColor: blue-200
+headerBorderColor: blue-500
+headerTextColor: black
 eleventyNavigation:
   key: Philosophy
   parent: About
@@ -8,9 +14,6 @@ eleventyNavigation:
 secondaryNavigation:
   key: About
   label: More about us
-headerBgColor: blue-200
-headerBorderColor: blue-500
-headerTextColor: black
 ---
 ## What is inclusive design?
 

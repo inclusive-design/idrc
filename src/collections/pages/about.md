@@ -1,15 +1,18 @@
 ---
 title: About Us
 permalink: /about/
+metaTitle: ''
+metaDesc: ''
+intro: ''
+headerBgColor: blue-200
+headerBorderColor: blue-500
+headerTextColor: black
 eleventyNavigation:
   key: About
   order: 1
 secondaryNavigation:
   key: About
   label: More about us
-headerBgColor: blue-200
-headerBorderColor: blue-500
-headerTextColor: black
 ---
 ## Who we are
 
@@ -19,11 +22,11 @@ headerTextColor: black
 
 The group promotes inclusion in a full complement of activities:
 
-* Growing inclusive design and development practices
-* Creating open source tools that others can use and contribute to
-* Teaching the theory and practice of inclusive design
-* Helping to develop policies, regulations, guidelines and standards that support inclusion
-* Providing services that support individuals in finding systems that match their needs
+- Growing inclusive design and development practices
+- Creating open source tools that others can use and contribute to
+- Teaching the theory and practice of inclusive design
+- Helping to develop policies, regulations, guidelines and standards that support inclusion
+- Providing services that support individuals in finding systems that match their needs
 
 ## Our Impact
 

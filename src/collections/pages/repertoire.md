@@ -1,10 +1,14 @@
 ---
 title: Repertoire
-editable: false
+permalink: /repertoire/
+metaTitle: ''
+metaDesc: ''
+intro: ''
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 eleventyExcludeFromCollections: true
+editable: false
 ---
 ## Typography
 
@@ -34,11 +38,11 @@ elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
 Here's a paragraph that immediately follows a level-four heading. Lorem ipsum dolor sit amet, consetetur sadipscing
 elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
-* Unordered list item
-* Second unordered list item
-* Third unordered list item
-* Fourth unordered list item
-* Fifth unordered list item
+- Unordered list item
+- Second unordered list item
+- Third unordered list item
+- Fourth unordered list item
+- Fifth unordered list item
 
 Here's a paragraph that immediately follows an unordered list. Lorem ipsum dolor sit amet, consetetur sadipscing
 elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -66,9 +70,9 @@ diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed 
 
 #### Nested Unordered List
 
-* Unordered list item
-* Second unordered list item
-  * Single level Nested unordered list item
-    * Two levels nested unordered list item
-      * Three levels nested unordered list item
-* Third unordered list item
+- Unordered list item
+- Second unordered list item
+- Single level Nested unordered list item
+    - Two levels nested unordered list item
+    - Three levels nested unordered list item
+- Third unordered list item
