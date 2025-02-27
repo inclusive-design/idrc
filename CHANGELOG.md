@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.1](https://github.com/inclusive-design/idrc/compare/v3.0.0...v3.0.1) (2025-02-27)
+
+
+### Bug Fixes
+
+* project links on their own lines, show funder logo captions ([#1175](https://github.com/inclusive-design/idrc/issues/1175)) ([25d18cd](https://github.com/inclusive-design/idrc/commit/25d18cdeff3a1ba2039d5cbd628b12878a0d834e))
+
 ## [3.0.0](https://github.com/inclusive-design/idrc/compare/v2.7.3...v3.0.0) (2025-02-26)
 
 
