@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.2](https://github.com/inclusive-design/idrc/compare/v3.0.1...v3.0.2) (2025-02-27)
+
+
+### Bug Fixes
+
+* add redirects, adjust permalink config, add French ACAW/CAMA page ([#1177](https://github.com/inclusive-design/idrc/issues/1177)) ([92e1bb3](https://github.com/inclusive-design/idrc/commit/92e1bb3165f66d70a7cbc6375e0a9bc549f5b7e8))
+
 ## [3.0.1](https://github.com/inclusive-design/idrc/compare/v3.0.0...v3.0.1) (2025-02-27)
 
 
