@@ -291,6 +291,8 @@ collections:
         name: permalink
         widget: string
         required: false
+        prefix: /
+        suffix: /
       - label: SEO Meta Title
         name: metaTitle
         widget: string
@@ -318,6 +320,7 @@ collections:
           - {label: Indigo 200, value: indigo-200}
           - {label: Indigo 500, value: indigo-500}
           - {label: Indigo 800, value: indigo-800}
+          - {label: Blue 200, value: blue-200}
           - {label: Blue 500, value: blue-500}
           - {label: Coral 500, value: coral-500}
           - {label: Coral 800, value: coral-800}

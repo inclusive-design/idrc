@@ -1,16 +1,15 @@
 ---
 title: Connect
-eleventyNavigation:
-  key: Connect
-  order: 7
+permalink: /connect/
+metaTitle: ''
+metaDesc: ''
+intro: ''
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 sections:
   - title: With the IDRC
-    subsectionLevel: 3
-    desktopWidth: two-thirds
-    content: >-
+    content: |-
       ### [General inquiry](mailto:community@idrc.ocadu.ca)
 
        Email our Community Embassadors at [community@idrc.ocadu.ca](mailto:community@idrc.ocadu.ca).
@@ -29,16 +28,21 @@ sections:
 
       ### [Our Newsletter](https://ocadu.us6.list-manage.com/subscribe?u=df09b45913649b12f2a2aef66&id=97ef2e9d6a)
 
-
-      Sign up for our monthly newsletter, *The Recount*, and hear about IDRC activities and the latest news from the field.
+      Sign up for our monthly newsletter, _The Recount_, and hear about IDRC activities and the latest news from the field.
     fullBleed: true
-  - title: With the Inclusive Design Community
-    subsectionLevel: 3
+    imageAltText: ''
     desktopWidth: two-thirds
-    content: >-
-      ### [Sign up for the mailing
-      list](https://lists.idrc.ocadu.ca/mailman/listinfo/community)
+    subsectionLevel: 3
+  - title: With the Inclusive Design Community
+    content: |-
+      ### [Sign up for the mailing list](https://lists.idrc.ocadu.ca/mailman/listinfo/community)
 
       Sign up for the mailing list made up of members of the broader inclusive design community.
     fullBleed: true
+    imageAltText: ''
+    desktopWidth: two-thirds
+    subsectionLevel: 3
+eleventyNavigation:
+  key: Connect
+  order: 7
 ---

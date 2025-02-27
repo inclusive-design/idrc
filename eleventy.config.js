@@ -1,5 +1,7 @@
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-import eleventyImage, { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import eleventyImage, {
+    eleventyImageTransformPlugin
+} from "@11ty/eleventy-img";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import MarkdownIt from "markdown-it";
 
@@ -42,12 +44,7 @@ export default (eleventyConfig) => {
                 )
             ];
 
-            return projects
-                .sort(
-                    (a, b) =>
-                        b.data.order - a.data.order
-                )
-                .reverse();
+            return projects.sort((a, b) => b.data.order - a.data.order).reverse();
         });
 
         eleventyConfig.addCollection(`projectSubpages_${lang}`, (collection) => {
@@ -186,6 +183,7 @@ export default (eleventyConfig) => {
     eleventyConfig.addPassthroughCopy({ "src/assets/images": "assets/images" });
     eleventyConfig.addPassthroughCopy({ "src/media": "media" });
     eleventyConfig.addPassthroughCopy("src/admin/config.yml");
+    eleventyConfig.addPassthroughCopy("_redirects");
 
     return {
         dir: {
