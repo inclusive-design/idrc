@@ -9,12 +9,9 @@
     {% include 'partials/components/page-header.njk' %}
     <article>
 
-
-
         <div class="back-to-parent">
-            <a href="{{ parentProject.url }}">{% include "svg/previous.svg" %} Back to {{ parentProject.title | safe }}</a>
+            <a href="{{ parentProject.url }}">{% include "svg/previous.svg" %} {{ 'Back to' if locale === 'en-CA' else 'Retour à la page' }} {{ parentProject.title | safe }}</a>
         </div>
-
 
         <div class="content">
             <div class="wrapper">
