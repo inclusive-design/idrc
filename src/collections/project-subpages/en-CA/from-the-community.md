@@ -3,7 +3,7 @@ translationKey: from-the-community
 locale: en-CA
 title: From the Community
 slug: community
-parent: partnerships-for-financial-inclusion
+parent: financial-inclusion
 order: 2
 thumbnailAltText: ''
 ---

@@ -1,5 +1,5 @@
 ---
-translationKey: community-led-codesign
+uuid: 1015facf-45b3-46c6-af4e-6f3fe3e30b77
 locale: en-CA
 title: Community-Led Co-design Kit
 linking:
@@ -11,3 +11,4 @@ thumbnailImage: /media/community-led-codesign.jpg
 thumbnailAltText: ''
 description: An open source toolkit for sharing knowledge about how to do co-design led by community members and organizations.
 ---
+

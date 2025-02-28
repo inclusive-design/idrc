@@ -4,7 +4,7 @@
 
 {% block content %}
     {% set projectNav = collections.all | eleventyNavigation("Projects") %}
-    {% set parentProject = projectNav | findByKey(parent, locale) | first %}
+    {% set parentProject = projectNav | findByKey(parent) | first %}
     {% set parentTitle = parentProject.title %}
     {% include 'partials/components/page-header.njk' %}
     <article>

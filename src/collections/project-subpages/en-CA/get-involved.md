@@ -3,7 +3,7 @@ translationKey: get-involved
 locale: en-CA
 title: Get involved in Financial Inclusion
 slug: get-involved
-parent: partnerships-for-financial-inclusion
+parent: financial-inclusion
 order: 1
 thumbnailAltText: ''
 ---

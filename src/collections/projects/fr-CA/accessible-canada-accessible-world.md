@@ -1,5 +1,5 @@
 ---
-translationKey: accessible-canada-accessible-world
+uuid: aeb816b1-fe7e-4709-9d40-1183497013e1
 locale: fr-CA
 title: Un Canada accessible — Un monde accessible
 linking:

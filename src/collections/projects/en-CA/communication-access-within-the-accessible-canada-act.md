@@ -1,5 +1,5 @@
 ---
-translationKey: communication-access-within-the-accessible-canada-act
+uuid: dd19285e-a480-4fc6-9098-5b262ae7ea5d
 locale: en-CA
 title: Communication Access within the Accessible Canada Act
 linking:

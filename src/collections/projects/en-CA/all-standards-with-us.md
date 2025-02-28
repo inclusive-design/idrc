@@ -1,5 +1,5 @@
 ---
-translationKey: all-standards-with-us
+uuid: 25d66f54-e8af-4380-b3d2-0547222dd074
 locale: en-CA
 title: All Standards With Us
 linking:

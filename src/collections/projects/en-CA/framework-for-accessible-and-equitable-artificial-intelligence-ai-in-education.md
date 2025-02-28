@@ -1,5 +1,5 @@
 ---
-translationKey: framework-for-accessible-and-equitable-artificial-intelligence-ai-in-education
+uuid: 2e55c2b6-cd66-4206-bbe8-91e019b5d0cd
 locale: en-CA
 title: Framework for Accessible and Equitable Artificial Intelligence (AI) in Education
 linking:
