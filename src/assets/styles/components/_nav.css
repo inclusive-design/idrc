@@ -565,8 +565,8 @@
 
         &:hover,
         &:focus {
-            background: var(--fl-linkColor, var(--yellow-500));
-            color: var(--fl-bgColor, var(--black));
+            background: var(--fl-linkColor, var(--yellow-500)) !important;
+            color: var(--fl-bgColor, var(--black)) !important;
         }
 
         &:active {
