@@ -811,7 +811,7 @@ collections:
         name: parent
         widget: relation
         collection: projects
-        value_field: slug
+        value_field: linking.slug
         search_fields: [title]
         display_fields: [title]
         required: false
