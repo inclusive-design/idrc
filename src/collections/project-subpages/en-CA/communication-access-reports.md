@@ -1,5 +1,5 @@
 ---
-uuid: 55977662-e3c7-4ec1-ae94-e39b01dd46a0
+translationKey: communication-access-reports
 locale: en-CA
 title: Communication Access Reports
 slug: reports

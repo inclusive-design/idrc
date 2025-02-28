@@ -1,5 +1,5 @@
 ---
-uuid: fcf3655d-9fae-4a29-b36f-192f8cbce80e
+translationKey: flexible-learning-for-open-education
 locale: en-CA
 title: Flexible Learning for Open Education
 linking:

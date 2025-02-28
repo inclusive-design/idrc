@@ -1,5 +1,5 @@
 ---
-uuid: 86866b66-4fe3-4fa7-a485-69731b1cb8f8
+translationKey: data-communities-for-inclusion
 locale: en-CA
 title: Data Communities for Inclusion
 linking:

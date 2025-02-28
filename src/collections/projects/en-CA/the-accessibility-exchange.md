@@ -1,5 +1,5 @@
 ---
-uuid: 74b0ff71-df47-423b-961e-29765df0310e
+translationKey: the-accessibility-exchange
 locale: en-CA
 title: The Accessibility Exchange
 linking:

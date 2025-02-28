@@ -1,5 +1,5 @@
 ---
-uuid: 4a9974e3-3016-486b-8f84-5136101902c7
+translationKey: future-of-work-and-disability
 locale: en-CA
 title: Future of Work and Disability
 linking:

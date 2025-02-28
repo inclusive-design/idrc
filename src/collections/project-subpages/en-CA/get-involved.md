@@ -1,9 +1,9 @@
 ---
-uuid: adfccdca-b68d-445b-9167-c9db71c3325d
+translationKey: get-involved
 locale: en-CA
 title: Get involved in Financial Inclusion
 slug: get-involved
-parent: financial-inclusion
+parent: partnerships-for-financial-inclusion
 order: 1
 thumbnailAltText: ''
 ---

@@ -1,5 +1,5 @@
 ---
-uuid: 9fdedda7-3517-44a1-9df9-49659a577354
+translationKey: future-of-work-equitable-digital-systems
 locale: en-CA
 title: 'Future of Work: Equitable Digital Systems'
 linking:

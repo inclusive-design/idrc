@@ -636,7 +636,7 @@ collections:
     label_singular: Project
     icon: inventory
     folder: src/collections/projects
-    slug: "{{slug}}"
+    slug: "{{title | localize}}"
     preview_path: "/projects/{{slug}}"
     create: true
     i18n: true
@@ -646,11 +646,6 @@ collections:
         field: order
         direction: ascending
     fields:
-      - label: UUID
-        name: uuid
-        widget: hidden
-        default: "{{uuid}}"
-        i18n: copy
       - label: Locale
         name: locale
         widget: hidden
@@ -664,7 +659,7 @@ collections:
       - label: Linking Options
         name: linking
         widget: object
-        i18n: true
+        i18n: duplicate
         types:
           - label: Project Page
             name: page
@@ -717,7 +712,7 @@ collections:
       - label: Funder Logos
         name: funderLogos
         widget: list
-        i18n: true
+        i18n: duplicate
         required: false
         fields:
           - label: Caption
@@ -781,7 +776,7 @@ collections:
     label_singular: Project Subpage
     icon: menu_open
     folder: src/collections/project-subpages
-    slug: "{{slug}}"
+    slug: "{{title | localize}}"
     create: true
     i18n: true
     sortable_fields: [title, order]
@@ -809,7 +804,7 @@ collections:
         name: parent
         widget: relation
         collection: projects
-        value_field: slug
+        value_field: translationKey
         search_fields: [title]
         display_fields: [title]
         required: false

@@ -1,5 +1,5 @@
 ---
-uuid: 8eac6401-1212-4876-8cfa-fd26f5f5d8d8
+translationKey: intelligent-user-interfaces-for-virtual-healthcare
 locale: en-CA
 title: Intelligent User Interfaces for Virtual Healthcare
 linking:
@@ -126,4 +126,6 @@ In addition to the ideas and concepts presented in the Guide and Software Approa
 ## Funders
 
 Funded by [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program)
+
+
 ![The logo of the Government of Canada.](/media/canada.png)

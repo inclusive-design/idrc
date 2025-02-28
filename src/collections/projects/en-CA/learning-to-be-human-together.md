@@ -1,5 +1,5 @@
 ---
-uuid: ca4062c8-de40-486d-be1b-1090f1f4c0d4
+translationKey: learning-to-be-human-together
 locale: en-CA
 title: Learning to Be Human Together
 linking:

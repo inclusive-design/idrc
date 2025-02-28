@@ -1,5 +1,5 @@
 ---
-uuid: 8e470c96-172e-4efa-b459-5995ae0b74bc
+translationKey: we-count
 locale: en-CA
 title: We Count
 linking:

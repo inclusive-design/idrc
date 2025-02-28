@@ -1,5 +1,5 @@
 ---
-uuid: c0addfe2-a11e-47e9-81b9-b45abc12cbdd
+translationKey: weavly
 locale: en-CA
 title: Weavly
 linking:

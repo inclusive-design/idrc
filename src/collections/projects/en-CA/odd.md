@@ -1,5 +1,5 @@
 ---
-uuid: 8f8c43f2-edf0-48cd-b5d2-199e61b2b2fd
+translationKey: odd
 locale: en-CA
 title: Optimizing Diversity with Disability
 linking:
@@ -36,8 +36,6 @@ Edward Thomas – _Research Assistant_
 ## Project Architecture
 
 ![Project Architecture described below in detail. External data sources are aggregated to from synthetic data sets that will be tested with LinkedIn Recruiter.](/media/odd-architectural-diagram-x2.png)
-
-<!--StartFragment-->
 
 ### Project Architecture Description
 

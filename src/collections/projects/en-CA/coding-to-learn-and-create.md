@@ -1,5 +1,5 @@
 ---
-uuid: 9682608d-45cf-49ff-b1e3-90f5fd00ed00
+translationKey: coding-to-learn-and-create
 locale: en-CA
 title: Coding to Learn and Create
 linking:

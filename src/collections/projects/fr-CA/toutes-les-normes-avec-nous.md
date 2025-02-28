@@ -1,5 +1,5 @@
 ---
-uuid: 09e31834-cb1d-4f07-84db-00239fa901ed
+translationKey: all-standards-with-us
 locale: fr-CA
 title: Toutes les normes avec nous
 linking:

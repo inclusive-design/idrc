@@ -1,5 +1,5 @@
 ---
-uuid: d5953c94-d5fa-4468-abab-31992e27a1e3
+translationKey: regulating-the-digital-domain
 locale: en-CA
 title: Regulating the Digital Domain / Réguler le domaine numérique
 linking:

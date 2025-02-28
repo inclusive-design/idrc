@@ -1,5 +1,5 @@
 ---
-uuid: 21ecaa1e-2cb4-45da-ad1d-6c1bdfe40110
+translationKey: our-doors-are-open
 locale: en-CA
 title: Our Doors Are Open
 linking:

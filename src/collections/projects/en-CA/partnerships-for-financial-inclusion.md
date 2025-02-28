@@ -1,5 +1,5 @@
 ---
-uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
+translationKey: partnerships-for-financial-inclusion
 locale: en-CA
 title: Partnerships for Financial Inclusion
 linking:
