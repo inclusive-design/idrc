@@ -1,7 +1,3 @@
 {
-    "maxPostsInFeed": 10,
-    "locales": [
-        "en-CA",
-        "fr-CA"
-    ]
+    "maxPostsInFeed": 10
 }
