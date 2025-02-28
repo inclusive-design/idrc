@@ -5,10 +5,11 @@ export default {
         langDir: (data) => data.supportedLanguages[data.locale].dir,
         /* Configure navigation */
         eleventyNavigation: {
-            key: (data) => data.linking.slug || data.uuid,
+            key: (data) => data.translationKey,
             title: (data) => data.title,
             parent: "Projects",
-            order: (data) => data.order
+            order: (data) => data.order,
+            lang: (data) => data.locale
         },
         /* Build a permalink using the title or slug and language key. */
         permalink: (data) => {

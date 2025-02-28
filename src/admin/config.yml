@@ -784,10 +784,6 @@ collections:
     i18n: true
     sortable_fields: [title, order]
     fields:
-      - label: UUID
-        name: uuid
-        widget: hidden
-        default: "{{uuid}}"
       - label: Locale
         name: locale
         widget: hidden
@@ -812,7 +808,7 @@ collections:
         display_fields: [title]
         required: false
         hint: This is required for sub-pages of a project to indicate which project is the parent.
-        i18n: true
+        i18n: copy
       - label: Order
         name: order
         widget: number

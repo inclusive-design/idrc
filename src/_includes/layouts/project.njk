@@ -27,7 +27,7 @@
             </div>
         </div>
 
-        {% set navPages = collections['projectSubpages_' + locale] | eleventyNavigation(slug) %}
+        {% set navPages = collections['projectSubpages_' + locale] | eleventyNavigation(translationKey) %}
 
         <nav class="nav--secondary" aria-labelledby="child-pages-heading">
         {%- if navPages.length %}

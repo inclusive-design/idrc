@@ -18,13 +18,13 @@
         {% endif %}
         <h1>{{ parentTitle if parentTitle else title }}</h1>
         {% if locale %}
-        {% set localeLinks = page.url | locale_links %}
-        {%- for link in localeLinks %}
-
-        <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
-            {%- include 'svg/icon-translation.svg' -%}<span>{{ 'Read in English' if link.lang === 'en-CA' else 'Lire en français' }}</span>
-        </a>
-        {%- endfor -%}
+            {% set localeToFind = 'en-CA' if locale === 'fr-CA' else 'fr-CA' %}
+            {% set translatedItem = collections.all | eleventyNavigation(eleventyNavigation.parent) | findByKey(translationKey, localeToFind) | first %}
+            {% if translatedItem %}
+            <a href="{{ translatedItem.url }}" lang="{{ translatedItem.lang }}" hreflang="{{ translatedItem.lang }}">
+            {%- include 'svg/icon-translation.svg' -%}<span>{{ 'Read in English' if translatedItem.lang === 'en-CA' else 'Lire en français' }}</span>
+            </a>
+            {% endif %}
         {% endif %}
         {% if intro %}
         <div class="intro">{{ intro | renderContent("md") | safe }}</div>

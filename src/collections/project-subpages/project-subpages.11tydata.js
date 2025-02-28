@@ -5,7 +5,7 @@ export default {
         langDir: (data) => data.supportedLanguages[data.locale].dir,
         /* Configure navigation */
         eleventyNavigation: {
-            key: (data) => data.uuid,
+            key: (data) => data.translationKey,
             title: (data) => data.title,
             parent: (data) => data.parent,
             order: (data) => data.order
