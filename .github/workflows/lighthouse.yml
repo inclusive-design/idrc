@@ -10,16 +10,18 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     outputs:
-      url: ${{ steps.cloudflare_preview_url.outputs.url }}
+      url: ${{ steps.netlify.outputs.url }}
     steps:
       - uses: actions/checkout@v4
-      - name: cloudflare-preview-url
-        uses: walshydev/cf-pages-await@v1
-        id: cloudflare_preview_url
+      - uses: jwalton/gh-find-current-pr/@v1
+        id: find-pr
+      - name: Wait for Netlify deploy preview
+        uses: kukiron/wait-for-netlify-deploy@v1.2.2
+        id: netlify
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          project: idrc-ocadu-ca
+          site_name: idrc
+          pr_number: ${{ steps.find-pr.outputs.pr }}
+          max_timeout: 300
   lhci-mobile:
     name: Run mobile Lighthouse CI audits
     runs-on: ubuntu-latest
