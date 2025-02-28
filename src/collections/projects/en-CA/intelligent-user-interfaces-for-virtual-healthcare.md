@@ -126,4 +126,5 @@ In addition to the ideas and concepts presented in the Guide and Software Approa
 ## Funders
 
 Funded by [Pandemic Response Challenge Program](https://nrc.canada.ca/en/research-development/research-collaboration/programs/pandemic-response-challenge-program)
+
 ![The logo of the Government of Canada.](/media/canada.png)

@@ -2,7 +2,7 @@
 uuid: 05cd68d6-44ab-4f7f-896a-39a194f36071
 locale: en-CA
 title: From the Community
-slug: 'community'
+slug: community
 parent: financial-inclusion
 order: 2
 thumbnailAltText: ''

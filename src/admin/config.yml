@@ -12,6 +12,9 @@ backend:
     deleteMedia: 'chore(cms): delete "{{path}}"'
 media_folder: src/media
 public_folder: /media
+slug:
+  encoding: ascii
+  clean_accents: true
 i18n:
   structure: multiple_folders
   locales: [en-CA, fr-CA]
@@ -636,8 +639,6 @@ collections:
     label_singular: Project
     icon: inventory
     folder: src/collections/projects
-    slug: "{{slug}}"
-    preview_path: "/projects/{{slug}}"
     create: true
     i18n: true
     sortable_fields:
@@ -650,7 +651,7 @@ collections:
         name: uuid
         widget: hidden
         default: "{{uuid}}"
-        i18n: copy
+        i18n: duplicate
       - label: Locale
         name: locale
         widget: hidden
@@ -664,7 +665,7 @@ collections:
       - label: Linking Options
         name: linking
         widget: object
-        i18n: true
+        i18n: duplicate
         types:
           - label: Project Page
             name: page
@@ -681,7 +682,7 @@ collections:
                 name: link
                 widget: string
                 type: url
-                i18n: copy
+                i18n: duplicate
                 hint: If you want the project to link to an external site instead of display a page on this website, enter a URL here.
       - label: Short Title
         name: shortTitle
@@ -717,7 +718,7 @@ collections:
       - label: Funder Logos
         name: funderLogos
         widget: list
-        i18n: true
+        i18n: duplicate
         required: false
         fields:
           - label: Caption
@@ -728,7 +729,7 @@ collections:
           - label: Funder Logo
             name: image
             widget: image
-            i18n: copy
+            i18n: duplicate
           - label: Funder Logo Alternative Text
             name: alt
             widget: string
@@ -742,13 +743,13 @@ collections:
               - {label: Right, value: right}
             default: left
             required: true
-            i18n: copy
+            i18n: duplicate
           - label: Funder Logo Scale
             name: scale
             widget: select
             options: [25, 50, 75, 100]
             required: true
-            i18n: copy
+            i18n: duplicate
           - label: Funder Logo Maximum Height
             widget: select
             options:
@@ -757,7 +758,7 @@ collections:
               - {label: 400px, value: 400px}
               - {label: 600px, value: 600px}
               - {label: 800px, value: 800px}
-            i18n: copy
+            i18n: duplicate
             name: maxHeight
             default: auto
           - label: Vertical Alignment
@@ -769,7 +770,7 @@ collections:
               - {label: Bottom, value: bottom}
             default: center
             required: true
-            i18n: copy
+            i18n: duplicate
       - label: Body
         name: body
         required: false
@@ -781,7 +782,6 @@ collections:
     label_singular: Project Subpage
     icon: menu_open
     folder: src/collections/project-subpages
-    slug: "{{slug}}"
     create: true
     i18n: true
     sortable_fields: [title, order]
@@ -790,6 +790,7 @@ collections:
         name: uuid
         widget: hidden
         default: "{{uuid}}"
+        i18n: duplicate
       - label: Locale
         name: locale
         widget: hidden
@@ -804,12 +805,13 @@ collections:
         name: slug
         widget: string
         required: true
+        i18n: true
         hint: "By default, the project name will be converted to a URL-safe format and used in the URL. To override this, enter a project name for the URL consisting only of lower case letters, numbers and hyphens, e.g. 'sample-project'. This must be unique."
       - label: Parent Project
         name: parent
         widget: relation
         collection: projects
-        value_field: slug
+        value_field: linking.slug
         search_fields: [title]
         display_fields: [title]
         required: false

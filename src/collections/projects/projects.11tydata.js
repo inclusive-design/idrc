@@ -8,7 +8,8 @@ export default {
             key: (data) => data.linking.slug || data.uuid,
             title: (data) => data.title,
             parent: "Projects",
-            order: (data) => data.order
+            order: (data) => data.order,
+            lang: (data) => data.locale
         },
         /* Build a permalink using the title or slug and language key. */
         permalink: (data) => {
