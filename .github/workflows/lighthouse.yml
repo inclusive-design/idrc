@@ -13,13 +13,11 @@ jobs:
       url: ${{ steps.netlify.outputs.url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Wait for Netlify Deploy
-        uses: quantizor/wait-for-netlify-action@v3.4.0
+      - name: Wait for Netlify Preview
+        uses: archiewood/wait-for-netlify-action@v1
         id: netlify
         with:
-          site_id: ${{ secrets.NETLIFY_SITE_ID }}
-        env:
-          NETLIFY_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          site_name: ${{ secrets.NETLIFY_SITE_NAME }}
   lhci-mobile:
     name: Run mobile Lighthouse CI audits
     runs-on: ubuntu-latest
