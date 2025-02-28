@@ -1,5 +1,5 @@
 ---
-uuid: 25d66f54-e8af-4380-b3d2-0547222dd074
+uuid: e11c9245-fb29-45f8-8b75-e34fc04d0afa
 locale: fr-CA
 title: Toutes les normes avec nous
 linking:

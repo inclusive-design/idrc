@@ -1,5 +1,5 @@
 ---
-uuid: 1ae04080-1ad3-4acb-81d4-7254fb168e44
+uuid: 9fdedda7-3517-44a1-9df9-49659a577354
 locale: en-CA
 title: 'Future of Work: Equitable Digital Systems'
 linking:

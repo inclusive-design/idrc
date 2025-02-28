@@ -1,5 +1,5 @@
 ---
-uuid: 96c0e919-d67b-4b7a-a873-57598ec1a222
+uuid: 91484304-7494-4e3c-878e-d7006005faf1
 locale: en-CA
 title: Social Justice Repair Kit
 linking:
@@ -11,4 +11,3 @@ thumbnailImage: /media/project-SJRK.png
 thumbnailAltText: ''
 description: Helping to make youth movements welcoming for everyone.
 ---
-

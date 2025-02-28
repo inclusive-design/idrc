@@ -1,5 +1,5 @@
 ---
-uuid: ca48ed81-8b8d-4ec5-a1ae-54bfb3f950a1
+uuid: 8eac6401-1212-4876-8cfa-fd26f5f5d8d8
 locale: en-CA
 title: Intelligent User Interfaces for Virtual Healthcare
 linking:

@@ -1,5 +1,5 @@
 ---
-uuid: dcce07ec-fa08-4e3c-bcd0-c0c9c4990ca9
+uuid: fcf3655d-9fae-4a29-b36f-192f8cbce80e
 locale: en-CA
 title: Flexible Learning for Open Education
 linking:
@@ -11,4 +11,3 @@ thumbnailImage: /media/project-floe.png
 thumbnailAltText: ''
 description: Designing open education for diverse learners.
 ---
-

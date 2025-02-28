@@ -1,5 +1,5 @@
 ---
-uuid: 01687a45-7d87-46a0-9cb2-6275e78bb2d8
+uuid: 05cd68d6-44ab-4f7f-896a-39a194f36071
 locale: en-CA
 title: From the Community
 slug: community

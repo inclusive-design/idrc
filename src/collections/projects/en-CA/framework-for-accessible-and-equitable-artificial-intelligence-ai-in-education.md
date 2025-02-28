@@ -1,5 +1,5 @@
 ---
-uuid: 2e55c2b6-cd66-4206-bbe8-91e019b5d0cd
+uuid: f6849c2a-7b75-4ac6-86b7-4b57dddd261f
 locale: en-CA
 title: Framework for Accessible and Equitable Artificial Intelligence (AI) in Education
 linking:

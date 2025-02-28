@@ -1,5 +1,5 @@
 ---
-uuid: 099fa406-22f1-4775-be84-77d227acb523
+uuid: d5953c94-d5fa-4468-abab-31992e27a1e3
 locale: en-CA
 title: Regulating the Digital Domain / Réguler le domaine numérique
 linking:
@@ -14,4 +14,3 @@ description: |-
 
   Réguler le domaine numérique (Rldn) est axée sur le soutien à l'élaboration de normes d'accessibilité pour les technologies existantes et nouvelles.
 ---
-
