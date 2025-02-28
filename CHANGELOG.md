@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.3](https://github.com/inclusive-design/idrc/compare/v3.0.2...v3.0.3) (2025-02-28)
+
+
+### Bug Fixes
+
+* resolve editing issues with projects, support translated subpages ([#1179](https://github.com/inclusive-design/idrc/issues/1179)) ([484c20e](https://github.com/inclusive-design/idrc/commit/484c20ed414a9b6392fa68ca3c9bb0cc09fa58aa))
+
 ## [3.0.2](https://github.com/inclusive-design/idrc/compare/v3.0.1...v3.0.2) (2025-02-27)
 
 
