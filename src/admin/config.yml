@@ -12,6 +12,9 @@ backend:
     deleteMedia: 'chore(cms): delete "{{path}}"'
 media_folder: src/media
 public_folder: /media
+slug:
+  encoding: ascii
+  clean_accents: true
 i18n:
   structure: multiple_folders
   locales: [en-CA, fr-CA]
