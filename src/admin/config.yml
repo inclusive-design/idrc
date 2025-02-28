@@ -641,6 +641,7 @@ collections:
     folder: src/collections/projects
     create: true
     i18n: true
+    summary: "{{fields.order}}. {{fields.title}}"
     sortable_fields:
       fields: [title, order]
       default:
