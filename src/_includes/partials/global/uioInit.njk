@@ -1,0 +1,39 @@
+<script>
+fluid.uiOptions.multilingual(".flc-prefsEditor-separatedPanel", {
+    preferences: [
+		"fluid.prefs.lineSpace",
+		"fluid.prefs.textFont",
+		"fluid.prefs.contrast",
+		"fluid.prefs.tableOfContents",
+		"fluid.prefs.enhanceInputs",
+		"fluid.prefs.syllabification"
+	],
+    auxiliarySchema: {
+        terms: {
+            "templatePrefix": "/lib/infusion/src/framework/preferences/html",
+            "messagePrefix": "/lib/infusion/src/framework/preferences/messages"
+        },
+        "fluid.prefs.tableOfContents": {
+            enactor: {
+                "tocTemplate": "/lib/infusion/src/components/tableOfContents/html/TableOfContents.html",
+                "tocMessage": "/lib/infusion/src/framework/preferences/messages/tableOfContents-enactor.json",
+                ignoreForToC: {
+                    ignoreClass: ".flc-toc-ignore"
+                }
+            }
+        },
+        "fluid.prefs.syllabification": {
+    		enactor: {
+   			terms: {
+    				patternPrefix: "/lib/infusion/src/lib/hypher/patterns"
+   			}
+    		}
+   	}
+    },
+    prefsEditorLoader: {
+        lazyLoad: true
+    },
+    locale: "{{ supportedLanguages[locale].uioSlug if locale else 'en' }}",
+    direction: "{{ supportedLanguages[locale].dir if locale else 'ltr' }}"
+});
+</script>
