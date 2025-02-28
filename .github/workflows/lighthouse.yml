@@ -16,6 +16,7 @@ jobs:
         id: netlify
         with:
           site_name: idrc
+          timeout: 600
   lhci-mobile:
     name: Run mobile Lighthouse CI audits
     runs-on: ubuntu-latest
