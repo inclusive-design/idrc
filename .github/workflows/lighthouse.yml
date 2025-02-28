@@ -17,7 +17,7 @@ jobs:
         uses: jakepartusch/wait-for-netlify-action@v1.4
         id: netlify
         with:
-          site_name: ${{ secrets.NETLIFY_SITE_NAME }}
+          site_name: idrc
   lhci-mobile:
     name: Run mobile Lighthouse CI audits
     runs-on: ubuntu-latest
