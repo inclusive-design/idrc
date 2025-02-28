@@ -2,9 +2,9 @@ name: Audit site with Lighthouse CI
 
 on:
   push:
-    branches:
-      - "**"
-      - "!main"
+    branches: [dev, main]
+  pull_request:
+    branches: [dev, main]
 
 jobs:
   setup:
@@ -13,15 +13,13 @@ jobs:
       url: ${{ steps.netlify.outputs.url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: jwalton/gh-find-current-pr/@v1
-        id: find-pr
-      - name: Wait for Netlify deploy preview
-        uses: kukiron/wait-for-netlify-deploy@v1.2.2
+      - name: Wait for Netlify Deploy
+        uses: probablyup/wait-for-netlify-action@v3
         id: netlify
         with:
-          site_name: idrc
-          pr_number: ${{ steps.find-pr.outputs.pr }}
-          max_timeout: 300
+          site_id: ${{ secrets.NETLIFY_SITE_ID }}
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
   lhci-mobile:
     name: Run mobile Lighthouse CI audits
     runs-on: ubuntu-latest
