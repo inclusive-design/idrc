@@ -50,6 +50,6 @@
         {% include "partials/global/footer.njk" %}
         {% block footerScripts %}{% endblock %}
 
-        {% uioInit config.languages[lang].uioSlug, config.languages[lang].dir %}
+        {% include "partials/global/uioInit.njk" %}
     </body>
 </html>

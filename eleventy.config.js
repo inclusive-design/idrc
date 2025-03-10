@@ -7,7 +7,6 @@ import MarkdownIt from "markdown-it";
 
 import fluidPlugin from "eleventy-plugin-fluid";
 import parseTransform from "./src/_transforms/parse.js";
-import siteConfig from "./src/_data/config.json" with { type: "json" };
 import siteData from "./src/_data/site.json" with { type: "json" };
 
 export default (eleventyConfig) => {
@@ -36,7 +35,7 @@ export default (eleventyConfig) => {
             });
     });
 
-    for (const lang of siteConfig.locales) {
+    for (const lang of ["en-CA", "fr-CA"]) {
         eleventyConfig.addCollection(`projects_${lang}`, (collection) => {
             const projects = [
                 ...collection.getFilteredByGlob(
