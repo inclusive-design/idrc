@@ -58,3 +58,62 @@ Il n’y a pas de présentations formelles pendant la conférence. La conférenc
 **Thème 4 : Comment promouvoir l’inclusion des personnes handicapées dans la production, la représentation et la consommation des médias ?**
 
 Au cours de la conférence, un modérateur et un provocateur donneront une vue d’ensemble du domaine et susciteront des discussions permettant aux participants de prendre une part active aux débats.
+
+## Horaire pour le lundi 27 mai 2024
+
+| Temps | Activité |
+| --- | --- |
+| 8:00 | Inscription et petit-déjeuner |
+| 9:00 | Cérémonie de bienvenue autochtone et remarques préliminaires |
+| 10:00 | Session plénière: Collaboration internationale sur la normalisation de l’accessibilité<br>**Panélistes :** Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan<br>**Modérateur :** Jutta Treviranus |
+| 11:00 | Pause |
+| 11:30 | Sessions simultanées |
+| 12:30 | Déjeuner |
+| 13:30 | Suite des sessions simultanées |
+| 14:30 | Période de transition |
+| 14:45 | Suite des sessions simultanées |
+| 15:45 | Pause |
+| 16:15 | Aperçu / points forts |
+| 16:45 | Remarques de clôture : Minister Kamal Khera<br>**Introduit par :** Raihana Hirji-Khalfan |
+| 17:00 | Réception (2 heures) |
+
+## Horaire pour du Mardi 28 mai 2024
+
+| Time | Activité |
+| --- | --- |
+| 8:00 | Inscription et petit-déjeuner |
+| 9:00 | Remarques préliminaires |
+| 9:15 | Session plénière: Risques et opportunités futurs<br>**Panélistes :** Bianca Wylie, Abhishek Gupta, Heather Walkus<br>**Modérateur :** Jutta Treviranus |
+| 10:15 | Session plénière: Le cadre de la loi canadienne sur l’accessibilité<br>**Panélistes :** Stephanie Cadieux, Phillip Rizcallah, Michael Gottheil<br>**Modérateur :** Jutta Treviranus |
+| 11:00 | Pause |
+| 11:30 | Sessions simultanées |
+| 12:30 | Déjeuner |
+| 13:30 | Suite des sessions simultanées |
+| 14:30 | Période de transition |
+| 14:45 | Suite des sessions simultanées |
+| 15:45 | Pause |
+| 16:15 | Aperçu / points forts |
+| 16:45 | Remarques de clôture |
+| 17:00 | Fin de l’événement |
+
+## Services de conférence
+
+Pour votre confort, nous fournissons : 
+
+### Chambre calme
+
+Une salle de détente et de relaxation équipée de :
+
+-  cache-oreilles
+- bandeaux
+- outils tactiles/fidgets
+
+### Salle de recueillement
+
+Un espace tranquille où les participants à la conférence peuvent pratiquer leur foi.
+
+Un espace de prière recouvert de moquette est prévu.
+
+### Période de transition
+
+Un intervalle de 15 minutes entre les sessions pour vous permettre de vous déplacer confortablement et de vous installer dans la salle de discussion suivante.

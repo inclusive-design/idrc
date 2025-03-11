@@ -71,7 +71,7 @@ During the conference, a facilitator and provocateur will provide an overview of
 | --- | --- |
 | 8:00 | Registration and breakfast |
 | 9:00 | Indigenous Welcome: Elder Mary-Lee Anayok & TBC<br>Concordia Welcome: Sandra Gabriele<br>OCAD U Welcome: Jutta Treviranus |
-| 10:00 | Plenary Session: International Collaboration on Accessibility Standardization<br>Panelists: Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan<br>Moderator: Jutta Treviranus |
+| 10:00 | Plenary Session: International Collaboration on Accessibility Standardization<br>**Panelists:** Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan<br>**Moderator:** Jutta Treviranus |
 | 11:00 | Break |
 | 11:30 | Concurrent sessions |
 | 12:30 | Lunch |
@@ -101,3 +101,25 @@ During the conference, a facilitator and provocateur will provide an overview of
 | 16:15 | Insight / highlights |
 | 16:45 | Closing Remarks |
 | 17:00 | End of event |
+
+## Conference amenities
+
+For your comfort we provide: 
+
+### Quiet room
+
+A room for relaxation and stress relief equipped with:
+
+- ear muffs
+-  blindfolds
+- tactile tools/fidget toys
+
+### Faith Room
+
+A quiet space where conference attendees can practice their faith.
+
+A carpeted area for prayer is provided.
+
+### Transition Period
+
+A designated 15-minute interval between sessions to comfortably navigate and relocate to your next selected discussion room.
