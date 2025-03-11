@@ -82,3 +82,22 @@ During the conference, a facilitator and provocateur will provide an overview of
 | 16:15 | Insight / highlights |
 | 16:45 | Closing Remarks: Minister Kamal Khera<br>Introduced by: Raihana Hirji-Khalfan |
 | 17:00 | Reception (2 hours) |
+
+## Schedule for Tuesday, May 28, 2024
+
+| Time | Activity |
+| --- | --- |
+| 8:00 | Registration and Breakfast |
+| 9:00 | Opening Remarks |
+| 9:15 | Plenary Session: Future Risks and Opportunities<br>**Panelists:** Bianca Wylie, Abhishek Gupta, Heather Walkus<br>**Moderator:** Jutta Treviranus |
+| 10:15 | Plenary Session: The Accessible Canada Act Framework<br>**Panelists:** Stephanie Cadieu, Phillip Rizcahalla, Michael Gottheil<br>**Moderator:** Jutta Treviranus |
+| 11:00 | Break |
+| 11:30 | Concurrent sessions |
+| 12:30 | Lunch |
+| 13:30 | Continuation of Concurrent sessions |
+| 14:30 | Transition Period |
+| 14:45 | Continuation of Concurrent sessions |
+| 15:45 | Break |
+| 16:15 | Insight / highlights |
+| 16:45 | Closing Remarks |
+| 17:00 | End of event |
