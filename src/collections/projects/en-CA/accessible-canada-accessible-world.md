@@ -67,17 +67,18 @@ During the conference, a facilitator and provocateur will provide an overview of
 
 ## Schedule for Monday, May 27, 2024
 
-| **Time** | **Activity** |
+| Time | Activity |
+| --- | --- |
 | 8:00 | Registration and breakfast |
-| 9:00 | Indigenous Welcome: Elder Mary-Lee Anayok & TBC\n\nConcordia Welcome: Sandra Gabriele\n\nOCAD U Welcome: Jutta Treviranus |
-| 10:00 | Plenary Session: International Collaboration on Accessibility Standardization\n\nPanelists: Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan\n\nmoderator: Jutta Treviranus |
+| 9:00 | Indigenous Welcome: Elder Mary-Lee Anayok & TBC<br>Concordia Welcome: Sandra Gabriele<br>OCAD U Welcome: Jutta Treviranus |
+| 10:00 | Plenary Session: International Collaboration on Accessibility Standardization<br>Panelists: Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan<br>Moderator: Jutta Treviranus |
 | 11:00 | Break |
-| 11:30 | Concurrent Sessions |
+| 11:30 | Concurrent sessions |
 | 12:30 | Lunch |
-| 13:30 | Continuation of Concurrent Sessions |
+| 13:30 | Continuation of Concurrent sessions |
 | 14:30 | Transition Period |
-| 14:45 | Continuation of Concurrent Sessions |
+| 14:45 | Continuation of Concurrent sessions |
 | 15:45 | Break |
 | 16:15 | Insight / highlights |
-| 16:45 | Closing Remarks: Minister Kamal Khera\n\nIntroduced by: Raihana Hirji-Khalfan |
+| 16:45 | Closing Remarks: Minister Kamal Khera<br>Introduced by: Raihana Hirji-Khalfan |
 | 17:00 | Reception (2 hours) |
