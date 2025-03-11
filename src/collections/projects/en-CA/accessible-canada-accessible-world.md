@@ -64,3 +64,75 @@ There are no formal presentations during the conference. The Conference is a fli
 **Theme 4: How can we promote the inclusion of people with disabilities in media production, representation, and consumption?**
 
 During the conference, a facilitator and provocateur will provide an overview of the field and provoke discussion enabling attendees to participate actively in the discussions.
+
+## Schedule for Monday, May 27, 2024
+
+```
+<table border="1">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8:00</td>
+      <td>Registration and breakfast</td>
+    </tr>
+    <tr>
+      <td>9:00</td>
+      <td>Indigenous Welcome: Elder Mary-Lee Anayok & TBC<br>
+          Concordia Welcome: Sandra Gabriele<br>
+          OCAD U Welcome: Jutta Treviranus</td>
+    </tr>
+    <tr>
+      <td>10:00</td>
+      <td>Plenary Session: International Collaboration on Accessibility Standardization<br>
+          Panelists: Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan<br>
+          Moderator: Jutta Treviranus</td>
+    </tr>
+    <tr>
+      <td>11:00</td>
+      <td>Break</td>
+    </tr>
+    <tr>
+      <td>11:30</td>
+      <td>Concurrent sessions</td>
+    </tr>
+    <tr>
+      <td>12:30</td>
+      <td>Lunch</td>
+    </tr>
+    <tr>
+      <td>13:30</td>
+      <td>Continuation of Concurrent sessions</td>
+    </tr>
+    <tr>
+      <td>14:30</td>
+      <td>Transition Period</td>
+    </tr>
+    <tr>
+      <td>14:45</td>
+      <td>Continuation of Concurrent sessions</td>
+    </tr>
+    <tr>
+      <td>15:45</td>
+      <td>Break</td>
+    </tr>
+    <tr>
+      <td>16:15</td>
+      <td>Insight / highlights</td>
+    </tr>
+    <tr>
+      <td>16:45</td>
+      <td>Closing Remarks: Minister Kamal Khera<br>
+          Introduced by: Raihana Hirji-Khalfan</td>
+    </tr>
+    <tr>
+      <td>17:00</td>
+      <td>Reception (2 hours)</td>
+    </tr>
+  </tbody>
+</table>
+```
