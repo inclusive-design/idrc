@@ -67,7 +67,7 @@
     "markdownlint-cli2": "0.17.2",
     "markdownlint-config-fluid": "0.1.8",
     "rimraf": "6.0.1",
-    "start-server-and-test": "2.0.10",
+    "start-server-and-test": "2.0.11",
     "stylelint": "14.16.1",
     "stylelint-config-fluid": "1.0.0",
     "stylelint-use-logical-spec": "5.0.1"
