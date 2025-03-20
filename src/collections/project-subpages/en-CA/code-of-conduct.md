@@ -4,7 +4,7 @@ locale: en-CA
 title: Code of Conduct
 slug: conduct
 parent: acaw-cama
-order: null
+order: 1
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
