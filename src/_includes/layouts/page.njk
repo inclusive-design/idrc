@@ -5,6 +5,7 @@
 {% block content %}
     {% include 'partials/components/page-header.njk' %}
     <article>
+
         {%- if sections and sections.length > 0 %}
             {%- for section in sections %}
             {% include 'partials/components/section.njk' %}
@@ -12,6 +13,8 @@
         {%- else %}
         <div class="content">
             <div class="wrapper">
+                <nav class="flc-toc-tocContainer"></nav>
+
                 {{ content | safe }}
             </div>
         </div>

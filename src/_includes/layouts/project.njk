@@ -7,6 +7,8 @@
     <article>
         <div class="content">
             <div class="wrapper">
+                <nav class="flc-toc-tocContainer"></nav>
+
                 {{ content | safe }}
                 {% if funderLogos.length %}
                     {% for logo in funderLogos %}
