@@ -64,3 +64,62 @@ There are no formal presentations during the conference. The Conference is a fli
 **Theme 4: How can we promote the inclusion of people with disabilities in media production, representation, and consumption?**
 
 During the conference, a facilitator and provocateur will provide an overview of the field and provoke discussion enabling attendees to participate actively in the discussions.
+
+## Schedule for Monday, May 27, 2024
+
+| Time | Activity |
+| --- | --- |
+| 8:00 | Registration and breakfast |
+| 9:00 | Indigenous Welcome: Elder Mary-Lee Anayok & TBC<br>Concordia Welcome: Sandra Gabriele<br>OCAD U Welcome: Jutta Treviranus |
+| 10:00 | Plenary Session: International Collaboration on Accessibility Standardization<br>**Panelists:** Philip Rizcallah, Inmaculada Placencia-Porrero, Tim Creagan<br>**Moderator:** Jutta Treviranus |
+| 11:00 | Break |
+| 11:30 | Concurrent sessions |
+| 12:30 | Lunch |
+| 13:30 | Continuation of Concurrent sessions |
+| 14:30 | Transition Period |
+| 14:45 | Continuation of Concurrent sessions |
+| 15:45 | Break |
+| 16:15 | Insight / highlights |
+| 16:45 | Closing Remarks: Minister Kamal Khera<br>Introduced by: Raihana Hirji-Khalfan |
+| 17:00 | Reception (2 hours) |
+
+## Schedule for Tuesday, May 28, 2024
+
+| Time | Activity |
+| --- | --- |
+| 8:00 | Registration and Breakfast |
+| 9:00 | Opening Remarks |
+| 9:15 | Plenary Session: Future Risks and Opportunities<br>**Panelists:** Bianca Wylie, Abhishek Gupta, Heather Walkus<br>**Moderator:** Jutta Treviranus |
+| 10:15 | Plenary Session: The Accessible Canada Act Framework<br>**Panelists:** Stephanie Cadieu, Phillip Rizcahalla, Michael Gottheil<br>**Moderator:** Jutta Treviranus |
+| 11:00 | Break |
+| 11:30 | Concurrent sessions |
+| 12:30 | Lunch |
+| 13:30 | Continuation of Concurrent sessions |
+| 14:30 | Transition Period |
+| 14:45 | Continuation of Concurrent sessions |
+| 15:45 | Break |
+| 16:15 | Insight / highlights |
+| 16:45 | Closing Remarks |
+| 17:00 | End of event |
+
+## Conference amenities
+
+For your comfort we provide: 
+
+### Quiet room
+
+A room for relaxation and stress relief equipped with:
+
+- ear muffs
+-  blindfolds
+- tactile tools/fidget toys
+
+### Faith Room
+
+A quiet space where conference attendees can practice their faith.
+
+A carpeted area for prayer is provided.
+
+### Transition Period
+
+A designated 15-minute interval between sessions to comfortably navigate and relocate to your next selected discussion room.
