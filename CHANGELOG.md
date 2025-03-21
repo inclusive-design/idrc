@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.0.4](https://github.com/inclusive-design/idrc/compare/v3.0.3...v3.0.4) (2025-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @11ty/eleventy-navigation to v1 ([#1194](https://github.com/inclusive-design/idrc/issues/1194)) ([83dab8f](https://github.com/inclusive-design/idrc/commit/83dab8f87895b4be9338b1bec8598b02e15d7e18))
+
 ## [3.0.3](https://github.com/inclusive-design/idrc/compare/v3.0.2...v3.0.3) (2025-02-28)
 
 
