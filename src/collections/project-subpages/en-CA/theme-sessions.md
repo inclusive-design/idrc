@@ -8,8 +8,6 @@ order: 2
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-## Theme Sessions
-
 ### Inclusive Decision Making (Day 1)
 
 #### Disabilities and the Future of Work

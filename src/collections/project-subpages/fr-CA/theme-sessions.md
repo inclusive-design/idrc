@@ -8,8 +8,6 @@ order: 2
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-## Sessions à theme
-
 ### Prise de décision inclusive (Jour 1)
 
 #### Handicaps et l’avenir du travail
