@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/inclusive-design/idrc/compare/v3.0.4...v3.1.0) (2025-03-24)
+
+
+### Features
+
+* show project order in CMS list ([#1185](https://github.com/inclusive-design/idrc/issues/1185)) ([a6ef242](https://github.com/inclusive-design/idrc/commit/a6ef242f7b961fd5e8b21e7edaa0a53b3d52811c))
+
 ## [3.0.4](https://github.com/inclusive-design/idrc/compare/v3.0.3...v3.0.4) (2025-03-20)
 
 
