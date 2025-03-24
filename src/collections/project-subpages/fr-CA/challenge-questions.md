@@ -3,7 +3,7 @@ uuid: 3314c56d-1330-4ef6-ae74-9126f55eb456
 locale: fr-CA
 title: Questions du défi
 slug: questions
-parent: ''
+parent: acaw-cama
 order: 1
 thumbnailImage: ''
 thumbnailAltText: ''
