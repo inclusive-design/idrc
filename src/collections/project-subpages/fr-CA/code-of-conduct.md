@@ -4,7 +4,7 @@ locale: fr-CA
 title: Code de conduit
 slug: conduit
 parent: acaw-cama
-order: 1
+order: 3
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
