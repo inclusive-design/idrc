@@ -8,9 +8,9 @@ order: 2
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-## Inclusive Decision Making
+## Theme Sessions
 
-### Day 1
+### Inclusive Decision Making (Day 1)
 
 #### Disabilities and the Future of Work
 
@@ -38,7 +38,7 @@ How can we shape generative AI to address accessibility barriers?
 
 ### --
 
-### Day 2
+### Inclusive Decision Making (Day 2)
 
 #### Assistive Technology Ecosystem
 
@@ -74,9 +74,7 @@ Session Notebook: [https://groups.io/g/ACAW-CAMA/topic/housing_and_disability/11
 - Session Notebook: [https://groups.io/g/ACAW-CAMA/topic/open_session_future_of/111399548](https://groups.io/g/ACAW-CAMA/topic/open_session_future_of/111399548)
  
 
-## Innovation in Standards and Policy
-
-### Day 1
+### Innovation in Standards and Policy (Day 1)
 
 #### Disability Regulations
 
@@ -115,7 +113,7 @@ How can we develop young disabled leaders?
 
 **--**
 
-### Day 2
+### Innovation in Standards and Policy (Day 2)
 
 #### Systemic Change in Standards and Policy
 
@@ -132,9 +130,7 @@ How can we achieve long term systemic change in our design and implementation of
 - Facilitator: John Willis
 - Session Notebook: [https://groups.io/g/ACAW-CAMA/topic/open_session_accessible/111396777](https://groups.io/g/ACAW-CAMA/topic/open_session_accessible/111396777)
 
-## Who and What are We Missing?
-
-### Day 1
+### Who and What are We Missing? (Day 1)
 
 #### Climate Change and Disabilities
 
@@ -163,7 +159,9 @@ How do we make progress in equity in an anti-DEI (Diversity Equity and Inclusion
 
 ### --
 
-### Day 2
+### Who and What are We Missing? (Day 2)
+
+### 
 
 #### Exiting the Charity Model
 
@@ -197,9 +195,7 @@ Can we make one-size-fits-one interfaces available to people who need them? 
 - Facilitator: Ingrid Palmer, Heather Walkus
 - Session Notebook: [https://groups.io/g/ACAW-CAMA/topic/open_session_financial/111399250](https://groups.io/g/ACAW-CAMA/topic/open_session_financial/111399250)
 
-## Accessible and Equitable Communications
-
-### Day 1
+### Accessible and Equitable Communications (Day 1)
 
 #### Disability Community Media Strategy
 
@@ -219,7 +215,7 @@ How to address toxicity filters that hinder discussion of critical topics and ce
 
 ### --
 
-### Day 2
+### Accessible and Equitable Communications (Day 2)
 
 #### Building DEIA maturity in the workplace
 

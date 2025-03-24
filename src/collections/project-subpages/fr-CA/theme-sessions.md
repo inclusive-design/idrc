@@ -8,9 +8,9 @@ order: 2
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-## Prise de décision inclusive
+## Sessions à theme
 
-### Jour 1
+### Prise de décision inclusive (Jour 1)
 
 #### Handicaps et l’avenir du travail
 
@@ -38,7 +38,7 @@ Comment pouvons-nous façonner l’IA générative pour lever les obstacles à l
 
 ### --
 
-### Jour 2
+### Prise de décision inclusive (Jour 2)
 
 #### Écosystème des technologies d’assistance
 
@@ -71,9 +71,7 @@ Session de type “Birds of a Feather” : conçue pour mettre en relation les p
 - facilitateur: Sambhavi Chandrashekar & Stephen Downes
 - Cahier de séance : 
 
-## Innovation en matière de normes et de politiques
-
-### Jour 1
+### Innovation en matière de normes et de politiques (Jour 1)
 
 #### Règlement  et polices sur le handicap
 
@@ -111,7 +109,7 @@ Comment développer les jeunes leaders handicapés ?
 
 **--**
 
-### Jour 2
+### Innovation en matière de normes et de politiques (Jour 2)
 
 #### Changement systémique des normes et des politiques
 
@@ -128,9 +126,7 @@ Session de type “Birds of a Feather” : conçue pour mettre en relation les p
 - facilitateur: John Willis
 - Cahier de séance : [https://groups.io/g/ACAW-CAMA/topic/open_session_accessible/111396777](https://groups.io/g/ACAW-CAMA/topic/open_session_accessible/111396777)
 
-## Qui et quoi nous manque-t-il ?
-
-### Jour 1
+### Qui et quoi nous manque-t-il ? (Jour 1)
 
 #### Changement climatique et handicaps
 
@@ -158,7 +154,7 @@ Comment progresser en matière d’équité dans un environnement hostile à la 
 
 ### --
 
-### Jour 2
+### Qui et quoi nous manque-t-il ? (Jour 2)
 
 #### Sortir du modèle caritative
 
@@ -191,9 +187,7 @@ Session de type “Birds of a Feather” : conçue pour mettre en relation les p
 - facilitateur: Ingrid Palmer
 - Cahier de séance : [https://groups.io/g/ACAW-CAMA/topic/open_session_financial/111399250](https://groups.io/g/ACAW-CAMA/topic/open_session_financial/111399250)
 
-## Des communications accessibles et équitables
-
-### Jour 1
+### Des communications accessibles et équitables (Jour 1)
 
 #### Stratégie médiatique de la communauté des personnes  en situations d’handicapes
 
@@ -211,7 +205,7 @@ Comment s’attaquer aux filtres de toxicité qui empêchent la discussion de su
 - Facilitateur : Bianca Wylie
 - Cahier de séance : [https://groups.io/g/ACAW-CAMA/topic/toxicity_filters_filtres_de/111414797](https://groups.io/g/ACAW-CAMA/topic/toxicity_filters_filtres_de/111414797)
 
-### Jour 2
+### Des communications accessibles et équitables (Jour 2)
 
 #### Développer la maturité DEIA sur le lieu de travail
 
@@ -227,5 +221,3 @@ Session de type “Birds of a Feather” : conçue pour mettre en relation les p
 
 - facilitateur : Peter Slatin
 - Cahier de séance : [https://groups.io/g/ACAW-CAMA/topic/open_session_cyberthreat_and/111396931](https://groups.io/g/ACAW-CAMA/topic/open_session_cyberthreat_and/111396931)
-
-|  |
