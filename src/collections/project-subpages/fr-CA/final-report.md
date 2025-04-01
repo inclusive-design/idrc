@@ -4,7 +4,7 @@ locale: fr-CA
 title: Rapport final
 slug: rapport
 parent: acaw-cama
-order: null
+order: 4
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
