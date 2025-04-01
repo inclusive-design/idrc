@@ -1,7 +1,7 @@
 ---
 uuid: b6fa0af5-3546-4c3d-882c-2db91a6d6c1c
 locale: fr-CA
-title: Rapport final
+title: Rapport final de CAMA
 slug: rapport
 parent: acaw-cama
 order: 4
