@@ -15,7 +15,7 @@ The Trust Meter project is being advanced under SCC’s AI and Data Governance (
 
 ---
 
-<div lang="fr">
+<div lang="fr-CA">
   <p>
     IDRC est heureux d’annoncer l'élaboration d’une nouvelle spécification technique pour le Conseil canadien des normes (CCN) appelée Indicateur de confiance.
   </p>
