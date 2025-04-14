@@ -530,7 +530,7 @@ collections:
         name: socialImage
         widget: image
         required: false
-      - {label: Tags, name: tags, widget: list, allow_add: true}
+      - {label: Tags, name: tags, widget: list, allow_add: true, required: false}
       - {label: Body, name: body, widget: markdown}
   - name: ideas
     label: Ideas
