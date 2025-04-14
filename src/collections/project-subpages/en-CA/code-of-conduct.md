@@ -4,12 +4,10 @@ locale: en-CA
 title: Code of Conduct
 slug: conduct
 parent: acaw-cama
-order: 1
+order: 3
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-# ACAW Code of Conduct
-
 Inclusion is a process — one that takes work, attention and nurturing. It is our expectation that the practice of inclusion involves working through differences. Sharing diverse and divergent opinions is something we encourage, learning to do it in a respectful way is something we’re all practitioners of (and would like to help facilitate), and these tough conversations are part of what creating inclusion requires. When everything goes well, we can have these differences in respectful and productive ways.
 
 When it does not go well, and it threatens the very inclusion we seek, the ACAW team will uphold the following code of conduct:

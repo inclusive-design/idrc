@@ -4,12 +4,10 @@ locale: fr-CA
 title: Code de conduit
 slug: conduit
 parent: acaw-cama
-order: 1
+order: 3
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-## Code de conduite pour CAMA
-
 L’inclusion est un processus qui demande du travail, de l’attention et du soutien. Nous nous attendons à ce que la pratique de l’inclusion implique de travailler sur les différences. Nous encourageons le partage d’opinions diverses et divergentes, nous apprenons à le faire de manière respectueuse, c’est une chose que nous pratiquons tous (et que nous aimerions faciliter), et ces conversations difficiles font partie de ce qu’exige la création de l’inclusion. Lorsque tout va bien, nous pouvons reconnaître ces différences de manière respectueuse et productive.
 
 Lorsque cela ne se passe pas bien, et que cela menace l’inclusion que nous désirons, l’équipe du CAMA respectera le code de conduite suivant :
