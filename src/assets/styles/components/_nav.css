@@ -3,6 +3,10 @@
     z-index: 20;
 }
 
+.flc-toc-tocContainer {
+    margin-block-end: calc(48 / 16 * 1rem);
+}
+
 .nav .menu-toggle {
     background: var(--fl-buttonBgColor, var(--header-bg, transparent));
     block-size: calc(34 / 16 * 1rem);
