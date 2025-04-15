@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.1](https://github.com/inclusive-design/idrc/compare/v3.1.0...v3.1.1) (2025-04-14)
+
+
+### Bug Fixes
+
+* tags should not be required ([#1208](https://github.com/inclusive-design/idrc/issues/1208)) ([05571ce](https://github.com/inclusive-design/idrc/commit/05571ce0a42cff535b9f63d7e0629514b48822a9))
+
 ## [3.1.0](https://github.com/inclusive-design/idrc/compare/v3.0.4...v3.1.0) (2025-04-14)
 
 
