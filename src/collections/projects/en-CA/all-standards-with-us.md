@@ -8,5 +8,8 @@ linking:
 shortTitle: ''
 order: 1
 thumbnailAltText: ''
-description: Creating standards that are accessible and inclusive by involving disabled and Deaf people in the process of standards development.
+description: |-
+  Creating standards that are accessible and inclusive by involving disabled and Deaf people in the process of standards development.
+  
+  Créer des normes accessibles et inclusives en impliquant les personnes handicapées et Sourdes dans le processus d’élaboration des normes.
 ---
