@@ -9,6 +9,16 @@
     }
 }
 
+.single--news main > article .content {
+    hr {
+        inline-size: auto;
+    }
+
+    .wrapper > div {
+        margin-block: calc(15 / 16 * 1rem);
+    }
+}
+
 @media (width >= 600px) {
     .single {
         main > article header .wrapper {
