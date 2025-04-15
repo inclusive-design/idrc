@@ -1,5 +1,26 @@
 # Changelog
 
+## [3.1.1](https://github.com/inclusive-design/idrc/compare/v3.1.0...v3.1.1) (2025-04-14)
+
+
+### Bug Fixes
+
+* tags should not be required ([#1208](https://github.com/inclusive-design/idrc/issues/1208)) ([05571ce](https://github.com/inclusive-design/idrc/commit/05571ce0a42cff535b9f63d7e0629514b48822a9))
+
+## [3.1.0](https://github.com/inclusive-design/idrc/compare/v3.0.4...v3.1.0) (2025-04-14)
+
+
+### Features
+
+* show project order in CMS list ([#1185](https://github.com/inclusive-design/idrc/issues/1185)) ([a6ef242](https://github.com/inclusive-design/idrc/commit/a6ef242f7b961fd5e8b21e7edaa0a53b3d52811c))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @11ty/eleventy-img to v6.0.2 ([#1203](https://github.com/inclusive-design/idrc/issues/1203)) ([fac6edd](https://github.com/inclusive-design/idrc/commit/fac6edd9f5f912d8973d272b8fec5099720a84b6))
+* **deps:** update dependency @11ty/eleventy-navigation to v1.0.4 ([#1201](https://github.com/inclusive-design/idrc/issues/1201)) ([43cbc14](https://github.com/inclusive-design/idrc/commit/43cbc1440d1cc60bbcad3fea8b9c12a85466a1e0))
+* remove internal content of all standards with us project and lin… ([#1205](https://github.com/inclusive-design/idrc/issues/1205)) ([156d413](https://github.com/inclusive-design/idrc/commit/156d41373bf2d362f740641ecba244ffdd327c6b))
+
 ## [3.0.4](https://github.com/inclusive-design/idrc/compare/v3.0.3...v3.0.4) (2025-03-20)
 
 
