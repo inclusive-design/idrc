@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.2](https://github.com/inclusive-design/idrc/compare/v3.1.1...v3.1.2) (2025-04-15)
+
+
+### Bug Fixes
+
+* add UIO table of contents, remove font size ([#1184](https://github.com/inclusive-design/idrc/issues/1184)) ([b0f7803](https://github.com/inclusive-design/idrc/commit/b0f7803fba91a73758ff664350d57fa27dfd6ade))
+
 ## [3.1.1](https://github.com/inclusive-design/idrc/compare/v3.1.0...v3.1.1) (2025-04-14)
 
 
