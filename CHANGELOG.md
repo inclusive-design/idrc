@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.3](https://github.com/inclusive-design/idrc/compare/v3.1.2...v3.1.3) (2025-04-15)
+
+
+### Bug Fixes
+
+* add French desscriptions for all standards with us project ([#1211](https://github.com/inclusive-design/idrc/issues/1211)) ([93a18c9](https://github.com/inclusive-design/idrc/commit/93a18c9ccfa5b126266db0424edd7c95f45c5ec4))
+
 ## [3.1.2](https://github.com/inclusive-design/idrc/compare/v3.1.1...v3.1.2) (2025-04-15)
 
 
