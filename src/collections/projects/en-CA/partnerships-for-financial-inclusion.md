@@ -28,7 +28,7 @@ funderLogos:
 ---
 ## About the Financial Inclusion Project
 
-The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD) and Deaf people in Canada.
+The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD), Deaf people, and people with intersectional identities in Canada.
 
 ### What do we mean when we say "financial systems"?
 
@@ -64,9 +64,11 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 
 ### Outcomes
 
-At the end of October 2024, this project expects to:
-Publish a report about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
-Outline a plan for sustaining ongoing community engagement, advocacy, and education on issues related to financial inclusion.
+At the end of August 2025, this project expects to:
+
+- Share resources, findings, and insights broadly with community and national disability organizations, and with financial institutions in Canada.
+- Publish a report about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
+- Outline a plan for sustaining ongoing community engagement, advocacy, and education on issues related to financial inclusion.
 
 ### Mission
 
@@ -82,6 +84,7 @@ If you have any questions about the research activities or require further infor
 
 ## Project Partners
 
+- AAWEAR
 - Alliance for Equity of Blind Canadians
 - ARCH Disability Law Centre
 - L’arche Canada
@@ -90,13 +93,19 @@ If you have any questions about the research activities or require further infor
 - Canadian Council of the Blind
 - Carleton Accessibility Institute
 - Council of Canadians with Disabilities
+- DEEN Support Services
 - Disability without Poverty
 - Independent Living Canada
-- IRIS Institute
+- Inner-City Health and Wellness Program, University of Alberta
 - March of Dimes Canada
 - Neil Squire Society
+- New Society Institute (formerly IRIS Institute)
+- Nunavummi Disabilities Makinnasuaqtiit Society
+- Pigeon Park Savings
 - Planned Lifetime Advocacy Network
+- Realize Canada
 - Toronto Metropolitan University
+- Whole Woman Network
 
 ## Acknowledgements
 
