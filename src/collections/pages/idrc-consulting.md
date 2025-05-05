@@ -8,10 +8,8 @@ headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
 sections:
-  - title: We'd like to help you achieve your goals!
+  - title: Consulting
     content: |-
-      ## Consulting
-
       We strongly believe in **one-size-fits-one** solutions, and this extends to our services. We work closely with our clients to meet you where you are and co-create customized approaches that can include a combination of training, accessibility evaluation, and flexible consulting support. There is no fixed, linear path through this work; organizations that feel behind can make great leaps through sustainable initiatives. Our consulting ethos is that everyone can (and should) learn to fold the perspective shift that Inclusive Design gives us into everything we do professionally: product-related, team-related, procurement, HR, management, hiring, external outreach… everything.
 
       ### **_We want to help you achieve your inclusion and accessibility goals._**
@@ -48,22 +46,22 @@ sections:
       ### **_We will do accessibility reviews and audits at every stage of the design process._**
     fullBleed: false
     imageAltText: ''
-    imageOrderDesktop:
-      - auto
-    desktopWidth:
-      - full
-    imageOrder:
-      - start
-    backgroundColor:
-      - indigo-100
-    textColor:
-      - black
-    borderColor:
-      - indigo-500
-    imageShadow:
-      - indigo-500
     subsectionLevel:
       - '0'
+    imageShadow:
+      - indigo-500
+    borderColor:
+      - indigo-500
+    textColor:
+      - black
+    backgroundColor:
+      - indigo-100
+    imageOrder:
+      - start
+    desktopWidth:
+      - full
+    imageOrderDesktop:
+      - auto
   - title: Contact IDRC Consulting
     content: |-
       Consulting, Training, Digital Accessibility Reviews are all conducted by the IDRC's own experts, all of whom possess years of experience in accessibility.
@@ -84,3 +82,4 @@ eleventyNavigation:
   key: IDRC Consulting
   parent: Services
 ---
+
