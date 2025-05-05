@@ -1,9 +1,9 @@
 ---
-title: Consulting
+title: IDRC Consulting
 permalink: /consulting/
 metaTitle: ''
 metaDesc: ''
-intro: ''
+intro: We offer consulting services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
 headerBgColor: blue-200
 headerBorderColor: blue-500
 headerTextColor: black
