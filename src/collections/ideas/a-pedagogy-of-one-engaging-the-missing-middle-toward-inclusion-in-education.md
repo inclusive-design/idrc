@@ -6,7 +6,7 @@ archived: false
 author: Jess Mitchell
 excerpt: ''
 thumbnailImage: /media/symbiosis.jpg
-permalink: pedagogy-of-one
+permalink: ''
 metaTitle: pedagogy of one
 metaDesc: ''
 socialImage: ''
