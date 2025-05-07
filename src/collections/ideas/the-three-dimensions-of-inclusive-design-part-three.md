@@ -1,10 +1,14 @@
 ---
-title: "The Three Dimensions of Inclusive Design, Part Three"
-date: 2018-04-18
+title: The Three Dimensions of Inclusive Design, Part Three
+date: 2025-05-07
 author: Jutta Treviranus
+excerpt: ''
 thumbnailImage: /media/murmuration.jpg
+permalink: ''
+metaTitle: ''
+metaDesc: ''
 ---
-_This is the third part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and increasingly connected world. [Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and [Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/). The three dimensions of the framework are:_
+_This is the third part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and increasingly connected world.&#32;[Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and&#32;[Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/). The three dimensions of the framework are:_
 
 1. _Recognize, respect, and design for human uniqueness and variability._
 2. _Use inclusive, open & transparent processes, and co-design with people who have a diversity of perspectives, including people that can’t use or have difficulty using the current designs._
@@ -93,11 +97,11 @@ People at the margins are most vulnerable to the negative consequences of an unh
 
 [Mihaly Csikszentmihalyi, the author of Flow](https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi), asserts that the self grows by becoming more complex, which is the result of two processes: differentiation and integration. Applying this notion to society as an entity, this implies combining the movement toward optimizing individual uniqueness while maintaining social cohesion and collaborative integration of skills. A cooperative system of humans with a well-coordinated set of diverse areas of expertise will likely achieve something more complexly challenging than a single generalist or a team of people with similar specializations. The key to this collective state of flow is collaboration and integration. Given the complexity and shifting nature of our world this collaboration needs to be dynamic and responsive.
 
-![](/media/murmuration.jpg "Starlings over Gretna (Walter Baxter, http://www.geograph.org.uk/photo/1069349)")
+![](/media/murmuration.jpg "Starlings over Gretna \(Walter Baxter, http://www.geograph.org.uk/photo/1069349\)")
 
 Our understanding and social skills in collaboration are poorly developed, especially when addressing complex, unpredictable challenges. Our education systems, business practices, and politics favor competition over collaboration. We have come to equate cooperative societies with communism and equality with sameness. Neither fosters difference. When we think of coordination we often think of rigid, hierarchical structures with conscripted roles, confined responsibilities and blinkered domains of interest. These are most often hostile to people that are different.
 
-![](/media/symbiosis.jpg "Symbiosis in Nature (https://commons.wikimedia.org/w/index.php?curid=1728598)")
+![](/media/symbiosis.jpg "Symbiosis in Nature \(https://commons.wikimedia.org/w/index.php?curid=1728598\)")
 
 As researchers in [biomimicry](https://en.wikipedia.org/wiki/Biomimetics) have discovered, we can find more advanced forms of collaboration and coordination in natural ecosystems. Our advanced, but relatively extremely young and immature species can learn much from the rest of the inhabitants of this globe. Many researchers have become fascinated with the set of simple rules each member follows in a hive or ant colony to achieve very complex collective outcomes. The Golden Rule may be a human version of a simple rule that sustains our human society. We also continue to discover the many [wondrously woven symbiotic relationships](https://en.wikipedia.org/wiki/Symbiosis) between the other members of our world.
 
@@ -115,7 +119,6 @@ The German philosopher [Hans Vaihinger](https://en.wikipedia.org/wiki/Hans_Vaihi
 
 Inclusive design recognizes that diversity is our greatest asset and inclusion is our greatest challenge. To meet this challenge, we must consider the many nested complex adaptive systems that make up the complex adaptive system of systems that is our world. One key to that challenge is recognizing the individual potential in all of us and the awesome potential that we can realize when we include and integrate our collective differences.
 
-***
+\*\*\*
 
 [Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and [Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/).
-
