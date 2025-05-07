@@ -1,10 +1,14 @@
 ---
-title: "The Three Dimensions of Inclusive Design, Part Two"
+title: The Three Dimensions of Inclusive Design, Part Two
+date: 2025-05-07
 author: Jutta Treviranus
-date: 2018-03-30
+excerpt: ''
 thumbnailImage: /media/codesign.jpg
+permalink: ''
+metaTitle: ''
+metaDesc: ''
 ---
-_This is the second part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and increasingly connected world. [Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and [Part Three can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-three/). The three dimensions of the framework are:_
+_This is the second part of a three part blog that describes a guiding framework for inclusive design in a digitally transformed and increasingly connected world.&#32;[Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and&#32;[Part Three can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-three/). The three dimensions of the framework are:_
 
 1. _Recognize, respect, and design for human uniqueness and variability._
 2. _Use inclusive, open & transparent processes, and co-design with people who have a diversity of perspectives, including people that can’t use or have difficulty using the current designs._
@@ -15,7 +19,6 @@ _This is the second part of a three part blog that describes a guiding framework
 ![](/media/codesign.jpg 'Co-designing in a diverse team')
 
 **Design is an awesome responsibility.** There are many things that can go wrong or ways it can go “[sideways](https://www.reddit.com/r/dangerousdesign/).” As argued by [Jaron Lanier](https://docs.google.com/document/d/1AgZt9GGrE7dDxsMHUucxHuvKhtRPpJlUzT0pLLaX93A/edit) “Because computers are growing more powerful at an exponential rate, the designers and programmers of technology must be extremely careful when they make design choices. The consequences of tiny, initially inconsequential decisions often are amplified to become defining, unchangeable rules of our lives.” To avoid doing something embarrassing or dangerous requires more than creativity and a sense of aesthetics. It requires a keen understanding of all the people that will use the design, their goals, and their variable contexts. Design is an especially daunting responsibility when you are designing things that are essential to someone, or designing things that require a significant personal investment from the user.
-
 
 I came to this realization many years ago when I started working with some of the invisible and unsung technology pioneers. These are the individuals that have been labeled “[extreme users](http://returnondisability.com/wp-content/uploads/2012/09/The%20Global%20Economics%20of%20Disability%20-%202013%20Annual%20Report.pdf)” or “edge users.” They have no choice but to risk the frontiers of technology design, and what they personally invest is profound and deep.
 
@@ -51,7 +54,7 @@ This led me to the conviction that we need to recruit the most relevant and auth
 
 You might say this is great for design that is specifically about people with disabilities, or people who face literacy, aging, cultural or geographic barriers to access; what does this have to do with design in general? How is this relevant to mainstream user experience design?
 
-During our 25-year history my team has employed [co-design with edge users and edge scenarios](https://guide.inclusivedesign.ca/) in many design projects that are not directly connected to people with disabilities, whether it is designing better learning management system user experiences, restructuring a government ministry, rethinking what a museum experience should be, planning better emergency procedures, helping to organize more effective transportation systems, working towards more foolproof voting systems, creating more successful open source communities, or designing more effective schools. Through this process we were able to verify [Scott Page’s](https://sites.lsa.umich.edu/scottepage/research-2/diversity-research/) findings that the best planning, prediction, risk aversion and innovation happens when you bring together the broadest range of diverse perspectives. Scott has termed this the “_diversity bonus_.” Our [team](https://idrc.ocadu.ca), the [broader community](https://lists.idrc.ocadu.ca/mailman/listinfo/community), our partners, and the [graduate program I launched](https://www.theglobeandmail.com/report-on-business/rob-commentary/were-all-misfit-consumers-we-need-inclusive-design/article31587796/) are organized around this insight. At a basic level we don’t separate designers, researchers, developers and quality assurance people. They all work together. But also, the people that fill those roles bring the richest variety of perspectives we can muster. However, you cannot invite all possible users or their representative perspectives into your design teams.
+During our 25-year history my team has employed [co-design with edge users and edge scenarios](https://guide.inclusivedesign.ca/) in many design projects that are not directly connected to people with disabilities, whether it is designing better learning management system user experiences, restructuring a government ministry, rethinking what a museum experience should be, planning better emergency procedures, helping to organize more effective transportation systems, working towards more foolproof voting systems, creating more successful open source communities, or designing more effective schools. Through this process we were able to verify [Scott Page’s](https://sites.lsa.umich.edu/scottepage/research-2/diversity-research/) findings that the best planning, prediction, risk aversion and innovation happens when you bring together the broadest range of diverse perspectives. Scott has termed this the “\_diversity bonus\_.” Our [team](https://idrc.ocadu.ca), the [broader community](https://lists.idrc.ocadu.ca/mailman/listinfo/community), our partners, and the [graduate program I launched](https://www.theglobeandmail.com/report-on-business/rob-commentary/were-all-misfit-consumers-we-need-inclusive-design/article31587796/) are organized around this insight. At a basic level we don’t separate designers, researchers, developers and quality assurance people. They all work together. But also, the people that fill those roles bring the richest variety of perspectives we can muster. However, you cannot invite all possible users or their representative perspectives into your design teams.
 
 ## People who can’t use or have difficulty using a design
 
@@ -99,6 +102,6 @@ We have developed a process we call our [“virtuous tornado,”](https://guide.
 
 Many of today’s problems are too complex, people are too diverse, and the context is moving too fast to design a definitive fix or solution. Investment in a definitive fix leads us to ignore the changes, deny the complexity, and exclude the diversity. Inclusive design begins with no predetermined end point and no generalized success criteria but arrives at greater innovation, flexibility, and general usability. Employing an inclusively designed process will achieve a more lasting and productive change than a checklist of design criteria. Inviting the unrecognized technical pioneers to the design table is a gift that keeps on giving.
 
-***
+\*\*\*
 
 [Part One can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-one/), and [Part Three can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-three/).
