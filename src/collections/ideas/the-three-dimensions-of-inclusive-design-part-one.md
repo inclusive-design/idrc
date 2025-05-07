@@ -2,9 +2,11 @@
 title: The Three Dimensions of Inclusive Design, Part One
 date: 2018-03-29
 author: Jutta Treviranus
+excerpt: ''
 thumbnailImage: /media/handprints.jpg
-tags:
-  - featured
+permalink: ''
+metaTitle: ''
+metaDesc: ''
 ---
 ![](/media/handprints.jpg 'Handprints')
 
@@ -87,6 +89,6 @@ A networked system makes it possible to share and pool resources so that we can 
 
 Diversity is our most valuable asset. Inclusion is our biggest challenge. Taking up the challenge will make our design better, and the human community we design with better.
 
-***
+\*\*\*
 
 [Part Two can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-two/), and [Part Three can be found here](/ideas/the-three-dimensions-of-inclusive-design-part-three/).
