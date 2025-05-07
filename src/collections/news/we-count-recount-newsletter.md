@@ -11,7 +11,7 @@ socialImage: /media/Recount%20newsletter%20banner%402x.png
 ---
 The latest news, events and initiatives in the data science, disability and AI communities from the Inclusive Design Research Centre and its We Count community. [Subscribe to the Recount.](https://ocadu.us6.list-manage.com/subscribe?u=df09b45913649b12f2a2aef66&id=97ef2e9d6a)
 
-![the Recount](/media/Recount%20newsletter%20banner%402x.png)Read all past issues of the We Count Recount, IDRC’s monthly newsletter.
+![the Recount](/media/Recount%20newsletter%20banner%402x.png)
 
 <style type="text/css">
 <!--
