@@ -1,9 +1,9 @@
 ---
 layout: layouts/single--news.njk
-title: IDRC's Newsletter
+title: IDRC’s Newsletter
 date: 2025-05-07
 author: IDRC Team
-excerpt: Get access to the current and all past issues of the Recount,  IDRC's monthly newsletter. Each issue is filled with IDRC news, the latest in AI and accessibility and other news from the field of inclusion.
+excerpt: Get access to the current and all past issues of the Recount,  IDRC’s monthly newsletter. Each issue is filled with IDRC news, the latest in AI and accessibility and other news from the field of inclusion.
 permalink: /newsletter/
 metaTitle: ''
 metaDesc: ''
