@@ -1,6 +1,6 @@
 ---
 title: The Three Dimensions of Inclusive Design, Part One
-date: 2018-03-29
+date: 2025-05-07
 author: Jutta Treviranus
 excerpt: ''
 thumbnailImage: /media/handprints.jpg
