@@ -16,7 +16,7 @@ sections:
 
       Clients we have worked with include: **The Canadian Digital Service, IKEA, Lululemon, RBC Ventures, Bell, Telus, Scotiabank, Greater Toronto Airports Authority, CIBC, City of Toronto, Sidewalk Labs, Ontario Cannabis Store, National Geographic, and others.**
 
-      ### **_We want to help you achieve your inclusion and accessibility goals._**
+      > **_We want to help you achieve your inclusion and accessibility goals._**
 
       ## Training
 
@@ -41,13 +41,13 @@ sections:
       - Accessible Graphic Design
       - Physical Space Accessibility
 
-      ### **_Build custom training from our list of topics or start with a prepared workshop that bundles related topics._**
+      > **_Build custom training from our list of topics or start with a prepared workshop that bundles related topics._**
 
       ## Accessibility Assessments
 
       We offer accessibility reviews and audits at every stage of the design process. Grounded in our expertise in inclusive design and digital accessibility and in-depth knowledge of Web Content Accessibility Guidelines (WCAG), we combine extensive manual, assistive technology and automated testing to evaluate websites, mobile apps, and other digital interactions. Based on our findings, we provide the guidance and recommendations you need to create accessible experiences and make your products inclusive to a broader audience. We can review designs, existing websites or apps, and provide documentation such as VPATs, accessibility statements or other accessibility communication
 
-      ### **_We will do accessibility reviews and audits at every stage of the design process._**
+      > **_We will do accessibility reviews and audits at every stage of the design process._**
     fullBleed: false
     imageAltText: ''
     subsectionLevel:
@@ -82,7 +82,7 @@ sections:
     subsectionLevel: '0'
     desktopAlignment: center
 eleventyNavigation:
-  key: IDRC Consulting
   parent: Services
+  key: IDRC Consulting
 ---
 
