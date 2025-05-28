@@ -26,9 +26,13 @@ funderLogos:
 ---
 ![Un Canada accessible Un monde accessible / Accessible Canada Accessible World logo](/media/acaw-cama%20logo.jpeg)
 
+## Merci de votre participation ! 
+
+L'ACAW 2024 a été formidable ! Vous pouvez en apprendre davantage ci-dessous ou en consultant notre rapport de recherche. Joignez-vous à nous pour poursuivre la discussion sur https://groups.io/g/ACAW-CAMA 
+
 ## A propos
 
-**Adoptez notre modèle unique de conférence inversée et passez en  [revue les diverses présentations](https://acaw-cama.idrc.ocadu.ca/fr/) avant l’événement. Cette exploration préalable à la conférence nous permet de consacrer notre temps à relever 24 défis cruciaux dans le cadre de quatre thèmes centraux.**
+**Adoptez notre modèle unique de conférence inversée et passez en&#32;&#8239;[revue les diverses présentations](https://acaw-cama.idrc.ocadu.ca/fr/)&#32;avant l’événement. Cette exploration préalable à la conférence nous permet de consacrer notre temps à relever 24 défis cruciaux dans le cadre de quatre thèmes centraux.**
 
 27 - 28 mai 2024<br />
 _lundi & mardi_
