@@ -28,7 +28,9 @@ funderLogos:
 
 ## Merci de votre participation ! 
 
-L'ACAW 2024 a été formidable ! Vous pouvez en apprendre davantage ci-dessous ou en consultant notre rapport de recherche. Joignez-vous à nous pour poursuivre la discussion sur https://groups.io/g/ACAW-CAMA 
+L'ACAW 2024 a été formidable ! Vous pouvez en apprendre davantage ci-dessous ou en consultant notre rapport de recherche. Joignez-vous à nous pour poursuivre la discussion sur https://groups.io/g/ACAW-CAMA où vous pourrez partager vos idées et consulter les carnets de notes de toutes les sessions.
+
+**&#8239;[revue les diverses présentations](https://acaw-cama.idrc.ocadu.ca/fr/)&#32;**
 
 ## A propos
 
