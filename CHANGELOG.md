@@ -1,7 +1,31 @@
 # Changelog
 
-## [3.1.3](https://github.com/inclusive-design/idrc/compare/v3.1.2...v3.1.3) (2025-04-15)
+## [2025.05.29.1531.5d50563](https://github.com/inclusive-design/idrc/compare/v3.1.3...2025.05.29.1531.5d50563)
 
+### Chores
+
+* chore: switch to new release process (#1228) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1231) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16 (#1227) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v15.5.2 (#1220) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy to v3.1.0 (#1226) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy-plugin-rss to v2.0.4 (#1224) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency start-server-and-test to v2.0.12 (#1223) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v19.8.1 (#1221) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy-img to v6.0.4 (#1222) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdownlint-cli2 to v0.18.1 (#1225) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency npm-run-all2 to v8 (#1219) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update babel monorepo (#1218) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency linkedom to v0.18.10 (#1217) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-jsdoc to v50.6.17 (#1216) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-yml to v1.18.0 (#1215) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update nginx docker tag to v1.28.0 (#1213) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1214) @[renovate[bot]](https://github.com/apps/renovate)
+
+## [3.1.3](https://github.com/inclusive-design/idrc/compare/v3.1.2...v3.1.3) (2025-04-15)
 
 ### Bug Fixes
 
@@ -9,13 +33,11 @@
 
 ## [3.1.2](https://github.com/inclusive-design/idrc/compare/v3.1.1...v3.1.2) (2025-04-15)
 
-
 ### Bug Fixes
 
 * add UIO table of contents, remove font size ([#1184](https://github.com/inclusive-design/idrc/issues/1184)) ([b0f7803](https://github.com/inclusive-design/idrc/commit/b0f7803fba91a73758ff664350d57fa27dfd6ade))
 
 ## [3.1.1](https://github.com/inclusive-design/idrc/compare/v3.1.0...v3.1.1) (2025-04-14)
-
 
 ### Bug Fixes
 
@@ -23,11 +45,9 @@
 
 ## [3.1.0](https://github.com/inclusive-design/idrc/compare/v3.0.4...v3.1.0) (2025-04-14)
 
-
 ### Features
 
 * show project order in CMS list ([#1185](https://github.com/inclusive-design/idrc/issues/1185)) ([a6ef242](https://github.com/inclusive-design/idrc/commit/a6ef242f7b961fd5e8b21e7edaa0a53b3d52811c))
-
 
 ### Bug Fixes
 
@@ -37,13 +57,11 @@
 
 ## [3.0.4](https://github.com/inclusive-design/idrc/compare/v3.0.3...v3.0.4) (2025-03-20)
 
-
 ### Bug Fixes
 
 * **deps:** update dependency @11ty/eleventy-navigation to v1 ([#1194](https://github.com/inclusive-design/idrc/issues/1194)) ([83dab8f](https://github.com/inclusive-design/idrc/commit/83dab8f87895b4be9338b1bec8598b02e15d7e18))
 
 ## [3.0.3](https://github.com/inclusive-design/idrc/compare/v3.0.2...v3.0.3) (2025-02-28)
-
 
 ### Bug Fixes
 
@@ -51,20 +69,17 @@
 
 ## [3.0.2](https://github.com/inclusive-design/idrc/compare/v3.0.1...v3.0.2) (2025-02-27)
 
-
 ### Bug Fixes
 
 * add redirects, adjust permalink config, add French ACAW/CAMA page ([#1177](https://github.com/inclusive-design/idrc/issues/1177)) ([92e1bb3](https://github.com/inclusive-design/idrc/commit/92e1bb3165f66d70a7cbc6375e0a9bc549f5b7e8))
 
 ## [3.0.1](https://github.com/inclusive-design/idrc/compare/v3.0.0...v3.0.1) (2025-02-27)
 
-
 ### Bug Fixes
 
 * project links on their own lines, show funder logo captions ([#1175](https://github.com/inclusive-design/idrc/issues/1175)) ([25d18cd](https://github.com/inclusive-design/idrc/commit/25d18cdeff3a1ba2039d5cbd628b12878a0d834e))
 
 ## [3.0.0](https://github.com/inclusive-design/idrc/compare/v2.7.3...v3.0.0) (2025-02-26)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -78,20 +93,17 @@
 
 ## [2.7.3](https://github.com/inclusive-design/idrc/compare/v2.7.2...v2.7.3) (2025-02-14)
 
-
 ### Bug Fixes
 
 * **deps:** replace deprecated PWA plugin ([#1162](https://github.com/inclusive-design/idrc/issues/1162)) ([0403d94](https://github.com/inclusive-design/idrc/commit/0403d9408453110b41a6d1d87bc43e38cb51aa9a))
 
 ## [2.7.2](https://github.com/inclusive-design/idrc/compare/v2.7.1...v2.7.2) (2025-02-13)
 
-
 ### Bug Fixes
 
 * use links for social media values (fixes [#1153](https://github.com/inclusive-design/idrc/issues/1153)) ([#1160](https://github.com/inclusive-design/idrc/issues/1160)) ([1e13d66](https://github.com/inclusive-design/idrc/commit/1e13d66b09562d869b6ed0b1782bae151387c435))
 
 ## [2.7.1](https://github.com/inclusive-design/idrc/compare/v2.7.0...v2.7.1) (2025-02-13)
-
 
 ### Bug Fixes
 
@@ -100,12 +112,10 @@
 
 ## [2.7.0](https://github.com/inclusive-design/idrc/compare/v2.6.1...v2.7.0) (2025-02-06)
 
-
 ### Features
 
 * add bluesky link ([#1151](https://github.com/inclusive-design/idrc/issues/1151)) ([31793b8](https://github.com/inclusive-design/idrc/commit/31793b8e5443b887452345bcc2d37cf01a5478fd))
 * add Rachel to the team ([#1152](https://github.com/inclusive-design/idrc/issues/1152)) ([1babdd6](https://github.com/inclusive-design/idrc/commit/1babdd64dcf06eec9e0f2b469557ef9668da7032))
-
 
 ### Bug Fixes
 
@@ -116,7 +126,6 @@
 * **deps:** update dependency npm-run-all2 to v7.0.2 ([#1119](https://github.com/inclusive-design/idrc/issues/1119)) ([13a60de](https://github.com/inclusive-design/idrc/commit/13a60de306caa2b53737fd870581c7fe0909ca63))
 
 ## [2.6.1](https://github.com/inclusive-design/idrc/compare/v2.6.0...v2.6.1) (2024-11-25)
-
 
 ### Bug Fixes
 
@@ -129,11 +138,9 @@
 
 ## [2.6.0](https://github.com/inclusive-design/idrc/compare/v2.5.1...v2.6.0) (2024-09-03)
 
-
 ### Features
 
 * add LinkedIn icon and link (resolves [#1029](https://github.com/inclusive-design/idrc/issues/1029)) ([#1034](https://github.com/inclusive-design/idrc/issues/1034)) ([e1767e3](https://github.com/inclusive-design/idrc/commit/e1767e323c217900e3e6b5042a3b211403be5f55))
-
 
 ### Bug Fixes
 
@@ -143,7 +150,6 @@
 * **deps:** update dependency eleventy-plugin-fluid to v2.7.3 ([#1023](https://github.com/inclusive-design/idrc/issues/1023)) ([e705afa](https://github.com/inclusive-design/idrc/commit/e705afa23af4b4b464faa574a7b6c27c43a204d0))
 
 ## [2.5.1](https://github.com/inclusive-design/idrc/compare/v2.5.0...v2.5.1) (2024-08-07)
-
 
 ### Bug Fixes
 
@@ -156,11 +162,9 @@
 
 ## [2.5.0](https://github.com/inclusive-design/idrc/compare/v2.4.1...v2.5.0) (2024-07-05)
 
-
 ### Features
 
 * add sorting logic for resources ([#709](https://github.com/inclusive-design/idrc/issues/709)) ([1e89fc5](https://github.com/inclusive-design/idrc/commit/1e89fc5e9c03d8af06500a0bab31f392a4963b58))
-
 
 ### Bug Fixes
 
@@ -168,7 +172,6 @@
 * **deps:** update dependency npm-run-all2 to v6 ([#969](https://github.com/inclusive-design/idrc/issues/969)) ([bdfaa52](https://github.com/inclusive-design/idrc/commit/bdfaa5200ac299a9014c4d4dcef1aefb2e3defb0))
 
 ## [2.4.1](https://github.com/inclusive-design/idrc/compare/v2.4.0...v2.4.1) (2024-06-07)
-
 
 ### Bug Fixes
 
@@ -179,11 +182,9 @@
 
 ## [2.4.0](https://github.com/inclusive-design/idrc/compare/v2.3.0...v2.4.0) (2024-04-05)
 
-
 ### Features
 
 * set up event promo section ([#879](https://github.com/inclusive-design/idrc/issues/879)) ([2ee3fbb](https://github.com/inclusive-design/idrc/commit/2ee3fbbe894a381b6ae40519cc5a968922dfe584))
-
 
 ### Bug Fixes
 
@@ -195,13 +196,11 @@
 
 ## [2.3.0](https://github.com/inclusive-design/idrc/compare/v2.2.1...v2.3.0) (2023-11-23)
 
-
 ### Features
 
 * remove analytics (resolves [#813](https://github.com/inclusive-design/idrc/issues/813)) ([#814](https://github.com/inclusive-design/idrc/issues/814)) ([f532e22](https://github.com/inclusive-design/idrc/commit/f532e22ebddbf4692d6346ff835b685266cc3a9d))
 
 ## [2.2.1](https://github.com/inclusive-design/idrc/compare/v2.2.0...v2.2.1) (2023-10-10)
-
 
 ### Bug Fixes
 
@@ -209,11 +208,9 @@
 
 ## [2.2.0](https://github.com/inclusive-design/idrc/compare/v2.1.2...v2.2.0) (2023-10-04)
 
-
 ### Features
 
 * handle slugs explicitly, update eleventy-plugin-fluid ([#743](https://github.com/inclusive-design/idrc/issues/743)) ([7ba8c58](https://github.com/inclusive-design/idrc/commit/7ba8c5814874fe9c5d328666d6bbe064338d6d2c))
-
 
 ### Bug Fixes
 
@@ -221,13 +218,11 @@
 
 ## [2.1.2](https://github.com/inclusive-design/idrc/compare/v2.1.1...v2.1.2) (2023-09-28)
 
-
 ### Bug Fixes
 
 * more sensible project title setup (resolves [#719](https://github.com/inclusive-design/idrc/issues/719)) ([#733](https://github.com/inclusive-design/idrc/issues/733)) ([ea33d60](https://github.com/inclusive-design/idrc/commit/ea33d601018f4e71052575f2473c14c2db91e5a7))
 
 ## [2.1.1](https://github.com/inclusive-design/idrc/compare/v2.1.0...v2.1.1) (2023-09-27)
-
 
 ### Bug Fixes
 
@@ -235,14 +230,12 @@
 
 ## [2.1.0](https://github.com/inclusive-design/idrc/compare/v2.0.2...v2.1.0) (2023-09-27)
 
-
 ### Features
 
 * disallow indexing of /lib ([#696](https://github.com/inclusive-design/idrc/issues/696)) ([0e0c634](https://github.com/inclusive-design/idrc/commit/0e0c634eff4b493d3b1d7a81cba1e6c03f0a6376))
 * lint JS in Markdown ([#688](https://github.com/inclusive-design/idrc/issues/688)) ([10bd83b](https://github.com/inclusive-design/idrc/commit/10bd83b5e68c40b1baca33bdb4b0e942862b7e9c))
 * replace Netlify CMS with Decap CMS ([#699](https://github.com/inclusive-design/idrc/issues/699)) ([e3beeee](https://github.com/inclusive-design/idrc/commit/e3beeee6da4108800bcb690e85e0308327d0cc62))
 * replace project permalink field with slug field, restore missing order field, fix localization ([#724](https://github.com/inclusive-design/idrc/issues/724)) ([022e57c](https://github.com/inclusive-design/idrc/commit/022e57ce39177ba49c68399e832461da0c1db2f8))
-
 
 ### Bug Fixes
 
@@ -254,14 +247,12 @@
 
 ## [2.0.2](https://github.com/inclusive-design/idrc/compare/v2.0.1...v2.0.2) (2023-08-11)
 
-
 ### Bug Fixes
 
 * add EDS redirect ([e70b34e](https://github.com/inclusive-design/idrc/commit/e70b34e442a319011ba3416e3254858c18ef56b9))
 * redirect EDS page ([#672](https://github.com/inclusive-design/idrc/issues/672)) ([c6141ac](https://github.com/inclusive-design/idrc/commit/c6141ac1d7864db07460102f2e9585db044cd1db))
 
 ## [2.0.1](https://github.com/inclusive-design/idrc/compare/v2.0.0...v2.0.1) (2023-08-11)
-
 
 ### Bug Fixes
 
@@ -272,7 +263,6 @@
 
 ## [2.0.0](https://github.com/inclusive-design/idrc/compare/v1.5.0...v2.0.0) (2023-08-10)
 
-
 ### ⚠ BREAKING CHANGES
 
 * update site architecture with new Trivet features ([#665](https://github.com/inclusive-design/idrc/issues/665))
@@ -282,7 +272,6 @@
 * update site architecture with new Trivet features ([#665](https://github.com/inclusive-design/idrc/issues/665)) ([a79ba18](https://github.com/inclusive-design/idrc/commit/a79ba18542438fb4bcfcc9306ac6a9fb6d5652a6))
 * update to eleventy-plugin-fluid asset processing ([#651](https://github.com/inclusive-design/idrc/issues/651)) ([ae2ebb8](https://github.com/inclusive-design/idrc/commit/ae2ebb8c5a3d36e186adb02e0c111ac77e6bf2fa))
 
-
 ### Bug Fixes
 
 * interaction styles for navigation bar and footer links ([#642](https://github.com/inclusive-design/idrc/issues/642)) ([28a4aca](https://github.com/inclusive-design/idrc/commit/28a4acaf70f3e13be60c31d19c94654f78181852))
@@ -290,14 +279,12 @@
 
 ## [1.5.0](https://github.com/inclusive-design/idrc/compare/v1.4.0...v1.5.0) (2023-06-22)
 
-
 ### Features
 
 * add external and download icons to links automatically ([#639](https://github.com/inclusive-design/idrc/issues/639)) ([f87ffc5](https://github.com/inclusive-design/idrc/commit/f87ffc55f9d5069e7927e4f837226bd8ad2fd2fc))
 * add multilingual support to projects content type (resolves [#627](https://github.com/inclusive-design/idrc/issues/627), [#628](https://github.com/inclusive-design/idrc/issues/628), [#629](https://github.com/inclusive-design/idrc/issues/629)) ([#630](https://github.com/inclusive-design/idrc/issues/630)) ([de3a1fb](https://github.com/inclusive-design/idrc/commit/de3a1fb3993760eca85b793632900ad5205a0288))
 * add toggle to allow news and ideas to be archived ([#635](https://github.com/inclusive-design/idrc/issues/635)) (resolves [#170](https://github.com/inclusive-design/idrc/issues/170)) ([7b79c75](https://github.com/inclusive-design/idrc/commit/7b79c755f51d67c2161e32116652ea35a1cbc8a4))
 * redirect legacy 443-whatisinclusivedesign to /about/philosophy/ ([#424](https://github.com/inclusive-design/idrc/issues/424)) ([fa80d59](https://github.com/inclusive-design/idrc/commit/fa80d5906db6ef044bfa2fa4fecdfe5948f46c15))
-
 
 ### Bug Fixes
 
@@ -316,12 +303,10 @@
 
 ## [1.4.0](https://github.com/inclusive-design/idrc/compare/v1.3.1...v1.4.0) (2022-10-26)
 
-
 ### Features
 
 * Redirect achecker.ca to primary domain ([#331](https://github.com/inclusive-design/idrc/issues/331)) ([4293fae](https://github.com/inclusive-design/idrc/commit/4293fae1711467882ab85b234f70f706b213ce04))
 * update projects, add Weavly and TAE ([#405](https://github.com/inclusive-design/idrc/issues/405)) ([7c50b76](https://github.com/inclusive-design/idrc/commit/7c50b76fac6aa468d15222b5ab79113ae1b29393))
-
 
 ### Bug Fixes
 
@@ -331,13 +316,11 @@
 
 ### [1.3.1](https://www.github.com/inclusive-design/idrc/compare/v1.3.0...v1.3.1) (2021-12-14)
 
-
 ### Bug Fixes
 
 * update phone number ([#266](https://www.github.com/inclusive-design/idrc/issues/266)) ([e37fd19](https://www.github.com/inclusive-design/idrc/commit/e37fd19fd2c65baf85c6ccd60a9e2e5ccf56db41))
 
 ## [1.3.0](https://www.github.com/inclusive-design/idrc/compare/v1.2.3...v1.3.0) (2021-12-06)
-
 
 ### Features
 
@@ -346,7 +329,6 @@
 * add improved http security headers ([4c47771](https://www.github.com/inclusive-design/idrc/commit/4c477716d0455fd03047720f082f3fed0ca3a1d6))
 * redirect /idrc-online pages to legacy website ([9a6b3d6](https://www.github.com/inclusive-design/idrc/commit/9a6b3d67daf4c18c306c3324854c76e90e8d6ee9))
 * replace custom filters with eleventy-plugin-fluid ([#113](https://www.github.com/inclusive-design/idrc/issues/113)) ([3a4285a](https://www.github.com/inclusive-design/idrc/commit/3a4285a214ea636c8f84a4e726eebf2b8142a740))
-
 
 ### Bug Fixes
 
