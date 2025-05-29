@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.1.4](https://github.com/inclusive-design/idrc/compare/v3.1.3...v3.1.4) (2025-05-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency npm-run-all2 to v8 ([#1219](https://github.com/inclusive-design/idrc/issues/1219)) ([9212af3](https://github.com/inclusive-design/idrc/commit/9212af3ab7db4a2d5b1e69674baeeaa7b3b2e0d4))
+* resolve linting errors ([2f96284](https://github.com/inclusive-design/idrc/commit/2f96284753ca48a60f0a7fb1bc898e0e56b52534))
+
 ## [3.1.3](https://github.com/inclusive-design/idrc/compare/v3.1.2...v3.1.3) (2025-04-15)
 
 
