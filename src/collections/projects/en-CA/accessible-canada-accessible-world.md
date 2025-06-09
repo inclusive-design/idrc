@@ -34,7 +34,13 @@ funderLogos:
 
 ## Thank you for participating!
 
-ACAW 2024 was amazing, you can learn more about it below or by reading our research report. Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA ](https://groups.io/g/ACAW-CAMA)where you can share ideas and read the notebooks from all sessions. 
+ACAW 2024 was amazing, you can learn more about it below or by reading our research report. 
+
+### Continuing the Conversation
+
+Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA ](https://groups.io/g/ACAW-CAMA)where you can share ideas and read the notebooks from all sessions. 
+
+### Review the Presentations
 
 [**review the diverse array of presentations**](https://acaw-cama.idrc.ocadu.ca/en/)
 
