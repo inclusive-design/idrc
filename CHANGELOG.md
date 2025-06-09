@@ -1,5 +1,20 @@
 # Changelog
 
+## [2025.06.09.1328.af46ea4](https://github.com/inclusive-design/idrc/compare/2025.05.29.1531.5d50563...2025.06.09.1328.af46ea4)
+
+### Chores
+
+* chore(cms): remove Jonathan Hung from staff page (#1238) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1239) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency linkedom to v0.18.11 (#1236) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy to v3.1.1 (#1235) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update babel monorepo (#1232) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-jsdoc to v50.7.1 (#1233) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1234) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.05.29.1531.5d50563](https://github.com/inclusive-design/idrc/compare/v3.1.3...2025.05.29.1531.5d50563)
 
 ### Chores
