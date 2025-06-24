@@ -40,9 +40,9 @@ ACAW 2024 was amazing, you can learn more about it below or by reading our resea
 
 Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA ](https://groups.io/g/ACAW-CAMA)where you can share ideas and read the notebooks from all sessions. 
 
-### Review the Presentations
+### Presentations
 
-[**review the diverse array of presentations**](https://acaw-cama.idrc.ocadu.ca/en/)
+[**Review over 50 presentations on the Conference Presentations site**](https://acaw-cama.idrc.ocadu.ca/en/)
 
 ## **About**
 
