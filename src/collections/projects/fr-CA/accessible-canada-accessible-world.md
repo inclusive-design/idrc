@@ -42,8 +42,6 @@ Veuillez vous joindre à nous pour poursuivre la conversation sur https://groups
 
 [Voir plus de 50 présentations sur le site des présentations de la conférence](https://acaw-cama.idrc.ocadu.ca/fr/)
 
-**__**
-
 ## A propos
 
 **Adoptez notre modèle unique de conférence inversée et passez en&#32;&#8239;[revue les diverses présentations](https://acaw-cama.idrc.ocadu.ca/fr/)&#32;avant l’événement. Cette exploration préalable à la conférence nous permet de consacrer notre temps à relever 24 défis cruciaux dans le cadre de quatre thèmes centraux.**
