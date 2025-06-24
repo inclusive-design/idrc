@@ -48,6 +48,8 @@ Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA
 
 [**Review over 50 presentations on the Conference Presentations site**](https://acaw-cama.idrc.ocadu.ca/en/)
 
+**__**
+
 ## **About**
 
 **Embrace our unique flipped conference model and&#32;[review the diverse array of presentations](https://acaw-cama.idrc.ocadu.ca/en/)&#32;before the event. This pre-conference exploration allows us to dedicate our time together to tackle 24 critical challenges across four pivotal themes.**
