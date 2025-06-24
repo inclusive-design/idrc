@@ -28,11 +28,21 @@ funderLogos:
 
 ## Merci de votre participation ! 
 
-L'ACAW 2024 a été formidable ! Vous pouvez en apprendre davantage ci-dessous ou en consultant notre rapport de recherche. Joignez-vous à nous pour poursuivre la discussion sur https://groups.io/g/ACAW-CAMA où vous pourrez partager vos idées et consulter les carnets de notes de toutes les sessions.
+L'événement CAMA 2024 a réuni plus de 400 participants de partout au Canada et de l'étranger, en personne et en ligne, dont des personnes handicapées, des chercheurs, des décideurs et des experts techniques.
 
-## Présentations
+### Lire le rapport
 
-[**Consultez plus de 50 présentations sur le site Présentations de la conférence**](https://acaw-cama.idrc.ocadu.ca/fr/)
+Télécharger le rapport de recherche de l'ACAW (document Word).
+
+### Poursuivre la conversation
+
+Veuillez vous joindre à nous pour poursuivre la conversation sur https://groups.io/g/ACAW-CAMA, où vous pourrez partager des idées et consulter les carnets de notes de toutes les séances.
+
+### Consulter les présentations
+
+[Voir plus de 50 présentations sur le site des présentations de la conférence](https://acaw-cama.idrc.ocadu.ca/fr/)
+
+**__**
 
 ## A propos
 

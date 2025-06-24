@@ -34,13 +34,17 @@ funderLogos:
 
 ## Thank you for participating!
 
-ACAW 2024 was amazing, you can learn more about it below or by reading our research report. 
+The ACAW 2024 event brought together over 400 participants from across Canada and internationally, in person, and online, including persons with disabilities, researchers, policymakers, and technical experts. 
 
-### Continuing the Conversation
+### Read the report
+
+Download the ACAW research report (Word document). 
+
+### Continue the conversation
 
 Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA ](https://groups.io/g/ACAW-CAMA)where you can share ideas and read the notebooks from all sessions. 
 
-### Presentations
+### Review the presentations
 
 [**Review over 50 presentations on the Conference Presentations site**](https://acaw-cama.idrc.ocadu.ca/en/)
 
