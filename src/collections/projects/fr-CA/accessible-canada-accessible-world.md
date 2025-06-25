@@ -32,7 +32,7 @@ L'événement CAMA 2024 a réuni plus de 400 participants de partout au Canada e
 
 ### Lire le rapport
 
-[Visitez la page du rapport pour télécharger le rapport complet ou ](https://idrc.ocadu.ca/projets/acaw-cama/rapport/)[résumé exécutif en langage simple](https://idrc.ocadu.ca/projets/acaw-cama/rapport/)[.](https://idrc.ocadu.ca/projets/acaw-cama/rapport/)
+[Visitez la page du rapport pour télécharger le rapport complet ou résumé exécutif en langage simple.](https://idrc.ocadu.ca/projets/acaw-cama/rapport/)
 
 ### Poursuivre la conversation
 
