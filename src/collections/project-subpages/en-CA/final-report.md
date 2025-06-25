@@ -8,8 +8,6 @@ order: 4
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-Download our final research report : 
-
-Final Research Report 
+[Download the ACAW research report (Word document)](https://idrc.ocadu.ca/media/ACAW_CAMA_2025_Research_Report_En.docx).
 
 Plain Language, Executive Summary
