@@ -102,7 +102,7 @@ export default (eleventyConfig) => {
         return md.render(value);
     });
 
-    eleventyConfig.addFilter("findByKey", (navItems, value, lang = null) => {
+    eleventyConfig.addFilter("findByKey", (navItems, value, lang) => {
         return navItems.filter((item) => {
             if (lang) {
                 return item.key === value && item.lang === lang;
