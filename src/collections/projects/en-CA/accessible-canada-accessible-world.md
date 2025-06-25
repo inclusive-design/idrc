@@ -38,7 +38,7 @@ The ACAW 2024 event brought together over 400 participants from across Canada an
 
 ### Read the report
 
-[Visit the report page to download the full report or the executive summary.](https://idrc.ocadu.ca/projects/acaw-cama/report/)
+[Visit the report page to download the full report or executive summary.](https://idrc.ocadu.ca/projects/acaw-cama/report/)
 
 ### Continue the conversation
 
