@@ -1,5 +1,17 @@
 # Changelog
 
+## [2025.06.25.1754.de69794](https://github.com/inclusive-design/idrc/compare/2025.06.09.1328.af46ea4...2025.06.25.1754.de69794)
+
+### Bug Fixes
+
+* fix: localize parent page correctly (resolves #1247) (#1248) [@chosww](https://github.com/chosww)
+
+### Dependencies
+
+* chore(deps): update dependency eslint-plugin-jsdoc to v51 (#1241) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1243) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update nginx docker tag to v1.29.0 (#1246) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.06.09.1328.af46ea4](https://github.com/inclusive-design/idrc/compare/2025.05.29.1531.5d50563...2025.06.09.1328.af46ea4)
 
 ### Chores
