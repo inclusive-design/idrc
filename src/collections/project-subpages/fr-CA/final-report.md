@@ -8,8 +8,6 @@ order: 4
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-**T**éléchargez notre rapport de recherche final.
+Téléchargez le rapport de recherche de l'ACAW (document Word)
 
-Rapport de recherche final
-
-Résumé exécutif en langage simple
+Résumé exécutif en langage simple (bientôt disponible)
