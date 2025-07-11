@@ -1,5 +1,9 @@
 # Changelog
 
+## [2025.07.11.1149.497e69e](https://github.com/inclusive-design/idrc/compare/2025.06.25.1754.de69794...2025.07.11.1149.497e69e)
+
+* No changes
+
 ## [2025.06.25.1754.de69794](https://github.com/inclusive-design/idrc/compare/2025.06.09.1328.af46ea4...2025.06.25.1754.de69794)
 
 ### Bug Fixes
