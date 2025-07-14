@@ -1,5 +1,15 @@
 # Changelog
 
+## [2025.07.14.1626.ccd961f](https://github.com/inclusive-design/idrc/compare/2025.06.25.1754.de69794...2025.07.14.1626.ccd961f)
+
+### Dependencies
+
+* chore(deps): update dependency eslint-plugin-jsdoc to v51.3.4 (#1250) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update babel monorepo to v7.28.0 (#1249) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy to v3.1.2 (#1245) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.1.2 (#1242) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1251) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.06.25.1754.de69794](https://github.com/inclusive-design/idrc/compare/2025.06.09.1328.af46ea4...2025.06.25.1754.de69794)
 
 ### Bug Fixes
