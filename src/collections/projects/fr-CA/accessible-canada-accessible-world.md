@@ -48,6 +48,9 @@ Veuillez vous joindre à nous pour poursuivre la conversation sur https://groups
 
 [Télécharger la transcription descriptive](https://idrc.cachefly.net/acaw-cama/home/accessible-canada-accessible-world-transcript-fr.docx) [Vidéo LSQ](https://youtu.be/ldYQ9SypYgg)
 
+<br />
+<br />
+
 **Adoptez notre modèle unique de conférence inversée et passez en&#32;&#8239;[revue les diverses présentations](https://acaw-cama.idrc.ocadu.ca/fr/)&#32;avant l’événement. Cette exploration préalable à la conférence nous permet de consacrer notre temps à relever 24 défis cruciaux dans le cadre de quatre thèmes centraux.**
 
 27 - 28 mai 2024<br />
