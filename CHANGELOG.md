@@ -1,5 +1,12 @@
 # Changelog
 
+## [2025.07.16.1659.a755a50](https://github.com/inclusive-design/idrc/compare/2025.07.14.1626.ccd961f...2025.07.16.1659.a755a50)
+
+### Chores
+
+* chore(cms): add videos to ACAW project page (#1257) [@greatislander](https://github.com/greatislander)
+* chore(cms): update staff list (#1253) [@greatislander](https://github.com/greatislander)
+
 ## [2025.07.14.1626.ccd961f](https://github.com/inclusive-design/idrc/compare/2025.06.25.1754.de69794...2025.07.14.1626.ccd961f)
 
 ### Dependencies
