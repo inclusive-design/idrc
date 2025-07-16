@@ -50,6 +50,13 @@ Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA
 
 ## **About**
 
+<https://www.youtube.com/watch?v=0OavhX2hraE>
+
+[Download descriptive transcript](https://idrc.cachefly.net/acaw-cama/home/accessible-canada-accessible-world-transcript2-en.docx) [ASL Video](https://youtu.be/v38jv-OpPkU)
+
+<br />
+<br />
+
 **Embrace our unique flipped conference model and&#32;[review the diverse array of presentations](https://acaw-cama.idrc.ocadu.ca/en/)&#32;before the event. This pre-conference exploration allows us to dedicate our time together to tackle 24 critical challenges across four pivotal themes.**
 
 May 27 - 28, 2024
