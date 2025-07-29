@@ -67,7 +67,7 @@ A disability is not a medical issue or an impairment to be fixed. A disability c
 At the end of August 2025, this project expects to:
 
 - Share resources, findings, and insights broadly with community and national disability organizations, and with financial institutions in Canada.
-- Publish a report (available as a [Word document](https://idrc.cachefly.net/web/financial-inclusion/Community-Perspectives-on-Financial-Inclusion.docx) or a [PDF document](https://idrc.cachefly.net/web/financial-inclusion/Community-Perspectives-on-Financial-Inclusion.pdf)) about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
+- Publish a report (available as a [Word document](https://idrc.cachefly.net/financial-inclusion/Community-Perspectives-on-Financial-Inclusion.docx) or a [PDF document](https://idrc.cachefly.net/financial-inclusion/Community-Perspectives-on-Financial-Inclusion.pdf)) about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
 - Outline a plan for sustaining ongoing community engagement, advocacy, and education on issues related to financial inclusion.
 
 ### Mission
