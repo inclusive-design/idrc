@@ -8,6 +8,6 @@ order: 4
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
-[Download the ACAW research report (Word document)](https://idrc.ocadu.ca/media/ACAW_CAMA_2025_Research_Report_En.docx).
+[Download the ACAW research report (Word document)](https://idrc.ocadu.ca/media/ACAW_CAMA_2024_Research_Report_En.docx).
 
 Plain Language, Executive Summary (coming soon)
