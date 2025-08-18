@@ -10,7 +10,7 @@ thumbnailAltText: ''
 ---
 [Téléchargez le rapport de recherche de l'ACAW (document Word)](https://idrc.ocadu.ca/media/CAMA_ACAW_2024_Research_Report_Fr.docx)
 
-Téléchargez la résumé exécutif en langage simple (bientôt disponible)
+[Téléchargez la résumé exécutif en langage simple (document Word)](https://idrc.ocadu.ca/media/ACAW_Research_Report_Executive_Summary_Fr.docx)
 
 ### Résumé exécutif en langage simple
 
