@@ -20,11 +20,9 @@ Le projet Un Canada accessible, Un monde accessible (CAMA) 2024 a été dirigé 
 
 L'objectif était de réunir des personnes handicapées, des experts et des membres de la communauté pour discuter des problèmes d'accessibilité et co-concevoir des façons de les résoudre. Le projet visait à :
 
-•         Établir un réseau national d’experts en accessibilité.
-
-•         Impliquer les personnes handicapées dans toutes les parties de la recherche.
-
-•         Partager des connaissances, des outils et des idées pour éliminer les obstacles.
+- Établir un réseau national d’experts en accessibilité.
+- Impliquer les personnes handicapées dans toutes les parties de la recherche.
+- Partager des connaissances, des outils et des idées pour éliminer les obstacles.
 
 Ce travail a directement soutenu les priorités du programme de financement en aidant à identifier, à éliminer et à prévenir les obstacles à l’accessibilité dans les domaines sous responsabilité fédérale.
 
@@ -34,11 +32,9 @@ On a tenu une grosse conférence en mai 2024 à Montréal. On l'appelait Canada 
 
 #### Qu'est-ce qui a rendu la conférence spéciale ?
 
-•         Modèle inversé : au lieu de regarder les présentations pendant l’événement, les gens les regardaient à l’avance. Ça a donné plus de temps à la discussion et à la résolution de problèmes pendant la conférence.
-
-•         Conception inclusive : L'événement a été conçu pour être accessible à tous. Il comprenait la langue des signes, des sous-titres, des salles tranquilles et un soutien aux animaux d’assistance.
-
-•         Grande participation : Plus de 400 personnes se sont jointes à nous, de partout au Canada et dans d’autres pays.
+- Modèle inversé : au lieu de regarder les présentations pendant l’événement, les gens les regardaient à l’avance. Ça a donné plus de temps à la discussion et à la résolution de problèmes pendant la conférence.
+- Conception inclusive : L'événement a été conçu pour être accessible à tous. Il comprenait la langue des signes, des sous-titres, des salles tranquilles et un soutien aux animaux d’assistance.
+- Grande participation : Plus de 400 personnes se sont jointes à nous, de partout au Canada et dans d’autres pays.
 
 #### Un événement de recherche mené par la communauté
 
@@ -48,13 +44,10 @@ La recherche s'appuie sur l'expérience vécue et les connaissances techniques. 
 
 #### Quels ont été les résultats ?
 
-•         L’événement a permis de créer un solide réseau de personnes travaillant sur l’accessibilité.
-
-•         Cela a donné lieu à de nouveaux projets de recherche et propositions, notamment des travaux sur l’IA, la planification d’urgence et la communication inclusive.
-
-•         Il a montré comment organiser un événement hybride de grande envergure, accessible et inclusif.
-
-•         Cela a donné aux personnes handicapées une véritable voix dans l’élaboration des normes futures.
+- L’événement a permis de créer un solide réseau de personnes travaillant sur l’accessibilité.
+- Cela a donné lieu à de nouveaux projets de recherche et propositions, notamment des travaux sur l’IA, la planification d’urgence et la communication inclusive.
+- Il a montré comment organiser un événement hybride de grande envergure, accessible et inclusif.
+- Cela a donné aux personnes handicapées une véritable voix dans l’élaboration des normes futures.
 
 ## Poursuivre la conversation
 
