@@ -10,7 +10,7 @@ thumbnailAltText: ''
 ---
 [Download the ACAW research report (Word document)](https://idrc.ocadu.ca/media/ACAW_CAMA_2024_Research_Report_En.docx)
 
-[Download the Plain Language, Executive Summary (Word document)](https://idrc.ocadu.ca/media/ACAW Research Report Executive Summary_En.docx)
+[Download the Plain Language, Executive Summary (Word document)](https://idrc.ocadu.ca/media/ACAW_Research_Report_Executive_Summary_En.docx)
 
 ### Plain Language Executive Summary
 
