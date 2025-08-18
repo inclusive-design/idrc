@@ -8,6 +8,10 @@ order: 4
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
+[Téléchargez le rapport de recherche de l'ACAW (document Word)](https://idrc.ocadu.ca/media/CAMA_ACAW_2024_Research_Report_Fr.docx)
+
+Téléchargez la résumé exécutif en langage simple (bientôt disponible)
+
 ## Résumé exécutif en langage simple
 
 Le projet Un Canada accessible, Un monde accessible (CAMA) 2024 a été dirigé par le Centre de recherche sur la conception inclusive de l'Université OCAD. Il a été financé par Normes d’accessibilité Canada pour aider à améliorer les normes d’accessibilité au Canada.
@@ -65,7 +69,3 @@ Vous pouvez également explorer la collection complète des présentations et de
 ## Pourquoi c'est important ?
 
 Ce projet a aidé le Canada à se rapprocher de son objectif de devenir un pays sans obstacles. Elle a montré comment une recherche inclusive et menée par la communauté peut mener à de meilleures politiques et normes. Il a aussi créé des outils et des idées que d'autres peuvent utiliser pour rendre leur travail plus inclusif.
-
-[Téléchargez le rapport de recherche de l'ACAW (document Word)](https://idrc.ocadu.ca/media/CAMA_ACAW_2024_Research_Report_Fr.docx)
-
-Téléchargez la résumé exécutif en langage simple (bientôt disponible)

@@ -8,6 +8,10 @@ order: 4
 thumbnailImage: ''
 thumbnailAltText: ''
 ---
+[Download the ACAW research report (Word document)](https://idrc.ocadu.ca/media/ACAW_CAMA_2024_Research_Report_En.docx).
+
+Download the Plain Language, Executive Summary (coming soon)
+
 ## Plain Language Executive Summary
 
 The Accessible Canada, Accessible World (ACAW) 2024 project was led by the Inclusive Design Research Centre at OCAD University. It was funded by Accessibility Standards Canada to help improve accessibility standards in Canada.
@@ -58,7 +62,3 @@ You can also explore the full collection of presentations and materials from the
 ## Why Does This Matter?
 
 This project helped Canada move closer to its goal of being a barrier-free country. It showed how inclusive, community-led research can lead to better policies and standards. It also created tools and ideas that others can use to make their work more inclusive.
-
-[Download the ACAW research report (Word document)](https://idrc.ocadu.ca/media/ACAW_CAMA_2024_Research_Report_En.docx).
-
-Download the Plain Language, Executive Summary (coming soon)
