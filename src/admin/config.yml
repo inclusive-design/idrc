@@ -594,7 +594,7 @@ collections:
       - {label: Full Name, name: title, widget: string}
       - {label: Job Title, name: job, widget: string}
       - {label: Pronouns, name: pronouns, widget: string}
-      - {label: Email Address, name: email, widget: string}
+      - {label: Email Address, name: email, widget: string, required: false}
       - label: Personal Website
         name: website
         widget: string
