@@ -1,5 +1,9 @@
 # Changelog
 
+## [2025.08.26.1440.e22a53b](https://github.com/inclusive-design/idrc/compare/2025.08.11.2119.59b8757...2025.08.26.1440.e22a53b)
+
+* No changes
+
 ## [2025.08.11.2119.59b8757](https://github.com/inclusive-design/idrc/compare/2025.07.14.1626.ccd961f...2025.08.11.2119.59b8757)
 
 * fix: update ACAW report link (#1265) [@chosww](https://github.com/chosww)
