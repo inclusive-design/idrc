@@ -67,7 +67,7 @@ jobs:
           issue-number: ${{ github.event.number }}
           body-includes: Visual Regression Test Results
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         if: always()
         with:
           issue-number: ${{ github.event.number }}
