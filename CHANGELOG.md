@@ -1,5 +1,31 @@
 # Changelog
 
+## [2025.11.14.0233.69d3f88](https://github.com/inclusive-design/idrc/compare/2025.08.26.1440.e22a53b...2025.11.14.0233.69d3f88)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1284) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-jsdoc to v61 (#1279) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency rimraf to v6.1.0 (#1275) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdownlint-cli2 to v0.19.0 (#1274) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-yml to v1.19.0 (#1273) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency linkedom to v0.18.12 (#1271) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20 (major) (#1278) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update babel monorepo to v7.28.5 (#1268) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency eleventy-plugin-fluid to v3.1.3 (#1262) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.2.6 (#1261) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency start-server-and-test to v2.1.2 (#1260) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency cross-env to v10 (#1258) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-jsdoc to v51.4.1 (#1254) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/setup-node action to v6 (#1276) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update peter-evans/find-comment action to v4 (#1282) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update peter-evans/create-or-update-comment action to v5 (#1281) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update node.js to v24 (#1280) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/upload-artifact action to v5 (#1277) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update nginx docker tag to v1.29.3 (#1267) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/checkout action to v5 (#1263) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1283) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.08.26.1440.e22a53b](https://github.com/inclusive-design/idrc/compare/2025.08.11.2119.59b8757...2025.08.26.1440.e22a53b)
 
 * No changes
