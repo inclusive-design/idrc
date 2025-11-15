@@ -10,9 +10,9 @@ headerTextColor: black
 sections:
   - title: With the IDRC
     content: |-
-      ### [General inquiry](mailto:community@idrc.ocadu.ca)
+      ### [General inquiry](mailto:idrc@ocadu.ca)
 
-       Email our Community Embassadors at [community@idrc.ocadu.ca](mailto:community@idrc.ocadu.ca).
+       Send us an email at [idrc@ocadu.ca](mailto:idrc@ocadu.ca).
 
       ### [With a specific person](/about/team/)
 
@@ -43,6 +43,7 @@ sections:
     desktopWidth: two-thirds
     subsectionLevel: 3
 eleventyNavigation:
-  key: Connect
   order: 7
+  key: Connect
 ---
+
