@@ -6,7 +6,7 @@ linking:
   type: page
   slug: acaw-cama
 shortTitle: ACAW/CAMA
-order: 10
+order: 15
 thumbnailImage: /media/acaw-logo-no-words.png
 thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: |-
@@ -34,7 +34,7 @@ funderLogos:
 
 ## Thank you for participating!
 
-The ACAW 2024 event brought together over 400 participants from across Canada and internationally, in person, and online, including persons with disabilities, researchers, policymakers, and technical experts. 
+The ACAW 2024 event brought together over 400 participants from across Canada and internationally, in person, and online, including persons with disabilities, researchers, policymakers, and technical experts.
 
 ### Read the report
 
@@ -42,7 +42,7 @@ The ACAW 2024 event brought together over 400 participants from across Canada an
 
 ### Continue the conversation
 
-Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA ](https://groups.io/g/ACAW-CAMA)where you can share ideas and read the notebooks from all sessions. 
+Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA ](https://groups.io/g/ACAW-CAMA)where you can share ideas and read the notebooks from all sessions.
 
 ### Review the presentations
 
@@ -57,7 +57,7 @@ Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA
 <br />
 <br />
 
-**Embrace our unique flipped conference model and&#32;[review the diverse array of presentations](https://acaw-cama.idrc.ocadu.ca/en/)&#32;before the event. This pre-conference exploration allows us to dedicate our time together to tackle 24 critical challenges across four pivotal themes.**
+**Embrace our unique flipped conference model and [review the diverse array of presentations](https://acaw-cama.idrc.ocadu.ca/en/) before the event. This pre-conference exploration allows us to dedicate our time together to tackle 24 critical challenges across four pivotal themes.**
 
 May 27 - 28, 2024
 _Monday & Tuesday_
@@ -65,11 +65,11 @@ _Monday & Tuesday_
 **Montreal, Quebec, Canada**
 1450 Guy Street
 
-**Welcome to Accessible Canada — Accessible World**, a conference that aims to advance accessibility and inclusive design in various domains. We live in a world where accessibility barriers are diverse and complex, and new ones are emerging at an exponential rate. 
+**Welcome to Accessible Canada — Accessible World**, a conference that aims to advance accessibility and inclusive design in various domains. We live in a world where accessibility barriers are diverse and complex, and new ones are emerging at an exponential rate.
 
 - Who and what are we missing? What are the accessibility gaps or barriers missed?
 - Inclusive decision-making
-- Innovation in standards and policy  
+- Innovation in standards and policy
 - Accessible and equitable communications
 
 To answer these questions, we need to build an expansive community of practice that encompasses the full range of experiences of disability and other areas of expertise needed to realize accessibility goals. This conference is an opportunity to co-create resources and to share knowledge and lessons learned in advancing accessibility and inclusion. We invite you to join us in this collaborative effort, and to ensure that the global accessibility agenda is guided by people with disabilities. Together, we can make Canada and the world more accessible and inclusive for everyone.
@@ -127,7 +127,7 @@ During the conference, a facilitator and provocateur will provide an overview of
 
 ## Conference amenities
 
-For your comfort we provide: 
+For your comfort we provide:
 
 ### Quiet room
 

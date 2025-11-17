@@ -6,7 +6,7 @@ linking:
   type: page
   slug: acaw-cama
 shortTitle: ACAW/CAMA
-order: 10
+order: 15
 thumbnailImage: /media/acaw-logo-no-words.png
 thumbnailAltText: Le contour d'une demi-feuille d'érable blanche se trouve sur une sphère multicolore.
 description: |-
