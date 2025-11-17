@@ -6,7 +6,7 @@ linking:
   type: page
   slug: financial-inclusion
 shortTitle: Financial Inclusion
-order: 11
+order: 5
 thumbnailImage: /media/money.png
 thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
