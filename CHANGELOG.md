@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.11.18.2023.7d48519](https://github.com/inclusive-design/idrc/compare/2025.11.14.0233.69d3f88...2025.11.18.2023.7d48519)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1286) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.11.14.0233.69d3f88](https://github.com/inclusive-design/idrc/compare/2025.08.26.1440.e22a53b...2025.11.14.0233.69d3f88)
 
 ### Dependencies
