@@ -26,86 +26,101 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
-## About the Financial Inclusion Project
+## Building Inclusive Financial Systems for All Canadians
 
-The Inclusive Design Research Centre (IDRC) at OCAD University is working on a project that aims to make financial systems more inclusive to people with disabilities (PWD), Deaf people, and people with intersectional identities in Canada.
+From research to action: advancing financial inclusion through community-led innovation.
 
-### What do we mean when we say "financial systems"?
+* [Read the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* [Download the White Paper](https://idrc.cachefly.net/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+* Join the Movement (FIRM)
 
-Financial systems include any systems related to money and finances.
+## Why Financial Inclusion Matters
 
-They include institutions like:
+Nearly **1 million Canadians are unbanked** and **5 million are underbanked**—not by choice, but due to systemic barriers. People with disabilities, newcomers, racialized communities, and those without stable housing face the greatest challenges.
 
-- Banks and credit unions
-- Insurance companies
-- Canada Revenue Agency
+Financial exclusion is not a fringe issue. It limits access to basic tools for stability and participation in society. Inclusive financial systems are about **dignity, opportunity, and justice**.
 
-Financial systems affect your everyday interactions with money, like:
+## Mission
 
-- Making payments and transferring money
-- Managing your finances and planning for the future
-- Managing your credit score
-- Getting a loan or paying off debt
-- Dealing with a tax audit
-- Trying to qualify for an assistance program
-- Proving you are who you say you are when you make a transaction
+The mission of this multi-phase project is to:
 
-### What do we mean when we say "disability"?
+* Help the disability and Deaf communities take action to remove barriers and advocate for more inclusive financial systems
+* Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
+* Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
 
-A disability is not a medical issue or an impairment to be fixed. A disability comes up when the way something works creates a barrier for someone because of their physical, mental health, developmental, or sensory traits. These barriers prevent a person’s full and equal participation in society.
+Phase 1 has just concluded.
 
-## Project goal
+## Phase 1 Achievements
 
-- Understand the barriers for people with disabilities and Deaf people in interacting with financial systems
-- Understand the risks for people with disabilities and Deaf people in financial systems, and the ways they may be vulnerable to fraud and financial abuse
-- Learn about things that have been done in the past that make the financial systems more inclusive
-- Explore promising ways to make up-and-coming financial systems more inclusive
-- Share any knowledge we gain with the broader disability and Deaf communities, through both online and in-person networks.
+Over the past three years, the Inclusive Design Research Centre (IDRC) partnered with community-led organizations and major financial institutions to identify barriers and co-create solutions. Key outputs include:
 
-### Outcomes
+* **Guidebook for Financial Inclusion**  
+  A bilingual, accessible resource for financial institutions, featuring practical frameworks, narratives, and activities to design inclusive services.  
+  [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* **White Paper: Financial Partnerships as a Pathway to Financial Inclusion**  
+  A strategic roadmap for systemic change, introducing the Financial Inclusion and Resilience Movement (FIRM).  
+  [Read the White Paper](https://idrc.cachefly.net/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+* **Knowledge Repository**  
+  An open-access collection of tools, research, and resources to support inclusive financial ecosystems.  
+  [Explore Resources](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
-At the end of August 2025, this project expects to:
+<!-- Graphic from phase 1 here -->
 
-- Share resources, findings, and insights broadly with community and national disability organizations, and with financial institutions in Canada.
-- Publish a report (available as a [Word document](https://idrc.cachefly.net/financial-inclusion/Community-Perspectives-on-Financial-Inclusion.docx) or a [PDF document](https://idrc.cachefly.net/financial-inclusion/Community-Perspectives-on-Financial-Inclusion.pdf)) about financial inclusion in Canada and its barriers, vulnerabilities, and approaches for people with disabilities and Deaf people.
-- Outline a plan for sustaining ongoing community engagement, advocacy, and education on issues related to financial inclusion.
+## What’s Next: Phase 2 and FIRM
 
-### Mission
+We are launching **Phase 2** to scale and sustain impact through the **Financial Inclusion and Resilience Movement (FIRM)**—a community-led infrastructure designed to strengthen grassroots capacity and foster institutional collaboration.
 
-The mission of this project is to:
+**FIRM includes four core components:**
 
-- Help the disability and Deaf communities take action to remove barriers and advocate for more inclusive financial systems
-- Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
-- Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
+* **Digital Shared Services Hub**  
+  Operational support for grassroots organizations (legal, bookkeeping, fundraising, IT).
+* **Online Knowledge Hub**  
+  A platform for co-design, research, and accessibility consulting.
+* **Community-led Governance**  
+  Decision-making grounded in lived experience.
+* **Community of Practice (CoP)**  
+  A national network for peer learning and collaboration.
 
-## Research ethics clearance
+<!-- Graphic here -->
 
-If you have any questions about the research activities or require further information, please contact Jutta Treviranus. This activity has been reviewed and received ethics clearance through the Research Ethics Board at OCAD University under REB File Number #102453. If you have any comments or concerns, please email the Research Ethics Office through Bryan Weissenboeck at bweissenboeck@ocadu.ca
+## Get Involved
+
+* **Financial Institutions:** Join the Knowledge Hub and embed equity into your services.
+* **Community Organizations:** Access shared services and governance roles.
+* **Researchers & Advocates:** Participate in collaborative research and the Community of Practice.
+
+[Contact Us](mailto:idrc@ocadu.ca)
+
+## Resources
+
+* [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* [Read the White Paper](https://idrc.cachefly.net/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+* [Visit the Knowledge Hub](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
 ## Project Partners
 
-- AAWEAR
-- Alliance for Equity of Blind Canadians
-- ARCH Disability Law Centre
-- L’arche Canada
-- Bank of Canada
-- Black Deaf Canada
-- Canadian Council of the Blind
-- Carleton Accessibility Institute
-- Council of Canadians with Disabilities
-- DEEN Support Services
-- Disability without Poverty
-- Independent Living Canada
-- Inner-City Health and Wellness Program, University of Alberta
-- March of Dimes Canada
-- Neil Squire Society
-- New Society Institute (formerly IRIS Institute)
-- Nunavummi Disabilities Makinnasuaqtiit Society
-- Pigeon Park Savings
-- Planned Lifetime Advocacy Network
-- Realize Canada
-- Toronto Metropolitan University
-- Whole Woman Network
+* AAWEAR
+* Alliance for Equity of Blind Canadians
+* ARCH Disability Law Centre
+* L’arche Canada
+* Bank of Canada
+* Black Deaf Canada
+* Canadian Council of the Blind
+* Carleton Accessibility Institute
+* Council of Canadians with Disabilities
+* DEEN Support Services
+* Disability without Poverty
+* Independent Living Canada
+* Inner-City Health and Wellness Program, University of Alberta
+* March of Dimes Canada
+* Neil Squire Society
+* New Society Institute (formerly IRIS Institute)
+* Nunavummi Disabilities Makinnasuaqtiit Society
+* Pigeon Park Savings
+* Planned Lifetime Advocacy Network
+* Realize Canada
+* Toronto Metropolitan University
+* Whole Woman Network
 
 ## Acknowledgements
 
