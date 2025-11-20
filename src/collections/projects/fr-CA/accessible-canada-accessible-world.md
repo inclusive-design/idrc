@@ -46,7 +46,7 @@ Veuillez vous joindre à nous pour poursuivre la conversation sur https://groups
 
 <https://www.youtube.com/watch?v=ifZhRiH66w0>
 
-[Télécharger la transcription descriptive](https://idrc.cachefly.net/acaw-cama/home/accessible-canada-accessible-world-transcript-fr.docx) [Vidéo LSQ](https://youtu.be/ldYQ9SypYgg)
+[Télécharger la transcription descriptive](https://static.inclusivedesign.ca/acaw-cama/home/accessible-canada-accessible-world-transcript-fr.docx) [Vidéo LSQ](https://youtu.be/ldYQ9SypYgg)
 
 <br />
 <br />

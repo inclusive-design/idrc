@@ -31,7 +31,7 @@ funderLogos:
 From research to action: advancing financial inclusion through community-led innovation.
 
 * [Read the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
-* [Download the White Paper](https://idrc.cachefly.net/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+* [Download the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * Join the Movement (FIRM)
 
 ## Why Financial Inclusion Matters
@@ -59,7 +59,7 @@ Over the past three years, the Inclusive Design Research Centre (IDRC) partnered
   [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
 * **White Paper: Financial Partnerships as a Pathway to Financial Inclusion**  
   A strategic roadmap for systemic change, introducing the Financial Inclusion and Resilience Movement (FIRM).  
-  [Read the White Paper](https://idrc.cachefly.net/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+  [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * **Knowledge Repository**  
   An open-access collection of tools, research, and resources to support inclusive financial ecosystems.  
   [Explore Resources](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
@@ -94,7 +94,7 @@ We are launching **Phase 2** to scale and sustain impact through the **Financial
 ## Resources
 
 * [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
-* [Read the White Paper](https://idrc.cachefly.net/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+* [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * [Visit the Knowledge Hub](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
 ## Project Partners
