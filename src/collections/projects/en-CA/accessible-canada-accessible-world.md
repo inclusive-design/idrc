@@ -52,7 +52,7 @@ Please join us in continuing the conversation at  [https://groups.io/g/ACAW-CAMA
 
 <https://www.youtube.com/watch?v=0OavhX2hraE>
 
-[Download descriptive transcript](https://idrc.cachefly.net/acaw-cama/home/accessible-canada-accessible-world-transcript2-en.docx) [ASL Video](https://youtu.be/v38jv-OpPkU)
+[Download descriptive transcript](https://static.inclusivedesign.ca/acaw-cama/home/accessible-canada-accessible-world-transcript2-en.docx) [ASL Video](https://youtu.be/v38jv-OpPkU)
 
 <br />
 <br />
