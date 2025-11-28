@@ -30,9 +30,9 @@ funderLogos:
 
 From research to action: advancing financial inclusion through community-led innovation.
 
-* [Read the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
-* [Download the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
-* Join the Movement (FIRM)
+* [Download the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
+* [Join the Movement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
 ## Why Financial Inclusion Matters
 
@@ -44,11 +44,15 @@ Financial exclusion is not a fringe issue. It limits access to basic tools for s
 
 The mission of this multi-phase project is to:
 
-* Help the disability and Deaf communities take action to remove barriers and advocate for more inclusive financial systems
-* Guide policy makers, governments, and large organizations in making more inclusive financial systems and removing current barriers
-* Guide security and privacy organizations to tackle fraud, scams, and abuse faced by the disability and Deaf community
+* Empower the disability and Deaf communities take action in removing barriers and advocating for more inclusive financial systems
+* Guide policy makers, governments, and large organizations in creating more inclusive financial systems that are accessible and equitable
+* Support security and privacy organizations to address fraud, scams, and abuse faced by the disability and Deaf community
+* Advance systemic change through Phase 2 and FIRM:a community-led infrastructure that strengthens grassroots capacity, fosters institutional collaboration, and ensures sustainability beyond federal funding
+* Build long-term resilience by establishing shared services, knowledge hubs, and governance structures that enable inclusive financial innovation
 
-Phase 1 has just concluded.
+Phase 1 laid the foundation with research, tools and partnerships.
+
+Phase 2 focuses on scaling these efforts through FIRM, creating a sustainable ecosystem that will support transformation of financial systems for all Canadians. 
 
 ## Phase 1 Achievements
 
@@ -91,11 +95,13 @@ We are launching **Phase 2** to scale and sustain impact through the **Financial
 
 [Contact Us](mailto:idrc@ocadu.ca)
 
+[Join the movement](https://forms.office.com/r/ch9EFgk34e)
+
 ## Resources
 
 * [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
-* [Visit the Knowledge Hub](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
+* [Visit the Knowledge Repository](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
 ## Project Partners
 
