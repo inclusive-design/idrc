@@ -2,7 +2,7 @@ import { generatePermalink } from "eleventy-plugin-fluid";
 
 export default {
     eleventyComputed: {
-        langDir: (data) => data.supportedLanguages[data.locale].dir,
+        langDir: "ltr",
         /* Configure navigation */
         eleventyNavigation: {
             key: (data) => data.linking.slug || data.uuid,
