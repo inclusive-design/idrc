@@ -1,5 +1,11 @@
 # Changelog
 
+## [2025.12.08.1817.e708126](https://github.com/inclusive-design/idrc/compare/2025.12.08.1626.46b2800...2025.12.08.1817.e708126)
+
+### Bug Fixes
+
+* fix: missing locale (#1300) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2025.12.08.1626.46b2800](https://github.com/inclusive-design/idrc/compare/2025.11.14.0233.69d3f88...2025.12.08.1626.46b2800)
 
 ### Features
