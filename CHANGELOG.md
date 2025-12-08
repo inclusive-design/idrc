@@ -1,5 +1,33 @@
 # Changelog
 
+## [2025.12.08.1626.46b2800](https://github.com/inclusive-design/idrc/compare/2025.11.14.0233.69d3f88...2025.12.08.1626.46b2800)
+
+### Features
+
+* fix: relabel project pages (resolves #1291) (#1298) [@nedatidrc](https://github.com/nedatidrc)
+
+### Bug Fixes
+
+* fix: relabel project pages (resolves #1291) (#1298) [@nedatidrc](https://github.com/nedatidrc)
+
+### Chores
+
+* chore: update FI page (#1287) [@greatislander](https://github.com/greatislander)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1299) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency markdownlint-cli2 to v0.20.0 (#1294) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency start-server-and-test to v2.1.3 (#1290) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.2.0 (#1297) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy-navigation to v1.0.5 (#1296) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/checkout action to v6 (#1293) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-jsdoc to v61.5.0 (#1288) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.2.7 (#1292) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency rimraf to v6.1.2 (#1289) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1295) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1286) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.11.14.0233.69d3f88](https://github.com/inclusive-design/idrc/compare/2025.08.26.1440.e22a53b...2025.11.14.0233.69d3f88)
 
 ### Dependencies
