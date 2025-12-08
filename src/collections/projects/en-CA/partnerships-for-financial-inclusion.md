@@ -30,7 +30,7 @@ funderLogos:
 
 From research to action: advancing financial inclusion through community-led innovation.
 
-* [Download the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * [Join the Movement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
@@ -101,7 +101,7 @@ We are launching **Phase 2** to scale and sustain impact through the **Financial
 
 * [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
-* [Visit the Knowledge Repository](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
+* [Explore the Knowledge Repository](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
 ## Project Partners
 
