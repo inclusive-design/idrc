@@ -52,20 +52,20 @@ The mission of this multi-phase project is to:
 
 Phase 1 laid the foundation with research, tools and partnerships.
 
-Phase 2 focuses on scaling these efforts through FIRM, creating a sustainable ecosystem that will support transformation of financial systems for all Canadians. 
+Phase 2 focuses on scaling these efforts through FIRM, creating a sustainable ecosystem that will support transformation of financial systems for all Canadians.
 
 ## Phase 1 Achievements
 
 Over the past three years, the Inclusive Design Research Centre (IDRC) partnered with community-led organizations and major financial institutions to identify barriers and co-create solutions. Key outputs include:
 
-* **Guidebook for Financial Inclusion**  
-  A bilingual, accessible resource for financial institutions, featuring practical frameworks, narratives, and activities to design inclusive services.  
+* **Guidebook for Financial Inclusion**
+  A bilingual, accessible resource for financial institutions, featuring practical frameworks, narratives, and activities to design inclusive services.
   [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
-* **White Paper: Financial Partnerships as a Pathway to Financial Inclusion**  
-  A strategic roadmap for systemic change, introducing the Financial Inclusion and Resilience Movement (FIRM).  
+* **White Paper: Financial Partnerships as a Pathway to Financial Inclusion**
+  A strategic roadmap for systemic change, introducing the Financial Inclusion and Resilience Movement (FIRM).
   [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
-* **Knowledge Repository**  
-  An open-access collection of tools, research, and resources to support inclusive financial ecosystems.  
+* **Knowledge Repository**
+  An open-access collection of tools, research, and resources to support inclusive financial ecosystems.
   [Explore Resources](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
 <!-- Graphic from phase 1 here -->
@@ -76,13 +76,13 @@ We are launching **Phase 2** to scale and sustain impact through the **Financial
 
 **FIRM includes four core components:**
 
-* **Digital Shared Services Hub**  
+* **Digital Shared Services Hub**
   Operational support for grassroots organizations (legal, bookkeeping, fundraising, IT).
-* **Online Knowledge Hub**  
+* **Online Knowledge Hub**
   A platform for co-design, research, and accessibility consulting.
-* **Community-led Governance**  
+* **Community-led Governance**
   Decision-making grounded in lived experience.
-* **Community of Practice (CoP)**  
+* **Community of Practice (CoP)**
   A national network for peer learning and collaboration.
 
 <!-- Graphic here -->
