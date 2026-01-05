@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026.01.05.1309.5e575b3](https://github.com/inclusive-design/idrc/compare/2025.12.08.1817.e708126...2026.01.05.1309.5e575b3)
+
+### Dependencies
+
+* chore(deps): update actions/upload-artifact action to v6 (#1303) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.3.0 (#1306) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update nginx docker tag to v1.29.4 (#1302) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency eslint-plugin-yml to v1.19.1 (#1304) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1305) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2025.12.08.1817.e708126](https://github.com/inclusive-design/idrc/compare/2025.12.08.1626.46b2800...2025.12.08.1817.e708126)
 
 ### Bug Fixes
