@@ -270,6 +270,7 @@ hr,
     }
 
     .section--image figure.swap + .section__content {
+        padding-inline-end: calc(var(--gutter) + 1.5rem);
         padding-inline-start: 0;
     }
 
