@@ -1,5 +1,16 @@
 # Changelog
 
+## [2026.01.21.1426.014f48b](https://github.com/inclusive-design/idrc/compare/2026.01.05.1309.5e575b3...2026.01.21.1426.014f48b)
+
+### Bug Fixes
+
+* fix: issue with margin on home page (#1316) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1311) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency eleventy-plugin-fluid to v3.1.4 (#1318) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.01.05.1309.5e575b3](https://github.com/inclusive-design/idrc/compare/2025.12.08.1817.e708126...2026.01.05.1309.5e575b3)
 
 ### Dependencies
