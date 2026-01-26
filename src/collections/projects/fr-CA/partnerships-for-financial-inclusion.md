@@ -1,7 +1,7 @@
 ---
 uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
-title: Partenariats pour l'inclusion financière
 locale: fr-CA
+title: Partenariats pour l'inclusion financière
 linking:
   type: page
   slug: inclusion-financiere
@@ -26,11 +26,12 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
+
 ## Élaborer des systèmes financiers inclusifs pour tous les Canadiens
 
 De la recherche à l’action : promouvoir l’inclusion financière grâce à l’innovation menée par la communauté.
 
-* [Accédez au guide](https://financial-inclusion.inclusivedesign.ca/fr/)
+* [Accédez au guide](https://guidebook.financial-inclusion.ca/fr/)
 * [Lisez le livre blanc](https://static.inclusivedesign.ca/financial-inclusion/les-partenariats-financiers-comme-voie-dacces-a-linclusion-financiere.docx)
 * [Joignez-vous au mouvement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
@@ -60,7 +61,7 @@ Au cours des trois dernières années, le Inclusive Design Research Centre (IDRC
 
 * **Guide pour l'inclusion financière**  
   Une ressource bilingue et accessible aux institutions financières, présentant des cadres pratiques, des exemples et des activités pour concevoir des services inclusifs.  
-  [Accéder au guide](https://financial-inclusion.inclusivedesign.ca/fr/)
+  [Accéder au guide](https://guidebook.financial-inclusion.ca/fr/)
 * **Livre blanc : Les partenariats financiers comme voie vers l'inclusion financière**  
   Une feuille de route stratégique pour un changement systémique, présentant le Mouvement pour l'inclusion financière et la résilience (MICR).  
   [Lire le livre blanc](https://static.inclusivedesign.ca/financial-inclusion/les-partenariats-financiers-comme-voie-dacces-a-linclusion-financiere.docx)
@@ -99,7 +100,7 @@ Nous lançons la **Phase 2** afin d’amplifier et de pérenniser notre impact g
 
 ## Resources
 
-* [Accédez au guide](https://financial-inclusion.inclusivedesign.ca/fr/)
+* [Accédez au guide](https://guidebook.financial-inclusion.ca/fr/)
 * [Lisez le livre blanc](https://static.inclusivedesign.ca/financial-inclusion/les-partenariats-financiers-comme-voie-dacces-a-linclusion-financiere.docx)
 * [Explorer les ressources](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 

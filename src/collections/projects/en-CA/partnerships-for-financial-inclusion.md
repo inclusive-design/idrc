@@ -26,11 +26,12 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
+
 ## Building Inclusive Financial Systems for All Canadians
 
 From research to action: advancing financial inclusion through community-led innovation.
 
-* [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* [Access the Guidebook](https://guidebook.financial-inclusion.ca/)
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * [Join the Movement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
@@ -60,7 +61,7 @@ Over the past three years, the Inclusive Design Research Centre (IDRC) partnered
 
 * **Guidebook for Financial Inclusion**
   A bilingual, accessible resource for financial institutions, featuring practical frameworks, narratives, and activities to design inclusive services.
-  [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+  [Access the Guidebook](https://guidebook.financial-inclusion.ca/)
 * **White Paper: Financial Partnerships as a Pathway to Financial Inclusion**
   A strategic roadmap for systemic change, introducing the Financial Inclusion and Resilience Movement (FIRM).
   [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
@@ -99,7 +100,7 @@ We are launching **Phase 2** to scale and sustain impact through the **Financial
 
 ## Resources
 
-* [Access the Guidebook](https://financial-inclusion.inclusivedesign.ca/)
+* [Access the Guidebook](https://guidebook.financial-inclusion.ca/)
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * [Explore the Knowledge Repository](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
