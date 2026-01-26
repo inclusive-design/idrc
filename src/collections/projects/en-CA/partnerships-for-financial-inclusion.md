@@ -12,13 +12,6 @@ thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
 funderLogos:
   - content: ''
-    image: /media/esdc-edsc.jpg
-    alt: Employment and Social Development Canada Logo
-    imagePosition: left
-    scale: 75
-    maxHeight: auto
-    verticalAlignment: center
-  - content: ''
     image: /media/canadawordmark-black-bil.png
     alt: Government of Canada logo
     imagePosition: left

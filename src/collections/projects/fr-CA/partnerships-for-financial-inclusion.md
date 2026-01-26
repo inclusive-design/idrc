@@ -12,13 +12,6 @@ thumbnailAltText: une pile de pièces de monnaie avec une carte de crédit dessu
 description: Permettre aux Canadiens handicapés de participer pleinement à l’économie en éliminant les obstacles à l’inclusion financière.
 funderLogos:
   - content: ''
-    image: /media/esdc-edsc.jpg
-    alt: Logo d'Emploi et Développement social Canada
-    imagePosition: left
-    scale: 75
-    maxHeight: auto
-    verticalAlignment: center
-  - content: ''
     image: /media/canadawordmark-black-bil.png
     alt: Logo du gouvernement du Canada
     imagePosition: left
@@ -59,14 +52,14 @@ La phase 2 vise à amplifier ces efforts par le biais de FIRM, créant ainsi un 
 
 Au cours des trois dernières années, le Inclusive Design Research Centre (IDRC) a collaboré avec des organismes communautaires et d'importantes institutions financières afin de cerner les obstacles et de co-créer des solutions. Voici quelques-uns de ses principaux résultats :
 
-* **Guide pour l'inclusion financière**  
-  Une ressource bilingue et accessible aux institutions financières, présentant des cadres pratiques, des exemples et des activités pour concevoir des services inclusifs.  
+* **Guide pour l'inclusion financière**
+  Une ressource bilingue et accessible aux institutions financières, présentant des cadres pratiques, des exemples et des activités pour concevoir des services inclusifs.
   [Accéder au guide](https://guidebook.financial-inclusion.ca/fr/)
-* **Livre blanc : Les partenariats financiers comme voie vers l'inclusion financière**  
-  Une feuille de route stratégique pour un changement systémique, présentant le Mouvement pour l'inclusion financière et la résilience (MICR).  
+* **Livre blanc : Les partenariats financiers comme voie vers l'inclusion financière**
+  Une feuille de route stratégique pour un changement systémique, présentant le Mouvement pour l'inclusion financière et la résilience (MICR).
   [Lire le livre blanc](https://static.inclusivedesign.ca/financial-inclusion/les-partenariats-financiers-comme-voie-dacces-a-linclusion-financiere.docx)
-* **Répertoire des connaissances**  
-  Une collection en libre accès d'outils, de recherches et de ressources pour soutenir les écosystèmes financiers inclusifs.  
+* **Répertoire des connaissances**
+  Une collection en libre accès d'outils, de recherches et de ressources pour soutenir les écosystèmes financiers inclusifs.
   [Explorer les ressources](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/69337467/Financial+Inclusion)
 
 <!-- Graphic from phase 1 here -->
@@ -81,7 +74,7 @@ Nous lançons la **Phase 2** afin d’amplifier et de pérenniser notre impact g
   Soutien opérationnel aux organisations de base (juridique, comptabilité, collecte de fonds, TI).
 * **Centre de connaissances en ligne**
   Une plateforme de co-conception, de recherche et de conseil en accessibilité.
-* **Gouvernance communautaire**  
+* **Gouvernance communautaire**
   Une prise de décision basée sur l'expérience vécue.
 * **Communauté de pratique**
   Un réseau national pour l'apprentissage et la collaboration entre pairs.
