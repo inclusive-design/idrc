@@ -1,5 +1,9 @@
 # Changelog
 
+## [2026.01.26.1505.c9e411b](https://github.com/inclusive-design/idrc/compare/2026.01.21.1426.014f48b...2026.01.26.1505.c9e411b)
+
+* No changes
+
 ## [2026.01.21.1426.014f48b](https://github.com/inclusive-design/idrc/compare/2026.01.05.1309.5e575b3...2026.01.21.1426.014f48b)
 
 ### Bug Fixes
