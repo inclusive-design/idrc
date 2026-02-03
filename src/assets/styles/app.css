@@ -1,45 +1,44 @@
 @charset "UTF-8";
 
 /* 1. Configuration and helpers */
-@import "./abstracts/_variables.css";
-@import "./abstracts/_grid.css";
+@import url("./abstracts/_variables.css");
+@import url("./abstracts/_grid.css");
 
 /* 2. Base stuff */
-@import "./base/_reset.css";
-@import "./base/_base.css";
-@import "./base/_fonts.css";
-@import "./base/_typography.css";
-@import "./base/_helpers.css";
+@import url("./base/_reset.css");
+@import url("./base/_base.css");
+@import url("./base/_fonts.css");
+@import url("./base/_typography.css");
+@import url("./base/_helpers.css");
 
 /* 3. Layout-related sections */
-@import "./layout/_header.css";
-@import "./layout/_footer.css";
+@import url("./layout/_header.css");
+@import url("./layout/_footer.css");
 
 /* 4. Components */
-@import "./components/_brand.css";
-@import "./components/_button.css";
-@import "./components/_image.css";
-@import "./components/_nav.css";
-@import "./components/_nav--secondary.css";
-@import "./components/_page-header.css";
-@import "./components/_pagination.css";
-@import "./components/_metadata.css";
+@import url("./components/_brand.css");
+@import url("./components/_button.css");
+@import url("./components/_image.css");
+@import url("./components/_nav.css");
+@import url("./components/_nav--secondary.css");
+@import url("./components/_page-header.css");
+@import url("./components/_pagination.css");
+@import url("./components/_metadata.css");
 
 /* 5. Page-specific styles */
-@import "./pages/_generic.css";
-@import "./pages/_home.css";
-@import "./pages/_history.css";
-@import "./pages/_projects.css";
-@import "./pages/_project.css";
-@import "./pages/_resources.css";
-@import "./pages/_news-ideas.css";
-@import "./pages/_single.css";
-@import "./pages/_team.css";
-@import "./pages/_404.css";
+@import url("./pages/_generic.css");
+@import url("./pages/_home.css");
+@import url("./pages/_history.css");
+@import url("./pages/_projects.css");
+@import url("./pages/_project.css");
+@import url("./pages/_resources.css");
+@import url("./pages/_news-ideas.css");
+@import url("./pages/_single.css");
+@import url("./pages/_team.css");
+@import url("./pages/_404.css");
 
 /* 6. Vendors */
-@import "./vendors/_uio.css";
-@import "./vendors/_cms-editor-components.css";
+@import url("./vendors/_uio.css");
 
 /* 7. Themes */
-@import "./themes/_default.css";
+@import url("./themes/_default.css");

@@ -51,7 +51,7 @@
 @media (width >= 600px) {
     .entries {
         display: grid;
-        grid-gap: var(--gutter);
+        gap: var(--gutter);
         grid-template-columns: repeat(2, 1fr);
 
         .entry + .entry {

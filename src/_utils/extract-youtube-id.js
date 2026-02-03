@@ -1,21 +1,23 @@
-export default url => {
-    let matches = url.match(/(\?|&)v=([^&#]+)/);
+const extractYoutubeId = url => {
+	let matches = url.match(/(\?|&)v=([^&#]+)/);
 
-    if (matches) {
-        return matches.pop();
-    }
+	if (matches) {
+		return matches.pop();
+	}
 
-    matches = url.match(/(\.be\/)+([^/]+)/);
+	matches = url.match(/(\.be\/)+([^/]+)/);
 
-    if (matches) {
-        return matches.pop();
-    }
+	if (matches) {
+		return matches.pop();
+	}
 
-    matches = url.match(/(embed\/)+([^/]+)/);
+	matches = url.match(/(embed\/)+([^/]+)/);
 
-    if (matches) {
-        return matches.pop();
-    }
+	if (matches) {
+		return matches.pop();
+	}
 
-    return false;
+	return false;
 };
+
+export default extractYoutubeId;

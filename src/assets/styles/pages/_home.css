@@ -99,8 +99,7 @@
         }
 
         > div:nth-child(3) {
-            padding-block-end: 3.5rem;
-            padding-block-start: 2.875rem;
+            padding-block: 2.875rem 3.5rem;
         }
 
         header {

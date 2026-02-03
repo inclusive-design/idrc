@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+ 
 
 const BACKSTOP_TEST_CSS_OVERRIDE = "html {background-image: none;}";
 

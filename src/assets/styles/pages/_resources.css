@@ -135,6 +135,14 @@
             }
         }
 
+        .filter-expand-button[aria-expanded="false"] + .filter-section {
+            display: none;
+        }
+
+        .filter-expand-button[aria-expanded="true"] + .filter-section {
+            display: block;
+        }
+
         /* Override the default style defined in _base.scss */
         ul {
             margin-block: calc(4 / 16 * 1rem) calc(32 / 16 * 1rem);

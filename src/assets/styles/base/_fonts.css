@@ -15,7 +15,7 @@
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/mulish-700-subset.woff2") format("woff2");
-    unicode-range: "U+46,U+52,U+61-69,U+6D-6F,U+72-75,U+77";
+    unicode-range: U+46,U+52,U+61-69,U+6D-6F,U+72-75,U+77;
 }
 
 @font-face {
@@ -24,7 +24,7 @@
     font-style: normal;
     font-weight: 400;
     src: url("../fonts/montserrat-alternates-regular-subset.woff2") format("woff2");
-    unicode-range: "U+26,U+2C,U+32,U+37,U+38,U+41,U+43,U+4D,U+55,U+61-65,U+69,U+6C,U+6E,U+73,U+79";
+    unicode-range: U+26,U+2C,U+32,U+37,U+38,U+41,U+43,U+4D,U+55,U+61-65,U+69,U+6C,U+6E,U+73,U+79;
 }
 
 @font-face {
@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 600;
     src: url("../fonts/montserrat-alternates-600-subset.woff2") format("woff2");
-    unicode-range: "U+20,U+41,U+55,U+57,U+61-65,U+69,U+6C-6F,U+72,U+73";
+    unicode-range: U+20,U+41,U+55,U+57,U+61-65,U+69,U+6C-6F,U+72,U+73;
 }
 
 @font-face {
@@ -42,7 +42,7 @@
     font-style: normal;
     font-weight: 800;
     src: url("../fonts/montserrat-alternates-800-subset.woff2") format("woff2");
-    unicode-range: "U+20,U+41,U+61,U+64-69,U+6B,U+6E,U+6F,U+72,U+74";
+    unicode-range: U+20,U+41,U+61,U+64-69,U+6B,U+6E,U+6F,U+72,U+74;
 }
 
 @font-face {
