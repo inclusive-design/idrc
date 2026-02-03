@@ -51,7 +51,7 @@
     "@babel/plugin-syntax-import-assertions": "7.27.1",
     "@commitlint/cli": "20.3.0",
     "@commitlint/config-conventional": "20.3.0",
-    "@inclusive-design/eslint-config": "^0.1.1",
+    "@inclusive-design/eslint-config": "^0.2.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
     "@inclusive-design/stylelint-config": "^0.1.0",
     "backstopjs": "6.3.25",
