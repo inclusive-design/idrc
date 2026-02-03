@@ -51,10 +51,9 @@
 @media (width >= 1024px) {
     .page--team {
         .people {
-            column-gap: var(--gutter);
             display: grid;
+            gap: calc(48 / 16 * 1rem) var(--gutter);
             grid-template-columns: repeat(2, 1fr);
-            row-gap: calc(48 / 16 * 1rem);
         }
     }
 }
