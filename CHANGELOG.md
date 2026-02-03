@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026.02.03.1250.d0562f2](https://github.com/inclusive-design/idrc/compare/2026.01.21.1426.014f48b...2026.02.03.1250.d0562f2)
+
+### Chores
+
+* fix: remove annual conference from the about navigation menu (#1322) [@chosww](https://github.com/chosww)
+
+### Dependencies
+
+* chore(deps): lock file maintenance (#1319) @[renovate[bot]](https://github.com/apps/renovate)
+
 ## [2026.01.21.1426.014f48b](https://github.com/inclusive-design/idrc/compare/2026.01.05.1309.5e575b3...2026.01.21.1426.014f48b)
 
 ### Bug Fixes
