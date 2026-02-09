@@ -46,9 +46,9 @@
     "npm-run-all2": "8.0.4"
   },
   "devDependencies": {
-    "@babel/core": "7.28.5",
-    "@babel/eslint-parser": "7.28.5",
-    "@babel/plugin-syntax-import-assertions": "7.27.1",
+    "@babel/core": "7.29.0",
+    "@babel/eslint-parser": "7.28.6",
+    "@babel/plugin-syntax-import-assertions": "7.28.6",
     "@commitlint/cli": "20.3.0",
     "@commitlint/config-conventional": "20.3.0",
     "@inclusive-design/eslint-config": "^0.1.1",
