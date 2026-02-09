@@ -1,5 +1,15 @@
 # Changelog
 
+## [2026.02.09.1500.c190294](https://github.com/inclusive-design/idrc/compare/2026.02.03.1250.d0562f2...2026.02.09.1500.c190294)
+
+### Features
+
+* feat: switch to new linters (#1323) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* feat: switch to new linters (#1323) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.02.03.1250.d0562f2](https://github.com/inclusive-design/idrc/compare/2026.01.21.1426.014f48b...2026.02.03.1250.d0562f2)
 
 ### Chores
