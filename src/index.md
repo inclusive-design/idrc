@@ -1,29 +1,17 @@
 ---
 layout: layouts/home.njk
 title: Inclusive Design Research Centre
-locale: en-CA
-intro: >
-  An international community of open source developers, designers, researchers,
-  educators and co-designers who work together to **proactively ensure that
-  emerging technology and practices are designed inclusively**.
+metaTitle: ''
+metaDesc: ''
+intro: |-
+  An international community of open source developers, designers, researchers, educators and co-designers who work together to **proactively ensure that emerging technology and practices are designed inclusively**.
 
-
-  Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates the [Inclusive Design Institute](https://inclusivedesign.ca/). Both were founded by Dr. Jutta Treviranus with the help of her team and community.
-
+  Established in 1993, the Inclusive Design Research Centre (IDRC) coordinates the Inclusive Design Institute. Both were founded by Dr. Jutta Treviranus with the help of her team and community.
 
   [Learn more about us](/about/)
-headerBgColor: indigo-100
 sections:
-  - image2x: /media/codesign.jpg
-    imageOrderDesktop: swap
-    desktopWidth: full
-    fullBleed: true
-    imageOrder: start
-    backgroundColor: indigo-800
-    textColor: white
-    borderColor: indigo-500
-    title: What we do
-    content: >-
+  - title: What we do
+    content: |-
       ### Research and development
 
       The IDRC leads and partners in collaborative, multi-sector, applied research networks that  proactively prevent barriers and promote greater inclusion.
@@ -39,98 +27,98 @@ sections:
       ### Consulting and training
 
       The IDRC offers consulting services and training in digital accessibility and inclusive design.
-    imageAltText: Diverse individuals collaborate at a table. A t-shirt slogan reads
-      Accessibility Matters.
-    image: /media/codesign.jpg
-    subsectionLevel: "0"
-  - title: What is inclusive design?
-    content: >-
-      Inclusive Design considers the full range of human diversity with respect
-      to ability, language, culture, gender, age, and other forms of human
-      difference.
-
-
-      [Learn more about our philosophy](/about/philosophy/)
-    backgroundColor: blue-500
-    borderColor: white
-    textColor: black
-    desktopWidth: full
+    textColor: white
+    backgroundColor: indigo-800
     fullBleed: true
-    subsectionLevel: "0"
-  - image2x: /media/projects@2x.jpg
+    borderColor: indigo-500
+    image: /media/codesign.jpg
+    image2x: /media/codesign.jpg
+    imageAltText: Diverse individuals collaborate at a table. A t-shirt slogan reads Accessibility Matters.
+    imageOrder: start
     imageOrderDesktop: swap
     desktopWidth: full
-    fullBleed: false
-    imageOrder: end
-    backgroundColor: null
+    subsectionLevel: '0'
+  - title: What is inclusive design?
+    content: |-
+      Inclusive Design considers the full range of human diversity with respect to ability, language, culture, gender, age, and other forms of human difference.
+
+      [Learn more about our philosophy](/about/philosophy/)
+    textColor: black
+    backgroundColor: blue-500
+    fullBleed: true
+    borderColor: white
+    desktopWidth: full
+    subsectionLevel: '0'
+  - title: Projects
+    content: '[See featured projects](/projects/)'
     textColor: null
+    backgroundColor: null
+    fullBleed: false
     borderColor: indigo-500
-    title: Projects
-    content: "[See featured projects](/projects/)"
-    imageAltText: Two people trying the inclusive coding learning environment the
-      IDRC has created, which involves robots, tactile boards, and cards.
     image: /media/projects.jpg
+    image2x: /media/projects@2x.jpg
+    imageAltText: Two people trying the inclusive coding learning environment the IDRC has created, which involves robots, tactile boards, and cards.
+    imageOrder: end
+    imageOrderDesktop: swap
     imageShadow: coral-500
-    subsectionLevel: "0"
+    desktopWidth: full
+    subsectionLevel: '0'
   - title: Our resources
-    content: >-
+    content: |-
       ### [Inclusive Design Guide](https://guide.inclusivedesign.ca/)
-
       An open, evolving guide to the process of inclusive design.
-
       ### [Inclusive Learning Design Handbook](https://handbook.floeproject.org/)
-
       A guide for educators, learners and policy makers working in education.
+    textColor: null
     backgroundColor: null
+    fullBleed: false
     borderColor: coral-500
-    textColor: null
     desktopWidth: third
-    subsectionLevel: "0"
-    fullBleed: false
+    subsectionLevel: '0'
   - title: Services we offer
-    content: >-
+    content: |-
       ### [IDRC Consulting](/consulting/)
-
       We offer accessibility services that help organizations, governments, corporations, and non-profits ensure their offerings are inclusive.
-
       ### [Vision Technology Service](/vision-technology-service/)
-    backgroundColor: null
-    borderColor: blue-500
     textColor: null
-    desktopWidth: third
-    subsectionLevel: "0"
+    backgroundColor: null
     fullBleed: false
+    borderColor: blue-500
+    desktopWidth: third
+    subsectionLevel: '0'
   - title: Latest news
     content: This space intentionally left blank.
+    textColor: null
     backgroundColor: null
+    fullBleed: false
     borderColor: yellow-500
-    textColor: null
     desktopWidth: third
-    subsectionLevel: "0"
-    fullBleed: false
-  - image2x: /media/job-postings@2x.jpg
-    imageOrderDesktop: first
-    desktopWidth: full
-    fullBleed: false
-    imageOrder: start
-    backgroundColor: null
-    textColor: null
-    borderColor: indigo-500
-    title: Job postings
+    subsectionLevel: '0'
+  - title: Job postings
     content: _No listings available._
-    imageAltText: An IDRC team member and visitor smiling and chatting about a
-      project demonstration at an event.
+    textColor: null
+    backgroundColor: null
+    fullBleed: false
+    borderColor: indigo-500
     image: /media/job-postings.jpg
+    image2x: /media/job-postings@2x.jpg
+    imageAltText: An IDRC team member and visitor smiling and chatting about a project demonstration at an event.
+    imageOrder: start
+    imageOrderDesktop: first
     imageShadow: yellow-500
-    subsectionLevel: "0"
-  - desktopAlignment: center
-    desktopWidth: two-thirds
-    fullBleed: true
-    backgroundColor: indigo-200
+    desktopWidth: full
+    subsectionLevel: '0'
+  - title: Connect
+    content: '[Find out how you can connect with our work](/connect/)'
     textColor: black
+    backgroundColor: indigo-200
+    fullBleed: true
     borderColor: null
-    title: Connect
-    content: "[Find out how you can connect with our work](/connect/)"
-    subsectionLevel: "0"
+    desktopWidth: two-thirds
+    subsectionLevel: '0'
+    desktopAlignment: center
+locale: en-CA
+headerBgColor: indigo-100
 ---
+
 ***
