@@ -16,8 +16,8 @@ const collapseMenu = () => {
 };
 
 /**
- * Collapse the submenu corresponding to the toggle button `btn`.
- * @param {HTMLElement} btn - The toggle button whose submenu should be collapsed.
+ * Collapse the submenu corresponding to the toggle button `button`.
+ * @param {HTMLElement} button - The toggle button whose submenu should be collapsed.
  */
 const collapseSubmenu = button => {
 	button.setAttribute('aria-expanded', false);
@@ -145,4 +145,3 @@ if (document.querySelector('.timeline')) {
 		line.attr('y2', distance);
 	});
 }
-
