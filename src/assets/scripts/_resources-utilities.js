@@ -4,20 +4,18 @@
 
 import markdownit from 'markdown-it';
 
-/*
+/**
  * Filter the data set for records that satisfy one or more of the following criteria,
  * - at least one topic in the selected topics
  * - at least one type in the selected types
  *
  * If multiple criteria are selected, the intersections of the result sets for each
  * criterion will be returned.
- *
- * @param {Array<Object>} resources - The data set that the filter is performed upon.
- * @param {Object} filterSettings - A collection of data and settings representing the filter selections
- * @param {Array<String>} filterSettings.selectedTopics - An array of topic values to match.
- * @param {Array<String>} filterSettings.selectedTypes - An array of media types to match.
- *
- * @return A subset of the input `dataSet` that satisfy the matching criteria outlined above
+ * @param {Array<object>} resources - The data set that the filter is performed upon.
+ * @param {object} filterSettings - A collection of data and settings representing the filter selections
+ * @param {Array<string>} filterSettings.selectedTopics - An array of topic values to match.
+ * @param {Array<string>} filterSettings.selectedTypes - An array of media types to match.
+ * @returns {Array<string>} A subset of the input `dataSet` that satisfy the matching criteria outlined above
  */
 export function filterResources(resources, filterSettings) {
 	let results = resources;
@@ -33,23 +31,23 @@ export function filterResources(resources, filterSettings) {
 	return results;
 }
 
-/*
+/**
  * Chunk (split) the array into smaller arrays with the given chunk size at its most.
- * @param {Array<Anything>} inputArray - The input array to chunk.
- * @param {Number} chunkSize - The size of smaller arrays to chunk to.
- * @return An array of smaller arrays with the given chunk size at its most.
+ * @param {Array} inputArray - The input array to chunk.
+ * @param {number} chunkSize - The size of smaller arrays to chunk to.
+ * @returns {Array} An array of smaller arrays with the given chunk size at its most.
  */
 export function chunkArray(inputArray, chunkSize) {
 	return Array.from({length: Math.ceil(inputArray.length / chunkSize)}).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
 }
 
-/*
+/**
  * Create the pagination object for the input data set.
- * @param {Array<Object>} dataArray - The data set to create the pagination object for.
- * @param {Number} pageSize - The number of records on a page.
- * @param {Number} pageInQuery - The current page number.
- * @param {String} hrefTemplate - The href to redirect to when a page number is clicked.
- * @return Generate a pagination object in this data structure: https://www.11ty.dev/docs/pagination/#paging-an-array.
+ * @param {Array<object>} dataArray - The data set to create the pagination object for.
+ * @param {number} pageSize - The number of records on a page.
+ * @param {number} pageInQuery - The current page number.
+ * @param {string} hrefTemplate - The href to redirect to when a page number is clicked.
+ * @returns {object} A pagination object in this data structure: https://www.11ty.dev/docs/pagination/#paging-an-array.
  */
 export function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate) {
 	const dataInChunk = chunkArray(dataArray, pageSize);
@@ -84,12 +82,11 @@ export function createPagination(dataArray, pageSize, pageInQuery, hrefTemplate)
 	return pagination;
 }
 
-/*
+/**
  * Render filters section with states
- *
  * @param {Array} selectedTopics - An array of the suffix of the topic checkbox name that are checked
  * @param {Array} selectedTypes - An array of the suffix of the type checkbox name that are checked
-*/
+ */
 export function renderFilters(selectedTopics, selectedTypes) {
 	const sections = ['topics', 'types'];
 	for (const section of sections) {
@@ -111,11 +108,10 @@ export function renderFilters(selectedTopics, selectedTypes) {
 	}
 }
 
-/*
+/**
  * Set the given list of checkbox values to 'checked' state.
- *
- * @param {Object} container - The container that has all checkbox elements
- * @param {String} checkboxPrefix - The prefix of the checkbox name
+ * @param {object} container - The container that has all checkbox elements
+ * @param {string} checkboxPrefix - The prefix of the checkbox name
  * @param {Array} checkedValue - An array of the suffix of the checkbox name that are checked
  */
 export function renderCheckboxStats(container, checkboxPrefix, checkedValue) {
@@ -124,31 +120,29 @@ export function renderCheckboxStats(container, checkboxPrefix, checkedValue) {
 	}
 }
 
-/*
+/**
  * Set number of applied filters next to the filter header
- *
- *  @param {Object} container - The container within a filter header, where the number should be rendered
- *  @param {String} checkboxPrefix - The prefix of the checkbox name
+ *  @param {object} container - The container within a filter header, where the number should be rendered
+ *  @param {string} checkboxPrefix - The prefix of the checkbox name
  */
 export function renderNumberOfAppliedFilters(container, checkboxPrefix) {
 	const appliedFilter = document.querySelectorAll('.filter-checkbox[name^="' + checkboxPrefix + '"]:checked');
 	container.innerHTML = appliedFilter.length > 0 ? '(' + appliedFilter.length + ')' : '';
 }
 
-/*
+/**
  * Remove html tags from the input string.
- * @param {String} inputString - The string to remove html tags.
- * @return The string with html tags removed.
+ * @param {string} inputString - The string to remove html tags.
+ * @returns {string} The string with html tags removed.
  */
-
 export function stripHtmlTags(inputString) {
 	return inputString.replaceAll(/<\/?[^>]+(>|$)/g, '');
 }
 
-/*
+/**
  * Extract text from a html string.
- * @param {String} input - The string to extract text from.
- * @return The extracted text.
+ * @param {string} input - The string to extract text from.
+ * @returns {string} The extracted text.
  */
 export function htmlDecode(input) {
 	const element = document.createElement('div');
@@ -156,11 +150,11 @@ export function htmlDecode(input) {
 	return element.textContent;
 }
 
-/*
+/**
  * Process each resource in the resources to convert some field value to be formated for display.
  * By default, the resources to be displayed are sorted by publishedYear.
- * @param {Array<Object>} resources - An array of resources to be processed.
- * @return sorted resources with fields converted.
+ * @param {Array<object>} resources - An array of resources to be processed.
+ * @returns {Array<object>} Sorted resources with fields converted.
  */
 export function processResourcesDisplayResults(resources) {
 	const sortedArray = [];
@@ -239,10 +233,11 @@ export function processResourcesDisplayResults(resources) {
 	});
 }
 
-/*
+/**
  * Render the applied filters
- * @param {Integer} numberOfResources - number of resources to be rendered.
- * @return directly add the applied filter html to the content selector.
+ * @param {number} numberOfResources - The number of resources to be rendered.
+ * @param {Array} resourceTopics - Resource topics.
+ * @param {Array} resourceTypes - Resource types.
  */
 export function renderSearchResults(numberOfResources, resourceTopics, resourceTypes) {
 	const appliedFilters = document.querySelectorAll('.filter-checkbox:checked');
@@ -287,6 +282,9 @@ export function renderSearchResults(numberOfResources, resourceTopics, resourceT
 	document.querySelector('.content').innerHTML = appliedFilterHtml;
 }
 
+/**
+ * Render the UI for sorting resources.
+ */
 export function renderSortUI() {
 	const sortUIHtml
 		= `<div class='resources-sort'>
@@ -308,10 +306,11 @@ export function renderSortUI() {
 	document.querySelector('.content').innerHTML += sortUIHtml;
 }
 
-/*
+/**
  * Render the resources result
  * @param {Array} resources - An array of resources to be rendered.
- * @return directly add the resources html to the content selector.
+ * @param {Array} resourceTopics - An array of resource topics.
+ * @param {Array} resourceTypes - An array of resource types.
  */
 export function renderResources(resources, resourceTopics, resourceTypes) {
 	const md = markdownit({
@@ -376,11 +375,10 @@ export function renderResources(resources, resourceTopics, resourceTypes) {
 	document.querySelector('.content').innerHTML += resourcesHtml;
 }
 
-/*
+/**
  * Render the pagination.
- * @param {Object} pagination - A pagination object to be rendered.
-* @return directly add the pagiination html to the pagination selector.
-  */
+ * @param {object} pagination - A pagination object to be rendered.
+ */
 export function renderPagination(pagination) {
 	let paginationHtml = `
 	<h2 id='pagination' class='visually-hidden'>resources page navigation</h2>
@@ -411,9 +409,9 @@ export function renderPagination(pagination) {
 	document.querySelector('.pagination').innerHTML = paginationHtml;
 }
 
-/*
-* Set bind event listeners to the filter components
-*/
+/**
+ * Set bind event listeners to the filter components
+ */
 export function bindEventListeners() {
 	// Clicking the expand button on the filter header opens/closes the filter
 	const expandButtons = document.querySelectorAll('.filter-expand-button');
@@ -467,9 +465,9 @@ export function bindEventListeners() {
 	document.querySelector('#resources-result')?.setAttribute('role', 'alert');
 }
 
-/*
+/**
  * Set focus back on items before the refresh by filter changes
-*/
+ */
 export function restoreFocus() {
 	if (localStorage.getItem('setFocusOn')) {
 		const focusElement = document.querySelector(localStorage.getItem('setFocusOn'));
@@ -481,9 +479,11 @@ export function restoreFocus() {
 	}
 }
 
-/*
+/**
  * Replace special characters with their entity name
-*/
+ * @param {string} htmlString - An HTML string to process.
+ * @returns {string} The processed string.
+ */
 export function escapeSpecialCharactersForHTML(htmlString) {
 	htmlString.replaceAll('&', '&amp;')
 		.replaceAll('<', '&lt;')

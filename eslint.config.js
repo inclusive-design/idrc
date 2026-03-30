@@ -8,6 +8,7 @@ export default defineConfig([
 		rules: {
 			camelcase: ['error', {properties: 'never'}],
 			'unicorn/prefer-top-level-await': 'off',
+			'require-unicode-regexp': 'off',
 		},
 	},
 ]);
