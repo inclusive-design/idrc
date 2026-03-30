@@ -10,8 +10,8 @@ jobs:
     if: github.repository_owner == 'inclusive-design' && github.actor != 'renovate[bot]'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v6.0.0
+      - uses: actions/setup-node@v6.0.0
         with:
           cache: npm
       - name: Wait for Netlify deploy preview
@@ -31,7 +31,7 @@ jobs:
         env:
           CI: true
       - name: Upload report as downloadable artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7.0.0
         if: always()
         with:
           name: backstop-report
@@ -60,14 +60,14 @@ jobs:
           body="${body//$'\r'/'%0D'}"
           echo ::set-output name=body::$body
       - name: Find existing comment
-        uses: peter-evans/find-comment@v4
+        uses: peter-evans/find-comment@v4.0.0
         if: always()
         id: fc
         with:
           issue-number: ${{ github.event.number }}
           body-includes: Visual Regression Test Results
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v5
+        uses: peter-evans/create-or-update-comment@v5.0.0
         if: always()
         with:
           issue-number: ${{ github.event.number }}
