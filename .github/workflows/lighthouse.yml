@@ -10,7 +10,7 @@ jobs:
     outputs:
       url: ${{ steps.netlify.outputs.url }}
     steps:
-      - uses: actions/checkout@v6.0.0
+      - uses: actions/checkout@v6.0.2
       - name: Wait for Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1.4
         id: netlify
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: setup
     steps:
-      - uses: actions/checkout@v6.0.0
+      - uses: actions/checkout@v6.0.2
       - name: Run Lighthouse CI audits
         uses: treosh/lighthouse-ci-action@12.6.2
         with:
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: setup
     steps:
-      - uses: actions/checkout@v6.0.0
+      - uses: actions/checkout@v6.0.2
       - name: Run Lighthouse CI audits
         uses: treosh/lighthouse-ci-action@12.6.2
         with:
