@@ -11,8 +11,8 @@ jobs:
     name: Lint and test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v6.0.0
+      - uses: actions/setup-node@v6.0.0
         with:
           cache: npm
       - name: Install dependencies, lint files and run tests
