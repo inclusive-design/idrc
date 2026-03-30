@@ -19,6 +19,12 @@ const getContent = element => {
 	return elements;
 };
 
+/**
+ *
+ * @param {string} value The HTML source to parse and transform.
+ * @param {string} outputPath The path of the rendered HTML file.
+ * @returns {string} The parsed and transformed HTML.
+ */
 export default function parseTransform(value, outputPath) {
 	if (!outputPath || !outputPath.includes('.html')) {
 		return value;

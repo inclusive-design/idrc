@@ -35,30 +35,29 @@
   },
   "homepage": "https://github.com/inclusive-design/idrc#readme",
   "dependencies": {
-    "@11ty/eleventy": "3.1.2",
+    "@11ty/eleventy": "3.1.5",
     "@11ty/eleventy-img": "6.0.4",
     "@11ty/eleventy-navigation": "1.0.5",
     "@11ty/eleventy-plugin-rss": "2.0.4",
     "d3-selection": "3.0.0",
-    "eleventy-plugin-fluid": "3.1.4",
+    "eleventy-plugin-fluid": "3.2.1",
     "infusion": "4.8.0",
-    "markdown-it": "14.1.0",
+    "markdown-it": "14.1.1",
     "npm-run-all2": "8.0.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.3.0",
-    "@commitlint/config-conventional": "20.3.0",
-    "@inclusive-design/eslint-config": "^0.1.1",
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
+    "@inclusive-design/eslint-config": "^0.3.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
     "@inclusive-design/stylelint-config": "^0.1.0",
     "backstopjs": "6.3.25",
     "cross-env": "10.1.0",
-    "eslint-plugin-yml": "1.19.1",
     "husky": "9.1.7",
     "linkedom": "0.18.12",
-    "lint-staged": "16.2.7",
-    "rimraf": "6.1.2",
-    "start-server-and-test": "2.1.3"
+    "lint-staged": "16.4.0",
+    "rimraf": "6.1.3",
+    "start-server-and-test": "2.1.5"
   },
   "lint-staged": {
     "*.css": [
