@@ -139,6 +139,7 @@ export default function eleventy(eleventyConfig) {
 			language: 'en-CA',
 			title: siteData.title,
 			base: `${siteData.url}/`,
+			subtitle: siteData.description,
 			author: {
 				name: siteData.name,
 				email: siteData.email,
