@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.0
       - name: Run Lighthouse CI audits
-        uses: treosh/lighthouse-ci-action@v12.6.2
+        uses: treosh/lighthouse-ci-action@12.6.2
         with:
           runs: 3
           urls: |
@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.0
       - name: Run Lighthouse CI audits
-        uses: treosh/lighthouse-ci-action@v12.6.2
+        uses: treosh/lighthouse-ci-action@12.6.2
         with:
           runs: 3
           urls: |
