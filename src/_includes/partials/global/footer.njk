@@ -5,30 +5,45 @@
             <span class="visually-hidden">Inclusive Design Research Centre</span>
         </a>
     </div>
-    <div class="social">
+    <div class="column">
         <p class="h3">Social media</p>
         <ul>
-            <li><a rel="external" href="{{ site.bluesky }}">{% include 'svg/bluesky.svg' %} <span class="underline">Bluesky</span></a></li>
-            <li><a rel="external" href="{{ site.twitter }}">{% include 'svg/twitter.svg' %} <span class="underline">Twitter</span></a></li>
-            <li><a rel="external" href="{{ site.linkedin }}">{% include 'svg/linkedin.svg' %} <span class="underline">LinkedIn</span></a></li>
-            <li><a rel="external" href="{{ site.medium }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
-            <li><a rel="external" href="{{ site.youtube }}">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
+            <li><a class="social" rel="external" href="{{ site.bluesky }}">{% include 'svg/bluesky.svg' %} <span class="underline">Bluesky</span></a></li>
+            <li><a class="social" rel="external" href="{{ site.linkedin }}">{% include 'svg/linkedin.svg' %} <span class="underline">LinkedIn</span></a></li>
+            <li><a class="social" rel="external" href="{{ site.medium }}">{% include 'svg/medium.svg' %} <span class="underline">Medium</span></a></li>
+            <li><a class="social" rel="external" href="{{ site.youtube }}">{% include 'svg/youtube.svg' %} <span class="underline">YouTube</span></a></li>
         </ul>
     </div>
-    <div id="contact-us" class="contact">
+    <div id="contact-us" class="column">
         <p class="h3">Contact us</p>
         <div>
             <p class="h4">Email</p>
             <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
             <p class="h4">Address</p>
             {{ site.address | renderContent("md") | safe }}
-        </div>
-        <div>
             <p class="h4">Phone</p>
             <p>{{ site.phone }}</p>
             <p class="h4">Fax</p>
             <p>{{ site.fax }}</p>
         </div>
+    </div>
+    <div id="supported-by" class="column">
+        <p class="h3">Supported in part by:</p>
+        <p>
+            <a rel="external" class="sponsor" href="https://hewlett.org/" aria-label="William and Flora Hewlett Foundation">{% include '../../svg/hewlett.svg' %}</a>
+        </p>
+        <p>
+            <a rel="external" class="sponsor" href="https://sshrc-crsh.canada.ca/funding-financement/nfrf-fnfr/index-eng.aspx" aria-label="New Frontiers in Research Fund">{% include '../../svg/nfrf.svg' %}</a>
+        </p>
+        <p>
+            <a rel="external" class="sponsor" href="https://accessible.canada.ca/" aria-label="Accessibility Standards Canada">ASC</a>
+        </p>
+        <p class="gc">
+            <span>Funded by Government of Canada’s Innovation, Science and Economic Development Canada and Employment and Service Development Canada</span>
+            <a rel="external" class="sponsor" href="https://www.canada.ca/en.html" aria-label="Government of Canada">{% include '../../svg/canada.svg' %}</a>
+        </p>
+    </div>
+
     </div>
     <div class="license-credit">
         <p>This work is licensed under a <a rel="external license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>.</p>
