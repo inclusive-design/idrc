@@ -1,5 +1,5 @@
 ---
 title: Avtar Gill
-job: Inclusive Developer
+job: Senior Inclusive Developer
 email: agill@ocadu.ca
 ---
