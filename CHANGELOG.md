@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026.04.06.1542.933353e](https://github.com/inclusive-design/idrc/compare/2026.04.06.1314.a8efca7...2026.04.06.1542.933353e)
+
+### Features
+
+* feat: add funder logos (#1352) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.04.06.1314.a8efca7](https://github.com/inclusive-design/idrc/compare/2026.02.03.1250.d0562f2...2026.04.06.1314.a8efca7)
 
 * chore(deps): lock file maintenance (#1353) @[renovate[bot]](https://github.com/apps/renovate)
