@@ -44,6 +44,21 @@
     inline-size: calc(192 / 16 * 1rem);
 }
 
+.footer .sponsor.asc {
+    display: inline-block;
+}
+
+.footer .sponsor.asc .logo {
+    aspect-ratio: 379 / 36.16;
+    background: var(--fl-linkFgColor, currentcolor) !important;
+    display: block;
+    height: auto;
+    mask-image: url('../../media/asc-signature-en-fr-black.png');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    width: 379px;
+}
+
 .footer a {
     &:focus {
         outline-color: var(--fl-linkColor, var(--yellow-500));
