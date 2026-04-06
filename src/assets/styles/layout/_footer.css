@@ -33,6 +33,7 @@
 
 .footer .logo {
     display: flex;
+    margin-inline-start: calc(-1 * 18 / 16 * 1rem);
 
     a {
         padding: calc(18 / 16 * 1rem);
@@ -42,6 +43,25 @@
 .footer .logo svg {
     fill: currentcolor;
     inline-size: calc(192 / 16 * 1rem);
+}
+
+.footer .sponsor + .sponsor {
+    margin-block-start: 1.5rem;
+}
+
+.footer .sponsor .asc {
+    display: inline-block;
+}
+
+.footer .sponsor .asc .image {
+    aspect-ratio: 379 / 36.16;
+    background: var(--fl-linkFgColor, currentcolor) !important;
+    display: block;
+    height: auto;
+    mask-image: url('../../media/asc-signature-en-fr-black.png');
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    width: 379px;
 }
 
 .footer a {
@@ -62,8 +82,7 @@
     text-decoration-color: var(--fl-linkColor, var(--indigo-500));
 }
 
-.footer .social,
-.footer .contact {
+.footer .column {
     margin-block-start: calc(48 / 16 * 1rem);
 
     &::before {
@@ -84,12 +103,11 @@
     margin-block-end: calc(8 / 16 * 1rem);
 }
 
-.footer .social a,
-.footer .contact a {
+.footer .social {
     text-decoration: none;
 }
 
-.footer .social svg {
+.footer .social[rel="external"] svg {
     display: inline;
     fill: currentcolor;
     inline-size: calc(16 / 16 * 1rem);
@@ -101,29 +119,43 @@
     margin-block-start: calc(48 / 16 * 1rem);
 }
 
+.footer .gc {
+    align-items: center;
+    display: flex;
+    font-size: calc(11 / 16 * 1rem);
+    gap: 1rem;
+    justify-content: space-between;
+    max-inline-size: calc(380 / 16 * 1rem);
+
+    span {
+        border-inline-end: solid calc(2 / 16 * 1rem) currentcolor;
+        display: inline-block;
+        min-height: 4rem;
+        padding-inline-end: 1rem;
+        text-align: right;
+        text-wrap: balance;
+        width: auto;
+    }
+}
+
+.footer [rel="external"] svg {
+    inline-size: auto;
+    margin: 0;
+}
+
 @media (width >= 1024px) {
     .footer .logo {
         flex: 0 0 100%;
+        padding-inline: 0;
     }
 
-    .footer .social {
-        flex: 0 0 calc(100% / 3);
+    .footer .column {
+        flex: 0 0 calc((100% - calc(2 * var(--gutter))) / 3);
+        padding-inline: 0;
     }
 
-    .footer .contact {
-        display: flex;
-        flex: 0 0 calc(100% * 2 / 3);
-        flex-flow: row wrap;
-
-        .h3 {
-            inline-size: 100%;
-            margin-block-end: calc(24 / 16 * 1rem);
-        }
-
-        div {
-            inline-size: 50%;
-            margin-block-start: 0;
-        }
+    .footer .column + .column {
+        margin-inline-start: var(--gutter);
     }
 
     .footer .license-credit {

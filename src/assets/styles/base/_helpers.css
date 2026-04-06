@@ -18,3 +18,7 @@
     max-inline-size: calc(1200 / 16 * 1rem);
     padding-inline: calc(var(--gutter) / 2);
 }
+
+.underline {
+    text-decoration: underline;
+}
