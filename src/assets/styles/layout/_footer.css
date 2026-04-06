@@ -33,6 +33,7 @@
 
 .footer .logo {
     display: flex;
+    margin-inline-start: calc(-1 * 18 / 16 * 1rem);
 
     a {
         padding: calc(18 / 16 * 1rem);
@@ -44,11 +45,15 @@
     inline-size: calc(192 / 16 * 1rem);
 }
 
-.footer .sponsor.asc {
+.footer .sponsor + .sponsor {
+    margin-block-start: 1.5rem;
+}
+
+.footer .sponsor .asc {
     display: inline-block;
 }
 
-.footer .sponsor.asc .logo {
+.footer .sponsor .asc .image {
     aspect-ratio: 379 / 36.16;
     background: var(--fl-linkFgColor, currentcolor) !important;
     display: block;
