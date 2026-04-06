@@ -1,5 +1,51 @@
 # Changelog
 
+## [2026.04.06.1314.a8efca7](https://github.com/inclusive-design/idrc/compare/2026.02.03.1250.d0562f2...2026.04.06.1314.a8efca7)
+
+* chore(deps): lock file maintenance (#1353) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): pin workflows (#1350) [@nedatidrc](https://github.com/nedatidrc)
+* ci: pin versions (#1347) [@nedatidrc](https://github.com/nedatidrc)
+
+### Features
+
+* feat: switch to new linters (#1323) [@nedatidrc](https://github.com/nedatidrc)
+
+### Bug Fixes
+
+* fix: resolve linting config issue (#1342) [@nedatidrc](https://github.com/nedatidrc)
+* fix: linting issue (#1339) [@nedatidrc](https://github.com/nedatidrc)
+
+### Chores
+
+* chore(deps-dev): remove eslint-plugin-yml (#1343) [@nedatidrc](https://github.com/nedatidrc)
+* chore(deps-dev): remove babel (#1341) [@nedatidrc](https://github.com/nedatidrc)
+
+### Dependencies
+
+* chore(deps): update actions/checkout action to v6.0.2 (#1351) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1348) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/checkout action to v6.0.2 (#1349) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/setup-node action to v6.3.0 (#1346) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy-plugin-rss to v3 (#1338) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency start-server-and-test to v3 (#1337) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/checkout action to v6.0.2 (#1345) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1344) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/upload-artifact action to v7 (#1336) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update actions/create-github-app-token action to v3 (#1335) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency lint-staged to v16.4.0 (#1334) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency start-server-and-test to v2.1.5 (#1330) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@inclusive-design](https://github.com/inclusive-design)/markdownlint-config to v0.1.1 (#1332) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency [@inclusive-design](https://github.com/inclusive-design)/eslint-config to ^0.3.0 (#1324) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency [@11ty](https://github.com/11ty)/eleventy to v3.1.5 (#1333) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency markdown-it to v14.1.1 [security] (#1331) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update dependency rimraf to v6.1.3 (#1329) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update nginx docker tag to v1.29.7 (#1326) @[renovate[bot]](https://github.com/apps/renovate)
+* fix(deps): update dependency eleventy-plugin-fluid to v3.2.1 (#1321) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): update commitlint monorepo to v20.5.0 (#1308) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1340) @[renovate[bot]](https://github.com/apps/renovate)
+* chore(deps): lock file maintenance (#1327) @[renovate[bot]](https://github.com/apps/renovate)
+* feat: switch to new linters (#1323) [@nedatidrc](https://github.com/nedatidrc)
+
 ## [2026.02.03.1250.d0562f2](https://github.com/inclusive-design/idrc/compare/2026.01.21.1426.014f48b...2026.02.03.1250.d0562f2)
 
 ### Chores
