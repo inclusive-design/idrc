@@ -9,7 +9,7 @@ import siteData from './src/_data/site.json' with {type: 'json'};
 
 /**
  * @param {object} eleventyConfig The Eleventy configuration object.
- * @returns {object} Eleventy configuration.
+ * @return {object} Eleventy configuration.
  */
 export default function eleventy(eleventyConfig) {
 	const now = new Date();
