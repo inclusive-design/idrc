@@ -71,5 +71,6 @@
       "eslint --fix",
       "markdownlint-cli2 --fix"
     ]
-  }
+  },
+  "version": "2026.4.1"
 }
