@@ -8,6 +8,7 @@
     "backstop:test": "backstop test --docker --config=backstop.config.cjs",
     "backstop:test:ci": "backstop test --config=backstop.config.cjs",
     "backstop:approve": "backstop approve --config=backstop.config.cjs",
+    "backstop": "start-server-and-test start http://localhost:8080 backstop:test",
     "build": "npm-run-all -l clean build:eleventy",
     "build:eleventy": "cross-env NODE_ENV=production eleventy",
     "clean": "rimraf _site",
@@ -17,7 +18,7 @@
     "lint:stylelint": "stylelint \"**/*.css\"",
     "lint:eslint": "eslint",
     "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
-    "test": "start-server-and-test start http://localhost:8080 backstop:test",
+    "test": "echo \"No test specified\" && exit 0",
     "start": "npm-run-all -l clean dev",
     "prepare": "husky"
   },
