@@ -1,5 +1,18 @@
 # Changelog
 
+## [2026.4.1](https://github.com/inclusive-design/idrc/compare/v2026.4.0...v2026.4.1) (2026-04-15)
+
+
+### Bug Fixes
+
+* add release-please config ([#1363](https://github.com/inclusive-design/idrc/issues/1363)) ([368744d](https://github.com/inclusive-design/idrc/commit/368744dfe5a5e487fef4d8f3cb020f4437df6b95))
+* add release-please manifest ([#1364](https://github.com/inclusive-design/idrc/issues/1364)) ([e330ad5](https://github.com/inclusive-design/idrc/commit/e330ad5f243cfd21931a056ac458b3f684eff66f))
+
+
+### Continuous Integration
+
+* replace release-drafter with release-please ([#1362](https://github.com/inclusive-design/idrc/issues/1362)) ([4da232b](https://github.com/inclusive-design/idrc/commit/4da232b0fb0a7c7d7cadc1b3aa4d8823a7a19d68))
+
 ## [2026.04.06.1542.933353e](https://github.com/inclusive-design/idrc/compare/2026.04.06.1314.a8efca7...2026.04.06.1542.933353e)
 
 ### Features
