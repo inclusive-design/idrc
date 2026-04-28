@@ -34,7 +34,7 @@ funderLogos:
     verticalAlignment: bottom
 ---
 
-The Baby Bliss Bot (BBB) project explores the use of AI tools to enhance communication for AAC (Augmentative and Alternative Communication) users who rely on Blissymbolics — a semantic symbol language without phonology, originally developed by Charles K. Bliss and first used as a communication bridge for children with physical disabilities at the Ontario Crippled Children's Centre in 1971. Today, Blissymbols remain a vital alternative for nonvocal individuals, such as those with cerebral palsy, who face challenges acquiring phonological language skills.
+The Baby Bliss Bot (BBB) project explores the use of AI tools to enhance communication for AAC (Augmentative and Alternative Communication) users who rely on Blissymbolics — a semantic symbol language without phonology, originally developed by Charles K. Bliss and first used as a communication bridge for children with physical disabilities at the Ontario Crippled Children's Centre in 1971. Today, Bliss symbols remain a vital alternative for nonvocal individuals, such as those with cerebral palsy, who face challenges acquiring phonological language skills.
 
 While the rapid advancement of AI — particularly Large Language Models — offers significant potential to improve societal engagement for nonvocal individuals, it also poses risks for communities underrepresented in training data. BBB is a community-led initiative that addresses this gap through an inclusive, co-design process, positioning AAC and Blissymbol users as active decision-makers. Through collaborative development of experimental prototypes, the project aims to uncover innovative communication solutions and produce insights that inform the creation of more equitable, advanced AI-based AAC systems for marginalized minority language users.
 
@@ -77,10 +77,6 @@ The rapid advancement of AI - particularly Large Language Models (LLMs) - offers
 ### Design
 
 - [Draft Design of Adaptive Palette](https://www.figma.com/file/JqOOpNKBVVXVSGjaGx8Mbr/BBB-Palette-Design?type=design&node-id=0-1&mode=design&t=pxbiuuJ9VAM2MH2u-0 "https://www.figma.com/file/JqOOpNKBVVXVSGjaGx8Mbr/BBB-Palette-Design?type=design&node-id=0-1&mode=design&t=pxbiuuJ9VAM2MH2u-0")
-
-## Reference documents
-
-Documents to reference for current work.
 
 ### Technical Issues
 
