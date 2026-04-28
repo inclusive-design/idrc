@@ -54,6 +54,8 @@ While the rapid advancement of AI — particularly Large Language Models — off
 
 **Final ISAAC Presentation**
 
+The rapid advancement of AI - particularly Large Language Models (LLMs) - offers exciting possibilities to enhance communication for AAC users. The inclusive design project described in this paper, titled Baby Bliss Bot, is led by a group of AI programmers collaborating with AAC users as co-designers in an interdisciplinary initiative. It uses Blissymbolics in its first phase to explore how the LLMs of AI can be leveraged to support AAC users in learning language and in communicating meaningfully across contexts and dialogue types - at home, in school, at work and from inquiry and discovery, to humour, creativity and beyond. Blissymbolics was chosen as the GRS in Phase One because of its comprehensive language capabilities and affordances that facilitated a multi-tiered approach. Through collaborative experimentation, the project investigates not only how to make AI systems more inclusive for outliers and minorities, but also how to design alternative training methods and interfaces. The aim is to support context-aware, personalized expression that respects the individuality of each AAC user. 
+
 <https://www.youtube.com/watch?v=lLgNm_g5slc>
 
 ## Live website
@@ -61,14 +63,6 @@ While the rapid advancement of AI — particularly Large Language Models — off
 [Live Deploy of the Adaptive Palette](https://adaptive-palette.pages.dev/ "https://adaptive-palette.pages.dev/")
 
 [Sunburst Keyboard Design Ideas](https://cindyli.github.io/sunburst_keyboard/ "https://cindyli.github.io/sunburst_keyboard/")
-
-## Meetings
-
-The project has three weekly meeting: the language development meeting, the UX connect meeting and the technical meeting. All meetings are recorded and shared in the Baby Bliss Bot [YouTube channel](https://www.youtube.com/@BabyBlissBot "https://www.youtube.com/@BabyBlissBot"). Meeting notes documents are:
-
-- [Meeting notes for weekly language development meeting](https://docs.google.com/document/d/13-4t3hgcDBv3rusM9DN6G_krnfFKrEOw/edit "https://docs.google.com/document/d/13-4t3hgcDBv3rusM9DN6G_krnfFKrEOw/edit")
-- [Meeting notes for weekly UX connect meeting](https://docs.google.com/document/d/1tGXSQfsjLEeRYszcWBcur46RNQWBUzdBabbRyqZRxaI/edit?tab=t.lf7y4gb1up6u "https://docs.google.com/document/d/1tGXSQfsjLEeRYszcWBcur46RNQWBUzdBabbRyqZRxaI/edit?tab=t.lf7y4gb1up6u")
-- [Meeting notes for weekly technical meeting](https://docs.google.com/document/d/1MBu-qXqB-c66rA32Otn9dS84McLLnL3O6qdRdcHJ7Yw/edit "https://docs.google.com/document/d/1MBu-qXqB-c66rA32Otn9dS84McLLnL3O6qdRdcHJ7Yw/edit")
 
 ### 
 
@@ -87,10 +81,6 @@ The project has three weekly meeting: the language development meeting, the UX c
 ## Reference documents
 
 Documents to reference for current work.
-
-### Technical Information
-
-- [Technical documentation](https://docs.google.com/document/d/1o5U_BBTpNyVXGDqpwl9LaZN2EfRr1p4fCHh-dWIRdV4/edit#heading=h.tr4hgayq9osl "https://docs.google.com/document/d/1o5U_BBTpNyVXGDqpwl9LaZN2EfRr1p4fCHh-dWIRdV4/edit#heading=h.tr4hgayq9osl")
 
 ### Technical Issues
 
