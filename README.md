@@ -89,4 +89,3 @@ Release-As: 2026.4.2"
 
 Once that commit is in the version history, release-please will update the release pull request to the new version and
 it can be merged.
-
