@@ -17,7 +17,21 @@ funderLogos:
     imagePosition: left
     scale: 50
     maxHeight: auto
+    verticalAlignment: top
+  - content: ''
+    image: /media/nfrf-logo.jpg
+    alt: nfrf logo
+    imagePosition: left
+    scale: 100
+    maxHeight: auto
     verticalAlignment: center
+  - content: ''
+    image: /media/government-of-canada-vector-logo.jpg
+    alt: Government of Canada logo
+    imagePosition: left
+    scale: 50
+    maxHeight: auto
+    verticalAlignment: bottom
 ---
 
 The Baby Bliss Bot (BBB) project explores the use of AI tools to enhance communication for AAC (Augmentative and Alternative Communication) users who rely on Blissymbolics — a semantic symbol language without phonology, originally developed by Charles K. Bliss and first used as a communication bridge for children with physical disabilities at the Ontario Crippled Children's Centre in 1971. Today, Blissymbols remain a vital alternative for nonvocal individuals, such as those with cerebral palsy, who face challenges acquiring phonological language skills.
@@ -101,4 +115,3 @@ Cindy Li: cli@ocadu.ca
 - Hannes Ljusås
 - Justin Obara
 - Daniel Cho
-
