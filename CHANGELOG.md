@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.5.0](https://github.com/inclusive-design/idrc/compare/v2026.4.1...v2026.5.0) (2026-04-29)
+
+
+### Features
+
+* update Baby Bliss Bot project page ([#1367](https://github.com/inclusive-design/idrc/issues/1367)) ([729ad90](https://github.com/inclusive-design/idrc/commit/729ad90963d5836e89306671ac3c9c126c7fe38a))
+
 ## [2026.4.1](https://github.com/inclusive-design/idrc/compare/v2026.4.0...v2026.4.1) (2026-04-15)
 
 
