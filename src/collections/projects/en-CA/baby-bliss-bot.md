@@ -15,21 +15,21 @@ funderLogos:
     image: /media/vraie-idea-logo.jpg
     alt: vraie idea logo
     imagePosition: left
-    scale: 50
+    scale: 25
     maxHeight: auto
     verticalAlignment: top
   - content: ''
     image: /media/nfrf-logo.jpg
     alt: nfrf logo
     imagePosition: left
-    scale: 100
+    scale: 50
     maxHeight: auto
     verticalAlignment: center
   - content: ''
     image: /media/government-of-canada-vector-logo.jpg
     alt: Government of Canada logo
     imagePosition: left
-    scale: 50
+    scale: 25
     maxHeight: auto
     verticalAlignment: bottom
 ---
@@ -78,12 +78,6 @@ The rapid advancement of AI - particularly Large Language Models (LLMs) - offers
 
 - [Draft Design of Adaptive Palette](https://www.figma.com/file/JqOOpNKBVVXVSGjaGx8Mbr/BBB-Palette-Design?type=design&node-id=0-1&mode=design&t=pxbiuuJ9VAM2MH2u-0 "https://www.figma.com/file/JqOOpNKBVVXVSGjaGx8Mbr/BBB-Palette-Design?type=design&node-id=0-1&mode=design&t=pxbiuuJ9VAM2MH2u-0")
 
-### Technical Issues
-
-[Drag and Drop in the (p)react ecosystem](https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/55673104 "https://fluidproject.atlassian.net/wiki/spaces/IDRC/pages/55673104")
-
-A platform and service that connects the disability and Deaf communities and their supporters with organizations and businesses (Federally Regulated Organizations) to work on accessibility projects together. 
-
 ## Communication
 
 IDRC Contact
@@ -101,3 +95,5 @@ Cindy Li: cli@ocadu.ca
 - Hannes Ljusås
 - Justin Obara
 - Daniel Cho
+
+## Funded by
