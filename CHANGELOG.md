@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.5.1](https://github.com/inclusive-design/idrc/compare/v2026.5.0...v2026.5.1) (2026-05-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @11ty/eleventy-img to v6.0.4 ([#1377](https://github.com/inclusive-design/idrc/issues/1377)) ([3bef326](https://github.com/inclusive-design/idrc/commit/3bef3260369c820e0d82965c9d605c313024dd83))
+* **deps:** update minor updates ([#1373](https://github.com/inclusive-design/idrc/issues/1373)) ([b5aa395](https://github.com/inclusive-design/idrc/commit/b5aa395bae987ac0b2b92856222580ac4d5de75e))
+
 ## [2026.5.0](https://github.com/inclusive-design/idrc/compare/v2026.4.1...v2026.5.0) (2026-04-29)
 
 
