@@ -2,7 +2,6 @@ import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import eleventyImage, {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
 import {feedPlugin} from '@11ty/eleventy-plugin-rss';
 import MarkdownIt from 'markdown-it';
-
 import fluidPlugin from 'eleventy-plugin-fluid';
 import parseTransform from './src/_transforms/parse.js';
 import siteData from './src/_data/site.json' with {type: 'json'};
