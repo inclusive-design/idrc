@@ -1,7 +1,7 @@
 ---
 layout: layouts/single--news.njk
 title: IDRC’s Newsletter
-date: 2025-05-07
+date: 2026-07-20
 author: IDRC Team
 excerpt: Get access to the current and all past issues of the Recount,  IDRC’s monthly newsletter. Each issue is filled with IDRC news, the latest in AI and accessibility and other news from the field of inclusion.
 permalink: /newsletter/
@@ -9,13 +9,14 @@ metaTitle: ''
 metaDesc: ''
 socialImage: /media/Recount%20newsletter%20banner%402x.png
 ---
+
 The latest news, events and initiatives in the data science, disability and AI communities from the Inclusive Design Research Centre and its We Count community. [Subscribe to the Recount.](https://ocadu.us6.list-manage.com/subscribe?u=df09b45913649b12f2a2aef66&id=97ef2e9d6a)
 
 ![the Recount](/media/Recount%20newsletter%20banner%402x.png)
 
 <style type="text/css">
 <!--
-.display\_archive {font-family: arial,verdana; font-size: 18px;}
+.display_archive {font-family: arial,verdana; font-size: 18px;}
 .campaign {line-height: 125%; margin: 5px;}
 //-->
 </style>
