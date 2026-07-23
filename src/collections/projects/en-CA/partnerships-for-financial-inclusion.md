@@ -7,7 +7,7 @@ linking:
   slug: financial-inclusion
 shortTitle: Financial Inclusion
 order: 5
-thumbnailImage: /media/money.png
+thumbnailImage: /media/Parnerships_for_F_I_logo.jpg
 thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
 funderLogos:
@@ -66,7 +66,7 @@ Over the past three years, the Inclusive Design Research Centre (IDRC) partnered
 
 ## What’s Next: Phase 2 and FIRM
 
-We are launching **Phase 2** to scale and sustain impact through the **Financial Inclusion and Resilience Movement (FIRM)**—a community-led infrastructure designed to strengthen grassroots capacity and foster institutional collaboration.
+We are launching **Phase 2** to scale and sustain impact through the \*\*Financial Inclusion and Resilience Movement (FIRM)\*\*—a community-led infrastructure designed to strengthen grassroots capacity and foster institutional collaboration.
 
 **FIRM includes four core components:**
 
