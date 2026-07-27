@@ -12,6 +12,7 @@ projects:
 interests: ''
 metaTitle: ''
 metaDesc: ''
+socialImage: /media/Watkins self portrait.png
 ---
 
 Caren Watkins is an inclusive designer, researcher, educator, and communication professional whose work focuses on accessibility, inclusive design, and equitable participation in education and society. Based at the Inclusive Design Research Centre (IDRC) at OCAD University, her current work is guided by a commitment to inclusive design as a catalyst for innovation, social participation, and systemic change. She is particularly interested in the intersection of accessibility, learning, policy, and technology, and in fostering collaborative approaches that create more inclusive futures.
