@@ -28,19 +28,21 @@ From research to action: advancing financial inclusion through community-led inn
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
 * [Join the Movement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
-### Upcoming Webinar — August 19, 1:00-2:30 PM EDT
-
-**Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance**, with Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta). Free and accessible.
-
-The session will explore participatory governance models as grassroots approaches that help organizations and communities share decision-making and work together toward common goals. The session will also serve as a starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM).
-
-[**Register Now**](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
-
 ## Why Financial Inclusion Matters
 
 Nearly **1 million Canadians are unbanked** and **5 million are underbanked**—not by choice, but due to systemic barriers. People with disabilities, newcomers, racialized communities, and those without stable housing face the greatest challenges.
 
 Financial exclusion is not a fringe issue. It limits access to basic tools for stability and participation in society. Inclusive financial systems are about **dignity, opportunity, and justice**.
+
+## Upcoming Event
+
+[![Free webinar: Creating Participatory Architecture — The Opportunities and Challenges of Inclusive Governance, with Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta). Wednesday, August 19, 1:00 PM EDT, online. Free and open to all, live captioning provided. Partnerships for Financial Inclusion.](/media/PFI%20Webinar%20Banner%201200x627.png "Creating Participatory Architecture")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
+
+The session will explore participatory governance models as grassroots approaches that help organizations and communities share decision-making and work together toward common goals. The session will also serve as a starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM).
+
+The event is free and open to all. Live captioning will be provided. English/French interpretation, ASL, and LSQ are available upon request.
+
+### [**Register here**](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
 ## Mission
 
