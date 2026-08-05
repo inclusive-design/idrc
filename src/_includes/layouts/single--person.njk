@@ -11,11 +11,11 @@
             <div class="wrapper">
                 {% if sections.length %}
                 {% for section in sections %}
-                <h2 class="h3">{{ section.title }}</h2>
+                <h2>{{ section.title }}</h2>
                 {{ section.content | renderContent('md') | safe }}
                 {% endfor %}
                 {% endif %}
-                <h2 class="h3">Connect</h2>
+                <h2>Connect</h2>
                 <table>
                 {% if email %}
                 <tr>
