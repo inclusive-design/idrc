@@ -19,6 +19,12 @@
     }
 }
 
+.single--person {
+    article {
+        justify-content: flex-start;
+    }
+}
+
 @media (width >= 600px) {
     .single {
         main > article header .wrapper {

@@ -3,6 +3,7 @@ import eleventyImage, { eleventyImageTransformPlugin } from '@11ty/eleventy-img'
 import { feedPlugin } from '@11ty/eleventy-plugin-rss';
 import MarkdownIt from 'markdown-it';
 import fluidPlugin from 'eleventy-plugin-fluid';
+import fontAwesomePlugin from '@11ty/font-awesome';
 import parseTransform from './src/_transforms/parse.js';
 import siteData from './src/_data/site.json' with { type: 'json' };
 
@@ -11,6 +12,8 @@ import siteData from './src/_data/site.json' with { type: 'json' };
  * @returns {object} Eleventy configuration.
  */
 export default function eleventy(eleventyConfig) {
+	eleventyConfig.addPlugin(fontAwesomePlugin);
+
 	const now = new Date();
 
 	// Collections.

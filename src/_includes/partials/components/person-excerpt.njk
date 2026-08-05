@@ -1,7 +1,10 @@
 <article class="person">
-    <h2 class="h3">{{ person.data.title }}</h2>
+    <h2 class="h3">{% if person.data.sections.length %}<a href="{{ person.url }}">{{ person.data.title }}</a>{% else %}{{ person.data.title }}{% endif %}</h2>
     <div class="metadata">
         <p><strong>{{ person.data.job }}</strong></p>
     </div>
     <p><a class="link--email" href="mailto:{{ person.data.email }}">{% include 'svg/email.svg' %} Email {{ person.data.title | split(' ') | first }}</a></p>
+    {% if person.data.speaker === true %}
+    <span class="tag">available to speak</span>
+    {% endif %}
 </article>

@@ -1,6 +1,6 @@
-.page-header {
+.page-header,
+.person-header {
     background: var(--fl-bgColor, var(--header-bg, var(--indigo-100)));
-    border-block-end: calc(10 / 16 * 1rem) solid var(--fl-fgColor, var(--header-border));
     color: var(--fl-fgColor, var(--header-fg, black));
     flex: 0 0 100%;
     padding-block: calc(80 / 16 * 1rem);
@@ -25,6 +25,30 @@
     }
 }
 
+.page-header {
+    border-block-end: calc(10 / 16 * 1rem) solid var(--fl-fgColor, var(--header-border));
+}
+
+.person-header {
+    padding-block-end: 0;
+}
+
+.person-header::after {
+    border-block-end: calc(10 / 16 * 1rem) solid var(--fl-fgColor, var(--header-border));
+    content: "";
+    display: block;
+    margin-block-start: 5rem;
+    margin-inline-start: calc(var(--gutter) / 2);
+    width: calc(70 / 16 * 1rem);
+}
+
+
+.person-header .container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+}
+
 @media (width >= 600px) {
     .page-header {
         h1 {
@@ -37,6 +61,30 @@
 
         .intro {
             inline-size: 66%;
+        }
+    }
+}
+
+@media (width >= 1024px) {
+    .person-header .container {
+        flex-direction: row;
+        gap: var(--gutter);
+
+        > div {
+            inline-size: 100%;
+        }
+    }
+
+    .person-header .container:has(picture) {
+        > div {
+            inline-size: calc(50% - var(--gutter));
+        }
+
+        picture {
+            max-inline-size: calc(50% - var(--gutter));
+            position: absolute;
+            right: 0;
+            top: 5rem;
         }
     }
 }

@@ -1,12 +1,17 @@
-<header>
+<header class="person-header">
     <div class="container inner">
-        {% if postType %}
-        <p class="breadcrumbs"><a href="{{ postTypeUrl }}">{{ postType }}</a></p>
-        {% endif %}
-        <h1>{{ title }}</h1>
-        <div class="metadata">
-            <p class="h3">{{ job }}</p>
-            <p>{{ pronouns | title }}</p>
+        <div>
+            <p class="breadcrumbs"><a href="{{ postTypeUrl }}">{{ postType }}</a></p>
+            <h1>{{ title }}</h1>
+            <div class="metadata">
+                <p class="h3">{{ job }}</p>
+                {% if pronouns %}
+                <p>{{ pronouns }}</p>
+                {% endif %}
+            </div>
         </div>
+        {% if socialImage and socialImageAlt %}
+        <img src="{{ socialImage }}" alt="{{ socialImageAlt }}" />
+        {% endif %}
     </div>
 </header>

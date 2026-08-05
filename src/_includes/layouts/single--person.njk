@@ -5,55 +5,51 @@
 {% set postTypeUrl = '/about/team/' %}
 
 {% block content %}
-    <article class="container">
-        {% include 'partials/components/person-header.njk' %}
-        <div class="content">
+<article>
+    {% include 'partials/components/person-header.njk' %}
+    <div class="content">
             <div class="wrapper">
-                {% if projects.length %}
-                <h2>Projects</h2>
-                <p>
-                {% for project in projects %}
-                    {{ project }}{% if not loop.last %}<br />{% endif %}
+                {% if sections.length %}
+                {% for section in sections %}
+                <h2>{{ section.title }}</h2>
+                {{ section.content | renderContent('md') | safe }}
                 {% endfor %}
-                </p>
-                {% endif %}
-                {% if interests %}
-                <h2>Interests</h2>
-                {{ interests | renderContent("md") | safe }}
-                {% endif %}
-                {% if content %}
-                <h2>Bio</h2>
-                {{ content | safe }}
                 {% endif %}
                 <h2>Connect</h2>
                 <table>
                 {% if email %}
                 <tr>
-                    <th>Email</th>
+                    <th scope="row"><i class="icon fa-solid fa-envelope"></i> Email</th>
                     <td><a href="mailto:{{ email }}">{{ email }}</a></td>
                 </tr>
                 {% endif %}
                 {% if website %}
                 <tr>
-                    <th>Website</th>
+                    <th scope="row"><i class="icon fa-solid fa-globe"></i> Website</th>
                     <td><a href="{{ website }}">{{ website | replace('https://', '') | replace('http://', '') }}</a></td>
                 </tr>
                 {% endif %}
-                {% if twitter %}
+                {% if bluesky %}
                 <tr>
-                    <th>Twitter</th>
-                    <td><a href="https://twitter.com/{{ twitter | replace('@', '') }}">{{ twitter }}</a></td>
+                    <th scope="row"><i class="icon fa-brands fa-bluesky"></i> Bluesky</th>
+                    <td><a href="{{ bluesky }}">{{ bluesky | replace('https://bsky.app/profile/', '@') }}</a></td>
                 </tr>
                 {% endif %}
                 {% if linkedin %}
                 <tr>
-                    <th>LinkedIn</th>
+                    <th scope="row"><i class="icon fa-brands fa-linkedin"></i> LinkedIn</th>
                     <td><a href="{{ linkedin }}">{{ title }}</a></td>
+                </tr>
+                {% endif %}
+                {% if medium %}
+                <tr>
+                    <th scope="row"><i class="icon fa-brands fa-medium"></i> Medium</th>
+                    <td><a href="{{ medium }}">{{ title }}</a></td>
                 </tr>
                 {% endif %}
                 {% if github %}
                 <tr>
-                    <th>Github</th>
+                    <th scope="row"><i class="icon fa-brands fa-github"></i> Github</th>
                     <td><a href="{{ github | replace('https://github.com/', '') }}">{{ github | replace('http://github.com/', '@') | replace('https://github.com/', '@') }}</a></td>
                 </tr>
                 {% endif %}

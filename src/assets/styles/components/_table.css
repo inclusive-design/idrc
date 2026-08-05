@@ -1,0 +1,17 @@
+tr {
+    height: 3rem;
+}
+
+th {
+    font-weight: 600;
+    gap: 1ch;
+    padding-inline-end: 2rem;
+    text-align: start;
+}
+
+th .icon {
+    display: inline-block;
+    height: 1.5em;
+    margin-inline-end: 0.5rem;
+    width: 1.5em;
+}
