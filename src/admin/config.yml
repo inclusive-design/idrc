@@ -692,11 +692,8 @@ collections:
         required: false
         hint: Short title for the project used to generate text labels for project website links.
         i18n: true
-      - label: Order
-        name: order
-        widget: number
-        required: false
-        hint: Order in which the project should appear.
+      - name: order
+        widget: hidden
         i18n: duplicate
       - label: Thumbnail Image
         name: thumbnailImage
