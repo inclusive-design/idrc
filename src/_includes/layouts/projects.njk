@@ -13,7 +13,7 @@
                 {% else %}
                 <img class="thumbnail" src="/assets/images/project-placeholder.svg" role="presentation" alt="" />
                 {% endif %}
-                <h3>{{ project.data.title }}{{ " (" + project.data.shortTitle + ")" if project.data.shortTitle }}</h3>
+                <h2 class="h3">{{ project.data.title }}{{ " (" + project.data.shortTitle + ")" if project.data.shortTitle }}</h2>
                 {{ project.data.description | renderContent("md") | safe }}
                 {% if project.data.linking.type === 'link' %}
                 <p class="project__link"><a rel="external" href="{{ project.data.linking.link }}">Go to: {{ project.data.shortTitle if project.data.shortTitle else project.data.title }} website</a></p>
