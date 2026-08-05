@@ -642,6 +642,7 @@ collections:
     create: true
     i18n: true
     summary: "{{fields.order}}. {{fields.title}}"
+    reorder: true
     sortable_fields:
       fields: [title, order]
       default:
