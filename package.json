@@ -53,7 +53,7 @@
     "linkedom": "^0.18.0",
     "lint-staged": "^17.0.0",
     "rimraf": "^6.0.0",
-    "typescript": "^6.0.0"
+    "typescript": "^7.0.0"
   },
   "lint-staged": {
     "*.css": [
