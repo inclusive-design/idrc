@@ -33,6 +33,20 @@
                 fill: currentcolor;
             }
         }
+
+        .tag {
+            align-items: center;
+            background-color: var(--fl-bgColor, var(--yellow-500));
+            border: 2px solid var(--fl-fgColor, transparent);
+            border-radius: calc(18 / 16 * 1rem);
+            column-gap: calc(4 / 16 * 1rem);
+            display: inline-flex;
+            height: calc(36 / 16 * 1rem);
+            justify-content: center;
+            padding-inline: calc(12 / 16 * 1rem);
+            white-space: nowrap;
+            width: auto;
+        }
     }
 
     .person + .person {

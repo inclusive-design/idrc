@@ -35,6 +35,7 @@
     "@11ty/eleventy-img": "7.0.0",
     "@11ty/eleventy-navigation": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@11ty/font-awesome": "^1.0.1",
     "d3-selection": "^3.0.0",
     "eleventy-plugin-fluid": "^3.0.0",
     "infusion": "^4.8.0",

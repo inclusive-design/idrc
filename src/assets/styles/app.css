@@ -18,6 +18,7 @@
 /* 4. Components */
 @import url("./components/_brand.css");
 @import url("./components/_button.css");
+@import url("./components/_table.css");
 @import url("./components/_image.css");
 @import url("./components/_nav.css");
 @import url("./components/_nav--secondary.css");
