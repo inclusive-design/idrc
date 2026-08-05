@@ -1,5 +1,26 @@
 # Changelog
 
+## [2026.8.0](https://github.com/inclusive-design/idrc/compare/v2026.5.0...v2026.8.0) (2026-08-05)
+
+
+### Features
+
+* allow reordering projects from CMS list ([#1388](https://github.com/inclusive-design/idrc/issues/1388)) ([9935c8e](https://github.com/inclusive-design/idrc/commit/9935c8e17cf2f0e2fff274246e77983d7e1fc82e))
+* implement page design for staff pages ([#1389](https://github.com/inclusive-design/idrc/issues/1389)) ([e5dca8e](https://github.com/inclusive-design/idrc/commit/e5dca8ecc1cb0cbc472991de29b942ba5f8abc56))
+
+
+### Bug Fixes
+
+* **deps:** update dependencies (minor) ([b5aa395](https://github.com/inclusive-design/idrc/commit/b5aa395bae987ac0b2b92856222580ac4d5de75e))
+* **deps:** update dependency @11ty/eleventy-img to v6.0.4 ([#1377](https://github.com/inclusive-design/idrc/issues/1377)) ([3bef326](https://github.com/inclusive-design/idrc/commit/3bef3260369c820e0d82965c9d605c313024dd83))
+* **deps:** update dependency @11ty/eleventy-img to v7 ([#1386](https://github.com/inclusive-design/idrc/issues/1386)) ([75734aa](https://github.com/inclusive-design/idrc/commit/75734aa12c677693eb11221b39cd3a7e936685d3))
+* **deps:** update dependency npm-run-all2 to v9 ([#1382](https://github.com/inclusive-design/idrc/issues/1382)) ([b85b3b6](https://github.com/inclusive-design/idrc/commit/b85b3b6a8b8a3d010b4f7c6044553673e93b57b7))
+
+
+### Miscellaneous Chores
+
+* **deps:** adjust renovate config ([#1387](https://github.com/inclusive-design/idrc/issues/1387)) ([b301253](https://github.com/inclusive-design/idrc/commit/b301253934f23a366d2d799083bef88405d722cf))
+
 ## [2026.5.0](https://github.com/inclusive-design/idrc/compare/v2026.4.1...v2026.5.0) (2026-04-29)
 
 
