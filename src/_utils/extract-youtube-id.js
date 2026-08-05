@@ -1,4 +1,4 @@
-const extractYoutubeId = url => {
+const extractYoutubeId = (url) => {
 	let matches = url.match(/(\?|&)v=([^&#]+)/);
 
 	if (matches) {

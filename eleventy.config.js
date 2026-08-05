@@ -1,10 +1,10 @@
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
-import eleventyImage, {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
-import {feedPlugin} from '@11ty/eleventy-plugin-rss';
+import eleventyImage, { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import { feedPlugin } from '@11ty/eleventy-plugin-rss';
 import MarkdownIt from 'markdown-it';
 import fluidPlugin from 'eleventy-plugin-fluid';
 import parseTransform from './src/_transforms/parse.js';
-import siteData from './src/_data/site.json' with {type: 'json'};
+import siteData from './src/_data/site.json' with { type: 'json' };
 
 /**
  * @param {object} eleventyConfig The Eleventy configuration object.
@@ -14,10 +14,10 @@ export default function eleventy(eleventyConfig) {
 	const now = new Date();
 
 	// Collections.
-	const livePosts = post =>
+	const livePosts = (post) =>
 		post.date <= now && !post.data.draft && !post.data.archived;
 
-	eleventyConfig.addCollection('people', collection => collection
+	eleventyConfig.addCollection('people', (collection) => collection
 		.getFilteredByGlob('src/collections/people/*.md')
 		.toSorted((a, b) => {
 			const nameA = a.data.title;
@@ -35,7 +35,7 @@ export default function eleventy(eleventyConfig) {
 		}));
 
 	for (const lang of ['en-CA', 'fr-CA']) {
-		eleventyConfig.addCollection(`projects_${lang}`, collection => {
+		eleventyConfig.addCollection(`projects_${lang}`, (collection) => {
 			const projects = [
 				...collection.getFilteredByGlob(`src/collections/projects/${lang}/*.md`),
 			];
@@ -43,7 +43,7 @@ export default function eleventy(eleventyConfig) {
 			return projects.toSorted((a, b) => b.data.order - a.data.order).toReversed();
 		});
 
-		eleventyConfig.addCollection(`projectSubpages_${lang}`, collection => {
+		eleventyConfig.addCollection(`projectSubpages_${lang}`, (collection) => {
 			const projectSubpages = [
 				...collection.getFilteredByGlob(`src/collections/project-subpages/${lang}/*.md`),
 			];
@@ -55,29 +55,29 @@ export default function eleventy(eleventyConfig) {
 		});
 	}
 
-	eleventyConfig.addCollection('news', collection =>
+	eleventyConfig.addCollection('news', (collection) =>
 		collection
 			.getFilteredByGlob('./src/collections/news/*.md')
-			.filter(post => livePosts(post))
+			.filter((post) => livePosts(post))
 			.toReversed());
 
-	eleventyConfig.addCollection('ideas', collection =>
+	eleventyConfig.addCollection('ideas', (collection) =>
 		collection
 			.getFilteredByGlob('./src/collections/ideas/*.md')
-			.filter(post => livePosts(post))
+			.filter((post) => livePosts(post))
 			.toReversed());
 
-	eleventyConfig.addCollection('postFeed', collection =>
+	eleventyConfig.addCollection('postFeed', (collection) =>
 		collection
 			.getFilteredByGlob(['./src/collections/news/*.md', './src/ideas/*.md'])
-			.filter(post => livePosts(post))
+			.filter((post) => livePosts(post))
 			.toReversed()
 			.slice(0, 10));
 
-	eleventyConfig.addCollection('resources', collection => collection.getFilteredByGlob('src/collections/resources/*.md'));
+	eleventyConfig.addCollection('resources', (collection) => collection.getFilteredByGlob('src/collections/resources/*.md'));
 
 	/** TODO: Swap this for renderContent("md") once https://github.com/11ty/eleventy/issues/3665 is addressed */
-	eleventyConfig.addFilter('markdownFilter', value => {
+	eleventyConfig.addFilter('markdownFilter', (value) => {
 		const md = new MarkdownIt({
 			html: true,
 			linkify: true,
@@ -86,7 +86,7 @@ export default function eleventy(eleventyConfig) {
 		return md.render(value);
 	});
 
-	eleventyConfig.addFilter('findByKey', (navItems, value, lang) => navItems.filter(item => {
+	eleventyConfig.addFilter('findByKey', (navItems, value, lang) => navItems.filter((item) => {
 		if (lang) {
 			return item.key === value && item.lang === lang;
 		}
@@ -109,7 +109,7 @@ export default function eleventy(eleventyConfig) {
 				},
 			},
 			transform(sharp) {
-				sharp.resize(570, 382, {fit: 'cover'});
+				sharp.resize(570, 382, { fit: 'cover' });
 			},
 		});
 
@@ -168,9 +168,9 @@ export default function eleventy(eleventyConfig) {
 	eleventyConfig.addTransform('parse', parseTransform);
 
 	// Passthrough file copy.
-	eleventyConfig.addPassthroughCopy({'src/assets/fonts': 'assets/fonts'});
-	eleventyConfig.addPassthroughCopy({'src/assets/images': 'assets/images'});
-	eleventyConfig.addPassthroughCopy({'src/media': 'media'});
+	eleventyConfig.addPassthroughCopy({ 'src/assets/fonts': 'assets/fonts' });
+	eleventyConfig.addPassthroughCopy({ 'src/assets/images': 'assets/images' });
+	eleventyConfig.addPassthroughCopy({ 'src/media': 'media' });
 	eleventyConfig.addPassthroughCopy('src/admin/config.yml');
 	eleventyConfig.addPassthroughCopy('_redirects');
 

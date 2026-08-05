@@ -1,9 +1,9 @@
-import {parseHTML} from 'linkedom';
+import { parseHTML } from 'linkedom';
 import getId from '../_utils/extract-youtube-id.js';
 
 // Function to create a node list
 // of the content between this <h2> and the next
-const getContent = element => {
+const getContent = (element) => {
 	const elements = [];
 	const headings = (element.tagName === 'H3') ? new Set(['H2', 'H3']) : new Set(['H2', 'H3', 'H4']);
 	while (element.nextElementSibling && !headings.has(element.nextElementSibling.tagName)) {
@@ -30,7 +30,7 @@ export default function parseTransform(value, outputPath) {
 		return value;
 	}
 
-	const {document} = parseHTML(value);
+	const { document } = parseHTML(value);
 
 	const images = [
 		...document.querySelectorAll('main article img'),

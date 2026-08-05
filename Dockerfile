@@ -12,6 +12,6 @@ COPY . ./
 
 RUN npm run build
 
-FROM nginx:1.30.0-alpine
+FROM nginx:1.31.3-alpine
 
 COPY --from=builder /app/dist /usr/share/nginx/html

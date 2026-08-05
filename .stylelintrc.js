@@ -4,7 +4,7 @@ export default {
 	rules: {
 		'custom-property-pattern': undefined,
 		'no-descending-specificity': undefined,
-		'property-no-deprecated': [true, {ignoreProperties: ['clip']}],
+		'property-no-deprecated': [true, { ignoreProperties: ['clip'] }],
 		'selector-class-pattern': undefined,
 	},
 };

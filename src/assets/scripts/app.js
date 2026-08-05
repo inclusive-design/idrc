@@ -19,7 +19,7 @@ const collapseMenu = () => {
  * Collapse the submenu corresponding to the toggle button `button`.
  * @param {HTMLElement} button - The toggle button whose submenu should be collapsed.
  */
-const collapseSubmenu = button => {
+const collapseSubmenu = (button) => {
 	button.setAttribute('aria-expanded', false);
 	button.parentNode.classList.remove('submenu-parent--submenu-visible');
 };
@@ -60,7 +60,7 @@ for (const link of dropdownLinks) {
 }
 
 // Handle click event on menu toggle button.
-document.addEventListener('click', event => {
+document.addEventListener('click', (event) => {
 	if (!event.target.closest('#menu-toggle')) {
 		return;
 	}
@@ -72,7 +72,7 @@ document.addEventListener('click', event => {
 });
 
 // Handle click event on submenu toggle button.
-document.addEventListener('click', event => {
+document.addEventListener('click', (event) => {
 	if (!event.target.closest('.submenu-toggle')) {
 		return;
 	}
@@ -92,7 +92,7 @@ document.addEventListener('click', event => {
 });
 
 // Collapse menu and/or submenus if a click happens outside of the menu.
-document.addEventListener('click', event => {
+document.addEventListener('click', (event) => {
 	if (menuToggle.getAttribute('aria-expanded' !== 'true') && document.querySelectorAll('.menu [aria-expanded="true"]').length === 0) {
 		return;
 	}
@@ -103,7 +103,7 @@ document.addEventListener('click', event => {
 });
 
 // Collapse menu and/or submenus on <esc>.
-document.addEventListener('keydown', event => {
+document.addEventListener('keydown', (event) => {
 	if (event.key === 'Escape') {
 		collapseAll();
 	}
@@ -111,7 +111,7 @@ document.addEventListener('keydown', event => {
 
 // Handle blur on menu items.
 for (const menuItem of menuItems) {
-	menuItem.addEventListener('blur', event => {
+	menuItem.addEventListener('blur', (event) => {
 		if (event.target === menuItems.at(-1) && event.relatedTarget && event.relatedTarget.parentNode.nodeName !== 'LI') {
 			collapseAll();
 		}

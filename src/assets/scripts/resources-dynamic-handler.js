@@ -38,8 +38,8 @@ for (const p of parameters) {
 }
 
 // The main search process
-fetch(globalThis.location.origin + '/resourceData.json').then(response => {
-	response.json().then(resourcesData => {
+fetch(globalThis.location.origin + '/resourceData.json').then((response) => {
+	response.json().then((resourcesData) => {
 		let results = resourcesData.resources;
 		let isInitialRender = true;
 		let pagination;
@@ -63,8 +63,8 @@ fetch(globalThis.location.origin + '/resourceData.json').then(response => {
 
 		// The 'filter' call is to ignore empty query strings
 		const filterQuery = [
-			selectedTopics.map(tag => `to_${tag}=on`).join('&'),
-			selectedTypes.map(type => `ty_${type}=on`).join('&'),
+			selectedTopics.map((tag) => `to_${tag}=on`).join('&'),
+			selectedTypes.map((type) => `ty_${type}=on`).join('&'),
 		].filter(Boolean).join('&');
 
 		// Paginate search results
