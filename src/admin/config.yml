@@ -594,34 +594,55 @@ collections:
       - {label: Full Name, name: title, widget: string}
       - {label: Job Title, name: job, widget: string}
       - {label: Pronouns, name: pronouns, widget: string, required: false}
-      - {label: Email Address, name: email, widget: string}
+      - label: Speaker
+        name: speaker
+        widget: boolean
+      - label: Profile Sections
+        label_singular: Profile Section
+        name: sections
+        widget: list
+        hint: Add a bio, interests, and links to recording speaking engagements in their own sections. Each section requires a title.
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Content
+            name: content
+            widget: markdown
+      - label: Email Address
+        name: email
+        widget: string
+        type: email
       - label: Personal Website
         name: website
         widget: string
+        type: url
         required: false
         hint: "A link to this person's personal website."
-      - label: Twitter Username
-        name: twitter
+      - label: Bluesky Profile
+        name: bluesky
+        type: url
         widget: string
         required: false
-        hint: "This person's twitter username, e.g. '@username'."
+        hint: "A link to this person's profile on Bluesky, e.g. https://bsky.app/profile/youraccount.bsky.social."
       - label: Github Profile
         name: github
         widget: string
+        type: url
         required: false
         hint: "A link to this person's profile on GitHub."
       - label: LinkedIn Profile
         name: linkedin
         widget: string
+        type: url
         required: false
         hint: "A link to this person's profile on LinkedIn."
-      - label: Projects
-        name: projects
-        widget: list
-        allow_add: true
-        hint: A comma-separated list of projects on which this person has worked.
-      - {label: Interests, name: interests, widget: text, required: false}
-      - {label: Bio, name: body, widget: markdown}
+      - label: Medium Profile
+        name: medium
+        widget: string
+        type: url
+        required: false
+        hint: "A link to this person's profile on Medium."
       - label: SEO Meta Title
         name: metaTitle
         widget: string
@@ -633,6 +654,10 @@ collections:
       - label: Social Image
         name: socialImage
         widget: image
+        required: false
+      - label: Social Image Alt Text
+        name: socialImageAlt
+        widget: string
         required: false
   - name: projects
     label: Projects
