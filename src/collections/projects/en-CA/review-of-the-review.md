@@ -1,4 +1,5 @@
 ---
+order: 10
 uuid: c52bf5ed-cb08-4cf8-b0c8-d907b71e0725
 locale: en-CA
 title: Review of the Review
@@ -6,7 +7,6 @@ linking:
   type: page
   slug: rotr
 shortTitle: ''
-order: 16
 thumbnailImage: /media/markus-winkler-fraiqhkcc0-unsplash_crop.png
 thumbnailAltText: ''
 description: Review of the Review (RotR) is assisting Accessibility Standards Canada in developing standards development processes and activities that are accessible and inclusively designed.
@@ -19,6 +19,7 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
+
 ## About the project
 
 Review of the Review (RotR) is assisting Accessibility Standards Canada in developing standards development processes and activities that are accessible and inclusively designed.

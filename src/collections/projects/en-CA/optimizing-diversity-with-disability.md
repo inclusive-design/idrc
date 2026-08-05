@@ -1,4 +1,5 @@
 ---
+order: 26
 uuid: 8f8c43f2-edf0-48cd-b5d2-199e61b2b2fd
 locale: en-CA
 title: Optimizing Diversity with Disability
@@ -6,11 +7,11 @@ linking:
   type: page
   slug: optimizing-diversity-with-disability
 shortTitle: ''
-order: 95
 thumbnailImage: /media/project-ODD.png
 thumbnailAltText: ''
 description: The goal of ODD is to investigate bias in hiring algorithms using non-disability specific and synthesized disability specific employment data.
 ---
+
 ![ODD: Optimizing Diversity with Disability logo](/media/odd-logo-only.svg)
 
 IDRC with the support of Kessler Foundation and Microsoft has launched ODD (Optimizing Diversity with Disability). The goal of ODD is to investigate bias in hiring algorithms using non-disability specific and synthesized disability specific employment data. In the next year, we will work with the community to create synthetic models of resume and job seeker data that will be tested with online hiring systems. Our objective is to better understand how to mitigate algorithmic bias and use this knowledge in future projects to develop algorithms that can optimize diversity.

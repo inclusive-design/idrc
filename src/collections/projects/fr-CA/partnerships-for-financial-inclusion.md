@@ -1,4 +1,5 @@
 ---
+order: 6
 uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
 locale: fr-CA
 title: Partenariats pour l'inclusion financière
@@ -6,7 +7,6 @@ linking:
   type: page
   slug: inclusion-financiere
 shortTitle: Inclusion financière
-order: 5
 thumbnailImage: /media/Parnerships_for_F_I_logo.jpg
 thumbnailAltText: une pile de pièces de monnaie avec une carte de crédit dessus.
 description: Permettre aux Canadiens handicapés de participer pleinement à l’économie en éliminant les obstacles à l’inclusion financière.
@@ -19,6 +19,7 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
+
 
 ## Élaborer des systèmes financiers inclusifs pour tous les Canadiens
 

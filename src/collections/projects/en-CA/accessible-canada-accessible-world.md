@@ -1,4 +1,5 @@
 ---
+order: 9
 uuid: 52e80a30-ddfa-4555-9757-c039968acb1e
 locale: en-CA
 title: Accessible Canada — Accessible World
@@ -6,7 +7,6 @@ linking:
   type: page
   slug: acaw-cama
 shortTitle: ACAW/CAMA
-order: 15
 thumbnailImage: /media/acaw-logo-no-words.png
 thumbnailAltText: An outline of half a white maple leaf lays across a multi-coloured sphere.
 description: |-
@@ -30,6 +30,8 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
+
+
 ![Un Canada accessible Un monde accessible / Accessible Canada Accessible World logo](/media/acaw-cama%20logo.jpeg)
 
 ## Thank you for participating!
