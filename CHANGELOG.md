@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.8.1](https://github.com/inclusive-design/idrc/compare/v2026.8.0...v2026.8.1) (2026-08-05)
+
+
+### Bug Fixes
+
+* adjust heading appearances ([#1390](https://github.com/inclusive-design/idrc/issues/1390)) ([53c7756](https://github.com/inclusive-design/idrc/commit/53c775660c0f956b3d464c63fb747925207887dc))
+
 ## [2026.8.0](https://github.com/inclusive-design/idrc/compare/v2026.5.0...v2026.8.0) (2026-08-05)
 
 
