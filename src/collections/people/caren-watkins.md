@@ -16,7 +16,7 @@ sections:
       Before joining the IDRC, Caren held leadership and director positions in editorial, creative, and content development. She has received numerous national and international awards for excellence in communication design and has taught at OCAD University, Toronto Metropolitan University, York–Sheridan Design, and Dalhousie University.
   - title: Upcoming talks
     content: |-
-      # Open Education Conference 2026 / The Space Between
+      ### Open Education Conference 2026 / The Space Between
 
       [From Inception to Practice: Developing Open and Inclusive Education Resources](https://opened26.sched.com/event/2RCYT/from-inception-to-practice-developing-open-and-inclusive-education-resources)
 email: cwatkins@ocadu.ca
