@@ -21,11 +21,11 @@ export function filterResources(resources, filterSettings) {
 	let results = resources;
 
 	if (filterSettings.selectedTopics.length > 0) {
-		results = results.filter(oneRecord => oneRecord.topics.some(topic => filterSettings.selectedTopics.includes(topic)));
+		results = results.filter((oneRecord) => oneRecord.topics.some((topic) => filterSettings.selectedTopics.includes(topic)));
 	}
 
 	if (filterSettings.selectedTypes.length > 0) {
-		results = results.filter(oneRecord => oneRecord.types.some(type => filterSettings.selectedTypes.includes(type)));
+		results = results.filter((oneRecord) => oneRecord.types.some((type) => filterSettings.selectedTypes.includes(type)));
 	}
 
 	return results;
@@ -38,7 +38,7 @@ export function filterResources(resources, filterSettings) {
  * @returns {Array} An array of smaller arrays with the given chunk size at its most.
  */
 export function chunkArray(inputArray, chunkSize) {
-	return Array.from({length: Math.ceil(inputArray.length / chunkSize)}).fill().map((_, index) => index * chunkSize).map(begin => inputArray.slice(begin, begin + chunkSize));
+	return Array.from({ length: Math.ceil(inputArray.length / chunkSize) }).fill().map((_, index) => index * chunkSize).map((begin) => inputArray.slice(begin, begin + chunkSize));
 }
 
 /**
@@ -160,8 +160,8 @@ export function processResourcesDisplayResults(resources) {
 	const sortedArray = [];
 	const sortCategory = localStorage.getItem('sortCategory');
 
-	const pinnedResources = resources.filter(result => result.pinned);
-	const unpinnedResources = resources.filter(result => !result.pinned);
+	const pinnedResources = resources.filter((result) => result.pinned);
+	const unpinnedResources = resources.filter((result) => !result.pinned);
 
 	if (pinnedResources) {
 		switch (sortCategory) {
@@ -226,7 +226,7 @@ export function processResourcesDisplayResults(resources) {
 		}
 	}
 
-	return sortedArray.map(oneRecord => {
+	return sortedArray.map((oneRecord) => {
 		oneRecord.title = htmlDecode(oneRecord.title);
 		oneRecord.description = stripHtmlTags(oneRecord.description);
 		return oneRecord;
@@ -250,12 +250,12 @@ export function renderSearchResults(numberOfResources, resourceTopics, resourceT
 	appliedFilterHtml += '<h3>Applied filters</h3><div class=\'filter-tags\'>';
 
 	for (const appliedFilter of appliedFilters) {
-		const tagType = resourceTopics.some(topicObject => topicObject.value === appliedFilter.id) ? 'topic' : 'type';
+		const tagType = resourceTopics.some((topicObject) => topicObject.value === appliedFilter.id) ? 'topic' : 'type';
 		let filterLabel = '';
 		if (tagType === 'topic') {
-			filterLabel = resourceTopics.find(topicObject => topicObject.value === appliedFilter.id).label;
+			filterLabel = resourceTopics.find((topicObject) => topicObject.value === appliedFilter.id).label;
 		} else if (tagType === 'type') {
-			filterLabel = resourceTypes.find(typeObject => typeObject.value === appliedFilter.id).label;
+			filterLabel = resourceTypes.find((typeObject) => typeObject.value === appliedFilter.id).label;
 		}
 
 		const parameters = new URLSearchParams(globalThis.location.search);
@@ -336,7 +336,7 @@ export function renderResources(resources, resourceTopics, resourceTypes) {
 		`;
 		if (resource.topics) {
 			for (const topicValue of resource.topics) {
-				const found = resourceTopics.find(topicObject => topicObject.value === topicValue);
+				const found = resourceTopics.find((topicObject) => topicObject.value === topicValue);
 				resourcesHtml += `    <div class='card-tag'>
 					<svg role='presentation'><use xlink:href='#topic' /></svg>
 					<p>${found.label}</p>
@@ -346,7 +346,7 @@ export function renderResources(resources, resourceTopics, resourceTypes) {
 
 		if (resource.types) {
 			for (const typeValue of resource.types) {
-				const found = resourceTypes.find(typeObject => typeObject.value === typeValue);
+				const found = resourceTypes.find((typeObject) => typeObject.value === typeValue);
 				resourcesHtml += `    <div class='card-tag'>
 					<svg role='presentation'><use xlink:href='#type' /></svg>
 					<p>${found.label}</p>
@@ -418,7 +418,7 @@ export function bindEventListeners() {
 
 	for (const expandButton of expandButtons) {
 		// Add event listener for expand buttons
-		expandButton.addEventListener('click', event => {
+		expandButton.addEventListener('click', (event) => {
 			event.preventDefault();
 			event.stopPropagation();
 			const currentExpandedValue = expandButton.getAttribute('aria-expanded');
@@ -445,7 +445,7 @@ export function bindEventListeners() {
 		localStorage.setItem('setFocusOn', '.apply-button');
 	});
 
-	document.querySelector('#resourcesSortSelector').addEventListener('change', event => {
+	document.querySelector('#resourcesSortSelector').addEventListener('change', (event) => {
 		localStorage.setItem('sortCategory', event.target.value);
 		globalThis.location = '/resources';
 	});
