@@ -4,15 +4,15 @@
     "config:recommended"
   ],
   "labels": [
-		"dependencies"
-	],
-	"schedule": [
-		"* * * * 1"
-	],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"automerge": true
-	},
+    "dependencies"
+  ],
+  "schedule": [
+    "* * * * 1"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
   "packageRules": [
     {
       "description": "Group minor updates for backend and frontend packages into single PR",
@@ -23,9 +23,9 @@
         "digest"
       ],
       "minimumReleaseAge": "2 days",
-			"groupName": "dependencies (minor)",
-			"groupSlug": "minor-updates",
-			"automerge": true
+      "groupName": "dependencies (minor)",
+      "groupSlug": "minor-updates",
+      "automerge": true
     },
     {
       "description": "Use dedicated PRs for major updates",
