@@ -18,8 +18,8 @@ sections:
 
       A small selection of keynotes and presentations:
 
-      [G3ICT](https://www.youtube.com/watch?v=e3pUMxA6AIg)
-      [Walrus Talks](https://www.youtube.com/watch?v=OAXmCAqZqRk)
+      [G3ICT](https://www.youtube.com/watch?v=e3pUMxA6AIg)  
+      [Walrus Talks](https://www.youtube.com/watch?v=OAXmCAqZqRk)  
       [Zero Project](https://www.youtube.com/watch?v=x-nadJLXN60)
 email: jtreviranus@ocadu.ca
 website: ''
