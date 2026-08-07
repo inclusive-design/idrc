@@ -30,5 +30,5 @@ medium: https://medium.com/@jesshmitchell
 metaTitle: ''
 metaDesc: ''
 socialImage: /media/jess_bowie.jpg
-socialImageAlt: An illustration
+socialImageAlt: An illustration of Jess Mitchell, with short blue, yellow and green hair, a green collared shirt, and an orange lightning bolt across her face in the style of David Bowie.
 ---
