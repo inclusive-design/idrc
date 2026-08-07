@@ -29,5 +29,6 @@ linkedin: https://ca.linkedin.com/in/juttatreviranus
 medium: https://medium.com/@jutta.trevira
 metaTitle: ''
 metaDesc: ''
-socialImageAlt: ''
+socialImage: /media/jutta.jpg
+socialImageAlt: A stylized image of Jutta Treviranus, a woman with short hair and glasses wearing a dark shirt.
 ---
