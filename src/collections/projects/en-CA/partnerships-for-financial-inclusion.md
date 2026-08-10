@@ -36,6 +36,10 @@ Financial exclusion is not a fringe issue. It limits access to basic tools for s
 
 ## Upcoming Event
 
+### Creating Participatory Architecture
+
+#### The Opportunities and Challenges of Inclusive Governance 
+
 [![Promotional graphic for a free Partnerships for Financial Inclusion webinar titled “Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance.” The webinar explores participatory governance as a grassroots approach to shared decision-making. Scheduled for August 19, 1:00 to 2:30 PM EDT. The graphic includes headshots of two speakers from the University of Ottawa and the University of Alberta. Accessibility features include captioning, ASL, LSQ, and French interpretation upon request. A banner notes “1 Week to Go.”](/media/Webinar_1WEEK_1200x627_with_pictures.jpg "Creating Participatory Architecture")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
 If your organization is trying to make decisions more collaboratively, build trust with a community, or create a group where people with lived experience have real influence, participatory governance can offer practical ways forward. Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta) will explore how grassroots governance models can help organizations and communities share decision-making, navigate power dynamics, and work together toward common goals. This session also marks the starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM) (part of the Partnerships for Financial Inclusion Project)
