@@ -8,7 +8,7 @@ linking:
   slug: financial-inclusion
 shortTitle: Inclusion financière
 thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
-thumbnailAltText: a stack of coins with a credit card on top.
+thumbnailAltText: Logo for Partnerships for Financial Inclusion
 description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
 funderLogos:
   - content: ''
