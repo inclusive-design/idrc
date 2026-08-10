@@ -7,7 +7,7 @@ linking:
   type: page
   slug: financial-inclusion
 shortTitle: Financial Inclusion
-thumbnailImage: /media/Parnerships_for_F_I_logo.jpg
+thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
 thumbnailAltText: a stack of coins with a credit card on top.
 description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
 funderLogos:
@@ -19,7 +19,6 @@ funderLogos:
     maxHeight: auto
     verticalAlignment: center
 ---
-
 
 ## Building Inclusive Financial Systems for All Canadians
 
