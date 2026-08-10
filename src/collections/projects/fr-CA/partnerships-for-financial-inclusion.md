@@ -6,7 +6,7 @@ title: Partenariats pour l'inclusion financière
 linking:
   type: page
   slug: inclusion-financiere
-shortTitle: Inclusion financière
+shortTitle: ''
 thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
 thumbnailAltText: une pile de pièces de monnaie avec une carte de crédit dessus.
 description: Permettre aux Canadiens handicapés de participer pleinement à l’économie en éliminant les obstacles à l’inclusion financière.
