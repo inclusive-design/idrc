@@ -38,7 +38,7 @@ Financial exclusion is not a fringe issue. It limits access to basic tools for s
 
 ### Creating Participatory Architecture
 
-#### The Opportunities and Challenges of Inclusive Governance 
+#### _The Opportunities and Challenges of Inclusive Governance_ 
 
 [![Promotional graphic for a free Partnerships for Financial Inclusion webinar titled “Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance.” The webinar explores participatory governance as a grassroots approach to shared decision-making. Scheduled for August 19, 1:00 to 2:30 PM EDT. The graphic includes headshots of two speakers from the University of Ottawa and the University of Alberta. Accessibility features include captioning, ASL, LSQ, and French interpretation upon request. A banner notes “1 Week to Go.”](/media/Webinar_1WEEK_1200x627_with_pictures.jpg "Creating Participatory Architecture")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
