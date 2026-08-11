@@ -2,17 +2,14 @@
 order: 6
 uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
 locale: en-CA
-title: Partnerships for Financial Inclusion / Partenariats pour l’inclusion financière
+title: Partnerships for Financial Inclusion / Partenariats pour l'inclusion financière
 linking:
   type: page
   slug: financial-inclusion
 shortTitle: ''
-thumbnailImage: /media/PfFI logo.png
+thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
 thumbnailAltText: Logo for Partnerships for Financial Inclusion
-description: |-
-  Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
-
-  Permettre aux Canadiens handicapés de participer pleinement à l’économie en éliminant les obstacles à l’inclusion financière.
+description: Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
 funderLogos:
   - content: ''
     image: /media/canadawordmark-black-bil.png
@@ -43,11 +40,11 @@ Financial exclusion is not a fringe issue. It limits access to basic tools for s
 
 #### _The Opportunities and Challenges of Inclusive Governance_ 
 
-[![Promotional graphic for a free Partnerships for Financial Inclusion webinar titled “Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance.” Content in graphic:  Partnerships for Financial Inclusion (LOGO) 1 WEEK TO GO FREE WEBINAR Creating Participatory Architecture The Opportunities and Challenges of Inclusive Governance Explore participatory governance as a grassroots approach to shared decision-making Madeline Toubiana  - University of Ottawa (photo) Natalie Eng - University of Alberta (photo) Wednesday, August 19, 1:00-2:30 PM EDT, Online Free and open to all. ASL, English/French interpretation and captioning provided. idrc.ocadu.ca/projects/financial-inclusion](/media/Creating%20Participatory%20Architecture%20seminar%20promotion.png "Creating Participatory Architecture")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
+[![Promotional graphic for a free Partnerships for Financial Inclusion webinar titled “Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance.” The webinar explores participatory governance as a grassroots approach to shared decision-making. Scheduled for August 19, 1:00 to 2:30 PM EDT. The graphic includes headshots of two speakers from the University of Ottawa and the University of Alberta. Accessibility features include captioning, ASL, LSQ, and French interpretation upon request. A banner notes “1 Week to Go.”](/media/PFI_Webinar_1WEEK_Square_1080x1080_White_2.png "Creating Participatory Architecture")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
 If your organization is trying to make decisions more collaboratively, build trust with a community, or create a group where people with lived experience have real influence, participatory governance can offer practical ways forward. Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta) will explore how grassroots governance models can help organizations and communities share decision-making, navigate power dynamics, and work together toward common goals. This session also marks the starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM) (part of the Partnerships for Financial Inclusion Project)
 
-The webinar is free and accessible, with live English/French captioning and interpretation provided. ASL and LSQ will be provided if requested by 3 PM ET on Wednesday, August 12.
+The webinar is free and accessible, with live ASL, English/French captioning and interpretation provided. 
 
 ### [**Register here**](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 

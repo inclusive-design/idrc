@@ -2,12 +2,12 @@
 order: 6
 uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
 locale: fr-CA
-title: Partenariats pour l’inclusion financière
+title: Partenariats pour l'inclusion financière
 linking:
   type: page
   slug: inclusion-financiere
 shortTitle: ''
-thumbnailImage: /media/PfFI logo.png
+thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
 thumbnailAltText: une pile de pièces de monnaie avec une carte de crédit dessus.
 description: Permettre aux Canadiens handicapés de participer pleinement à l’économie en éliminant les obstacles à l’inclusion financière.
 funderLogos:
