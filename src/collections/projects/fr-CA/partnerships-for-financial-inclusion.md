@@ -40,13 +40,13 @@ L'exclusion financière n'est pas un problème marginal. Elle limite l’accès 
 
 #### Possibilités et défis d'une gouvernance inclusive
 
-[![Images of Madeline and Natalie](/media/webinar%20ocad%20website.jpg "Créer une architecture participative : possibilités et défis d'une gouvernance inclusive")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
+[![Imagenes du Madeline e Natalie.](/media/webinar%20ocad%20website.jpg "Créer une architecture participative : possibilités et défis d'une gouvernance inclusive")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
 Si votre organisation cherche à prendre des décisions de façon plus collaborative, à établir un lien de confiance avec une communauté, ou à créer un groupe où les personnes ayant une expérience vécue ont une réelle influence, la gouvernance participative peut offrir des pistes concrètes. Madeline Toubiana (Université d'Ottawa) et Natalie Eng (University of Alberta) exploreront comment les modèles de gouvernance ancrés dans les communautés peuvent aider les organisations et les communautés à partager la prise de décision, à composer avec les dynamiques de pouvoir et à travailler ensemble vers des objectifs communs. Cette séance marque également le point de départ de l'élaboration d'une structure de gouvernance pour le Financial Inclusion & Resilience Movement (FIRM) (qui s'inscrit dans le cadre du projet Partnerships for Financial Inclusion).
 
 #### [Inscrivez-vous ici ](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
 
-Le webinaire est gratuit et accessible; le sous-titrage et l'interprétation en direct en anglais et en français seront offerts. L'interprétation en ASL et en LSQ sera assurée sur demande, à condition d'en faire la demande avant 15 h HE le mercredi 12 août.
+Le webinaire est gratuit et accessible; l’interprétation en ASL, le sous-titrage en anglais et en français ainsi que l’interprétation en direct seront offerts.
 
 ## Mission
 
