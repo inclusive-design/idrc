@@ -2,7 +2,7 @@
 order: 6
 uuid: b6ec5a87-adee-4785-bddb-8c5f58f36575
 locale: fr-CA
-title: Partenariats pour l'inclusion financière
+title: Partenariats pour l’inclusion financière
 linking:
   type: page
   slug: inclusion-financiere
