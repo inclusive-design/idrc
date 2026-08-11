@@ -7,7 +7,7 @@ linking:
   type: page
   slug: financial-inclusion
 shortTitle: ''
-thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
+thumbnailImage: /media/PfFI logo.png
 thumbnailAltText: Logo for Partnerships for Financial Inclusion
 description: |-
   Enabling Canadians with disabilities to engage fully in the economy by addressing barriers to financial inclusion.
