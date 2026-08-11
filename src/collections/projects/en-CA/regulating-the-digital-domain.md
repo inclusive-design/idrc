@@ -7,7 +7,7 @@ linking:
   type: link
   link: https://wecount.inclusivedesign.ca/rtdd/
 shortTitle: ''
-thumbnailImage: /media/RtDD_colour_no type.png
+thumbnailImage: /media/RtDD logo.png
 thumbnailAltText: RtDD non-textual logo
 description: |-
   Regulating the Digital Domain (RtDD) is focused on supporting development of accessibility standards for existing and new technologies.
