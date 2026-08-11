@@ -7,7 +7,7 @@ linking:
   type: page
   slug: inclusion-financiere
 shortTitle: ''
-thumbnailImage: /media/Parnerships_for_F_I_logo_N.jpeg
+thumbnailImage: /media/640x200 px with appropriate padding for flush left postioning-100.jpg
 thumbnailAltText: une pile de pièces de monnaie avec une carte de crédit dessus.
 description: Permettre aux Canadiens handicapés de participer pleinement à l’économie en éliminant les obstacles à l’inclusion financière.
 funderLogos:
