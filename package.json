@@ -39,7 +39,7 @@
     "d3-selection": "^3.0.0",
     "eleventy-plugin-fluid": "^3.0.0",
     "infusion": "^4.8.0",
-    "markdown-it": "^14.0.0",
+    "markdown-it": "^15.0.0",
     "npm-run-all2": "^9.0.0"
   },
   "devDependencies": {
