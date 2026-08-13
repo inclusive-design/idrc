@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.8.2](https://github.com/inclusive-design/idrc/compare/v2026.8.1...v2026.8.2) (2026-08-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency markdown-it to v15 ([#1393](https://github.com/inclusive-design/idrc/issues/1393)) ([0c903b0](https://github.com/inclusive-design/idrc/commit/0c903b063f33b29fda71a426920a35daef4989c6))
+
 ## [2026.8.1](https://github.com/inclusive-design/idrc/compare/v2026.8.0...v2026.8.1) (2026-08-05)
 
 
