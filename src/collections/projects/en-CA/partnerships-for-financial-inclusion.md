@@ -34,19 +34,34 @@ Nearly **1 million Canadians are unbanked** and **5 million are underbanked**—
 
 Financial exclusion is not a fringe issue. It limits access to basic tools for stability and participation in society. Inclusive financial systems are about **dignity, opportunity, and justice**.
 
-## Upcoming Event
+## 
 
 ### Creating Participatory Architecture
 
 #### _The Opportunities and Challenges of Inclusive Governance_ 
 
-[![Promotional graphic for a free Partnerships for Financial Inclusion webinar titled “Creating Participatory Architecture: The Opportunities and Challenges of Inclusive Governance.” The webinar explores participatory governance as a grassroots approach to shared decision-making. Scheduled for August 19, 1:00 to 2:30 PM EDT. The graphic includes headshots of two speakers from the University of Ottawa and the University of Alberta.  The webinar is free and accessible, with live ASL, English/French captioning and interpretation provided.  Banner notes “1 Week to Go.”](/media/PFI_Webinar_1WEEK_Square_1080x1080_White_2.png "Creating Participatory Architecture")](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
+How can diverse organizations work together to address complex social challenges while ensuring that all voices are heard? What governance structures help communities participate meaningfully in decision-making without losing the ability to take action?
 
-If your organization is trying to make decisions more collaboratively, build trust with a community, or create a group where people with lived experience have real influence, participatory governance can offer practical ways forward. Madeline Toubiana (University of Ottawa) and Natalie Eng (University of Alberta) will explore how grassroots governance models can help organizations and communities share decision-making, navigate power dynamics, and work together toward common goals. This session also marks the starting point for developing a governance structure for the Financial Inclusion & Resilience Movement (FIRM) (part of the Partnerships for Financial Inclusion Project)
+In this Community of Practice session for the Financial Inclusion and Resilience Movement (FIRM), Madeline Toubiana (University of Ottawa) and Natalie Sharpe (University of Alberta) share findings from a six-year research study examining how collaborative organizations sustain participation, inclusion, and collective action while addressing complex social issues.
 
-The webinar is free and accessible, with live ASL, English/French captioning and interpretation provided. 
+The presentation introduces the concept of participatory architecture: the rules, structures, and practices that enable diverse stakeholders to engage in governance and shared decision-making. Using a case study of a collaborative social economy initiative, the presenters explore how organizations can create space for broad participation, balance consensus-building with action, manage disagreement constructively, and sustain engagement over time.
 
-### [**Register here**](https://ocadu.zoom.us/webinar/register/WN_g1Zc47ZDRCusUMmGmkB0fA)
+##### Key topics
+
+- Participatory governance and shared decision-making
+- Balancing inclusion, efficiency, and accountability
+- Consensus-building and collective sense-making
+- Equity of voice and representation
+- Governance structures for collaborative networks
+- Managing conflict, frustration, and uncertainty
+- Building and sustaining communities of practice
+- Governance challenges associated with complex social change initiatives
+
+The webinar also considers practical questions that are highly relevant to FIRM's ongoing governance co-design process, including how organizations can create governance systems that encourage participation, support diverse perspectives, and remain responsive to evolving community needs.
+
+#### Webinar
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tkx1WhrttbI?si=donIYOtBxWElG-7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Mission
 
