@@ -1,5 +1,18 @@
 # Changelog
 
+## [2026.10.0](https://github.com/inclusive-design/idrc/compare/v2026.8.1...v2026.10.0) (2026-10-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency markdown-it to v15 ([#1393](https://github.com/inclusive-design/idrc/issues/1393)) ([0c903b0](https://github.com/inclusive-design/idrc/commit/0c903b063f33b29fda71a426920a35daef4989c6))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([83fc136](https://github.com/inclusive-design/idrc/commit/83fc136d626acb998e940aa83a5ed4c408ea1760))
+* **release:** bump version ([6163208](https://github.com/inclusive-design/idrc/commit/6163208acdf8d91bdb259740226a5cedd0b0f9d4))
+
 ## [2026.8.1](https://github.com/inclusive-design/idrc/compare/v2026.8.0...v2026.8.1) (2026-08-05)
 
 
