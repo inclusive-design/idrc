@@ -26,6 +26,7 @@ De la recherche à l’action : promouvoir l’inclusion financière grâce à 
 
 * [Accédez au guide](https://guidebook.financial-inclusion.ca/fr/)
 * [Lisez le livre blanc](https://static.inclusivedesign.ca/financial-inclusion/les-partenariats-financiers-comme-voie-dacces-a-linclusion-financiere.docx)
+* [Le Mouvement pour l’inclusion financière et la résilience (FIRM)](https://financial-inclusion.ca/)(Anglais)
 * [Joignez-vous au mouvement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
 ## Pourquoi l'inclusion financière est importante
