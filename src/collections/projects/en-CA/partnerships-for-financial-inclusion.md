@@ -59,7 +59,7 @@ The presentation introduces the concept of participatory architecture: the rules
 
 The webinar also considers practical questions that are highly relevant to FIRM's ongoing governance co-design process, including how organizations can create governance systems that encourage participation, support diverse perspectives, and remain responsive to evolving community needs.
 
-#### Webinar
+#### FIRM Community of Practice Webinar
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tkx1WhrttbI?si=donIYOtBxWElG-7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -95,7 +95,7 @@ Over the past three years, the Inclusive Design Research Centre (IDRC) partnered
 
 ## What’s Next: Phase 2 and FIRM
 
-We are launching **Phase 2** to scale and sustain impact through the \*\*Financial Inclusion and Resilience Movement (FIRM)\*\*—a community-led infrastructure designed to strengthen grassroots capacity and foster institutional collaboration.
+We are launching **Phase 2** to scale and sustain impact through the \*\*[Financial Inclusion and Resilience Movement (FIRM)](https://financial-inclusion.ca/)\*\*—a community-led infrastructure designed to strengthen grassroots capacity and foster institutional collaboration.
 
 **FIRM includes four core components:**
 
