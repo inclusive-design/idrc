@@ -26,7 +26,7 @@ From research to action: advancing financial inclusion through community-led inn
 
 * [Access the Guidebook](https://guidebook.financial-inclusion.ca/)
 * [Read the White Paper](https://static.inclusivedesign.ca/financial-inclusion/Financial-Partnerships-as-a-Pathway-to-Financial-Inclusion-White-Paper.docx)
-* Financial Inclusion and Resilience Movement (FIRM)
+* [Financial Inclusion and Resilience Movement (FIRM)](https://financial-inclusion.ca/)
 * [Join the Movement (FIRM)](https://forms.office.com/r/ch9EFgk34e)
 
 ## Why Financial Inclusion Matters
