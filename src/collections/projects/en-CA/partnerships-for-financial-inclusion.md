@@ -34,9 +34,11 @@ Nearly **1 million Canadians are unbanked** and **5 million are underbanked**—
 
 Financial exclusion is not a fringe issue. It limits access to basic tools for stability and participation in society. Inclusive financial systems are about **dignity, opportunity, and justice**.
 
-## 
+## FIRM Community of Practice Events
 
-### Creating Participatory Architecture
+The Financial Inclusion and Resilience Movement (FIRM) hosted its first community of practice event: 
+
+### Creating Participatory Architecture Webinar
 
 #### _The Opportunities and Challenges of Inclusive Governance_ 
 
@@ -59,7 +61,7 @@ The presentation introduces the concept of participatory architecture: the rules
 
 The webinar also considers practical questions that are highly relevant to FIRM's ongoing governance co-design process, including how organizations can create governance systems that encourage participation, support diverse perspectives, and remain responsive to evolving community needs.
 
-#### FIRM Community of Practice Webinar
+#### Webinar
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tkx1WhrttbI?si=donIYOtBxWElG-7V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
