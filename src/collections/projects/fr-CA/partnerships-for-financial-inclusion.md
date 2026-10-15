@@ -34,7 +34,9 @@ Près **d'un million de Canadiens n'ont pas de compte bancaire** et **cinq milli
 
 L'exclusion financière n'est pas un problème marginal. Elle limite l’accès aux outils essentiels à la stabilité et à la participation sociale. Des systèmes financiers inclusifs sont synonymes de **dignité, d'opportunités et de justice**.
 
-## Prochain événement
+## Événements de la communauté de pratique du (FIRM)
+
+Le Mouvement pour l’inclusion financière et la résilience (FIRM) a tenu son premier événement de communauté de pratique :
 
 ### Créer une architecture participative 
 
