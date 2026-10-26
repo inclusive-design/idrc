@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 10
 uuid: c0addfe2-a11e-47e9-81b9-b45abc12cbdd
 locale: en-CA
 title: Weavly

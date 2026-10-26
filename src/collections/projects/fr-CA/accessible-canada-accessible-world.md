@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 9
 uuid: 52e80a30-ddfa-4555-9757-c039968acb1e
 locale: fr-CA
 title: Un Canada accessible — Un monde accessible

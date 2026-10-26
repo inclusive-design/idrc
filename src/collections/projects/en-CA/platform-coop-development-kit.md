@@ -1,5 +1,5 @@
 ---
-order: 22
+order: 23
 uuid: 3c54f266-ded6-4443-a7a5-e4bb3a07b68d
 locale: en-CA
 title: Platform Co-op Development Kit

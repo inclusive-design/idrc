@@ -1,5 +1,5 @@
 ---
-order: 25
+order: 26
 uuid: 39152e19-8a41-4639-b9a9-f621b93bcac8
 locale: en-CA
 title: Inclusive Cities
