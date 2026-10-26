@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 3
 uuid: e11c9245-fb29-45f8-8b75-e34fc04d0afa
 locale: en-CA
 title: All Standards With Us
