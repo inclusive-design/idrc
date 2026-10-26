@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 8
 uuid: 52e80a30-ddfa-4555-9757-c039968acb1e
 locale: en-CA
 title: Accessible Canada — Accessible World
