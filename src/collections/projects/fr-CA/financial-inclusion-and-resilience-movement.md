@@ -1,6 +1,7 @@
 ---
 order: 5
 uuid: d8426f15-0bc7-4332-bcb5-2deb74949e9d
+locale: fr-CA
 title: Le Mouvement pour l’inclusion financière et la résilience
 linking:
   type: link

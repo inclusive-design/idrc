@@ -153,6 +153,7 @@ export default function eleventy(eleventyConfig) {
 		supportedLanguages: {
 			'en-CA': {
 				slug: 'en',
+				dir: 'ltr',
 				name: 'English',
 			},
 			'fr-CA': {

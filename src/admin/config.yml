@@ -677,12 +677,13 @@ collections:
       - label: UUID
         name: uuid
         widget: hidden
-        default: "{{uuid}}"
+        default: '{{uuid}}'
         i18n: duplicate
       - label: Locale
         name: locale
         widget: hidden
-        default: "{{locale}}"
+        default: '{{locale}}'
+        i18n: true
       - label: Title
         name: title
         widget: string
@@ -813,12 +814,13 @@ collections:
       - label: UUID
         name: uuid
         widget: hidden
-        default: "{{uuid}}"
+        default: '{{uuid}}'
         i18n: duplicate
       - label: Locale
         name: locale
         widget: hidden
-        default: "{{locale}}"
+        default: '{{locale}}'
+        i18n: true
       - label: Title
         name: title
         widget: string
