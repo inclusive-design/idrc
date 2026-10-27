@@ -32,7 +32,7 @@
   "homepage": "https://github.com/inclusive-design/idrc#readme",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-img": "7.0.0",
+    "@11ty/eleventy-img": "7.1.1",
     "@11ty/eleventy-navigation": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^3.0.0",
     "@11ty/font-awesome": "^1.0.1",
