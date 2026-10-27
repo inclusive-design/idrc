@@ -1,5 +1,20 @@
 # Changelog
 
+## [2026.10.0](https://github.com/inclusive-design/idrc/compare/v2026.8.1...v2026.10.0) (2026-10-27)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @11ty/font-awesome to v2 ([#1399](https://github.com/inclusive-design/idrc/issues/1399)) ([e9b862e](https://github.com/inclusive-design/idrc/commit/e9b862e87631fed35e2ab15e486627a269930bff))
+* **deps:** update dependency markdown-it to v15 ([#1393](https://github.com/inclusive-design/idrc/issues/1393)) ([0c903b0](https://github.com/inclusive-design/idrc/commit/0c903b063f33b29fda71a426920a35daef4989c6))
+* resolve missing language bug ([78b28d9](https://github.com/inclusive-design/idrc/commit/78b28d90eba6f7572b5f87ceff6485b86c9cab78))
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([83fc136](https://github.com/inclusive-design/idrc/commit/83fc136d626acb998e940aa83a5ed4c408ea1760))
+* **release:** bump version ([6163208](https://github.com/inclusive-design/idrc/commit/6163208acdf8d91bdb259740226a5cedd0b0f9d4))
+
 ## [2026.8.1](https://github.com/inclusive-design/idrc/compare/v2026.8.0...v2026.8.1) (2026-08-05)
 
 
