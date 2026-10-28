@@ -1,5 +1,13 @@
 # Changelog
 
+## [2026.10.1](https://github.com/inclusive-design/idrc/compare/v2026.10.0...v2026.10.1) (2026-10-28)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([7b19f72](https://github.com/inclusive-design/idrc/commit/7b19f723ab546e6d6c800b145e94e1058bbc5359))
+* update auth base URL ([73f8cd3](https://github.com/inclusive-design/idrc/commit/73f8cd3dfbfe60c1328cce5eb9895bdc8a4ae306))
+
 ## [2026.10.0](https://github.com/inclusive-design/idrc/compare/v2026.8.1...v2026.10.0) (2026-10-27)
 
 
