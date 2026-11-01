@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026.11.0](https://github.com/inclusive-design/idrc/compare/v2026.10.1...v2026.11.0) (2026-11-01)
+
+
+### Miscellaneous Chores
+
+* **release:** bump version ([68a6622](https://github.com/inclusive-design/idrc/commit/68a662213a3b000a8122a9074852c2a4212a6525))
+
 ## [2026.10.1](https://github.com/inclusive-design/idrc/compare/v2026.10.0...v2026.10.1) (2026-10-28)
 
 
